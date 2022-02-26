@@ -1,0 +1,29 @@
+name: Generate usable library and upload as release asset
+on:
+  release:
+    types: [ published ]
+jobs:
+  build:
+    name: Upload Release Asset
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Build project
+        run: |
+          mkdir -p build
+          rsync -ar src composer.json LICENSE README.md build/
+          cd build
+          composer install --no-dev --optimize-autoloader --no-scripts
+          zip -X -r plugNmeet-sdk-php-release.zip *
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: plugNmeet-sdk-php-release
+          path: build/plugNmeet-sdk-php-release.zip
+      - name: Upload to release
+        uses: JasonEtco/upload-to-release@master
+        with:
+          args: build/plugNmeet-sdk-php-release.zip application/zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
