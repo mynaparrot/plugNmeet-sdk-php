@@ -32,6 +32,8 @@ use Mynaparrot\Plugnmeet\Parameters\LockSettingsParameters;
 use Mynaparrot\Plugnmeet\Parameters\RecordingDownloadTokenParameters;
 use Mynaparrot\Plugnmeet\Parameters\RoomFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\RoomMetadataParameters;
+use Mynaparrot\Plugnmeet\Parameters\SharedNotePadFeaturesParameters;
+use Mynaparrot\Plugnmeet\Parameters\WhiteboardFeaturesParameters;
 use Mynaparrot\Plugnmeet\PlugNmeet;
 
 require "../vendor/autoload.php";
@@ -87,6 +89,14 @@ class plugNmeetConnect
         $chatFeatures->setAllowChat($roomChatFeatures['allow_chat']);
         $chatFeatures->setAllowFileUpload($roomChatFeatures['allow_file_upload']);
 
+        $roomSharedNotepadFeatures = $roomMetadata['shared_note_pad_features'];
+        $sharedNotePadFeatures = new SharedNotePadFeaturesParameters();
+        $sharedNotePadFeatures->setAllowedSharedNotePad($roomSharedNotepadFeatures['allowed_shared_note_pad']);
+
+        $roomWhiteboardFeatures = $roomMetadata['whiteboard_features'];
+        $whiteboardFeatures = new WhiteboardFeaturesParameters();
+        $whiteboardFeatures->setAllowedWhiteboard($roomWhiteboardFeatures['allowed_whiteboard']);
+
         $roomFeatures = $roomMetadata['room_features'];
         $features = new RoomFeaturesParameters();
         $features->setAllowWebcams($roomFeatures['allow_webcams']);
@@ -98,6 +108,8 @@ class plugNmeetConnect
         $features->setAllowViewOtherParticipants($roomFeatures['allow_view_other_users_list']);
         $features->setAdminOnlyWebcams($roomFeatures['admin_only_webcams']);
         $features->setChatFeatures($chatFeatures);
+        $features->setSharedNotePadFeatures($sharedNotePadFeatures);
+        $features->setWhiteboardFeatures($whiteboardFeatures);
 
         $defaultLocks = $roomMetadata['default_lock_settings'];
         $lockSettings = new LockSettingsParameters();

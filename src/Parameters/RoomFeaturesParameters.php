@@ -66,6 +66,15 @@ class RoomFeaturesParameters
     protected $chatFeatures;
 
     /**
+     * @var SharedNotePadFeaturesParameters
+     */
+    protected $sharedNotePadFeatures;
+    /**
+     * @var WhiteboardFeaturesParameters
+     */
+    protected $whiteboardFeatures;
+
+    /**
      *
      */
     public function __construct()
@@ -217,6 +226,38 @@ class RoomFeaturesParameters
     }
 
     /**
+     * @return SharedNotePadFeaturesParameters
+     */
+    public function getSharedNotePadFeatures(): SharedNotePadFeaturesParameters
+    {
+        return $this->sharedNotePadFeatures;
+    }
+
+    /**
+     * @param SharedNotePadFeaturesParameters $sharedNotePadFeatures
+     */
+    public function setSharedNotePadFeatures(SharedNotePadFeaturesParameters $sharedNotePadFeatures): void
+    {
+        $this->sharedNotePadFeatures = $sharedNotePadFeatures;
+    }
+
+    /**
+     * @return WhiteboardFeaturesParameters
+     */
+    public function getWhiteboardFeatures(): WhiteboardFeaturesParameters
+    {
+        return $this->whiteboardFeatures;
+    }
+
+    /**
+     * @param WhiteboardFeaturesParameters $whiteboardFeatures
+     */
+    public function setWhiteboardFeatures(WhiteboardFeaturesParameters $whiteboardFeatures): void
+    {
+        $this->whiteboardFeatures = $whiteboardFeatures;
+    }
+
+    /**
      * @return array
      */
     public function buildBody()
@@ -231,6 +272,8 @@ class RoomFeaturesParameters
             "allow_view_other_webcams" => $this->allowViewOtherWebcams,
             "allow_view_other_users_list" => $this->allowViewOtherParticipants,
             "chat_features" => $this->chatFeatures->buildBody(),
+            "shared_note_pad_features" => $this->sharedNotePadFeatures->buildBody(),
+            "whiteboard_features" => $this->whiteboardFeatures->buildBody()
         );
     }
 }

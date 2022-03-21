@@ -51,6 +51,12 @@ $roomMetadata = array(
         "allow_chat" => true,
         "allow_file_upload" => true
     ),
+    "shared_note_pad_features" => array(
+        "allowed_shared_note_pad" => false
+    ),
+    "whiteboard_features" => array(
+        "allowed_whiteboard" => false
+    ),
     "default_lock_settings" => array(
         "lock_microphone" => false,
         "lock_webcam" => false,
