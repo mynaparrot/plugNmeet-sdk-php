@@ -1,5 +1,5 @@
 {
-  "name": "mynaparrot/plugnmeet",
+  "name": "mynaparrot/plugnmeet-sdk",
   "description": "plugNmeet PHP SDK",
   "type": "library",
   "license": "MIT",
