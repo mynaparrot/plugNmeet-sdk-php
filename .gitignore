@@ -1,5 +1,6 @@
 .idea
 .DS_Store
+.phpdoc
 composer.phar
 /vendor/
 composer.lock
