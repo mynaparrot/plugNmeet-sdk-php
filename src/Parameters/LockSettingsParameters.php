@@ -44,6 +44,14 @@ class LockSettingsParameters
     /**
      * @var bool
      */
+    protected $lockWhiteboard;
+    /**
+     * @var bool
+     */
+    protected $lockSharedNotepad;
+    /**
+     * @var bool
+     */
     protected $lockChat;
     /**
      * @var bool
@@ -112,6 +120,38 @@ class LockSettingsParameters
     /**
      * @return bool
      */
+    public function isLockWhiteboard(): bool
+    {
+        return $this->lockWhiteboard;
+    }
+
+    /**
+     * @param bool $lockWhiteboard
+     */
+    public function setLockWhiteboard(bool $lockWhiteboard): void
+    {
+        $this->lockWhiteboard = $lockWhiteboard;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isLockSharedNotepad(): bool
+    {
+        return $this->lockSharedNotepad;
+    }
+
+    /**
+     * @param bool $lockSharedNotepad
+     */
+    public function setLockSharedNotepad(bool $lockSharedNotepad): void
+    {
+        $this->lockSharedNotepad = $lockSharedNotepad;
+    }
+
+    /**
+     * @return bool
+     */
     public function isLockChat()
     {
         return $this->lockChat;
@@ -166,6 +206,8 @@ class LockSettingsParameters
             'lock_microphone' => $this->lockMicrophone,
             'lock_webcam' => $this->lockWebcam,
             'lock_screen_sharing' => $this->lockScreenSharing,
+            'lock_whiteboard' => $this->lockWhiteboard,
+            'lock_shared_notepad' => $this->lockSharedNotepad,
             'lock_chat' => $this->lockChat,
             'lock_chat_send_message' => $this->lockChatSendMessage,
             'lock_chat_file_share' => $this->lockChatFileShare,
