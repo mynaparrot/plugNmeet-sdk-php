@@ -52,7 +52,7 @@ class PlugNmeet
     /**
      * @var string
      */
-    protected $baseUrl;
+    protected $serverUrl;
     /**
      * @var string
      */
@@ -67,13 +67,13 @@ class PlugNmeet
     protected $defaultPath = "/auth";
 
     /**
-     * @param $baseUrl plugNmeet server URL
+     * @param $serverUrl plugNmeet server URL
      * @param $apiKey plugNmeet API_Key
      * @param $apiSecret plugNmeet API_Secret
      */
-    public function __construct($baseUrl, $apiKey, $apiSecret)
+    public function __construct($serverUrl, $apiKey, $apiSecret)
     {
-        $this->baseUrl = $baseUrl;
+        $this->serverUrl = $serverUrl;
         $this->apiKey = $apiKey;
         $this->apiSecret = $apiSecret;
     }
@@ -226,7 +226,7 @@ class PlugNmeet
             "API-KEY: " . $this->apiKey,
             "API-SECRET: " . $this->apiSecret
         );
-        $url = $this->baseUrl . $this->defaultPath . $path;
+        $url = $this->serverUrl . $this->defaultPath . $path;
 
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
