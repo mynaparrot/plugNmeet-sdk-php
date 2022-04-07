@@ -14,7 +14,7 @@ jobs:
           mkdir -p build
           rsync -ar src composer.json LICENSE README.md build/
           cd build
-          composer install --no-dev --optimize-autoloader --no-scripts
+          composer install --no-dev --optimize-autoloader --no-scripts --ignore-platform-reqs
           zip -X -r plugNmeet-sdk-php-release.zip *
       - name: Upload artifact
         uses: actions/upload-artifact@v2
