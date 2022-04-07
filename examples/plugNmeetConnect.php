@@ -132,6 +132,8 @@ class plugNmeetConnect
         $lockSettings->setLockMicrophone($defaultLocks['lock_microphone']);
         $lockSettings->setLockWebcam($defaultLocks['lock_webcam']);
         $lockSettings->setLockScreenSharing($defaultLocks['lock_screen_sharing']);
+        $lockSettings->setLockWhiteboard($defaultLocks['lock_whiteboard']);
+        $lockSettings->setLockSharedNotepad($defaultLocks['lock_shared_notepad']);
         $lockSettings->setLockChat($defaultLocks['lock_chat']);
         $lockSettings->setLockChatSendMessage($defaultLocks['lock_chat_send_message']);
         $lockSettings->setLockChatFileShare($defaultLocks['lock_chat_file_share']);
