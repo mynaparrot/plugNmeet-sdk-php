@@ -52,30 +52,30 @@ class PlugNmeet
     /**
      * @var string
      */
-    protected $plugNmeet_URL;
+    protected $baseUrl;
     /**
      * @var string
      */
-    protected $plugNmeet_API_Key;
+    protected $apiKey;
     /**
      * @var string
      */
-    protected $plugNmeet_Secret;
+    protected $apiSecret;
     /**
      * @var string
      */
     protected $defaultPath = "/auth";
 
     /**
-     * @param $plugNmeet_URL
-     * @param $plugNmeet_API_Key
-     * @param $plugNmeet_Secret
+     * @param $baseUrl plugNmeet server URL
+     * @param $apiKey plugNmeet API_Key
+     * @param $apiSecret plugNmeet API_Secret
      */
-    public function __construct($plugNmeet_URL, $plugNmeet_API_Key, $plugNmeet_Secret)
+    public function __construct($baseUrl, $apiKey, $apiSecret)
     {
-        $this->plugNmeet_URL = $plugNmeet_URL;
-        $this->plugNmeet_API_Key = $plugNmeet_API_Key;
-        $this->plugNmeet_Secret = $plugNmeet_Secret;
+        $this->baseUrl = $baseUrl;
+        $this->apiKey = $apiKey;
+        $this->apiSecret = $apiSecret;
     }
 
     /**
@@ -185,11 +185,11 @@ class PlugNmeet
      */
     public function getJWTencodedData(array $payload, int $validity, $algo = "HS256", array $head = [])
     {
-        $payload['iss'] = $this->plugNmeet_API_Key;
+        $payload['iss'] = $this->apiKey;
         $payload['nbf'] = time();
         $payload['exp'] = time() + $validity;
 
-        return JWT::encode($payload, $this->plugNmeet_Secret, 'HS256', null, $head);
+        return JWT::encode($payload, $this->apiSecret, 'HS256', null, $head);
     }
 
     /**
@@ -199,7 +199,7 @@ class PlugNmeet
      */
     public function decodeJWTData(string $raw, $algo = "HS256")
     {
-        return JWT::decode($raw, new Key($this->plugNmeet_Secret, $algo));
+        return JWT::decode($raw, new Key($this->apiSecret, $algo));
     }
 
     /**
@@ -223,10 +223,10 @@ class PlugNmeet
 
         $header = array(
             "Content-type: application/json",
-            "API-KEY: " . $this->plugNmeet_API_Key,
-            "API-SECRET: " . $this->plugNmeet_Secret
+            "API-KEY: " . $this->apiKey,
+            "API-SECRET: " . $this->apiSecret
         );
-        $url = $this->plugNmeet_URL . $this->defaultPath . $path;
+        $url = $this->baseUrl . $this->defaultPath . $path;
 
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
