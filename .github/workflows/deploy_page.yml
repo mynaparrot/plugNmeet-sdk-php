@@ -22,7 +22,7 @@ jobs:
           composer install --no-dev --optimize-autoloader --no-scripts --ignore-platform-reqs
           wget https://phpdoc.org/phpDocumentor.phar -O phpDocumentor.phar
           chmod +x phpDocumentor.phar
-          phpDocumentor.phar run -d ./src -t ./docs
+          ./phpDocumentor.phar run -d ./src -t ./docs
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
