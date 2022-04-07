@@ -3,7 +3,7 @@
   "description": "plugNmeet PHP SDK",
   "type": "library",
   "license": "MIT",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "autoload": {
     "psr-4": {
       "Mynaparrot\\Plugnmeet\\": "src/"
@@ -16,6 +16,7 @@
     }
   ],
   "require": {
+    "php": "^7.4",
     "ext-curl": "*",
     "ext-json": "*",
     "ramsey/uuid": "^4.2",
