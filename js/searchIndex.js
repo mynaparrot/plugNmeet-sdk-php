@@ -993,47 +993,47 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AcreateRoom\u0028\u0029",
             "name": "createRoom",
-            "summary": "",
+            "summary": "Create\u0020new\u0020room",
             "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_createRoom"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AgetJoinToken\u0028\u0029",
             "name": "getJoinToken",
-            "summary": "",
+            "summary": "Generate\u0020join\u0020token",
             "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getJoinToken"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AisRoomActive\u0028\u0029",
             "name": "isRoomActive",
-            "summary": "",
+            "summary": "To\u0020check\u0020if\u0020room\u0020is\u0020active\u0020or\u0020not",
             "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_isRoomActive"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AgetActiveRoomInfo\u0028\u0029",
             "name": "getActiveRoomInfo",
-            "summary": "",
+            "summary": "Get\u0020active\u0020room\u0020information",
             "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getActiveRoomInfo"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AgetActiveRoomsInfo\u0028\u0029",
             "name": "getActiveRoomsInfo",
-            "summary": "",
+            "summary": "Get\u0020all\u0020active\u0020rooms",
             "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getActiveRoomsInfo"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AendRoom\u0028\u0029",
             "name": "endRoom",
-            "summary": "",
+            "summary": "End\u0020active\u0020room",
             "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_endRoom"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AfetchRecordings\u0028\u0029",
             "name": "fetchRecordings",
-            "summary": "",
+            "summary": "To\u0020fetch\u0020recordings",
             "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_fetchRecordings"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AdeleteRecordings\u0028\u0029",
             "name": "deleteRecordings",
-            "summary": "",
+            "summary": "To\u0020delete\u0020recording",
             "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_deleteRecordings"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AgetRecordingDownloadToken\u0028\u0029",
             "name": "getRecordingDownloadToken",
-            "summary": "",
+            "summary": "Generate\u0020token\u0020to\u0020download\u0020recording",
             "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getRecordingDownloadToken"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AgetJWTencodedData\u0028\u0029",
@@ -1048,7 +1048,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AgetUUID\u0028\u0029",
             "name": "getUUID",
-            "summary": "",
+            "summary": "Generate\u0020UUID\u0020random\u0020string",
             "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getUUID"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AsendRequest\u0028\u0029",
