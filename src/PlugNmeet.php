@@ -79,6 +79,7 @@ class PlugNmeet
     }
 
     /**
+     * Create new room
      * @param CreateRoomParameters $createRoomParameters
      * @return CreateRoomResponse
      */
@@ -90,6 +91,7 @@ class PlugNmeet
     }
 
     /**
+     * Generate join token
      * @param GenerateJoinTokenParameters $generateJoinTokenParameters
      * @return GenerateJoinTokenResponse
      */
@@ -101,6 +103,7 @@ class PlugNmeet
     }
 
     /**
+     * To check if room is active or not
      * @param IsRoomActiveParameters $isRoomActiveParameters
      * @return IsRoomActiveResponse
      */
@@ -112,6 +115,7 @@ class PlugNmeet
     }
 
     /**
+     * Get active room information
      * @param GetActiveRoomInfoParameters $getActiveRoomInfoParameters
      * @return GetActiveRoomInfoResponse
      */
@@ -123,6 +127,7 @@ class PlugNmeet
     }
 
     /**
+     * Get all active rooms
      * @return GetActiveRoomsInfoResponse
      */
     public function getActiveRoomsInfo(): GetActiveRoomsInfoResponse
@@ -132,6 +137,7 @@ class PlugNmeet
     }
 
     /**
+     * End active room
      * @param EndRoomParameters $endRoomParameters
      * @return EndRoomResponse
      */
@@ -143,6 +149,7 @@ class PlugNmeet
     }
 
     /**
+     * To fetch recordings
      * @param FetchRecordingsParameters $fetchRecordingsParameters
      * @return FetchRecordingsResponse
      */
@@ -154,6 +161,7 @@ class PlugNmeet
     }
 
     /**
+     * To delete recording
      * @param DeleteRecordingParameters $deleteRecordingParameters
      * @return DeleteRecordingResponse
      */
@@ -165,6 +173,7 @@ class PlugNmeet
     }
 
     /**
+     * Generate token to download recording
      * @param RecordingDownloadTokenParameters $recordingDownloadTokenParameters
      * @return RecordingDownloadTokenResponse
      */
@@ -203,6 +212,7 @@ class PlugNmeet
     }
 
     /**
+     * Generate UUID random string
      * @return string
      */
     public function getUUID()
