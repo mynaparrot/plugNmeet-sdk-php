@@ -28,12 +28,12 @@ abstract class BaseResponse
     /**
      * @var object
      */
-    protected object $rawResponse;
+    protected $rawResponse;
 
     /**
      * @param object $rawResponse
      */
-    public function __construct(object $rawResponse)
+    public function __construct($rawResponse)
     {
         $this->rawResponse = $rawResponse;
         if ($this->rawResponse->status) {
@@ -46,7 +46,7 @@ abstract class BaseResponse
     /**
      * @return object
      */
-    public function getRawResponse(): object
+    public function getRawResponse()
     {
         return $this->rawResponse;
     }
