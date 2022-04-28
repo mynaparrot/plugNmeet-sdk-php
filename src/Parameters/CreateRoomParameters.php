@@ -133,7 +133,7 @@ class CreateRoomParameters
             $body['empty_timeout'] = $this->emptyTimeout;
         }
 
-        if ($this->roomMetadata) {
+        if ($this->roomMetadata !== null) {
             $body['metadata'] = $this->roomMetadata->buildBody();
         }
 

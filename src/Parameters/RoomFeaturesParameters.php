@@ -73,6 +73,10 @@ class RoomFeaturesParameters
      * @var WhiteboardFeaturesParameters
      */
     protected $whiteboardFeatures;
+    /**
+     * @var ExternalMediaPlayerFeaturesParameters
+     */
+    protected $externalMediaPlayerFeatures;
 
     /**
      *
@@ -258,11 +262,27 @@ class RoomFeaturesParameters
     }
 
     /**
+     * @return ExternalMediaPlayerFeaturesParameters
+     */
+    public function getExternalMediaPlayerFeatures(): ExternalMediaPlayerFeaturesParameters
+    {
+        return $this->externalMediaPlayerFeatures;
+    }
+
+    /**
+     * @param ExternalMediaPlayerFeaturesParameters $externalMediaPlayerFeatures
+     */
+    public function setExternalMediaPlayerFeatures(ExternalMediaPlayerFeaturesParameters $externalMediaPlayerFeatures): void
+    {
+        $this->externalMediaPlayerFeatures = $externalMediaPlayerFeatures;
+    }
+
+    /**
      * @return array
      */
     public function buildBody()
     {
-        return array(
+        $body = array(
             "allow_webcams" => $this->allowWebcams,
             "mute_on_start" => $this->muteOnStart,
             "allow_screen_share" => $this->allowScreenShare,
@@ -271,9 +291,24 @@ class RoomFeaturesParameters
             "admin_only_webcams" => $this->adminOnlyWebcams,
             "allow_view_other_webcams" => $this->allowViewOtherWebcams,
             "allow_view_other_users_list" => $this->allowViewOtherParticipants,
-            "chat_features" => $this->chatFeatures->buildBody(),
-            "shared_note_pad_features" => $this->sharedNotePadFeatures->buildBody(),
-            "whiteboard_features" => $this->whiteboardFeatures->buildBody()
         );
+
+        if ($this->chatFeatures !== null) {
+            $body['chat_features'] = $this->chatFeatures->buildBody();
+        }
+
+        if ($this->sharedNotePadFeatures !== null) {
+            $body['shared_note_pad_features'] = $this->sharedNotePadFeatures->buildBody();
+        }
+
+        if ($this->whiteboardFeatures !== null) {
+            $body['whiteboard_features'] = $this->whiteboardFeatures->buildBody();
+        }
+
+        if ($this->externalMediaPlayerFeatures !== null) {
+            $body['external_media_player_features'] = $this->externalMediaPlayerFeatures->buildBody();
+        }
+
+        return $body;
     }
 }

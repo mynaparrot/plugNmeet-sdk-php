@@ -52,10 +52,13 @@ $roomMetadata = array(
         "allow_file_upload" => true
     ),
     "shared_note_pad_features" => array(
-        "allowed_shared_note_pad" => false
+        "allowed_shared_note_pad" => true
     ),
     "whiteboard_features" => array(
-        "allowed_whiteboard" => false
+        "allowed_whiteboard" => true
+    ),
+    "external_media_player_features" => array(
+        "allowed_external_media_player" => true
     ),
     "default_lock_settings" => array(
         "lock_microphone" => false,
@@ -97,7 +100,7 @@ if ($isRoomActive && $output->status) {
     try {
         $join = $connect->getJoinToken($roomId, $user_full_name, $userId, true);
 
-        $output->url = $config->plugnmeet_server_url . "?access_token=" . $join->getToken();
+        $output->url = "<br>" . $config->plugnmeet_server_url . "?access_token=" . $join->getToken();
         $output->status = $join->getStatus();
         $output->msg = $join->getResponseMsg();
     } catch (Exception $e) {

@@ -25,6 +25,7 @@ use Mynaparrot\Plugnmeet\Parameters\ChatFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\CreateRoomParameters;
 use Mynaparrot\Plugnmeet\Parameters\DeleteRecordingParameters;
 use Mynaparrot\Plugnmeet\Parameters\EndRoomParameters;
+use Mynaparrot\Plugnmeet\Parameters\ExternalMediaPlayerFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\FetchRecordingsParameters;
 use Mynaparrot\Plugnmeet\Parameters\GenerateJoinTokenParameters;
 use Mynaparrot\Plugnmeet\Parameters\GetActiveRoomInfoParameters;
@@ -100,19 +101,6 @@ class plugNmeetConnect
      */
     public function createRoom(string $roomId, string $roomTitle, string $welcomeMessage, int $max_participants, string $webHookUrl, array $roomMetadata): CreateRoomResponse
     {
-        $roomChatFeatures = $roomMetadata['chat_features'];
-        $chatFeatures = new ChatFeaturesParameters();
-        $chatFeatures->setAllowChat($roomChatFeatures['allow_chat']);
-        $chatFeatures->setAllowFileUpload($roomChatFeatures['allow_file_upload']);
-
-        $roomSharedNotepadFeatures = $roomMetadata['shared_note_pad_features'];
-        $sharedNotePadFeatures = new SharedNotePadFeaturesParameters();
-        $sharedNotePadFeatures->setAllowedSharedNotePad($roomSharedNotepadFeatures['allowed_shared_note_pad']);
-
-        $roomWhiteboardFeatures = $roomMetadata['whiteboard_features'];
-        $whiteboardFeatures = new WhiteboardFeaturesParameters();
-        $whiteboardFeatures->setAllowedWhiteboard($roomWhiteboardFeatures['allowed_whiteboard']);
-
         $roomFeatures = $roomMetadata['room_features'];
         $features = new RoomFeaturesParameters();
         $features->setAllowWebcams($roomFeatures['allow_webcams']);
@@ -123,27 +111,55 @@ class plugNmeetConnect
         $features->setAllowViewOtherWebcams($roomFeatures['allow_view_other_webcams']);
         $features->setAllowViewOtherParticipants($roomFeatures['allow_view_other_users_list']);
         $features->setAdminOnlyWebcams($roomFeatures['admin_only_webcams']);
-        $features->setChatFeatures($chatFeatures);
-        $features->setSharedNotePadFeatures($sharedNotePadFeatures);
-        $features->setWhiteboardFeatures($whiteboardFeatures);
 
-        $defaultLocks = $roomMetadata['default_lock_settings'];
-        $lockSettings = new LockSettingsParameters();
-        $lockSettings->setLockMicrophone($defaultLocks['lock_microphone']);
-        $lockSettings->setLockWebcam($defaultLocks['lock_webcam']);
-        $lockSettings->setLockScreenSharing($defaultLocks['lock_screen_sharing']);
-        $lockSettings->setLockWhiteboard($defaultLocks['lock_whiteboard']);
-        $lockSettings->setLockSharedNotepad($defaultLocks['lock_shared_notepad']);
-        $lockSettings->setLockChat($defaultLocks['lock_chat']);
-        $lockSettings->setLockChatSendMessage($defaultLocks['lock_chat_send_message']);
-        $lockSettings->setLockChatFileShare($defaultLocks['lock_chat_file_share']);
+        if (isset($roomMetadata['chat_features'])) {
+            $roomChatFeatures = $roomMetadata['chat_features'];
+            $chatFeatures = new ChatFeaturesParameters();
+            $chatFeatures->setAllowChat($roomChatFeatures['allow_chat']);
+            $chatFeatures->setAllowFileUpload($roomChatFeatures['allow_file_upload']);
+            $features->setChatFeatures($chatFeatures);
+        }
+
+        if (isset($roomMetadata['shared_note_pad_features'])) {
+            $roomSharedNotepadFeatures = $roomMetadata['shared_note_pad_features'];
+            $sharedNotePadFeatures = new SharedNotePadFeaturesParameters();
+            $sharedNotePadFeatures->setAllowedSharedNotePad($roomSharedNotepadFeatures['allowed_shared_note_pad']);
+            $features->setSharedNotePadFeatures($sharedNotePadFeatures);
+        }
+
+        if (isset($roomMetadata['whiteboard_features'])) {
+            $roomWhiteboardFeatures = $roomMetadata['whiteboard_features'];
+            $whiteboardFeatures = new WhiteboardFeaturesParameters();
+            $whiteboardFeatures->setAllowedWhiteboard($roomWhiteboardFeatures['allowed_whiteboard']);
+            $features->setWhiteboardFeatures($whiteboardFeatures);
+        }
+
+        if (isset($roomMetadata['external_media_player_features'])) {
+            $roomExternalMediaPlayerFeatures = $roomMetadata['external_media_player_features'];
+            $externalMediaPlayerFeatures = new ExternalMediaPlayerFeaturesParameters();
+            $externalMediaPlayerFeatures->setAllowedExternalMediaPlayer($roomExternalMediaPlayerFeatures['allowed_external_media_player']);
+            $features->setExternalMediaPlayerFeatures($externalMediaPlayerFeatures);
+        }
 
         $metadata = new RoomMetadataParameters();
         $metadata->setRoomTitle($roomTitle);
         $metadata->setWelcomeMessage($welcomeMessage);
         $metadata->setWebhookUrl($webHookUrl);
         $metadata->setFeatures($features);
-        $metadata->setDefaultLockSettings($lockSettings);
+
+        if (isset($roomMetadata['default_lock_settings'])) {
+            $defaultLocks = $roomMetadata['default_lock_settings'];
+            $lockSettings = new LockSettingsParameters();
+            $lockSettings->setLockMicrophone($defaultLocks['lock_microphone']);
+            $lockSettings->setLockWebcam($defaultLocks['lock_webcam']);
+            $lockSettings->setLockScreenSharing($defaultLocks['lock_screen_sharing']);
+            $lockSettings->setLockWhiteboard($defaultLocks['lock_whiteboard']);
+            $lockSettings->setLockSharedNotepad($defaultLocks['lock_shared_notepad']);
+            $lockSettings->setLockChat($defaultLocks['lock_chat']);
+            $lockSettings->setLockChatSendMessage($defaultLocks['lock_chat_send_message']);
+            $lockSettings->setLockChatFileShare($defaultLocks['lock_chat_file_share']);
+            $metadata->setDefaultLockSettings($lockSettings);
+        }
 
         $roomCreateParams = new CreateRoomParameters();
         $roomCreateParams->setRoomId($roomId);
