@@ -211,6 +211,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-EndRoomParameters.html#property_roomId"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\ExternalMediaPlayerFeaturesParameters",
+            "name": "ExternalMediaPlayerFeaturesParameters",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-ExternalMediaPlayerFeaturesParameters.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\ExternalMediaPlayerFeaturesParameters\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-ExternalMediaPlayerFeaturesParameters.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\ExternalMediaPlayerFeaturesParameters\u003A\u003AisAllowedExternalMediaPlayer\u0028\u0029",
+            "name": "isAllowedExternalMediaPlayer",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-ExternalMediaPlayerFeaturesParameters.html#method_isAllowedExternalMediaPlayer"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\ExternalMediaPlayerFeaturesParameters\u003A\u003AsetAllowedExternalMediaPlayer\u0028\u0029",
+            "name": "setAllowedExternalMediaPlayer",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-ExternalMediaPlayerFeaturesParameters.html#method_setAllowedExternalMediaPlayer"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\ExternalMediaPlayerFeaturesParameters\u003A\u003AbuildBody\u0028\u0029",
+            "name": "buildBody",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-ExternalMediaPlayerFeaturesParameters.html#method_buildBody"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\ExternalMediaPlayerFeaturesParameters\u003A\u003A\u0024allowedExternalMediaPlayer",
+            "name": "allowedExternalMediaPlayer",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-ExternalMediaPlayerFeaturesParameters.html#property_allowedExternalMediaPlayer"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchRecordingsParameters",
             "name": "FetchRecordingsParameters",
             "summary": "",
@@ -726,6 +756,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_setWhiteboardFeatures"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AgetExternalMediaPlayerFeatures\u0028\u0029",
+            "name": "getExternalMediaPlayerFeatures",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_getExternalMediaPlayerFeatures"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AsetExternalMediaPlayerFeatures\u0028\u0029",
+            "name": "setExternalMediaPlayerFeatures",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_setExternalMediaPlayerFeatures"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AbuildBody\u0028\u0029",
             "name": "buildBody",
             "summary": "",
@@ -785,6 +825,11 @@ Search.appendIndex(
             "name": "whiteboardFeatures",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#property_whiteboardFeatures"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003A\u0024externalMediaPlayerFeatures",
+            "name": "externalMediaPlayerFeatures",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#property_externalMediaPlayerFeatures"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomMetadataParameters",
             "name": "RoomMetadataParameters",
