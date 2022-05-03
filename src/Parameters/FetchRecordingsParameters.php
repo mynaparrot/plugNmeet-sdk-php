@@ -31,7 +31,7 @@ class FetchRecordingsParameters
     /**
      * @var array
      */
-    protected $roomIds;
+    protected $roomIds = array();
     /**
      * @var int
      */

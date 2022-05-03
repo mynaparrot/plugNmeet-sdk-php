@@ -32,7 +32,7 @@ class SharedNotePadFeaturesParameters
     /**
      * @var bool
      */
-    protected $allowedSharedNotePad;
+    protected $allowedSharedNotePad = true;
 
     /**
      *

@@ -202,15 +202,34 @@ class LockSettingsParameters
      */
     public function buildBody()
     {
-        return array(
-            'lock_microphone' => $this->lockMicrophone,
-            'lock_webcam' => $this->lockWebcam,
-            'lock_screen_sharing' => $this->lockScreenSharing,
-            'lock_whiteboard' => $this->lockWhiteboard,
-            'lock_shared_notepad' => $this->lockSharedNotepad,
-            'lock_chat' => $this->lockChat,
-            'lock_chat_send_message' => $this->lockChatSendMessage,
-            'lock_chat_file_share' => $this->lockChatFileShare,
-        );
+
+        $body = array();
+
+        if ($this->lockMicrophone !== null) {
+            $body["lock_microphone"] = $this->lockMicrophone;
+        }
+        if ($this->lockWebcam !== null) {
+            $body["lock_webcam"] = $this->lockWebcam;
+        }
+        if ($this->lockScreenSharing !== null) {
+            $body["lock_screen_sharing"] = $this->lockScreenSharing;
+        }
+        if ($this->lockWhiteboard !== null) {
+            $body["lock_whiteboard"] = $this->lockWhiteboard;
+        }
+        if ($this->lockSharedNotepad !== null) {
+            $body["lock_shared_notepad"] = $this->lockSharedNotepad;
+        }
+        if ($this->lockChat !== null) {
+            $body["lock_chat"] = $this->lockChat;
+        }
+        if ($this->lockChatSendMessage !== null) {
+            $body["lock_chat_send_message"] = $this->lockChatSendMessage;
+        }
+        if ($this->lockChatFileShare !== null) {
+            $body["lock_chat_file_share"] = $this->lockChatFileShare;
+        }
+
+        return $body;
     }
 }

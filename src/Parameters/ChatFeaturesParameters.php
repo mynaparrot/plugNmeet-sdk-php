@@ -31,19 +31,19 @@ class ChatFeaturesParameters
     /**
      * @var bool
      */
-    protected $allowChat;
+    protected $allowChat = true;
     /**
      * @var bool
      */
-    protected $allowFileUpload;
+    protected $allowFileUpload = true;
     /**
      * @var string[]
      */
-    protected $allowedFileTypes;
+    protected $allowedFileTypes = array();
     /**
      * @var int
      */
-    protected $maxFileSize;
+    protected $maxFileSize = 0;
 
     /**
      *
@@ -95,9 +95,9 @@ class ChatFeaturesParameters
     /**
      * @param string[] $allowedFileTypes
      */
-    public function setAllowedFileTypes($allowedFileTypes)
+    public function setAllowedFileTypes(array $allowedFileTypes)
     {
-        $this->allowedFileTypes = filter_var($allowedFileTypes, FILTER_VALIDATE_BOOLEAN);
+        $this->allowedFileTypes = $allowedFileTypes;
     }
 
     /**
@@ -121,11 +121,19 @@ class ChatFeaturesParameters
      */
     public function buildBody()
     {
-        return array(
+        $body = array(
             "allow_chat" => $this->allowChat,
-            "allow_file_upload" => $this->allowFileUpload,
-            "allowed_file_types" => $this->getAllowedFileTypes(),
-            "max_file_size" => $this->maxFileSize
+            "allow_file_upload" => $this->allowFileUpload
         );
+
+        if (!empty($this->allowedFileTypes)) {
+            $body['allowed_file_types'] = $this->allowedFileTypes;
+        }
+
+        if ($this->maxFileSize > 0) {
+            $body['max_file_size'] = $this->maxFileSize;
+        }
+
+        return $body;
     }
 }

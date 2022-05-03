@@ -146,19 +146,19 @@ class RoomMetadataParameters
             "room_title" => $this->roomTitle,
         );
 
-        if ($this->welcomeMessage) {
+        if (!empty($this->welcomeMessage)) {
             $body["welcome_message"] = $this->welcomeMessage;
         }
 
-        if ($this->webhookUrl) {
+        if (!empty($this->webhookUrl)) {
             $body["webhook_url"] = $this->webhookUrl;
         }
 
-        if ($this->features) {
+        if ($this->features !== null) {
             $body["room_features"] = $this->features->buildBody();
         }
 
-        if ($this->defaultLockSettings) {
+        if ($this->defaultLockSettings !== null) {
             $body["default_lock_settings"] = $this->defaultLockSettings->buildBody();
         }
 

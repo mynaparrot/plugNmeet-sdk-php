@@ -31,7 +31,7 @@ class WhiteboardFeaturesParameters
     /**
      * @var bool
      */
-    protected $allowedWhiteboard;
+    protected $allowedWhiteboard = true;
 
     /**
      *

@@ -81,10 +81,15 @@ class UserMetadataParameters
      */
     public function buildBody()
     {
-        $body = array(
-            "profile_pic" => $this->profilePic,
-            "lock_settings" => $this->lockSettings->buildBody()
-        );
+        $body = array();
+
+        if (!empty($this->profilePic)) {
+            $body["profile_pic"] = $this->profilePic;
+        }
+
+        if ($this->lockSettings !== null) {
+            $body["lock_settings"] = $this->lockSettings->buildBody();
+        }
 
         return $body;
     }

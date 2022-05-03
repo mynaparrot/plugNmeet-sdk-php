@@ -28,7 +28,7 @@ class ExternalMediaPlayerFeaturesParameters
     /**
      * @var bool
      */
-    protected $allowedExternalMediaPlayer;
+    protected $allowedExternalMediaPlayer = true;
 
     public function __construct()
     {

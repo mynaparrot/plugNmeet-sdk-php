@@ -172,7 +172,8 @@ class GenerateJoinTokenParameters
                 "is_hidden" => $this->isHidden
             )
         );
-        if ($this->userMetadata) {
+
+        if ($this->userMetadata !== null) {
             $body["user_info"]["user_metadata"] = $this->userMetadata->buildBody();
         }
 

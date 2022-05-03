@@ -31,35 +31,35 @@ class RoomFeaturesParameters
     /**
      * @var bool
      */
-    protected $allowWebcams;
+    protected $allowWebcams = true;
     /**
      * @var bool
      */
-    protected $muteOnStart;
+    protected $muteOnStart = false;
     /**
      * @var bool
      */
-    protected $allowScreenShare;
+    protected $allowScreenShare = true;
     /**
      * @var bool
      */
-    protected $allowRecording;
+    protected $allowRecording = true;
     /**
      * @var bool
      */
-    protected $allowRTMP;
+    protected $allowRTMP = true;
     /**
      * @var bool
      */
-    protected $adminOnlyWebcams;
+    protected $adminOnlyWebcams = false;
     /**
      * @var bool
      */
-    protected $allowViewOtherWebcams;
+    protected $allowViewOtherWebcams = true;
     /**
      * @var bool
      */
-    protected $allowViewOtherParticipants;
+    protected $allowViewOtherParticipants = true;
     /**
      * @var ChatFeaturesParameters
      */

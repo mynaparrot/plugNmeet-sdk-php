@@ -35,11 +35,11 @@ class CreateRoomParameters
     /**
      * @var int
      */
-    protected $emptyTimeout;
+    protected $emptyTimeout = 0;
     /**
      * @var int
      */
-    protected $maxParticipants;
+    protected $maxParticipants = 0;
     /**
      * @var RoomMetadataParameters
      */
