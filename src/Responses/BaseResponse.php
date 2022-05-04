@@ -64,6 +64,12 @@ abstract class BaseResponse
      */
     public function getResponseMsg(): string
     {
-        return $this->rawResponse->msg;
+        $msg = $this->rawResponse->msg;
+        
+        if (is_array($msg)) {
+            return json_encode($msg);
+        }
+
+        return $msg;
     }
 }

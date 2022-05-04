@@ -44,11 +44,11 @@ class GenerateJoinTokenParameters
     /**
      * @var bool
      */
-    protected $isAdmin;
+    protected $isAdmin = false;
     /**
      * @var bool
      */
-    protected $isHidden;
+    protected $isHidden = false;
 
     /**
      * @var UserMetadataParameters

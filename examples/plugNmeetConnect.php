@@ -174,7 +174,7 @@ class plugNmeetConnect
         if (isset($roomMetadata['default_lock_settings'])) {
             $defaultLocks = $roomMetadata['default_lock_settings'];
             $lockSettings = new LockSettingsParameters();
-            
+
             if (isset($defaultLocks['lock_microphone'])) {
                 $lockSettings->setLockMicrophone($defaultLocks['lock_microphone']);
             }
@@ -220,13 +220,14 @@ class plugNmeetConnect
      * @param bool $isAdmin
      * @return GenerateJoinTokenResponse
      */
-    public function getJoinToken(string $roomId, string $name, string $userId, bool $isAdmin): GenerateJoinTokenResponse
+    public function getJoinToken(string $roomId, string $name, string $userId, bool $isAdmin, bool $isHidden = false): GenerateJoinTokenResponse
     {
         $generateJoinTokenParameters = new GenerateJoinTokenParameters();
         $generateJoinTokenParameters->setRoomId($roomId);
         $generateJoinTokenParameters->setName($name);
         $generateJoinTokenParameters->setUserId($userId);
         $generateJoinTokenParameters->setIsAdmin($isAdmin);
+        $generateJoinTokenParameters->setIsHidden($isHidden);
 
         return $this->plugnmeet->getJoinToken($generateJoinTokenParameters);
     }

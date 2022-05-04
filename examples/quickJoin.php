@@ -35,6 +35,7 @@ $roomId = "room01"; // must be unique. You can also use $connect->getUUID();
 $max_participants = 0; // value 0 means no limit (unlimited)
 $user_full_name = "Your name";
 $userId = "Your-Unique-User-Id"; // must be unique for each user.
+$isAdmin = true;
 
 $roomMetadata = array(
     "room_features" => array(
@@ -98,9 +99,11 @@ if (!$isRoomActive && $output->status) {
 
 if ($isRoomActive && $output->status) {
     try {
-        $join = $connect->getJoinToken($roomId, $user_full_name, $userId, true);
+        $join = $connect->getJoinToken($roomId, $user_full_name, $userId, $isAdmin);
 
-        $output->url = "<br>" . $config->plugnmeet_server_url . "?access_token=" . $join->getToken();
+        if ($join->getStatus()) {
+            $output->url = "<br>" . $config->plugnmeet_server_url . "?access_token=" . $join->getToken();
+        }
         $output->status = $join->getStatus();
         $output->msg = $join->getResponseMsg();
     } catch (Exception $e) {

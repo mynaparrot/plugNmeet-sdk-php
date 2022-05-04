@@ -33,6 +33,6 @@ class GenerateJoinTokenResponse extends BaseResponse
      */
     public function getToken(): string
     {
-        return $this->rawResponse->token;
+        return $this->rawResponse->token ?? "";
     }
 }
