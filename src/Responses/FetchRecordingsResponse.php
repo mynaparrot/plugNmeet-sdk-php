@@ -55,9 +55,9 @@ class FetchRecordingsResponse extends BaseResponse
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getOrderBy(): int
+    public function getOrderBy(): string
     {
         return $this->rawResponse->result->order_by;
     }
