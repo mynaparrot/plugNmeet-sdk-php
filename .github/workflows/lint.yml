@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    name: Upload Release Asset
+    name: Lint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -19,7 +19,4 @@ jobs:
       - name: Composer install
         run: composer install --ignore-platform-reqs
       - name: Checking PHP syntax error
-        uses: overtrue/phplint@7.4
-        with:
-          path: .
-          options: --exclude=*.log
+        uses: ./vendor/bin/phplint
