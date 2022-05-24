@@ -34,6 +34,7 @@ $connect = new plugNmeetConnect($config);
 $roomId = "room01"; // must be unique. You can also use $connect->getUUID();
 $max_participants = 0; // value 0 means no limit (unlimited)
 $user_full_name = "Your name";
+// $userId = $connect->getUUID();
 $userId = "Your-Unique-User-Id"; // must be unique for each user.
 $isAdmin = true;
 
@@ -47,6 +48,7 @@ $roomMetadata = array(
         "allow_view_other_webcams" => true,
         "allow_view_other_users_list" => true,
         "admin_only_webcams" => false,
+        "room_duration" => 0 // in minutes. 0 = no limit/unlimited
     ),
     "chat_features" => array(
         "allow_chat" => true,
@@ -60,6 +62,9 @@ $roomMetadata = array(
     ),
     "external_media_player_features" => array(
         "allowed_external_media_player" => true
+    ),
+    "waiting_room_features" => array(
+        "is_active" => false,
     ),
     "default_lock_settings" => array(
         "lock_microphone" => false,

@@ -35,6 +35,7 @@ use Mynaparrot\Plugnmeet\Parameters\RecordingDownloadTokenParameters;
 use Mynaparrot\Plugnmeet\Parameters\RoomFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\RoomMetadataParameters;
 use Mynaparrot\Plugnmeet\Parameters\SharedNotePadFeaturesParameters;
+use Mynaparrot\Plugnmeet\Parameters\WaitingRoomFeatures;
 use Mynaparrot\Plugnmeet\Parameters\WhiteboardFeaturesParameters;
 use Mynaparrot\Plugnmeet\Responses\CreateRoomResponse;
 use Mynaparrot\Plugnmeet\Responses\DeleteRecordingResponse;
@@ -125,6 +126,14 @@ class plugNmeetConnect
         if (isset($roomFeatures['admin_only_webcams'])) {
             $features->setAdminOnlyWebcams($roomFeatures['admin_only_webcams']);
         }
+        if (isset($roomFeatures['allow_polls'])) {
+            $features->setAllowPolls($roomFeatures['allow_polls']);
+        }
+        if (isset($roomFeatures['room_duration'])) {
+            if ($roomFeatures['room_duration'] > 0) {
+                $features->setRoomDuration($roomFeatures['room_duration']);
+            }
+        }
 
         if (isset($roomMetadata['chat_features'])) {
             $roomChatFeatures = $roomMetadata['chat_features'];
@@ -163,6 +172,20 @@ class plugNmeetConnect
                 $externalMediaPlayerFeatures->setAllowedExternalMediaPlayer($roomExternalMediaPlayerFeatures['allowed_external_media_player']);
             }
             $features->setExternalMediaPlayerFeatures($externalMediaPlayerFeatures);
+        }
+
+        if (isset($roomMetadata['waiting_room_features'])) {
+            $roomWaitingRoomFeatures = $roomMetadata['waiting_room_features'];
+            $waitingRoomFeatures = new WaitingRoomFeatures();
+            if (isset($roomWaitingRoomFeatures['is_active'])) {
+                $waitingRoomFeatures->setIsActive($roomWaitingRoomFeatures['is_active']);
+            }
+            if (isset($roomWaitingRoomFeatures['waiting_room_msg'])) {
+                if (!empty($roomWaitingRoomFeatures['waiting_room_msg'])) {
+                    $waitingRoomFeatures->setWaitingRoomMsg($roomWaitingRoomFeatures['waiting_room_msg']);
+                }
+            }
+            $features->setWaitingRoomFeatures($waitingRoomFeatures);
         }
 
         $metadata = new RoomMetadataParameters();
