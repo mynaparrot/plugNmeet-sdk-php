@@ -19,4 +19,7 @@ jobs:
       - name: Composer install
         run: composer install --ignore-platform-reqs
       - name: Checking PHP syntax error
-        uses: ./vendor/bin/phplint
+        uses: overtrue/phplint@7.4
+        with:
+          path: .
+          options: --exclude=vendor
