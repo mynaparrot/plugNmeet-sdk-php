@@ -29,9 +29,9 @@ namespace Mynaparrot\Plugnmeet\Responses;
 class RecordingDownloadTokenResponse extends BaseResponse
 {
     /**
-     * @return string
+     * @return string|null
      */
-    public function getToken(): string
+    public function getToken(): ?string
     {
         return $this->rawResponse->token;
     }

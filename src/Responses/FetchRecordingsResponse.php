@@ -33,31 +33,31 @@ class FetchRecordingsResponse extends BaseResponse
     /**
      * @return int
      */
-    public function getTotalRecordings(): int
+    public function getTotalRecordings(): ?int
     {
         return $this->rawResponse->result->total_recordings;
     }
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getFrom(): int
+    public function getFrom(): ?int
     {
         return $this->rawResponse->result->from;
     }
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getLimit(): int
+    public function getLimit(): ?int
     {
         return $this->rawResponse->result->limit;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getOrderBy(): string
+    public function getOrderBy(): ?string
     {
         return $this->rawResponse->result->order_by;
     }

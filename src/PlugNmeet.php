@@ -238,27 +238,32 @@ class PlugNmeet
         );
         $url = $this->serverUrl . $this->defaultPath . $path;
 
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $url);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
-        curl_setopt($ch, CURLOPT_POST, true);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($body));
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
-        curl_setopt($ch, CURLOPT_CAINFO, dirname(__FILE__) . '/cert/cacert.pem');
+        try {
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, $url);
+            curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+            curl_setopt($ch, CURLOPT_POST, true);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($body));
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
+            curl_setopt($ch, CURLOPT_CAINFO, dirname(__FILE__) . '/cert/cacert.pem');
 
-        $result = curl_exec($ch);
-        $error = curl_error($ch);
-        $errno = curl_errno($ch);
-        curl_close($ch);
+            $result = curl_exec($ch);
+            $error = curl_error($ch);
+            $errno = curl_errno($ch);
+            curl_close($ch);
 
-        if (0 !== $errno) {
-            $output->response = "Error: " . $error;
-            return $output;
+            if (0 !== $errno) {
+                $output->response = "Error: " . $error;
+                return $output;
+            }
+
+            $output->status = true;
+            $output->response = json_decode($result);
+        } catch (\Exception $e) {
+            $output->response = "Exception: " . $e->getMessage();
         }
 
-        $output->status = true;
-        $output->response = json_decode($result);
         return $output;
     }
 }

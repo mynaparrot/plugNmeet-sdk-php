@@ -23,6 +23,9 @@
 
 namespace Mynaparrot\Plugnmeet\Responses;
 
+/**
+ *
+ */
 abstract class BaseResponse
 {
     /**
@@ -36,7 +39,7 @@ abstract class BaseResponse
     public function __construct($rawResponse)
     {
         $this->rawResponse = $rawResponse;
-        if ($this->rawResponse->status) {
+        if ($rawResponse->status) {
             $this->rawResponse = $rawResponse->response;
         } else {
             $this->rawResponse->msg = $rawResponse->response;
@@ -59,13 +62,18 @@ abstract class BaseResponse
         return $this->rawResponse->status;
     }
 
+
     /**
      * @return string
      */
     public function getResponseMsg(): string
     {
+        if ($this->rawResponse->msg === null) {
+            return "something went wrong";
+        }
+
         $msg = $this->rawResponse->msg;
-        
+
         if (is_array($msg)) {
             return json_encode($msg);
         }

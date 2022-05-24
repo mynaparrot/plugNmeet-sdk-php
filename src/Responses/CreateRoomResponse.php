@@ -29,65 +29,65 @@ namespace Mynaparrot\Plugnmeet\Responses;
 class CreateRoomResponse extends BaseResponse
 {
     /**
-     * @return string
+     * @return string|null
      */
-    public function getSid(): string
+    public function getSid(): ?string
     {
         return $this->rawResponse->sid;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getName(): string
+    public function getName(): ?string
     {
         return $this->rawResponse->name;
     }
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getMaxParticipants(): int
+    public function getMaxParticipants(): ?int
     {
         return $this->rawResponse->max_participants;
     }
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getEmptyTimeout(): int
+    public function getEmptyTimeout(): ?int
     {
         return $this->rawResponse->empty_timeout;
     }
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getCreationTime(): int
+    public function getCreationTime(): ?int
     {
         return $this->rawResponse->creation_time;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getTurnPassword(): string
+    public function getTurnPassword(): ?string
     {
         return $this->rawResponse->turn_password;
     }
 
     /**
-     * @return array
+     * @return array|null
      */
-    public function getEnabledCodecs(): array
+    public function getEnabledCodecs(): ?array
     {
         return $this->rawResponse->enabled_codecs;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getMetadata(): string
+    public function getMetadata(): ?string
     {
         return $this->rawResponse->metadata;
     }
