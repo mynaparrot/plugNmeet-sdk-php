@@ -21,5 +21,8 @@
     "ext-json": "*",
     "ramsey/uuid": "^4.2",
     "firebase/php-jwt": "^6.0"
+  },
+  "require-dev": {
+    "overtrue/phplint": "^3.0"
   }
 }

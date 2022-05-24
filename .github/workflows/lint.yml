@@ -1,0 +1,25 @@
+name: Lint
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    name: Upload Release Asset
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 7.4
+      - name: Composer install
+        run: composer install --ignore-platform-reqs
+      - name: Checking PHP syntax error
+        uses: overtrue/phplint@7.4
+        with:
+          path: .
+          options: --exclude=*.log
