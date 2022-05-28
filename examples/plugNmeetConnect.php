@@ -111,6 +111,9 @@ class plugNmeetConnect
         if (isset($roomFeatures['mute_on_start'])) {
             $features->setMuteOnStart($roomFeatures['mute_on_start']);
         }
+        if (isset($roomFeatures['allow_screen_share'])) {
+            $features->setAllowScreenShare($roomFeatures['allow_screen_share']);
+        }
         if (isset($roomFeatures['allow_recording'])) {
             $features->setAllowRecording($roomFeatures['allow_recording']);
         }
