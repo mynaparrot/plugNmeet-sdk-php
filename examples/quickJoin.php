@@ -69,6 +69,10 @@ $roomMetadata = array(
     "waiting_room_features" => array(
         "is_active" => false,
     ),
+    "breakout_room_features" => array(
+        "is_allow" => true,
+        "allowed_number_rooms" => 2
+    ),
     "default_lock_settings" => array(
         "lock_microphone" => false,
         "lock_webcam" => false,
