@@ -76,7 +76,7 @@ class ActiveRoomInfo
     /**
      * @return bool
      */
-    public function getIsRunning(): bool
+    public function isRunning(): bool
     {
         return $this->roomInfo->is_running;
     }
@@ -84,7 +84,7 @@ class ActiveRoomInfo
     /**
      * @return bool
      */
-    public function getIsActiveRecording(): bool
+    public function isActiveRecording(): bool
     {
         return $this->roomInfo->is_recording;
     }
@@ -92,7 +92,7 @@ class ActiveRoomInfo
     /**
      * @return bool
      */
-    public function getIsActiveRTMP(): bool
+    public function isActiveRTMP(): bool
     {
         return $this->roomInfo->is_active_rtmp;
     }
@@ -103,6 +103,22 @@ class ActiveRoomInfo
     public function getWebhookUrl(): string
     {
         return $this->roomInfo->webhook_url;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isBreakoutRoom(): bool
+    {
+        return $this->roomInfo->is_breakout_room;
+    }
+
+    /**
+     * @return string
+     */
+    public function getParentRoomId(): string
+    {
+        return $this->roomInfo->parent_room_id;
     }
 
     /**

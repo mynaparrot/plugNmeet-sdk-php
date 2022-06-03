@@ -26,48 +26,48 @@ namespace Mynaparrot\Plugnmeet\Parameters;
 /**
  *
  */
-class WaitingRoomFeatures
+class BreakoutRoomFeaturesParameters
 {
     /**
      * @var bool
      */
-    protected $isActive = false;
+    protected $isAllow = true;
     /**
-     * @var string
+     * @var int
      */
-    protected $waitingRoomMsg;
+    protected $allowedNumberRooms = 6;
 
     /**
      * @return bool
      */
-    public function isActive(): bool
+    public function isAllow(): bool
     {
-        return $this->isActive;
+        return $this->isAllow;
     }
 
     /**
-     * @param bool $isActive
+     * @param bool $isAllow
      */
-    public function setIsActive(bool $isActive): void
+    public function setIsAllow(bool $isAllow): void
     {
-        $this->isActive = $this->allowPolls = filter_var($isActive, FILTER_VALIDATE_BOOLEAN);
+        $this->isAllow = filter_var($isAllow, FILTER_VALIDATE_BOOLEAN);;
     }
 
     /**
-     * @return string
+     * @return int
      */
-    public function getWaitingRoomMsg(): string
+    public function getAllowedNumberRooms(): int
     {
-        return $this->waitingRoomMsg;
+        return $this->allowedNumberRooms;
     }
 
     /**
-     * @param string $waitingRoomMsg
+     * @param int $allowedNumberRooms
      */
-    public function setWaitingRoomMsg(string $waitingRoomMsg): void
+    public function setAllowedNumberRooms(int $allowedNumberRooms): void
     {
-        if (!empty($waitingRoomMsg)) {
-            $this->waitingRoomMsg = $waitingRoomMsg;
+        if ($allowedNumberRooms > 0) {
+            $this->allowedNumberRooms = $allowedNumberRooms;
         }
     }
 
@@ -77,12 +77,9 @@ class WaitingRoomFeatures
     public function buildBody()
     {
         $body = array(
-            "is_active" => $this->isActive,
+            "is_allow" => $this->isAllow(),
+            "allowed_number_rooms" => $this->allowedNumberRooms
         );
-
-        if (!empty($this->waitingRoomMsg)) {
-            $body["waiting_room_msg"] = $this->waitingRoomMsg;
-        }
 
         return $body;
     }

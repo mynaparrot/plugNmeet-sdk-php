@@ -21,6 +21,7 @@
  * SOFTWARE.
  */
 
+use Mynaparrot\Plugnmeet\Parameters\BreakoutRoomFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\ChatFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\CreateRoomParameters;
 use Mynaparrot\Plugnmeet\Parameters\DeleteRecordingParameters;
@@ -35,7 +36,7 @@ use Mynaparrot\Plugnmeet\Parameters\RecordingDownloadTokenParameters;
 use Mynaparrot\Plugnmeet\Parameters\RoomFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\RoomMetadataParameters;
 use Mynaparrot\Plugnmeet\Parameters\SharedNotePadFeaturesParameters;
-use Mynaparrot\Plugnmeet\Parameters\WaitingRoomFeatures;
+use Mynaparrot\Plugnmeet\Parameters\WaitingRoomFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\WhiteboardFeaturesParameters;
 use Mynaparrot\Plugnmeet\Responses\CreateRoomResponse;
 use Mynaparrot\Plugnmeet\Responses\DeleteRecordingResponse;
@@ -179,7 +180,7 @@ class plugNmeetConnect
 
         if (isset($roomMetadata['waiting_room_features'])) {
             $roomWaitingRoomFeatures = $roomMetadata['waiting_room_features'];
-            $waitingRoomFeatures = new WaitingRoomFeatures();
+            $waitingRoomFeatures = new WaitingRoomFeaturesParameters();
             if (isset($roomWaitingRoomFeatures['is_active'])) {
                 $waitingRoomFeatures->setIsActive($roomWaitingRoomFeatures['is_active']);
             }
@@ -189,6 +190,20 @@ class plugNmeetConnect
                 }
             }
             $features->setWaitingRoomFeatures($waitingRoomFeatures);
+        }
+
+        if (isset($roomMetadata['breakout_room_features'])) {
+            $roomBreakoutRoomFeatures = $roomMetadata['breakout_room_features'];
+            $breakoutRoomFeatures = new BreakoutRoomFeaturesParameters();
+            if (isset($roomBreakoutRoomFeatures['is_allow'])) {
+                $breakoutRoomFeatures->setIsAllow($roomBreakoutRoomFeatures['is_allow']);
+            }
+            if (isset($roomBreakoutRoomFeatures['allowed_number_rooms'])) {
+                if (!empty($roomBreakoutRoomFeatures['allowed_number_rooms'])) {
+                    $breakoutRoomFeatures->setAllowedNumberRooms($roomBreakoutRoomFeatures['allowed_number_rooms']);
+                }
+            }
+            $features->setBreakoutRoomFeatures($breakoutRoomFeatures);
         }
 
         $metadata = new RoomMetadataParameters();

@@ -87,9 +87,14 @@ class RoomFeaturesParameters
     protected $externalMediaPlayerFeatures;
 
     /**
-     * @var WaitingRoomFeatures
+     * @var WaitingRoomFeaturesParameters
      */
     protected $waitingRoomFeatures;
+
+    /**
+     * @var BreakoutRoomFeaturesParameters
+     */
+    protected $breakoutRoomFeatures;
 
     /**
      *
@@ -323,19 +328,35 @@ class RoomFeaturesParameters
     }
 
     /**
-     * @return WaitingRoomFeatures
+     * @return WaitingRoomFeaturesParameters
      */
-    public function getWaitingRoomFeatures(): WaitingRoomFeatures
+    public function getWaitingRoomFeatures(): WaitingRoomFeaturesParameters
     {
         return $this->waitingRoomFeatures;
     }
 
     /**
-     * @param WaitingRoomFeatures $waitingRoomFeatures
+     * @param WaitingRoomFeaturesParameters $waitingRoomFeatures
      */
-    public function setWaitingRoomFeatures(WaitingRoomFeatures $waitingRoomFeatures): void
+    public function setWaitingRoomFeatures(WaitingRoomFeaturesParameters $waitingRoomFeatures): void
     {
         $this->waitingRoomFeatures = $waitingRoomFeatures;
+    }
+
+    /**
+     * @return BreakoutRoomFeaturesParameters
+     */
+    public function getBreakoutRoomFeatures(): BreakoutRoomFeaturesParameters
+    {
+        return $this->breakoutRoomFeatures;
+    }
+
+    /**
+     * @param BreakoutRoomFeaturesParameters $breakoutRoomFeatures
+     */
+    public function setBreakoutRoomFeatures(BreakoutRoomFeaturesParameters $breakoutRoomFeatures): void
+    {
+        $this->breakoutRoomFeatures = $breakoutRoomFeatures;
     }
 
     /**
@@ -374,6 +395,10 @@ class RoomFeaturesParameters
 
         if ($this->waitingRoomFeatures !== null) {
             $body['waiting_room_features'] = $this->waitingRoomFeatures->buildBody();
+        }
+
+        if ($this->breakoutRoomFeatures !== null) {
+            $body['breakout_room_features'] = $this->breakoutRoomFeatures->buildBody();
         }
 
         return $body;
