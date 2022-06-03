@@ -1,6 +1,41 @@
 Search.appendIndex(
     [
                 {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\BreakoutRoomFeaturesParameters",
+            "name": "BreakoutRoomFeaturesParameters",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-BreakoutRoomFeaturesParameters.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\BreakoutRoomFeaturesParameters\u003A\u003A\u0024isAllow",
+            "name": "isAllow",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-BreakoutRoomFeaturesParameters.html#property_isAllow"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\BreakoutRoomFeaturesParameters\u003A\u003AsetIsAllow\u0028\u0029",
+            "name": "setIsAllow",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-BreakoutRoomFeaturesParameters.html#method_setIsAllow"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\BreakoutRoomFeaturesParameters\u003A\u003AgetAllowedNumberRooms\u0028\u0029",
+            "name": "getAllowedNumberRooms",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-BreakoutRoomFeaturesParameters.html#method_getAllowedNumberRooms"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\BreakoutRoomFeaturesParameters\u003A\u003AsetAllowedNumberRooms\u0028\u0029",
+            "name": "setAllowedNumberRooms",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-BreakoutRoomFeaturesParameters.html#method_setAllowedNumberRooms"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\BreakoutRoomFeaturesParameters\u003A\u003AbuildBody\u0028\u0029",
+            "name": "buildBody",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-BreakoutRoomFeaturesParameters.html#method_buildBody"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\BreakoutRoomFeaturesParameters\u003A\u003A\u0024allowedNumberRooms",
+            "name": "allowedNumberRooms",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-BreakoutRoomFeaturesParameters.html#property_allowedNumberRooms"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\ChatFeaturesParameters",
             "name": "ChatFeaturesParameters",
             "summary": "",
@@ -796,6 +831,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_setWaitingRoomFeatures"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AgetBreakoutRoomFeatures\u0028\u0029",
+            "name": "getBreakoutRoomFeatures",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_getBreakoutRoomFeatures"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AsetBreakoutRoomFeatures\u0028\u0029",
+            "name": "setBreakoutRoomFeatures",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_setBreakoutRoomFeatures"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AbuildBody\u0028\u0029",
             "name": "buildBody",
             "summary": "",
@@ -875,6 +920,11 @@ Search.appendIndex(
             "name": "waitingRoomFeatures",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#property_waitingRoomFeatures"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003A\u0024breakoutRoomFeatures",
+            "name": "breakoutRoomFeatures",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#property_breakoutRoomFeatures"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomMetadataParameters",
             "name": "RoomMetadataParameters",
@@ -1041,40 +1091,40 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-UserMetadataParameters.html#property_lockSettings"
         },                {
-            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\WaitingRoomFeatures",
-            "name": "WaitingRoomFeatures",
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\WaitingRoomFeaturesParameters",
+            "name": "WaitingRoomFeaturesParameters",
             "summary": "",
-            "url": "classes/Mynaparrot-Plugnmeet-Parameters-WaitingRoomFeatures.html"
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-WaitingRoomFeaturesParameters.html"
         },                {
-            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\WaitingRoomFeatures\u003A\u003A\u0024isActive",
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\WaitingRoomFeaturesParameters\u003A\u003A\u0024isActive",
             "name": "isActive",
             "summary": "",
-            "url": "classes/Mynaparrot-Plugnmeet-Parameters-WaitingRoomFeatures.html#property_isActive"
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-WaitingRoomFeaturesParameters.html#property_isActive"
         },                {
-            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\WaitingRoomFeatures\u003A\u003AsetIsActive\u0028\u0029",
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\WaitingRoomFeaturesParameters\u003A\u003AsetIsActive\u0028\u0029",
             "name": "setIsActive",
             "summary": "",
-            "url": "classes/Mynaparrot-Plugnmeet-Parameters-WaitingRoomFeatures.html#method_setIsActive"
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-WaitingRoomFeaturesParameters.html#method_setIsActive"
         },                {
-            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\WaitingRoomFeatures\u003A\u003AgetWaitingRoomMsg\u0028\u0029",
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\WaitingRoomFeaturesParameters\u003A\u003AgetWaitingRoomMsg\u0028\u0029",
             "name": "getWaitingRoomMsg",
             "summary": "",
-            "url": "classes/Mynaparrot-Plugnmeet-Parameters-WaitingRoomFeatures.html#method_getWaitingRoomMsg"
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-WaitingRoomFeaturesParameters.html#method_getWaitingRoomMsg"
         },                {
-            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\WaitingRoomFeatures\u003A\u003AsetWaitingRoomMsg\u0028\u0029",
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\WaitingRoomFeaturesParameters\u003A\u003AsetWaitingRoomMsg\u0028\u0029",
             "name": "setWaitingRoomMsg",
             "summary": "",
-            "url": "classes/Mynaparrot-Plugnmeet-Parameters-WaitingRoomFeatures.html#method_setWaitingRoomMsg"
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-WaitingRoomFeaturesParameters.html#method_setWaitingRoomMsg"
         },                {
-            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\WaitingRoomFeatures\u003A\u003AbuildBody\u0028\u0029",
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\WaitingRoomFeaturesParameters\u003A\u003AbuildBody\u0028\u0029",
             "name": "buildBody",
             "summary": "",
-            "url": "classes/Mynaparrot-Plugnmeet-Parameters-WaitingRoomFeatures.html#method_buildBody"
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-WaitingRoomFeaturesParameters.html#method_buildBody"
         },                {
-            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\WaitingRoomFeatures\u003A\u003A\u0024waitingRoomMsg",
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\WaitingRoomFeaturesParameters\u003A\u003A\u0024waitingRoomMsg",
             "name": "waitingRoomMsg",
             "summary": "",
-            "url": "classes/Mynaparrot-Plugnmeet-Parameters-WaitingRoomFeatures.html#property_waitingRoomMsg"
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-WaitingRoomFeaturesParameters.html#property_waitingRoomMsg"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\WhiteboardFeaturesParameters",
             "name": "WhiteboardFeaturesParameters",
@@ -1396,25 +1446,35 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getJoinedParticipants"
         },                {
-            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\ActiveRoomInfo\u003A\u003AgetIsRunning\u0028\u0029",
-            "name": "getIsRunning",
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\ActiveRoomInfo\u003A\u003AisRunning\u0028\u0029",
+            "name": "isRunning",
             "summary": "",
-            "url": "classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getIsRunning"
+            "url": "classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_isRunning"
         },                {
-            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\ActiveRoomInfo\u003A\u003AgetIsActiveRecording\u0028\u0029",
-            "name": "getIsActiveRecording",
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\ActiveRoomInfo\u003A\u003AisActiveRecording\u0028\u0029",
+            "name": "isActiveRecording",
             "summary": "",
-            "url": "classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getIsActiveRecording"
+            "url": "classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_isActiveRecording"
         },                {
-            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\ActiveRoomInfo\u003A\u003AgetIsActiveRTMP\u0028\u0029",
-            "name": "getIsActiveRTMP",
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\ActiveRoomInfo\u003A\u003AisActiveRTMP\u0028\u0029",
+            "name": "isActiveRTMP",
             "summary": "",
-            "url": "classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getIsActiveRTMP"
+            "url": "classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_isActiveRTMP"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\ActiveRoomInfo\u003A\u003AgetWebhookUrl\u0028\u0029",
             "name": "getWebhookUrl",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getWebhookUrl"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\ActiveRoomInfo\u003A\u003AisBreakoutRoom\u0028\u0029",
+            "name": "isBreakoutRoom",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_isBreakoutRoom"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\ActiveRoomInfo\u003A\u003AgetParentRoomId\u0028\u0029",
+            "name": "getParentRoomId",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getParentRoomId"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\ActiveRoomInfo\u003A\u003AgetCreationTime\u0028\u0029",
             "name": "getCreationTime",
