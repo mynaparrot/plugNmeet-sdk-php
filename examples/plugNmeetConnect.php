@@ -240,6 +240,9 @@ class plugNmeetConnect
             if (isset($defaultLocks['lock_chat_file_share'])) {
                 $lockSettings->setLockChatFileShare($defaultLocks['lock_chat_file_share']);
             }
+            if (isset($defaultLocks['lock_private_chat'])) {
+                $lockSettings->setLockPrivateChat($defaultLocks['lock_private_chat']);
+            }
 
             $metadata->setDefaultLockSettings($lockSettings);
         }

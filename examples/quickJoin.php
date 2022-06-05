@@ -82,6 +82,7 @@ $roomMetadata = array(
         "lock_chat" => false,
         "lock_chat_send_message" => false,
         "lock_chat_file_share" => false,
+        "lock_private_chat" => false // user can always send private message to moderator
     )
 );
 $isRoomActive = false;

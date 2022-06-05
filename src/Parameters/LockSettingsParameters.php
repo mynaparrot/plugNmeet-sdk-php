@@ -61,6 +61,10 @@ class LockSettingsParameters
      * @var bool
      */
     protected $lockChatFileShare;
+    /**
+     * @var bool
+     */
+    protected $lockPrivateChat;
 
     /**
      *
@@ -198,6 +202,22 @@ class LockSettingsParameters
     }
 
     /**
+     * @return bool
+     */
+    public function isLockPrivateChat(): bool
+    {
+        return $this->lockPrivateChat;
+    }
+
+    /**
+     * @param bool $lockPrivateChat
+     */
+    public function setLockPrivateChat(bool $lockPrivateChat): void
+    {
+        $this->lockPrivateChat = filter_var($lockPrivateChat, FILTER_VALIDATE_BOOLEAN);
+    }
+
+    /**
      * @return array
      */
     public function buildBody()
@@ -228,6 +248,9 @@ class LockSettingsParameters
         }
         if ($this->lockChatFileShare !== null) {
             $body["lock_chat_file_share"] = $this->lockChatFileShare;
+        }
+        if ($this->lockPrivateChat !== null) {
+            $body["lock_private_chat"] = $this->lockPrivateChat;
         }
 
         return $body;
