@@ -596,6 +596,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-LockSettingsParameters.html#method_setLockChatFileShare"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\LockSettingsParameters\u003A\u003AisLockPrivateChat\u0028\u0029",
+            "name": "isLockPrivateChat",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-LockSettingsParameters.html#method_isLockPrivateChat"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\LockSettingsParameters\u003A\u003AsetLockPrivateChat\u0028\u0029",
+            "name": "setLockPrivateChat",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-LockSettingsParameters.html#method_setLockPrivateChat"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\LockSettingsParameters\u003A\u003AbuildBody\u0028\u0029",
             "name": "buildBody",
             "summary": "",
@@ -640,6 +650,11 @@ Search.appendIndex(
             "name": "lockChatFileShare",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-LockSettingsParameters.html#property_lockChatFileShare"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\LockSettingsParameters\u003A\u003A\u0024lockPrivateChat",
+            "name": "lockPrivateChat",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-LockSettingsParameters.html#property_lockPrivateChat"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RecordingDownloadTokenParameters",
             "name": "RecordingDownloadTokenParameters",
