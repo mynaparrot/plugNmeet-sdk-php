@@ -74,6 +74,14 @@ class plugNmeetConnect
     }
 
     /**
+     * @return PlugNmeet
+     */
+    public function getPlugnmeet(): PlugNmeet
+    {
+        return $this->plugnmeet;
+    }
+
+    /**
      * @return string
      */
     public function getUUID()

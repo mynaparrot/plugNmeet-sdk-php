@@ -183,8 +183,7 @@ class PlugNmeet
         $output = $this->sendRequest("/recording/getDownloadToken", $body);
         return new RecordingDownloadTokenResponse($output);
     }
-
-
+    
     /**
      * @param array $payload
      * @param int $validity in seconds
