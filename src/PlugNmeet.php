@@ -198,7 +198,7 @@ class PlugNmeet
         $payload['nbf'] = time();
         $payload['exp'] = time() + $validity;
 
-        return JWT::encode($payload, $this->apiSecret, 'HS256', null, $head);
+        return JWT::encode($payload, $this->apiSecret, $algo, null, $head);
     }
 
     /**
