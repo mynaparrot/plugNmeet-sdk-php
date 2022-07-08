@@ -73,6 +73,9 @@ $roomMetadata = array(
         "is_allow" => true,
         "allowed_number_rooms" => 2
     ),
+    "display_external_link_features" => array(
+        "is_allow" => true,
+    ),
     "default_lock_settings" => array(
         "lock_microphone" => false,
         "lock_webcam" => false,

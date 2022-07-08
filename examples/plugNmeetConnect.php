@@ -25,6 +25,7 @@ use Mynaparrot\Plugnmeet\Parameters\BreakoutRoomFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\ChatFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\CreateRoomParameters;
 use Mynaparrot\Plugnmeet\Parameters\DeleteRecordingParameters;
+use Mynaparrot\Plugnmeet\Parameters\DisplayExternalLinkFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\EndRoomParameters;
 use Mynaparrot\Plugnmeet\Parameters\ExternalMediaPlayerFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\FetchRecordingsParameters;
@@ -212,6 +213,15 @@ class plugNmeetConnect
                 }
             }
             $features->setBreakoutRoomFeatures($breakoutRoomFeatures);
+        }
+
+        if (isset($roomMetadata['display_external_link_features'])) {
+            $roomDisplayExternalLinkFeatures = $roomMetadata['display_external_link_features'];
+            $displayExternalLinkFeatures = new DisplayExternalLinkFeaturesParameters();
+            if (isset($roomDisplayExternalLinkFeatures['is_allow'])) {
+                $displayExternalLinkFeatures->setIsAllow($roomDisplayExternalLinkFeatures['is_allow']);
+            }
+            $features->setDisplayExternalLinkFeatures($displayExternalLinkFeatures);
         }
 
         $metadata = new RoomMetadataParameters();

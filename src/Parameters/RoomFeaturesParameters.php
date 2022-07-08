@@ -97,6 +97,11 @@ class RoomFeaturesParameters
     protected $breakoutRoomFeatures;
 
     /**
+     * @var DisplayExternalLinkFeaturesParameters
+     */
+    protected $displayExternalLinkFeatures;
+
+    /**
      *
      */
     public function __construct()
@@ -360,6 +365,22 @@ class RoomFeaturesParameters
     }
 
     /**
+     * @return DisplayExternalLinkFeaturesParameters
+     */
+    public function getDisplayExternalLinkFeatures(): DisplayExternalLinkFeaturesParameters
+    {
+        return $this->displayExternalLinkFeatures;
+    }
+
+    /**
+     * @param DisplayExternalLinkFeaturesParameters $displayExternalLinkFeatures
+     */
+    public function setDisplayExternalLinkFeatures(DisplayExternalLinkFeaturesParameters $displayExternalLinkFeatures): void
+    {
+        $this->displayExternalLinkFeatures = $displayExternalLinkFeatures;
+    }
+
+    /**
      * @return array
      */
     public function buildBody()
@@ -399,6 +420,10 @@ class RoomFeaturesParameters
 
         if ($this->breakoutRoomFeatures !== null) {
             $body['breakout_room_features'] = $this->breakoutRoomFeatures->buildBody();
+        }
+
+        if ($this->displayExternalLinkFeatures !== null) {
+            $body['display_external_link_features'] = $this->displayExternalLinkFeatures->buildBody();
         }
 
         return $body;
