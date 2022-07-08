@@ -216,6 +216,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-DeleteRecordingParameters.html#property_recordId"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\DisplayExternalLinkFeaturesParameters",
+            "name": "DisplayExternalLinkFeaturesParameters",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-DisplayExternalLinkFeaturesParameters.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\DisplayExternalLinkFeaturesParameters\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-DisplayExternalLinkFeaturesParameters.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\DisplayExternalLinkFeaturesParameters\u003A\u003A\u0024isAllow",
+            "name": "isAllow",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-DisplayExternalLinkFeaturesParameters.html#property_isAllow"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\DisplayExternalLinkFeaturesParameters\u003A\u003AsetIsAllow\u0028\u0029",
+            "name": "setIsAllow",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-DisplayExternalLinkFeaturesParameters.html#method_setIsAllow"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\DisplayExternalLinkFeaturesParameters\u003A\u003AbuildBody\u0028\u0029",
+            "name": "buildBody",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-DisplayExternalLinkFeaturesParameters.html#method_buildBody"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\EndRoomParameters",
             "name": "EndRoomParameters",
             "summary": "",
@@ -856,6 +881,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_setBreakoutRoomFeatures"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AgetDisplayExternalLinkFeatures\u0028\u0029",
+            "name": "getDisplayExternalLinkFeatures",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_getDisplayExternalLinkFeatures"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AsetDisplayExternalLinkFeatures\u0028\u0029",
+            "name": "setDisplayExternalLinkFeatures",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_setDisplayExternalLinkFeatures"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AbuildBody\u0028\u0029",
             "name": "buildBody",
             "summary": "",
@@ -940,6 +975,11 @@ Search.appendIndex(
             "name": "breakoutRoomFeatures",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#property_breakoutRoomFeatures"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003A\u0024displayExternalLinkFeatures",
+            "name": "displayExternalLinkFeatures",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#property_displayExternalLinkFeatures"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomMetadataParameters",
             "name": "RoomMetadataParameters",
