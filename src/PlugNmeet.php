@@ -33,6 +33,7 @@ use Mynaparrot\Plugnmeet\Parameters\GenerateJoinTokenParameters;
 use Mynaparrot\Plugnmeet\Parameters\RecordingDownloadTokenParameters;
 use Mynaparrot\Plugnmeet\Parameters\GetActiveRoomInfoParameters;
 use Mynaparrot\Plugnmeet\Parameters\IsRoomActiveParameters;
+use Mynaparrot\Plugnmeet\Responses\ClientFilesResponses;
 use Mynaparrot\Plugnmeet\Responses\CreateRoomResponse;
 use Mynaparrot\Plugnmeet\Responses\DeleteRecordingResponse;
 use Mynaparrot\Plugnmeet\Responses\EndRoomResponse;
@@ -47,8 +48,7 @@ use Ramsey\Uuid\Uuid;
 /**
  *
  */
-class PlugNmeet
-{
+class PlugNmeet {
     /**
      * @var string
      */
@@ -71,8 +71,7 @@ class PlugNmeet
      * @param $apiKey plugNmeet API_Key
      * @param $apiSecret plugNmeet API_Secret
      */
-    public function __construct($serverUrl, $apiKey, $apiSecret)
-    {
+    public function __construct($serverUrl, $apiKey, $apiSecret) {
         $this->serverUrl = $serverUrl;
         $this->apiKey = $apiKey;
         $this->apiSecret = $apiSecret;
@@ -83,8 +82,7 @@ class PlugNmeet
      * @param CreateRoomParameters $createRoomParameters
      * @return CreateRoomResponse
      */
-    public function createRoom(CreateRoomParameters $createRoomParameters): CreateRoomResponse
-    {
+    public function createRoom(CreateRoomParameters $createRoomParameters): CreateRoomResponse {
         $body = $createRoomParameters->buildBody();
         $output = $this->sendRequest("/room/create", $body);
         return new CreateRoomResponse($output);
@@ -95,8 +93,7 @@ class PlugNmeet
      * @param GenerateJoinTokenParameters $generateJoinTokenParameters
      * @return GenerateJoinTokenResponse
      */
-    public function getJoinToken(GenerateJoinTokenParameters $generateJoinTokenParameters): GenerateJoinTokenResponse
-    {
+    public function getJoinToken(GenerateJoinTokenParameters $generateJoinTokenParameters): GenerateJoinTokenResponse {
         $body = $generateJoinTokenParameters->buildBody();
         $output = $this->sendRequest("/room/getJoinToken", $body);
         return new GenerateJoinTokenResponse($output);
@@ -107,8 +104,7 @@ class PlugNmeet
      * @param IsRoomActiveParameters $isRoomActiveParameters
      * @return IsRoomActiveResponse
      */
-    public function isRoomActive(IsRoomActiveParameters $isRoomActiveParameters): IsRoomActiveResponse
-    {
+    public function isRoomActive(IsRoomActiveParameters $isRoomActiveParameters): IsRoomActiveResponse {
         $body = $isRoomActiveParameters->buildBody();
         $output = $this->sendRequest("/room/isRoomActive", $body);
         return new IsRoomActiveResponse($output);
@@ -119,8 +115,7 @@ class PlugNmeet
      * @param GetActiveRoomInfoParameters $getActiveRoomInfoParameters
      * @return GetActiveRoomInfoResponse
      */
-    public function getActiveRoomInfo(GetActiveRoomInfoParameters $getActiveRoomInfoParameters): GetActiveRoomInfoResponse
-    {
+    public function getActiveRoomInfo(GetActiveRoomInfoParameters $getActiveRoomInfoParameters): GetActiveRoomInfoResponse {
         $body = $getActiveRoomInfoParameters->buildBody();
         $output = $this->sendRequest("/room/getActiveRoomInfo", $body);
         return new GetActiveRoomInfoResponse($output);
@@ -130,8 +125,7 @@ class PlugNmeet
      * Get all active rooms
      * @return GetActiveRoomsInfoResponse
      */
-    public function getActiveRoomsInfo(): GetActiveRoomsInfoResponse
-    {
+    public function getActiveRoomsInfo(): GetActiveRoomsInfoResponse {
         $output = $this->sendRequest("/room/getActiveRoomsInfo", []);
         return new GetActiveRoomsInfoResponse($output);
     }
@@ -141,8 +135,7 @@ class PlugNmeet
      * @param EndRoomParameters $endRoomParameters
      * @return EndRoomResponse
      */
-    public function endRoom(EndRoomParameters $endRoomParameters)
-    {
+    public function endRoom(EndRoomParameters $endRoomParameters) {
         $body = $endRoomParameters->buildBody();
         $output = $this->sendRequest("/room/endRoom", $body);
         return new EndRoomResponse($output);
@@ -153,8 +146,7 @@ class PlugNmeet
      * @param FetchRecordingsParameters $fetchRecordingsParameters
      * @return FetchRecordingsResponse
      */
-    public function fetchRecordings(FetchRecordingsParameters $fetchRecordingsParameters): FetchRecordingsResponse
-    {
+    public function fetchRecordings(FetchRecordingsParameters $fetchRecordingsParameters): FetchRecordingsResponse {
         $body = $fetchRecordingsParameters->buildBody();
         $output = $this->sendRequest("/recording/fetch", $body);
         return new FetchRecordingsResponse($output);
@@ -165,8 +157,7 @@ class PlugNmeet
      * @param DeleteRecordingParameters $deleteRecordingParameters
      * @return DeleteRecordingResponse
      */
-    public function deleteRecordings(DeleteRecordingParameters $deleteRecordingParameters): DeleteRecordingResponse
-    {
+    public function deleteRecordings(DeleteRecordingParameters $deleteRecordingParameters): DeleteRecordingResponse {
         $body = $deleteRecordingParameters->buildBody();
         $output = $this->sendRequest("/recording/delete", $body);
         return new DeleteRecordingResponse($output);
@@ -177,13 +168,20 @@ class PlugNmeet
      * @param RecordingDownloadTokenParameters $recordingDownloadTokenParameters
      * @return RecordingDownloadTokenResponse
      */
-    public function getRecordingDownloadToken(RecordingDownloadTokenParameters $recordingDownloadTokenParameters): RecordingDownloadTokenResponse
-    {
+    public function getRecordingDownloadToken(RecordingDownloadTokenParameters $recordingDownloadTokenParameters): RecordingDownloadTokenResponse {
         $body = $recordingDownloadTokenParameters->buildBody();
         $output = $this->sendRequest("/recording/getDownloadToken", $body);
         return new RecordingDownloadTokenResponse($output);
     }
-    
+
+    /**
+     * @return ClientFilesResponses
+     */
+    public function getClientFiles() {
+        $output = $this->sendRequest("/getClientFiles", []);
+        return new ClientFilesResponses($output);
+    }
+
     /**
      * @param array $payload
      * @param int $validity in seconds
@@ -191,8 +189,7 @@ class PlugNmeet
      * @param array $head
      * @return string
      */
-    public function getJWTencodedData(array $payload, int $validity, $algo = "HS256", array $head = [])
-    {
+    public function getJWTencodedData(array $payload, int $validity, $algo = "HS256", array $head = []) {
         $payload['iss'] = $this->apiKey;
         $payload['nbf'] = time();
         $payload['exp'] = time() + $validity;
@@ -205,8 +202,7 @@ class PlugNmeet
      * @param string $algo
      * @return object
      */
-    public function decodeJWTData(string $raw, $algo = "HS256")
-    {
+    public function decodeJWTData(string $raw, $algo = "HS256") {
         return JWT::decode($raw, new Key($this->apiSecret, $algo));
     }
 
@@ -214,8 +210,7 @@ class PlugNmeet
      * Generate UUID random string
      * @return string
      */
-    public function getUUID()
-    {
+    public function getUUID() {
         $uuid = Uuid::uuid4();
         return $uuid->toString();
     }
@@ -225,8 +220,7 @@ class PlugNmeet
      * @param array $body
      * @return object
      */
-    protected function sendRequest($path, array $body)
-    {
+    protected function sendRequest($path, array $body) {
         $output = new \stdClass();
         $output->status = false;
 
