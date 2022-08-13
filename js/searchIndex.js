@@ -1266,6 +1266,11 @@ Search.appendIndex(
             "summary": "Generate\u0020token\u0020to\u0020download\u0020recording",
             "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getRecordingDownloadToken"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AgetClientFiles\u0028\u0029",
+            "name": "getClientFiles",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getClientFiles"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AgetJWTencodedData\u0028\u0029",
             "name": "getJWTencodedData",
             "summary": "",
@@ -1335,6 +1340,21 @@ Search.appendIndex(
             "name": "rawResponse",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Responses-BaseResponse.html#property_rawResponse"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\ClientFilesResponses",
+            "name": "ClientFilesResponses",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Responses-ClientFilesResponses.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\ClientFilesResponses\u003A\u003AgetCSSFiles\u0028\u0029",
+            "name": "getCSSFiles",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Responses-ClientFilesResponses.html#method_getCSSFiles"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\ClientFilesResponses\u003A\u003AgetJSFiles\u0028\u0029",
+            "name": "getJSFiles",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Responses-ClientFilesResponses.html#method_getJSFiles"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\CreateRoomResponse",
             "name": "CreateRoomResponse",
