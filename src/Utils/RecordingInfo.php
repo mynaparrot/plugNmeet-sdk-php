@@ -98,4 +98,3 @@ class RecordingInfo
         return $this->recording->room_creation_time;
     }
 }
-

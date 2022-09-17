@@ -1,4 +1,5 @@
 <?php
+
 /*
  * Copyright (c) 2022 MynaParrot
  *
@@ -38,4 +39,3 @@ $recordings = $connect->getRecordings(array('room02'));
 echo "<pre>";
 echo "Total: " . $recordings->getTotalRecordings() . "\n";
 print_r($recordings->getRecordings());
-
