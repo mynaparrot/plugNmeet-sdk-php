@@ -1311,6 +1311,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#property_defaultPath"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003A\u0024algo",
+            "name": "algo",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#property_algo"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\BaseResponse",
             "name": "BaseResponse",
             "summary": "",
