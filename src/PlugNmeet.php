@@ -71,7 +71,7 @@ class PlugNmeet
     /**
      * @var string
      */
-    protected string $algo = "sha256";
+    protected $algo = "sha256";
 
     /**
      * @param $serverUrl plugNmeet server URL
@@ -130,8 +130,9 @@ class PlugNmeet
      * @param GetActiveRoomInfoParameters $getActiveRoomInfoParameters
      * @return GetActiveRoomInfoResponse
      */
-    public function getActiveRoomInfo(GetActiveRoomInfoParameters $getActiveRoomInfoParameters): GetActiveRoomInfoResponse
-    {
+    public function getActiveRoomInfo(
+        GetActiveRoomInfoParameters $getActiveRoomInfoParameters
+    ): GetActiveRoomInfoResponse {
         $body = $getActiveRoomInfoParameters->buildBody();
         $output = $this->sendRequest("/room/getActiveRoomInfo", $body);
         return new GetActiveRoomInfoResponse($output);
@@ -193,8 +194,9 @@ class PlugNmeet
      * @param RecordingDownloadTokenParameters $recordingDownloadTokenParameters
      * @return RecordingDownloadTokenResponse
      */
-    public function getRecordingDownloadToken(RecordingDownloadTokenParameters $recordingDownloadTokenParameters): RecordingDownloadTokenResponse
-    {
+    public function getRecordingDownloadToken(
+        RecordingDownloadTokenParameters $recordingDownloadTokenParameters
+    ): RecordingDownloadTokenResponse {
         $body = $recordingDownloadTokenParameters->buildBody();
         $output = $this->sendRequest("/recording/getDownloadToken", $body);
         return new RecordingDownloadTokenResponse($output);

@@ -32,7 +32,7 @@ class ActiveRoomInfo
     /**
      * @var object
      */
-    protected object $roomInfo;
+    protected $roomInfo;
 
     /**
      * @param object $roomInfo

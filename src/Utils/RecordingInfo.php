@@ -32,7 +32,7 @@ class RecordingInfo
     /**
      * @var object
      */
-    protected object $recording;
+    protected $recording;
 
     /**
      * @param object $recording

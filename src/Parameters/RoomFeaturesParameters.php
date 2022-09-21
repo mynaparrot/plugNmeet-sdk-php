@@ -328,8 +328,9 @@ class RoomFeaturesParameters
     /**
      * @param ExternalMediaPlayerFeaturesParameters $externalMediaPlayerFeatures
      */
-    public function setExternalMediaPlayerFeatures(ExternalMediaPlayerFeaturesParameters $externalMediaPlayerFeatures): void
-    {
+    public function setExternalMediaPlayerFeatures(
+        ExternalMediaPlayerFeaturesParameters $externalMediaPlayerFeatures
+    ): void {
         $this->externalMediaPlayerFeatures = $externalMediaPlayerFeatures;
     }
 
@@ -376,8 +377,9 @@ class RoomFeaturesParameters
     /**
      * @param DisplayExternalLinkFeaturesParameters $displayExternalLinkFeatures
      */
-    public function setDisplayExternalLinkFeatures(DisplayExternalLinkFeaturesParameters $displayExternalLinkFeatures): void
-    {
+    public function setDisplayExternalLinkFeatures(
+        DisplayExternalLinkFeaturesParameters $displayExternalLinkFeatures
+    ): void {
         $this->displayExternalLinkFeatures = $displayExternalLinkFeatures;
     }
 

@@ -32,7 +32,7 @@ class ParticipantInfo
     /**
      * @var object
      */
-    protected object $participantInfo;
+    protected $participantInfo;
 
     /**
      * @param object $participantInfo
