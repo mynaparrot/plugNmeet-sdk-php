@@ -23,3 +23,5 @@ jobs:
         with:
           path: .
           options: --exclude=vendor
+      - name: phpcs checker
+        run: ./vendor/bin/phpcs -q --report=checkstyle --standard=PSR12 src
