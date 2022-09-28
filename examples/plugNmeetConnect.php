@@ -347,7 +347,7 @@ class plugNmeetConnect
     }
 
     /**
-     * @param $recordingId
+     * @param  $recordingId
      * @return mixed|RecordingDownloadTokenResponse
      */
     public function getRecordingDownloadLink($recordingId)
@@ -359,7 +359,7 @@ class plugNmeetConnect
     }
 
     /**
-     * @param $recordingId
+     * @param  $recordingId
      * @return DeleteRecordingResponse
      */
     public function deleteRecording($recordingId)
