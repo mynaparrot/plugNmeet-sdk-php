@@ -36,7 +36,7 @@ class FetchRecordingsResponse extends BaseResponse
      */
     public function getTotalRecordings(): int
     {
-        if (!isset($this->rawResponse->result)) {
+        if (!isset($this->rawResponse->result->total_recordings)) {
             return 0;
         }
         return $this->rawResponse->result->total_recordings;
@@ -47,7 +47,7 @@ class FetchRecordingsResponse extends BaseResponse
      */
     public function getFrom(): int
     {
-        if (!isset($this->rawResponse->result)) {
+        if (!isset($this->rawResponse->result->from)) {
             return 0;
         }
         return $this->rawResponse->result->from;
@@ -58,7 +58,7 @@ class FetchRecordingsResponse extends BaseResponse
      */
     public function getLimit(): int
     {
-        if (!isset($this->rawResponse->result)) {
+        if (!isset($this->rawResponse->result->limit)) {
             return 20;
         }
         return $this->rawResponse->result->limit;
@@ -69,7 +69,7 @@ class FetchRecordingsResponse extends BaseResponse
      */
     public function getOrderBy(): string
     {
-        if (!isset($this->rawResponse->result)) {
+        if (!isset($this->rawResponse->result->order_by)) {
             return "DESC";
         }
         return $this->rawResponse->result->order_by;
