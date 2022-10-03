@@ -76,7 +76,7 @@ class FetchRecordingsResponse extends BaseResponse
     }
 
     /**
-     * @return RecordingInfo []
+     * @return RecordingInfo[]
      */
     public function getRecordings(): array
     {

@@ -30,7 +30,7 @@ namespace Mynaparrot\Plugnmeet\Responses;
 class ClientFilesResponses extends BaseResponse
 {
     /**
-     * @return array|null
+     * @return array<string>|null
      */
     public function getCSSFiles(): ?array
     {
@@ -38,7 +38,7 @@ class ClientFilesResponses extends BaseResponse
     }
 
     /**
-     * @return array|null
+     * @return array<string>|null
      */
     public function getJSFiles(): ?array
     {

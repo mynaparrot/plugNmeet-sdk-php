@@ -74,7 +74,6 @@ class ActiveRoomInfo
         if (isset($this->roomInfo->joined_participants)) {
             return $this->roomInfo->joined_participants;
         }
-
         return 0;
     }
 

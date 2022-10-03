@@ -44,7 +44,7 @@ class GetActiveRoomInfoResponse extends BaseResponse
     }
 
     /**
-     * @return ParticipantInfo []
+     * @return ParticipantInfo[]
      */
     public function getParticipantsInfo(): array
     {

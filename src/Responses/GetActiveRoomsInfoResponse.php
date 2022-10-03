@@ -24,13 +24,15 @@
 
 namespace Mynaparrot\Plugnmeet\Responses;
 
+use stdClass;
+
 /**
  *
  */
 class GetActiveRoomsInfoResponse extends BaseResponse
 {
     /**
-     * @return GetActiveRoomInfoResponse []
+     * @return GetActiveRoomInfoResponse[]
      */
     public function getRooms(): array
     {
@@ -41,10 +43,10 @@ class GetActiveRoomsInfoResponse extends BaseResponse
 
         if (count($this->rawResponse->rooms) > 0) {
             foreach ($this->rawResponse->rooms as $room) {
-                $response = new \stdClass();
+                $response = new stdClass();
                 $response->room = $room;
 
-                $output = new \stdClass();
+                $output = new stdClass();
                 $output->status = true;
                 $output->response = $response;
 
