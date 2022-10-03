@@ -33,11 +33,14 @@ use Mynaparrot\Plugnmeet\Utils\ParticipantInfo;
 class GetActiveRoomInfoResponse extends BaseResponse
 {
     /**
-     * @return ActiveRoomInfo
+     * @return ActiveRoomInfo|null
      */
-    public function getActiveRoomInfo(): ActiveRoomInfo
+    public function getActiveRoomInfo(): ?ActiveRoomInfo
     {
-        return new ActiveRoomInfo($this->rawResponse->room->room_info);
+        if (isset($this->rawResponse->room->room_info)) {
+            return new ActiveRoomInfo($this->rawResponse->room->room_info);
+        }
+        return null;
     }
 
     /**
@@ -47,7 +50,10 @@ class GetActiveRoomInfoResponse extends BaseResponse
     {
         $participants = [];
 
-        if (count($this->rawResponse->room->participants_info) > 0) {
+        if (
+            isset($this->rawResponse->room->participants_info) &&
+            count($this->rawResponse->room->participants_info) > 0
+        ) {
             foreach ($this->rawResponse->room->participants_info as $participant) {
                 $participants[] = new ParticipantInfo($participant);
             }
