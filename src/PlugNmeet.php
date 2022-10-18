@@ -24,6 +24,7 @@
 
 namespace Mynaparrot\Plugnmeet;
 
+use Exception;
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 use Mynaparrot\Plugnmeet\Parameters\CreateRoomParameters;
@@ -31,9 +32,9 @@ use Mynaparrot\Plugnmeet\Parameters\DeleteRecordingParameters;
 use Mynaparrot\Plugnmeet\Parameters\EndRoomParameters;
 use Mynaparrot\Plugnmeet\Parameters\FetchRecordingsParameters;
 use Mynaparrot\Plugnmeet\Parameters\GenerateJoinTokenParameters;
-use Mynaparrot\Plugnmeet\Parameters\RecordingDownloadTokenParameters;
 use Mynaparrot\Plugnmeet\Parameters\GetActiveRoomInfoParameters;
 use Mynaparrot\Plugnmeet\Parameters\IsRoomActiveParameters;
+use Mynaparrot\Plugnmeet\Parameters\RecordingDownloadTokenParameters;
 use Mynaparrot\Plugnmeet\Responses\ClientFilesResponses;
 use Mynaparrot\Plugnmeet\Responses\CreateRoomResponse;
 use Mynaparrot\Plugnmeet\Responses\DeleteRecordingResponse;
@@ -45,6 +46,7 @@ use Mynaparrot\Plugnmeet\Responses\GetActiveRoomsInfoResponse;
 use Mynaparrot\Plugnmeet\Responses\IsRoomActiveResponse;
 use Mynaparrot\Plugnmeet\Responses\RecordingDownloadTokenResponse;
 use Ramsey\Uuid\Uuid;
+use stdClass;
 
 /**
  *
@@ -255,7 +257,7 @@ class PlugNmeet
      */
     protected function sendRequest($path, array $body)
     {
-        $output = new \stdClass();
+        $output = new stdClass();
         $output->status = false;
 
         $fields = json_encode($body);
@@ -281,16 +283,20 @@ class PlugNmeet
             $result = curl_exec($ch);
             $error = curl_error($ch);
             $errno = curl_errno($ch);
+            $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
             curl_close($ch);
 
             if (0 !== $errno) {
                 $output->response = "Error: " . $error;
                 return $output;
+            } elseif ((int)$httpCode !== 200) {
+                $output->response = "Error HTTP response code: " . $httpCode;
+                return $output;
             }
 
             $output->status = true;
             $output->response = json_decode($result);
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             $output->response = "Exception: " . $e->getMessage();
         }
 
