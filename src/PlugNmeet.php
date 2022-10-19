@@ -286,16 +286,25 @@ class PlugNmeet
             $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
             curl_close($ch);
 
+            $response = "";
+            if (!empty($result)) {
+                $response = json_decode($result);
+            }
+
             if (0 !== $errno) {
                 $output->response = "Error: " . $error;
                 return $output;
             } elseif ((int)$httpCode !== 200) {
-                $output->response = "Error HTTP response code: " . $httpCode;
+                if (isset($response->msg)) {
+                    $output->response = $response->msg;
+                } else {
+                    $output->response = "HTTP response error code: " . $httpCode;
+                }
                 return $output;
             }
 
             $output->status = true;
-            $output->response = json_decode($result);
+            $output->response = $response;
         } catch (Exception $e) {
             $output->response = "Exception: " . $e->getMessage();
         }
