@@ -35,6 +35,7 @@ use Mynaparrot\Plugnmeet\Parameters\GetActiveRoomInfoParameters;
 use Mynaparrot\Plugnmeet\Parameters\IsRoomActiveParameters;
 use Mynaparrot\Plugnmeet\Parameters\LockSettingsParameters;
 use Mynaparrot\Plugnmeet\Parameters\RecordingDownloadTokenParameters;
+use Mynaparrot\Plugnmeet\Parameters\RecordingFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\RoomFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\RoomMetadataParameters;
 use Mynaparrot\Plugnmeet\Parameters\SharedNotePadFeaturesParameters;
@@ -126,9 +127,6 @@ class plugNmeetConnect
         if (isset($roomFeatures['allow_screen_share'])) {
             $features->setAllowScreenShare($roomFeatures['allow_screen_share']);
         }
-        if (isset($roomFeatures['allow_recording'])) {
-            $features->setAllowRecording($roomFeatures['allow_recording']);
-        }
         if (isset($roomFeatures['allow_rtmp'])) {
             $features->setAllowRTMP($roomFeatures['allow_rtmp']);
         }
@@ -148,6 +146,24 @@ class plugNmeetConnect
             if ($roomFeatures['room_duration'] > 0) {
                 $features->setRoomDuration($roomFeatures['room_duration']);
             }
+        }
+
+        if (isset($roomMetadata['recording_features'])) {
+            $roomRecordingFeatures = $roomMetadata['recording_features'];
+            $recordingFeatures = new RecordingFeaturesParameters();
+            if (isset($roomRecordingFeatures['is_allow'])) {
+                $recordingFeatures->setIsAllow($roomRecordingFeatures['is_allow']);
+            }
+            if (isset($roomRecordingFeatures['is_allow_cloud'])) {
+                $recordingFeatures->setIsAllowCloud($roomRecordingFeatures['is_allow_cloud']);
+            }
+            if (isset($roomRecordingFeatures['is_allow_local'])) {
+                $recordingFeatures->setIsAllowLocal($roomRecordingFeatures['is_allow_local']);
+            }
+            if (isset($roomRecordingFeatures['enable_auto_cloud_recording'])) {
+                $recordingFeatures->setEnableAutoCloudRecording($roomRecordingFeatures['enable_auto_cloud_recording']);
+            }
+            $features->setRecordingFeatures($recordingFeatures);
         }
 
         if (isset($roomMetadata['chat_features'])) {
