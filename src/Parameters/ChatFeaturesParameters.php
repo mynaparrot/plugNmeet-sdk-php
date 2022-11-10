@@ -124,7 +124,7 @@ class ChatFeaturesParameters
     {
         $body = array(
             "allow_chat" => $this->isAllowChat(),
-            "allow_file_upload" => $this->isAllowChat()
+            "allow_file_upload" => $this->isAllowFileUpload()
         );
 
         if (!empty($this->allowedFileTypes)) {
