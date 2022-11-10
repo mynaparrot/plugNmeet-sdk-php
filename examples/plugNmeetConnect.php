@@ -316,7 +316,7 @@ class plugNmeetConnect
         $generateJoinTokenParameters->setUserId($userId);
         $generateJoinTokenParameters->setIsAdmin($isAdmin);
         $generateJoinTokenParameters->setIsHidden($isHidden);
-        if (isset($userMetadata)) {
+        if ($userMetadata !== null) {
             $generateJoinTokenParameters->setUserMetadata($userMetadata);
         }
 
