@@ -123,19 +123,19 @@ class CreateRoomParameters
     public function buildBody()
     {
         $body = array(
-            "room_id" => $this->roomId,
+            "room_id" => $this->getRoomId(),
         );
 
         if ($this->maxParticipants > 0) {
-            $body['max_participants'] = $this->maxParticipants;
+            $body['max_participants'] = $this->getMaxParticipants();
         }
 
         if ($this->emptyTimeout > 0) {
-            $body['empty_timeout'] = $this->emptyTimeout;
+            $body['empty_timeout'] = $this->getEmptyTimeout();
         }
 
         if ($this->roomMetadata !== null) {
-            $body['metadata'] = $this->roomMetadata->buildBody();
+            $body['metadata'] = $this->getRoomMetadata()->buildBody();
         }
 
         return $body;

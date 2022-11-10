@@ -79,7 +79,7 @@ class BreakoutRoomFeaturesParameters
     {
         $body = array(
             "is_allow" => $this->isAllow(),
-            "allowed_number_rooms" => $this->allowedNumberRooms
+            "allowed_number_rooms" => $this->getAllowedNumberRooms()
         );
 
         return $body;

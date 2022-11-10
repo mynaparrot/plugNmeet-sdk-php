@@ -123,16 +123,16 @@ class ChatFeaturesParameters
     public function buildBody()
     {
         $body = array(
-            "allow_chat" => $this->allowChat,
-            "allow_file_upload" => $this->allowFileUpload
+            "allow_chat" => $this->isAllowChat(),
+            "allow_file_upload" => $this->isAllowChat()
         );
 
         if (!empty($this->allowedFileTypes)) {
-            $body['allowed_file_types'] = $this->allowedFileTypes;
+            $body['allowed_file_types'] = $this->getAllowedFileTypes();
         }
 
         if ($this->maxFileSize > 0) {
-            $body['max_file_size'] = $this->maxFileSize;
+            $body['max_file_size'] = $this->getMaxFileSize();
         }
 
         return $body;

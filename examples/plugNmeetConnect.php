@@ -113,7 +113,7 @@ class plugNmeetConnect
      * @param array $roomMetadata
      * @return CreateRoomResponse
      */
-    public function createRoom(string $roomId, string $roomTitle, string $welcomeMessage, int $max_participants, string $webHookUrl, array $roomMetadata): CreateRoomResponse
+    public function createRoom(string $roomId, string $roomTitle, string $welcomeMessage, int $max_participants, string $webHookUrl, array $roomMetadata, int $empty_timeout = 0): CreateRoomResponse
     {
         $roomFeatures = $roomMetadata['room_features'];
         $features = new RoomFeaturesParameters();
@@ -287,6 +287,9 @@ class plugNmeetConnect
         $roomCreateParams->setRoomId($roomId);
         if ($max_participants > 0) {
             $roomCreateParams->setMaxParticipants($max_participants);
+        }
+        if ($empty_timeout > 0) {
+            $roomCreateParams->setEmptyTimeout($empty_timeout);
         }
         $roomCreateParams->setRoomMetadata($metadata);
 
