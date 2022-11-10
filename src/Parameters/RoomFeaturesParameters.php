@@ -119,7 +119,7 @@ class RoomFeaturesParameters
     /**
      * @param bool $allowWebcams
      */
-    public function setAllowWebcams($allowWebcams)
+    public function setAllowWebcams(bool $allowWebcams)
     {
         $this->allowWebcams = filter_var($allowWebcams, FILTER_VALIDATE_BOOLEAN);
     }
@@ -151,7 +151,7 @@ class RoomFeaturesParameters
     /**
      * @param bool $allowScreenShare
      */
-    public function setAllowScreenShare($allowScreenShare)
+    public function setAllowScreenShare(bool $allowScreenShare)
     {
         $this->allowScreenShare = filter_var($allowScreenShare, FILTER_VALIDATE_BOOLEAN);
     }
@@ -167,7 +167,7 @@ class RoomFeaturesParameters
     /**
      * @param bool $allowRTMP
      */
-    public function setAllowRTMP($allowRTMP)
+    public function setAllowRTMP(bool $allowRTMP)
     {
         $this->allowRTMP = filter_var($allowRTMP, FILTER_VALIDATE_BOOLEAN);
     }
@@ -183,7 +183,7 @@ class RoomFeaturesParameters
     /**
      * @param bool $adminOnlyWebcams
      */
-    public function setAdminOnlyWebcams($adminOnlyWebcams)
+    public function setAdminOnlyWebcams(bool $adminOnlyWebcams)
     {
         $this->adminOnlyWebcams = filter_var($adminOnlyWebcams, FILTER_VALIDATE_BOOLEAN);
     }
@@ -271,7 +271,7 @@ class RoomFeaturesParameters
     /**
      * @return ChatFeaturesParameters
      */
-    public function getChatFeatures()
+    public function getChatFeatures(): ChatFeaturesParameters
     {
         return $this->chatFeatures;
     }
@@ -279,7 +279,7 @@ class RoomFeaturesParameters
     /**
      * @param ChatFeaturesParameters $chatFeatures
      */
-    public function setChatFeatures($chatFeatures)
+    public function setChatFeatures(ChatFeaturesParameters $chatFeatures)
     {
         $this->chatFeatures = $chatFeatures;
     }
@@ -385,7 +385,7 @@ class RoomFeaturesParameters
     /**
      * @return array
      */
-    public function buildBody()
+    public function buildBody(): array
     {
         $body = array(
             "allow_webcams" => $this->isAllowWebcams(),

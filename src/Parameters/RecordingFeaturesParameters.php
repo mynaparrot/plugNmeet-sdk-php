@@ -98,7 +98,7 @@ class RecordingFeaturesParameters
     /**
      * @return array
      */
-    public function buildBody()
+    public function buildBody(): array
     {
         return array(
             "is_allow" => $this->isAllow(),

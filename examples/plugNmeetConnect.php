@@ -39,6 +39,7 @@ use Mynaparrot\Plugnmeet\Parameters\RecordingFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\RoomFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\RoomMetadataParameters;
 use Mynaparrot\Plugnmeet\Parameters\SharedNotePadFeaturesParameters;
+use Mynaparrot\Plugnmeet\Parameters\UserMetadataParameters;
 use Mynaparrot\Plugnmeet\Parameters\WaitingRoomFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\WhiteboardFeaturesParameters;
 use Mynaparrot\Plugnmeet\PlugNmeet;
@@ -109,8 +110,10 @@ class plugNmeetConnect
      * @param string $roomId
      * @param string $roomTitle
      * @param string $welcomeMessage
+     * @param int $max_participants
      * @param string $webHookUrl
      * @param array $roomMetadata
+     * @param int $empty_timeout
      * @return CreateRoomResponse
      */
     public function createRoom(string $roomId, string $roomTitle, string $welcomeMessage, int $max_participants, string $webHookUrl, array $roomMetadata, int $empty_timeout = 0): CreateRoomResponse
@@ -301,9 +304,11 @@ class plugNmeetConnect
      * @param string $name
      * @param string $userId
      * @param bool $isAdmin
+     * @param bool $isHidden
+     * @param UserMetadataParameters|null $userMetadata
      * @return GenerateJoinTokenResponse
      */
-    public function getJoinToken(string $roomId, string $name, string $userId, bool $isAdmin, bool $isHidden = false): GenerateJoinTokenResponse
+    public function getJoinToken(string $roomId, string $name, string $userId, bool $isAdmin, bool $isHidden = false, UserMetadataParameters $userMetadata = null): GenerateJoinTokenResponse
     {
         $generateJoinTokenParameters = new GenerateJoinTokenParameters();
         $generateJoinTokenParameters->setRoomId($roomId);
@@ -311,6 +316,9 @@ class plugNmeetConnect
         $generateJoinTokenParameters->setUserId($userId);
         $generateJoinTokenParameters->setIsAdmin($isAdmin);
         $generateJoinTokenParameters->setIsHidden($isHidden);
+        if (isset($userMetadata)) {
+            $generateJoinTokenParameters->setUserMetadata($userMetadata);
+        }
 
         return $this->plugnmeet->getJoinToken($generateJoinTokenParameters);
     }
@@ -331,7 +339,7 @@ class plugNmeetConnect
      * @param string $roomId
      * @return GetActiveRoomInfoResponse
      */
-    public function getActiveRoomInfo(string $roomId)
+    public function getActiveRoomInfo(string $roomId): GetActiveRoomInfoResponse
     {
         $getActiveRoomInfoParameters = new GetActiveRoomInfoParameters();
         $getActiveRoomInfoParameters->setRoomId($roomId);
@@ -342,7 +350,7 @@ class plugNmeetConnect
     /**
      * @return GetActiveRoomsInfoResponse
      */
-    public function getActiveRoomsInfo()
+    public function getActiveRoomsInfo(): GetActiveRoomsInfoResponse
     {
         return $this->plugnmeet->getActiveRoomsInfo();
     }
@@ -354,7 +362,7 @@ class plugNmeetConnect
      * @param string $orderBy
      * @return FetchRecordingsResponse
      */
-    public function getRecordings(array $roomIds, int $from = 0, int $limit = 20, string $orderBy = "DESC")
+    public function getRecordings(array $roomIds, int $from = 0, int $limit = 20, string $orderBy = "DESC"): FetchRecordingsResponse
     {
         $fetchRecordingsParameters = new FetchRecordingsParameters();
         $fetchRecordingsParameters->setRoomIds($roomIds);
@@ -367,9 +375,9 @@ class plugNmeetConnect
 
     /**
      * @param  $recordingId
-     * @return mixed|RecordingDownloadTokenResponse
+     * @return RecordingDownloadTokenResponse
      */
-    public function getRecordingDownloadLink($recordingId)
+    public function getRecordingDownloadLink($recordingId): RecordingDownloadTokenResponse
     {
         $recordingDownloadTokenParameters = new RecordingDownloadTokenParameters();
         $recordingDownloadTokenParameters->setRecordId($recordingId);
@@ -381,7 +389,7 @@ class plugNmeetConnect
      * @param  $recordingId
      * @return DeleteRecordingResponse
      */
-    public function deleteRecording($recordingId)
+    public function deleteRecording($recordingId): DeleteRecordingResponse
     {
         $deleteRecordingParameters = new DeleteRecordingParameters();
         $deleteRecordingParameters->setRecordId($recordingId);
@@ -392,7 +400,7 @@ class plugNmeetConnect
     /**
      * @return ClientFilesResponses
      */
-    public function getClientFiles()
+    public function getClientFiles(): ClientFilesResponses
     {
         return $this->plugnmeet->getClientFiles();
     }

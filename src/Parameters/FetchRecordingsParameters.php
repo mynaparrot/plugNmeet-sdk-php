@@ -121,13 +121,13 @@ class FetchRecordingsParameters
     /**
      * @return array
      */
-    public function buildBody()
+    public function buildBody(): array
     {
         return array(
-            "room_ids" => $this->roomIds,
-            "from" => $this->from,
-            "limit" => $this->limit,
-            "order_by" => $this->orderBy
+            "room_ids" => $this->getRoomIds(),
+            "from" => $this->getFrom(),
+            "limit" => $this->getLimit(),
+            "order_by" => $this->getOrderBy()
         );
     }
 }

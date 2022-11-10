@@ -75,13 +75,11 @@ class BreakoutRoomFeaturesParameters
     /**
      * @return array
      */
-    public function buildBody()
+    public function buildBody(): array
     {
-        $body = array(
+        return array(
             "is_allow" => $this->isAllow(),
             "allowed_number_rooms" => $this->getAllowedNumberRooms()
         );
-
-        return $body;
     }
 }

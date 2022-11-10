@@ -51,7 +51,7 @@ class WaitingRoomFeaturesParameters
      */
     public function setIsActive(bool $isActive): void
     {
-        $this->isActive = $this->allowPolls = filter_var($isActive, FILTER_VALIDATE_BOOLEAN);
+        $this->isActive = filter_var($isActive, FILTER_VALIDATE_BOOLEAN);
     }
 
     /**
@@ -75,14 +75,14 @@ class WaitingRoomFeaturesParameters
     /**
      * @return array
      */
-    public function buildBody()
+    public function buildBody(): array
     {
         $body = array(
-            "is_active" => $this->isActive,
+            "is_active" => $this->isActive(),
         );
 
         if (!empty($this->waitingRoomMsg)) {
-            $body["waiting_room_msg"] = $this->waitingRoomMsg;
+            $body["waiting_room_msg"] = $this->getWaitingRoomMsg();
         }
 
         return $body;

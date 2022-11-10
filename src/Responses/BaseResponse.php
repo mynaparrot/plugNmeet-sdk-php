@@ -37,7 +37,7 @@ abstract class BaseResponse
     /**
      * @param object $rawResponse
      */
-    public function __construct($rawResponse)
+    public function __construct(object $rawResponse)
     {
         $this->rawResponse = $rawResponse;
         if ($rawResponse->status) {
@@ -50,7 +50,7 @@ abstract class BaseResponse
     /**
      * @return object
      */
-    public function getRawResponse()
+    public function getRawResponse(): object
     {
         return $this->rawResponse;
     }

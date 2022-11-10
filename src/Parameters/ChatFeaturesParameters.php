@@ -56,7 +56,7 @@ class ChatFeaturesParameters
     /**
      * @return bool
      */
-    public function isAllowChat()
+    public function isAllowChat(): bool
     {
         return $this->allowChat;
     }
@@ -64,7 +64,7 @@ class ChatFeaturesParameters
     /**
      * @param bool $allowChat
      */
-    public function setAllowChat($allowChat)
+    public function setAllowChat(bool $allowChat)
     {
         $this->allowChat = filter_var($allowChat, FILTER_VALIDATE_BOOLEAN);
     }
@@ -72,7 +72,7 @@ class ChatFeaturesParameters
     /**
      * @return bool
      */
-    public function isAllowFileUpload()
+    public function isAllowFileUpload(): bool
     {
         return $this->allowFileUpload;
     }
@@ -88,7 +88,7 @@ class ChatFeaturesParameters
     /**
      * @return string[]
      */
-    public function getAllowedFileTypes()
+    public function getAllowedFileTypes(): array
     {
         return $this->allowedFileTypes;
     }
@@ -104,7 +104,7 @@ class ChatFeaturesParameters
     /**
      * @return int
      */
-    public function getMaxFileSize()
+    public function getMaxFileSize(): int
     {
         return $this->maxFileSize;
     }
@@ -112,7 +112,7 @@ class ChatFeaturesParameters
     /**
      * @param int $maxFileSize
      */
-    public function setMaxFileSize($maxFileSize)
+    public function setMaxFileSize(int $maxFileSize)
     {
         $this->maxFileSize = $maxFileSize;
     }
@@ -120,7 +120,7 @@ class ChatFeaturesParameters
     /**
      * @return array
      */
-    public function buildBody()
+    public function buildBody(): array
     {
         $body = array(
             "allow_chat" => $this->isAllowChat(),

@@ -44,7 +44,7 @@ class IsRoomActiveParameters
     /**
      * @return string
      */
-    public function getRoomId()
+    public function getRoomId(): string
     {
         return $this->roomId;
     }
@@ -52,7 +52,7 @@ class IsRoomActiveParameters
     /**
      * @param string $roomId
      */
-    public function setRoomId($roomId)
+    public function setRoomId(string $roomId)
     {
         $this->roomId = $roomId;
     }
@@ -60,10 +60,10 @@ class IsRoomActiveParameters
     /**
      * @return array
      */
-    public function buildBody()
+    public function buildBody(): array
     {
         return array(
-            "room_id" => $this->roomId,
+            "room_id" => $this->getRoomId(),
         );
     }
 }

@@ -49,16 +49,15 @@ class ExternalMediaPlayerFeaturesParameters
     public function setAllowedExternalMediaPlayer(bool $allowedExternalMediaPlayer): void
     {
         $this->allowedExternalMediaPlayer = filter_var($allowedExternalMediaPlayer, FILTER_VALIDATE_BOOLEAN);
-        ;
     }
 
     /**
      * @return array
      */
-    public function buildBody()
+    public function buildBody(): array
     {
         return array(
-            "allowed_external_media_player" => $this->allowedExternalMediaPlayer,
+            "allowed_external_media_player" => $this->isAllowedExternalMediaPlayer(),
         );
     }
 }

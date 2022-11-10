@@ -60,10 +60,10 @@ class RecordingDownloadTokenParameters
     /**
      * @return array
      */
-    public function buildBody()
+    public function buildBody(): array
     {
         return array(
-            "record_id" => $this->recordId,
+            "record_id" => $this->getRecordId(),
         );
     }
 }

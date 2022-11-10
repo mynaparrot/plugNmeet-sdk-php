@@ -76,7 +76,7 @@ class LockSettingsParameters
     /**
      * @return bool
      */
-    public function isLockMicrophone()
+    public function isLockMicrophone(): bool
     {
         return $this->lockMicrophone;
     }
@@ -84,7 +84,7 @@ class LockSettingsParameters
     /**
      * @param bool $lockMicrophone
      */
-    public function setLockMicrophone($lockMicrophone)
+    public function setLockMicrophone(bool $lockMicrophone)
     {
         $this->lockMicrophone = filter_var($lockMicrophone, FILTER_VALIDATE_BOOLEAN);
     }
@@ -92,7 +92,7 @@ class LockSettingsParameters
     /**
      * @return bool
      */
-    public function isLockWebcam()
+    public function isLockWebcam(): bool
     {
         return $this->lockWebcam;
     }
@@ -100,7 +100,7 @@ class LockSettingsParameters
     /**
      * @param bool $lockWebcam
      */
-    public function setLockWebcam($lockWebcam)
+    public function setLockWebcam(bool $lockWebcam)
     {
         $this->lockWebcam = filter_var($lockWebcam, FILTER_VALIDATE_BOOLEAN);
     }
@@ -108,7 +108,7 @@ class LockSettingsParameters
     /**
      * @return bool
      */
-    public function isLockScreenSharing()
+    public function isLockScreenSharing(): bool
     {
         return $this->lockScreenSharing;
     }
@@ -116,7 +116,7 @@ class LockSettingsParameters
     /**
      * @param bool $lockScreenSharing
      */
-    public function setLockScreenSharing($lockScreenSharing)
+    public function setLockScreenSharing(bool $lockScreenSharing)
     {
         $this->lockScreenSharing = filter_var($lockScreenSharing, FILTER_VALIDATE_BOOLEAN);
     }
@@ -156,7 +156,7 @@ class LockSettingsParameters
     /**
      * @return bool
      */
-    public function isLockChat()
+    public function isLockChat(): bool
     {
         return $this->lockChat;
     }
@@ -164,7 +164,7 @@ class LockSettingsParameters
     /**
      * @param bool $lockChat
      */
-    public function setLockChat($lockChat)
+    public function setLockChat(bool $lockChat)
     {
         $this->lockChat = filter_var($lockChat, FILTER_VALIDATE_BOOLEAN);
     }
@@ -172,7 +172,7 @@ class LockSettingsParameters
     /**
      * @return bool
      */
-    public function isLockChatSendMessage()
+    public function isLockChatSendMessage(): bool
     {
         return $this->lockChatSendMessage;
     }
@@ -180,7 +180,7 @@ class LockSettingsParameters
     /**
      * @param bool $lockChatSendMessage
      */
-    public function setLockChatSendMessage($lockChatSendMessage)
+    public function setLockChatSendMessage(bool $lockChatSendMessage)
     {
         $this->lockChatSendMessage = filter_var($lockChatSendMessage, FILTER_VALIDATE_BOOLEAN);
     }
@@ -188,7 +188,7 @@ class LockSettingsParameters
     /**
      * @return bool
      */
-    public function isLockChatFileShare()
+    public function isLockChatFileShare(): bool
     {
         return $this->lockChatFileShare;
     }
@@ -196,7 +196,7 @@ class LockSettingsParameters
     /**
      * @param bool $lockChatFileShare
      */
-    public function setLockChatFileShare($lockChatFileShare)
+    public function setLockChatFileShare(bool $lockChatFileShare)
     {
         $this->lockChatFileShare = filter_var($lockChatFileShare, FILTER_VALIDATE_BOOLEAN);
     }
@@ -220,37 +220,36 @@ class LockSettingsParameters
     /**
      * @return array
      */
-    public function buildBody()
+    public function buildBody(): array
     {
-
         $body = array();
 
         if ($this->lockMicrophone !== null) {
-            $body["lock_microphone"] = $this->lockMicrophone;
+            $body["lock_microphone"] = $this->isLockMicrophone();
         }
         if ($this->lockWebcam !== null) {
-            $body["lock_webcam"] = $this->lockWebcam;
+            $body["lock_webcam"] = $this->isLockWebcam();
         }
         if ($this->lockScreenSharing !== null) {
-            $body["lock_screen_sharing"] = $this->lockScreenSharing;
+            $body["lock_screen_sharing"] = $this->isLockScreenSharing();
         }
         if ($this->lockWhiteboard !== null) {
-            $body["lock_whiteboard"] = $this->lockWhiteboard;
+            $body["lock_whiteboard"] = $this->isLockWhiteboard();
         }
         if ($this->lockSharedNotepad !== null) {
-            $body["lock_shared_notepad"] = $this->lockSharedNotepad;
+            $body["lock_shared_notepad"] = $this->isLockSharedNotepad();
         }
         if ($this->lockChat !== null) {
-            $body["lock_chat"] = $this->lockChat;
+            $body["lock_chat"] = $this->isLockChat();
         }
         if ($this->lockChatSendMessage !== null) {
-            $body["lock_chat_send_message"] = $this->lockChatSendMessage;
+            $body["lock_chat_send_message"] = $this->isLockChatSendMessage();
         }
         if ($this->lockChatFileShare !== null) {
-            $body["lock_chat_file_share"] = $this->lockChatFileShare;
+            $body["lock_chat_file_share"] = $this->isLockChatFileShare();
         }
         if ($this->lockPrivateChat !== null) {
-            $body["lock_private_chat"] = $this->lockPrivateChat;
+            $body["lock_private_chat"] = $this->isLockPrivateChat();
         }
 
         return $body;
