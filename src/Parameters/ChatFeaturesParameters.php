@@ -80,7 +80,7 @@ class ChatFeaturesParameters
     /**
      * @param bool $allowFileUpload
      */
-    public function setAllowFileUpload($allowFileUpload)
+    public function setAllowFileUpload(bool $allowFileUpload)
     {
         $this->allowFileUpload = filter_var($allowFileUpload, FILTER_VALIDATE_BOOLEAN);
     }
