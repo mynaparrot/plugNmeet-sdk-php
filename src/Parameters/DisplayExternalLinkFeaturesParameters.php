@@ -54,10 +54,10 @@ class DisplayExternalLinkFeaturesParameters
     /**
      * @return array
      */
-    public function buildBody()
+    public function buildBody(): array
     {
         return array(
-            "is_allow" => $this->isAllow,
+            "is_allow" => $this->isAllow(),
         );
     }
 }

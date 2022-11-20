@@ -157,7 +157,7 @@ class PlugNmeet
      * @param EndRoomParameters $endRoomParameters
      * @return EndRoomResponse
      */
-    public function endRoom(EndRoomParameters $endRoomParameters)
+    public function endRoom(EndRoomParameters $endRoomParameters): EndRoomResponse
     {
         $body = $endRoomParameters->buildBody();
         $output = $this->sendRequest("/room/endRoom", $body);
@@ -207,7 +207,7 @@ class PlugNmeet
     /**
      * @return ClientFilesResponses
      */
-    public function getClientFiles()
+    public function getClientFiles(): ClientFilesResponses
     {
         $output = $this->sendRequest("/getClientFiles", []);
         return new ClientFilesResponses($output);
@@ -220,7 +220,7 @@ class PlugNmeet
      * @param array $head
      * @return string
      */
-    public function getJWTencodedData(array $payload, int $validity, $algo = "HS256", array $head = [])
+    public function getJWTencodedData(array $payload, int $validity, $algo = "HS256", array $head = []): string
     {
         $payload['iss'] = $this->apiKey;
         $payload['nbf'] = time();
@@ -232,9 +232,9 @@ class PlugNmeet
     /**
      * @param string $raw
      * @param string $algo
-     * @return object
+     * @return stdClass
      */
-    public function decodeJWTData(string $raw, $algo = "HS256")
+    public function decodeJWTData(string $raw, $algo = "HS256"): stdClass
     {
         return JWT::decode($raw, new Key($this->apiSecret, $algo));
     }
@@ -244,7 +244,7 @@ class PlugNmeet
      *
      * @return string
      */
-    public function getUUID()
+    public function getUUID(): string
     {
         $uuid = Uuid::uuid4();
         return $uuid->toString();
@@ -253,9 +253,9 @@ class PlugNmeet
     /**
      * @param  $path
      * @param array $body
-     * @return object
+     * @return stdClass
      */
-    protected function sendRequest($path, array $body)
+    protected function sendRequest($path, array $body): stdClass
     {
         $output = new stdClass();
         $output->status = false;

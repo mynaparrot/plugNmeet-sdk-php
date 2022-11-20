@@ -56,7 +56,7 @@ class CreateRoomParameters
     /**
      * @return string
      */
-    public function getRoomId()
+    public function getRoomId(): string
     {
         return $this->roomId;
     }
@@ -64,7 +64,7 @@ class CreateRoomParameters
     /**
      * @param string $roomId
      */
-    public function setRoomId($roomId)
+    public function setRoomId(string $roomId)
     {
         $this->roomId = $roomId;
     }
@@ -72,7 +72,7 @@ class CreateRoomParameters
     /**
      * @return int
      */
-    public function getEmptyTimeout()
+    public function getEmptyTimeout(): int
     {
         return $this->emptyTimeout;
     }
@@ -80,7 +80,7 @@ class CreateRoomParameters
     /**
      * @param int $emptyTimeout
      */
-    public function setEmptyTimeout($emptyTimeout)
+    public function setEmptyTimeout(int $emptyTimeout)
     {
         $this->emptyTimeout = $emptyTimeout;
     }
@@ -88,7 +88,7 @@ class CreateRoomParameters
     /**
      * @return int
      */
-    public function getMaxParticipants()
+    public function getMaxParticipants(): int
     {
         return $this->maxParticipants;
     }
@@ -96,7 +96,7 @@ class CreateRoomParameters
     /**
      * @param int $maxParticipants
      */
-    public function setMaxParticipants($maxParticipants)
+    public function setMaxParticipants(int $maxParticipants)
     {
         $this->maxParticipants = $maxParticipants;
     }
@@ -104,7 +104,7 @@ class CreateRoomParameters
     /**
      * @return RoomMetadataParameters
      */
-    public function getRoomMetadata()
+    public function getRoomMetadata(): RoomMetadataParameters
     {
         return $this->roomMetadata;
     }
@@ -112,7 +112,7 @@ class CreateRoomParameters
     /**
      * @param RoomMetadataParameters $roomMetadata
      */
-    public function setRoomMetadata($roomMetadata)
+    public function setRoomMetadata(RoomMetadataParameters $roomMetadata)
     {
         $this->roomMetadata = $roomMetadata;
     }
@@ -120,22 +120,22 @@ class CreateRoomParameters
     /**
      * @return array
      */
-    public function buildBody()
+    public function buildBody(): array
     {
         $body = array(
-            "room_id" => $this->roomId,
+            "room_id" => $this->getRoomId(),
         );
 
         if ($this->maxParticipants > 0) {
-            $body['max_participants'] = $this->maxParticipants;
+            $body['max_participants'] = $this->getMaxParticipants();
         }
 
         if ($this->emptyTimeout > 0) {
-            $body['empty_timeout'] = $this->emptyTimeout;
+            $body['empty_timeout'] = $this->getEmptyTimeout();
         }
 
         if ($this->roomMetadata !== null) {
-            $body['metadata'] = $this->roomMetadata->buildBody();
+            $body['metadata'] = $this->getRoomMetadata()->buildBody();
         }
 
         return $body;

@@ -44,10 +44,6 @@ class RoomFeaturesParameters
     /**
      * @var bool
      */
-    protected $allowRecording = true;
-    /**
-     * @var bool
-     */
     protected $allowRTMP = true;
     /**
      * @var bool
@@ -70,10 +66,13 @@ class RoomFeaturesParameters
      */
     protected $roomDuration = 0;
     /**
+     * @var RecordingFeaturesParameters
+     */
+    protected $recordingFeatures;
+    /**
      * @var ChatFeaturesParameters
      */
     protected $chatFeatures;
-
     /**
      * @var SharedNotePadFeaturesParameters
      */
@@ -112,7 +111,7 @@ class RoomFeaturesParameters
     /**
      * @return bool
      */
-    public function isAllowWebcams()
+    public function isAllowWebcams(): bool
     {
         return $this->allowWebcams;
     }
@@ -120,7 +119,7 @@ class RoomFeaturesParameters
     /**
      * @param bool $allowWebcams
      */
-    public function setAllowWebcams($allowWebcams)
+    public function setAllowWebcams(bool $allowWebcams)
     {
         $this->allowWebcams = filter_var($allowWebcams, FILTER_VALIDATE_BOOLEAN);
     }
@@ -144,7 +143,7 @@ class RoomFeaturesParameters
     /**
      * @return bool
      */
-    public function isAllowScreenShare()
+    public function isAllowScreenShare(): bool
     {
         return $this->allowScreenShare;
     }
@@ -152,7 +151,7 @@ class RoomFeaturesParameters
     /**
      * @param bool $allowScreenShare
      */
-    public function setAllowScreenShare($allowScreenShare)
+    public function setAllowScreenShare(bool $allowScreenShare)
     {
         $this->allowScreenShare = filter_var($allowScreenShare, FILTER_VALIDATE_BOOLEAN);
     }
@@ -160,23 +159,7 @@ class RoomFeaturesParameters
     /**
      * @return bool
      */
-    public function isAllowRecording()
-    {
-        return $this->allowRecording;
-    }
-
-    /**
-     * @param bool $allowRecording
-     */
-    public function setAllowRecording($allowRecording)
-    {
-        $this->allowRecording = filter_var($allowRecording, FILTER_VALIDATE_BOOLEAN);
-    }
-
-    /**
-     * @return bool
-     */
-    public function isAllowRTMP()
+    public function isAllowRTMP(): bool
     {
         return $this->allowRTMP;
     }
@@ -184,7 +167,7 @@ class RoomFeaturesParameters
     /**
      * @param bool $allowRTMP
      */
-    public function setAllowRTMP($allowRTMP)
+    public function setAllowRTMP(bool $allowRTMP)
     {
         $this->allowRTMP = filter_var($allowRTMP, FILTER_VALIDATE_BOOLEAN);
     }
@@ -192,7 +175,7 @@ class RoomFeaturesParameters
     /**
      * @return bool
      */
-    public function isAdminOnlyWebcams()
+    public function isAdminOnlyWebcams(): bool
     {
         return $this->adminOnlyWebcams;
     }
@@ -200,7 +183,7 @@ class RoomFeaturesParameters
     /**
      * @param bool $adminOnlyWebcams
      */
-    public function setAdminOnlyWebcams($adminOnlyWebcams)
+    public function setAdminOnlyWebcams(bool $adminOnlyWebcams)
     {
         $this->adminOnlyWebcams = filter_var($adminOnlyWebcams, FILTER_VALIDATE_BOOLEAN);
     }
@@ -270,9 +253,25 @@ class RoomFeaturesParameters
     }
 
     /**
+     * @return RecordingFeaturesParameters
+     */
+    public function getRecordingFeatures(): RecordingFeaturesParameters
+    {
+        return $this->recordingFeatures;
+    }
+
+    /**
+     * @param RecordingFeaturesParameters $recordingFeatures
+     */
+    public function setRecordingFeatures(RecordingFeaturesParameters $recordingFeatures): void
+    {
+        $this->recordingFeatures = $recordingFeatures;
+    }
+
+    /**
      * @return ChatFeaturesParameters
      */
-    public function getChatFeatures()
+    public function getChatFeatures(): ChatFeaturesParameters
     {
         return $this->chatFeatures;
     }
@@ -280,7 +279,7 @@ class RoomFeaturesParameters
     /**
      * @param ChatFeaturesParameters $chatFeatures
      */
-    public function setChatFeatures($chatFeatures)
+    public function setChatFeatures(ChatFeaturesParameters $chatFeatures)
     {
         $this->chatFeatures = $chatFeatures;
     }
@@ -386,47 +385,50 @@ class RoomFeaturesParameters
     /**
      * @return array
      */
-    public function buildBody()
+    public function buildBody(): array
     {
         $body = array(
-            "allow_webcams" => $this->allowWebcams,
-            "mute_on_start" => $this->muteOnStart,
-            "allow_screen_share" => $this->allowScreenShare,
-            "allow_recording" => $this->allowRecording,
-            "allow_rtmp" => $this->allowRTMP,
-            "admin_only_webcams" => $this->adminOnlyWebcams,
-            "allow_view_other_webcams" => $this->allowViewOtherWebcams,
-            "allow_view_other_users_list" => $this->allowViewOtherParticipants,
-            "allow_polls" => $this->allowPolls,
-            "room_duration" => $this->roomDuration
+            "allow_webcams" => $this->isAllowWebcams(),
+            "mute_on_start" => $this->isMuteOnStart(),
+            "allow_screen_share" => $this->isAllowScreenShare(),
+            "allow_rtmp" => $this->isAllowRTMP(),
+            "admin_only_webcams" => $this->isAdminOnlyWebcams(),
+            "allow_view_other_webcams" => $this->isAllowViewOtherWebcams(),
+            "allow_view_other_users_list" => $this->isAllowViewOtherParticipants(),
+            "allow_polls" => $this->isAllowPolls(),
+            "room_duration" => $this->getRoomDuration()
         );
 
+        if ($this->recordingFeatures !== null) {
+            $body['recording_features'] = $this->getRecordingFeatures()->buildBody();
+        }
+
         if ($this->chatFeatures !== null) {
-            $body['chat_features'] = $this->chatFeatures->buildBody();
+            $body['chat_features'] = $this->getChatFeatures()->buildBody();
         }
 
         if ($this->sharedNotePadFeatures !== null) {
-            $body['shared_note_pad_features'] = $this->sharedNotePadFeatures->buildBody();
+            $body['shared_note_pad_features'] = $this->getSharedNotePadFeatures()->buildBody();
         }
 
         if ($this->whiteboardFeatures !== null) {
-            $body['whiteboard_features'] = $this->whiteboardFeatures->buildBody();
+            $body['whiteboard_features'] = $this->getWhiteboardFeatures()->buildBody();
         }
 
         if ($this->externalMediaPlayerFeatures !== null) {
-            $body['external_media_player_features'] = $this->externalMediaPlayerFeatures->buildBody();
+            $body['external_media_player_features'] = $this->getExternalMediaPlayerFeatures()->buildBody();
         }
 
         if ($this->waitingRoomFeatures !== null) {
-            $body['waiting_room_features'] = $this->waitingRoomFeatures->buildBody();
+            $body['waiting_room_features'] = $this->getWaitingRoomFeatures()->buildBody();
         }
 
         if ($this->breakoutRoomFeatures !== null) {
-            $body['breakout_room_features'] = $this->breakoutRoomFeatures->buildBody();
+            $body['breakout_room_features'] = $this->getBreakoutRoomFeatures()->buildBody();
         }
 
         if ($this->displayExternalLinkFeatures !== null) {
-            $body['display_external_link_features'] = $this->displayExternalLinkFeatures->buildBody();
+            $body['display_external_link_features'] = $this->getDisplayExternalLinkFeatures()->buildBody();
         }
 
         return $body;

@@ -55,16 +55,15 @@ class WhiteboardFeaturesParameters
     public function setAllowedWhiteboard(bool $allowedWhiteboard): void
     {
         $this->allowedWhiteboard = filter_var($allowedWhiteboard, FILTER_VALIDATE_BOOLEAN);
-        ;
     }
 
     /**
      * @return array
      */
-    public function buildBody()
+    public function buildBody(): array
     {
         return array(
-            "allowed_whiteboard" => $this->allowedWhiteboard,
+            "allowed_whiteboard" => $this->isAllowedWhiteboard(),
         );
     }
 }

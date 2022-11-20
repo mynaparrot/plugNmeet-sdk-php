@@ -48,7 +48,7 @@ class UserMetadataParameters
     /**
      * @return string
      */
-    public function getProfilePic()
+    public function getProfilePic(): string
     {
         return $this->profilePic;
     }
@@ -56,7 +56,7 @@ class UserMetadataParameters
     /**
      * @param string $profilePic
      */
-    public function setProfilePic($profilePic)
+    public function setProfilePic(string $profilePic)
     {
         $this->profilePic = $profilePic;
     }
@@ -64,7 +64,7 @@ class UserMetadataParameters
     /**
      * @return LockSettingsParameters
      */
-    public function getLockSettings()
+    public function getLockSettings(): LockSettingsParameters
     {
         return $this->lockSettings;
     }
@@ -72,7 +72,7 @@ class UserMetadataParameters
     /**
      * @param LockSettingsParameters $lockSettings
      */
-    public function setLockSettings($lockSettings)
+    public function setLockSettings(LockSettingsParameters $lockSettings)
     {
         $this->lockSettings = $lockSettings;
     }
@@ -80,16 +80,16 @@ class UserMetadataParameters
     /**
      * @return array
      */
-    public function buildBody()
+    public function buildBody(): array
     {
         $body = array();
 
         if (!empty($this->profilePic)) {
-            $body["profile_pic"] = $this->profilePic;
+            $body["profile_pic"] = $this->getProfilePic();
         }
 
         if ($this->lockSettings !== null) {
-            $body["lock_settings"] = $this->lockSettings->buildBody();
+            $body["lock_settings"] = $this->getLockSettings()->buildBody();
         }
 
         return $body;

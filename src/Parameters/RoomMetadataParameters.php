@@ -61,7 +61,7 @@ class RoomMetadataParameters
     /**
      * @return string
      */
-    public function getRoomTitle()
+    public function getRoomTitle(): string
     {
         return $this->roomTitle;
     }
@@ -69,7 +69,7 @@ class RoomMetadataParameters
     /**
      * @param string $roomTitle
      */
-    public function setRoomTitle($roomTitle)
+    public function setRoomTitle(string $roomTitle)
     {
         $this->roomTitle = $roomTitle;
     }
@@ -93,7 +93,7 @@ class RoomMetadataParameters
     /**
      * @return string
      */
-    public function getWebhookUrl()
+    public function getWebhookUrl(): string
     {
         return $this->webhookUrl;
     }
@@ -101,7 +101,7 @@ class RoomMetadataParameters
     /**
      * @param string $webhookUrl
      */
-    public function setWebhookUrl($webhookUrl)
+    public function setWebhookUrl(string $webhookUrl)
     {
         $this->webhookUrl = $webhookUrl;
     }
@@ -109,7 +109,7 @@ class RoomMetadataParameters
     /**
      * @return RoomFeaturesParameters
      */
-    public function getFeatures()
+    public function getFeatures(): RoomFeaturesParameters
     {
         return $this->features;
     }
@@ -117,7 +117,7 @@ class RoomMetadataParameters
     /**
      * @param RoomFeaturesParameters $features
      */
-    public function setFeatures($features)
+    public function setFeatures(RoomFeaturesParameters $features)
     {
         $this->features = $features;
     }
@@ -141,26 +141,26 @@ class RoomMetadataParameters
     /**
      * @return array
      */
-    public function buildBody()
+    public function buildBody(): array
     {
         $body = array(
-            "room_title" => $this->roomTitle,
+            "room_title" => $this->getRoomTitle(),
         );
 
         if (!empty($this->welcomeMessage)) {
-            $body["welcome_message"] = $this->welcomeMessage;
+            $body["welcome_message"] = $this->getWelcomeMessage();
         }
 
         if (!empty($this->webhookUrl)) {
-            $body["webhook_url"] = $this->webhookUrl;
+            $body["webhook_url"] = $this->getWebhookUrl();
         }
 
         if ($this->features !== null) {
-            $body["room_features"] = $this->features->buildBody();
+            $body["room_features"] = $this->getFeatures()->buildBody();
         }
 
         if ($this->defaultLockSettings !== null) {
-            $body["default_lock_settings"] = $this->defaultLockSettings->buildBody();
+            $body["default_lock_settings"] = $this->getDefaultLockSettings()->buildBody();
         }
 
         return $body;

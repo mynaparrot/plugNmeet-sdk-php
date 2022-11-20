@@ -65,7 +65,7 @@ class GenerateJoinTokenParameters
     /**
      * @return string
      */
-    public function getRoomId()
+    public function getRoomId(): string
     {
         return $this->roomId;
     }
@@ -73,7 +73,7 @@ class GenerateJoinTokenParameters
     /**
      * @param string $roomId
      */
-    public function setRoomId($roomId)
+    public function setRoomId(string $roomId)
     {
         $this->roomId = $roomId;
     }
@@ -81,7 +81,7 @@ class GenerateJoinTokenParameters
     /**
      * @return string
      */
-    public function getName()
+    public function getName(): string
     {
         return $this->name;
     }
@@ -89,7 +89,7 @@ class GenerateJoinTokenParameters
     /**
      * @param string $name
      */
-    public function setName($name)
+    public function setName(string $name)
     {
         $this->name = $name;
     }
@@ -97,7 +97,7 @@ class GenerateJoinTokenParameters
     /**
      * @return string
      */
-    public function getUserId()
+    public function getUserId(): string
     {
         return $this->userId;
     }
@@ -105,7 +105,7 @@ class GenerateJoinTokenParameters
     /**
      * @param string $userId
      */
-    public function setUserId($userId)
+    public function setUserId(string $userId)
     {
         $this->userId = $userId;
     }
@@ -113,7 +113,7 @@ class GenerateJoinTokenParameters
     /**
      * @return bool
      */
-    public function isAdmin()
+    public function isAdmin(): bool
     {
         return $this->isAdmin;
     }
@@ -121,15 +121,15 @@ class GenerateJoinTokenParameters
     /**
      * @param bool $isAdmin
      */
-    public function setIsAdmin($isAdmin)
+    public function setIsAdmin(bool $isAdmin)
     {
-        $this->isAdmin = $isAdmin;
+        $this->isAdmin = filter_var($isAdmin, FILTER_VALIDATE_BOOLEAN);
     }
 
     /**
      * @return bool
      */
-    public function isHidden()
+    public function isHidden(): bool
     {
         return $this->isHidden;
     }
@@ -137,15 +137,15 @@ class GenerateJoinTokenParameters
     /**
      * @param bool $isHidden
      */
-    public function setIsHidden($isHidden)
+    public function setIsHidden(bool $isHidden)
     {
-        $this->isHidden = $isHidden;
+        $this->isHidden = filter_var($isHidden, FILTER_VALIDATE_BOOLEAN);
     }
 
     /**
      * @return UserMetadataParameters
      */
-    public function getUserMetadata()
+    public function getUserMetadata(): UserMetadataParameters
     {
         return $this->userMetadata;
     }
@@ -153,7 +153,7 @@ class GenerateJoinTokenParameters
     /**
      * @param UserMetadataParameters $userMetadata
      */
-    public function setUserMetadata($userMetadata)
+    public function setUserMetadata(UserMetadataParameters $userMetadata)
     {
         $this->userMetadata = $userMetadata;
     }
@@ -161,20 +161,20 @@ class GenerateJoinTokenParameters
     /**
      * @return array
      */
-    public function buildBody()
+    public function buildBody(): array
     {
         $body = array(
-            "room_id" => $this->roomId,
+            "room_id" => $this->getRoomId(),
             "user_info" => array(
-                "name" => $this->name,
-                "user_id" => $this->userId,
-                "is_admin" => $this->isAdmin,
-                "is_hidden" => $this->isHidden
+                "name" => $this->getName(),
+                "user_id" => $this->getUserId(),
+                "is_admin" => $this->isAdmin(),
+                "is_hidden" => $this->isHidden()
             )
         );
 
         if ($this->userMetadata !== null) {
-            $body["user_info"]["user_metadata"] = $this->userMetadata->buildBody();
+            $body["user_info"]["user_metadata"] = $this->getUserMetadata()->buildBody();
         }
 
         return $body;
