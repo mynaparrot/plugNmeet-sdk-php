@@ -711,6 +711,66 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RecordingDownloadTokenParameters.html#property_recordId"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RecordingFeaturesParameters",
+            "name": "RecordingFeaturesParameters",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RecordingFeaturesParameters.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RecordingFeaturesParameters\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RecordingFeaturesParameters.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RecordingFeaturesParameters\u003A\u003A\u0024isAllow",
+            "name": "isAllow",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RecordingFeaturesParameters.html#property_isAllow"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RecordingFeaturesParameters\u003A\u003AsetIsAllow\u0028\u0029",
+            "name": "setIsAllow",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RecordingFeaturesParameters.html#method_setIsAllow"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RecordingFeaturesParameters\u003A\u003A\u0024isAllowCloud",
+            "name": "isAllowCloud",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RecordingFeaturesParameters.html#property_isAllowCloud"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RecordingFeaturesParameters\u003A\u003AsetIsAllowCloud\u0028\u0029",
+            "name": "setIsAllowCloud",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RecordingFeaturesParameters.html#method_setIsAllowCloud"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RecordingFeaturesParameters\u003A\u003A\u0024isAllowLocal",
+            "name": "isAllowLocal",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RecordingFeaturesParameters.html#property_isAllowLocal"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RecordingFeaturesParameters\u003A\u003AsetIsAllowLocal\u0028\u0029",
+            "name": "setIsAllowLocal",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RecordingFeaturesParameters.html#method_setIsAllowLocal"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RecordingFeaturesParameters\u003A\u003AisEnableAutoCloudRecording\u0028\u0029",
+            "name": "isEnableAutoCloudRecording",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RecordingFeaturesParameters.html#method_isEnableAutoCloudRecording"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RecordingFeaturesParameters\u003A\u003AsetEnableAutoCloudRecording\u0028\u0029",
+            "name": "setEnableAutoCloudRecording",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RecordingFeaturesParameters.html#method_setEnableAutoCloudRecording"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RecordingFeaturesParameters\u003A\u003AbuildBody\u0028\u0029",
+            "name": "buildBody",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RecordingFeaturesParameters.html#method_buildBody"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RecordingFeaturesParameters\u003A\u003A\u0024enableAutoCloudRecording",
+            "name": "enableAutoCloudRecording",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RecordingFeaturesParameters.html#property_enableAutoCloudRecording"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters",
             "name": "RoomFeaturesParameters",
             "summary": "",
@@ -750,16 +810,6 @@ Search.appendIndex(
             "name": "setAllowScreenShare",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_setAllowScreenShare"
-        },                {
-            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AisAllowRecording\u0028\u0029",
-            "name": "isAllowRecording",
-            "summary": "",
-            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_isAllowRecording"
-        },                {
-            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AsetAllowRecording\u0028\u0029",
-            "name": "setAllowRecording",
-            "summary": "",
-            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_setAllowRecording"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AisAllowRTMP\u0028\u0029",
             "name": "isAllowRTMP",
@@ -820,6 +870,16 @@ Search.appendIndex(
             "name": "setRoomDuration",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_setRoomDuration"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AgetRecordingFeatures\u0028\u0029",
+            "name": "getRecordingFeatures",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_getRecordingFeatures"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AsetRecordingFeatures\u0028\u0029",
+            "name": "setRecordingFeatures",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_setRecordingFeatures"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AgetChatFeatures\u0028\u0029",
             "name": "getChatFeatures",
@@ -911,11 +971,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#property_allowScreenShare"
         },                {
-            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003A\u0024allowRecording",
-            "name": "allowRecording",
-            "summary": "",
-            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#property_allowRecording"
-        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003A\u0024allowRTMP",
             "name": "allowRTMP",
             "summary": "",
@@ -945,6 +1000,11 @@ Search.appendIndex(
             "name": "roomDuration",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#property_roomDuration"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003A\u0024recordingFeatures",
+            "name": "recordingFeatures",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#property_recordingFeatures"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003A\u0024chatFeatures",
             "name": "chatFeatures",
