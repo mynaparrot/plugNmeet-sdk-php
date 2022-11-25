@@ -1081,6 +1081,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomMetadataParameters.html#method_setWebhookUrl"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomMetadataParameters\u003A\u003AgetLogoutUrl\u0028\u0029",
+            "name": "getLogoutUrl",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomMetadataParameters.html#method_getLogoutUrl"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomMetadataParameters\u003A\u003AsetLogoutUrl\u0028\u0029",
+            "name": "setLogoutUrl",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomMetadataParameters.html#method_setLogoutUrl"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomMetadataParameters\u003A\u003AgetFeatures\u0028\u0029",
             "name": "getFeatures",
             "summary": "",
@@ -1120,6 +1130,11 @@ Search.appendIndex(
             "name": "webhookUrl",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomMetadataParameters.html#property_webhookUrl"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomMetadataParameters\u003A\u003A\u0024logoutUrl",
+            "name": "logoutUrl",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomMetadataParameters.html#property_logoutUrl"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomMetadataParameters\u003A\u003A\u0024features",
             "name": "features",
