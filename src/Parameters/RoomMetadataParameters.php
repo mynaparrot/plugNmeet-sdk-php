@@ -42,6 +42,10 @@ class RoomMetadataParameters
      */
     protected $webhookUrl;
     /**
+     * @var string
+     */
+    protected $logoutUrl;
+    /**
      * @var RoomFeaturesParameters
      */
     protected $features;
@@ -107,6 +111,22 @@ class RoomMetadataParameters
     }
 
     /**
+     * @return string
+     */
+    public function getLogoutUrl(): string
+    {
+        return $this->logoutUrl;
+    }
+
+    /**
+     * @param string $logoutUrl
+     */
+    public function setLogoutUrl(string $logoutUrl): void
+    {
+        $this->logoutUrl = $logoutUrl;
+    }
+
+    /**
      * @return RoomFeaturesParameters
      */
     public function getFeatures(): RoomFeaturesParameters
@@ -153,6 +173,10 @@ class RoomMetadataParameters
 
         if (!empty($this->webhookUrl)) {
             $body["webhook_url"] = $this->getWebhookUrl();
+        }
+
+        if (!empty($this->logoutUrl)) {
+            $body["logout_url"] = $this->getLogoutUrl();
         }
 
         if ($this->features !== null) {
