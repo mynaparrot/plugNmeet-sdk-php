@@ -1,4 +1,4 @@
-name: Lint
+name: CI
 on:
   push:
     branches: [ main ]
@@ -6,22 +6,20 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
-    name: Lint
+  run:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        php-versions: [ '7.4', '8.0', '8.1' ]
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: 7.4
+          php-version: ${{ matrix.php-versions }}
       - name: Composer install
         run: composer install --ignore-platform-reqs
-      - name: Checking PHP syntax error
-        uses: overtrue/phplint@7.4
-        with:
-          path: .
-          options: --exclude=vendor
       - name: phpcs checker
         run: ./vendor/bin/phpcs -q --report=checkstyle --standard=PSR12 src
