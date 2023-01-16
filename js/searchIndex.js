@@ -1696,6 +1696,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Utils-ParticipantInfo.html#method_getPermission"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\ParticipantInfo\u003A\u003AgetTracks\u0028\u0029",
+            "name": "getTracks",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Utils-ParticipantInfo.html#method_getTracks"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\ParticipantInfo\u003A\u003A\u0024participantInfo",
             "name": "participantInfo",
             "summary": "",
