@@ -105,4 +105,16 @@ class ParticipantInfo
     {
         return $this->participantInfo->permission;
     }
+
+    /**
+     * @return array
+     */
+    public function getTracks()
+    {
+        if (isset($this->participantInfo->tracks)) {
+            return $this->participantInfo->tracks;
+        }
+
+        return [];
+    }
 }
