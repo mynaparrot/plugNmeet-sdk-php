@@ -43,57 +43,57 @@ class RecordingInfo
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getRecordId(): string
+    public function getRecordId(): ?string
     {
         return $this->recording->record_id;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getRoomId(): string
+    public function getRoomId(): ?string
     {
         return $this->recording->room_id;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getRoomSid(): string
+    public function getRoomSid(): ?string
     {
         return $this->recording->room_sid;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getFilePath(): string
+    public function getFilePath(): ?string
     {
         return $this->recording->file_path;
     }
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getFileSize(): int
+    public function getFileSize(): ?int
     {
         return $this->recording->file_size;
     }
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getCreationTime(): int
+    public function getCreationTime(): ?int
     {
         return $this->recording->creation_time;
     }
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getRoomCreationTime(): int
+    public function getRoomCreationTime(): ?int
     {
         return $this->recording->room_creation_time;
     }

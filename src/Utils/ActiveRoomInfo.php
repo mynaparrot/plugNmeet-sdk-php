@@ -43,25 +43,25 @@ class ActiveRoomInfo
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getRoomTitle(): string
+    public function getRoomTitle(): ?string
     {
         return $this->roomInfo->room_title;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getRoomId(): string
+    public function getRoomId(): ?string
     {
         return $this->roomInfo->room_id;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getRoomSid(): string
+    public function getRoomSid(): ?string
     {
         return $this->roomInfo->sid;
     }
@@ -126,17 +126,17 @@ class ActiveRoomInfo
     }
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getCreationTime(): int
+    public function getCreationTime(): ?int
     {
         return $this->roomInfo->creation_time;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getMetadata(): string
+    public function getMetadata(): ?string
     {
         return $this->roomInfo->metadata;
     }

@@ -43,63 +43,63 @@ class ParticipantInfo
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getSid(): string
+    public function getSid(): ?string
     {
         return $this->participantInfo->sid;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getIdentity(): string
+    public function getIdentity(): ?string
     {
         return $this->participantInfo->identity;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getState(): string
+    public function getState(): ?string
     {
         return $this->participantInfo->state;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getMetadata(): string
+    public function getMetadata(): ?string
     {
         return $this->participantInfo->metadata;
     }
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getJoinedAt(): int
+    public function getJoinedAt(): ?int
     {
         return $this->participantInfo->joined_at;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getName(): string
+    public function getName(): ?string
     {
         return $this->participantInfo->name;
     }
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getVersion(): int
+    public function getVersion(): ?int
     {
         return $this->participantInfo->version;
     }
 
     /**
-     * @return mixed
+     * @return mixed|null
      */
     public function getPermission()
     {
