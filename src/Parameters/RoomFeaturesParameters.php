@@ -102,6 +102,11 @@ class RoomFeaturesParameters
     protected $displayExternalLinkFeatures;
 
     /**
+     * @var IngressFeaturesParameters
+     */
+    protected $ingressFeatures;
+
+    /**
      *
      */
     public function __construct()
@@ -383,6 +388,22 @@ class RoomFeaturesParameters
     }
 
     /**
+     * @return IngressFeaturesParameters
+     */
+    public function getIngressFeatures(): IngressFeaturesParameters
+    {
+        return $this->ingressFeatures;
+    }
+
+    /**
+     * @param IngressFeaturesParameters $ingressFeatures
+     */
+    public function setIngressFeatures(IngressFeaturesParameters $ingressFeatures): void
+    {
+        $this->ingressFeatures = $ingressFeatures;
+    }
+
+    /**
      * @return array
      */
     public function buildBody(): array
@@ -429,6 +450,10 @@ class RoomFeaturesParameters
 
         if ($this->displayExternalLinkFeatures !== null) {
             $body['display_external_link_features'] = $this->getDisplayExternalLinkFeatures()->buildBody();
+        }
+
+        if ($this->ingressFeatures !== null) {
+            $body['ingress_features'] = $this->getIngressFeatures()->buildBody();
         }
 
         return $body;

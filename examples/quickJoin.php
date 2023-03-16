@@ -82,6 +82,9 @@ $roomMetadata = array(
     "display_external_link_features" => array(
         "is_allow" => true,
     ),
+    "ingress_features" => array(
+        "is_allow" => true,
+    ),
     "default_lock_settings" => array(
         "lock_microphone" => false,
         "lock_webcam" => false,

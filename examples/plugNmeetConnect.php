@@ -32,6 +32,7 @@ use Mynaparrot\Plugnmeet\Parameters\ExternalMediaPlayerFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\FetchRecordingsParameters;
 use Mynaparrot\Plugnmeet\Parameters\GenerateJoinTokenParameters;
 use Mynaparrot\Plugnmeet\Parameters\GetActiveRoomInfoParameters;
+use Mynaparrot\Plugnmeet\Parameters\IngressFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\IsRoomActiveParameters;
 use Mynaparrot\Plugnmeet\Parameters\LockSettingsParameters;
 use Mynaparrot\Plugnmeet\Parameters\RecordingDownloadTokenParameters;
@@ -243,6 +244,15 @@ class plugNmeetConnect
                 $displayExternalLinkFeatures->setIsAllow($roomDisplayExternalLinkFeatures['is_allow']);
             }
             $features->setDisplayExternalLinkFeatures($displayExternalLinkFeatures);
+        }
+
+        if (isset($roomMetadata['ingress_features'])) {
+            $roomIngressFeatures = $roomMetadata['ingress_features'];
+            $ingressFeatures = new IngressFeaturesParameters();
+            if (isset($roomIngressFeatures['is_allow'])) {
+                $ingressFeatures->setIsAllow($roomIngressFeatures['is_allow']);
+            }
+            $features->setIngressFeatures($ingressFeatures);
         }
 
         $metadata = new RoomMetadataParameters();
