@@ -501,6 +501,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-GetActiveRoomInfoParameters.html#property_roomId"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\IngressFeaturesParameters",
+            "name": "IngressFeaturesParameters",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-IngressFeaturesParameters.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\IngressFeaturesParameters\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-IngressFeaturesParameters.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\IngressFeaturesParameters\u003A\u003A\u0024isAllow",
+            "name": "isAllow",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-IngressFeaturesParameters.html#property_isAllow"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\IngressFeaturesParameters\u003A\u003AsetIsAllow\u0028\u0029",
+            "name": "setIsAllow",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-IngressFeaturesParameters.html#method_setIsAllow"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\IngressFeaturesParameters\u003A\u003AbuildBody\u0028\u0029",
+            "name": "buildBody",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-IngressFeaturesParameters.html#method_buildBody"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\IsRoomActiveParameters",
             "name": "IsRoomActiveParameters",
             "summary": "",
@@ -951,6 +976,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_setDisplayExternalLinkFeatures"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AgetIngressFeatures\u0028\u0029",
+            "name": "getIngressFeatures",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_getIngressFeatures"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AsetIngressFeatures\u0028\u0029",
+            "name": "setIngressFeatures",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_setIngressFeatures"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AbuildBody\u0028\u0029",
             "name": "buildBody",
             "summary": "",
@@ -1040,6 +1075,11 @@ Search.appendIndex(
             "name": "displayExternalLinkFeatures",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#property_displayExternalLinkFeatures"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003A\u0024ingressFeatures",
+            "name": "ingressFeatures",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#property_ingressFeatures"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomMetadataParameters",
             "name": "RoomMetadataParameters",
