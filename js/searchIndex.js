@@ -986,6 +986,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_setIngressFeatures"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AgetSpeechToTextTranslationFeatures\u0028\u0029",
+            "name": "getSpeechToTextTranslationFeatures",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_getSpeechToTextTranslationFeatures"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AsetSpeechToTextTranslationFeatures\u0028\u0029",
+            "name": "setSpeechToTextTranslationFeatures",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_setSpeechToTextTranslationFeatures"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AbuildBody\u0028\u0029",
             "name": "buildBody",
             "summary": "",
@@ -1080,6 +1090,11 @@ Search.appendIndex(
             "name": "ingressFeatures",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#property_ingressFeatures"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003A\u0024speechToTextTranslationFeatures",
+            "name": "speechToTextTranslationFeatures",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#property_speechToTextTranslationFeatures"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomMetadataParameters",
             "name": "RoomMetadataParameters",
@@ -1215,6 +1230,41 @@ Search.appendIndex(
             "name": "allowedSharedNotePad",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-SharedNotePadFeaturesParameters.html#property_allowedSharedNotePad"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\SpeechToTextTranslationFeaturesParameters",
+            "name": "SpeechToTextTranslationFeaturesParameters",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-SpeechToTextTranslationFeaturesParameters.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\SpeechToTextTranslationFeaturesParameters\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-SpeechToTextTranslationFeaturesParameters.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\SpeechToTextTranslationFeaturesParameters\u003A\u003A\u0024isAllow",
+            "name": "isAllow",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-SpeechToTextTranslationFeaturesParameters.html#property_isAllow"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\SpeechToTextTranslationFeaturesParameters\u003A\u003AsetIsAllow\u0028\u0029",
+            "name": "setIsAllow",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-SpeechToTextTranslationFeaturesParameters.html#method_setIsAllow"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\SpeechToTextTranslationFeaturesParameters\u003A\u003A\u0024isAllowTranslation",
+            "name": "isAllowTranslation",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-SpeechToTextTranslationFeaturesParameters.html#property_isAllowTranslation"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\SpeechToTextTranslationFeaturesParameters\u003A\u003AsetIsAllowTranslation\u0028\u0029",
+            "name": "setIsAllowTranslation",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-SpeechToTextTranslationFeaturesParameters.html#method_setIsAllowTranslation"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\SpeechToTextTranslationFeaturesParameters\u003A\u003AbuildBody\u0028\u0029",
+            "name": "buildBody",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-SpeechToTextTranslationFeaturesParameters.html#method_buildBody"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\UserMetadataParameters",
             "name": "UserMetadataParameters",
