@@ -419,8 +419,9 @@ class RoomFeaturesParameters
     /**
      * @param SpeechToTextTranslationFeaturesParameters $speechToTextTranslationFeatures
      */
-    public function setSpeechToTextTranslationFeatures(SpeechToTextTranslationFeaturesParameters $speechToTextTranslationFeatures): void
-    {
+    public function setSpeechToTextTranslationFeatures(
+        SpeechToTextTranslationFeaturesParameters $speechToTextTranslationFeatures
+    ): void {
         $this->speechToTextTranslationFeatures = $speechToTextTranslationFeatures;
     }
 
