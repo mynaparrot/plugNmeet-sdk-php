@@ -40,6 +40,7 @@ use Mynaparrot\Plugnmeet\Parameters\RecordingFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\RoomFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\RoomMetadataParameters;
 use Mynaparrot\Plugnmeet\Parameters\SharedNotePadFeaturesParameters;
+use Mynaparrot\Plugnmeet\Parameters\SpeechToTextTranslationFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\UserMetadataParameters;
 use Mynaparrot\Plugnmeet\Parameters\WaitingRoomFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\WhiteboardFeaturesParameters;
@@ -253,6 +254,18 @@ class plugNmeetConnect
                 $ingressFeatures->setIsAllow($roomIngressFeatures['is_allow']);
             }
             $features->setIngressFeatures($ingressFeatures);
+        }
+
+        if (isset($roomMetadata['speech_to_text_translation_features'])) {
+            $roomSpeechToTextTranslationFeatures = $roomMetadata['speech_to_text_translation_features'];
+            $speechToTextTranslationFeatures = new SpeechToTextTranslationFeaturesParameters();
+            if (isset($roomSpeechToTextTranslationFeatures['is_allow'])) {
+                $speechToTextTranslationFeatures->setIsAllow($roomSpeechToTextTranslationFeatures['is_allow']);
+            }
+            if (isset($roomSpeechToTextTranslationFeatures['is_allow_translation'])) {
+                $speechToTextTranslationFeatures->setIsAllowTranslation($roomSpeechToTextTranslationFeatures['is_allow_translation']);
+            }
+            $features->setSpeechToTextTranslationFeatures($speechToTextTranslationFeatures);
         }
 
         $metadata = new RoomMetadataParameters();

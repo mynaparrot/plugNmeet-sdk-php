@@ -29,7 +29,7 @@ error_reporting(E_ALL);
 require __DIR__ . "/plugNmeetConnect.php";
 
 $config = new stdClass();
-$config->plugnmeet_server_url = "http://localhost:8080";
+$config->plugnmeet_server_url = "http://localhost:8080"; // host.docker.internal
 $config->plugnmeet_api_key = "plugnmeet";
 $config->plugnmeet_secret = "zumyyYWqv7KR2kUqvYdq4z4sXg7XTBD2ljT6";
 
@@ -85,6 +85,10 @@ $roomMetadata = array(
     "ingress_features" => array(
         "is_allow" => true,
     ),
+    "speech_to_text_translation_features" => array(
+        "is_allow" => true,
+        "is_allow_translation" => true,
+    ),
     "default_lock_settings" => array(
         "lock_microphone" => false,
         "lock_webcam" => false,
@@ -127,6 +131,7 @@ if ($isRoomActive && $output->status) {
         $join = $connect->getJoinToken($roomId, $user_full_name, $userId, $isAdmin);
 
         if ($join->getStatus()) {
+            $output->token = "<br>" . $join->getToken();
             $output->url = "<br>" . $config->plugnmeet_server_url . "?access_token=" . $join->getToken();
         }
         $output->status = $join->getStatus();

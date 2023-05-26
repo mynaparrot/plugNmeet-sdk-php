@@ -107,6 +107,11 @@ class RoomFeaturesParameters
     protected $ingressFeatures;
 
     /**
+     * @var SpeechToTextTranslationFeaturesParameters
+     */
+    protected $speechToTextTranslationFeatures;
+
+    /**
      *
      */
     public function __construct()
@@ -404,6 +409,22 @@ class RoomFeaturesParameters
     }
 
     /**
+     * @return SpeechToTextTranslationFeaturesParameters
+     */
+    public function getSpeechToTextTranslationFeatures(): SpeechToTextTranslationFeaturesParameters
+    {
+        return $this->speechToTextTranslationFeatures;
+    }
+
+    /**
+     * @param SpeechToTextTranslationFeaturesParameters $speechToTextTranslationFeatures
+     */
+    public function setSpeechToTextTranslationFeatures(SpeechToTextTranslationFeaturesParameters $speechToTextTranslationFeatures): void
+    {
+        $this->speechToTextTranslationFeatures = $speechToTextTranslationFeatures;
+    }
+
+    /**
      * @return array
      */
     public function buildBody(): array
@@ -454,6 +475,10 @@ class RoomFeaturesParameters
 
         if ($this->ingressFeatures !== null) {
             $body['ingress_features'] = $this->getIngressFeatures()->buildBody();
+        }
+
+        if ($this->speechToTextTranslationFeatures !== null) {
+            $body['speech_to_text_translation_features'] = $this->getSpeechToTextTranslationFeatures()->buildBody();
         }
 
         return $body;
