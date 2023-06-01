@@ -271,6 +271,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-EndRoomParameters.html#property_roomId"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\EndToEndEncryptionFeaturesParameters",
+            "name": "EndToEndEncryptionFeaturesParameters",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-EndToEndEncryptionFeaturesParameters.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\EndToEndEncryptionFeaturesParameters\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-EndToEndEncryptionFeaturesParameters.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\EndToEndEncryptionFeaturesParameters\u003A\u003A\u0024isEnable",
+            "name": "isEnable",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-EndToEndEncryptionFeaturesParameters.html#property_isEnable"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\EndToEndEncryptionFeaturesParameters\u003A\u003AsetIsEnable\u0028\u0029",
+            "name": "setIsEnable",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-EndToEndEncryptionFeaturesParameters.html#method_setIsEnable"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\EndToEndEncryptionFeaturesParameters\u003A\u003AbuildBody\u0028\u0029",
+            "name": "buildBody",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-EndToEndEncryptionFeaturesParameters.html#method_buildBody"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\ExternalMediaPlayerFeaturesParameters",
             "name": "ExternalMediaPlayerFeaturesParameters",
             "summary": "",
@@ -996,6 +1021,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_setSpeechToTextTranslationFeatures"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AgetEndToEndEncryptionFeatures\u0028\u0029",
+            "name": "getEndToEndEncryptionFeatures",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_getEndToEndEncryptionFeatures"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AsetEndToEndEncryptionFeatures\u0028\u0029",
+            "name": "setEndToEndEncryptionFeatures",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_setEndToEndEncryptionFeatures"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AbuildBody\u0028\u0029",
             "name": "buildBody",
             "summary": "",
@@ -1095,6 +1130,11 @@ Search.appendIndex(
             "name": "speechToTextTranslationFeatures",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#property_speechToTextTranslationFeatures"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003A\u0024endToEndEncryptionFeatures",
+            "name": "endToEndEncryptionFeatures",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#property_endToEndEncryptionFeatures"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomMetadataParameters",
             "name": "RoomMetadataParameters",
