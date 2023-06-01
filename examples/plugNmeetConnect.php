@@ -28,6 +28,7 @@ use Mynaparrot\Plugnmeet\Parameters\CreateRoomParameters;
 use Mynaparrot\Plugnmeet\Parameters\DeleteRecordingParameters;
 use Mynaparrot\Plugnmeet\Parameters\DisplayExternalLinkFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\EndRoomParameters;
+use Mynaparrot\Plugnmeet\Parameters\EndToEndEncryptionFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\ExternalMediaPlayerFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\FetchRecordingsParameters;
 use Mynaparrot\Plugnmeet\Parameters\GenerateJoinTokenParameters;
@@ -266,6 +267,15 @@ class plugNmeetConnect
                 $speechToTextTranslationFeatures->setIsAllowTranslation($roomSpeechToTextTranslationFeatures['is_allow_translation']);
             }
             $features->setSpeechToTextTranslationFeatures($speechToTextTranslationFeatures);
+        }
+
+        if (isset($roomMetadata['end_to_end_encryption_features'])) {
+            $roomEndToEndEncryptionFeatures = $roomMetadata['end_to_end_encryption_features'];
+            $endToEndEncryptionFeatures = new EndToEndEncryptionFeaturesParameters();
+            if (isset($roomEndToEndEncryptionFeatures['is_enabled'])) {
+                $endToEndEncryptionFeatures->setIsEnable($roomEndToEndEncryptionFeatures['is_enabled']);
+            }
+            $features->setEndToEndEncryptionFeatures($endToEndEncryptionFeatures);
         }
 
         $metadata = new RoomMetadataParameters();

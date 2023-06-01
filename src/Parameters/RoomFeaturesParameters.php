@@ -112,6 +112,11 @@ class RoomFeaturesParameters
     protected $speechToTextTranslationFeatures;
 
     /**
+     * @var EndToEndEncryptionFeaturesParameters
+     */
+    protected $endToEndEncryptionFeatures;
+
+    /**
      *
      */
     public function __construct()
@@ -426,6 +431,23 @@ class RoomFeaturesParameters
     }
 
     /**
+     * @return EndToEndEncryptionFeaturesParameters
+     */
+    public function getEndToEndEncryptionFeatures(): EndToEndEncryptionFeaturesParameters
+    {
+        return $this->endToEndEncryptionFeatures;
+    }
+
+    /**
+     * @param EndToEndEncryptionFeaturesParameters $endToEndEncryptionFeatures
+     */
+    public function setEndToEndEncryptionFeatures(
+        EndToEndEncryptionFeaturesParameters $endToEndEncryptionFeatures
+    ): void {
+        $this->endToEndEncryptionFeatures = $endToEndEncryptionFeatures;
+    }
+
+    /**
      * @return array
      */
     public function buildBody(): array
@@ -480,6 +502,10 @@ class RoomFeaturesParameters
 
         if ($this->speechToTextTranslationFeatures !== null) {
             $body['speech_to_text_translation_features'] = $this->getSpeechToTextTranslationFeatures()->buildBody();
+        }
+
+        if ($this->endToEndEncryptionFeatures !== null) {
+            $body['end_to_end_encryption_features'] = $this->getEndToEndEncryptionFeatures()->buildBody();
         }
 
         return $body;
