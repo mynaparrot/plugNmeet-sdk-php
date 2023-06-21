@@ -25,6 +25,11 @@ class RecordingFeaturesParameters
     protected $enableAutoCloudRecording = false;
 
     /**
+     * @var bool
+     */
+    protected $onlyRecordAdminWebcams = false;
+
+    /**
      *
      */
     public function __construct()
@@ -96,6 +101,22 @@ class RecordingFeaturesParameters
     }
 
     /**
+     * @return bool
+     */
+    public function isOnlyRecordAdminWebcams(): bool
+    {
+        return $this->onlyRecordAdminWebcams;
+    }
+
+    /**
+     * @param bool $onlyRecordAdminWebcams
+     */
+    public function setOnlyRecordAdminWebcams(bool $onlyRecordAdminWebcams): void
+    {
+        $this->onlyRecordAdminWebcams = filter_var($onlyRecordAdminWebcams, FILTER_VALIDATE_BOOLEAN);
+    }
+
+    /**
      * @return array
      */
     public function buildBody(): array
@@ -104,7 +125,8 @@ class RecordingFeaturesParameters
             "is_allow" => $this->isAllow(),
             "is_allow_cloud" => $this->isAllowCloud(),
             "is_allow_local" => $this->isAllowLocal(),
-            "enable_auto_cloud_recording" => $this->isEnableAutoCloudRecording()
+            "enable_auto_cloud_recording" => $this->isEnableAutoCloudRecording(),
+            "only_record_admin_webcams" => $this->isOnlyRecordAdminWebcams()
         );
     }
 }

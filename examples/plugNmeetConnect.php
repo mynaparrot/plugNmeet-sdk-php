@@ -169,6 +169,9 @@ class plugNmeetConnect
             if (isset($roomRecordingFeatures['enable_auto_cloud_recording'])) {
                 $recordingFeatures->setEnableAutoCloudRecording($roomRecordingFeatures['enable_auto_cloud_recording']);
             }
+            if (isset($roomRecordingFeatures['only_record_admin_webcams'])) {
+                $recordingFeatures->setOnlyRecordAdminWebcams($roomRecordingFeatures['only_record_admin_webcams']);
+            }
             $features->setRecordingFeatures($recordingFeatures);
         }
 
