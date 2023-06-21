@@ -811,6 +811,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RecordingFeaturesParameters.html#method_setEnableAutoCloudRecording"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RecordingFeaturesParameters\u003A\u003AisOnlyRecordAdminWebcams\u0028\u0029",
+            "name": "isOnlyRecordAdminWebcams",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RecordingFeaturesParameters.html#method_isOnlyRecordAdminWebcams"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RecordingFeaturesParameters\u003A\u003AsetOnlyRecordAdminWebcams\u0028\u0029",
+            "name": "setOnlyRecordAdminWebcams",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RecordingFeaturesParameters.html#method_setOnlyRecordAdminWebcams"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RecordingFeaturesParameters\u003A\u003AbuildBody\u0028\u0029",
             "name": "buildBody",
             "summary": "",
@@ -820,6 +830,11 @@ Search.appendIndex(
             "name": "enableAutoCloudRecording",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RecordingFeaturesParameters.html#property_enableAutoCloudRecording"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RecordingFeaturesParameters\u003A\u003A\u0024onlyRecordAdminWebcams",
+            "name": "onlyRecordAdminWebcams",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RecordingFeaturesParameters.html#property_onlyRecordAdminWebcams"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters",
             "name": "RoomFeaturesParameters",
@@ -1326,6 +1341,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-UserMetadataParameters.html#method_setProfilePic"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\UserMetadataParameters\u003A\u003AisRecordWebcam\u0028\u0029",
+            "name": "isRecordWebcam",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-UserMetadataParameters.html#method_isRecordWebcam"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\UserMetadataParameters\u003A\u003AsetRecordWebcam\u0028\u0029",
+            "name": "setRecordWebcam",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-UserMetadataParameters.html#method_setRecordWebcam"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\UserMetadataParameters\u003A\u003AgetLockSettings\u0028\u0029",
             "name": "getLockSettings",
             "summary": "",
@@ -1345,6 +1370,11 @@ Search.appendIndex(
             "name": "profilePic",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-UserMetadataParameters.html#property_profilePic"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\UserMetadataParameters\u003A\u003A\u0024recordWebcam",
+            "name": "recordWebcam",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-UserMetadataParameters.html#property_recordWebcam"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\UserMetadataParameters\u003A\u003A\u0024lockSettings",
             "name": "lockSettings",
