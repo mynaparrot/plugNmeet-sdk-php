@@ -1221,6 +1221,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomMetadataParameters.html#method_setDefaultLockSettings"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomMetadataParameters\u003A\u003AgetExtraData\u0028\u0029",
+            "name": "getExtraData",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomMetadataParameters.html#method_getExtraData"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomMetadataParameters\u003A\u003AsetExtraData\u0028\u0029",
+            "name": "setExtraData",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomMetadataParameters.html#method_setExtraData"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomMetadataParameters\u003A\u003AbuildBody\u0028\u0029",
             "name": "buildBody",
             "summary": "",
@@ -1255,6 +1265,11 @@ Search.appendIndex(
             "name": "defaultLockSettings",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomMetadataParameters.html#property_defaultLockSettings"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomMetadataParameters\u003A\u003A\u0024extraData",
+            "name": "extraData",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomMetadataParameters.html#property_extraData"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\SharedNotePadFeaturesParameters",
             "name": "SharedNotePadFeaturesParameters",
