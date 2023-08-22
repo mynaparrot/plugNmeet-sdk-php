@@ -119,7 +119,7 @@ class plugNmeetConnect
      * @param int $empty_timeout
      * @return CreateRoomResponse
      */
-    public function createRoom(string $roomId, string $roomTitle, string $welcomeMessage, int $max_participants, string $webHookUrl, array $roomMetadata, int $empty_timeout = 0, string $logoutUrl = ""): CreateRoomResponse
+    public function createRoom(string $roomId, string $roomTitle, string $welcomeMessage, int $max_participants, string $webHookUrl, array $roomMetadata, int $empty_timeout = 0, string $logoutUrl = "", string $extraData = null): CreateRoomResponse
     {
         $roomFeatures = $roomMetadata['room_features'];
         $features = new RoomFeaturesParameters();
@@ -292,6 +292,9 @@ class plugNmeetConnect
         }
         if (!empty($logoutUrl)) {
             $metadata->setLogoutUrl($logoutUrl);
+        }
+        if (!empty($extraData)) {
+            $metadata->setExtraData($extraData);
         }
 
         $metadata->setFeatures($features);

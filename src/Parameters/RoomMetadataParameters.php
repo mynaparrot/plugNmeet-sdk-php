@@ -54,6 +54,10 @@ class RoomMetadataParameters
      * @var LockSettingsParameters
      */
     protected $defaultLockSettings;
+    /**
+     * @var string
+     */
+    protected $extraData;
 
     /**
      *
@@ -159,6 +163,22 @@ class RoomMetadataParameters
     }
 
     /**
+     * @return string
+     */
+    public function getExtraData(): string
+    {
+        return $this->extraData;
+    }
+
+    /**
+     * @param string $extraData
+     */
+    public function setExtraData(string $extraData): void
+    {
+        $this->extraData = $extraData;
+    }
+
+    /**
      * @return array
      */
     public function buildBody(): array
@@ -185,6 +205,10 @@ class RoomMetadataParameters
 
         if ($this->defaultLockSettings !== null) {
             $body["default_lock_settings"] = $this->getDefaultLockSettings()->buildBody();
+        }
+
+        if (!empty($this->extraData)) {
+            $body["extra_data"] = $this->getExtraData();
         }
 
         return $body;
