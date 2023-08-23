@@ -202,6 +202,9 @@ class plugNmeetConnect
             if (isset($roomWhiteboardFeatures['allowed_whiteboard'])) {
                 $whiteboardFeatures->setAllowedWhiteboard($roomWhiteboardFeatures['allowed_whiteboard']);
             }
+            if (isset($roomWhiteboardFeatures['preload_file'])) {
+                $whiteboardFeatures->setPreloadFile($roomWhiteboardFeatures['preload_file']);
+            }
             $features->setWhiteboardFeatures($whiteboardFeatures);
         }
 

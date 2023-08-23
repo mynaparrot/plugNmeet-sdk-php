@@ -33,6 +33,10 @@ class WhiteboardFeaturesParameters
      * @var bool
      */
     protected $allowedWhiteboard = true;
+    /**
+     * @var string|null
+     */
+    protected $preloadFile = null;
 
     /**
      *
@@ -58,12 +62,44 @@ class WhiteboardFeaturesParameters
     }
 
     /**
+     * @return string|null
+     */
+    public function getPreloadFile(): ?string
+    {
+        return $this->preloadFile;
+    }
+
+    /**
+     * @param string $preloadFile
+     */
+    public function setPreloadFile(string $preloadFile): void
+    {
+        $context = stream_context_create(
+            [
+                'http' => array(
+                    'method' => 'HEAD'
+                )
+            ]
+        );
+        $headers = get_headers($preloadFile, false, $context);
+        if ($headers && strpos($headers[0], '200') !== false) {
+            $this->preloadFile = $preloadFile;
+        }
+    }
+
+    /**
      * @return array
      */
     public function buildBody(): array
     {
-        return array(
+        $body = array(
             "allowed_whiteboard" => $this->isAllowedWhiteboard(),
         );
+
+        if (!empty($this->preloadFile)) {
+            $body["preload_file"] = $this->getPreloadFile();
+        }
+
+        return $body;
     }
 }

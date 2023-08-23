@@ -67,7 +67,8 @@ $roomMetadata = array(
         "allowed_shared_note_pad" => true
     ),
     "whiteboard_features" => array(
-        "allowed_whiteboard" => true
+        "allowed_whiteboard" => true,
+        //"preload_file" => "https://mydomain.com/text_book.pdf"
     ),
     "external_media_player_features" => array(
         "allowed_external_media_player" => true
