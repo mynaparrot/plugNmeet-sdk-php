@@ -1451,6 +1451,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-WhiteboardFeaturesParameters.html#method_setAllowedWhiteboard"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\WhiteboardFeaturesParameters\u003A\u003AgetPreloadFile\u0028\u0029",
+            "name": "getPreloadFile",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-WhiteboardFeaturesParameters.html#method_getPreloadFile"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\WhiteboardFeaturesParameters\u003A\u003AsetPreloadFile\u0028\u0029",
+            "name": "setPreloadFile",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-WhiteboardFeaturesParameters.html#method_setPreloadFile"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\WhiteboardFeaturesParameters\u003A\u003AbuildBody\u0028\u0029",
             "name": "buildBody",
             "summary": "",
@@ -1460,6 +1470,11 @@ Search.appendIndex(
             "name": "allowedWhiteboard",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-WhiteboardFeaturesParameters.html#property_allowedWhiteboard"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\WhiteboardFeaturesParameters\u003A\u003A\u0024preloadFile",
+            "name": "preloadFile",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-WhiteboardFeaturesParameters.html#property_preloadFile"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet",
             "name": "PlugNmeet",
