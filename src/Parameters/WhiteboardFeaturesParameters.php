@@ -71,7 +71,7 @@ class WhiteboardFeaturesParameters
 
     /**
      * @param string $preloadFileUrl
-     * Should be direct http/https link
+     * Should be direct http/https link & no redirection
      * example: https://mydomain.com/text_book.pdf
      */
     public function setPreloadFile(string $preloadFileUrl): void
@@ -83,7 +83,8 @@ class WhiteboardFeaturesParameters
         $context = stream_context_create(
             [
                 'http' => array(
-                    'method' => 'HEAD'
+                    'method' => 'HEAD',
+                    'follow_location' => 0
                 )
             ]
         );
