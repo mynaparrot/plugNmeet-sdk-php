@@ -88,10 +88,12 @@ class WhiteboardFeaturesParameters
             ]
         );
         $headers = get_headers($preloadFileUrl, true, $context);
-        if ($headers &&
+        if (
+            $headers &&
             strpos($headers[0], '200') !== false &&
             isset($headers["Content-Length"]) &&
-            (int)$headers["Content-Length"] > 1) {
+            (int)$headers["Content-Length"] > 1
+        ) {
             $this->preloadFile = $preloadFileUrl;
         }
     }
