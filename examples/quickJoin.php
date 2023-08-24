@@ -144,3 +144,5 @@ if ($isRoomActive && $output->status) {
 
 echo "<pre>";
 print_r($output);
+// you can also build your own page to load plugNmeet client
+// in this case you can check example from conference.php file

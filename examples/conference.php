@@ -24,6 +24,14 @@
 
 // this is a simple example to build plugNmeet client using API
 // this way you can avoid to use iFrame to load the interface
+// to generate token have a look quickJoin.php file
+// if the domain is localhost then it will work with http
+// development: http://localhost/conference.php?access_token=TOKEN_HERE
+// during production using https is compulsory otherwise user won't be able to join
+// Production: https://mydomain.com/conference.php?access_token=TOKEN_HERE
+// you can use any location to build this page, just need to make sure to have
+// GET param `access_token` with token value, you can add other params for your own usage
+// the value of token don't need to encoded or any changes else will fail to validate
 
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
