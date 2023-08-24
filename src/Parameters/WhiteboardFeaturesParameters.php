@@ -70,10 +70,16 @@ class WhiteboardFeaturesParameters
     }
 
     /**
-     * @param string $preloadFile
+     * @param string $preloadFileUrl
+     * Should be direct http/https link
+     * example: https://mydomain.com/text_book.pdf
      */
-    public function setPreloadFile(string $preloadFile): void
+    public function setPreloadFile(string $preloadFileUrl): void
     {
+        if (filter_var($preloadFileUrl, FILTER_VALIDATE_URL) === false) {
+            return;
+        }
+
         $context = stream_context_create(
             [
                 'http' => array(
@@ -81,9 +87,9 @@ class WhiteboardFeaturesParameters
                 )
             ]
         );
-        $headers = get_headers($preloadFile, false, $context);
-        if ($headers && strpos($headers[0], '200') !== false) {
-            $this->preloadFile = $preloadFile;
+        $headers = get_headers($preloadFileUrl, true, $context);
+        if ($headers && strpos($headers[0], '200') !== false && isset($headers["Content-Length"]) && (int)$headers["Content-Length"] > 1) {
+            $this->preloadFile = $preloadFileUrl;
         }
     }
 
