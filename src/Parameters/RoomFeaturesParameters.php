@@ -66,6 +66,10 @@ class RoomFeaturesParameters
      */
     protected $roomDuration = 0;
     /**
+     * @var bool
+     */
+    protected $enableAnalytics = false;
+    /**
      * @var RecordingFeaturesParameters
      */
     protected $recordingFeatures;
@@ -268,6 +272,22 @@ class RoomFeaturesParameters
     }
 
     /**
+     * @return bool
+     */
+    public function isEnableAnalytics(): bool
+    {
+        return $this->enableAnalytics;
+    }
+
+    /**
+     * @param bool $enableAnalytics
+     */
+    public function setEnableAnalytics(bool $enableAnalytics): void
+    {
+        $this->enableAnalytics = filter_var($enableAnalytics, FILTER_VALIDATE_BOOLEAN);
+    }
+
+    /**
      * @return RecordingFeaturesParameters
      */
     public function getRecordingFeatures(): RecordingFeaturesParameters
@@ -461,7 +481,8 @@ class RoomFeaturesParameters
             "allow_view_other_webcams" => $this->isAllowViewOtherWebcams(),
             "allow_view_other_users_list" => $this->isAllowViewOtherParticipants(),
             "allow_polls" => $this->isAllowPolls(),
-            "room_duration" => $this->getRoomDuration()
+            "room_duration" => $this->getRoomDuration(),
+            "enable_analytics" => $this->isEnableAnalytics()
         );
 
         if ($this->recordingFeatures !== null) {
