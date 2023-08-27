@@ -424,7 +424,7 @@ class plugNmeetConnect
      * @param string $orderBy
      * @return FetchPastRoomsResponse
      */
-    public function fetchPastRooms(array $roomIds, int $from = 0, int $limit = 20, string $orderBy = "DESC"): FetchPastRoomsResponse
+    public function getPastRooms(array $roomIds, int $from = 0, int $limit = 20, string $orderBy = "DESC"): FetchPastRoomsResponse
     {
         $fetchPastRoomsParameters = new FetchPastRoomsParameters();
         $fetchPastRoomsParameters->setRoomIds($roomIds);
@@ -484,7 +484,7 @@ class plugNmeetConnect
      * @param string $orderBy
      * @return FetchAnalyticsResponse
      */
-    public function fetchAnalytics(array $roomIds, int $from = 0, int $limit = 20, string $orderBy = "DESC"): FetchAnalyticsResponse
+    public function getAnalytics(array $roomIds, int $from = 0, int $limit = 20, string $orderBy = "DESC"): FetchAnalyticsResponse
     {
         $fetchAnalyticsParameters = new FetchAnalyticsParameters();
         $fetchAnalyticsParameters->setRoomIds($roomIds);
