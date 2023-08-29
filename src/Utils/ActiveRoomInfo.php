@@ -30,9 +30,9 @@ namespace Mynaparrot\Plugnmeet\Utils;
 class ActiveRoomInfo
 {
     /**
-     * @var object
+     * @var object|null
      */
-    protected $roomInfo;
+    protected $roomInfo = null;
 
     /**
      * @param object $roomInfo
@@ -47,7 +47,10 @@ class ActiveRoomInfo
      */
     public function getRoomTitle(): ?string
     {
-        return $this->roomInfo->room_title;
+        if (isset($this->roomInfo->room_title)) {
+            return $this->roomInfo->room_title;
+        }
+        return null;
     }
 
     /**
@@ -55,7 +58,10 @@ class ActiveRoomInfo
      */
     public function getRoomId(): ?string
     {
-        return $this->roomInfo->room_id;
+        if (isset($this->roomInfo->room_id)) {
+            return $this->roomInfo->room_id;
+        }
+        return null;
     }
 
     /**
@@ -63,7 +69,10 @@ class ActiveRoomInfo
      */
     public function getRoomSid(): ?string
     {
-        return $this->roomInfo->sid;
+        if (isset($this->roomInfo->sid)) {
+            return $this->roomInfo->sid;
+        }
+        return null;
     }
 
     /**
@@ -82,7 +91,10 @@ class ActiveRoomInfo
      */
     public function isRunning(): bool
     {
-        return $this->roomInfo->is_running === 1 ? true : false;
+        if (isset($this->roomInfo->is_running)) {
+            return $this->roomInfo->is_running === 1 ? true : false;
+        }
+        return false;
     }
 
     /**
@@ -90,7 +102,10 @@ class ActiveRoomInfo
      */
     public function isActiveRecording(): bool
     {
-        return $this->roomInfo->is_recording === 1 ? true : false;
+        if (isset($this->roomInfo->is_recording)) {
+            return $this->roomInfo->is_recording === 1 ? true : false;
+        }
+        return false;
     }
 
     /**
@@ -98,7 +113,10 @@ class ActiveRoomInfo
      */
     public function isActiveRTMP(): bool
     {
-        return $this->roomInfo->is_active_rtmp === 1 ? true : false;
+        if (isset($this->roomInfo->is_active_rtmp)) {
+            return $this->roomInfo->is_active_rtmp === 1 ? true : false;
+        }
+        return false;
     }
 
     /**
@@ -106,7 +124,10 @@ class ActiveRoomInfo
      */
     public function getWebhookUrl(): ?string
     {
-        return $this->roomInfo->webhook_url;
+        if (isset($this->roomInfo->webhook_url)) {
+            return $this->roomInfo->webhook_url;
+        }
+        return null;
     }
 
     /**
@@ -114,7 +135,10 @@ class ActiveRoomInfo
      */
     public function isBreakoutRoom(): bool
     {
-        return $this->roomInfo->is_breakout_room === 1 ? true : false;
+        if (isset($this->roomInfo->is_breakout_room)) {
+            return $this->roomInfo->is_breakout_room === 1 ? true : false;
+        }
+        return false;
     }
 
     /**
@@ -122,7 +146,10 @@ class ActiveRoomInfo
      */
     public function getParentRoomId(): ?string
     {
-        return $this->roomInfo->parent_room_id;
+        if (isset($this->roomInfo->parent_room_id)) {
+            return $this->roomInfo->parent_room_id;
+        }
+        return null;
     }
 
     /**
@@ -130,7 +157,10 @@ class ActiveRoomInfo
      */
     public function getCreationTime(): ?int
     {
-        return $this->roomInfo->creation_time;
+        if (isset($this->roomInfo->creation_time)) {
+            return $this->roomInfo->creation_time;
+        }
+        return null;
     }
 
     /**
@@ -138,6 +168,9 @@ class ActiveRoomInfo
      */
     public function getMetadata(): ?string
     {
-        return $this->roomInfo->metadata;
+        if (isset($this->roomInfo->metadata)) {
+            return $this->roomInfo->metadata;
+        }
+        return null;
     }
 }

@@ -30,9 +30,9 @@ namespace Mynaparrot\Plugnmeet\Utils;
 class PastRoomInfo
 {
     /**
-     * @var object
+     * @var object|null
      */
-    protected $roomInfo;
+    protected $roomInfo = null;
 
     /**
      * @param object $roomInfo
@@ -47,7 +47,10 @@ class PastRoomInfo
      */
     public function getRoomTitle(): ?string
     {
-        return $this->roomInfo->room_title;
+        if (isset($this->roomInfo->room_title)) {
+            return $this->roomInfo->room_title;
+        }
+        return null;
     }
 
     /**
@@ -55,7 +58,10 @@ class PastRoomInfo
      */
     public function getRoomId(): ?string
     {
-        return $this->roomInfo->room_id;
+        if (isset($this->roomInfo->room_id)) {
+            return $this->roomInfo->room_id;
+        }
+        return null;
     }
 
     /**
@@ -63,7 +69,10 @@ class PastRoomInfo
      */
     public function getRoomSid(): ?string
     {
-        return $this->roomInfo->sid;
+        if (isset($this->roomInfo->sid)) {
+            return $this->roomInfo->sid;
+        }
+        return null;
     }
 
     /**
@@ -82,7 +91,10 @@ class PastRoomInfo
      */
     public function getWebhookUrl(): ?string
     {
-        return $this->roomInfo->webhook_url;
+        if (isset($this->roomInfo->webhook_url)) {
+            return $this->roomInfo->webhook_url;
+        }
+        return null;
     }
 
     /**
@@ -90,7 +102,10 @@ class PastRoomInfo
      */
     public function getCreatedDate(): ?string
     {
-        return $this->roomInfo->created;
+        if (isset($this->roomInfo->created)) {
+            return $this->roomInfo->created;
+        }
+        return null;
     }
 
     /**
@@ -98,7 +113,10 @@ class PastRoomInfo
      */
     public function getEndedDate(): ?string
     {
-        return $this->roomInfo->ended;
+        if (isset($this->roomInfo->ended)) {
+            return $this->roomInfo->ended;
+        }
+        return null;
     }
 
     /**
@@ -106,6 +124,9 @@ class PastRoomInfo
      */
     public function getAnalyticsFileId(): ?string
     {
-        return $this->roomInfo->analytics_file_id;
+        if (isset($this->roomInfo->analytics_file_id)) {
+            return $this->roomInfo->analytics_file_id;
+        }
+        return null;
     }
 }

@@ -27,9 +27,9 @@ namespace Mynaparrot\Plugnmeet\Utils;
 class AnalyticsInfo
 {
     /**
-     * @var object
+     * @var object|null
      */
-    protected $analyticsInfo;
+    protected $analyticsInfo = null;
 
     /**
      * @param object $analyticsInfo
@@ -44,7 +44,10 @@ class AnalyticsInfo
      */
     public function getRoomId(): ?string
     {
-        return $this->analyticsInfo->room_id;
+        if (isset($this->analyticsInfo->room_id)) {
+            return $this->analyticsInfo->room_id;
+        }
+        return null;
     }
 
     /**
@@ -52,7 +55,10 @@ class AnalyticsInfo
      */
     public function getFileId(): ?string
     {
-        return $this->analyticsInfo->file_id;
+        if (isset($this->analyticsInfo->file_id)) {
+            return $this->analyticsInfo->file_id;
+        }
+        return null;
     }
 
     /**
@@ -60,7 +66,21 @@ class AnalyticsInfo
      */
     public function getFileName(): ?string
     {
-        return $this->analyticsInfo->file_name;
+        if (isset($this->analyticsInfo->file_name)) {
+            return $this->analyticsInfo->file_name;
+        }
+        return null;
+    }
+
+    /**
+     * @return float|null
+     */
+    public function getFileSize(): ?float
+    {
+        if (isset($this->analyticsInfo->file_size)) {
+            return $this->analyticsInfo->file_size;
+        }
+        return null;
     }
 
     /**
@@ -68,7 +88,10 @@ class AnalyticsInfo
      */
     public function getCreationTime(): ?int
     {
-        return $this->analyticsInfo->creation_time;
+        if (isset($this->analyticsInfo->creation_time)) {
+            return $this->analyticsInfo->creation_time;
+        }
+        return null;
     }
 
     /**
@@ -76,6 +99,9 @@ class AnalyticsInfo
      */
     public function getRoomCreationTime(): ?int
     {
-        return $this->analyticsInfo->room_creation_time;
+        if (isset($this->analyticsInfo->room_creation_time)) {
+            return $this->analyticsInfo->room_creation_time;
+        }
+        return null;
     }
 }
