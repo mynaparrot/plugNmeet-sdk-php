@@ -27,7 +27,7 @@ namespace Mynaparrot\Plugnmeet\Utils;
 /**
  *
  */
-class ActiveRoomInfo
+class PastRoomInfo
 {
     /**
      * @var object|null
@@ -87,39 +87,6 @@ class ActiveRoomInfo
     }
 
     /**
-     * @return bool
-     */
-    public function isRunning(): bool
-    {
-        if (isset($this->roomInfo->is_running)) {
-            return $this->roomInfo->is_running === 1 ? true : false;
-        }
-        return false;
-    }
-
-    /**
-     * @return bool
-     */
-    public function isActiveRecording(): bool
-    {
-        if (isset($this->roomInfo->is_recording)) {
-            return $this->roomInfo->is_recording === 1 ? true : false;
-        }
-        return false;
-    }
-
-    /**
-     * @return bool
-     */
-    public function isActiveRTMP(): bool
-    {
-        if (isset($this->roomInfo->is_active_rtmp)) {
-            return $this->roomInfo->is_active_rtmp === 1 ? true : false;
-        }
-        return false;
-    }
-
-    /**
      * @return string|null
      */
     public function getWebhookUrl(): ?string
@@ -131,34 +98,12 @@ class ActiveRoomInfo
     }
 
     /**
-     * @return bool
-     */
-    public function isBreakoutRoom(): bool
-    {
-        if (isset($this->roomInfo->is_breakout_room)) {
-            return $this->roomInfo->is_breakout_room === 1 ? true : false;
-        }
-        return false;
-    }
-
-    /**
      * @return string|null
      */
-    public function getParentRoomId(): ?string
+    public function getCreatedDate(): ?string
     {
-        if (isset($this->roomInfo->parent_room_id)) {
-            return $this->roomInfo->parent_room_id;
-        }
-        return null;
-    }
-
-    /**
-     * @return int|null
-     */
-    public function getCreationTime(): ?int
-    {
-        if (isset($this->roomInfo->creation_time)) {
-            return $this->roomInfo->creation_time;
+        if (isset($this->roomInfo->created)) {
+            return $this->roomInfo->created;
         }
         return null;
     }
@@ -166,10 +111,21 @@ class ActiveRoomInfo
     /**
      * @return string|null
      */
-    public function getMetadata(): ?string
+    public function getEndedDate(): ?string
     {
-        if (isset($this->roomInfo->metadata)) {
-            return $this->roomInfo->metadata;
+        if (isset($this->roomInfo->ended)) {
+            return $this->roomInfo->ended;
+        }
+        return null;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getAnalyticsFileId(): ?string
+    {
+        if (isset($this->roomInfo->analytics_file_id)) {
+            return $this->roomInfo->analytics_file_id;
         }
         return null;
     }

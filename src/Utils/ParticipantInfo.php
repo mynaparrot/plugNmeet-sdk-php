@@ -30,9 +30,9 @@ namespace Mynaparrot\Plugnmeet\Utils;
 class ParticipantInfo
 {
     /**
-     * @var object
+     * @var object|null
      */
-    protected $participantInfo;
+    protected $participantInfo = null;
 
     /**
      * @param object $participantInfo
@@ -47,7 +47,10 @@ class ParticipantInfo
      */
     public function getSid(): ?string
     {
-        return $this->participantInfo->sid;
+        if (isset($this->participantInfo->sid)) {
+            return $this->participantInfo->sid;
+        }
+        return null;
     }
 
     /**
@@ -55,7 +58,10 @@ class ParticipantInfo
      */
     public function getIdentity(): ?string
     {
-        return $this->participantInfo->identity;
+        if (isset($this->participantInfo->identity)) {
+            return $this->participantInfo->identity;
+        }
+        return null;
     }
 
     /**
@@ -63,7 +69,10 @@ class ParticipantInfo
      */
     public function getState(): ?string
     {
-        return $this->participantInfo->state;
+        if (isset($this->participantInfo->state)) {
+            return $this->participantInfo->state;
+        }
+        return null;
     }
 
     /**
@@ -71,7 +80,10 @@ class ParticipantInfo
      */
     public function getMetadata(): ?string
     {
-        return $this->participantInfo->metadata;
+        if (isset($this->participantInfo->metadata)) {
+            return $this->participantInfo->metadata;
+        }
+        return null;
     }
 
     /**
@@ -79,7 +91,10 @@ class ParticipantInfo
      */
     public function getJoinedAt(): ?int
     {
-        return $this->participantInfo->joined_at;
+        if (isset($this->participantInfo->joined_at)) {
+            return $this->participantInfo->joined_at;
+        }
+        return null;
     }
 
     /**
@@ -87,7 +102,10 @@ class ParticipantInfo
      */
     public function getName(): ?string
     {
-        return $this->participantInfo->name;
+        if (isset($this->participantInfo->name)) {
+            return $this->participantInfo->name;
+        }
+        return null;
     }
 
     /**
@@ -95,7 +113,10 @@ class ParticipantInfo
      */
     public function getVersion(): ?int
     {
-        return $this->participantInfo->version;
+        if (isset($this->participantInfo->version)) {
+            return $this->participantInfo->version;
+        }
+        return null;
     }
 
     /**
@@ -103,7 +124,10 @@ class ParticipantInfo
      */
     public function getPermission()
     {
-        return $this->participantInfo->permission;
+        if (isset($this->participantInfo->permission)) {
+            return $this->participantInfo->permission;
+        }
+        return null;
     }
 
     /**

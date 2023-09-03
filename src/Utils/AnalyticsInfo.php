@@ -24,33 +24,19 @@
 
 namespace Mynaparrot\Plugnmeet\Utils;
 
-/**
- *
- */
-class RecordingInfo
+class AnalyticsInfo
 {
     /**
      * @var object|null
      */
-    protected $recording = null;
+    protected $analyticsInfo = null;
 
     /**
-     * @param object $recording
+     * @param object $analyticsInfo
      */
-    public function __construct(object $recording)
+    public function __construct(object $analyticsInfo)
     {
-        $this->recording = $recording;
-    }
-
-    /**
-     * @return string|null
-     */
-    public function getRecordId(): ?string
-    {
-        if (isset($this->recording->record_id)) {
-            return $this->recording->record_id;
-        }
-        return null;
+        $this->analyticsInfo = $analyticsInfo;
     }
 
     /**
@@ -58,8 +44,8 @@ class RecordingInfo
      */
     public function getRoomId(): ?string
     {
-        if (isset($this->recording->room_id)) {
-            return $this->recording->room_id;
+        if (isset($this->analyticsInfo->room_id)) {
+            return $this->analyticsInfo->room_id;
         }
         return null;
     }
@@ -67,10 +53,10 @@ class RecordingInfo
     /**
      * @return string|null
      */
-    public function getRoomSid(): ?string
+    public function getFileId(): ?string
     {
-        if (isset($this->recording->room_sid)) {
-            return $this->recording->room_sid;
+        if (isset($this->analyticsInfo->file_id)) {
+            return $this->analyticsInfo->file_id;
         }
         return null;
     }
@@ -78,10 +64,10 @@ class RecordingInfo
     /**
      * @return string|null
      */
-    public function getFilePath(): ?string
+    public function getFileName(): ?string
     {
-        if (isset($this->recording->file_path)) {
-            return $this->recording->file_path;
+        if (isset($this->analyticsInfo->file_name)) {
+            return $this->analyticsInfo->file_name;
         }
         return null;
     }
@@ -91,8 +77,8 @@ class RecordingInfo
      */
     public function getFileSize(): ?float
     {
-        if (isset($this->recording->file_size)) {
-            return $this->recording->file_size;
+        if (isset($this->analyticsInfo->file_size)) {
+            return $this->analyticsInfo->file_size;
         }
         return null;
     }
@@ -102,8 +88,8 @@ class RecordingInfo
      */
     public function getCreationTime(): ?int
     {
-        if (isset($this->recording->creation_time)) {
-            return $this->recording->creation_time;
+        if (isset($this->analyticsInfo->creation_time)) {
+            return $this->analyticsInfo->creation_time;
         }
         return null;
     }
@@ -113,8 +99,8 @@ class RecordingInfo
      */
     public function getRoomCreationTime(): ?int
     {
-        if (isset($this->recording->room_creation_time)) {
-            return $this->recording->room_creation_time;
+        if (isset($this->analyticsInfo->room_creation_time)) {
+            return $this->analyticsInfo->room_creation_time;
         }
         return null;
     }
