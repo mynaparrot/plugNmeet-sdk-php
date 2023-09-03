@@ -93,13 +93,16 @@
                                         <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/mynaparrot.html">Mynaparrot</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/mynaparrot-plugnmeet.html">Plugnmeet</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/mynaparrot-plugnmeet-utils.html">Utils</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/mynaparrot-plugnmeet-responses.html">Responses</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    ActiveRoomInfo
+    FetchAnalyticsResponse
 
+        <span class="phpdocumentor-element__extends">
+        extends <a href="classes/Mynaparrot-Plugnmeet-Responses-BaseResponse.html"><abbr title="\Mynaparrot\Plugnmeet\Responses\BaseResponse">BaseResponse</abbr></a>
+    </span>
     
             <div class="phpdocumentor-element__package">
             in package
@@ -117,9 +120,9 @@
 </div>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Utils/ActiveRoomInfo.php"><a href="files/src-utils-activeroominfo.html"><abbr title="src/Utils/ActiveRoomInfo.php">ActiveRoomInfo.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Responses/FetchAnalyticsResponse.php"><a href="files/src-responses-fetchanalyticsresponse.html"><abbr title="src/Responses/FetchAnalyticsResponse.php">FetchAnalyticsResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -131,7 +134,7 @@
 
 <h3 id="toc">
     Table of Contents
-    <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h3>
 
@@ -145,100 +148,76 @@
 
 <h4 id="toc-properties">
     Properties
-    <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#property_roomInfo">$roomInfo</a>
+    <a href="classes/Mynaparrot-Plugnmeet-Responses-BaseResponse.html#property_rawResponse">$rawResponse</a>
     <span>
-                        &nbsp;: object|null            </span>
+                        &nbsp;: object            </span>
 </dt>
 
     </dl>
 
 <h4 id="toc-methods">
     Methods
-    <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method___construct">__construct()</a>
+    <a href="classes/Mynaparrot-Plugnmeet-Responses-BaseResponse.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getCreationTime">getCreationTime()</a>
+    <a href="classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#method_getAnalytics">getAnalytics()</a>
     <span>
-                                &nbsp;: int|null    </span>
+                                &nbsp;: array&lt;string|int, <a href="classes/Mynaparrot-Plugnmeet-Utils-AnalyticsInfo.html"><abbr title="\Mynaparrot\Plugnmeet\Utils\AnalyticsInfo">AnalyticsInfo</abbr></a>&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getJoinedParticipants">getJoinedParticipants()</a>
+    <a href="classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#method_getFrom">getFrom()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getMetadata">getMetadata()</a>
+    <a href="classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#method_getLimit">getLimit()</a>
     <span>
-                                &nbsp;: string|null    </span>
+                                &nbsp;: int    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getParentRoomId">getParentRoomId()</a>
+    <a href="classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#method_getOrderBy">getOrderBy()</a>
     <span>
-                                &nbsp;: string|null    </span>
+                                &nbsp;: string    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getRoomId">getRoomId()</a>
+    <a href="classes/Mynaparrot-Plugnmeet-Responses-BaseResponse.html#method_getRawResponse">getRawResponse()</a>
     <span>
-                                &nbsp;: string|null    </span>
+                                &nbsp;: object    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getRoomSid">getRoomSid()</a>
+    <a href="classes/Mynaparrot-Plugnmeet-Responses-BaseResponse.html#method_getResponseMsg">getResponseMsg()</a>
     <span>
-                                &nbsp;: string|null    </span>
+                                &nbsp;: string    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getRoomTitle">getRoomTitle()</a>
-    <span>
-                                &nbsp;: string|null    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getWebhookUrl">getWebhookUrl()</a>
-    <span>
-                                &nbsp;: string|null    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_isActiveRecording">isActiveRecording()</a>
+    <a href="classes/Mynaparrot-Plugnmeet-Responses-BaseResponse.html#method_getStatus">getStatus()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_isActiveRTMP">isActiveRTMP()</a>
+    <a href="classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#method_getTotalAnalytics">getTotalAnalytics()</a>
     <span>
-                                &nbsp;: bool    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_isBreakoutRoom">isBreakoutRoom()</a>
-    <span>
-                                &nbsp;: bool    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_isRunning">isRunning()</a>
-    <span>
-                                &nbsp;: bool    </span>
+                                &nbsp;: int    </span>
 </dt>
 
     </dl>
@@ -252,7 +231,7 @@
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
@@ -262,15 +241,15 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_roomInfo">
-        $roomInfo
-        <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#property_roomInfo" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_rawResponse">
+        $rawResponse
+        <a href="classes/Mynaparrot-Plugnmeet-Responses-BaseResponse.html#property_rawResponse" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Utils/ActiveRoomInfo.php"><a href="files/src-utils-activeroominfo.html"><abbr title="src/Utils/ActiveRoomInfo.php">ActiveRoomInfo.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Responses/BaseResponse.php"><a href="files/src-responses-baseresponse.html"><abbr title="src/Responses/BaseResponse.php">BaseResponse.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">35</span>
 
@@ -279,9 +258,9 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">object|null</span>
-    <span class="phpdocumentor-signature__name">$roomInfo</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
+        <span class="phpdocumentor-signature__type">object</span>
+    <span class="phpdocumentor-signature__name">$rawResponse</span>
+    </code>
 
     
     
@@ -293,7 +272,7 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
@@ -304,11 +283,11 @@
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Mynaparrot-Plugnmeet-Responses-BaseResponse.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Utils/ActiveRoomInfo.php"><a href="files/src-utils-activeroominfo.html"><abbr title="src/Utils/ActiveRoomInfo.php">ActiveRoomInfo.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Responses/BaseResponse.php"><a href="files/src-responses-baseresponse.html"><abbr title="src/Responses/BaseResponse.php">BaseResponse.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">40</span>
 
@@ -317,7 +296,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$roomInfo</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rawResponse</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -325,7 +304,7 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$roomInfo</span>
+                <span class="phpdocumentor-signature__argument__name">$rawResponse</span>
                 : <span class="phpdocumentor-signature__argument__return-type">object</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -343,22 +322,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getCreationTime">
-        getCreationTime()
-        <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getCreationTime" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getAnalytics">
+        getAnalytics()
+        <a href="classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#method_getAnalytics" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Utils/ActiveRoomInfo.php"><a href="files/src-utils-activeroominfo.html"><abbr title="src/Utils/ActiveRoomInfo.php">ActiveRoomInfo.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Responses/FetchAnalyticsResponse.php"><a href="files/src-responses-fetchanalyticsresponse.html"><abbr title="src/Responses/FetchAnalyticsResponse.php">FetchAnalyticsResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">158</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getCreationTime</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
+                    <span class="phpdocumentor-signature__name">getAnalytics</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Mynaparrot-Plugnmeet-Utils-AnalyticsInfo.html"><abbr title="\Mynaparrot\Plugnmeet\Utils\AnalyticsInfo">AnalyticsInfo</abbr></a>&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -368,7 +347,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">int|null</span>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Mynaparrot-Plugnmeet-Utils-AnalyticsInfo.html"><abbr title="\Mynaparrot\Plugnmeet\Utils\AnalyticsInfo">AnalyticsInfo</abbr></a>&gt;</span>
             </section>
 
 </article>
@@ -378,22 +357,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getJoinedParticipants">
-        getJoinedParticipants()
-        <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getJoinedParticipants" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getFrom">
+        getFrom()
+        <a href="classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#method_getFrom" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Utils/ActiveRoomInfo.php"><a href="files/src-utils-activeroominfo.html"><abbr title="src/Utils/ActiveRoomInfo.php">ActiveRoomInfo.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Responses/FetchAnalyticsResponse.php"><a href="files/src-responses-fetchanalyticsresponse.html"><abbr title="src/Responses/FetchAnalyticsResponse.php">FetchAnalyticsResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getJoinedParticipants</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+                    <span class="phpdocumentor-signature__name">getFrom</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -413,83 +392,13 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getMetadata">
-        getMetadata()
-        <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getMetadata" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getLimit">
+        getLimit()
+        <a href="classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#method_getLimit" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Utils/ActiveRoomInfo.php"><a href="files/src-utils-activeroominfo.html"><abbr title="src/Utils/ActiveRoomInfo.php">ActiveRoomInfo.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">169</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getMetadata</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string|null</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getParentRoomId">
-        getParentRoomId()
-        <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getParentRoomId" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Utils/ActiveRoomInfo.php"><a href="files/src-utils-activeroominfo.html"><abbr title="src/Utils/ActiveRoomInfo.php">ActiveRoomInfo.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">147</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getParentRoomId</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string|null</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getRoomId">
-        getRoomId()
-        <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getRoomId" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Utils/ActiveRoomInfo.php"><a href="files/src-utils-activeroominfo.html"><abbr title="src/Utils/ActiveRoomInfo.php">ActiveRoomInfo.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Responses/FetchAnalyticsResponse.php"><a href="files/src-responses-fetchanalyticsresponse.html"><abbr title="src/Responses/FetchAnalyticsResponse.php">FetchAnalyticsResponse.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">59</span>
 
@@ -498,7 +407,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getRoomId</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+                    <span class="phpdocumentor-signature__name">getLimit</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -508,7 +417,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string|null</span>
+        <span class="phpdocumentor-signature__response_type">int</span>
             </section>
 
 </article>
@@ -518,13 +427,13 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getRoomSid">
-        getRoomSid()
-        <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getRoomSid" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getOrderBy">
+        getOrderBy()
+        <a href="classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#method_getOrderBy" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Utils/ActiveRoomInfo.php"><a href="files/src-utils-activeroominfo.html"><abbr title="src/Utils/ActiveRoomInfo.php">ActiveRoomInfo.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Responses/FetchAnalyticsResponse.php"><a href="files/src-responses-fetchanalyticsresponse.html"><abbr title="src/Responses/FetchAnalyticsResponse.php">FetchAnalyticsResponse.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">70</span>
 
@@ -533,7 +442,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getRoomSid</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+                    <span class="phpdocumentor-signature__name">getOrderBy</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -543,7 +452,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string|null</span>
+        <span class="phpdocumentor-signature__response_type">string</span>
             </section>
 
 </article>
@@ -553,22 +462,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getRoomTitle">
-        getRoomTitle()
-        <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getRoomTitle" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getRawResponse">
+        getRawResponse()
+        <a href="classes/Mynaparrot-Plugnmeet-Responses-BaseResponse.html#method_getRawResponse" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Utils/ActiveRoomInfo.php"><a href="files/src-utils-activeroominfo.html"><abbr title="src/Utils/ActiveRoomInfo.php">ActiveRoomInfo.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Responses/BaseResponse.php"><a href="files/src-responses-baseresponse.html"><abbr title="src/Responses/BaseResponse.php">BaseResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getRoomTitle</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+                    <span class="phpdocumentor-signature__name">getRawResponse</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">object</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -578,7 +487,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string|null</span>
+        <span class="phpdocumentor-signature__response_type">object</span>
             </section>
 
 </article>
@@ -588,22 +497,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getWebhookUrl">
-        getWebhookUrl()
-        <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getWebhookUrl" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getResponseMsg">
+        getResponseMsg()
+        <a href="classes/Mynaparrot-Plugnmeet-Responses-BaseResponse.html#method_getResponseMsg" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Utils/ActiveRoomInfo.php"><a href="files/src-utils-activeroominfo.html"><abbr title="src/Utils/ActiveRoomInfo.php">ActiveRoomInfo.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Responses/BaseResponse.php"><a href="files/src-responses-baseresponse.html"><abbr title="src/Responses/BaseResponse.php">BaseResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">125</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getWebhookUrl</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+                    <span class="phpdocumentor-signature__name">getResponseMsg</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -613,7 +522,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string|null</span>
+        <span class="phpdocumentor-signature__response_type">string</span>
             </section>
 
 </article>
@@ -623,22 +532,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_isActiveRecording">
-        isActiveRecording()
-        <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_isActiveRecording" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getStatus">
+        getStatus()
+        <a href="classes/Mynaparrot-Plugnmeet-Responses-BaseResponse.html#method_getStatus" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Utils/ActiveRoomInfo.php"><a href="files/src-utils-activeroominfo.html"><abbr title="src/Utils/ActiveRoomInfo.php">ActiveRoomInfo.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Responses/BaseResponse.php"><a href="files/src-responses-baseresponse.html"><abbr title="src/Responses/BaseResponse.php">BaseResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">103</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">isActiveRecording</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">getStatus</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -658,22 +567,22 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_isActiveRTMP">
-        isActiveRTMP()
-        <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_isActiveRTMP" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getTotalAnalytics">
+        getTotalAnalytics()
+        <a href="classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#method_getTotalAnalytics" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Utils/ActiveRoomInfo.php"><a href="files/src-utils-activeroominfo.html"><abbr title="src/Utils/ActiveRoomInfo.php">ActiveRoomInfo.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Responses/FetchAnalyticsResponse.php"><a href="files/src-responses-fetchanalyticsresponse.html"><abbr title="src/Responses/FetchAnalyticsResponse.php">FetchAnalyticsResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">114</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">isActiveRTMP</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">getTotalAnalytics</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -683,77 +592,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">bool</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_isBreakoutRoom">
-        isBreakoutRoom()
-        <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_isBreakoutRoom" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Utils/ActiveRoomInfo.php"><a href="files/src-utils-activeroominfo.html"><abbr title="src/Utils/ActiveRoomInfo.php">ActiveRoomInfo.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">136</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">isBreakoutRoom</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">bool</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_isRunning">
-        isRunning()
-        <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_isRunning" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Utils/ActiveRoomInfo.php"><a href="files/src-utils-activeroominfo.html"><abbr title="src/Utils/ActiveRoomInfo.php">ActiveRoomInfo.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">92</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">isRunning</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">bool</span>
+        <span class="phpdocumentor-signature__response_type">int</span>
             </section>
 
 </article>
@@ -763,7 +602,7 @@
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
         <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/src/Utils/ActiveRoomInfo.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/src/Responses/FetchAnalyticsResponse.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
         </div>
         <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
     </div>
@@ -862,34 +701,30 @@
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                            <li><a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#toc-properties">Properties</a></li>
-                                                            <li><a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#toc-methods">Methods</a></li>
+                                                            <li><a href="classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
             
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#property_roomInfo">$roomInfo<a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html"></li>
+                                                    <li><a href="classes/Mynaparrot-Plugnmeet-Responses-BaseResponse.html#property_rawResponse">$rawResponse<a href="classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html"></li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method___construct">__construct()</a></li>
-                                            <li><a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getCreationTime">getCreationTime()</a></li>
-                                            <li><a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getJoinedParticipants">getJoinedParticipants()</a></li>
-                                            <li><a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getMetadata">getMetadata()</a></li>
-                                            <li><a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getParentRoomId">getParentRoomId()</a></li>
-                                            <li><a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getRoomId">getRoomId()</a></li>
-                                            <li><a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getRoomSid">getRoomSid()</a></li>
-                                            <li><a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getRoomTitle">getRoomTitle()</a></li>
-                                            <li><a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_getWebhookUrl">getWebhookUrl()</a></li>
-                                            <li><a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_isActiveRecording">isActiveRecording()</a></li>
-                                            <li><a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_isActiveRTMP">isActiveRTMP()</a></li>
-                                            <li><a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_isBreakoutRoom">isBreakoutRoom()</a></li>
-                                            <li><a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#method_isRunning">isRunning()</a></li>
+                                            <li><a href="classes/Mynaparrot-Plugnmeet-Responses-BaseResponse.html#method___construct">__construct()</a></li>
+                                            <li><a href="classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#method_getAnalytics">getAnalytics()</a></li>
+                                            <li><a href="classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#method_getFrom">getFrom()</a></li>
+                                            <li><a href="classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#method_getLimit">getLimit()</a></li>
+                                            <li><a href="classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#method_getOrderBy">getOrderBy()</a></li>
+                                            <li><a href="classes/Mynaparrot-Plugnmeet-Responses-BaseResponse.html#method_getRawResponse">getRawResponse()</a></li>
+                                            <li><a href="classes/Mynaparrot-Plugnmeet-Responses-BaseResponse.html#method_getResponseMsg">getResponseMsg()</a></li>
+                                            <li><a href="classes/Mynaparrot-Plugnmeet-Responses-BaseResponse.html#method_getStatus">getStatus()</a></li>
+                                            <li><a href="classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#method_getTotalAnalytics">getTotalAnalytics()</a></li>
                                     </ul>
             </li>
                     </ul>
@@ -909,7 +744,7 @@
     </section>
 </section>
         </div>
-        <a href="classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

@@ -1,6 +1,36 @@
 Search.appendIndex(
     [
                 {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\AnalyticsDownloadTokenParameters",
+            "name": "AnalyticsDownloadTokenParameters",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-AnalyticsDownloadTokenParameters.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\AnalyticsDownloadTokenParameters\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-AnalyticsDownloadTokenParameters.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\AnalyticsDownloadTokenParameters\u003A\u003AgetFileId\u0028\u0029",
+            "name": "getFileId",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-AnalyticsDownloadTokenParameters.html#method_getFileId"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\AnalyticsDownloadTokenParameters\u003A\u003AsetFileId\u0028\u0029",
+            "name": "setFileId",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-AnalyticsDownloadTokenParameters.html#method_setFileId"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\AnalyticsDownloadTokenParameters\u003A\u003AbuildBody\u0028\u0029",
+            "name": "buildBody",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-AnalyticsDownloadTokenParameters.html#method_buildBody"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\AnalyticsDownloadTokenParameters\u003A\u003A\u0024fileId",
+            "name": "fileId",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-AnalyticsDownloadTokenParameters.html#property_fileId"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\BreakoutRoomFeaturesParameters",
             "name": "BreakoutRoomFeaturesParameters",
             "summary": "",
@@ -186,6 +216,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-CreateRoomParameters.html#property_roomMetadata"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\DeleteAnalyticsParameters",
+            "name": "DeleteAnalyticsParameters",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-DeleteAnalyticsParameters.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\DeleteAnalyticsParameters\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-DeleteAnalyticsParameters.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\DeleteAnalyticsParameters\u003A\u003AgetFileId\u0028\u0029",
+            "name": "getFileId",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-DeleteAnalyticsParameters.html#method_getFileId"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\DeleteAnalyticsParameters\u003A\u003AsetFileId\u0028\u0029",
+            "name": "setFileId",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-DeleteAnalyticsParameters.html#method_setFileId"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\DeleteAnalyticsParameters\u003A\u003AbuildBody\u0028\u0029",
+            "name": "buildBody",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-DeleteAnalyticsParameters.html#method_buildBody"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\DeleteAnalyticsParameters\u003A\u003A\u0024fileId",
+            "name": "fileId",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-DeleteAnalyticsParameters.html#property_fileId"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\DeleteRecordingParameters",
             "name": "DeleteRecordingParameters",
             "summary": "",
@@ -325,6 +385,156 @@ Search.appendIndex(
             "name": "allowedExternalMediaPlayer",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-ExternalMediaPlayerFeaturesParameters.html#property_allowedExternalMediaPlayer"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchAnalyticsParameters",
+            "name": "FetchAnalyticsParameters",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchAnalyticsParameters.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchAnalyticsParameters\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchAnalyticsParameters.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchAnalyticsParameters\u003A\u003AgetRoomIds\u0028\u0029",
+            "name": "getRoomIds",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchAnalyticsParameters.html#method_getRoomIds"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchAnalyticsParameters\u003A\u003AsetRoomIds\u0028\u0029",
+            "name": "setRoomIds",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchAnalyticsParameters.html#method_setRoomIds"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchAnalyticsParameters\u003A\u003AgetFrom\u0028\u0029",
+            "name": "getFrom",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchAnalyticsParameters.html#method_getFrom"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchAnalyticsParameters\u003A\u003AsetFrom\u0028\u0029",
+            "name": "setFrom",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchAnalyticsParameters.html#method_setFrom"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchAnalyticsParameters\u003A\u003AgetLimit\u0028\u0029",
+            "name": "getLimit",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchAnalyticsParameters.html#method_getLimit"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchAnalyticsParameters\u003A\u003AsetLimit\u0028\u0029",
+            "name": "setLimit",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchAnalyticsParameters.html#method_setLimit"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchAnalyticsParameters\u003A\u003AgetOrderBy\u0028\u0029",
+            "name": "getOrderBy",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchAnalyticsParameters.html#method_getOrderBy"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchAnalyticsParameters\u003A\u003AsetOrderBy\u0028\u0029",
+            "name": "setOrderBy",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchAnalyticsParameters.html#method_setOrderBy"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchAnalyticsParameters\u003A\u003AbuildBody\u0028\u0029",
+            "name": "buildBody",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchAnalyticsParameters.html#method_buildBody"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchAnalyticsParameters\u003A\u003A\u0024roomIds",
+            "name": "roomIds",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchAnalyticsParameters.html#property_roomIds"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchAnalyticsParameters\u003A\u003A\u0024from",
+            "name": "from",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchAnalyticsParameters.html#property_from"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchAnalyticsParameters\u003A\u003A\u0024limit",
+            "name": "limit",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchAnalyticsParameters.html#property_limit"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchAnalyticsParameters\u003A\u003A\u0024orderBy",
+            "name": "orderBy",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchAnalyticsParameters.html#property_orderBy"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchPastRoomsParameters",
+            "name": "FetchPastRoomsParameters",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchPastRoomsParameters.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchPastRoomsParameters\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchPastRoomsParameters.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchPastRoomsParameters\u003A\u003AgetRoomIds\u0028\u0029",
+            "name": "getRoomIds",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchPastRoomsParameters.html#method_getRoomIds"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchPastRoomsParameters\u003A\u003AsetRoomIds\u0028\u0029",
+            "name": "setRoomIds",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchPastRoomsParameters.html#method_setRoomIds"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchPastRoomsParameters\u003A\u003AgetFrom\u0028\u0029",
+            "name": "getFrom",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchPastRoomsParameters.html#method_getFrom"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchPastRoomsParameters\u003A\u003AsetFrom\u0028\u0029",
+            "name": "setFrom",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchPastRoomsParameters.html#method_setFrom"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchPastRoomsParameters\u003A\u003AgetLimit\u0028\u0029",
+            "name": "getLimit",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchPastRoomsParameters.html#method_getLimit"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchPastRoomsParameters\u003A\u003AsetLimit\u0028\u0029",
+            "name": "setLimit",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchPastRoomsParameters.html#method_setLimit"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchPastRoomsParameters\u003A\u003AgetOrderBy\u0028\u0029",
+            "name": "getOrderBy",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchPastRoomsParameters.html#method_getOrderBy"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchPastRoomsParameters\u003A\u003AsetOrderBy\u0028\u0029",
+            "name": "setOrderBy",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchPastRoomsParameters.html#method_setOrderBy"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchPastRoomsParameters\u003A\u003AbuildBody\u0028\u0029",
+            "name": "buildBody",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchPastRoomsParameters.html#method_buildBody"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchPastRoomsParameters\u003A\u003A\u0024roomIds",
+            "name": "roomIds",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchPastRoomsParameters.html#property_roomIds"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchPastRoomsParameters\u003A\u003A\u0024from",
+            "name": "from",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchPastRoomsParameters.html#property_from"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchPastRoomsParameters\u003A\u003A\u0024limit",
+            "name": "limit",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchPastRoomsParameters.html#property_limit"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchPastRoomsParameters\u003A\u003A\u0024orderBy",
+            "name": "orderBy",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-FetchPastRoomsParameters.html#property_orderBy"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\FetchRecordingsParameters",
             "name": "FetchRecordingsParameters",
@@ -936,6 +1146,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_setRoomDuration"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AisEnableAnalytics\u0028\u0029",
+            "name": "isEnableAnalytics",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_isEnableAnalytics"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AsetEnableAnalytics\u0028\u0029",
+            "name": "setEnableAnalytics",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_setEnableAnalytics"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AgetRecordingFeatures\u0028\u0029",
             "name": "getRecordingFeatures",
             "summary": "",
@@ -1095,6 +1315,11 @@ Search.appendIndex(
             "name": "roomDuration",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#property_roomDuration"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003A\u0024enableAnalytics",
+            "name": "enableAnalytics",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#property_enableAnalytics"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003A\u0024recordingFeatures",
             "name": "recordingFeatures",
@@ -1511,6 +1736,11 @@ Search.appendIndex(
             "summary": "Get\u0020all\u0020active\u0020rooms",
             "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getActiveRoomsInfo"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AfetchPastRoomsInfo\u0028\u0029",
+            "name": "fetchPastRoomsInfo",
+            "summary": "Get\u0020all\u0020past\u0020rooms",
+            "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_fetchPastRoomsInfo"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AendRoom\u0028\u0029",
             "name": "endRoom",
             "summary": "End\u0020active\u0020room",
@@ -1530,6 +1760,21 @@ Search.appendIndex(
             "name": "getRecordingDownloadToken",
             "summary": "Generate\u0020token\u0020to\u0020download\u0020recording",
             "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getRecordingDownloadToken"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AfetchAnalytics\u0028\u0029",
+            "name": "fetchAnalytics",
+            "summary": "To\u0020fetch\u0020analytics",
+            "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_fetchAnalytics"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AdeleteAnalytics\u0028\u0029",
+            "name": "deleteAnalytics",
+            "summary": "To\u0020delete\u0020analytics",
+            "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_deleteAnalytics"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AgetAnalyticsDownloadToken\u0028\u0029",
+            "name": "getAnalyticsDownloadToken",
+            "summary": "Generate\u0020token\u0020to\u0020download\u0020analytics",
+            "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getAnalyticsDownloadToken"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AgetClientFiles\u0028\u0029",
             "name": "getClientFiles",
@@ -1580,6 +1825,16 @@ Search.appendIndex(
             "name": "algo",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#property_algo"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\AnalyticsDownloadTokenResponse",
+            "name": "AnalyticsDownloadTokenResponse",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Responses-AnalyticsDownloadTokenResponse.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\AnalyticsDownloadTokenResponse\u003A\u003AgetToken\u0028\u0029",
+            "name": "getToken",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Responses-AnalyticsDownloadTokenResponse.html#method_getToken"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\BaseResponse",
             "name": "BaseResponse",
@@ -1671,6 +1926,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Responses-CreateRoomResponse.html#method_getMetadata"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\DeleteAnalyticsResponse",
+            "name": "DeleteAnalyticsResponse",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Responses-DeleteAnalyticsResponse.html"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\DeleteRecordingResponse",
             "name": "DeleteRecordingResponse",
             "summary": "",
@@ -1680,6 +1940,66 @@ Search.appendIndex(
             "name": "EndRoomResponse",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Responses-EndRoomResponse.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\FetchAnalyticsResponse",
+            "name": "FetchAnalyticsResponse",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\FetchAnalyticsResponse\u003A\u003AgetTotalAnalytics\u0028\u0029",
+            "name": "getTotalAnalytics",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#method_getTotalAnalytics"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\FetchAnalyticsResponse\u003A\u003AgetFrom\u0028\u0029",
+            "name": "getFrom",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#method_getFrom"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\FetchAnalyticsResponse\u003A\u003AgetLimit\u0028\u0029",
+            "name": "getLimit",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#method_getLimit"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\FetchAnalyticsResponse\u003A\u003AgetOrderBy\u0028\u0029",
+            "name": "getOrderBy",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#method_getOrderBy"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\FetchAnalyticsResponse\u003A\u003AgetAnalytics\u0028\u0029",
+            "name": "getAnalytics",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Responses-FetchAnalyticsResponse.html#method_getAnalytics"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\FetchPastRoomsResponse",
+            "name": "FetchPastRoomsResponse",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Responses-FetchPastRoomsResponse.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\FetchPastRoomsResponse\u003A\u003AgetTotalRooms\u0028\u0029",
+            "name": "getTotalRooms",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Responses-FetchPastRoomsResponse.html#method_getTotalRooms"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\FetchPastRoomsResponse\u003A\u003AgetFrom\u0028\u0029",
+            "name": "getFrom",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Responses-FetchPastRoomsResponse.html#method_getFrom"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\FetchPastRoomsResponse\u003A\u003AgetLimit\u0028\u0029",
+            "name": "getLimit",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Responses-FetchPastRoomsResponse.html#method_getLimit"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\FetchPastRoomsResponse\u003A\u003AgetOrderBy\u0028\u0029",
+            "name": "getOrderBy",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Responses-FetchPastRoomsResponse.html#method_getOrderBy"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\FetchPastRoomsResponse\u003A\u003AgetRooms\u0028\u0029",
+            "name": "getRooms",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Responses-FetchPastRoomsResponse.html#method_getRooms"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\FetchRecordingsResponse",
             "name": "FetchRecordingsResponse",
@@ -1836,6 +2156,51 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Utils-ActiveRoomInfo.html#property_roomInfo"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\AnalyticsInfo",
+            "name": "AnalyticsInfo",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Utils-AnalyticsInfo.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\AnalyticsInfo\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Utils-AnalyticsInfo.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\AnalyticsInfo\u003A\u003AgetRoomId\u0028\u0029",
+            "name": "getRoomId",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Utils-AnalyticsInfo.html#method_getRoomId"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\AnalyticsInfo\u003A\u003AgetFileId\u0028\u0029",
+            "name": "getFileId",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Utils-AnalyticsInfo.html#method_getFileId"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\AnalyticsInfo\u003A\u003AgetFileName\u0028\u0029",
+            "name": "getFileName",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Utils-AnalyticsInfo.html#method_getFileName"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\AnalyticsInfo\u003A\u003AgetFileSize\u0028\u0029",
+            "name": "getFileSize",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Utils-AnalyticsInfo.html#method_getFileSize"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\AnalyticsInfo\u003A\u003AgetCreationTime\u0028\u0029",
+            "name": "getCreationTime",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Utils-AnalyticsInfo.html#method_getCreationTime"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\AnalyticsInfo\u003A\u003AgetRoomCreationTime\u0028\u0029",
+            "name": "getRoomCreationTime",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Utils-AnalyticsInfo.html#method_getRoomCreationTime"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\AnalyticsInfo\u003A\u003A\u0024analyticsInfo",
+            "name": "analyticsInfo",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Utils-AnalyticsInfo.html#property_analyticsInfo"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\ParticipantInfo",
             "name": "ParticipantInfo",
             "summary": "",
@@ -1895,6 +2260,61 @@ Search.appendIndex(
             "name": "participantInfo",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Utils-ParticipantInfo.html#property_participantInfo"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\PastRoomInfo",
+            "name": "PastRoomInfo",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Utils-PastRoomInfo.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\PastRoomInfo\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Utils-PastRoomInfo.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\PastRoomInfo\u003A\u003AgetRoomTitle\u0028\u0029",
+            "name": "getRoomTitle",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Utils-PastRoomInfo.html#method_getRoomTitle"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\PastRoomInfo\u003A\u003AgetRoomId\u0028\u0029",
+            "name": "getRoomId",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Utils-PastRoomInfo.html#method_getRoomId"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\PastRoomInfo\u003A\u003AgetRoomSid\u0028\u0029",
+            "name": "getRoomSid",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Utils-PastRoomInfo.html#method_getRoomSid"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\PastRoomInfo\u003A\u003AgetJoinedParticipants\u0028\u0029",
+            "name": "getJoinedParticipants",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Utils-PastRoomInfo.html#method_getJoinedParticipants"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\PastRoomInfo\u003A\u003AgetWebhookUrl\u0028\u0029",
+            "name": "getWebhookUrl",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Utils-PastRoomInfo.html#method_getWebhookUrl"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\PastRoomInfo\u003A\u003AgetCreatedDate\u0028\u0029",
+            "name": "getCreatedDate",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Utils-PastRoomInfo.html#method_getCreatedDate"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\PastRoomInfo\u003A\u003AgetEndedDate\u0028\u0029",
+            "name": "getEndedDate",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Utils-PastRoomInfo.html#method_getEndedDate"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\PastRoomInfo\u003A\u003AgetAnalyticsFileId\u0028\u0029",
+            "name": "getAnalyticsFileId",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Utils-PastRoomInfo.html#method_getAnalyticsFileId"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\PastRoomInfo\u003A\u003A\u0024roomInfo",
+            "name": "roomInfo",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Utils-PastRoomInfo.html#property_roomInfo"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\RecordingInfo",
             "name": "RecordingInfo",
