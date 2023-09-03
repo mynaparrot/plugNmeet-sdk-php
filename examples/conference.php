@@ -45,7 +45,7 @@ $config->plugnmeet_api_key = "plugnmeet";
 $config->plugnmeet_secret = "zumyyYWqv7KR2kUqvYdq4z4sXg7XTBD2ljT6";
 
 $connect = new plugNmeetConnect($config);
-// https://www.plugnmeet.org/docs/api/get_client_files
+// https://www.plugnmeet.org/docs/api/get-client-files
 $files = $connect->getClientFiles();
 
 if (!$files->getStatus()) {
