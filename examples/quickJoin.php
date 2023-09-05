@@ -51,6 +51,7 @@ $roomMetadata = array(
         "allow_view_other_webcams" => true,
         "allow_view_other_users_list" => true,
         "admin_only_webcams" => false,
+        "enable_analytics" => true,
         "room_duration" => 0 // in minutes. 0 = no limit/unlimited
     ),
     "recording_features" => array(
@@ -89,6 +90,9 @@ $roomMetadata = array(
     "speech_to_text_translation_features" => array(
         "is_allow" => true,
         "is_allow_translation" => true,
+    ),
+    "end_to_end_encryption_features" => array(
+        "is_enabled" => false,
     ),
     "default_lock_settings" => array(
         "lock_microphone" => false,
