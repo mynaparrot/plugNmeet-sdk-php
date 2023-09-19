@@ -33,6 +33,10 @@
 // GET param `access_token` with token value, you can add other params for your own usage
 // the value of token don't need to encoded or any changes else will fail to validate
 
+// Note: We recommend you to not use other JS files except plugNmeet client files in this page
+// to avoid conflict. But if you are free use any other JS files but please make sure that
+// you did proper testing before going to production.
+
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
@@ -54,7 +58,7 @@ if (!$files->getStatus()) {
 
 $jsFiles = $files->getJSFiles();
 $cssFiles = $files->getCSSFiles();
-$path = $config->plugnmeet_server_url . "/assets";
+$assetsPath = $config->plugnmeet_server_url . "/assets";
 
 if (empty($jsFiles) || empty($cssFiles)) {
     die("didn't get required files to build interface");
@@ -62,19 +66,22 @@ if (empty($jsFiles) || empty($cssFiles)) {
 
 $jsTag = "";
 foreach ($jsFiles as $file) {
-    $jsTag .= '<script src="' . $path . '/js/' . $file . '" defer="defer"></script>' . "\n\t";
+    $jsTag .= '<script src="' . $assetsPath . '/js/' . $file . '" defer="defer"></script>' . "\n\t";
 }
 
 $cssTag = "";
 foreach ($cssFiles as $file) {
-    $cssTag .= '<link href="' . $path . '/css/' . $file . '" rel="stylesheet" />' . "\n\t";
+    $cssTag .= '<link href="' . $assetsPath . '/css/' . $file . '" rel="stylesheet" />' . "\n\t";
 }
 
 // build config
 // https://github.com/mynaparrot/plugNmeet-client/blob/main/src/assets/config_sample.js
-$js = 'window.PLUG_N_MEET_SERVER_URL = "' . $config->plugnmeet_server_url . '";';
-$js .= 'window.STATIC_ASSETS_PATH = "' . $path . '";';
 
+// this 2 fields are required. User won't be able to join if provided invalid info
+$js = 'window.PLUG_N_MEET_SERVER_URL = "' . $config->plugnmeet_server_url . '";';
+$js .= 'window.STATIC_ASSETS_PATH = "' . $assetsPath . '";';
+
+// all these fields are optional
 $js .= 'Window.ENABLE_DYNACAST = ' . filter_var(1, FILTER_VALIDATE_BOOLEAN) . ';';
 $js .= 'window.ENABLE_SIMULCAST = ' . filter_var(1, FILTER_VALIDATE_BOOLEAN) . ';';
 $js .= 'window.VIDEO_CODEC = "vp8";';
@@ -82,7 +89,7 @@ $js .= 'window.DEFAULT_WEBCAM_RESOLUTION = "h720";';
 $js .= 'window.DEFAULT_SCREEN_SHARE_RESOLUTION = "h1080fps15";';
 $js .= 'window.STOP_MIC_TRACK_ON_MUTE = ' . filter_var(1, FILTER_VALIDATE_BOOLEAN) . ';';
 
-// for logo
+// for logo always use https link otherwise may fail to load.
 /*$logo = array(
     "main_logo_light" => "https://mydomain.com/logo_light.png",
     "main_logo_dark" => "https://mydomain.com/logo_dark.png", //optional
@@ -91,17 +98,18 @@ $js .= 'window.STOP_MIC_TRACK_ON_MUTE = ' . filter_var(1, FILTER_VALIDATE_BOOLEA
 );
 $js .= 'window.CUSTOM_LOGO = JSON.parse(`' . json_encode($logo) . '`);';*/
 
+// https://github.com/mynaparrot/plugNmeet-client/blob/main/src/helpers/hooks/useDesignCustomization.tsx
 $custom_design_items = array(
     "primary_color" => "#004D90",
     "secondary_color" => "#24AEF7",
     "background_color" => "#0b7db4",
-    //"background_image" => "https://mydomain.com/custom_bg.png",
+    //"background_image" => "https://mydomain.com/custom_bg.png", // always https direct link
     "header_bg_color" => "#45b3ec",
     "footer_bg_color" => "#45b3ec",
     "left_side_bg_color" => "#04a2f3",
     "right_side_bg_color" => "#04a2f3",
-    //"custom_css_url" => "https://mydomain.com/plugNmeet_desing.css",
-    //"custom_logo" => "https://mydomain.com/logo.png"
+    //"custom_css_url" => "https://mydomain.com/plugNmeet_desing.css", // always https direct link
+    //"custom_logo" => "https://mydomain.com/logo.png" // this is optional, can be used in certain case for example if you want to show different logo for different user otherwise better to use `window.CUSTOM_LOGO`.
 );
 $js .= 'window.DESIGN_CUSTOMIZATION = `' . json_encode($custom_design_items) . '`;';
 
