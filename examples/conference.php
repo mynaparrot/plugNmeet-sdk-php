@@ -33,9 +33,9 @@
 // GET param `access_token` with token value, you can add other params for your own usage
 // the value of token don't need to encoded or any changes else will fail to validate
 
-// Note: We recommend you to not use other JS files except plugNmeet client files in this page
-// to avoid conflict. But if you are free use any other JS files but please make sure that
-// you did proper testing before going to production.
+// Note: To avoid conflict, we recommend that you only utilize plugNmeet client files in this page.
+// However, you are free to use any additional JS files you want, but please ensure that you have done
+// adequate testing before going to production.
 
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
