@@ -82,7 +82,15 @@ $js .= 'window.DEFAULT_WEBCAM_RESOLUTION = "h720";';
 $js .= 'window.DEFAULT_SCREEN_SHARE_RESOLUTION = "h1080fps15";';
 $js .= 'window.STOP_MIC_TRACK_ON_MUTE = ' . filter_var(1, FILTER_VALIDATE_BOOLEAN) . ';';
 
-//$js .= 'window.CUSTOM_LOGO = "https://yourdomain.com/logo.png";';
+// for logo
+/*$logo = array(
+    "main_logo_light" => "https://mydomain.com/logo_light.png",
+    "main_logo_dark" => "https://mydomain.com/logo_dark.png", //optional
+    "waiting_room_logo_light" => "https://mydomain.com/logo_waiting_light.png", //optional
+    "waiting_room_logo_dark" => "https://mydomain.com/logo_waiting_dark.png", //optional
+);
+$js .= 'window.CUSTOM_LOGO = JSON.parse(`' . json_encode($logo) . '`);';*/
+
 $custom_design_items = array(
     "primary_color" => "#004D90",
     "secondary_color" => "#24AEF7",
