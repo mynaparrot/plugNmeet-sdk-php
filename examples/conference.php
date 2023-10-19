@@ -113,6 +113,13 @@ $custom_design_items = array(
 );
 $js .= 'window.DESIGN_CUSTOMIZATION = `' . json_encode($custom_design_items) . '`;';
 
+/*$virtualBgImgs = array(
+    'https://www.example.com/vb_bg/image1.png',
+    'https://www.example.com/vb_bg/image2.png',
+    'https://www.example.com/vb_bg/image3.png',
+);
+$js .= 'window.PNM_VIRTUAL_BG_IMGS = JSON.parse(`' . json_encode($virtualBgImgs) . '`);';*/
+
 $js = str_replace(";", ";\n\t", $js);
 $cnfScript = "<script type=\"text/javascript\">\n\t" . $js . "</script>\n";
 
