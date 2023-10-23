@@ -44,7 +44,7 @@ error_reporting(E_ALL);
 require __DIR__ . "/plugNmeetConnect.php";
 
 $config = new stdClass();
-$config->plugnmeet_server_url = "http://localhost:8080"; // host.docker.internal
+$config->plugnmeet_server_url = "http://host.docker.internal:8080"; // host.docker.internal
 $config->plugnmeet_api_key = "plugnmeet";
 $config->plugnmeet_secret = "zumyyYWqv7KR2kUqvYdq4z4sXg7XTBD2ljT6";
 
@@ -58,20 +58,28 @@ if (!$files->getStatus()) {
 
 $jsFiles = $files->getJSFiles();
 $cssFiles = $files->getCSSFiles();
-$assetsPath = $config->plugnmeet_server_url . "/assets";
+$assetsPath = "http://localhost:8080/assets";
 
 if (empty($jsFiles) || empty($cssFiles)) {
     die("didn't get required files to build interface");
 }
 
-$jsTag = "";
+$jsTags = "";
+$jsTagsPreload = "";
 foreach ($jsFiles as $file) {
-    $jsTag .= '<script src="' . $assetsPath . '/js/' . $file . '" defer="defer"></script>' . "\n\t";
+    $jsTags .= '<script src="' . $assetsPath . '/js/' . $file . '" defer="defer"></script>' . "\n";
+    if (str_contains($file, "runtime") || str_contains($file, "vendor")) {
+        $jsTagsPreload .= '<link href="' . $assetsPath . '/js/' . $file . '" rel="preload" as="script" />' . "\n\t";
+    }
 }
 
-$cssTag = "";
+$cssTags = "";
+$cssTagsPreload = "";
 foreach ($cssFiles as $file) {
-    $cssTag .= '<link href="' . $assetsPath . '/css/' . $file . '" rel="stylesheet" />' . "\n\t";
+    $cssTags .= '<link href="' . $assetsPath . '/css/' . $file . '" rel="stylesheet" />' . "\n\t";
+    if (str_contains($file, "vendor")) {
+        $cssTagsPreload .= '<link href="' . $assetsPath . '/css/' . $file . '" rel="preload" as="style" />' . "\n\t";
+    }
 }
 
 // build config
@@ -131,9 +139,10 @@ $cnfScript = "<script type=\"text/javascript\">\n\t" . $js . "</script>\n";
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <title>plugNmeet</title>
-    <?php echo $cssTag . $jsTag . $cnfScript; ?>
+    <?php echo $cssTagsPreload . $jsTagsPreload . $cssTags . $cnfScript; ?>
 </head>
 <body>
 <div id="plugNmeet-app"></div>
+<?php echo $jsTags; ?>
 </body>
 </html>
