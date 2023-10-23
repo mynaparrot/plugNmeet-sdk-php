@@ -44,7 +44,7 @@ error_reporting(E_ALL);
 require __DIR__ . "/plugNmeetConnect.php";
 
 $config = new stdClass();
-$config->plugnmeet_server_url = "http://host.docker.internal:8080"; // host.docker.internal
+$config->plugnmeet_server_url = "http://localhost:8080"; // host.docker.internal
 $config->plugnmeet_api_key = "plugnmeet";
 $config->plugnmeet_secret = "zumyyYWqv7KR2kUqvYdq4z4sXg7XTBD2ljT6";
 
@@ -58,7 +58,7 @@ if (!$files->getStatus()) {
 
 $jsFiles = $files->getJSFiles();
 $cssFiles = $files->getCSSFiles();
-$assetsPath = "http://localhost:8080/assets";
+$assetsPath = $config->plugnmeet_server_url . "/assets";
 
 if (empty($jsFiles) || empty($cssFiles)) {
     die("didn't get required files to build interface");
