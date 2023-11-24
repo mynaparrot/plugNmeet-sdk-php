@@ -1046,6 +1046,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RecordingFeaturesParameters.html#property_onlyRecordAdminWebcams"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RecordingInfoParameters",
+            "name": "RecordingInfoParameters",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RecordingInfoParameters.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RecordingInfoParameters\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RecordingInfoParameters.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RecordingInfoParameters\u003A\u003AgetRecordId\u0028\u0029",
+            "name": "getRecordId",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RecordingInfoParameters.html#method_getRecordId"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RecordingInfoParameters\u003A\u003AsetRecordId\u0028\u0029",
+            "name": "setRecordId",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RecordingInfoParameters.html#method_setRecordId"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RecordingInfoParameters\u003A\u003AbuildBody\u0028\u0029",
+            "name": "buildBody",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RecordingInfoParameters.html#method_buildBody"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RecordingInfoParameters\u003A\u003A\u0024recordId",
+            "name": "recordId",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RecordingInfoParameters.html#property_recordId"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters",
             "name": "RoomFeaturesParameters",
             "summary": "",
@@ -1830,36 +1860,6 @@ Search.appendIndex(
             "name": "algo",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#property_algo"
-        },                {
-            "fqsen": "\\Mynaparrot\\Plugnmeet\\RecordingInfoParameters",
-            "name": "RecordingInfoParameters",
-            "summary": "",
-            "url": "classes/Mynaparrot-Plugnmeet-RecordingInfoParameters.html"
-        },                {
-            "fqsen": "\\Mynaparrot\\Plugnmeet\\RecordingInfoParameters\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Mynaparrot-Plugnmeet-RecordingInfoParameters.html#method___construct"
-        },                {
-            "fqsen": "\\Mynaparrot\\Plugnmeet\\RecordingInfoParameters\u003A\u003AgetRecordId\u0028\u0029",
-            "name": "getRecordId",
-            "summary": "",
-            "url": "classes/Mynaparrot-Plugnmeet-RecordingInfoParameters.html#method_getRecordId"
-        },                {
-            "fqsen": "\\Mynaparrot\\Plugnmeet\\RecordingInfoParameters\u003A\u003AsetRecordId\u0028\u0029",
-            "name": "setRecordId",
-            "summary": "",
-            "url": "classes/Mynaparrot-Plugnmeet-RecordingInfoParameters.html#method_setRecordId"
-        },                {
-            "fqsen": "\\Mynaparrot\\Plugnmeet\\RecordingInfoParameters\u003A\u003AbuildBody\u0028\u0029",
-            "name": "buildBody",
-            "summary": "",
-            "url": "classes/Mynaparrot-Plugnmeet-RecordingInfoParameters.html#method_buildBody"
-        },                {
-            "fqsen": "\\Mynaparrot\\Plugnmeet\\RecordingInfoParameters\u003A\u003A\u0024recordId",
-            "name": "recordId",
-            "summary": "",
-            "url": "classes/Mynaparrot-Plugnmeet-RecordingInfoParameters.html#property_recordId"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\AnalyticsDownloadTokenResponse",
             "name": "AnalyticsDownloadTokenResponse",
