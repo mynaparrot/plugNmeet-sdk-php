@@ -1831,6 +1831,11 @@ Search.appendIndex(
             "summary": "Generate\u0020UUID\u0020random\u0020string",
             "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getUUID"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AgenerateUuid4\u0028\u0029",
+            "name": "generateUuid4",
+            "summary": "Generate\u0020UUID\u0020v4\u0020random\u0020string",
+            "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_generateUuid4"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AsendRequest\u0028\u0029",
             "name": "sendRequest",
             "summary": "",
