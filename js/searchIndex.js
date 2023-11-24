@@ -1751,6 +1751,11 @@ Search.appendIndex(
             "summary": "To\u0020fetch\u0020recordings",
             "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_fetchRecordings"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AgetRecordingInfo\u0028\u0029",
+            "name": "getRecordingInfo",
+            "summary": "To\u0020get\u0020recording\u0020info",
+            "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getRecordingInfo"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AdeleteRecordings\u0028\u0029",
             "name": "deleteRecordings",
             "summary": "To\u0020delete\u0020recording",
@@ -1825,6 +1830,36 @@ Search.appendIndex(
             "name": "algo",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#property_algo"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\RecordingInfoParameters",
+            "name": "RecordingInfoParameters",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-RecordingInfoParameters.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\RecordingInfoParameters\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-RecordingInfoParameters.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\RecordingInfoParameters\u003A\u003AgetRecordId\u0028\u0029",
+            "name": "getRecordId",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-RecordingInfoParameters.html#method_getRecordId"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\RecordingInfoParameters\u003A\u003AsetRecordId\u0028\u0029",
+            "name": "setRecordId",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-RecordingInfoParameters.html#method_setRecordId"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\RecordingInfoParameters\u003A\u003AbuildBody\u0028\u0029",
+            "name": "buildBody",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-RecordingInfoParameters.html#method_buildBody"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\RecordingInfoParameters\u003A\u003A\u0024recordId",
+            "name": "recordId",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-RecordingInfoParameters.html#property_recordId"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\AnalyticsDownloadTokenResponse",
             "name": "AnalyticsDownloadTokenResponse",
@@ -2080,6 +2115,21 @@ Search.appendIndex(
             "name": "getToken",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Responses-RecordingDownloadTokenResponse.html#method_getToken"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\RecordingInfoResponse",
+            "name": "RecordingInfoResponse",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Responses-RecordingInfoResponse.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\RecordingInfoResponse\u003A\u003AgetRecordingInfo\u0028\u0029",
+            "name": "getRecordingInfo",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Responses-RecordingInfoResponse.html#method_getRecordingInfo"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\RecordingInfoResponse\u003A\u003AgetRoomInfo\u0028\u0029",
+            "name": "getRoomInfo",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Responses-RecordingInfoResponse.html#method_getRoomInfo"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Utils\\ActiveRoomInfo",
             "name": "ActiveRoomInfo",
