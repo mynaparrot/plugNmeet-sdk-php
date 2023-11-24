@@ -50,6 +50,7 @@ use Mynaparrot\Plugnmeet\Parameters\UserMetadataParameters;
 use Mynaparrot\Plugnmeet\Parameters\WaitingRoomFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\WhiteboardFeaturesParameters;
 use Mynaparrot\Plugnmeet\PlugNmeet;
+use Mynaparrot\Plugnmeet\RecordingInfoParameters;
 use Mynaparrot\Plugnmeet\Responses\AnalyticsDownloadTokenResponse;
 use Mynaparrot\Plugnmeet\Responses\ClientFilesResponses;
 use Mynaparrot\Plugnmeet\Responses\CreateRoomResponse;
@@ -64,6 +65,7 @@ use Mynaparrot\Plugnmeet\Responses\GetActiveRoomInfoResponse;
 use Mynaparrot\Plugnmeet\Responses\GetActiveRoomsInfoResponse;
 use Mynaparrot\Plugnmeet\Responses\IsRoomActiveResponse;
 use Mynaparrot\Plugnmeet\Responses\RecordingDownloadTokenResponse;
+use Mynaparrot\Plugnmeet\Responses\RecordingInfoResponse;
 
 require "../vendor/autoload.php";
 
@@ -451,6 +453,18 @@ class plugNmeetConnect
         $fetchRecordingsParameters->setOrderBy($orderBy);
 
         return $this->plugnmeet->fetchRecordings($fetchRecordingsParameters);
+    }
+
+    /**
+     * @param string $recordingId
+     * @return RecordingInfoResponse
+     */
+    public function getRecordingInfo(string $recordingId): RecordingInfoResponse
+    {
+        $recordingInfoParameters = new RecordingInfoParameters();
+        $recordingInfoParameters->setRecordId($recordingId);
+
+        return $this->plugnmeet->getRecordingInfo($recordingInfoParameters);
     }
 
     /**

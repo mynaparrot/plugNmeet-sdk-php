@@ -53,6 +53,7 @@ use Mynaparrot\Plugnmeet\Responses\GetActiveRoomInfoResponse;
 use Mynaparrot\Plugnmeet\Responses\GetActiveRoomsInfoResponse;
 use Mynaparrot\Plugnmeet\Responses\IsRoomActiveResponse;
 use Mynaparrot\Plugnmeet\Responses\RecordingDownloadTokenResponse;
+use Mynaparrot\Plugnmeet\Responses\RecordingInfoResponse;
 use Ramsey\Uuid\Uuid;
 use stdClass;
 
@@ -195,6 +196,19 @@ class PlugNmeet
         $body = $fetchRecordingsParameters->buildBody();
         $output = $this->sendRequest("/recording/fetch", $body);
         return new FetchRecordingsResponse($output);
+    }
+
+    /**
+     * To get recording info
+     *
+     * @param RecordingInfoParameters $recordingInfoParameters
+     * @return RecordingInfoResponse
+     */
+    public function getRecordingInfo(RecordingInfoParameters $recordingInfoParameters): RecordingInfoResponse
+    {
+        $body = $recordingInfoParameters->buildBody();
+        $output = $this->sendRequest("/recording/recordingInfo", $body);
+        return new RecordingInfoResponse($output);
     }
 
     /**
