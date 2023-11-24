@@ -326,6 +326,16 @@ class PlugNmeet
     }
 
     /**
+     * Generate UUID v4 random string
+     *
+     * @return string
+     */
+    public static function generateUuid4(): string
+    {
+        return Uuid::uuid4()->toString();
+    }
+
+    /**
      * @param  $path
      * @param array $body
      * @return stdClass

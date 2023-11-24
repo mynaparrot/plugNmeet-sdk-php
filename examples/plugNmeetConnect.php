@@ -108,6 +108,16 @@ class plugNmeetConnect
     }
 
     /**
+     * Generate UUID v4 random string
+     *
+     * @return string
+     */
+    public static function generateUuid4(): string
+    {
+        return PlugNmeet::generateUuid4();
+    }
+
+    /**
      * @param string $roomId
      * @return IsRoomActiveResponse
      */
