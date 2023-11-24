@@ -23,6 +23,7 @@ Please check `examples` directory to see some examples.
 | [fetchPastRoomsInfo](https://mynaparrot.github.io/plugNmeet-sdk-php/classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_fetchPastRoomsInfo)               | Get past  rooms                           |
 | [endRoom](https://mynaparrot.github.io/plugNmeet-sdk-php/classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_endRoom)                                     | End active room                           |
 | [fetchRecordings](https://mynaparrot.github.io/plugNmeet-sdk-php/classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_fetchRecordings)                     | Fetch recordings                          |
+| [getRecordingInfo](https://mynaparrot.github.io/plugNmeet-sdk-php/classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getRecordingInfo)                   | Get details of a recording                |
 | [deleteRecordings](https://mynaparrot.github.io/plugNmeet-sdk-php/classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_deleteRecordings)                   | Delete recording                          |
 | [getRecordingDownloadToken](https://mynaparrot.github.io/plugNmeet-sdk-php/classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getRecordingDownloadToken) | Generate token to download recording      |
 | [fetchAnalytics](https://mynaparrot.github.io/plugNmeet-sdk-php/classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_fetchAnalytics)                       | Fetch analytics info                      |

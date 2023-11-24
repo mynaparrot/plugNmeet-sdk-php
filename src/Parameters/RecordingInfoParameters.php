@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-namespace Mynaparrot\Plugnmeet;
+namespace Mynaparrot\Plugnmeet\Parameters;
 
 /**
  *

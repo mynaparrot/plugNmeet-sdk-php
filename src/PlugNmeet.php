@@ -39,6 +39,7 @@ use Mynaparrot\Plugnmeet\Parameters\GenerateJoinTokenParameters;
 use Mynaparrot\Plugnmeet\Parameters\GetActiveRoomInfoParameters;
 use Mynaparrot\Plugnmeet\Parameters\IsRoomActiveParameters;
 use Mynaparrot\Plugnmeet\Parameters\RecordingDownloadTokenParameters;
+use Mynaparrot\Plugnmeet\Parameters\RecordingInfoParameters;
 use Mynaparrot\Plugnmeet\Responses\AnalyticsDownloadTokenResponse;
 use Mynaparrot\Plugnmeet\Responses\ClientFilesResponses;
 use Mynaparrot\Plugnmeet\Responses\CreateRoomResponse;
