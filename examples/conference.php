@@ -30,7 +30,9 @@
 // during production using https is compulsory otherwise user won't be able to join
 // Production: https://mydomain.com/conference.php?access_token=TOKEN_HERE
 // you can use any location to build this page, just need to make sure to have
-// GET param `access_token` with token value, you can add other params for your own usage
+// GET param `access_token` with token value; OR
+// set cookie name `pnm_access_token` with the value of the access token
+// you can add other params for your own usage
 // the value of token don't need to encoded or any changes else will fail to validate
 
 // Note: To avoid conflict, we recommend that you only utilize plugNmeet client files in this page.
