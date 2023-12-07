@@ -137,6 +137,8 @@ class plugNmeetConnect
      * @param string $webHookUrl
      * @param array $roomMetadata
      * @param int $empty_timeout
+     * @param string $logoutUrl
+     * @param string|null $extraData
      * @return CreateRoomResponse
      */
     public function createRoom(string $roomId, string $roomTitle, string $welcomeMessage, int $max_participants, string $webHookUrl, array $roomMetadata, int $empty_timeout = 0, string $logoutUrl = "", string $extraData = null): CreateRoomResponse
