@@ -1186,6 +1186,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_setEnableAnalytics"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AisAllowVirtualBg\u0028\u0029",
+            "name": "isAllowVirtualBg",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_isAllowVirtualBg"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AsetAllowVirtualBg\u0028\u0029",
+            "name": "setAllowVirtualBg",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_setAllowVirtualBg"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AisAllowRaiseHand\u0028\u0029",
+            "name": "isAllowRaiseHand",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_isAllowRaiseHand"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AsetAllowRaiseHand\u0028\u0029",
+            "name": "setAllowRaiseHand",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_setAllowRaiseHand"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AgetRecordingFeatures\u0028\u0029",
             "name": "getRecordingFeatures",
             "summary": "",
@@ -1350,6 +1370,16 @@ Search.appendIndex(
             "name": "enableAnalytics",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#property_enableAnalytics"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003A\u0024allowVirtualBg",
+            "name": "allowVirtualBg",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#property_allowVirtualBg"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003A\u0024allowRaiseHand",
+            "name": "allowRaiseHand",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#property_allowRaiseHand"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003A\u0024recordingFeatures",
             "name": "recordingFeatures",
