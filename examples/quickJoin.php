@@ -52,7 +52,9 @@ $roomMetadata = array(
         "allow_view_other_users_list" => true,
         "admin_only_webcams" => false,
         "enable_analytics" => true,
-        "room_duration" => 0 // in minutes. 0 = no limit/unlimited
+        "room_duration" => 0, // in minutes. 0 = no limit/unlimited
+        "allow_virtual_bg" => true,
+        "allow_raise_hand" => true
     ),
     "recording_features" => array(
         "is_allow" => true,
