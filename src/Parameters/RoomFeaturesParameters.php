@@ -70,6 +70,14 @@ class RoomFeaturesParameters
      */
     protected $enableAnalytics = false;
     /**
+     * @var bool
+     */
+    protected $allowVirtualBg = true;
+    /**
+     * @var bool
+     */
+    protected $allowRaiseHand = true;
+    /**
      * @var RecordingFeaturesParameters
      */
     protected $recordingFeatures;
@@ -285,6 +293,40 @@ class RoomFeaturesParameters
     public function setEnableAnalytics(bool $enableAnalytics): void
     {
         $this->enableAnalytics = filter_var($enableAnalytics, FILTER_VALIDATE_BOOLEAN);
+    }
+
+    /**
+     * @return bool
+     */
+    public function isAllowVirtualBg(): bool
+    {
+        return $this->allowVirtualBg;
+    }
+
+    /**
+     * @param bool $allowVirtualBg
+     * @return void
+     */
+    public function setAllowVirtualBg(bool $allowVirtualBg): void
+    {
+        $this->allowVirtualBg = filter_var($allowVirtualBg, FILTER_VALIDATE_BOOLEAN);
+    }
+
+    /**
+     * @return bool
+     */
+    public function isAllowRaiseHand(): bool
+    {
+        return $this->allowRaiseHand;
+    }
+
+    /**
+     * @param bool $allowRaiseHand
+     * @return void
+     */
+    public function setAllowRaiseHand(bool $allowRaiseHand): void
+    {
+        $this->allowRaiseHand = filter_var($allowRaiseHand, FILTER_VALIDATE_BOOLEAN);
     }
 
     /**

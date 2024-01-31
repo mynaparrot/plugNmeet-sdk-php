@@ -178,6 +178,12 @@ class plugNmeetConnect
         if (isset($roomFeatures['enable_analytics'])) {
             $features->setEnableAnalytics($roomFeatures['enable_analytics']);
         }
+        if (isset($roomFeatures['allow_virtual_bg'])) {
+            $features->setAllowVirtualBg($roomFeatures['allow_virtual_bg']);
+        }
+        if (isset($roomFeatures['allow_raise_hand'])) {
+            $features->setAllowRaiseHand($roomFeatures['allow_raise_hand']);
+        }
 
         if (isset($roomMetadata['recording_features'])) {
             $roomRecordingFeatures = $roomMetadata['recording_features'];
