@@ -524,7 +524,9 @@ class RoomFeaturesParameters
             "allow_view_other_users_list" => $this->isAllowViewOtherParticipants(),
             "allow_polls" => $this->isAllowPolls(),
             "room_duration" => $this->getRoomDuration(),
-            "enable_analytics" => $this->isEnableAnalytics()
+            "enable_analytics" => $this->isEnableAnalytics(),
+            "allow_virtual_bg" => $this->isAllowVirtualBg(),
+            "allow_raise_hand" => $this->isAllowRaiseHand()
         );
 
         if ($this->recordingFeatures !== null) {
