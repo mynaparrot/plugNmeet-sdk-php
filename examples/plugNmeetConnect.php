@@ -170,10 +170,8 @@ class plugNmeetConnect
         if (isset($roomFeatures['allow_polls'])) {
             $features->setAllowPolls($roomFeatures['allow_polls']);
         }
-        if (isset($roomFeatures['room_duration'])) {
-            if ($roomFeatures['room_duration'] > 0) {
-                $features->setRoomDuration($roomFeatures['room_duration']);
-            }
+        if (isset($roomFeatures['room_duration']) && $roomFeatures['room_duration'] > 0) {
+            $features->setRoomDuration($roomFeatures['room_duration']);
         }
         if (isset($roomFeatures['enable_analytics'])) {
             $features->setEnableAnalytics($roomFeatures['enable_analytics']);

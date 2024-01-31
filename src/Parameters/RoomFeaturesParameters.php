@@ -276,7 +276,9 @@ class RoomFeaturesParameters
      */
     public function setRoomDuration(int $roomDuration): void
     {
-        $this->roomDuration = $roomDuration;
+        if ($roomDuration > 0) {
+            $this->roomDuration = $roomDuration;
+        }
     }
 
     /**
