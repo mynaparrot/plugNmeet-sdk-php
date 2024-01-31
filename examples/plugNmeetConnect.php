@@ -390,7 +390,7 @@ class plugNmeetConnect
      * @param UserMetadataParameters|null $userMetadata
      * @return GenerateJoinTokenResponse
      */
-    public function getJoinToken(string $roomId, string $name, string $userId, bool $isAdmin, bool $isHidden = false, UserMetadataParameters $userMetadata = null): GenerateJoinTokenResponse
+    public function getJoinToken(string $roomId, string $name, string $userId, bool $isAdmin, bool $isHidden = false, UserMetadataParameters $userMetadata = null, LockSettingsParameters $lockSettings = null): GenerateJoinTokenResponse
     {
         $generateJoinTokenParameters = new GenerateJoinTokenParameters();
         $generateJoinTokenParameters->setRoomId($roomId);
@@ -398,8 +398,12 @@ class plugNmeetConnect
         $generateJoinTokenParameters->setUserId($userId);
         $generateJoinTokenParameters->setIsAdmin($isAdmin);
         $generateJoinTokenParameters->setIsHidden($isHidden);
+
         if ($userMetadata !== null) {
             $generateJoinTokenParameters->setUserMetadata($userMetadata);
+            if ($lockSettings !== null) {
+                $generateJoinTokenParameters->setLockSettings($lockSettings);
+            }
         }
 
         return $this->plugnmeet->getJoinToken($generateJoinTokenParameters);

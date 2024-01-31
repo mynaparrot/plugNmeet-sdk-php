@@ -53,7 +53,12 @@ class GenerateJoinTokenParameters
     /**
      * @var UserMetadataParameters
      */
-    protected $userMetadata;
+    protected $userMetadata = null;
+
+    /**
+     * @var LockSettingsParameters
+     */
+    protected $lockSettings = null;
 
     /**
      *
@@ -158,6 +163,16 @@ class GenerateJoinTokenParameters
         $this->userMetadata = $userMetadata;
     }
 
+    public function getLockSettings(): LockSettingsParameters
+    {
+        return $this->lockSettings;
+    }
+
+    public function setLockSettings(LockSettingsParameters $lockSettings): void
+    {
+        $this->lockSettings = $lockSettings;
+    }
+
     /**
      * @return array
      */
@@ -175,6 +190,9 @@ class GenerateJoinTokenParameters
 
         if ($this->userMetadata !== null) {
             $body["user_info"]["user_metadata"] = $this->getUserMetadata()->buildBody();
+            if ($this->lockSettings !== null) {
+                $body["user_info"]["user_metadata"]["lock_settings"] = $this->getLockSettings()->buildBody();
+            }
         }
 
         return $body;
