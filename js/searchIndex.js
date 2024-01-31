@@ -681,6 +681,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-GenerateJoinTokenParameters.html#method_setUserMetadata"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\GenerateJoinTokenParameters\u003A\u003AgetLockSettings\u0028\u0029",
+            "name": "getLockSettings",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-GenerateJoinTokenParameters.html#method_getLockSettings"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\GenerateJoinTokenParameters\u003A\u003AsetLockSettings\u0028\u0029",
+            "name": "setLockSettings",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-GenerateJoinTokenParameters.html#method_setLockSettings"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\GenerateJoinTokenParameters\u003A\u003AbuildBody\u0028\u0029",
             "name": "buildBody",
             "summary": "",
@@ -705,6 +715,11 @@ Search.appendIndex(
             "name": "userMetadata",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-GenerateJoinTokenParameters.html#property_userMetadata"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\GenerateJoinTokenParameters\u003A\u003A\u0024lockSettings",
+            "name": "lockSettings",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-GenerateJoinTokenParameters.html#property_lockSettings"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\GetActiveRoomInfoParameters",
             "name": "GetActiveRoomInfoParameters",
