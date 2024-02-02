@@ -1666,6 +1666,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-UserMetadataParameters.html#method_setRecordWebcam"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\UserMetadataParameters\u003A\u003AgetPreferredLang\u0028\u0029",
+            "name": "getPreferredLang",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-UserMetadataParameters.html#method_getPreferredLang"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\UserMetadataParameters\u003A\u003AsetPreferredLang\u0028\u0029",
+            "name": "setPreferredLang",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-UserMetadataParameters.html#method_setPreferredLang"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\UserMetadataParameters\u003A\u003AgetLockSettings\u0028\u0029",
             "name": "getLockSettings",
             "summary": "",
@@ -1690,6 +1700,11 @@ Search.appendIndex(
             "name": "recordWebcam",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-UserMetadataParameters.html#property_recordWebcam"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\UserMetadataParameters\u003A\u003A\u0024preferredLang",
+            "name": "preferredLang",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-UserMetadataParameters.html#property_preferredLang"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\UserMetadataParameters\u003A\u003A\u0024lockSettings",
             "name": "lockSettings",
