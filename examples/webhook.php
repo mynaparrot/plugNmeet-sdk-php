@@ -28,7 +28,7 @@ if (!isset($_SERVER["HTTP_AUTHORIZATION"]) && !isset($_SERVER["HTTP_HASH_TOKEN"]
     return;
 }
 
-$hash = isset($_SERVER["HTTP_AUTHORIZATION"]) ? $_SERVER["HTTP_AUTHORIZATION"] : $_SERVER["HTTP_HASH_TOKEN"];
+$hash = $_SERVER["HTTP_AUTHORIZATION"] ?? $_SERVER["HTTP_HASH_TOKEN"];
 if (empty($hash)) {
     return;
 }
@@ -43,7 +43,7 @@ $config->plugnmeet_secret = "zumyyYWqv7KR2kUqvYdq4z4sXg7XTBD2ljT6";
 $connect = new plugNmeetConnect($config);
 $deco = $connect->getPlugnmeet()->decodeJWTData($hash);
 
-if (!$deco || !isset($deco->sha256)) {
+if (!isset($deco->sha256)) {
     return;
 }
 
