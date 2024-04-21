@@ -106,6 +106,12 @@ $roomMetadata = array(
         "lock_chat_send_message" => false,
         "lock_chat_file_share" => false,
         "lock_private_chat" => false // user can always send private message to moderator
+    ),
+    // copyright_conf will only work if server config has been
+    // set true for `allow_override` otherwise this will ignore
+    "copyright_conf" => array(
+        "display" => true,
+        "text" => "Powered by <a href=\"https://www.plugnmeet.org\" target=\"_blank\">plugNmeet</a>"
     )
 );
 $isRoomActive = false;
@@ -114,9 +120,13 @@ $output->status = false;
 
 try {
     $res = $connect->isRoomActive($roomId);
-    $isRoomActive = $res->getStatus();
-    $output->status = true;
-    $output->msg = $res->getResponseMsg();
+    if (!$res->getStatus()) {
+        $output->msg = $res->getResponseMsg();
+    } else {
+        $isRoomActive = $res->isActive();
+        $output->status = true;
+    }
+
 } catch (Exception $e) {
     $output->msg = $e->getMessage();
 }

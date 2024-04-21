@@ -25,6 +25,7 @@
 use Mynaparrot\Plugnmeet\Parameters\AnalyticsDownloadTokenParameters;
 use Mynaparrot\Plugnmeet\Parameters\BreakoutRoomFeaturesParameters;
 use Mynaparrot\Plugnmeet\Parameters\ChatFeaturesParameters;
+use Mynaparrot\Plugnmeet\Parameters\CopyrightConfParameters;
 use Mynaparrot\Plugnmeet\Parameters\CreateRoomParameters;
 use Mynaparrot\Plugnmeet\Parameters\DeleteAnalyticsParameters;
 use Mynaparrot\Plugnmeet\Parameters\DeleteRecordingParameters;
@@ -252,10 +253,8 @@ class plugNmeetConnect
             if (isset($roomWaitingRoomFeatures['is_active'])) {
                 $waitingRoomFeatures->setIsActive($roomWaitingRoomFeatures['is_active']);
             }
-            if (isset($roomWaitingRoomFeatures['waiting_room_msg'])) {
-                if (!empty($roomWaitingRoomFeatures['waiting_room_msg'])) {
-                    $waitingRoomFeatures->setWaitingRoomMsg($roomWaitingRoomFeatures['waiting_room_msg']);
-                }
+            if (!empty($roomWaitingRoomFeatures['waiting_room_msg'])) {
+                $waitingRoomFeatures->setWaitingRoomMsg($roomWaitingRoomFeatures['waiting_room_msg']);
             }
             $features->setWaitingRoomFeatures($waitingRoomFeatures);
         }
@@ -267,9 +266,7 @@ class plugNmeetConnect
                 $breakoutRoomFeatures->setIsAllow($roomBreakoutRoomFeatures['is_allow']);
             }
             if (isset($roomBreakoutRoomFeatures['allowed_number_rooms'])) {
-                if (!empty($roomBreakoutRoomFeatures['allowed_number_rooms'])) {
-                    $breakoutRoomFeatures->setAllowedNumberRooms($roomBreakoutRoomFeatures['allowed_number_rooms']);
-                }
+                $breakoutRoomFeatures->setAllowedNumberRooms($roomBreakoutRoomFeatures['allowed_number_rooms']);
             }
             $features->setBreakoutRoomFeatures($breakoutRoomFeatures);
         }
@@ -366,6 +363,20 @@ class plugNmeetConnect
             $metadata->setDefaultLockSettings($lockSettings);
         }
 
+        if (isset($roomMetadata['copyright_conf'])) {
+            $conf = $roomMetadata['copyright_conf'];
+            $copyrightConf = new CopyrightConfParameters();
+
+            if (isset($conf["display"])) {
+                $copyrightConf->setDisplay($conf["display"]);
+            }
+            if (isset($conf["text"])) {
+                $copyrightConf->setText($conf["text"]);
+            }
+
+            $metadata->setCopyrightConf($copyrightConf);
+        }
+
         $roomCreateParams = new CreateRoomParameters();
         $roomCreateParams->setRoomId($roomId);
         if ($max_participants > 0) {
@@ -386,6 +397,7 @@ class plugNmeetConnect
      * @param bool $isAdmin
      * @param bool $isHidden
      * @param UserMetadataParameters|null $userMetadata
+     * @param LockSettingsParameters|null $lockSettings
      * @return GenerateJoinTokenResponse
      */
     public function getJoinToken(string $roomId, string $name, string $userId, bool $isAdmin, bool $isHidden = false, UserMetadataParameters $userMetadata = null, LockSettingsParameters $lockSettings = null): GenerateJoinTokenResponse

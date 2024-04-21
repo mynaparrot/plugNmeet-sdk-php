@@ -26,4 +26,15 @@ namespace Mynaparrot\Plugnmeet\Responses;
 
 class IsRoomActiveResponse extends BaseResponse
 {
+    /**
+     * @return bool
+     */
+    public function isActive(): bool
+    {
+        if (isset($this->rawResponse->is_active)) {
+            return $this->rawResponse->is_active;
+        }
+
+        return false;
+    }
 }

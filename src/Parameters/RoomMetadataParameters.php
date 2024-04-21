@@ -55,6 +55,10 @@ class RoomMetadataParameters
      */
     protected $defaultLockSettings;
     /**
+     * @var CopyrightConfParameters
+     */
+    protected $copyrightConf;
+    /**
      * @var string
      */
     protected $extraData;
@@ -163,6 +167,23 @@ class RoomMetadataParameters
     }
 
     /**
+     * @return CopyrightConfParameters
+     */
+    public function getCopyrightConf(): CopyrightConfParameters
+    {
+        return $this->copyrightConf;
+    }
+
+    /**
+     * @param CopyrightConfParameters $copyrightConf
+     * @return void
+     */
+    public function setCopyrightConf(CopyrightConfParameters $copyrightConf): void
+    {
+        $this->copyrightConf = $copyrightConf;
+    }
+
+    /**
      * @return string
      */
     public function getExtraData(): string
@@ -205,6 +226,10 @@ class RoomMetadataParameters
 
         if ($this->defaultLockSettings !== null) {
             $body["default_lock_settings"] = $this->getDefaultLockSettings()->buildBody();
+        }
+
+        if ($this->copyrightConf !== null) {
+            $body["copyright_conf"] = $this->getCopyrightConf()->buildBody();
         }
 
         if (!empty($this->extraData)) {
