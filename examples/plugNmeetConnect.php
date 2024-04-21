@@ -266,7 +266,7 @@ class plugNmeetConnect
                 $breakoutRoomFeatures->setIsAllow($roomBreakoutRoomFeatures['is_allow']);
             }
             if (isset($roomBreakoutRoomFeatures['allowed_number_rooms'])) {
-                $breakoutRoomFeatures->setAllowedNumberRooms($roomBreakoutRoomFeatures['allowed_number_rooms']);
+                $breakoutRoomFeatures->setAllowedNumberRooms((int)$roomBreakoutRoomFeatures['allowed_number_rooms']);
             }
             $features->setBreakoutRoomFeatures($breakoutRoomFeatures);
         }
