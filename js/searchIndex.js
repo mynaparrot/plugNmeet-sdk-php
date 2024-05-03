@@ -141,6 +141,51 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-ChatFeaturesParameters.html#property_maxFileSize"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\CopyrightConfParameters",
+            "name": "CopyrightConfParameters",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-CopyrightConfParameters.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\CopyrightConfParameters\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-CopyrightConfParameters.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\CopyrightConfParameters\u003A\u003AisDisplay\u0028\u0029",
+            "name": "isDisplay",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-CopyrightConfParameters.html#method_isDisplay"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\CopyrightConfParameters\u003A\u003AsetDisplay\u0028\u0029",
+            "name": "setDisplay",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-CopyrightConfParameters.html#method_setDisplay"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\CopyrightConfParameters\u003A\u003AgetText\u0028\u0029",
+            "name": "getText",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-CopyrightConfParameters.html#method_getText"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\CopyrightConfParameters\u003A\u003AsetText\u0028\u0029",
+            "name": "setText",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-CopyrightConfParameters.html#method_setText"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\CopyrightConfParameters\u003A\u003AbuildBody\u0028\u0029",
+            "name": "buildBody",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-CopyrightConfParameters.html#method_buildBody"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\CopyrightConfParameters\u003A\u003A\u0024display",
+            "name": "display",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-CopyrightConfParameters.html#property_display"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\CopyrightConfParameters\u003A\u003A\u0024text",
+            "name": "text",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-CopyrightConfParameters.html#property_text"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\CreateRoomParameters",
             "name": "CreateRoomParameters",
             "summary": "",
@@ -1521,6 +1566,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomMetadataParameters.html#method_setDefaultLockSettings"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomMetadataParameters\u003A\u003AgetCopyrightConf\u0028\u0029",
+            "name": "getCopyrightConf",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomMetadataParameters.html#method_getCopyrightConf"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomMetadataParameters\u003A\u003AsetCopyrightConf\u0028\u0029",
+            "name": "setCopyrightConf",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomMetadataParameters.html#method_setCopyrightConf"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomMetadataParameters\u003A\u003AgetExtraData\u0028\u0029",
             "name": "getExtraData",
             "summary": "",
@@ -1565,6 +1620,11 @@ Search.appendIndex(
             "name": "defaultLockSettings",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomMetadataParameters.html#property_defaultLockSettings"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomMetadataParameters\u003A\u003A\u0024copyrightConf",
+            "name": "copyrightConf",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomMetadataParameters.html#property_copyrightConf"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomMetadataParameters\u003A\u003A\u0024extraData",
             "name": "extraData",
@@ -2170,6 +2230,11 @@ Search.appendIndex(
             "name": "IsRoomActiveResponse",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Responses-IsRoomActiveResponse.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\IsRoomActiveResponse\u003A\u003AisActive\u0028\u0029",
+            "name": "isActive",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Responses-IsRoomActiveResponse.html#method_isActive"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\RecordingDownloadTokenResponse",
             "name": "RecordingDownloadTokenResponse",
