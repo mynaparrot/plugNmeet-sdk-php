@@ -95,6 +95,10 @@ $roomMetadata = array(
     ),
     "end_to_end_encryption_features" => array(
         "is_enabled" => false,
+        "included_chat_messages" => false,
+        // this may use more CPU for the user end.
+        // do not enable it unless really necessary
+        "included_whiteboard" => false,
     ),
     "default_lock_settings" => array(
         "lock_microphone" => false,

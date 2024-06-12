@@ -306,6 +306,14 @@ class plugNmeetConnect
             $endToEndEncryptionFeatures = new EndToEndEncryptionFeaturesParameters();
             if (isset($roomEndToEndEncryptionFeatures['is_enabled'])) {
                 $endToEndEncryptionFeatures->setIsEnable($roomEndToEndEncryptionFeatures['is_enabled']);
+
+                if (isset($roomEndToEndEncryptionFeatures['included_chat_messages'])) {
+                    $endToEndEncryptionFeatures->setIncludedChatMessages($roomEndToEndEncryptionFeatures['included_chat_messages']);
+                }
+
+                if (isset($roomEndToEndEncryptionFeatures['included_whiteboard'])) {
+                    $endToEndEncryptionFeatures->setIncludedWhiteboard($roomEndToEndEncryptionFeatures['included_whiteboard']);
+                }
             }
             $features->setEndToEndEncryptionFeatures($endToEndEncryptionFeatures);
         }
