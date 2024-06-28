@@ -396,10 +396,40 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-EndToEndEncryptionFeaturesParameters.html#method_setIsEnable"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\EndToEndEncryptionFeaturesParameters\u003A\u003AisIncludedChatMessages\u0028\u0029",
+            "name": "isIncludedChatMessages",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-EndToEndEncryptionFeaturesParameters.html#method_isIncludedChatMessages"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\EndToEndEncryptionFeaturesParameters\u003A\u003AsetIncludedChatMessages\u0028\u0029",
+            "name": "setIncludedChatMessages",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-EndToEndEncryptionFeaturesParameters.html#method_setIncludedChatMessages"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\EndToEndEncryptionFeaturesParameters\u003A\u003AisIncludedWhiteboard\u0028\u0029",
+            "name": "isIncludedWhiteboard",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-EndToEndEncryptionFeaturesParameters.html#method_isIncludedWhiteboard"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\EndToEndEncryptionFeaturesParameters\u003A\u003AsetIncludedWhiteboard\u0028\u0029",
+            "name": "setIncludedWhiteboard",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-EndToEndEncryptionFeaturesParameters.html#method_setIncludedWhiteboard"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\EndToEndEncryptionFeaturesParameters\u003A\u003AbuildBody\u0028\u0029",
             "name": "buildBody",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-EndToEndEncryptionFeaturesParameters.html#method_buildBody"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\EndToEndEncryptionFeaturesParameters\u003A\u003A\u0024includedChatMessages",
+            "name": "includedChatMessages",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-EndToEndEncryptionFeaturesParameters.html#property_includedChatMessages"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\EndToEndEncryptionFeaturesParameters\u003A\u003A\u0024includedWhiteboard",
+            "name": "includedWhiteboard",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-EndToEndEncryptionFeaturesParameters.html#property_includedWhiteboard"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\ExternalMediaPlayerFeaturesParameters",
             "name": "ExternalMediaPlayerFeaturesParameters",
