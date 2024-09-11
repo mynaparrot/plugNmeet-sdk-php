@@ -335,11 +335,18 @@ class RoomFeaturesParameters
         $this->allowRaiseHand = filter_var($allowRaiseHand, FILTER_VALIDATE_BOOLEAN);
     }
 
+    /**
+     * @return bool
+     */
     public function isAutoGenUserId(): bool
     {
         return $this->autoGenUserId;
     }
 
+    /**
+     * @param bool $autoGenUserId
+     * @return void
+     */
     public function setAutoGenUserId(bool $autoGenUserId): void
     {
         $this->autoGenUserId = filter_var($autoGenUserId, FILTER_VALIDATE_BOOLEAN);
