@@ -183,6 +183,9 @@ class plugNmeetConnect
         if (isset($roomFeatures['allow_raise_hand'])) {
             $features->setAllowRaiseHand($roomFeatures['allow_raise_hand']);
         }
+        if (isset($roomFeatures['auto_gen_user_id'])) {
+            $features->setAutoGenUserId($roomFeatures['auto_gen_user_id']);
+        }
 
         if (isset($roomMetadata['recording_features'])) {
             $roomRecordingFeatures = $roomMetadata['recording_features'];
@@ -431,7 +434,7 @@ class plugNmeetConnect
      * @param string $roomId
      * @return EndRoomResponse
      */
-    public function endRoom(string $roomId)
+    public function endRoom(string $roomId): EndRoomResponse
     {
         $endRoomParameters = new EndRoomParameters();
         $endRoomParameters->setRoomId($roomId);
