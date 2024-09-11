@@ -1296,6 +1296,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_setAllowRaiseHand"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AisAutoGenUserId\u0028\u0029",
+            "name": "isAutoGenUserId",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_isAutoGenUserId"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AsetAutoGenUserId\u0028\u0029",
+            "name": "setAutoGenUserId",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#method_setAutoGenUserId"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003AgetRecordingFeatures\u0028\u0029",
             "name": "getRecordingFeatures",
             "summary": "",
@@ -1470,6 +1480,11 @@ Search.appendIndex(
             "name": "allowRaiseHand",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#property_allowRaiseHand"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003A\u0024autoGenUserId",
+            "name": "autoGenUserId",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-RoomFeaturesParameters.html#property_autoGenUserId"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\RoomFeaturesParameters\u003A\u003A\u0024recordingFeatures",
             "name": "recordingFeatures",
