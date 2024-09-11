@@ -1791,6 +1791,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-UserMetadataParameters.html#method_setLockSettings"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\UserMetadataParameters\u003A\u003AgetExtraData\u0028\u0029",
+            "name": "getExtraData",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-UserMetadataParameters.html#method_getExtraData"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\UserMetadataParameters\u003A\u003AsetExtraData\u0028\u0029",
+            "name": "setExtraData",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-UserMetadataParameters.html#method_setExtraData"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\UserMetadataParameters\u003A\u003AbuildBody\u0028\u0029",
             "name": "buildBody",
             "summary": "",
@@ -1815,6 +1825,11 @@ Search.appendIndex(
             "name": "lockSettings",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-UserMetadataParameters.html#property_lockSettings"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\UserMetadataParameters\u003A\u003A\u0024extraData",
+            "name": "extraData",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-UserMetadataParameters.html#property_extraData"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\WaitingRoomFeaturesParameters",
             "name": "WaitingRoomFeaturesParameters",
