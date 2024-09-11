@@ -45,6 +45,10 @@ class UserMetadataParameters
      * @var LockSettingsParameters
      */
     protected $lockSettings;
+    /**
+     * @var string
+     */
+    protected $extraData;
 
     /**
      *
@@ -125,6 +129,22 @@ class UserMetadataParameters
     }
 
     /**
+     * @return string
+     */
+    public function getExtraData(): string
+    {
+        return $this->extraData;
+    }
+
+    /**
+     * @param string $extraData
+     */
+    public function setExtraData(string $extraData): void
+    {
+        $this->extraData = $extraData;
+    }
+
+    /**
      * @return array
      */
     public function buildBody(): array
@@ -143,6 +163,10 @@ class UserMetadataParameters
 
         if ($this->lockSettings !== null) {
             $body["lock_settings"] = $this->getLockSettings()->buildBody();
+        }
+
+        if (!empty($this->extraData)) {
+            $body["extra_data"] = $this->getExtraData();
         }
 
         return $body;
