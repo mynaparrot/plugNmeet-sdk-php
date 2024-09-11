@@ -38,7 +38,10 @@ $connect = new plugNmeetConnect($config);
 $roomId = "room01"; // must be unique. You can also use $connect->getUUID();
 $max_participants = 0; // value 0 means no limit (unlimited)
 $user_full_name = "Your name";
+
 // $userId = $connect->getUUID();
+// you can ignore sending user id if
+// auto_gen_user_id option was true during create room
 $userId = "Your-Unique-User-Id"; // must be unique for each user.
 $isAdmin = true;
 

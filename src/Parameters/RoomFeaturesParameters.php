@@ -78,6 +78,10 @@ class RoomFeaturesParameters
      */
     protected $allowRaiseHand = true;
     /**
+     * @var bool
+     */
+    protected $autoGenUserId = false;
+    /**
      * @var RecordingFeaturesParameters
      */
     protected $recordingFeatures;
@@ -331,6 +335,16 @@ class RoomFeaturesParameters
         $this->allowRaiseHand = filter_var($allowRaiseHand, FILTER_VALIDATE_BOOLEAN);
     }
 
+    public function isAutoGenUserId(): bool
+    {
+        return $this->autoGenUserId;
+    }
+
+    public function setAutoGenUserId(bool $autoGenUserId): void
+    {
+        $this->autoGenUserId = filter_var($autoGenUserId, FILTER_VALIDATE_BOOLEAN);
+    }
+
     /**
      * @return RecordingFeaturesParameters
      */
@@ -528,7 +542,8 @@ class RoomFeaturesParameters
             "room_duration" => $this->getRoomDuration(),
             "enable_analytics" => $this->isEnableAnalytics(),
             "allow_virtual_bg" => $this->isAllowVirtualBg(),
-            "allow_raise_hand" => $this->isAllowRaiseHand()
+            "allow_raise_hand" => $this->isAllowRaiseHand(),
+            "auto_gen_user_id" => $this->isAutoGenUserId(),
         );
 
         if ($this->recordingFeatures !== null) {
