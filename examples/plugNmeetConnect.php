@@ -78,12 +78,12 @@ class plugNmeetConnect
     /**
      * @var PlugNmeet
      */
-    protected $plugnmeet;
+    protected PlugNmeet $plugnmeet;
 
     /**
-     * @param $config
+     * @param stdClass $config
      */
-    public function __construct($config)
+    public function __construct(stdClass $config)
     {
         $this->plugnmeet = new PlugNmeet(
             $config->plugnmeet_server_url,
@@ -103,7 +103,7 @@ class plugNmeetConnect
     /**
      * @return string
      */
-    public function getUUID()
+    public function getUUID(): string
     {
         return $this->plugnmeet->getUUID();
     }
