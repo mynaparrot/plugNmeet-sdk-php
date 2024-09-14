@@ -2121,45 +2121,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Responses-CreateRoomResponse.html"
         },                {
-            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\CreateRoomResponse\u003A\u003AgetSid\u0028\u0029",
-            "name": "getSid",
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\CreateRoomResponse\u003A\u003AgetRoomInfo\u0028\u0029",
+            "name": "getRoomInfo",
             "summary": "",
-            "url": "classes/Mynaparrot-Plugnmeet-Responses-CreateRoomResponse.html#method_getSid"
-        },                {
-            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\CreateRoomResponse\u003A\u003AgetName\u0028\u0029",
-            "name": "getName",
-            "summary": "",
-            "url": "classes/Mynaparrot-Plugnmeet-Responses-CreateRoomResponse.html#method_getName"
-        },                {
-            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\CreateRoomResponse\u003A\u003AgetMaxParticipants\u0028\u0029",
-            "name": "getMaxParticipants",
-            "summary": "",
-            "url": "classes/Mynaparrot-Plugnmeet-Responses-CreateRoomResponse.html#method_getMaxParticipants"
-        },                {
-            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\CreateRoomResponse\u003A\u003AgetEmptyTimeout\u0028\u0029",
-            "name": "getEmptyTimeout",
-            "summary": "",
-            "url": "classes/Mynaparrot-Plugnmeet-Responses-CreateRoomResponse.html#method_getEmptyTimeout"
-        },                {
-            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\CreateRoomResponse\u003A\u003AgetCreationTime\u0028\u0029",
-            "name": "getCreationTime",
-            "summary": "",
-            "url": "classes/Mynaparrot-Plugnmeet-Responses-CreateRoomResponse.html#method_getCreationTime"
-        },                {
-            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\CreateRoomResponse\u003A\u003AgetTurnPassword\u0028\u0029",
-            "name": "getTurnPassword",
-            "summary": "",
-            "url": "classes/Mynaparrot-Plugnmeet-Responses-CreateRoomResponse.html#method_getTurnPassword"
-        },                {
-            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\CreateRoomResponse\u003A\u003AgetEnabledCodecs\u0028\u0029",
-            "name": "getEnabledCodecs",
-            "summary": "",
-            "url": "classes/Mynaparrot-Plugnmeet-Responses-CreateRoomResponse.html#method_getEnabledCodecs"
-        },                {
-            "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\CreateRoomResponse\u003A\u003AgetMetadata\u0028\u0029",
-            "name": "getMetadata",
-            "summary": "",
-            "url": "classes/Mynaparrot-Plugnmeet-Responses-CreateRoomResponse.html#method_getMetadata"
+            "url": "classes/Mynaparrot-Plugnmeet-Responses-CreateRoomResponse.html#method_getRoomInfo"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Responses\\DeleteAnalyticsResponse",
             "name": "DeleteAnalyticsResponse",
