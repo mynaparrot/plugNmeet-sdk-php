@@ -49,6 +49,10 @@ class UserMetadataParameters
      * @var string
      */
     protected $extraData;
+    /**
+     * @var string
+     */
+    protected $exUserId;
 
     /**
      *
@@ -145,6 +149,23 @@ class UserMetadataParameters
     }
 
     /**
+     * @return string
+     */
+    public function getExUserId(): string
+    {
+        return $this->exUserId;
+    }
+
+    /**
+     * @param string $exUserId
+     * @return void
+     */
+    public function setExUserId(string $exUserId): void
+    {
+        $this->exUserId = $exUserId;
+    }
+
+    /**
      * @return array
      */
     public function buildBody(): array
@@ -167,6 +188,10 @@ class UserMetadataParameters
 
         if (!empty($this->extraData)) {
             $body["extra_data"] = $this->getExtraData();
+        }
+
+        if (!empty($this->exUserId)) {
+            $body["ex_user_id"] = $this->getExUserId();
         }
 
         return $body;
