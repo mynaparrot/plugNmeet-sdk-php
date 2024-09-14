@@ -1801,6 +1801,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-UserMetadataParameters.html#method_setExtraData"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\UserMetadataParameters\u003A\u003AgetExUserId\u0028\u0029",
+            "name": "getExUserId",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-UserMetadataParameters.html#method_getExUserId"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\UserMetadataParameters\u003A\u003AsetExUserId\u0028\u0029",
+            "name": "setExUserId",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-UserMetadataParameters.html#method_setExUserId"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\UserMetadataParameters\u003A\u003AbuildBody\u0028\u0029",
             "name": "buildBody",
             "summary": "",
@@ -1830,6 +1840,11 @@ Search.appendIndex(
             "name": "extraData",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-UserMetadataParameters.html#property_extraData"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\UserMetadataParameters\u003A\u003A\u0024exUserId",
+            "name": "exUserId",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-UserMetadataParameters.html#property_exUserId"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\WaitingRoomFeaturesParameters",
             "name": "WaitingRoomFeaturesParameters",
