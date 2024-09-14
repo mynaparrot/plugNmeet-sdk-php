@@ -42,5 +42,4 @@ class CreateRoomResponse extends BaseResponse
 
         return null;
     }
-
 }
