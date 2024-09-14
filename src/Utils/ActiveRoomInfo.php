@@ -92,7 +92,7 @@ class ActiveRoomInfo
     public function isRunning(): bool
     {
         if (isset($this->roomInfo->is_running)) {
-            return $this->roomInfo->is_running === 1 ? true : false;
+            return $this->roomInfo->is_running === 1;
         }
         return false;
     }
@@ -103,7 +103,7 @@ class ActiveRoomInfo
     public function isActiveRecording(): bool
     {
         if (isset($this->roomInfo->is_recording)) {
-            return $this->roomInfo->is_recording === 1 ? true : false;
+            return $this->roomInfo->is_recording === 1;
         }
         return false;
     }
@@ -114,7 +114,7 @@ class ActiveRoomInfo
     public function isActiveRTMP(): bool
     {
         if (isset($this->roomInfo->is_active_rtmp)) {
-            return $this->roomInfo->is_active_rtmp === 1 ? true : false;
+            return $this->roomInfo->is_active_rtmp === 1;
         }
         return false;
     }
@@ -136,7 +136,7 @@ class ActiveRoomInfo
     public function isBreakoutRoom(): bool
     {
         if (isset($this->roomInfo->is_breakout_room)) {
-            return $this->roomInfo->is_breakout_room === 1 ? true : false;
+            return $this->roomInfo->is_breakout_room === 1;
         }
         return false;
     }
