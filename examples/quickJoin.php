@@ -57,7 +57,9 @@ $roomMetadata = array(
         "enable_analytics" => true,
         "room_duration" => 0, // in minutes. 0 = no limit/unlimited
         "allow_virtual_bg" => true,
-        "allow_raise_hand" => true
+        "allow_raise_hand" => true,
+        // if false then you'll need to provide unique user id
+        "auto_gen_user_id" => true,
     ),
     "recording_features" => array(
         "is_allow" => true,
