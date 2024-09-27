@@ -90,9 +90,9 @@ class PlugNmeet
      * @param $apiKey    plugNmeet API_Key
      * @param $apiSecret plugNmeet API_Secret
      */
-    public function __construct($serverUrl, $apiKey, $apiSecret)
+    public function __construct(string $serverUrl, string $apiKey, string $apiSecret)
     {
-        $this->serverUrl = $serverUrl;
+        $this->serverUrl = rtrim($serverUrl, "/");
         $this->apiKey = $apiKey;
         $this->apiSecret = $apiSecret;
     }
