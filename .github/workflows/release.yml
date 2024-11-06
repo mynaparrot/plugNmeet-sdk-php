@@ -1,33 +1,39 @@
 name: Generate usable library and upload as release asset
 on:
-  release:
-    types: [ published ]
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
-  build:
-    name: Upload Release Asset
+  release-library:
     runs-on: ubuntu-latest
     steps:
+      - name: Release please
+        uses: googleapis/release-please-action@v4
+        id: release
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          release-type: php
       - name: Checkout code
+        if: ${{ steps.release.outputs.release_created }}
         uses: actions/checkout@v2
       - name: Setup PHP
+        if: ${{ steps.release.outputs.release_created }}
         uses: shivammathur/setup-php@v2
         with:
           php-version: 7.4
       - name: Build project
+        if: ${{ steps.release.outputs.release_created }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           mkdir -p build
           rsync -ar src composer.json LICENSE README.md build/
           cd build
           composer install --no-dev --optimize-autoloader --no-scripts --ignore-platform-reqs
           zip -X -r plugNmeet-sdk-php-release.zip *
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: plugNmeet-sdk-php-release
-          path: build/plugNmeet-sdk-php-release.zip
-      - name: Upload to release
-        uses: JasonEtco/upload-to-release@master
-        with:
-          args: build/plugNmeet-sdk-php-release.zip application/zip
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          gh release upload ${{ steps.release.outputs.tag_name }} plugNmeet-sdk-php-release.zip
