@@ -16,7 +16,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: 8.2
+          php-version: "8.x"
       - name: Build project
         run: |
           composer install --no-dev --optimize-autoloader --no-scripts --ignore-platform-reqs
