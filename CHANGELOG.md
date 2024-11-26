@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.1](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v1.6.0...v1.6.1) (2024-11-26)
+
+
+### Miscellaneous Chores
+
+* **deps:** update peaceiris/actions-gh-pages action to v4 ([3504eb5](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/3504eb50416a0d96a1a012b5f99caa0b392e67d6))
+
 ## [1.6.0](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v1.5.2...v1.6.0) (2024-11-26)
 
 
