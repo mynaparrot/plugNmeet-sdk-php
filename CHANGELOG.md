@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.6.1](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v1.6.0...v1.6.1) (2024-12-19)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency overtrue/phplint to v9.5.5 ([52dc313](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/52dc3134eef5ffea87382c2fa2ac26ffb7c7813c))
+* **deps:** update dependency squizlabs/php_codesniffer to v3.11.2 ([13d9505](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/13d9505f954656f063909ca620e8d113ae24664f))
+* **deps:** update peaceiris/actions-gh-pages action to v4 ([3504eb5](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/3504eb50416a0d96a1a012b5f99caa0b392e67d6))
+
 ## [1.6.0](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v1.5.2...v1.6.0) (2024-11-26)
 
 
