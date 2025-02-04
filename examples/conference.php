@@ -108,7 +108,7 @@ $js .= 'window.STOP_MIC_TRACK_ON_MUTE = ' . filter_var(1, FILTER_VALIDATE_BOOLEA
 );
 $js .= 'window.CUSTOM_LOGO = JSON.parse(`' . json_encode($logo) . '`);';*/
 
-// https://github.com/mynaparrot/plugNmeet-client/blob/main/src/helpers/hooks/useDesignCustomization.tsx
+// https://github.com/mynaparrot/plugNmeet-client/blob/main/src/helpers/hooks/useClientCustomization.tsx
 $custom_design_items = array(
     "primary_color" => "#004D90",
     "secondary_color" => "#24AEF7",
