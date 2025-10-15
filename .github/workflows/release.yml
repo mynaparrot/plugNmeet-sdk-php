@@ -20,7 +20,7 @@ jobs:
           release-type: php
       - name: Checkout code
         if: ${{ steps.release.outputs.release_created }}
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Setup PHP
         if: ${{ steps.release.outputs.release_created }}
         uses: shivammathur/setup-php@v2
