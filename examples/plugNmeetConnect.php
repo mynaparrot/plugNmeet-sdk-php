@@ -317,6 +317,9 @@ class plugNmeetConnect
                 if (isset($roomEndToEndEncryptionFeatures['included_whiteboard'])) {
                     $endToEndEncryptionFeatures->setIncludedWhiteboard($roomEndToEndEncryptionFeatures['included_whiteboard']);
                 }
+                if (isset($roomEndToEndEncryptionFeatures['enabled_self_insert_encryption_key'])) {
+                    $endToEndEncryptionFeatures->setEnabledSelfInsertEncryptionKey($roomEndToEndEncryptionFeatures['enabled_self_insert_encryption_key']);
+                }
             }
             $features->setEndToEndEncryptionFeatures($endToEndEncryptionFeatures);
         }
