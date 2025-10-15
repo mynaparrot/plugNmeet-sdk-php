@@ -2066,6 +2066,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#property_apiSecret"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003A\u0024guzzleClient",
+            "name": "guzzleClient",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#property_guzzleClient"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003A\u0024defaultPath",
             "name": "defaultPath",
             "summary": "",
