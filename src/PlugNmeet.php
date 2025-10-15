@@ -374,7 +374,6 @@ class PlugNmeet
 
             $output->status = true;
             $output->response = json_decode($response->getBody()->getContents());
-
         } catch (GuzzleException $e) {
             $output->response = $e->getMessage();
         } catch (Exception $e) {
