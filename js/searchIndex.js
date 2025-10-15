@@ -2051,6 +2051,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_sendRequest"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AhandleRequestException\u0028\u0029",
+            "name": "handleRequestException",
+            "summary": "Extracts\u0020a\u0020meaningful\u0020error\u0020response\u0020from\u0020a\u0020RequestException.",
+            "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_handleRequestException"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003A\u0024serverUrl",
             "name": "serverUrl",
             "summary": "",
