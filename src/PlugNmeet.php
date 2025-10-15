@@ -28,6 +28,8 @@ use Exception;
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 use GuzzleHttp\Client;
+use GuzzleHttp\Exception\ConnectException;
+use GuzzleHttp\Exception\RequestException;
 use Mynaparrot\Plugnmeet\Parameters\AnalyticsDownloadTokenParameters;
 use Mynaparrot\Plugnmeet\Parameters\CreateRoomParameters;
 use Mynaparrot\Plugnmeet\Parameters\DeleteAnalyticsParameters;
@@ -373,10 +375,42 @@ class PlugNmeet
 
             $output->status = true;
             $output->response = json_decode($response->getBody()->getContents());
+        } catch (ConnectException $e) {
+            // Extract the core error message from cURL errors
+            $message = $e->getMessage();
+            if (preg_match('/cURL error \d+: (.*) \(see/', $message, $matches)) {
+                $output->response = $matches[1];
+            } else {
+                $output->response = 'Connection Error: ' . $message;
+            }
+        } catch (RequestException $e) {
+            $output->response = $this->handleRequestException($e);
         } catch (Exception $e) {
             $output->response = $e->getMessage();
         }
 
         return $output;
     }
+
+    /**
+     * Extracts a meaningful error response from a RequestException.
+     *
+     * @param RequestException $e
+     * @return mixed|string
+     */
+    private function handleRequestException(RequestException $e)
+    {
+        if (!$e->hasResponse()) {
+            return $e->getMessage();
+        }
+
+        $responseBody = $e->getResponse()->getBody()->getContents();
+        $decodedResponse = json_decode($responseBody);
+
+        // Return the decoded JSON if successful, otherwise fall back to the raw body.
+        return json_last_error() === JSON_ERROR_NONE
+            ? $decodedResponse
+            : $responseBody;
+    }
 }
+ 
