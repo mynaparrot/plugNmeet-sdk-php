@@ -220,14 +220,14 @@
             phpdocumentor-element
             -property
             -protected
-                                                        "
+                                                                    "
 >
     <h4 class="phpdocumentor-element__name" id="property_isActive">
         $isActive
         <a href="classes/Mynaparrot-Plugnmeet-Parameters-WaitingRoomFeaturesParameters.html#property_isActive" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                                            </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Parameters/WaitingRoomFeaturesParameters.php"><a href="files/src-parameters-waitingroomfeaturesparameters.html"><abbr title="src/Parameters/WaitingRoomFeaturesParameters.php">WaitingRoomFeaturesParameters.php</abbr></a></abbr>
@@ -239,13 +239,15 @@
     
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">bool</span>
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">bool</span>
     <span class="phpdocumentor-signature__name">$isActive</span>
      = <span class="phpdocumentor-signature__default-value">false</span></code>
 
     
     
+    
+
     
 
     
@@ -256,14 +258,14 @@
             phpdocumentor-element
             -property
             -protected
-                                                        "
+                                                                    "
 >
     <h4 class="phpdocumentor-element__name" id="property_waitingRoomMsg">
         $waitingRoomMsg
         <a href="classes/Mynaparrot-Plugnmeet-Parameters-WaitingRoomFeaturesParameters.html#property_waitingRoomMsg" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                                            </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Parameters/WaitingRoomFeaturesParameters.php"><a href="files/src-parameters-waitingroomfeaturesparameters.html"><abbr title="src/Parameters/WaitingRoomFeaturesParameters.php">WaitingRoomFeaturesParameters.php</abbr></a></abbr>
@@ -275,13 +277,15 @@
     
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$waitingRoomMsg</span>
     </code>
 
     
     
+    
+
     
 
     
@@ -535,6 +539,8 @@
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
                             Prism.highlightElement(code);
+                            d=document.getElementsByClassName("line-numbers");
+                            d[0].scrollTop = d[0].children[1].offsetTop;
                             return;
                         }
 

@@ -226,14 +226,14 @@
             phpdocumentor-element
             -property
             -protected
-                                                        "
+                                                                    "
 >
     <h4 class="phpdocumentor-element__name" id="property_allowedWhiteboard">
         $allowedWhiteboard
         <a href="classes/Mynaparrot-Plugnmeet-Parameters-WhiteboardFeaturesParameters.html#property_allowedWhiteboard" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                                            </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Parameters/WhiteboardFeaturesParameters.php"><a href="files/src-parameters-whiteboardfeaturesparameters.html"><abbr title="src/Parameters/WhiteboardFeaturesParameters.php">WhiteboardFeaturesParameters.php</abbr></a></abbr>
@@ -245,13 +245,15 @@
     
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">bool</span>
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">bool</span>
     <span class="phpdocumentor-signature__name">$allowedWhiteboard</span>
      = <span class="phpdocumentor-signature__default-value">true</span></code>
 
     
     
+    
+
     
 
     
@@ -262,14 +264,14 @@
             phpdocumentor-element
             -property
             -protected
-                                                        "
+                                                                    "
 >
     <h4 class="phpdocumentor-element__name" id="property_preloadFile">
         $preloadFile
         <a href="classes/Mynaparrot-Plugnmeet-Parameters-WhiteboardFeaturesParameters.html#property_preloadFile" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                                            </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Parameters/WhiteboardFeaturesParameters.php"><a href="files/src-parameters-whiteboardfeaturesparameters.html"><abbr title="src/Parameters/WhiteboardFeaturesParameters.php">WhiteboardFeaturesParameters.php</abbr></a></abbr>
@@ -281,13 +283,15 @@
     
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">string|null</span>
     <span class="phpdocumentor-signature__name">$preloadFile</span>
      = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
+    
+
     
 
     
@@ -578,6 +582,8 @@ example: https://mydomain.com/text_book.pdf</p>
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
                             Prism.highlightElement(code);
+                            d=document.getElementsByClassName("line-numbers");
+                            d[0].scrollTop = d[0].children[1].offsetTop;
                             return;
                         }
 

@@ -226,14 +226,14 @@
             phpdocumentor-element
             -property
             -protected
-                                                        "
+                                                                    "
 >
     <h4 class="phpdocumentor-element__name" id="property_isAllow">
         $isAllow
         <a href="classes/Mynaparrot-Plugnmeet-Parameters-SpeechToTextTranslationFeaturesParameters.html#property_isAllow" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                                            </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Parameters/SpeechToTextTranslationFeaturesParameters.php"><a href="files/src-parameters-speechtotexttranslationfeaturesparameters.html"><abbr title="src/Parameters/SpeechToTextTranslationFeaturesParameters.php">SpeechToTextTranslationFeaturesParameters.php</abbr></a></abbr>
@@ -245,13 +245,15 @@
     
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">bool</span>
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">bool</span>
     <span class="phpdocumentor-signature__name">$isAllow</span>
      = <span class="phpdocumentor-signature__default-value">true</span></code>
 
     
     
+    
+
     
 
     
@@ -262,14 +264,14 @@
             phpdocumentor-element
             -property
             -protected
-                                                        "
+                                                                    "
 >
     <h4 class="phpdocumentor-element__name" id="property_isAllowTranslation">
         $isAllowTranslation
         <a href="classes/Mynaparrot-Plugnmeet-Parameters-SpeechToTextTranslationFeaturesParameters.html#property_isAllowTranslation" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                                            </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Parameters/SpeechToTextTranslationFeaturesParameters.php"><a href="files/src-parameters-speechtotexttranslationfeaturesparameters.html"><abbr title="src/Parameters/SpeechToTextTranslationFeaturesParameters.php">SpeechToTextTranslationFeaturesParameters.php</abbr></a></abbr>
@@ -281,13 +283,15 @@
     
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">bool</span>
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">bool</span>
     <span class="phpdocumentor-signature__name">$isAllowTranslation</span>
      = <span class="phpdocumentor-signature__default-value">true</span></code>
 
     
     
+    
+
     
 
     
@@ -575,6 +579,8 @@
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
                             Prism.highlightElement(code);
+                            d=document.getElementsByClassName("line-numbers");
+                            d[0].scrollTop = d[0].children[1].offsetTop;
                             return;
                         }
 

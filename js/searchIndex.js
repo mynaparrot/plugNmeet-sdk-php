@@ -416,6 +416,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-EndToEndEncryptionFeaturesParameters.html#method_setIncludedWhiteboard"
         },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\EndToEndEncryptionFeaturesParameters\u003A\u003AisEnabledSelfInsertEncryptionKey\u0028\u0029",
+            "name": "isEnabledSelfInsertEncryptionKey",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-EndToEndEncryptionFeaturesParameters.html#method_isEnabledSelfInsertEncryptionKey"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\EndToEndEncryptionFeaturesParameters\u003A\u003AsetEnabledSelfInsertEncryptionKey\u0028\u0029",
+            "name": "setEnabledSelfInsertEncryptionKey",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-EndToEndEncryptionFeaturesParameters.html#method_setEnabledSelfInsertEncryptionKey"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\EndToEndEncryptionFeaturesParameters\u003A\u003AbuildBody\u0028\u0029",
             "name": "buildBody",
             "summary": "",
@@ -430,6 +440,11 @@ Search.appendIndex(
             "name": "includedWhiteboard",
             "summary": "",
             "url": "classes/Mynaparrot-Plugnmeet-Parameters-EndToEndEncryptionFeaturesParameters.html#property_includedWhiteboard"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\EndToEndEncryptionFeaturesParameters\u003A\u003A\u0024enabledSelfInsertEncryptionKey",
+            "name": "enabledSelfInsertEncryptionKey",
+            "summary": "",
+            "url": "classes/Mynaparrot-Plugnmeet-Parameters-EndToEndEncryptionFeaturesParameters.html#property_enabledSelfInsertEncryptionKey"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\Parameters\\ExternalMediaPlayerFeaturesParameters",
             "name": "ExternalMediaPlayerFeaturesParameters",

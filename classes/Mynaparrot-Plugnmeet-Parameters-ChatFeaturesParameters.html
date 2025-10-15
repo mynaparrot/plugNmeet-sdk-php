@@ -262,14 +262,14 @@
             phpdocumentor-element
             -property
             -protected
-                                                        "
+                                                                    "
 >
     <h4 class="phpdocumentor-element__name" id="property_allowChat">
         $allowChat
         <a href="classes/Mynaparrot-Plugnmeet-Parameters-ChatFeaturesParameters.html#property_allowChat" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                                            </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Parameters/ChatFeaturesParameters.php"><a href="files/src-parameters-chatfeaturesparameters.html"><abbr title="src/Parameters/ChatFeaturesParameters.php">ChatFeaturesParameters.php</abbr></a></abbr>
@@ -281,13 +281,15 @@
     
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">bool</span>
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">bool</span>
     <span class="phpdocumentor-signature__name">$allowChat</span>
      = <span class="phpdocumentor-signature__default-value">true</span></code>
 
     
     
+    
+
     
 
     
@@ -298,14 +300,14 @@
             phpdocumentor-element
             -property
             -protected
-                                                        "
+                                                                    "
 >
     <h4 class="phpdocumentor-element__name" id="property_allowedFileTypes">
         $allowedFileTypes
         <a href="classes/Mynaparrot-Plugnmeet-Parameters-ChatFeaturesParameters.html#property_allowedFileTypes" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                                            </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Parameters/ChatFeaturesParameters.php"><a href="files/src-parameters-chatfeaturesparameters.html"><abbr title="src/Parameters/ChatFeaturesParameters.php">ChatFeaturesParameters.php</abbr></a></abbr>
@@ -317,13 +319,15 @@
     
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
     <span class="phpdocumentor-signature__name">$allowedFileTypes</span>
      = <span class="phpdocumentor-signature__default-value">array()</span></code>
 
     
     
+    
+
     
 
     
@@ -334,14 +338,14 @@
             phpdocumentor-element
             -property
             -protected
-                                                        "
+                                                                    "
 >
     <h4 class="phpdocumentor-element__name" id="property_allowFileUpload">
         $allowFileUpload
         <a href="classes/Mynaparrot-Plugnmeet-Parameters-ChatFeaturesParameters.html#property_allowFileUpload" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                                            </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Parameters/ChatFeaturesParameters.php"><a href="files/src-parameters-chatfeaturesparameters.html"><abbr title="src/Parameters/ChatFeaturesParameters.php">ChatFeaturesParameters.php</abbr></a></abbr>
@@ -353,13 +357,15 @@
     
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">bool</span>
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">bool</span>
     <span class="phpdocumentor-signature__name">$allowFileUpload</span>
      = <span class="phpdocumentor-signature__default-value">true</span></code>
 
     
     
+    
+
     
 
     
@@ -370,14 +376,14 @@
             phpdocumentor-element
             -property
             -protected
-                                                        "
+                                                                    "
 >
     <h4 class="phpdocumentor-element__name" id="property_maxFileSize">
         $maxFileSize
         <a href="classes/Mynaparrot-Plugnmeet-Parameters-ChatFeaturesParameters.html#property_maxFileSize" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                                            </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Parameters/ChatFeaturesParameters.php"><a href="files/src-parameters-chatfeaturesparameters.html"><abbr title="src/Parameters/ChatFeaturesParameters.php">ChatFeaturesParameters.php</abbr></a></abbr>
@@ -389,13 +395,15 @@
     
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">int</span>
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$maxFileSize</span>
      = <span class="phpdocumentor-signature__default-value">0</span></code>
 
     
     
+    
+
     
 
     
@@ -847,6 +855,8 @@
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
                             Prism.highlightElement(code);
+                            d=document.getElementsByClassName("line-numbers");
+                            d[0].scrollTop = d[0].children[1].offsetTop;
                             return;
                         }
 

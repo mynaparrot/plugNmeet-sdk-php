@@ -262,14 +262,14 @@
             phpdocumentor-element
             -property
             -protected
-                                                        "
+                                                                    "
 >
     <h4 class="phpdocumentor-element__name" id="property_from">
         $from
         <a href="classes/Mynaparrot-Plugnmeet-Parameters-FetchPastRoomsParameters.html#property_from" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                                            </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Parameters/FetchPastRoomsParameters.php"><a href="files/src-parameters-fetchpastroomsparameters.html"><abbr title="src/Parameters/FetchPastRoomsParameters.php">FetchPastRoomsParameters.php</abbr></a></abbr>
@@ -281,13 +281,15 @@
     
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">int</span>
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$from</span>
      = <span class="phpdocumentor-signature__default-value">0</span></code>
 
     
     
+    
+
     
 
     
@@ -298,14 +300,14 @@
             phpdocumentor-element
             -property
             -protected
-                                                        "
+                                                                    "
 >
     <h4 class="phpdocumentor-element__name" id="property_limit">
         $limit
         <a href="classes/Mynaparrot-Plugnmeet-Parameters-FetchPastRoomsParameters.html#property_limit" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                                            </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Parameters/FetchPastRoomsParameters.php"><a href="files/src-parameters-fetchpastroomsparameters.html"><abbr title="src/Parameters/FetchPastRoomsParameters.php">FetchPastRoomsParameters.php</abbr></a></abbr>
@@ -317,13 +319,15 @@
     
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">int</span>
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$limit</span>
      = <span class="phpdocumentor-signature__default-value">20</span></code>
 
     
     
+    
+
     
 
     
@@ -334,14 +338,14 @@
             phpdocumentor-element
             -property
             -protected
-                                                        "
+                                                                    "
 >
     <h4 class="phpdocumentor-element__name" id="property_orderBy">
         $orderBy
         <a href="classes/Mynaparrot-Plugnmeet-Parameters-FetchPastRoomsParameters.html#property_orderBy" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                                            </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Parameters/FetchPastRoomsParameters.php"><a href="files/src-parameters-fetchpastroomsparameters.html"><abbr title="src/Parameters/FetchPastRoomsParameters.php">FetchPastRoomsParameters.php</abbr></a></abbr>
@@ -353,13 +357,15 @@
     
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$orderBy</span>
      = <span class="phpdocumentor-signature__default-value">&quot;ASC&quot;</span></code>
 
     
     
+    
+
     
 
     
@@ -370,14 +376,14 @@
             phpdocumentor-element
             -property
             -protected
-                                                        "
+                                                                    "
 >
     <h4 class="phpdocumentor-element__name" id="property_roomIds">
         $roomIds
         <a href="classes/Mynaparrot-Plugnmeet-Parameters-FetchPastRoomsParameters.html#property_roomIds" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                                            </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Parameters/FetchPastRoomsParameters.php"><a href="files/src-parameters-fetchpastroomsparameters.html"><abbr title="src/Parameters/FetchPastRoomsParameters.php">FetchPastRoomsParameters.php</abbr></a></abbr>
@@ -389,13 +395,15 @@
     
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$roomIds</span>
      = <span class="phpdocumentor-signature__default-value">array()</span></code>
 
     
     
+    
+
     
 
     
@@ -849,6 +857,8 @@
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
                             Prism.highlightElement(code);
+                            d=document.getElementsByClassName("line-numbers");
+                            d[0].scrollTop = d[0].children[1].offsetTop;
                             return;
                         }
 
