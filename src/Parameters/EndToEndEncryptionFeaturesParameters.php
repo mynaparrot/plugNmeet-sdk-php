@@ -38,6 +38,10 @@ class EndToEndEncryptionFeaturesParameters
      * @var bool
      */
     protected $includedWhiteboard = false;
+    /**
+     * @var bool
+     */
+    protected $enabledSelfInsertEncryptionKey = false;
 
     public function __construct()
     {
@@ -79,6 +83,16 @@ class EndToEndEncryptionFeaturesParameters
         $this->includedWhiteboard = filter_var($includedWhiteboard, FILTER_VALIDATE_BOOLEAN);
     }
 
+    public function isEnabledSelfInsertEncryptionKey(): bool
+    {
+        return $this->enabledSelfInsertEncryptionKey;
+    }
+
+    public function setEnabledSelfInsertEncryptionKey(bool $enabledSelfInsertEncryptionKey): void
+    {
+        $this->enabledSelfInsertEncryptionKey = $enabledSelfInsertEncryptionKey;
+    }
+
     /**
      * @return array
      */
@@ -88,6 +102,7 @@ class EndToEndEncryptionFeaturesParameters
             "is_enabled" => $this->isEnable(),
             "included_chat_messages" => $this->isIncludedChatMessages(),
             "included_whiteboard" => $this->isIncludedWhiteboard(),
+            "enabled_self_insert_encryption_key" => $this->isEnabledSelfInsertEncryptionKey(),
         );
     }
 }

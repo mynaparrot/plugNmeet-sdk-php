@@ -69,7 +69,11 @@ if (empty($jsFiles) || empty($cssFiles)) {
 $jsTags = "";
 $jsTagsPreload = "";
 foreach ($jsFiles as $file) {
-    $jsTags .= '<script src="' . $assetsPath . '/js/' . $file . '" defer="defer"></script>' . "\n";
+    if (substr($file, 0, strlen('main-module.')) === 'main-module.') {
+        $jsTags .= '<script src="' . $assetsPath . '/js/' . $file . '" type="module"></script>' . "\n";
+    } else {
+        $jsTags .= '<script src="' . $assetsPath . '/js/' . $file . '" defer="defer"></script>' . "\n";
+    }
     if (str_contains($file, "runtime") || str_contains($file, "vendor")) {
         $jsTagsPreload .= '<link href="' . $assetsPath . '/js/' . $file . '" rel="preload" as="script" />' . "\n\t";
     }
@@ -110,14 +114,14 @@ $js .= 'window.CUSTOM_LOGO = JSON.parse(`' . json_encode($logo) . '`);';*/
 
 // https://github.com/mynaparrot/plugNmeet-client/blob/main/src/helpers/hooks/useClientCustomization.tsx
 $custom_design_items = array(
-    "primary_color" => "#004D90",
-    "secondary_color" => "#24AEF7",
-    "background_color" => "#0b7db4",
+        "primary_color" => "#004D90",
+        "secondary_color" => "#24AEF7",
+        "background_color" => "#0b7db4",
     //"background_image" => "https://mydomain.com/custom_bg.png", // always https direct link
-    "header_bg_color" => "#45b3ec",
-    "footer_bg_color" => "#45b3ec",
-    "left_side_bg_color" => "#04a2f3",
-    "right_side_bg_color" => "#04a2f3",
+        "header_bg_color" => "#45b3ec",
+        "footer_bg_color" => "#45b3ec",
+        "left_side_bg_color" => "#04a2f3",
+        "right_side_bg_color" => "#04a2f3",
     //"custom_css_url" => "https://mydomain.com/plugNmeet_desing.css", // always https direct link
     //"custom_logo" => "https://mydomain.com/logo.png" // this is optional, can be used in certain case for example if you want to show different logo for different user otherwise better to use `window.CUSTOM_LOGO`.
 );
