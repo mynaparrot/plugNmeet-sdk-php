@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.6.2](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v1.6.1...v1.6.2) (2025-10-15)
+
+
+### Bug Fixes
+
+* better error handling ([74b7b70](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/74b7b70b56fa1e19178f1a8039d14aa38f184ce2))
+* lint ([e55e6ca](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/e55e6ca7d7317385613c5665d48a954d80da0e66))
+* lint ([1603c91](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/1603c91730b2ffc39c24c33e050411891f5e072d))
+* set default `$timeout` to 60 seconds and configurable ([bbc0ff8](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/bbc0ff85011a0a8c4879a1f688da9660bfbe0ca3))
+
 ## [1.6.1](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v1.6.0...v1.6.1) (2025-10-15)
 
 
