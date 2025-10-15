@@ -29,6 +29,7 @@ use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ConnectException;
+use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Exception\RequestException;
 use Mynaparrot\Plugnmeet\Parameters\AnalyticsDownloadTokenParameters;
 use Mynaparrot\Plugnmeet\Parameters\CreateRoomParameters;
@@ -385,6 +386,8 @@ class PlugNmeet
             }
         } catch (RequestException $e) {
             $output->response = $this->handleRequestException($e);
+        } catch (GuzzleException $e) {
+            $output->response = 'Guzzle Error: ' . $e->getMessage();
         } catch (Exception $e) {
             $output->response = $e->getMessage();
         }
@@ -413,4 +416,3 @@ class PlugNmeet
             : $responseBody;
     }
 }
- 
