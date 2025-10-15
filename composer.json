@@ -24,7 +24,8 @@
     "ext-curl": "*",
     "ext-json": "*",
     "ramsey/uuid": "4.7.6",
-    "firebase/php-jwt": "6.11.1"
+    "firebase/php-jwt": "6.11.1",
+    "guzzlehttp/guzzle": "7.10"
   },
   "require-dev": {
     "overtrue/phplint": "9.5.6",

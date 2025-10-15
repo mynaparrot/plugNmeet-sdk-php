@@ -27,6 +27,8 @@ namespace Mynaparrot\Plugnmeet;
 use Exception;
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
+use GuzzleHttp\Client;
+use GuzzleHttp\Exception\GuzzleException;
 use Mynaparrot\Plugnmeet\Parameters\AnalyticsDownloadTokenParameters;
 use Mynaparrot\Plugnmeet\Parameters\CreateRoomParameters;
 use Mynaparrot\Plugnmeet\Parameters\DeleteAnalyticsParameters;
@@ -75,6 +77,12 @@ class PlugNmeet
      * @var string
      */
     protected $apiSecret;
+
+    /**
+     * @var Client
+     */
+    protected $guzzleClient;
+
     /**
      * @var string
      */
@@ -86,15 +94,21 @@ class PlugNmeet
     protected $algo = "sha256";
 
     /**
-     * @param $serverUrl plugNmeet server URL
-     * @param $apiKey    plugNmeet API_Key
-     * @param $apiSecret plugNmeet API_Secret
+     * @param string $serverUrl plugNmeet server URL
+     * @param string $apiKey plugNmeet API_Key
+     * @param string $apiSecret plugNmeet API_Secret
      */
     public function __construct(string $serverUrl, string $apiKey, string $apiSecret)
     {
         $this->serverUrl = rtrim($serverUrl, "/");
         $this->apiKey = $apiKey;
         $this->apiSecret = $apiSecret;
+
+        $this->guzzleClient = new Client([
+                                             'base_uri' => $this->serverUrl,
+                                             'timeout' => 10.0,
+                                             'verify' => true,
+                                         ]);
     }
 
     /**
@@ -242,7 +256,7 @@ class PlugNmeet
     /**
      * To fetch analytics
      *
-     * @param FetchAnalyticsParameters $fetchRecordingsParameters
+     * @param FetchAnalyticsParameters $fetchAnalyticsParameters
      * @return FetchAnalyticsResponse
      */
     public function fetchAnalytics(FetchAnalyticsParameters $fetchAnalyticsParameters): FetchAnalyticsResponse
@@ -295,7 +309,7 @@ class PlugNmeet
      * @param array $head
      * @return string
      */
-    public function getJWTencodedData(array $payload, int $validity, $algo = "HS256", array $head = []): string
+    public function getJWTencodedData(array $payload, int $validity, string $algo = "HS256", array $head = []): string
     {
         $payload['iss'] = $this->apiKey;
         $payload['nbf'] = time();
@@ -309,7 +323,7 @@ class PlugNmeet
      * @param string $algo
      * @return stdClass
      */
-    public function decodeJWTData(string $raw, $algo = "HS256"): stdClass
+    public function decodeJWTData(string $raw, string $algo = "HS256"): stdClass
     {
         return JWT::decode($raw, new Key($this->apiSecret, $algo));
     }
@@ -336,7 +350,7 @@ class PlugNmeet
     }
 
     /**
-     * @param  $path
+     * @param $path
      * @param array $body
      * @return stdClass
      */
@@ -348,50 +362,23 @@ class PlugNmeet
         $fields = json_encode($body);
         $signature = hash_hmac($this->algo, $fields, $this->apiSecret);
 
-        $header = array(
-            "Content-type: application/json",
-            "API-KEY: " . $this->apiKey,
-            "HASH-SIGNATURE: " . $signature
-        );
-        $url = $this->serverUrl . $this->defaultPath . $path;
-
         try {
-            $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, $url);
-            curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
-            curl_setopt($ch, CURLOPT_POST, true);
-            curl_setopt($ch, CURLOPT_POSTFIELDS, $fields);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
-            curl_setopt($ch, CURLOPT_CAINFO, dirname(__FILE__) . '/cert/cacert.pem');
-
-            $result = curl_exec($ch);
-            $error = curl_error($ch);
-            $errno = curl_errno($ch);
-            $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-            curl_close($ch);
-
-            $response = "";
-            if (!empty($result)) {
-                $response = json_decode($result);
-            }
-
-            if (0 !== $errno) {
-                $output->response = "Error: " . $error;
-                return $output;
-            } elseif ((int)$httpCode !== 200) {
-                if (isset($response->msg)) {
-                    $output->response = $response->msg;
-                } else {
-                    $output->response = "HTTP response error code: " . $httpCode;
-                }
-                return $output;
-            }
+            $response = $this->guzzleClient->post($this->defaultPath . $path, [
+                'headers' => [
+                    'Content-Type' => 'application/json',
+                    'API-KEY' => $this->apiKey,
+                    'HASH-SIGNATURE' => $signature,
+                ],
+                'body' => $fields,
+            ]);
 
             $output->status = true;
-            $output->response = $response;
+            $output->response = json_decode($response->getBody()->getContents());
+
+        } catch (GuzzleException $e) {
+            $output->response = $e->getMessage();
         } catch (Exception $e) {
-            $output->response = "Exception: " . $e->getMessage();
+            $output->response = $e->getMessage();
         }
 
         return $output;
