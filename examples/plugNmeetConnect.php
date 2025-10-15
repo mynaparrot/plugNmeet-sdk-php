@@ -83,12 +83,14 @@ class plugNmeetConnect
     /**
      * @param stdClass $config
      */
-    public function __construct(stdClass $config)
+    public function __construct(stdClass $config, int $timeout = 60, bool $verifySSL = true)
     {
         $this->plugnmeet = new PlugNmeet(
             $config->plugnmeet_server_url,
             $config->plugnmeet_api_key,
-            $config->plugnmeet_secret
+            $config->plugnmeet_secret,
+            $timeout,
+            $verifySSL
         );
     }
 

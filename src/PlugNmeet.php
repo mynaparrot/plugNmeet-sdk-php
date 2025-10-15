@@ -28,7 +28,6 @@ use Exception;
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 use GuzzleHttp\Client;
-use GuzzleHttp\Exception\GuzzleException;
 use Mynaparrot\Plugnmeet\Parameters\AnalyticsDownloadTokenParameters;
 use Mynaparrot\Plugnmeet\Parameters\CreateRoomParameters;
 use Mynaparrot\Plugnmeet\Parameters\DeleteAnalyticsParameters;
@@ -98,7 +97,7 @@ class PlugNmeet
      * @param string $apiKey plugNmeet API_Key
      * @param string $apiSecret plugNmeet API_Secret
      */
-    public function __construct(string $serverUrl, string $apiKey, string $apiSecret)
+    public function __construct(string $serverUrl, string $apiKey, string $apiSecret, int $timeout = 60, bool $verifySSL = true)
     {
         $this->serverUrl = rtrim($serverUrl, "/");
         $this->apiKey = $apiKey;
@@ -106,8 +105,8 @@ class PlugNmeet
 
         $this->guzzleClient = new Client([
                                              'base_uri' => $this->serverUrl,
-                                             'timeout' => 10.0,
-                                             'verify' => true,
+                                             'timeout' => $timeout,
+                                             'verify' => $verifySSL,
                                          ]);
     }
 
@@ -374,8 +373,6 @@ class PlugNmeet
 
             $output->status = true;
             $output->response = json_decode($response->getBody()->getContents());
-        } catch (GuzzleException $e) {
-            $output->response = $e->getMessage();
         } catch (Exception $e) {
             $output->response = $e->getMessage();
         }
