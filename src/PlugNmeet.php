@@ -100,8 +100,13 @@ class PlugNmeet
      * @param string $apiKey plugNmeet API_Key
      * @param string $apiSecret plugNmeet API_Secret
      */
-    public function __construct(string $serverUrl, string $apiKey, string $apiSecret, int $timeout = 60, bool $verifySSL = true)
-    {
+    public function __construct(
+        string $serverUrl,
+        string $apiKey,
+        string $apiSecret,
+        int $timeout = 60,
+        bool $verifySSL = true
+    ) {
         $this->serverUrl = rtrim($serverUrl, "/");
         $this->apiKey = $apiKey;
         $this->apiSecret = $apiSecret;
