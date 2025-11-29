@@ -28,7 +28,7 @@
     "guzzlehttp/guzzle": "7.10"
   },
   "require-dev": {
-    "overtrue/phplint": "9.5.6",
+    "overtrue/phplint": "9.7.1",
     "squizlabs/php_codesniffer": "3.11.3"
   }
 }
