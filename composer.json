@@ -19,8 +19,8 @@
     }
   ],
   "scripts": {
-    "phpcs": "phpcs --standard=PSR12 src",
-    "phpcbf": "phpcbf --standard=PSR12 src"
+    "phpcs": "phpcs --standard=PSR12 src/PlugNmeet.php",
+    "phpcbf": "phpcbf --standard=PSR12 src/PlugNmeet.php"
   },
   "require": {
     "php": "^8.0",
