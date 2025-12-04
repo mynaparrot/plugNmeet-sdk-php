@@ -22,4 +22,4 @@ jobs:
       - name: Composer install
         run: composer install --ignore-platform-reqs
       - name: phpcs checker
-        run: ./vendor/bin/phpcs -q --report=checkstyle --standard=PSR12 src/src/PlugNmeet.php
+        run: ./vendor/bin/phpcs -q --report=checkstyle --standard=PSR12 src/PlugNmeet.php
