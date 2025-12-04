@@ -21,19 +21,25 @@ class FetchArtifactsReq extends \Google\Protobuf\Internal\Message
      */
     private $room_ids;
     /**
-     * Generated from protobuf field <code>optional .plugnmeet.RoomArtifactType type = 2;</code>
+     * To get record for particular session
+     *
+     * Generated from protobuf field <code>optional string room_sid = 2;</code>
+     */
+    protected $room_sid = null;
+    /**
+     * Generated from protobuf field <code>optional .plugnmeet.RoomArtifactType type = 3;</code>
      */
     protected $type = null;
     /**
-     * Generated from protobuf field <code>uint64 from = 3;</code>
+     * Generated from protobuf field <code>uint64 from = 4;</code>
      */
     protected $from = 0;
     /**
-     * Generated from protobuf field <code>uint64 limit = 4;</code>
+     * Generated from protobuf field <code>uint64 limit = 5;</code>
      */
     protected $limit = 0;
     /**
-     * Generated from protobuf field <code>string order_by = 5;</code>
+     * Generated from protobuf field <code>string order_by = 6;</code>
      */
     protected $order_by = '';
 
@@ -44,6 +50,8 @@ class FetchArtifactsReq extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string[] $room_ids
+     *     @type string $room_sid
+     *           To get record for particular session
      *     @type int $type
      *     @type int|string $from
      *     @type int|string $limit
@@ -78,7 +86,43 @@ class FetchArtifactsReq extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional .plugnmeet.RoomArtifactType type = 2;</code>
+     * To get record for particular session
+     *
+     * Generated from protobuf field <code>optional string room_sid = 2;</code>
+     * @return string
+     */
+    public function getRoomSid()
+    {
+        return isset($this->room_sid) ? $this->room_sid : '';
+    }
+
+    public function hasRoomSid()
+    {
+        return isset($this->room_sid);
+    }
+
+    public function clearRoomSid()
+    {
+        unset($this->room_sid);
+    }
+
+    /**
+     * To get record for particular session
+     *
+     * Generated from protobuf field <code>optional string room_sid = 2;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setRoomSid($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->room_sid = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .plugnmeet.RoomArtifactType type = 3;</code>
      * @return int
      */
     public function getType()
@@ -97,7 +141,7 @@ class FetchArtifactsReq extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional .plugnmeet.RoomArtifactType type = 2;</code>
+     * Generated from protobuf field <code>optional .plugnmeet.RoomArtifactType type = 3;</code>
      * @param int $var
      * @return $this
      */
@@ -110,7 +154,7 @@ class FetchArtifactsReq extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint64 from = 3;</code>
+     * Generated from protobuf field <code>uint64 from = 4;</code>
      * @return int|string
      */
     public function getFrom()
@@ -119,7 +163,7 @@ class FetchArtifactsReq extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint64 from = 3;</code>
+     * Generated from protobuf field <code>uint64 from = 4;</code>
      * @param int|string $var
      * @return $this
      */
@@ -132,7 +176,7 @@ class FetchArtifactsReq extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint64 limit = 4;</code>
+     * Generated from protobuf field <code>uint64 limit = 5;</code>
      * @return int|string
      */
     public function getLimit()
@@ -141,7 +185,7 @@ class FetchArtifactsReq extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint64 limit = 4;</code>
+     * Generated from protobuf field <code>uint64 limit = 5;</code>
      * @param int|string $var
      * @return $this
      */
@@ -154,7 +198,7 @@ class FetchArtifactsReq extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string order_by = 5;</code>
+     * Generated from protobuf field <code>string order_by = 6;</code>
      * @return string
      */
     public function getOrderBy()
@@ -163,7 +207,7 @@ class FetchArtifactsReq extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string order_by = 5;</code>
+     * Generated from protobuf field <code>string order_by = 6;</code>
      * @param string $var
      * @return $this
      */

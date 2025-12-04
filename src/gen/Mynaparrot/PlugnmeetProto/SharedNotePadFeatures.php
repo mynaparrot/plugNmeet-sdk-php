@@ -15,9 +15,14 @@ use Google\Protobuf\RepeatedField;
 class SharedNotePadFeatures extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>bool allowed_shared_note_pad = 1;</code>
+     * Generated from protobuf field <code>bool allowed_shared_note_pad = 1 [deprecated = true];</code>
+     * @deprecated
      */
     protected $allowed_shared_note_pad = false;
+    /**
+     * Generated from protobuf field <code>bool is_allow = 8;</code>
+     */
+    protected $is_allow = false;
     /**
      * Generated from protobuf field <code>bool is_active = 2 [(.buf.validate.field) = {</code>
      */
@@ -50,6 +55,7 @@ class SharedNotePadFeatures extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type bool $allowed_shared_note_pad
+     *     @type bool $is_allow
      *     @type bool $is_active
      *     @type bool $visible
      *     @type string $node_id
@@ -64,23 +70,51 @@ class SharedNotePadFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>bool allowed_shared_note_pad = 1;</code>
+     * Generated from protobuf field <code>bool allowed_shared_note_pad = 1 [deprecated = true];</code>
      * @return bool
+     * @deprecated
      */
     public function getAllowedSharedNotePad()
     {
+        if ($this->allowed_shared_note_pad !== false) {
+            @trigger_error('allowed_shared_note_pad is deprecated.', E_USER_DEPRECATED);
+        }
         return $this->allowed_shared_note_pad;
     }
 
     /**
-     * Generated from protobuf field <code>bool allowed_shared_note_pad = 1;</code>
+     * Generated from protobuf field <code>bool allowed_shared_note_pad = 1 [deprecated = true];</code>
      * @param bool $var
      * @return $this
+     * @deprecated
      */
     public function setAllowedSharedNotePad($var)
     {
+        @trigger_error('allowed_shared_note_pad is deprecated.', E_USER_DEPRECATED);
         GPBUtil::checkBool($var);
         $this->allowed_shared_note_pad = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_allow = 8;</code>
+     * @return bool
+     */
+    public function getIsAllow()
+    {
+        return $this->is_allow;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_allow = 8;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsAllow($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->is_allow = $var;
 
         return $this;
     }

@@ -15,9 +15,14 @@ use Google\Protobuf\RepeatedField;
 class ExternalMediaPlayerFeatures extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>bool allowed_external_media_player = 1;</code>
+     * Generated from protobuf field <code>bool allowed_external_media_player = 1 [deprecated = true];</code>
+     * @deprecated
      */
     protected $allowed_external_media_player = false;
+    /**
+     * Generated from protobuf field <code>bool is_allow = 5;</code>
+     */
+    protected $is_allow = false;
     /**
      * Generated from protobuf field <code>bool is_active = 2 [(.buf.validate.field) = {</code>
      */
@@ -38,6 +43,7 @@ class ExternalMediaPlayerFeatures extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type bool $allowed_external_media_player
+     *     @type bool $is_allow
      *     @type bool $is_active
      *     @type string $shared_by
      *     @type string $url
@@ -49,23 +55,51 @@ class ExternalMediaPlayerFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>bool allowed_external_media_player = 1;</code>
+     * Generated from protobuf field <code>bool allowed_external_media_player = 1 [deprecated = true];</code>
      * @return bool
+     * @deprecated
      */
     public function getAllowedExternalMediaPlayer()
     {
+        if ($this->allowed_external_media_player !== false) {
+            @trigger_error('allowed_external_media_player is deprecated.', E_USER_DEPRECATED);
+        }
         return $this->allowed_external_media_player;
     }
 
     /**
-     * Generated from protobuf field <code>bool allowed_external_media_player = 1;</code>
+     * Generated from protobuf field <code>bool allowed_external_media_player = 1 [deprecated = true];</code>
      * @param bool $var
      * @return $this
+     * @deprecated
      */
     public function setAllowedExternalMediaPlayer($var)
     {
+        @trigger_error('allowed_external_media_player is deprecated.', E_USER_DEPRECATED);
         GPBUtil::checkBool($var);
         $this->allowed_external_media_player = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_allow = 5;</code>
+     * @return bool
+     */
+    public function getIsAllow()
+    {
+        return $this->is_allow;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_allow = 5;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsAllow($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->is_allow = $var;
 
         return $this;
     }

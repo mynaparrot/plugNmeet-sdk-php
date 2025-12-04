@@ -23,21 +23,19 @@ class EndToEndEncryptionFeatures extends \Google\Protobuf\Internal\Message
      */
     protected $included_chat_messages = false;
     /**
-     * SCENE_UPDATE, POINTER_UPDATE
-     * this may use more CPU for the user end.
-     * do not enable it unless really necessary
-     *
      * Generated from protobuf field <code>bool included_whiteboard = 3;</code>
      */
     protected $included_whiteboard = false;
     /**
-     * Generated from protobuf field <code>optional string encryption_key = 4 [(.buf.validate.field) = {</code>
-     */
-    protected $encryption_key = null;
-    /**
      * Generated from protobuf field <code>bool enabled_self_insert_encryption_key = 5;</code>
      */
     protected $enabled_self_insert_encryption_key = false;
+    /**
+     * internal fields
+     *
+     * Generated from protobuf field <code>optional string encryption_key = 4 [(.buf.validate.field) = {</code>
+     */
+    protected $encryption_key = null;
 
     /**
      * Constructor.
@@ -48,11 +46,9 @@ class EndToEndEncryptionFeatures extends \Google\Protobuf\Internal\Message
      *     @type bool $is_enabled
      *     @type bool $included_chat_messages
      *     @type bool $included_whiteboard
-     *           SCENE_UPDATE, POINTER_UPDATE
-     *           this may use more CPU for the user end.
-     *           do not enable it unless really necessary
-     *     @type string $encryption_key
      *     @type bool $enabled_self_insert_encryption_key
+     *     @type string $encryption_key
+     *           internal fields
      * }
      */
     public function __construct($data = NULL) {
@@ -105,10 +101,6 @@ class EndToEndEncryptionFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * SCENE_UPDATE, POINTER_UPDATE
-     * this may use more CPU for the user end.
-     * do not enable it unless really necessary
-     *
      * Generated from protobuf field <code>bool included_whiteboard = 3;</code>
      * @return bool
      */
@@ -118,10 +110,6 @@ class EndToEndEncryptionFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * SCENE_UPDATE, POINTER_UPDATE
-     * this may use more CPU for the user end.
-     * do not enable it unless really necessary
-     *
      * Generated from protobuf field <code>bool included_whiteboard = 3;</code>
      * @param bool $var
      * @return $this
@@ -130,38 +118,6 @@ class EndToEndEncryptionFeatures extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->included_whiteboard = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>optional string encryption_key = 4 [(.buf.validate.field) = {</code>
-     * @return string
-     */
-    public function getEncryptionKey()
-    {
-        return isset($this->encryption_key) ? $this->encryption_key : '';
-    }
-
-    public function hasEncryptionKey()
-    {
-        return isset($this->encryption_key);
-    }
-
-    public function clearEncryptionKey()
-    {
-        unset($this->encryption_key);
-    }
-
-    /**
-     * Generated from protobuf field <code>optional string encryption_key = 4 [(.buf.validate.field) = {</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setEncryptionKey($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->encryption_key = $var;
 
         return $this;
     }
@@ -184,6 +140,42 @@ class EndToEndEncryptionFeatures extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->enabled_self_insert_encryption_key = $var;
+
+        return $this;
+    }
+
+    /**
+     * internal fields
+     *
+     * Generated from protobuf field <code>optional string encryption_key = 4 [(.buf.validate.field) = {</code>
+     * @return string
+     */
+    public function getEncryptionKey()
+    {
+        return isset($this->encryption_key) ? $this->encryption_key : '';
+    }
+
+    public function hasEncryptionKey()
+    {
+        return isset($this->encryption_key);
+    }
+
+    public function clearEncryptionKey()
+    {
+        unset($this->encryption_key);
+    }
+
+    /**
+     * internal fields
+     *
+     * Generated from protobuf field <code>optional string encryption_key = 4 [(.buf.validate.field) = {</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setEncryptionKey($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->encryption_key = $var;
 
         return $this;
     }

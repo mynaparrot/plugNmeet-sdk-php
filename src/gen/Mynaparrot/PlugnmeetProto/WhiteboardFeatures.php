@@ -15,9 +15,14 @@ use Google\Protobuf\RepeatedField;
 class WhiteboardFeatures extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>bool allowed_whiteboard = 1;</code>
+     * Generated from protobuf field <code>bool allowed_whiteboard = 1 [deprecated = true];</code>
+     * @deprecated
      */
     protected $allowed_whiteboard = false;
+    /**
+     * Generated from protobuf field <code>bool is_allow = 9;</code>
+     */
+    protected $is_allow = false;
     /**
      * Generated from protobuf field <code>bool visible = 2 [(.buf.validate.field) = {</code>
      */
@@ -54,6 +59,7 @@ class WhiteboardFeatures extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type bool $allowed_whiteboard
+     *     @type bool $is_allow
      *     @type bool $visible
      *     @type string $preload_file
      *     @type string $whiteboard_file_id
@@ -69,23 +75,51 @@ class WhiteboardFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>bool allowed_whiteboard = 1;</code>
+     * Generated from protobuf field <code>bool allowed_whiteboard = 1 [deprecated = true];</code>
      * @return bool
+     * @deprecated
      */
     public function getAllowedWhiteboard()
     {
+        if ($this->allowed_whiteboard !== false) {
+            @trigger_error('allowed_whiteboard is deprecated.', E_USER_DEPRECATED);
+        }
         return $this->allowed_whiteboard;
     }
 
     /**
-     * Generated from protobuf field <code>bool allowed_whiteboard = 1;</code>
+     * Generated from protobuf field <code>bool allowed_whiteboard = 1 [deprecated = true];</code>
      * @param bool $var
      * @return $this
+     * @deprecated
      */
     public function setAllowedWhiteboard($var)
     {
+        @trigger_error('allowed_whiteboard is deprecated.', E_USER_DEPRECATED);
         GPBUtil::checkBool($var);
         $this->allowed_whiteboard = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_allow = 9;</code>
+     * @return bool
+     */
+    public function getIsAllow()
+    {
+        return $this->is_allow;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_allow = 9;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsAllow($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->is_allow = $var;
 
         return $this;
     }

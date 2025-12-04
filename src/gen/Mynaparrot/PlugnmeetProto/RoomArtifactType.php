@@ -17,40 +17,45 @@ class RoomArtifactType
      */
     const UNKNOWN_ARTIFACT = 0;
     /**
-     * Generated from protobuf enum <code>MEETING_SUMMARY = 1;</code>
+     * Generated from protobuf enum <code>MEETING_ANALYTICS = 1;</code>
      */
-    const MEETING_SUMMARY = 1;
+    const MEETING_ANALYTICS = 1;
     /**
-     * Generated from protobuf enum <code>MEETING_SUMMARY_USAGE = 2;</code>
+     * Generated from protobuf enum <code>MEETING_SUMMARY = 2;</code>
      */
-    const MEETING_SUMMARY_USAGE = 2;
+    const MEETING_SUMMARY = 2;
     /**
-     * Generated from protobuf enum <code>SPEECH_TRANSCRIPTION = 3;</code>
+     * Generated from protobuf enum <code>MEETING_SUMMARY_USAGE = 3;</code>
      */
-    const SPEECH_TRANSCRIPTION = 3;
+    const MEETING_SUMMARY_USAGE = 3;
     /**
-     * Generated from protobuf enum <code>SPEECH_TRANSCRIPTION_USAGE = 4;</code>
+     * Generated from protobuf enum <code>SPEECH_TRANSCRIPTION = 4;</code>
      */
-    const SPEECH_TRANSCRIPTION_USAGE = 4;
+    const SPEECH_TRANSCRIPTION = 4;
     /**
-     * Generated from protobuf enum <code>SYNTHESIZED_SPEECH_USAGE = 5;</code>
+     * Generated from protobuf enum <code>SPEECH_TRANSCRIPTION_USAGE = 5;</code>
      */
-    const SYNTHESIZED_SPEECH_USAGE = 5;
+    const SPEECH_TRANSCRIPTION_USAGE = 5;
     /**
-     * Generated from protobuf enum <code>CHAT_TRANSLATION_USAGE = 6;</code>
+     * Generated from protobuf enum <code>SYNTHESIZED_SPEECH_USAGE = 6;</code>
      */
-    const CHAT_TRANSLATION_USAGE = 6;
+    const SYNTHESIZED_SPEECH_USAGE = 6;
     /**
-     * Generated from protobuf enum <code>AI_TEXT_CHAT_INTERACTION_USAGE = 7;</code>
+     * Generated from protobuf enum <code>CHAT_TRANSLATION_USAGE = 7;</code>
      */
-    const AI_TEXT_CHAT_INTERACTION_USAGE = 7;
+    const CHAT_TRANSLATION_USAGE = 7;
     /**
-     * Generated from protobuf enum <code>AI_TEXT_CHAT_SUMMARIZATION_USAGE = 8;</code>
+     * Generated from protobuf enum <code>AI_TEXT_CHAT_INTERACTION_USAGE = 8;</code>
      */
-    const AI_TEXT_CHAT_SUMMARIZATION_USAGE = 8;
+    const AI_TEXT_CHAT_INTERACTION_USAGE = 8;
+    /**
+     * Generated from protobuf enum <code>AI_TEXT_CHAT_SUMMARIZATION_USAGE = 9;</code>
+     */
+    const AI_TEXT_CHAT_SUMMARIZATION_USAGE = 9;
 
     private static $valueToName = [
         self::UNKNOWN_ARTIFACT => 'UNKNOWN_ARTIFACT',
+        self::MEETING_ANALYTICS => 'MEETING_ANALYTICS',
         self::MEETING_SUMMARY => 'MEETING_SUMMARY',
         self::MEETING_SUMMARY_USAGE => 'MEETING_SUMMARY_USAGE',
         self::SPEECH_TRANSCRIPTION => 'SPEECH_TRANSCRIPTION',

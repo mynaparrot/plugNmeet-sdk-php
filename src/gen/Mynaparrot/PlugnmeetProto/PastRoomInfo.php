@@ -43,9 +43,9 @@ class PastRoomInfo extends \Google\Protobuf\Internal\Message
      */
     protected $ended = '';
     /**
-     * Generated from protobuf field <code>string analytics_file_id = 8;</code>
+     * Generated from protobuf field <code>optional string analytics_file_id = 8;</code>
      */
-    protected $analytics_file_id = '';
+    protected $analytics_file_id = null;
 
     /**
      * Constructor.
@@ -223,16 +223,26 @@ class PastRoomInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string analytics_file_id = 8;</code>
+     * Generated from protobuf field <code>optional string analytics_file_id = 8;</code>
      * @return string
      */
     public function getAnalyticsFileId()
     {
-        return $this->analytics_file_id;
+        return isset($this->analytics_file_id) ? $this->analytics_file_id : '';
+    }
+
+    public function hasAnalyticsFileId()
+    {
+        return isset($this->analytics_file_id);
+    }
+
+    public function clearAnalyticsFileId()
+    {
+        unset($this->analytics_file_id);
     }
 
     /**
-     * Generated from protobuf field <code>string analytics_file_id = 8;</code>
+     * Generated from protobuf field <code>optional string analytics_file_id = 8;</code>
      * @param string $var
      * @return $this
      */
