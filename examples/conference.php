@@ -52,14 +52,18 @@ $config->plugnmeet_secret = "zumyyYWqv7KR2kUqvYdq4z4sXg7XTBD2ljT6";
 
 $connect = new plugNmeetConnect($config);
 // https://www.plugnmeet.org/docs/api/get-client-files
-$files = $connect->getClientFiles();
-
-if (!$files->getStatus()) {
-    die($files->getResponseMsg());
+try {
+    $files = $connect->getClientFiles();
+} catch (Exception $e) {
+    die($e->getMessage());
 }
 
-$jsFiles = $files->getJSFiles();
-$cssFiles = $files->getCSSFiles();
+if (!$files->getStatus()) {
+    die($files->getMsg());
+}
+
+$jsFiles = $files->getJsFiles();
+$cssFiles = $files->getCssFiles();
 $assetsPath = $config->plugnmeet_server_url . "/assets";
 
 if (empty($jsFiles) || empty($cssFiles)) {
@@ -69,7 +73,7 @@ if (empty($jsFiles) || empty($cssFiles)) {
 $jsTags = "";
 $jsTagsPreload = "";
 foreach ($jsFiles as $file) {
-    if (substr($file, 0, strlen('main-module.')) === 'main-module.') {
+    if (str_starts_with($file, 'main-module.')) {
         $jsTags .= '<script src="' . $assetsPath . '/js/' . $file . '" type="module"></script>' . "\n";
     } else {
         $jsTags .= '<script src="' . $assetsPath . '/js/' . $file . '" defer="defer"></script>' . "\n";

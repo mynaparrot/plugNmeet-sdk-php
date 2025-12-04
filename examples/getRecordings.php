@@ -36,6 +36,8 @@ $config->plugnmeet_secret = "zumyyYWqv7KR2kUqvYdq4z4sXg7XTBD2ljT6";
 $connect = new plugNmeetConnect($config);
 $recordings = $connect->getRecordings(array('room02'));
 
+var_dump($recordings);
+
 echo "<pre>";
-echo "Total: " . $recordings->getTotalRecordings() . "\n";
-print_r($recordings->getRecordings());
+echo "Total: " . $recordings->getResult()?->getTotalRecordings() . "\n";
+print_r($recordings->getResult()?->getRecordingsList());
