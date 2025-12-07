@@ -31,14 +31,20 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Exception\RequestException;
+use Mynaparrot\PlugnmeetProto\ArtifactInfoReq;
+use Mynaparrot\PlugnmeetProto\ArtifactInfoRes;
 use Mynaparrot\PlugnmeetProto\CreateRoomReq;
 use Mynaparrot\PlugnmeetProto\CreateRoomRes;
 use Mynaparrot\PlugnmeetProto\DeleteAnalyticsReq;
 use Mynaparrot\PlugnmeetProto\DeleteAnalyticsRes;
+use Mynaparrot\PlugnmeetProto\DeleteArtifactReq;
+use Mynaparrot\PlugnmeetProto\DeleteArtifactRes;
 use Mynaparrot\PlugnmeetProto\DeleteRecordingReq;
 use Mynaparrot\PlugnmeetProto\DeleteRecordingRes;
 use Mynaparrot\PlugnmeetProto\FetchAnalyticsReq;
 use Mynaparrot\PlugnmeetProto\FetchAnalyticsRes;
+use Mynaparrot\PlugnmeetProto\FetchArtifactsReq;
+use Mynaparrot\PlugnmeetProto\FetchArtifactsRes;
 use Mynaparrot\PlugnmeetProto\FetchPastRoomsReq;
 use Mynaparrot\PlugnmeetProto\FetchPastRoomsRes;
 use Mynaparrot\PlugnmeetProto\FetchRecordingsReq;
@@ -50,6 +56,8 @@ use Mynaparrot\PlugnmeetProto\GetActiveRoomInfoRes;
 use Mynaparrot\PlugnmeetProto\GetActiveRoomsInfoRes;
 use Mynaparrot\PlugnmeetProto\GetAnalyticsDownloadTokenReq;
 use Mynaparrot\PlugnmeetProto\GetAnalyticsDownloadTokenRes;
+use Mynaparrot\PlugnmeetProto\GetArtifactDownloadTokenReq;
+use Mynaparrot\PlugnmeetProto\GetArtifactDownloadTokenRes;
 use Mynaparrot\PlugnmeetProto\GetClientFilesRes;
 use Mynaparrot\PlugnmeetProto\GetDownloadTokenReq;
 use Mynaparrot\PlugnmeetProto\GetDownloadTokenRes;
@@ -104,8 +112,8 @@ class PlugNmeet
         string $serverUrl,
         string $apiKey,
         string $apiSecret,
-        int $timeout = 60,
-        bool $verifySSL = true
+        int    $timeout = 60,
+        bool   $verifySSL = true
     ) {
         $this->serverUrl = rtrim($serverUrl, "/");
         $this->apiKey = $apiKey;
@@ -339,6 +347,91 @@ class PlugNmeet
         $res = $this->sendRequest("/recording/getDownloadToken", $body);
 
         $output = new GetDownloadTokenRes();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response);
+        }
+        return $output;
+    }
+
+    /**
+     * To fetch artifacts list
+     *
+     * @param FetchArtifactsReq $fetchArtifactsReq
+     * @return FetchArtifactsRes
+     * @throws Exception
+     */
+    public function fetchArtifacts(FetchArtifactsReq $fetchArtifactsReq): FetchArtifactsRes
+    {
+        $body = $fetchArtifactsReq->serializeToJsonString();
+        $res = $this->sendRequest("/artifact/fetch", $body);
+
+        $output = new FetchArtifactsRes();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response);
+        }
+        return $output;
+    }
+
+    /**
+     * To get details of an artifact
+     *
+     * @param ArtifactInfoReq $artifactDetailsReq
+     * @return ArtifactInfoRes
+     * @throws Exception
+     */
+    public function getArtifactInfo(ArtifactInfoReq $artifactDetailsReq): ArtifactInfoRes
+    {
+        $body = $artifactDetailsReq->serializeToJsonString();
+        $res = $this->sendRequest("/artifact/artifactInfo", $body);
+
+        $output = new ArtifactInfoRes();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response);
+        }
+        return $output;
+    }
+
+    /**
+     * To delete artifact
+     *
+     * @param DeleteArtifactReq $deleteArtifactReq
+     * @return DeleteArtifactRes
+     * @throws Exception
+     */
+    public function deleteArtifact(DeleteArtifactReq $deleteArtifactReq): DeleteArtifactRes
+    {
+        $body = $deleteArtifactReq->serializeToJsonString();
+        $res = $this->sendRequest("/artifact/delete", $body);
+
+        $output = new DeleteArtifactRes();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response);
+        }
+        return $output;
+    }
+
+    /**
+     * Generate token to download artifact file
+     *
+     * @param GetArtifactDownloadTokenReq $getAnalyticsDownloadTokenReq
+     * @return GetArtifactDownloadTokenRes
+     * @throws Exception
+     */
+    public function getArtifactDownloadToken(
+        GetArtifactDownloadTokenReq $getAnalyticsDownloadTokenReq
+    ): GetArtifactDownloadTokenRes {
+        $body = $getAnalyticsDownloadTokenReq->serializeToJsonString();
+        $res = $this->sendRequest("/artifact/getDownloadToken", $body);
+
+        $output = new GetArtifactDownloadTokenRes();
         if ($res->status) {
             $output->mergeFromJsonString($res->response, true);
         } else {

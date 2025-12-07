@@ -34,7 +34,11 @@ $config->plugnmeet_api_key = "plugnmeet";
 $config->plugnmeet_secret = "zumyyYWqv7KR2kUqvYdq4z4sXg7XTBD2ljT6";
 
 $connect = new plugNmeetConnect($config);
-$recordings = $connect->getRecordings(array('room02'));
+try {
+    $recordings = $connect->getRecordings(array('room02'));
+} catch (Exception $e) {
+    die($e->getMessage());
+}
 
 var_dump($recordings);
 

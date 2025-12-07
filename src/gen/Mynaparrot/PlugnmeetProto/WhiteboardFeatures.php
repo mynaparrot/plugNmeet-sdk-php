@@ -15,10 +15,10 @@ use Google\Protobuf\RepeatedField;
 class WhiteboardFeatures extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>bool allowed_whiteboard = 1 [deprecated = true];</code>
+     * Generated from protobuf field <code>optional bool allowed_whiteboard = 1 [deprecated = true];</code>
      * @deprecated
      */
-    protected $allowed_whiteboard = false;
+    protected $allowed_whiteboard = null;
     /**
      * Generated from protobuf field <code>bool is_allow = 9;</code>
      */
@@ -75,20 +75,34 @@ class WhiteboardFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>bool allowed_whiteboard = 1 [deprecated = true];</code>
+     * Generated from protobuf field <code>optional bool allowed_whiteboard = 1 [deprecated = true];</code>
      * @return bool
      * @deprecated
      */
     public function getAllowedWhiteboard()
     {
-        if ($this->allowed_whiteboard !== false) {
+        if (isset($this->allowed_whiteboard)) {
             @trigger_error('allowed_whiteboard is deprecated.', E_USER_DEPRECATED);
         }
-        return $this->allowed_whiteboard;
+        return isset($this->allowed_whiteboard) ? $this->allowed_whiteboard : false;
+    }
+
+    public function hasAllowedWhiteboard()
+    {
+        if (isset($this->allowed_whiteboard)) {
+            @trigger_error('allowed_whiteboard is deprecated.', E_USER_DEPRECATED);
+        }
+        return isset($this->allowed_whiteboard);
+    }
+
+    public function clearAllowedWhiteboard()
+    {
+        @trigger_error('allowed_whiteboard is deprecated.', E_USER_DEPRECATED);
+        unset($this->allowed_whiteboard);
     }
 
     /**
-     * Generated from protobuf field <code>bool allowed_whiteboard = 1 [deprecated = true];</code>
+     * Generated from protobuf field <code>optional bool allowed_whiteboard = 1 [deprecated = true];</code>
      * @param bool $var
      * @return $this
      * @deprecated

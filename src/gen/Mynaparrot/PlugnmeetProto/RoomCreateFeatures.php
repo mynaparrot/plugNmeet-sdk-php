@@ -45,10 +45,10 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     /**
      * deprecated use polls_features
      *
-     * Generated from protobuf field <code>bool allow_polls = 8 [deprecated = true];</code>
+     * Generated from protobuf field <code>optional bool allow_polls = 8 [deprecated = true];</code>
      * @deprecated
      */
-    protected $allow_polls = false;
+    protected $allow_polls = null;
     /**
      * Generated from protobuf field <code>optional uint64 room_duration = 9;</code>
      */
@@ -326,22 +326,36 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     /**
      * deprecated use polls_features
      *
-     * Generated from protobuf field <code>bool allow_polls = 8 [deprecated = true];</code>
+     * Generated from protobuf field <code>optional bool allow_polls = 8 [deprecated = true];</code>
      * @return bool
      * @deprecated
      */
     public function getAllowPolls()
     {
-        if ($this->allow_polls !== false) {
+        if (isset($this->allow_polls)) {
             @trigger_error('allow_polls is deprecated.', E_USER_DEPRECATED);
         }
-        return $this->allow_polls;
+        return isset($this->allow_polls) ? $this->allow_polls : false;
+    }
+
+    public function hasAllowPolls()
+    {
+        if (isset($this->allow_polls)) {
+            @trigger_error('allow_polls is deprecated.', E_USER_DEPRECATED);
+        }
+        return isset($this->allow_polls);
+    }
+
+    public function clearAllowPolls()
+    {
+        @trigger_error('allow_polls is deprecated.', E_USER_DEPRECATED);
+        unset($this->allow_polls);
     }
 
     /**
      * deprecated use polls_features
      *
-     * Generated from protobuf field <code>bool allow_polls = 8 [deprecated = true];</code>
+     * Generated from protobuf field <code>optional bool allow_polls = 8 [deprecated = true];</code>
      * @param bool $var
      * @return $this
      * @deprecated

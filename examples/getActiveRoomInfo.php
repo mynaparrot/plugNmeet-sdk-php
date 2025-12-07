@@ -34,11 +34,19 @@ $config->plugnmeet_api_key = "plugnmeet";
 $config->plugnmeet_secret = "zumyyYWqv7KR2kUqvYdq4z4sXg7XTBD2ljT6";
 
 $connect = new plugNmeetConnect($config);
-$info = $connect->getActiveRoomInfo("room01");
+try {
+    $info = $connect->getActiveRoomInfo("room01");
+} catch (Exception $e) {
+    die($e->getMessage());
+}
 echo "<pre>";
 print_r($info);
 
 // to get all
-$info = $connect->getActiveRoomsInfo();
+try {
+    $info = $connect->getActiveRoomsInfo();
+} catch (Exception $e) {
+    die($e->getMessage());
+}
 echo "<pre>";
 print_r($info);

@@ -23,15 +23,21 @@
  */
 
 use Mynaparrot\Plugnmeet\PlugNmeet;
+use Mynaparrot\PlugnmeetProto\ArtifactInfoReq;
+use Mynaparrot\PlugnmeetProto\ArtifactInfoRes;
 use Mynaparrot\PlugnmeetProto\CopyrightConf;
 use Mynaparrot\PlugnmeetProto\CreateRoomReq;
 use Mynaparrot\PlugnmeetProto\CreateRoomRes;
 use Mynaparrot\PlugnmeetProto\DeleteAnalyticsReq;
 use Mynaparrot\PlugnmeetProto\DeleteAnalyticsRes;
+use Mynaparrot\PlugnmeetProto\DeleteArtifactReq;
+use Mynaparrot\PlugnmeetProto\DeleteArtifactRes;
 use Mynaparrot\PlugnmeetProto\DeleteRecordingReq;
 use Mynaparrot\PlugnmeetProto\DeleteRecordingRes;
 use Mynaparrot\PlugnmeetProto\FetchAnalyticsReq;
 use Mynaparrot\PlugnmeetProto\FetchAnalyticsRes;
+use Mynaparrot\PlugnmeetProto\FetchArtifactsReq;
+use Mynaparrot\PlugnmeetProto\FetchArtifactsRes;
 use Mynaparrot\PlugnmeetProto\FetchPastRoomsReq;
 use Mynaparrot\PlugnmeetProto\FetchPastRoomsRes;
 use Mynaparrot\PlugnmeetProto\FetchRecordingsReq;
@@ -43,6 +49,8 @@ use Mynaparrot\PlugnmeetProto\GetActiveRoomInfoRes;
 use Mynaparrot\PlugnmeetProto\GetActiveRoomsInfoRes;
 use Mynaparrot\PlugnmeetProto\GetAnalyticsDownloadTokenReq;
 use Mynaparrot\PlugnmeetProto\GetAnalyticsDownloadTokenRes;
+use Mynaparrot\PlugnmeetProto\GetArtifactDownloadTokenReq;
+use Mynaparrot\PlugnmeetProto\GetArtifactDownloadTokenRes;
 use Mynaparrot\PlugnmeetProto\GetClientFilesRes;
 use Mynaparrot\PlugnmeetProto\GetDownloadTokenReq;
 use Mynaparrot\PlugnmeetProto\GetDownloadTokenRes;
@@ -115,30 +123,31 @@ class plugNmeetConnect
     /**
      * @param string $roomId
      * @param string $roomTitle
-     * @param string $welcomeMessage
-     * @param int $max_participants
-     * @param string $webHookUrl
      * @param array $roomMetadata
-     * @param int $empty_timeout
+     * @param string $welcomeMessage
      * @param string $logoutUrl
+     * @param string $webHookUrl
+     * @param int $max_participants
+     * @param int $empty_timeout
      * @param string|null $extraData
      * @return CreateRoomRes
      * @throws Exception
      */
-    public function createRoom(string $roomId, string $roomTitle, string $welcomeMessage, int $max_participants, string $webHookUrl, array $roomMetadata, int $empty_timeout = 0, string $logoutUrl = "", string $extraData = null): CreateRoomRes
+    public function createRoom(string $roomId, string $roomTitle, array $roomMetadata, string $welcomeMessage = "", string $logoutUrl = "", string $webHookUrl = "", int $max_participants = 0, int $empty_timeout = 0, string $extraData = null): CreateRoomRes
     {
         if (!isset($roomMetadata['room_features']) || !is_array($roomMetadata['room_features'])) {
             throw new Exception("room_features required and should be an array");
         }
 
-        // convert array to plugNmeet metadata format
-        // we'll push all the features under room_features
+        // backward compatibility with existing plugins
         $roomMetadataFeatures = $roomMetadata['room_features'];
         foreach ($roomMetadata as $k => $data) {
             if ($k === "room_features" || $k === "default_lock_settings" || $k === "copyright_conf") {
                 continue;
             }
-            $roomMetadataFeatures[$k] = $data;
+            if (!isset($roomMetadataFeatures[$k])) {
+                $roomMetadataFeatures[$k] = $data;
+            }
         }
 
         $features = new RoomCreateFeatures();
@@ -291,16 +300,20 @@ class plugNmeetConnect
 
     /**
      * @param array $roomIds
+     * @param string|null $roomSid
      * @param int $from
      * @param int $limit
      * @param string $orderBy
      * @return FetchRecordingsRes
      * @throws Exception
      */
-    public function getRecordings(array $roomIds, int $from = 0, int $limit = 20, string $orderBy = "DESC"): FetchRecordingsRes
+    public function getRecordings(array $roomIds, string|null $roomSid = null, int $from = 0, int $limit = 20, string $orderBy = "DESC"): FetchRecordingsRes
     {
         $fetchRecordingsReq = new FetchRecordingsReq();
         $fetchRecordingsReq->setRoomIds($roomIds);
+        if (!is_null($roomSid)) {
+            $fetchRecordingsReq->setRoomSid($roomSid);
+        }
         $fetchRecordingsReq->setFrom($from);
         $fetchRecordingsReq->setLimit($limit);
         $fetchRecordingsReq->setOrderBy($orderBy);
@@ -322,11 +335,11 @@ class plugNmeetConnect
     }
 
     /**
-     * @param  $recordingId
+     * @param string $recordingId
      * @return GetDownloadTokenRes
      * @throws Exception
      */
-    public function getRecordingDownloadLink($recordingId): GetDownloadTokenRes
+    public function getRecordingDownloadLink(string $recordingId): GetDownloadTokenRes
     {
         $getDownloadTokenReq = new GetDownloadTokenReq();
         $getDownloadTokenReq->setRecordId($recordingId);
@@ -335,17 +348,80 @@ class plugNmeetConnect
     }
 
     /**
-     * @param  $recordingId
+     * @param string $recordingId
      * @return DeleteRecordingRes
      * @throws Exception
      */
-    public function deleteRecording($recordingId): DeleteRecordingRes
+    public function deleteRecording(string $recordingId): DeleteRecordingRes
     {
         $deleteRecordingReq = new DeleteRecordingReq();
         $deleteRecordingReq->setRecordId($recordingId);
 
         return $this->plugnmeet->deleteRecordings($deleteRecordingReq);
     }
+
+    /**
+     * @param array $roomIds
+     * @param string|null $roomSid
+     * @param int $from
+     * @param int $limit
+     * @param string $orderBy
+     * @return FetchArtifactsRes
+     * @throws Exception
+     */
+    public function getArtifacts(array $roomIds, string|null $roomSid = null, int $from = 0, int $limit = 20, string $orderBy = "DESC"): FetchArtifactsRes
+    {
+        $fetchRecordingsReq = new FetchArtifactsReq();
+        $fetchRecordingsReq->setRoomIds($roomIds);
+        if (!is_null($roomSid)) {
+            $fetchRecordingsReq->setRoomSid($roomSid);
+        }
+        $fetchRecordingsReq->setFrom($from);
+        $fetchRecordingsReq->setLimit($limit);
+        $fetchRecordingsReq->setOrderBy($orderBy);
+
+        return $this->plugnmeet->fetchArtifacts($fetchRecordingsReq);
+    }
+
+    /**
+     * @param string $artifactId
+     * @return ArtifactInfoRes
+     * @throws Exception
+     */
+    public function getArtifactInfo(string $artifactId): ArtifactInfoRes
+    {
+        $recordingInfoReq = new ArtifactInfoReq();
+        $recordingInfoReq->setArtifactId($artifactId);
+
+        return $this->plugnmeet->getArtifactInfo($recordingInfoReq);
+    }
+
+    /**
+     * @param string $artifactId
+     * @return GetArtifactDownloadTokenRes
+     * @throws Exception
+     */
+    public function getArtifactDownloadToken(string $artifactId): GetArtifactDownloadTokenRes
+    {
+        $getDownloadTokenReq = new GetArtifactDownloadTokenReq();
+        $getDownloadTokenReq->setArtifactId($artifactId);
+
+        return $this->plugnmeet->getArtifactDownloadToken($getDownloadTokenReq);
+    }
+
+    /**
+     * @param string $artifactId
+     * @return DeleteArtifactRes
+     * @throws Exception
+     */
+    public function deleteArtifact(string $artifactId): DeleteArtifactRes
+    {
+        $deleteRecordingReq = new DeleteArtifactReq();
+        $deleteRecordingReq->setArtifactId($artifactId);
+
+        return $this->plugnmeet->deleteArtifact($deleteRecordingReq);
+    }
+
 
     /**
      * @param array $roomIds

@@ -15,10 +15,10 @@ use Google\Protobuf\RepeatedField;
 class ExternalMediaPlayerFeatures extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>bool allowed_external_media_player = 1 [deprecated = true];</code>
+     * Generated from protobuf field <code>optional bool allowed_external_media_player = 1 [deprecated = true];</code>
      * @deprecated
      */
-    protected $allowed_external_media_player = false;
+    protected $allowed_external_media_player = null;
     /**
      * Generated from protobuf field <code>bool is_allow = 5;</code>
      */
@@ -55,20 +55,34 @@ class ExternalMediaPlayerFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>bool allowed_external_media_player = 1 [deprecated = true];</code>
+     * Generated from protobuf field <code>optional bool allowed_external_media_player = 1 [deprecated = true];</code>
      * @return bool
      * @deprecated
      */
     public function getAllowedExternalMediaPlayer()
     {
-        if ($this->allowed_external_media_player !== false) {
+        if (isset($this->allowed_external_media_player)) {
             @trigger_error('allowed_external_media_player is deprecated.', E_USER_DEPRECATED);
         }
-        return $this->allowed_external_media_player;
+        return isset($this->allowed_external_media_player) ? $this->allowed_external_media_player : false;
+    }
+
+    public function hasAllowedExternalMediaPlayer()
+    {
+        if (isset($this->allowed_external_media_player)) {
+            @trigger_error('allowed_external_media_player is deprecated.', E_USER_DEPRECATED);
+        }
+        return isset($this->allowed_external_media_player);
+    }
+
+    public function clearAllowedExternalMediaPlayer()
+    {
+        @trigger_error('allowed_external_media_player is deprecated.', E_USER_DEPRECATED);
+        unset($this->allowed_external_media_player);
     }
 
     /**
-     * Generated from protobuf field <code>bool allowed_external_media_player = 1 [deprecated = true];</code>
+     * Generated from protobuf field <code>optional bool allowed_external_media_player = 1 [deprecated = true];</code>
      * @param bool $var
      * @return $this
      * @deprecated

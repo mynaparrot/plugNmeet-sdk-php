@@ -10,9 +10,9 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * Generated from protobuf message <code>plugnmeet.ArtifactDetailsRes</code>
+ * Generated from protobuf message <code>plugnmeet.ArtifactInfoRes</code>
  */
-class ArtifactDetailsRes extends \Google\Protobuf\Internal\Message
+class ArtifactInfoRes extends \Google\Protobuf\Internal\Message
 {
     /**
      * Generated from protobuf field <code>bool status = 1;</code>

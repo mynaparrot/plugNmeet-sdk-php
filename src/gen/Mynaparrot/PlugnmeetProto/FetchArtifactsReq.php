@@ -21,7 +21,7 @@ class FetchArtifactsReq extends \Google\Protobuf\Internal\Message
      */
     private $room_ids;
     /**
-     * To get record for particular session
+     * To get information about a particular session
      *
      * Generated from protobuf field <code>optional string room_sid = 2;</code>
      */
@@ -51,7 +51,7 @@ class FetchArtifactsReq extends \Google\Protobuf\Internal\Message
      *
      *     @type string[] $room_ids
      *     @type string $room_sid
-     *           To get record for particular session
+     *           To get information about a particular session
      *     @type int $type
      *     @type int|string $from
      *     @type int|string $limit
@@ -86,7 +86,7 @@ class FetchArtifactsReq extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * To get record for particular session
+     * To get information about a particular session
      *
      * Generated from protobuf field <code>optional string room_sid = 2;</code>
      * @return string
@@ -107,7 +107,7 @@ class FetchArtifactsReq extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * To get record for particular session
+     * To get information about a particular session
      *
      * Generated from protobuf field <code>optional string room_sid = 2;</code>
      * @param string $var

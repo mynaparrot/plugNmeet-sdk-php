@@ -34,10 +34,6 @@ class AnalyticsInfo extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int64 creation_time = 5;</code>
      */
     protected $creation_time = 0;
-    /**
-     * Generated from protobuf field <code>int64 room_creation_time = 6;</code>
-     */
-    protected $room_creation_time = 0;
 
     /**
      * Constructor.
@@ -50,7 +46,6 @@ class AnalyticsInfo extends \Google\Protobuf\Internal\Message
      *     @type string $file_name
      *     @type float $file_size
      *     @type int|string $creation_time
-     *     @type int|string $room_creation_time
      * }
      */
     public function __construct($data = NULL) {
@@ -164,28 +159,6 @@ class AnalyticsInfo extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->creation_time = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>int64 room_creation_time = 6;</code>
-     * @return int|string
-     */
-    public function getRoomCreationTime()
-    {
-        return $this->room_creation_time;
-    }
-
-    /**
-     * Generated from protobuf field <code>int64 room_creation_time = 6;</code>
-     * @param int|string $var
-     * @return $this
-     */
-    public function setRoomCreationTime($var)
-    {
-        GPBUtil::checkInt64($var);
-        $this->room_creation_time = $var;
 
         return $this;
     }
