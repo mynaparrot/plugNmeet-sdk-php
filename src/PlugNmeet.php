@@ -112,8 +112,8 @@ class PlugNmeet
         string $serverUrl,
         string $apiKey,
         string $apiSecret,
-        int    $timeout = 60,
-        bool   $verifySSL = true
+        int $timeout = 60,
+        bool $verifySSL = true
     ) {
         $this->serverUrl = rtrim($serverUrl, "/");
         $this->apiKey = $apiKey;
