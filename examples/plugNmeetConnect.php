@@ -28,14 +28,10 @@ use Mynaparrot\PlugnmeetProto\ArtifactInfoRes;
 use Mynaparrot\PlugnmeetProto\CopyrightConf;
 use Mynaparrot\PlugnmeetProto\CreateRoomReq;
 use Mynaparrot\PlugnmeetProto\CreateRoomRes;
-use Mynaparrot\PlugnmeetProto\DeleteAnalyticsReq;
-use Mynaparrot\PlugnmeetProto\DeleteAnalyticsRes;
 use Mynaparrot\PlugnmeetProto\DeleteArtifactReq;
 use Mynaparrot\PlugnmeetProto\DeleteArtifactRes;
 use Mynaparrot\PlugnmeetProto\DeleteRecordingReq;
 use Mynaparrot\PlugnmeetProto\DeleteRecordingRes;
-use Mynaparrot\PlugnmeetProto\FetchAnalyticsReq;
-use Mynaparrot\PlugnmeetProto\FetchAnalyticsRes;
 use Mynaparrot\PlugnmeetProto\FetchArtifactsReq;
 use Mynaparrot\PlugnmeetProto\FetchArtifactsRes;
 use Mynaparrot\PlugnmeetProto\FetchPastRoomsReq;
@@ -47,8 +43,6 @@ use Mynaparrot\PlugnmeetProto\GenerateTokenRes;
 use Mynaparrot\PlugnmeetProto\GetActiveRoomInfoReq;
 use Mynaparrot\PlugnmeetProto\GetActiveRoomInfoRes;
 use Mynaparrot\PlugnmeetProto\GetActiveRoomsInfoRes;
-use Mynaparrot\PlugnmeetProto\GetAnalyticsDownloadTokenReq;
-use Mynaparrot\PlugnmeetProto\GetAnalyticsDownloadTokenRes;
 use Mynaparrot\PlugnmeetProto\GetArtifactDownloadTokenReq;
 use Mynaparrot\PlugnmeetProto\GetArtifactDownloadTokenRes;
 use Mynaparrot\PlugnmeetProto\GetClientFilesRes;
@@ -59,6 +53,7 @@ use Mynaparrot\PlugnmeetProto\IsRoomActiveRes;
 use Mynaparrot\PlugnmeetProto\LockSettings;
 use Mynaparrot\PlugnmeetProto\RecordingInfoReq;
 use Mynaparrot\PlugnmeetProto\RecordingInfoRes;
+use Mynaparrot\PlugnmeetProto\RoomArtifactType;
 use Mynaparrot\PlugnmeetProto\RoomCreateFeatures;
 use Mynaparrot\PlugnmeetProto\RoomEndReq;
 use Mynaparrot\PlugnmeetProto\RoomEndRes;
@@ -369,12 +364,15 @@ class plugNmeetConnect
      * @return FetchArtifactsRes
      * @throws Exception
      */
-    public function getArtifacts(array $roomIds, string|null $roomSid = null, int $from = 0, int $limit = 20, string $orderBy = "DESC"): FetchArtifactsRes
+    public function getArtifacts(array $roomIds, string|null $roomSid = null, int|null $artifactsType = null, int $from = 0, int $limit = 20, string $orderBy = "DESC"): FetchArtifactsRes
     {
         $fetchRecordingsReq = new FetchArtifactsReq();
         $fetchRecordingsReq->setRoomIds($roomIds);
         if (!is_null($roomSid)) {
             $fetchRecordingsReq->setRoomSid($roomSid);
+        }
+        if (!is_null($artifactsType)) {
+            $fetchRecordingsReq->setType($artifactsType);
         }
         $fetchRecordingsReq->setFrom($from);
         $fetchRecordingsReq->setLimit($limit);
@@ -422,50 +420,38 @@ class plugNmeetConnect
         return $this->plugnmeet->deleteArtifact($deleteRecordingReq);
     }
 
-
     /**
      * @param array $roomIds
+     * @param string|null $roomSid
      * @param int $from
      * @param int $limit
      * @param string $orderBy
-     * @return FetchAnalyticsRes
+     * @return FetchArtifactsRes
      * @throws Exception
      */
-    public function getAnalytics(array $roomIds, int $from = 0, int $limit = 20, string $orderBy = "DESC"): FetchAnalyticsRes
+    public function getAnalytics(array $roomIds, string|null $roomSid = null, int $from = 0, int $limit = 20, string $orderBy = "DESC"): FetchArtifactsRes
     {
-        $fetchAnalyticsReq = new FetchAnalyticsReq();
-        $fetchAnalyticsReq->setRoomIds($roomIds);
-        $fetchAnalyticsReq->setFrom($from);
-        $fetchAnalyticsReq->setLimit($limit);
-        $fetchAnalyticsReq->setOrderBy($orderBy);
-
-        return $this->plugnmeet->fetchAnalytics($fetchAnalyticsReq);
+        return $this->getArtifacts($roomIds, $roomSid, RoomArtifactType::MEETING_ANALYTICS, $from, $limit, $orderBy);
     }
 
     /**
-     * @param  $fileId
-     * @return GetAnalyticsDownloadTokenRes
+     * @param string $artifactId
+     * @return GetArtifactDownloadTokenRes
      * @throws Exception
      */
-    public function getAnalyticsDownloadLink($fileId): GetAnalyticsDownloadTokenRes
+    public function getAnalyticsDownloadLink(string $artifactId): GetArtifactDownloadTokenRes
     {
-        $getAnalyticsDownloadTokenReq = new GetAnalyticsDownloadTokenReq();
-        $getAnalyticsDownloadTokenReq->setFileId($fileId);
-
-        return $this->plugnmeet->getAnalyticsDownloadToken($getAnalyticsDownloadTokenReq);
+        return $this->getArtifactDownloadToken($artifactId);
     }
 
     /**
-     * @param  $fileId
-     * @return DeleteAnalyticsRes
+     * @param string $artifactId
+     * @return DeleteArtifactRes
      * @throws Exception
      */
-    public function deleteAnalytics($fileId): DeleteAnalyticsRes
+    public function deleteAnalytics(string $artifactId): DeleteArtifactRes
     {
-        $deleteAnalyticsReq = new DeleteAnalyticsReq();
-        $deleteAnalyticsReq->setFileId($fileId);
-
-        return $this->plugnmeet->deleteAnalytics($deleteAnalyticsReq);
+        return $this->deleteArtifact($artifactId);
     }
 
     /**
