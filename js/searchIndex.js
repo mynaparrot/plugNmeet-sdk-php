@@ -17896,6 +17896,11 @@ Search.appendIndex(
             "summary": "Connectors\u0020participants",
             "url": "classes/Livekit-ParticipantInfo-Kind.html#constant_CONNECTOR"
         },                {
+            "fqsen": "\\Livekit\\ParticipantInfo\\Kind\u003A\u003ABRIDGE",
+            "name": "BRIDGE",
+            "summary": "Bridge\u0020participants",
+            "url": "classes/Livekit-ParticipantInfo-Kind.html#constant_BRIDGE"
+        },                {
             "fqsen": "\\Livekit\\ParticipantInfo\\Kind\u003A\u003A\u0024valueToName",
             "name": "valueToName",
             "summary": "",
@@ -17935,6 +17940,11 @@ Search.appendIndex(
             "name": "CONNECTOR_TWILIO",
             "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ECONNECTOR_TWILIO\u0020\u003D\u00203\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-ParticipantInfo-KindDetail.html#constant_CONNECTOR_TWILIO"
+        },                {
+            "fqsen": "\\Livekit\\ParticipantInfo\\KindDetail\u003A\u003ABRIDGE_RTSP",
+            "name": "BRIDGE_RTSP",
+            "summary": "NEXT_ID\u003A\u00205",
+            "url": "classes/Livekit-ParticipantInfo-KindDetail.html#constant_BRIDGE_RTSP"
         },                {
             "fqsen": "\\Livekit\\ParticipantInfo\\KindDetail\u003A\u003A\u0024valueToName",
             "name": "valueToName",
