@@ -52,14 +52,18 @@ $config->plugnmeet_secret = "zumyyYWqv7KR2kUqvYdq4z4sXg7XTBD2ljT6";
 
 $connect = new plugNmeetConnect($config);
 // https://www.plugnmeet.org/docs/api/get-client-files
-$files = $connect->getClientFiles();
-
-if (!$files->getStatus()) {
-    die($files->getResponseMsg());
+try {
+    $files = $connect->getClientFiles();
+} catch (Exception $e) {
+    die($e->getMessage());
 }
 
-$jsFiles = $files->getJSFiles();
-$cssFiles = $files->getCSSFiles();
+if (!$files->getStatus()) {
+    die($files->getMsg());
+}
+
+$jsFiles = $files->getJsFiles();
+$cssFiles = $files->getCssFiles();
 $assetsPath = $config->plugnmeet_server_url . "/assets";
 
 if (empty($jsFiles) || empty($cssFiles)) {
@@ -69,7 +73,7 @@ if (empty($jsFiles) || empty($cssFiles)) {
 $jsTags = "";
 $jsTagsPreload = "";
 foreach ($jsFiles as $file) {
-    if (substr($file, 0, strlen('main-module.')) === 'main-module.') {
+    if (str_starts_with($file, 'main-module.')) {
         $jsTags .= '<script src="' . $assetsPath . '/js/' . $file . '" type="module"></script>' . "\n";
     } else {
         $jsTags .= '<script src="' . $assetsPath . '/js/' . $file . '" defer="defer"></script>' . "\n";
@@ -90,52 +94,89 @@ foreach ($cssFiles as $file) {
 
 // build config
 // https://github.com/mynaparrot/plugNmeet-client/blob/main/src/assets/config_sample.js
+$plugNmeetConfig = [
+    // The URL of your plugNmeet server.
+    'serverUrl' => $config->plugnmeet_server_url,
 
-// this 2 fields are required. User won't be able to join if provided invalid info
-$js = 'window.PLUG_N_MEET_SERVER_URL = "' . $config->plugnmeet_server_url . '";';
-$js .= 'window.STATIC_ASSETS_PATH = "' . $assetsPath . '";';
+    // This is helpful for external plugin development where images or other files are located
+    // in another place.
+    'staticAssetsPath' => $assetsPath,
 
-// all these fields are optional
-$js .= 'Window.ENABLE_DYNACAST = ' . filter_var(1, FILTER_VALIDATE_BOOLEAN) . ';';
-$js .= 'window.ENABLE_SIMULCAST = ' . filter_var(1, FILTER_VALIDATE_BOOLEAN) . ';';
-$js .= 'window.VIDEO_CODEC = "vp8";';
-$js .= 'window.DEFAULT_WEBCAM_RESOLUTION = "h720";';
-$js .= 'window.DEFAULT_SCREEN_SHARE_RESOLUTION = "h1080fps15";';
-$js .= 'window.STOP_MIC_TRACK_ON_MUTE = ' . filter_var(1, FILTER_VALIDATE_BOOLEAN) . ';';
+    // Custom logos. For best results, use direct HTTPS links.
+    /*'customLogo' => [
+        'main_logo_light' => 'https://mydomain.com/logo_light.png',
+        'main_logo_dark' => 'https://mydomain.com/logo_dark.png',
+    ],*/
 
-// for logo always use https link otherwise may fail to load.
-/*$logo = array(
-    "main_logo_light" => "https://mydomain.com/logo_light.png",
-    "main_logo_dark" => "https://mydomain.com/logo_dark.png", //optional
-    "waiting_room_logo_light" => "https://mydomain.com/logo_waiting_light.png", //optional
-    "waiting_room_logo_dark" => "https://mydomain.com/logo_waiting_dark.png", //optional
-);
-$js .= 'window.CUSTOM_LOGO = JSON.parse(`' . json_encode($logo) . '`);';*/
+    // Dynacast dynamically pauses video layers that are not being consumed by any subscribers,
+    // significantly reducing publishing CPU and bandwidth usage.
+    'enableDynacast' => true,
 
-// https://github.com/mynaparrot/plugNmeet-client/blob/main/src/helpers/hooks/useClientCustomization.tsx
-$custom_design_items = array(
+    // When using simulcast, LiveKit will publish up to three versions of the stream at various resolutions.
+    // The client can then pick the most appropriate one.
+    'enableSimulcast' => true,
+
+    // Available options: 'vp8' | 'h264' | 'vp9' | 'av1'. Default: 'vp8'.
+    'videoCodec' => 'vp8',
+
+    // Available options: 'h90' | 'h180' | 'h216' | 'h360' | 'h540' | 'h720' | 'h1080' | 'h1440' | 'h2160'.
+    // Default: 'h720'.
+    'defaultWebcamResolution' => 'h720',
+
+    // Available options: 'h360fps3' | 'h720fps5' | 'h720fps15' | 'h1080fps15' | 'h1080fps30'.
+    // Default: 'h1080fps15'.
+    'defaultScreenShareResolution' => 'h1080fps15',
+
+    // Available options: 'telephone' | 'speech' | 'music' | 'musicStereo' | 'musicHighQuality' | 'musicHighQualityStereo'.
+    // Default: 'music'.
+    'defaultAudioPreset' => 'music',
+
+    // For local tracks, stop the underlying MediaStreamTrack when the track is muted (or paused).
+    // On some platforms, this option is necessary to disable the microphone recording indicator.
+    // Note: When this is enabled and BT devices are connected, they will transition between profiles
+    // (e.g., HFP to A2DP), and there will be an audible difference in playback.
+    'stopMicTrackOnMute' => true,
+
+    // If true, the webcam view will be relocated and arranged based on the active speaker.
+    // Default: true.
+    'focusActiveSpeakerWebcam' => true,
+
+    // Design customization
+    /*'designCustomization' => array(
         "primary_color" => "#004D90",
         "secondary_color" => "#24AEF7",
         "background_color" => "#0b7db4",
-    //"background_image" => "https://mydomain.com/custom_bg.png", // always https direct link
+        "background_image" => "https://mydomain.com/custom_bg.png",
         "header_bg_color" => "#45b3ec",
         "footer_bg_color" => "#45b3ec",
         "left_side_bg_color" => "#04a2f3",
         "right_side_bg_color" => "#04a2f3",
-    //"custom_css_url" => "https://mydomain.com/plugNmeet_desing.css", // always https direct link
-    //"custom_logo" => "https://mydomain.com/logo.png" // this is optional, can be used in certain case for example if you want to show different logo for different user otherwise better to use `window.CUSTOM_LOGO`.
-);
-$js .= 'window.DESIGN_CUSTOMIZATION = `' . json_encode($custom_design_items) . '`;';
+        "custom_css_url" => "https://mydomain.com/plugNmeet_desing.css",
+        "custom_logo" => "https://mydomain.com/logo.png"
+    ),*/
 
-/*$virtualBgImgs = array(
-    'https://www.example.com/vb_bg/image1.png',
-    'https://www.example.com/vb_bg/image2.png',
-    'https://www.example.com/vb_bg/image3.png',
-);
-$js .= 'window.PNM_VIRTUAL_BG_IMGS = JSON.parse(`' . json_encode($virtualBgImgs) . '`);';*/
+    // Whiteboard PreloadedLibraryItems, which should be an array of full library direct URLs.
+    // You can get items from here: https://libraries.excalidraw.com
+    /*'whiteboardPreloadedLibraryItems' => [
+        'https://libraries.excalidraw.com/libraries/BjoernKW/UML-ER-library.excalidrawlib',
+        'https://libraries.excalidraw.com/libraries/aretecode/decision-flow-control.excalidrawlib',
+    ],*/
 
-$js = str_replace(";", ";\n\t", $js);
-$cnfScript = "<script type=\"text/javascript\">\n\t" . $js . "</script>\n";
+    // You can set default virtual background images here.
+    // Make sure that you're using direct HTTPS links, otherwise the files may not load.
+    /*'virtualBackgroundImages' => [
+        'https://www.example.com/vb_bg/image1.png',
+        'https://www.example.com/vb_bg/image2.png',
+    ],*/
+
+    // Databases older than this will be cleaned up on startup (in milliseconds).
+    // Default: 6 hours.
+    // 'dbMaxAgeMs' => 6 * 60 * 60 * 1000,
+];
+
+$jsonConfig = json_encode($plugNmeetConfig, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+$js = "window.plugNmeetConfig = JSON.parse(`" . addslashes($jsonConfig) . "`);";
+$cnfScript = "<script type=\"text/javascript\">\n" . $js . "\n</script>\n";
 
 ?>
 <!doctype html>

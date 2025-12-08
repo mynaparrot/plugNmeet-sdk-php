@@ -60,50 +60,69 @@ $roomMetadata = array(
         "allow_raise_hand" => true,
         // if false then you'll need to provide unique user id
         "auto_gen_user_id" => true,
-    ),
-    "recording_features" => array(
-        "is_allow" => true,
-        "is_allow_cloud" => true,
-        "is_allow_local" => true,
-        "enable_auto_cloud_recording" => false
-    ),
-    "chat_features" => array(
-        "allow_chat" => true,
-        "allow_file_upload" => true
-    ),
-    "shared_note_pad_features" => array(
-        "allowed_shared_note_pad" => true
-    ),
-    "whiteboard_features" => array(
-        "allowed_whiteboard" => true,
-        //"preload_file" => "https://mydomain.com/text_book.pdf"
-    ),
-    "external_media_player_features" => array(
-        "allowed_external_media_player" => true
-    ),
-    "waiting_room_features" => array(
-        "is_active" => false,
-    ),
-    "breakout_room_features" => array(
-        "is_allow" => true,
-        "allowed_number_rooms" => 2
-    ),
-    "display_external_link_features" => array(
-        "is_allow" => true,
-    ),
-    "ingress_features" => array(
-        "is_allow" => true,
-    ),
-    "speech_to_text_translation_features" => array(
-        "is_allow" => true,
-        "is_allow_translation" => true,
-    ),
-    "end_to_end_encryption_features" => array(
-        "is_enabled" => false,
-        "included_chat_messages" => false,
-        // this may use more CPU for the user end.
-        // do not enable it unless really necessary
-        "included_whiteboard" => false,
+        "recording_features" => array(
+            "is_allow" => true,
+            "is_allow_cloud" => true,
+            "is_allow_local" => true,
+            "enable_auto_cloud_recording" => false
+        ),
+        "chat_features" => array(
+            "is_allow" => true,
+            "is_allow_file_upload" => true
+        ),
+        "shared_note_pad_features" => array(
+            "is_allow" => true
+        ),
+        "whiteboard_features" => array(
+            "is_allow" => true,
+            //"preload_file" => "https://mydomain.com/text_book.pdf"
+        ),
+        "external_media_player_features" => array(
+            "is_allow" => true
+        ),
+        "waiting_room_features" => array(
+            "is_active" => false,
+        ),
+        "breakout_room_features" => array(
+            "is_allow" => true,
+            "allowed_number_rooms" => 2
+        ),
+        "display_external_link_features" => array(
+            "is_allow" => true,
+        ),
+        "ingress_features" => array(
+            "is_allow" => true,
+        ),
+        "polls_features" => array(
+            "is_allow" => true,
+        ),
+        "insights_features" => array(
+            "is_allow" => true,
+            "transcription_features" => array(
+                "is_allow" => true,
+                "is_allow_translation" => true,
+                "is_allow_speech_synthesis" => true,
+            ),
+            "chat_translation_features" => array(
+                "is_allow" => true,
+            ),
+            "ai_features" => array(
+                "is_allow" => true,
+                "ai_text_chat_features" => array(
+                    "is_allow" => true,
+                ),
+                "meeting_summarization_features" => array(
+                    "is_allow" => true,
+                )
+            )
+        ),
+        "end_to_end_encryption_features" => array(
+            "is_enabled" => false,
+            "included_chat_messages" => false,
+            // this may use more CPU for the user end.
+            // do not enable it unless really necessary
+            "included_whiteboard" => false,
+        ),
     ),
     "default_lock_settings" => array(
         "lock_microphone" => false,
@@ -130,9 +149,9 @@ $output->status = false;
 try {
     $res = $connect->isRoomActive($roomId);
     if (!$res->getStatus()) {
-        $output->msg = $res->getResponseMsg();
+        $output->msg = $res->getMsg();
     } else {
-        $isRoomActive = $res->isActive();
+        $isRoomActive = $res->getIsActive();
         $output->status = true;
     }
 
@@ -142,11 +161,11 @@ try {
 
 if (!$isRoomActive && $output->status) {
     try {
-        $create = $connect->createRoom($roomId, "Test room", "Welcome to room", $max_participants, "", $roomMetadata);
+        $create = $connect->createRoom($roomId, "Test room", $roomMetadata, "Welcome to room", "", "", $max_participants);
 
         $isRoomActive = $create->getStatus();
         $output->status = $create->getStatus();
-        $output->msg = $create->getResponseMsg();
+        $output->msg = $create->getMsg();
     } catch (Exception $e) {
         $output->msg = $e->getMessage();
     }
@@ -162,7 +181,7 @@ if ($isRoomActive && $output->status) {
             // or you can set cookie name `pnm_access_token` with that token & redirect
         }
         $output->status = $join->getStatus();
-        $output->msg = $join->getResponseMsg();
+        $output->msg = $join->getMsg();
     } catch (Exception $e) {
         $output->msg = $e->getMessage();
     }

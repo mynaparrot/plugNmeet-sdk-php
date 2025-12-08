@@ -6,7 +6,10 @@
   "version": "1.6.2",
   "autoload": {
     "psr-4": {
-      "Mynaparrot\\Plugnmeet\\": "src/"
+      "Mynaparrot\\Plugnmeet\\": "src/",
+      "Mynaparrot\\PlugnmeetProto\\": "src/gen/Mynaparrot/PlugnmeetProto",
+      "GPBMetadata\\": "src/gen/GPBMetadata",
+      "Livekit\\": "src/gen/Livekit"
     }
   },
   "authors": [
@@ -16,16 +19,18 @@
     }
   ],
   "scripts": {
-    "phpcs": "phpcs --standard=PSR12 src",
-    "phpcbf": "phpcbf --standard=PSR12 src"
+    "phpcs": "phpcs --standard=PSR12 src/PlugNmeet.php",
+    "phpcbf": "phpcbf --standard=PSR12 src/PlugNmeet.php"
   },
   "require": {
     "php": "^8.0",
     "ext-curl": "*",
     "ext-json": "*",
+    "ext-bcmath": "*",
     "ramsey/uuid": "4.7.6",
     "firebase/php-jwt": "6.11.1",
-    "guzzlehttp/guzzle": "7.10"
+    "guzzlehttp/guzzle": "7.10",
+    "google/protobuf": "4.33.1"
   },
   "require-dev": {
     "overtrue/phplint": "9.5.6",

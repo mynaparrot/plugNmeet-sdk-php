@@ -31,34 +31,42 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Exception\RequestException;
-use Mynaparrot\Plugnmeet\Parameters\AnalyticsDownloadTokenParameters;
-use Mynaparrot\Plugnmeet\Parameters\CreateRoomParameters;
-use Mynaparrot\Plugnmeet\Parameters\DeleteAnalyticsParameters;
-use Mynaparrot\Plugnmeet\Parameters\DeleteRecordingParameters;
-use Mynaparrot\Plugnmeet\Parameters\EndRoomParameters;
-use Mynaparrot\Plugnmeet\Parameters\FetchAnalyticsParameters;
-use Mynaparrot\Plugnmeet\Parameters\FetchPastRoomsParameters;
-use Mynaparrot\Plugnmeet\Parameters\FetchRecordingsParameters;
-use Mynaparrot\Plugnmeet\Parameters\GenerateJoinTokenParameters;
-use Mynaparrot\Plugnmeet\Parameters\GetActiveRoomInfoParameters;
-use Mynaparrot\Plugnmeet\Parameters\IsRoomActiveParameters;
-use Mynaparrot\Plugnmeet\Parameters\RecordingDownloadTokenParameters;
-use Mynaparrot\Plugnmeet\Parameters\RecordingInfoParameters;
-use Mynaparrot\Plugnmeet\Responses\AnalyticsDownloadTokenResponse;
-use Mynaparrot\Plugnmeet\Responses\ClientFilesResponses;
-use Mynaparrot\Plugnmeet\Responses\CreateRoomResponse;
-use Mynaparrot\Plugnmeet\Responses\DeleteAnalyticsResponse;
-use Mynaparrot\Plugnmeet\Responses\DeleteRecordingResponse;
-use Mynaparrot\Plugnmeet\Responses\EndRoomResponse;
-use Mynaparrot\Plugnmeet\Responses\FetchAnalyticsResponse;
-use Mynaparrot\Plugnmeet\Responses\FetchPastRoomsResponse;
-use Mynaparrot\Plugnmeet\Responses\FetchRecordingsResponse;
-use Mynaparrot\Plugnmeet\Responses\GenerateJoinTokenResponse;
-use Mynaparrot\Plugnmeet\Responses\GetActiveRoomInfoResponse;
-use Mynaparrot\Plugnmeet\Responses\GetActiveRoomsInfoResponse;
-use Mynaparrot\Plugnmeet\Responses\IsRoomActiveResponse;
-use Mynaparrot\Plugnmeet\Responses\RecordingDownloadTokenResponse;
-use Mynaparrot\Plugnmeet\Responses\RecordingInfoResponse;
+use Mynaparrot\PlugnmeetProto\ArtifactInfoReq;
+use Mynaparrot\PlugnmeetProto\ArtifactInfoRes;
+use Mynaparrot\PlugnmeetProto\CreateRoomReq;
+use Mynaparrot\PlugnmeetProto\CreateRoomRes;
+use Mynaparrot\PlugnmeetProto\DeleteAnalyticsReq;
+use Mynaparrot\PlugnmeetProto\DeleteAnalyticsRes;
+use Mynaparrot\PlugnmeetProto\DeleteArtifactReq;
+use Mynaparrot\PlugnmeetProto\DeleteArtifactRes;
+use Mynaparrot\PlugnmeetProto\DeleteRecordingReq;
+use Mynaparrot\PlugnmeetProto\DeleteRecordingRes;
+use Mynaparrot\PlugnmeetProto\FetchAnalyticsReq;
+use Mynaparrot\PlugnmeetProto\FetchAnalyticsRes;
+use Mynaparrot\PlugnmeetProto\FetchArtifactsReq;
+use Mynaparrot\PlugnmeetProto\FetchArtifactsRes;
+use Mynaparrot\PlugnmeetProto\FetchPastRoomsReq;
+use Mynaparrot\PlugnmeetProto\FetchPastRoomsRes;
+use Mynaparrot\PlugnmeetProto\FetchRecordingsReq;
+use Mynaparrot\PlugnmeetProto\FetchRecordingsRes;
+use Mynaparrot\PlugnmeetProto\GenerateTokenReq;
+use Mynaparrot\PlugnmeetProto\GenerateTokenRes;
+use Mynaparrot\PlugnmeetProto\GetActiveRoomInfoReq;
+use Mynaparrot\PlugnmeetProto\GetActiveRoomInfoRes;
+use Mynaparrot\PlugnmeetProto\GetActiveRoomsInfoRes;
+use Mynaparrot\PlugnmeetProto\GetAnalyticsDownloadTokenReq;
+use Mynaparrot\PlugnmeetProto\GetAnalyticsDownloadTokenRes;
+use Mynaparrot\PlugnmeetProto\GetArtifactDownloadTokenReq;
+use Mynaparrot\PlugnmeetProto\GetArtifactDownloadTokenRes;
+use Mynaparrot\PlugnmeetProto\GetClientFilesRes;
+use Mynaparrot\PlugnmeetProto\GetDownloadTokenReq;
+use Mynaparrot\PlugnmeetProto\GetDownloadTokenRes;
+use Mynaparrot\PlugnmeetProto\IsRoomActiveReq;
+use Mynaparrot\PlugnmeetProto\IsRoomActiveRes;
+use Mynaparrot\PlugnmeetProto\RecordingInfoReq;
+use Mynaparrot\PlugnmeetProto\RecordingInfoRes;
+use Mynaparrot\PlugnmeetProto\RoomEndReq;
+use Mynaparrot\PlugnmeetProto\RoomEndRes;
 use Ramsey\Uuid\Uuid;
 use stdClass;
 
@@ -70,30 +78,30 @@ class PlugNmeet
     /**
      * @var string
      */
-    protected $serverUrl;
+    protected string $serverUrl;
     /**
      * @var string
      */
-    protected $apiKey;
+    protected string $apiKey;
     /**
      * @var string
      */
-    protected $apiSecret;
+    protected string $apiSecret;
 
     /**
      * @var Client
      */
-    protected $guzzleClient;
+    protected Client $guzzleClient;
 
     /**
      * @var string
      */
-    protected $defaultPath = "/auth";
+    protected string $defaultPath = "/auth";
 
     /**
      * @var string
      */
-    protected $algo = "sha256";
+    protected string $algo = "sha256";
 
     /**
      * @param string $serverUrl plugNmeet server URL
@@ -121,192 +129,395 @@ class PlugNmeet
     /**
      * Create new room
      *
-     * @param CreateRoomParameters $createRoomParameters
-     * @return CreateRoomResponse
+     * @param CreateRoomReq $createRoomRes
+     * @return CreateRoomRes
+     * @throws Exception
      */
-    public function createRoom(CreateRoomParameters $createRoomParameters): CreateRoomResponse
+    public function createRoom(CreateRoomReq $createRoomRes): CreateRoomRes
     {
-        $body = $createRoomParameters->buildBody();
-        $output = $this->sendRequest("/room/create", $body);
-        return new CreateRoomResponse($output);
+        $body = $createRoomRes->serializeToJsonString();
+        $res = $this->sendRequest("/room/create", $body);
+
+        $output = new CreateRoomRes();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response);
+        }
+        return $output;
     }
 
     /**
      * Generate join token
      *
-     * @param GenerateJoinTokenParameters $generateJoinTokenParameters
-     * @return GenerateJoinTokenResponse
+     * @param GenerateTokenReq $generateTokenReq
+     * @return GenerateTokenRes
+     * @throws Exception
      */
-    public function getJoinToken(GenerateJoinTokenParameters $generateJoinTokenParameters): GenerateJoinTokenResponse
+    public function getJoinToken(GenerateTokenReq $generateTokenReq): GenerateTokenRes
     {
-        $body = $generateJoinTokenParameters->buildBody();
-        $output = $this->sendRequest("/room/getJoinToken", $body);
-        return new GenerateJoinTokenResponse($output);
+        $body = $generateTokenReq->serializeToJsonString();
+        $res = $this->sendRequest("/room/getJoinToken", $body);
+
+        $output = new GenerateTokenRes();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response);
+        }
+        return $output;
     }
 
     /**
      * To check if room is active or not
      *
-     * @param IsRoomActiveParameters $isRoomActiveParameters
-     * @return IsRoomActiveResponse
+     * @param IsRoomActiveReq $isRoomActiveReq
+     * @return IsRoomActiveRes
+     * @throws Exception
      */
-    public function isRoomActive(IsRoomActiveParameters $isRoomActiveParameters): IsRoomActiveResponse
+    public function isRoomActive(IsRoomActiveReq $isRoomActiveReq): IsRoomActiveRes
     {
-        $body = $isRoomActiveParameters->buildBody();
-        $output = $this->sendRequest("/room/isRoomActive", $body);
-        return new IsRoomActiveResponse($output);
+        $body = $isRoomActiveReq->serializeToJsonString();
+        $res = $this->sendRequest("/room/isRoomActive", $body);
+
+        $output = new IsRoomActiveRes();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response);
+        }
+        return $output;
     }
 
     /**
      * Get active room information
      *
-     * @param GetActiveRoomInfoParameters $getActiveRoomInfoParameters
-     * @return GetActiveRoomInfoResponse
+     * @param GetActiveRoomInfoReq $getActiveRoomInfoReq
+     * @return GetActiveRoomInfoRes
+     * @throws Exception
      */
     public function getActiveRoomInfo(
-        GetActiveRoomInfoParameters $getActiveRoomInfoParameters
-    ): GetActiveRoomInfoResponse {
-        $body = $getActiveRoomInfoParameters->buildBody();
-        $output = $this->sendRequest("/room/getActiveRoomInfo", $body);
-        return new GetActiveRoomInfoResponse($output);
+        GetActiveRoomInfoReq $getActiveRoomInfoReq
+    ): GetActiveRoomInfoRes {
+        $body = $getActiveRoomInfoReq->serializeToJsonString();
+        $res = $this->sendRequest("/room/getActiveRoomInfo", $body);
+
+        $output = new GetActiveRoomInfoRes();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response);
+        }
+        return $output;
     }
 
     /**
      * Get all active rooms
      *
-     * @return GetActiveRoomsInfoResponse
+     * @return GetActiveRoomsInfoRes
+     * @throws Exception
      */
-    public function getActiveRoomsInfo(): GetActiveRoomsInfoResponse
+    public function getActiveRoomsInfo(): GetActiveRoomsInfoRes
     {
-        $output = $this->sendRequest("/room/getActiveRoomsInfo", []);
-        return new GetActiveRoomsInfoResponse($output);
+        $res = $this->sendRequest("/room/getActiveRoomsInfo", "{}");
+        $output = new GetActiveRoomsInfoRes();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response);
+        }
+        return $output;
     }
 
     /**
      * Get all past rooms
-     * @param FetchPastRoomsParameters $fetchPastRoomsParameters
-     * @return FetchPastRoomsResponse
+     * @param FetchPastRoomsReq $fetchPastRoomsReq
+     * @return FetchPastRoomsRes
+     * @throws Exception
      */
-    public function fetchPastRoomsInfo(FetchPastRoomsParameters $fetchPastRoomsParameters): FetchPastRoomsResponse
+    public function fetchPastRoomsInfo(FetchPastRoomsReq $fetchPastRoomsReq): FetchPastRoomsRes
     {
-        $body = $fetchPastRoomsParameters->buildBody();
-        $output = $this->sendRequest("/room/fetchPastRooms", $body);
-        return new FetchPastRoomsResponse($output);
+        $body = $fetchPastRoomsReq->serializeToJsonString();
+        $res = $this->sendRequest("/room/fetchPastRooms", $body);
+
+        $output = new FetchPastRoomsRes();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response);
+        }
+        return $output;
     }
 
     /**
      * End active room
      *
-     * @param EndRoomParameters $endRoomParameters
-     * @return EndRoomResponse
+     * @param RoomEndReq $roomEndReq
+     * @return RoomEndRes
+     * @throws Exception
      */
-    public function endRoom(EndRoomParameters $endRoomParameters): EndRoomResponse
+    public function endRoom(RoomEndReq $roomEndReq): RoomEndRes
     {
-        $body = $endRoomParameters->buildBody();
-        $output = $this->sendRequest("/room/endRoom", $body);
-        return new EndRoomResponse($output);
+        $body = $roomEndReq->serializeToJsonString();
+        $res = $this->sendRequest("/room/endRoom", $body);
+
+        $output = new RoomEndRes();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response);
+        }
+        return $output;
     }
 
     /**
      * To fetch recordings
      *
-     * @param FetchRecordingsParameters $fetchRecordingsParameters
-     * @return FetchRecordingsResponse
+     * @param FetchRecordingsReq $fetchRecordingsReq
+     * @return FetchRecordingsRes
+     * @throws Exception
      */
-    public function fetchRecordings(FetchRecordingsParameters $fetchRecordingsParameters): FetchRecordingsResponse
+    public function fetchRecordings(FetchRecordingsReq $fetchRecordingsReq): FetchRecordingsRes
     {
-        $body = $fetchRecordingsParameters->buildBody();
-        $output = $this->sendRequest("/recording/fetch", $body);
-        return new FetchRecordingsResponse($output);
+        $body = $fetchRecordingsReq->serializeToJsonString();
+        $res = $this->sendRequest("/recording/fetch", $body);
+
+        $output = new FetchRecordingsRes();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response);
+        }
+        return $output;
     }
 
     /**
      * To get recording info
      *
-     * @param RecordingInfoParameters $recordingInfoParameters
-     * @return RecordingInfoResponse
+     * @param RecordingInfoReq $recordingInfoReq
+     * @return RecordingInfoRes
+     * @throws Exception
      */
-    public function getRecordingInfo(RecordingInfoParameters $recordingInfoParameters): RecordingInfoResponse
+    public function getRecordingInfo(RecordingInfoReq $recordingInfoReq): RecordingInfoRes
     {
-        $body = $recordingInfoParameters->buildBody();
-        $output = $this->sendRequest("/recording/recordingInfo", $body);
-        return new RecordingInfoResponse($output);
+        $body = $recordingInfoReq->serializeToJsonString();
+        $res = $this->sendRequest("/recording/recordingInfo", $body);
+
+        $output = new RecordingInfoRes();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response);
+        }
+        return $output;
     }
 
     /**
      * To delete recording
      *
-     * @param DeleteRecordingParameters $deleteRecordingParameters
-     * @return DeleteRecordingResponse
+     * @param DeleteRecordingReq $deleteRecordingReq
+     * @return DeleteRecordingRes
+     * @throws Exception
      */
-    public function deleteRecordings(DeleteRecordingParameters $deleteRecordingParameters): DeleteRecordingResponse
+    public function deleteRecordings(DeleteRecordingReq $deleteRecordingReq): DeleteRecordingRes
     {
-        $body = $deleteRecordingParameters->buildBody();
-        $output = $this->sendRequest("/recording/delete", $body);
-        return new DeleteRecordingResponse($output);
+        $body = $deleteRecordingReq->serializeToJsonString();
+        $res = $this->sendRequest("/recording/delete", $body);
+
+        $output = new DeleteRecordingRes();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response);
+        }
+        return $output;
     }
 
     /**
      * Generate token to download recording
      *
-     * @param RecordingDownloadTokenParameters $recordingDownloadTokenParameters
-     * @return RecordingDownloadTokenResponse
+     * @param GetDownloadTokenReq $getDownloadTokenReq
+     * @return GetDownloadTokenRes
+     * @throws Exception
      */
     public function getRecordingDownloadToken(
-        RecordingDownloadTokenParameters $recordingDownloadTokenParameters
-    ): RecordingDownloadTokenResponse {
-        $body = $recordingDownloadTokenParameters->buildBody();
-        $output = $this->sendRequest("/recording/getDownloadToken", $body);
-        return new RecordingDownloadTokenResponse($output);
+        GetDownloadTokenReq $getDownloadTokenReq
+    ): GetDownloadTokenRes {
+        $body = $getDownloadTokenReq->serializeToJsonString();
+        $res = $this->sendRequest("/recording/getDownloadToken", $body);
+
+        $output = new GetDownloadTokenRes();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response);
+        }
+        return $output;
+    }
+
+    /**
+     * To fetch artifacts list
+     *
+     * @param FetchArtifactsReq $fetchArtifactsReq
+     * @return FetchArtifactsRes
+     * @throws Exception
+     */
+    public function fetchArtifacts(FetchArtifactsReq $fetchArtifactsReq): FetchArtifactsRes
+    {
+        $body = $fetchArtifactsReq->serializeToJsonString();
+        $res = $this->sendRequest("/artifact/fetch", $body);
+
+        $output = new FetchArtifactsRes();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response);
+        }
+        return $output;
+    }
+
+    /**
+     * To get details of an artifact
+     *
+     * @param ArtifactInfoReq $artifactDetailsReq
+     * @return ArtifactInfoRes
+     * @throws Exception
+     */
+    public function getArtifactInfo(ArtifactInfoReq $artifactDetailsReq): ArtifactInfoRes
+    {
+        $body = $artifactDetailsReq->serializeToJsonString();
+        $res = $this->sendRequest("/artifact/artifactInfo", $body);
+
+        $output = new ArtifactInfoRes();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response);
+        }
+        return $output;
+    }
+
+    /**
+     * To delete artifact
+     *
+     * @param DeleteArtifactReq $deleteArtifactReq
+     * @return DeleteArtifactRes
+     * @throws Exception
+     */
+    public function deleteArtifact(DeleteArtifactReq $deleteArtifactReq): DeleteArtifactRes
+    {
+        $body = $deleteArtifactReq->serializeToJsonString();
+        $res = $this->sendRequest("/artifact/delete", $body);
+
+        $output = new DeleteArtifactRes();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response);
+        }
+        return $output;
+    }
+
+    /**
+     * Generate token to download artifact file
+     *
+     * @param GetArtifactDownloadTokenReq $getAnalyticsDownloadTokenReq
+     * @return GetArtifactDownloadTokenRes
+     * @throws Exception
+     */
+    public function getArtifactDownloadToken(
+        GetArtifactDownloadTokenReq $getAnalyticsDownloadTokenReq
+    ): GetArtifactDownloadTokenRes {
+        $body = $getAnalyticsDownloadTokenReq->serializeToJsonString();
+        $res = $this->sendRequest("/artifact/getDownloadToken", $body);
+
+        $output = new GetArtifactDownloadTokenRes();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response);
+        }
+        return $output;
     }
 
     /**
      * To fetch analytics
      *
-     * @param FetchAnalyticsParameters $fetchAnalyticsParameters
-     * @return FetchAnalyticsResponse
+     * @param FetchAnalyticsReq $fetchAnalyticsReq
+     * @return FetchAnalyticsRes
+     * @throws Exception
      */
-    public function fetchAnalytics(FetchAnalyticsParameters $fetchAnalyticsParameters): FetchAnalyticsResponse
+    public function fetchAnalytics(FetchAnalyticsReq $fetchAnalyticsReq): FetchAnalyticsRes
     {
-        $body = $fetchAnalyticsParameters->buildBody();
-        $output = $this->sendRequest("/analytics/fetch", $body);
-        return new FetchAnalyticsResponse($output);
+        $body = $fetchAnalyticsReq->serializeToJsonString();
+        $res = $this->sendRequest("/analytics/fetch", $body);
+
+        $output = new FetchAnalyticsRes();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response);
+        }
+        return $output;
     }
 
     /**
      * To delete analytics
      *
-     * @param DeleteAnalyticsParameters $deleteAnalyticsParameters
-     * @return DeleteAnalyticsResponse
+     * @param DeleteAnalyticsReq $deleteAnalyticsReq
+     * @return DeleteAnalyticsRes
+     * @throws Exception
      */
-    public function deleteAnalytics(DeleteAnalyticsParameters $deleteAnalyticsParameters): DeleteAnalyticsResponse
+    public function deleteAnalytics(DeleteAnalyticsReq $deleteAnalyticsReq): DeleteAnalyticsRes
     {
-        $body = $deleteAnalyticsParameters->buildBody();
-        $output = $this->sendRequest("/analytics/delete", $body);
-        return new DeleteAnalyticsResponse($output);
+        $body = $deleteAnalyticsReq->serializeToJsonString();
+        $res = $this->sendRequest("/analytics/delete", $body);
+
+        $output = new DeleteAnalyticsRes();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response);
+        }
+        return $output;
     }
 
     /**
      * Generate token to download analytics
      *
-     * @param AnalyticsDownloadTokenParameters $analyticsDownloadTokenParameters
-     * @return AnalyticsDownloadTokenResponse
+     * @param GetAnalyticsDownloadTokenReq $getAnalyticsDownloadTokenReq
+     * @return GetAnalyticsDownloadTokenRes
+     * @throws Exception
      */
     public function getAnalyticsDownloadToken(
-        AnalyticsDownloadTokenParameters $analyticsDownloadTokenParameters
-    ): AnalyticsDownloadTokenResponse {
-        $body = $analyticsDownloadTokenParameters->buildBody();
-        $output = $this->sendRequest("/analytics/getDownloadToken", $body);
-        return new AnalyticsDownloadTokenResponse($output);
+        GetAnalyticsDownloadTokenReq $getAnalyticsDownloadTokenReq
+    ): GetAnalyticsDownloadTokenRes {
+        $body = $getAnalyticsDownloadTokenReq->serializeToJsonString();
+        $res = $this->sendRequest("/analytics/getDownloadToken", $body);
+
+        $output = new GetAnalyticsDownloadTokenRes();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response);
+        }
+        return $output;
     }
 
     /**
-     * @return ClientFilesResponses
+     * @return GetClientFilesRes
+     * @throws Exception
      */
-    public function getClientFiles(): ClientFilesResponses
+    public function getClientFiles(): GetClientFilesRes
     {
-        $output = $this->sendRequest("/getClientFiles", []);
-        return new ClientFilesResponses($output);
+        $res = $this->sendRequest("/getClientFiles", "{}");
+        $output = new GetClientFilesRes();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response);
+        }
+        return $output;
     }
 
     /**
@@ -358,16 +569,14 @@ class PlugNmeet
 
     /**
      * @param $path
-     * @param array $body
+     * @param string $body
      * @return stdClass
      */
-    protected function sendRequest($path, array $body): stdClass
+    protected function sendRequest($path, string $body): stdClass
     {
         $output = new stdClass();
         $output->status = false;
-
-        $fields = json_encode($body);
-        $signature = hash_hmac($this->algo, $fields, $this->apiSecret);
+        $signature = hash_hmac($this->algo, $body, $this->apiSecret);
 
         try {
             $response = $this->guzzleClient->post($this->defaultPath . $path, [
@@ -376,11 +585,11 @@ class PlugNmeet
                     'API-KEY' => $this->apiKey,
                     'HASH-SIGNATURE' => $signature,
                 ],
-                'body' => $fields,
+                'body' => $body,
             ]);
 
             $output->status = true;
-            $output->response = json_decode($response->getBody()->getContents());
+            $output->response = $response->getBody()->getContents();
         } catch (ConnectException $e) {
             // Extract the core error message from cURL errors
             $message = $e->getMessage();
@@ -406,7 +615,7 @@ class PlugNmeet
      * @param RequestException $e
      * @return mixed|string
      */
-    private function handleRequestException(RequestException $e)
+    private function handleRequestException(RequestException $e): mixed
     {
         if (!$e->hasResponse()) {
             return $e->getMessage();
