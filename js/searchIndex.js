@@ -53148,17 +53148,17 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AfetchAnalytics\u0028\u0029",
             "name": "fetchAnalytics",
-            "summary": "To\u0020fetch\u0020analytics",
+            "summary": "Deprecated\u003A\u0020To\u0020fetch\u0020analytics",
             "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_fetchAnalytics"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AdeleteAnalytics\u0028\u0029",
             "name": "deleteAnalytics",
-            "summary": "To\u0020delete\u0020analytics",
+            "summary": "Deprecated\u003A\u0020To\u0020delete\u0020analytics",
             "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_deleteAnalytics"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AgetAnalyticsDownloadToken\u0028\u0029",
             "name": "getAnalyticsDownloadToken",
-            "summary": "Generate\u0020token\u0020to\u0020download\u0020analytics",
+            "summary": "Deprecated\u003A\u0020Generate\u0020token\u0020to\u0020download\u0020analytics",
             "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getAnalyticsDownloadToken"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AgetClientFiles\u0028\u0029",
