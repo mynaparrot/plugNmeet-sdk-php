@@ -301,7 +301,7 @@ class PlugNmeet
     public function getRecordingInfo(RecordingInfoReq $recordingInfoReq): RecordingInfoRes
     {
         $body = $recordingInfoReq->serializeToJsonString();
-        $res = $this->sendRequest("/recording/recordingInfo", $body);
+        $res = $this->sendRequest("/recording/info", $body);
 
         $output = new RecordingInfoRes();
         if ($res->status) {
@@ -386,7 +386,7 @@ class PlugNmeet
     public function getArtifactInfo(ArtifactInfoReq $artifactDetailsReq): ArtifactInfoRes
     {
         $body = $artifactDetailsReq->serializeToJsonString();
-        $res = $this->sendRequest("/artifact/artifactInfo", $body);
+        $res = $this->sendRequest("/artifact/info", $body);
 
         $output = new ArtifactInfoRes();
         if ($res->status) {
@@ -441,11 +441,12 @@ class PlugNmeet
     }
 
     /**
-     * To fetch analytics
+     * Deprecated: To fetch analytics
      *
      * @param FetchAnalyticsReq $fetchAnalyticsReq
      * @return FetchAnalyticsRes
      * @throws Exception
+     * @deprecated replaced by artifact
      */
     public function fetchAnalytics(FetchAnalyticsReq $fetchAnalyticsReq): FetchAnalyticsRes
     {
@@ -462,11 +463,12 @@ class PlugNmeet
     }
 
     /**
-     * To delete analytics
+     * Deprecated: To delete analytics
      *
      * @param DeleteAnalyticsReq $deleteAnalyticsReq
      * @return DeleteAnalyticsRes
      * @throws Exception
+     * @deprecated replaced by artifact
      */
     public function deleteAnalytics(DeleteAnalyticsReq $deleteAnalyticsReq): DeleteAnalyticsRes
     {
@@ -483,11 +485,12 @@ class PlugNmeet
     }
 
     /**
-     * Generate token to download analytics
+     * Deprecated: Generate token to download analytics
      *
      * @param GetAnalyticsDownloadTokenReq $getAnalyticsDownloadTokenReq
      * @return GetAnalyticsDownloadTokenRes
      * @throws Exception
+     * @deprecated replaced by artifact
      */
     public function getAnalyticsDownloadToken(
         GetAnalyticsDownloadTokenReq $getAnalyticsDownloadTokenReq
