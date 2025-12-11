@@ -42,6 +42,10 @@ class RecordingInfo extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int64 room_creation_time = 7;</code>
      */
     protected $room_creation_time = 0;
+    /**
+     * Generated from protobuf field <code>optional .plugnmeet.RecordingMetadata metadata = 8;</code>
+     */
+    protected $metadata = null;
 
     /**
      * Constructor.
@@ -56,6 +60,7 @@ class RecordingInfo extends \Google\Protobuf\Internal\Message
      *     @type float $file_size
      *     @type int|string $creation_time
      *     @type int|string $room_creation_time
+     *     @type \Mynaparrot\PlugnmeetProto\RecordingMetadata $metadata
      * }
      */
     public function __construct($data = NULL) {
@@ -213,6 +218,38 @@ class RecordingInfo extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->room_creation_time = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .plugnmeet.RecordingMetadata metadata = 8;</code>
+     * @return \Mynaparrot\PlugnmeetProto\RecordingMetadata|null
+     */
+    public function getMetadata()
+    {
+        return $this->metadata;
+    }
+
+    public function hasMetadata()
+    {
+        return isset($this->metadata);
+    }
+
+    public function clearMetadata()
+    {
+        unset($this->metadata);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .plugnmeet.RecordingMetadata metadata = 8;</code>
+     * @param \Mynaparrot\PlugnmeetProto\RecordingMetadata $var
+     * @return $this
+     */
+    public function setMetadata($var)
+    {
+        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\RecordingMetadata::class);
+        $this->metadata = $var;
 
         return $this;
     }

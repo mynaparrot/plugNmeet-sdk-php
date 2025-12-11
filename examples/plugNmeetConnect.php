@@ -53,11 +53,14 @@ use Mynaparrot\PlugnmeetProto\IsRoomActiveRes;
 use Mynaparrot\PlugnmeetProto\LockSettings;
 use Mynaparrot\PlugnmeetProto\RecordingInfoReq;
 use Mynaparrot\PlugnmeetProto\RecordingInfoRes;
+use Mynaparrot\PlugnmeetProto\RecordingMetadata;
 use Mynaparrot\PlugnmeetProto\RoomArtifactType;
 use Mynaparrot\PlugnmeetProto\RoomCreateFeatures;
 use Mynaparrot\PlugnmeetProto\RoomEndReq;
 use Mynaparrot\PlugnmeetProto\RoomEndRes;
 use Mynaparrot\PlugnmeetProto\RoomMetadata;
+use Mynaparrot\PlugnmeetProto\UpdateRecordingMetadataReq;
+use Mynaparrot\PlugnmeetProto\UpdateRecordingMetadataRes;
 use Mynaparrot\PlugnmeetProto\UserInfo;
 use Mynaparrot\PlugnmeetProto\UserMetadata;
 
@@ -327,6 +330,28 @@ class plugNmeetConnect
         $recordingInfoReq->setRecordId($recordingId);
 
         return $this->plugnmeet->getRecordingInfo($recordingInfoReq);
+    }
+
+    /**
+     * @param string $recordingId
+     * @param string $title
+     * @param string|null $description
+     * @param string|null $extraData
+     * @return UpdateRecordingMetadataRes
+     * @throws Exception
+     */
+    public function updateRecordingMetadata(string $recordingId, string $title, string|null $description, string|null $extraData): UpdateRecordingMetadataRes
+    {
+        $updateRecordingMetadataReq = new UpdateRecordingMetadataReq();
+        $updateRecordingMetadataReq->setRecordId($recordingId);
+
+        $metadata = new RecordingMetadata();
+        $metadata->setTitle($title);
+        $metadata->setDescription($description);
+        $metadata->setExtraData($extraData);
+        $updateRecordingMetadataReq->setMetadata($metadata);
+
+        return $this->plugnmeet->updateRecordingMetadata($updateRecordingMetadataReq);
     }
 
     /**

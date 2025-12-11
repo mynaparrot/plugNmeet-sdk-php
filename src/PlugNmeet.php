@@ -67,6 +67,8 @@ use Mynaparrot\PlugnmeetProto\RecordingInfoReq;
 use Mynaparrot\PlugnmeetProto\RecordingInfoRes;
 use Mynaparrot\PlugnmeetProto\RoomEndReq;
 use Mynaparrot\PlugnmeetProto\RoomEndRes;
+use Mynaparrot\PlugnmeetProto\UpdateRecordingMetadataReq;
+use Mynaparrot\PlugnmeetProto\UpdateRecordingMetadataRes;
 use Ramsey\Uuid\Uuid;
 use stdClass;
 
@@ -304,6 +306,27 @@ class PlugNmeet
         $res = $this->sendRequest("/recording/info", $body);
 
         $output = new RecordingInfoRes();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response);
+        }
+        return $output;
+    }
+
+    /**
+     * To update recording metadata
+     *
+     * @param UpdateRecordingMetadataReq $updateRecordingMetadataReq
+     * @return UpdateRecordingMetadataRes
+     * @throws Exception
+     */
+    public function updateRecordingMetadata(UpdateRecordingMetadataReq $updateRecordingMetadataReq): UpdateRecordingMetadataRes
+    {
+        $body = $updateRecordingMetadataReq->serializeToJsonString();
+        $res = $this->sendRequest("/recording/updateMetadata", $body);
+
+        $output = new UpdateRecordingMetadataRes();
         if ($res->status) {
             $output->mergeFromJsonString($res->response, true);
         } else {
