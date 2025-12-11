@@ -321,8 +321,9 @@ class PlugNmeet
      * @return UpdateRecordingMetadataRes
      * @throws Exception
      */
-    public function updateRecordingMetadata(UpdateRecordingMetadataReq $updateRecordingMetadataReq): UpdateRecordingMetadataRes
-    {
+    public function updateRecordingMetadata(
+        UpdateRecordingMetadataReq $updateRecordingMetadataReq
+    ): UpdateRecordingMetadataRes {
         $body = $updateRecordingMetadataReq->serializeToJsonString();
         $res = $this->sendRequest("/recording/updateMetadata", $body);
 
