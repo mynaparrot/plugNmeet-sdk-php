@@ -47886,6 +47886,26 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eint64\u0020room_creation_time\u0020\u003D\u00207\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-RecordingInfo.html#method_setRoomCreationTime"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingInfo\u003A\u003AgetMetadata\u0028\u0029",
+            "name": "getMetadata",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.RecordingMetadata\u0020metadata\u0020\u003D\u00208\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingInfo.html#method_getMetadata"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingInfo\u003A\u003AhasMetadata\u0028\u0029",
+            "name": "hasMetadata",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingInfo.html#method_hasMetadata"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingInfo\u003A\u003AclearMetadata\u0028\u0029",
+            "name": "clearMetadata",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingInfo.html#method_clearMetadata"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingInfo\u003A\u003AsetMetadata\u0028\u0029",
+            "name": "setMetadata",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.RecordingMetadata\u0020metadata\u0020\u003D\u00208\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingInfo.html#method_setMetadata"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingInfo\u003A\u003A\u0024record_id",
             "name": "record_id",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020record_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
@@ -47920,6 +47940,11 @@ Search.appendIndex(
             "name": "room_creation_time",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eint64\u0020room_creation_time\u0020\u003D\u00207\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-RecordingInfo.html#property_room_creation_time"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingInfo\u003A\u003A\u0024metadata",
+            "name": "metadata",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.RecordingMetadata\u0020metadata\u0020\u003D\u00208\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingInfo.html#property_metadata"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingInfoEvent",
             "name": "RecordingInfoEvent",
@@ -48316,6 +48341,106 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.plugnmeet.PastRoomInfo\u0020room_info\u0020\u003D\u00204\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-RecordingInfoRes.html#property_room_info"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata",
+            "name": "RecordingMetadata",
+            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.RecordingMetadata\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020title\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_getTitle"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003AhasTitle\u0028\u0029",
+            "name": "hasTitle",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_hasTitle"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003AclearTitle\u0028\u0029",
+            "name": "clearTitle",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_clearTitle"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003AsetTitle\u0028\u0029",
+            "name": "setTitle",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020title\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_setTitle"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003AgetDescription\u0028\u0029",
+            "name": "getDescription",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020description\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_getDescription"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003AhasDescription\u0028\u0029",
+            "name": "hasDescription",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_hasDescription"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003AclearDescription\u0028\u0029",
+            "name": "clearDescription",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_clearDescription"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003AsetDescription\u0028\u0029",
+            "name": "setDescription",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020description\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_setDescription"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003AgetSubtitles\u0028\u0029",
+            "name": "getSubtitles",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.plugnmeet.RecordingSubtitle\u0020subtitles\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_getSubtitles"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003AsetSubtitles\u0028\u0029",
+            "name": "setSubtitles",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.plugnmeet.RecordingSubtitle\u0020subtitles\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_setSubtitles"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003AgetExtraData\u0028\u0029",
+            "name": "getExtraData",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020extra_data\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_getExtraData"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003AhasExtraData\u0028\u0029",
+            "name": "hasExtraData",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_hasExtraData"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003AclearExtraData\u0028\u0029",
+            "name": "clearExtraData",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_clearExtraData"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003AsetExtraData\u0028\u0029",
+            "name": "setExtraData",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020extra_data\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_setExtraData"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003A\u0024title",
+            "name": "title",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020title\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#property_title"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003A\u0024description",
+            "name": "description",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020description\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#property_description"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003A\u0024subtitles",
+            "name": "subtitles",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.plugnmeet.RecordingSubtitle\u0020subtitles\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#property_subtitles"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003A\u0024extra_data",
+            "name": "extra_data",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020extra_data\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#property_extra_data"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingReq",
             "name": "RecordingReq",
             "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.RecordingReq\u003C\/code\u003E",
@@ -48460,6 +48585,46 @@ Search.appendIndex(
             "name": "recording_variant",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.CloudRecordingVariants\u0020recording_variant\u0020\u003D\u00207\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-RecordingReq.html#property_recording_variant"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingSubtitle",
+            "name": "RecordingSubtitle",
+            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.RecordingSubtitle\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingSubtitle.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingSubtitle\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingSubtitle.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingSubtitle\u003A\u003AgetLabel\u0028\u0029",
+            "name": "getLabel",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020label\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingSubtitle.html#method_getLabel"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingSubtitle\u003A\u003AsetLabel\u0028\u0029",
+            "name": "setLabel",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020label\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingSubtitle.html#method_setLabel"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingSubtitle\u003A\u003AgetUrl\u0028\u0029",
+            "name": "getUrl",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020url\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingSubtitle.html#method_getUrl"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingSubtitle\u003A\u003AsetUrl\u0028\u0029",
+            "name": "setUrl",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020url\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingSubtitle.html#method_setUrl"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingSubtitle\u003A\u003A\u0024label",
+            "name": "label",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020label\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingSubtitle.html#property_label"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingSubtitle\u003A\u003A\u0024url",
+            "name": "url",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020url\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingSubtitle.html#property_url"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingTasks",
             "name": "RecordingTasks",
@@ -51386,6 +51551,96 @@ Search.appendIndex(
             "summary": "The\u0020variant\u0020of\u0020the\u0020recording",
             "url": "classes/Mynaparrot-PlugnmeetProto-TranscodingTask.html#property_recording_variant"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\UpdateRecordingMetadataReq",
+            "name": "UpdateRecordingMetadataReq",
+            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.UpdateRecordingMetadataReq\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-UpdateRecordingMetadataReq.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\UpdateRecordingMetadataReq\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Mynaparrot-PlugnmeetProto-UpdateRecordingMetadataReq.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\UpdateRecordingMetadataReq\u003A\u003AgetRecordId\u0028\u0029",
+            "name": "getRecordId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020record_id\u0020\u003D\u00201\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-UpdateRecordingMetadataReq.html#method_getRecordId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\UpdateRecordingMetadataReq\u003A\u003AsetRecordId\u0028\u0029",
+            "name": "setRecordId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020record_id\u0020\u003D\u00201\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-UpdateRecordingMetadataReq.html#method_setRecordId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\UpdateRecordingMetadataReq\u003A\u003AgetMetadata\u0028\u0029",
+            "name": "getMetadata",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.plugnmeet.RecordingMetadata\u0020metadata\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-UpdateRecordingMetadataReq.html#method_getMetadata"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\UpdateRecordingMetadataReq\u003A\u003AhasMetadata\u0028\u0029",
+            "name": "hasMetadata",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-UpdateRecordingMetadataReq.html#method_hasMetadata"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\UpdateRecordingMetadataReq\u003A\u003AclearMetadata\u0028\u0029",
+            "name": "clearMetadata",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-UpdateRecordingMetadataReq.html#method_clearMetadata"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\UpdateRecordingMetadataReq\u003A\u003AsetMetadata\u0028\u0029",
+            "name": "setMetadata",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.plugnmeet.RecordingMetadata\u0020metadata\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-UpdateRecordingMetadataReq.html#method_setMetadata"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\UpdateRecordingMetadataReq\u003A\u003A\u0024record_id",
+            "name": "record_id",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020record_id\u0020\u003D\u00201\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-UpdateRecordingMetadataReq.html#property_record_id"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\UpdateRecordingMetadataReq\u003A\u003A\u0024metadata",
+            "name": "metadata",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.plugnmeet.RecordingMetadata\u0020metadata\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-UpdateRecordingMetadataReq.html#property_metadata"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\UpdateRecordingMetadataRes",
+            "name": "UpdateRecordingMetadataRes",
+            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.UpdateRecordingMetadataRes\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-UpdateRecordingMetadataRes.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\UpdateRecordingMetadataRes\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Mynaparrot-PlugnmeetProto-UpdateRecordingMetadataRes.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\UpdateRecordingMetadataRes\u003A\u003AgetStatus\u0028\u0029",
+            "name": "getStatus",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020status\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-UpdateRecordingMetadataRes.html#method_getStatus"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\UpdateRecordingMetadataRes\u003A\u003AsetStatus\u0028\u0029",
+            "name": "setStatus",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020status\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-UpdateRecordingMetadataRes.html#method_setStatus"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\UpdateRecordingMetadataRes\u003A\u003AgetMsg\u0028\u0029",
+            "name": "getMsg",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020msg\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-UpdateRecordingMetadataRes.html#method_getMsg"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\UpdateRecordingMetadataRes\u003A\u003AsetMsg\u0028\u0029",
+            "name": "setMsg",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020msg\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-UpdateRecordingMetadataRes.html#method_setMsg"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\UpdateRecordingMetadataRes\u003A\u003A\u0024status",
+            "name": "status",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020status\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-UpdateRecordingMetadataRes.html#property_status"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\UpdateRecordingMetadataRes\u003A\u003A\u0024msg",
+            "name": "msg",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020msg\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-UpdateRecordingMetadataRes.html#property_msg"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\UpdateUserLockSettingsReq",
             "name": "UpdateUserLockSettingsReq",
             "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.UpdateUserLockSettingsReq\u003C\/code\u003E",
@@ -53115,6 +53370,11 @@ Search.appendIndex(
             "name": "getRecordingInfo",
             "summary": "To\u0020get\u0020recording\u0020info",
             "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getRecordingInfo"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AupdateRecordingMetadata\u0028\u0029",
+            "name": "updateRecordingMetadata",
+            "summary": "To\u0020update\u0020recording\u0020metadata",
+            "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_updateRecordingMetadata"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AdeleteRecordings\u0028\u0029",
             "name": "deleteRecordings",
