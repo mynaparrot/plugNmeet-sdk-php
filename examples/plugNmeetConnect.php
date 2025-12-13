@@ -22,6 +22,8 @@
  * SOFTWARE.
  */
 
+use Google\Protobuf\Internal\DescriptorPool;
+use Google\Protobuf\Internal\GPBType;
 use Google\Protobuf\Internal\MapField;
 use Mynaparrot\Plugnmeet\PlugNmeet;
 use Mynaparrot\PlugnmeetProto\ArtifactInfoReq;
@@ -138,7 +140,9 @@ class plugNmeetConnect
             throw new Exception("room_features required and should be an array");
         }
 
-        // backward compatibility with existing plugins
+        // Features can be passed in `room_features` or as top-level keys in `$roomMetadata`.
+        // We're doing this with all of our plugins
+        // We'll merge them, with `room_features` taking precedence.
         $roomMetadataFeatures = $roomMetadata['room_features'];
         foreach ($roomMetadata as $k => $data) {
             if ($k === "room_features" || $k === "default_lock_settings" || $k === "copyright_conf") {
@@ -149,8 +153,11 @@ class plugNmeetConnect
             }
         }
 
+        // Dynamically convert data types to match the protobuf message definition.
+        $sanitizedFeatures = $this->_convertDataToProtoJsonArray($roomMetadataFeatures, RoomCreateFeatures::class);
+
         $features = new RoomCreateFeatures();
-        $features->mergeFromJsonString(json_encode($roomMetadataFeatures), true);
+        $features->mergeFromJsonString(json_encode($sanitizedFeatures), true);
 
         $metadata = new RoomMetadata();
         $metadata->setRoomFeatures($features);
@@ -487,5 +494,102 @@ class plugNmeetConnect
     public function getClientFiles(): GetClientFilesRes
     {
         return $this->plugnmeet->getClientFiles();
+    }
+
+    /**
+     * Converts a user-provided array (with snake_case keys) into a JSON-like
+     * array (with camelCase keys and correctly typed values) suitable for
+     * Protobuf's mergeFromJsonString method.
+     *
+     * This method recursively processes nested message structures, converts
+     * boolean-like values to booleans, handles 64-bit integers as strings,
+     * and correctly omits optional string fields that are empty to prevent
+     * validation errors. It relies on the Protobuf DescriptorPool to
+     * correctly map field names and types.
+     *
+     * @param array $data The input array with snake_case keys.
+     * @param string $protoClassFqn The fully qualified class name of the Protobuf message.
+     *
+     * @return array The sanitized, JSON-like array with camelCase keys.
+     * @throws Exception
+     * @since 2.0.0
+     */
+    private function _convertDataToProtoJsonArray(array $data, string $protoClassFqn): array
+    {
+        // This ensures the class's metadata is loaded into the pool.
+        if (class_exists($protoClassFqn)) {
+            new $protoClassFqn();
+        }
+
+        $pool = DescriptorPool::getGeneratedPool();
+        $desc = $pool->getDescriptorByClassName($protoClassFqn);
+
+        if (!$desc) {
+            return [];
+        }
+
+        $result = [];
+        foreach ($data as $key => $value) {
+            $field = $desc->getFieldByName($key);
+
+            if (!$field) {
+                continue;
+            }
+
+            $jsonKey = $field->getJsonName();
+            $type = $field->getType();
+
+            // Omit optional fields that have empty string values.
+            if ($type === GPBType::STRING && $value === '') {
+                continue;
+            }
+
+            switch ($type) {
+                case GPBType::MESSAGE:
+                    if (is_array($value) && !empty($value)) {
+                        $subMessageClass = $field->getMessageType()->getClass();
+                        $subResult = $this->_convertDataToProtoJsonArray($value, $subMessageClass);
+                        if (!empty($subResult)) {
+                            $result[$jsonKey] = $subResult;
+                        }
+                    }
+                    break;
+                case GPBType::BOOL:
+                    $result[$jsonKey] = filter_var($value, FILTER_VALIDATE_BOOLEAN);
+                    break;
+                case GPBType::INT32:
+                case GPBType::UINT32:
+                case GPBType::SINT32:
+                case GPBType::FIXED32:
+                case GPBType::SFIXED32:
+                case GPBType::ENUM:
+                    $result[$jsonKey] = (int)$value;
+                    break;
+                case GPBType::INT64:
+                case GPBType::UINT64:
+                case GPBType::SINT64:
+                case GPBType::FIXED64:
+                case GPBType::SFIXED64:
+                    $result[$jsonKey] = (string)$value;
+                    break;
+                case GPBType::DOUBLE:
+                case GPBType::FLOAT:
+                    if ($value === 'Infinity') {
+                        $result[$jsonKey] = INF;
+                    } elseif ($value === '-Infinity') {
+                        $result[$jsonKey] = -INF;
+                    } elseif ($value === 'NaN') {
+                        $result[$jsonKey] = NAN;
+                    } else {
+                        $result[$jsonKey] = (float)$value;
+                    }
+                    break;
+                default:
+                    $result[$jsonKey] = $value;
+                    break;
+            }
+        }
+
+        return $result;
     }
 }
