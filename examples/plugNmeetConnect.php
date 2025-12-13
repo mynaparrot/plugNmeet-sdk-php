@@ -22,6 +22,7 @@
  * SOFTWARE.
  */
 
+use Google\Protobuf\Internal\MapField;
 use Mynaparrot\Plugnmeet\PlugNmeet;
 use Mynaparrot\PlugnmeetProto\ArtifactInfoReq;
 use Mynaparrot\PlugnmeetProto\ArtifactInfoRes;
@@ -336,11 +337,11 @@ class plugNmeetConnect
      * @param string $recordingId
      * @param string $title
      * @param string|null $description
-     * @param string|null $extraData
+     * @param array|MapField $extraData
      * @return UpdateRecordingMetadataRes
      * @throws Exception
      */
-    public function updateRecordingMetadata(string $recordingId, string $title, string|null $description, string|null $extraData): UpdateRecordingMetadataRes
+    public function updateRecordingMetadata(string $recordingId, string $title, string|null $description, array|MapField $extraData): UpdateRecordingMetadataRes
     {
         $updateRecordingMetadataReq = new UpdateRecordingMetadataReq();
         $updateRecordingMetadataReq->setRecordId($recordingId);

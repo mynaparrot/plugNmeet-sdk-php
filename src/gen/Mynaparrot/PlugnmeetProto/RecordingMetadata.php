@@ -23,13 +23,15 @@ class RecordingMetadata extends \Google\Protobuf\Internal\Message
      */
     protected $description = null;
     /**
-     * Generated from protobuf field <code>repeated .plugnmeet.RecordingSubtitle subtitles = 3;</code>
+     *e.g. map<language, RecordingSubtitle>
+     *
+     * Generated from protobuf field <code>map<string, .plugnmeet.RecordingSubtitle> subtitles = 3;</code>
      */
     private $subtitles;
     /**
-     * Generated from protobuf field <code>optional string extra_data = 4;</code>
+     * Generated from protobuf field <code>map<string, string> extra_data = 4;</code>
      */
-    protected $extra_data = null;
+    private $extra_data;
 
     /**
      * Constructor.
@@ -39,8 +41,9 @@ class RecordingMetadata extends \Google\Protobuf\Internal\Message
      *
      *     @type string $title
      *     @type string $description
-     *     @type \Mynaparrot\PlugnmeetProto\RecordingSubtitle[] $subtitles
-     *     @type string $extra_data
+     *     @type array|\Google\Protobuf\Internal\MapField $subtitles
+     *          e.g. map<language, RecordingSubtitle>
+     *     @type array|\Google\Protobuf\Internal\MapField $extra_data
      * }
      */
     public function __construct($data = NULL) {
@@ -113,8 +116,10 @@ class RecordingMetadata extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .plugnmeet.RecordingSubtitle subtitles = 3;</code>
-     * @return RepeatedField<\Mynaparrot\PlugnmeetProto\RecordingSubtitle>
+     *e.g. map<language, RecordingSubtitle>
+     *
+     * Generated from protobuf field <code>map<string, .plugnmeet.RecordingSubtitle> subtitles = 3;</code>
+     * @return \Google\Protobuf\Internal\MapField
      */
     public function getSubtitles()
     {
@@ -122,46 +127,38 @@ class RecordingMetadata extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .plugnmeet.RecordingSubtitle subtitles = 3;</code>
-     * @param \Mynaparrot\PlugnmeetProto\RecordingSubtitle[] $var
+     *e.g. map<language, RecordingSubtitle>
+     *
+     * Generated from protobuf field <code>map<string, .plugnmeet.RecordingSubtitle> subtitles = 3;</code>
+     * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
     public function setSubtitles($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Mynaparrot\PlugnmeetProto\RecordingSubtitle::class);
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::MESSAGE, \Mynaparrot\PlugnmeetProto\RecordingSubtitle::class);
         $this->subtitles = $arr;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>optional string extra_data = 4;</code>
-     * @return string
+     * Generated from protobuf field <code>map<string, string> extra_data = 4;</code>
+     * @return \Google\Protobuf\Internal\MapField
      */
     public function getExtraData()
     {
-        return isset($this->extra_data) ? $this->extra_data : '';
-    }
-
-    public function hasExtraData()
-    {
-        return isset($this->extra_data);
-    }
-
-    public function clearExtraData()
-    {
-        unset($this->extra_data);
+        return $this->extra_data;
     }
 
     /**
-     * Generated from protobuf field <code>optional string extra_data = 4;</code>
-     * @param string $var
+     * Generated from protobuf field <code>map<string, string> extra_data = 4;</code>
+     * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
     public function setExtraData($var)
     {
-        GPBUtil::checkString($var, True);
-        $this->extra_data = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->extra_data = $arr;
 
         return $this;
     }
