@@ -48393,32 +48393,22 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003AgetSubtitles\u0028\u0029",
             "name": "getSubtitles",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.plugnmeet.RecordingSubtitle\u0020subtitles\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "summary": "e.g.\u0020map\u003Clanguage,\u0020RecordingSubtitle\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_getSubtitles"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003AsetSubtitles\u0028\u0029",
             "name": "setSubtitles",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.plugnmeet.RecordingSubtitle\u0020subtitles\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "summary": "e.g.\u0020map\u003Clanguage,\u0020RecordingSubtitle\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_setSubtitles"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003AgetExtraData\u0028\u0029",
             "name": "getExtraData",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020extra_data\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Emap\u003Cstring,\u0020string\u003E\u0020extra_data\u0020\u003D\u00204\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_getExtraData"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003AhasExtraData\u0028\u0029",
-            "name": "hasExtraData",
-            "summary": "",
-            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_hasExtraData"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003AclearExtraData\u0028\u0029",
-            "name": "clearExtraData",
-            "summary": "",
-            "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_clearExtraData"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003AsetExtraData\u0028\u0029",
             "name": "setExtraData",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020extra_data\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Emap\u003Cstring,\u0020string\u003E\u0020extra_data\u0020\u003D\u00204\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_setExtraData"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003A\u0024title",
@@ -48433,12 +48423,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003A\u0024subtitles",
             "name": "subtitles",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.plugnmeet.RecordingSubtitle\u0020subtitles\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "summary": "e.g.\u0020map\u003Clanguage,\u0020RecordingSubtitle\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#property_subtitles"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingMetadata\u003A\u003A\u0024extra_data",
             "name": "extra_data",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020extra_data\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Emap\u003Cstring,\u0020string\u003E\u0020extra_data\u0020\u003D\u00204\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#property_extra_data"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecordingReq",

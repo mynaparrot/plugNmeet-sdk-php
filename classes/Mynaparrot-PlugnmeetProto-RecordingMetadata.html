@@ -257,13 +257,6 @@
 <dd>Generated from protobuf field &lt;code&gt;optional string description = 2;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a class="" href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#property_extra_data">$extra_data</a>
-    <span>
-                        &nbsp;: mixed            </span>
-</dt>
-<dd>Generated from protobuf field &lt;code&gt;optional string extra_data = 4;&lt;/code&gt;</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#property_title">$title</a>
     <span>
                         &nbsp;: mixed            </span>
@@ -271,11 +264,18 @@
 <dd>Generated from protobuf field &lt;code&gt;optional string title = 1;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#property_extra_data">$extra_data</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;map&lt;string, string&gt; extra_data = 4;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a class="" href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#property_subtitles">$subtitles</a>
     <span>
                         &nbsp;: mixed            </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;repeated .plugnmeet.RecordingSubtitle subtitles = 3;&lt;/code&gt;</dd>
+<dd>e.g. map&lt;language, RecordingSubtitle&gt;</dd>
 
     </dl>
 
@@ -299,12 +299,6 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_clearExtraData">clearExtraData()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_clearTitle">clearTitle()</a>
     <span>
                                 &nbsp;: mixed    </span>
@@ -320,16 +314,16 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_getExtraData">getExtraData()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: <abbr title="\Google\Protobuf\Internal\MapField">MapField</abbr>    </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;optional string extra_data = 4;&lt;/code&gt;</dd>
+<dd>Generated from protobuf field &lt;code&gt;map&lt;string, string&gt; extra_data = 4;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_getSubtitles">getSubtitles()</a>
     <span>
-                                &nbsp;: <abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, <a href="classes/Mynaparrot-PlugnmeetProto-RecordingSubtitle.html"><abbr title="\Mynaparrot\PlugnmeetProto\RecordingSubtitle">RecordingSubtitle</abbr></a>&gt;    </span>
+                                &nbsp;: <abbr title="\Google\Protobuf\Internal\MapField">MapField</abbr>    </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;repeated .plugnmeet.RecordingSubtitle subtitles = 3;&lt;/code&gt;</dd>
+<dd>e.g. map&lt;language, RecordingSubtitle&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_getTitle">getTitle()</a>
@@ -340,12 +334,6 @@
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_hasDescription">hasDescription()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_hasExtraData">hasExtraData()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
@@ -368,14 +356,14 @@
     <span>
                                 &nbsp;: $this    </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;optional string extra_data = 4;&lt;/code&gt;</dd>
+<dd>Generated from protobuf field &lt;code&gt;map&lt;string, string&gt; extra_data = 4;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_setSubtitles">setSubtitles()</a>
     <span>
                                 &nbsp;: $this    </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;repeated .plugnmeet.RecordingSubtitle subtitles = 3;&lt;/code&gt;</dd>
+<dd>e.g. map&lt;language, RecordingSubtitle&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_setTitle">setTitle()</a>
@@ -442,44 +430,6 @@
             -protected
                                                                     "
 >
-    <h4 class="phpdocumentor-element__name" id="property_extra_data">
-        $extra_data
-        <a href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#property_extra_data" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                            </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-recordingmetadata.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php">RecordingMetadata.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">32</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;optional string extra_data = 4;&lt;/code&gt;</p>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-        <span class="phpdocumentor-signature__visibility">protected</span>
-            <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">$extra_data</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
-
-    
-    
-    
-
-        
-        
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                                    "
->
     <h4 class="phpdocumentor-element__name" id="property_title">
         $title
         <a href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#property_title" class="headerlink"><i class="fas fa-link"></i></a>
@@ -518,6 +468,44 @@
             -private
                                                                     "
 >
+    <h4 class="phpdocumentor-element__name" id="property_extra_data">
+        $extra_data
+        <a href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#property_extra_data" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-recordingmetadata.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php">RecordingMetadata.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">34</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;map&lt;string, string&gt; extra_data = 4;&lt;/code&gt;</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$extra_data</span>
+    </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                                    "
+>
     <h4 class="phpdocumentor-element__name" id="property_subtitles">
         $subtitles
         <a href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#property_subtitles" class="headerlink"><i class="fas fa-link"></i></a>
@@ -528,11 +516,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-recordingmetadata.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php">RecordingMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;repeated .plugnmeet.RecordingSubtitle subtitles = 3;&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">e.g. map&lt;language, RecordingSubtitle&gt;</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -541,7 +529,9 @@
     <span class="phpdocumentor-signature__name">$subtitles</span>
     </code>
 
-    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">map&lt;string, .plugnmeet.RecordingSubtitle&gt; subtitles = 3;</code></p>
+</section>
+
     
     
 
@@ -571,7 +561,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-recordingmetadata.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php">RecordingMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -596,8 +586,9 @@
 Optional. Data for populating the Message object.</p>
 <pre class="prettyprint"><code class="prettyprint">@type string $title
 @type string $description
-@type \Mynaparrot\PlugnmeetProto\RecordingSubtitle[] $subtitles
-@type string $extra_data
+@type array|\Google\Protobuf\Internal\MapField $subtitles
+     e.g. map&lt;language, RecordingSubtitle&gt;
+@type array|\Google\Protobuf\Internal\MapField $extra_data
 </code></pre>
 <p>}</p>
 </section>
@@ -625,7 +616,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-recordingmetadata.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php">RecordingMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">97</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
     </aside>
 
@@ -633,40 +624,6 @@ Optional. Data for populating the Message object.</p>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">clearDescription</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-        
-    
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_clearExtraData">
-        clearExtraData()
-        <a href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_clearExtraData" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-recordingmetadata.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php">RecordingMetadata.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">151</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">clearExtraData</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -693,7 +650,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-recordingmetadata.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php">RecordingMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -727,7 +684,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-recordingmetadata.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php">RecordingMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">87</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
 
     </aside>
 
@@ -766,15 +723,15 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-recordingmetadata.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php">RecordingMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">141</span>
+    <span class="phpdocumentor-element-found-in__line">148</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;optional string extra_data = 4;&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;map&lt;string, string&gt; extra_data = 4;&lt;/code&gt;</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getExtraData</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getExtraData</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Internal\MapField">MapField</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -787,7 +744,7 @@ Optional. Data for populating the Message object.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Internal\MapField">MapField</abbr></span>
             </section>
 
 </article>
@@ -805,20 +762,22 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-recordingmetadata.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php">RecordingMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">119</span>
+    <span class="phpdocumentor-element-found-in__line">124</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;repeated .plugnmeet.RecordingSubtitle subtitles = 3;&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">e.g. map&lt;language, RecordingSubtitle&gt;</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getSubtitles</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, <a href="classes/Mynaparrot-PlugnmeetProto-RecordingSubtitle.html"><abbr title="\Mynaparrot\PlugnmeetProto\RecordingSubtitle">RecordingSubtitle</abbr></a>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">getSubtitles</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Internal\MapField">MapField</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">map&lt;string, .plugnmeet.RecordingSubtitle&gt; subtitles = 3;</code></p>
+</section>
+
     
     
 
@@ -826,7 +785,7 @@ Optional. Data for populating the Message object.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, <a href="classes/Mynaparrot-PlugnmeetProto-RecordingSubtitle.html"><abbr title="\Mynaparrot\PlugnmeetProto\RecordingSubtitle">RecordingSubtitle</abbr></a>&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Internal\MapField">MapField</abbr></span>
             </section>
 
 </article>
@@ -844,7 +803,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-recordingmetadata.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php">RecordingMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -883,7 +842,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-recordingmetadata.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php">RecordingMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
@@ -891,40 +850,6 @@ Optional. Data for populating the Message object.</p>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">hasDescription</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-        
-    
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_hasExtraData">
-        hasExtraData()
-        <a href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_hasExtraData" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-recordingmetadata.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php">RecordingMetadata.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">146</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">hasExtraData</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -951,7 +876,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-recordingmetadata.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php">RecordingMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -985,7 +910,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-recordingmetadata.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php">RecordingMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">107</span>
+    <span class="phpdocumentor-element-found-in__line">110</span>
 
     </aside>
 
@@ -1034,15 +959,15 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-recordingmetadata.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php">RecordingMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">161</span>
+    <span class="phpdocumentor-element-found-in__line">158</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;optional string extra_data = 4;&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;map&lt;string, string&gt; extra_data = 4;&lt;/code&gt;</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setExtraData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                    <span class="phpdocumentor-signature__name">setExtraData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;|<abbr title="\Google\Protobuf\Internal\MapField">MapField</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1052,7 +977,7 @@ Optional. Data for populating the Message object.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$var</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;|<abbr title="\Google\Protobuf\Internal\MapField">MapField</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1083,25 +1008,27 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-recordingmetadata.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php">RecordingMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">129</span>
+    <span class="phpdocumentor-element-found-in__line">136</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;repeated .plugnmeet.RecordingSubtitle subtitles = 3;&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">e.g. map&lt;language, RecordingSubtitle&gt;</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setSubtitles</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, <a href="classes/Mynaparrot-PlugnmeetProto-RecordingSubtitle.html"><abbr title="\Mynaparrot\PlugnmeetProto\RecordingSubtitle">RecordingSubtitle</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                    <span class="phpdocumentor-signature__name">setSubtitles</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;|<abbr title="\Google\Protobuf\Internal\MapField">MapField</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">map&lt;string, .plugnmeet.RecordingSubtitle&gt; subtitles = 3;</code></p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$var</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, <a href="classes/Mynaparrot-PlugnmeetProto-RecordingSubtitle.html"><abbr title="\Mynaparrot\PlugnmeetProto\RecordingSubtitle">RecordingSubtitle</abbr></a>&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;|<abbr title="\Google\Protobuf\Internal\MapField">MapField</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1132,7 +1059,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-recordingmetadata.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/RecordingMetadata.php">RecordingMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -1283,8 +1210,8 @@ Optional. Data for populating the Message object.</p>
                 <li>
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#property_description">$description</a></li>
-                                                    <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#property_extra_data">$extra_data</a></li>
                                                     <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#property_title">$title</a></li>
+                                                    <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#property_extra_data">$extra_data</a></li>
                                                     <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#property_subtitles">$subtitles</a></li>
                                             </ul>
                 </li>
@@ -1294,14 +1221,12 @@ Optional. Data for populating the Message object.</p>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_clearDescription">clearDescription()</a></li>
-                                            <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_clearExtraData">clearExtraData()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_clearTitle">clearTitle()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_getDescription">getDescription()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_getExtraData">getExtraData()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_getSubtitles">getSubtitles()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_getTitle">getTitle()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_hasDescription">hasDescription()</a></li>
-                                            <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_hasExtraData">hasExtraData()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_hasTitle">hasTitle()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_setDescription">setDescription()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-RecordingMetadata.html#method_setExtraData">setExtraData()</a></li>
