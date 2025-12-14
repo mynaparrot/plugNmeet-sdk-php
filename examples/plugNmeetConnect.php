@@ -389,6 +389,7 @@ class plugNmeetConnect
     /**
      * @param array $roomIds
      * @param string|null $roomSid
+     * @param int|null $artifactsType
      * @param int $from
      * @param int $limit
      * @param string $orderBy
@@ -527,7 +528,9 @@ class plugNmeetConnect
 
         foreach ($data as $key => $value) {
             try {
-                $field = $desc->getFieldByName($key);
+                // Convert camelCase key to snake_case for field lookup.
+                $snakeKey = strtolower(preg_replace('/(?<!^)[A-Z]/', '_$0', $key));
+                $field    = $desc->getFieldByName($snakeKey);
 
                 if (!$field) {
                     continue;
