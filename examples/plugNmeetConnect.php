@@ -25,6 +25,7 @@
 use Google\Protobuf\Internal\DescriptorPool;
 use Google\Protobuf\Internal\GPBType;
 use Google\Protobuf\Internal\MapField;
+use Google\Protobuf\Internal\Message;
 use Mynaparrot\Plugnmeet\PlugNmeet;
 use Mynaparrot\PlugnmeetProto\ArtifactInfoReq;
 use Mynaparrot\PlugnmeetProto\ArtifactInfoRes;
@@ -153,11 +154,8 @@ class plugNmeetConnect
             }
         }
 
-        // Dynamically convert data types to match the protobuf message definition.
-        $sanitizedFeatures = $this->_convertDataToProtoJsonArray($roomMetadataFeatures, RoomCreateFeatures::class);
-
-        $features = new RoomCreateFeatures();
-        $features->mergeFromJsonString(json_encode($sanitizedFeatures), true);
+        // Build the features message from the array.
+        $features = $this->_buildProtoMessageFromArray($roomMetadataFeatures, RoomCreateFeatures::class);
 
         $metadata = new RoomMetadata();
         $metadata->setRoomFeatures($features);
@@ -497,23 +495,22 @@ class plugNmeetConnect
     }
 
     /**
-     * Converts a user-provided array (with snake_case keys) into a JSON-like
-     * array (with camelCase keys and correctly typed values) suitable for
-     * Protobuf's mergeFromJsonString method.
+     * Builds a Protobuf message object from a user-provided array.
      *
-     * This method recursively processes nested message structures and correctly
-     * omits optional string fields that are empty. It leverages the Protobuf
-     * message's setters and getters to handle type conversions, ensuring that
+     * This method recursively builds nested message structures. It leverages the
+     * Protobuf message's setters to handle type conversions, ensuring that
      * values are cast to the correct type as defined in the .proto file.
+     * It also correctly omits optional string fields that are empty.
      *
+     * @template T of Message
      * @param array $data The input array with snake_case keys.
-     * @param string $protoClassFqn The fully qualified class name of the Protobuf message.
+     * @param class-string<T> $protoClassFqn The fully qualified class name of the Protobuf message.
      *
-     * @return array The sanitized, JSON-like array with camelCase keys.
+     * @return T The populated Protobuf message object.
      * @throws Exception
      * @since 2.0.0
      */
-    private function _convertDataToProtoJsonArray(array $data, string $protoClassFqn): array
+    private function _buildProtoMessageFromArray(array $data, string $protoClassFqn): Message
     {
         // This ensures the class's metadata is loaded into the pool.
         if (!class_exists($protoClassFqn)) {
@@ -525,41 +522,42 @@ class plugNmeetConnect
         $desc = $pool->getDescriptorByClassName($protoClassFqn);
 
         if (!$desc) {
-            return [];
+            return $messageInstance;
         }
 
-        $result = [];
         foreach ($data as $key => $value) {
-            $field = $desc->getFieldByName($key);
+            try {
+                $field = $desc->getFieldByName($key);
 
-            if (!$field) {
-                continue;
-            }
-
-            $jsonKey = $field->getJsonName();
-            $type = $field->getType();
-
-            if ($type === GPBType::MESSAGE) {
-                if (is_array($value) && !empty($value)) {
-                    $subMessageClass = $field->getMessageType()->getClass();
-                    $subResult = $this->_convertDataToProtoJsonArray($value, $subMessageClass);
-                    if (!empty($subResult)) {
-                        $result[$jsonKey] = $subResult;
-                    }
+                if (!$field) {
+                    continue;
                 }
-            } elseif ($type === GPBType::STRING && $value === '') {
-                // Omit optional fields that have empty string values.
-                // Do nothing.
-                continue;
-            } else {
-                $setter = $field->getSetter();
-                $getter = $field->getGetter();
 
-                $messageInstance->$setter($value);
-                $result[$jsonKey] = $messageInstance->$getter();
+                $type = $field->getType();
+                $setter = $field->getSetter();
+
+                if ($type === GPBType::MESSAGE) {
+                    if (is_array($value) && !empty($value)) {
+                        $subMessageClass = $field->getMessageType()->getClass();
+                        $subResult = $this->_buildProtoMessageFromArray($value, $subMessageClass);
+                        $messageInstance->$setter($subResult);
+                    }
+                } elseif ($type === GPBType::STRING && $value === '') {
+                    // Omit optional fields that have empty string values.
+                    // Do nothing.
+                    continue;
+                } else {
+                    $messageInstance->$setter($value);
+                }
+            } catch (Exception $e) {
+                throw new Exception(
+                    "Failed to set field '{$key}' on message '{$protoClassFqn}': " . $e->getMessage(),
+                    0,
+                    $e
+                );
             }
         }
 
-        return $result;
+        return $messageInstance;
     }
 }
