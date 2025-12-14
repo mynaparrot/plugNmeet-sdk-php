@@ -1,5 +1,29 @@
 # Changelog
 
+## [2.0.0](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v1.6.2...v2.0.0) (2025-12-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* project migrated to use `Protocol buffers`
+
+### Features
+
+* artifacts API ([486a209](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/486a2090256d8652f13d21a32e29a64504a177a6))
+* project migrated to use `Protocol buffers` ([2fcc4d8](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/2fcc4d85da570cc3a1bea9f76240e7d296b0854a))
+* recording metadata update ([f89d275](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/f89d275e892a346192b420068b4f8abdd9947ec7))
+
+
+### Bug Fixes
+
+* bump proto ([738238c](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/738238c45eb7a3f94a4629417fd83986f9bc6740))
+* bump proto ([ca7a9ac](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/ca7a9ac72a46c03c8424816bb05318451bda8fc4))
+* converting JSON values to correct type ([7622ecf](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/7622ecfb06d50b1a378f4317ea582458d1e8008f))
+* **deps:** update dependency google/protobuf to v4.33.2 ([1eafcab](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/1eafcab6f7cb03f042e29e16db606c923ea2fc3a))
+* **deps:** update dependency google/protobuf to v4.33.2 ([38ea2af](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/38ea2af8403c0b27026f6a79af2afb7818bc552f))
+* **refactor:** Builds a Protobuf message object from array directly ([f15697a](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/f15697afc9fced41adb1a5d9acdb9190cf46a263))
+* **refactor:** use Protobuf message's setters and getters to handle type conversions ([dc0235e](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/dc0235e473e3d6a02b268bb05711ccd993bf1b0a))
+
 ## [1.6.2](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v1.6.1...v1.6.2) (2025-10-15)
 
 
