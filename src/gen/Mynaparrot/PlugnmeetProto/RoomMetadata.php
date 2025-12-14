@@ -69,9 +69,9 @@ class RoomMetadata extends \Google\Protobuf\Internal\Message
      */
     protected $metadata_id = null;
     /**
-     * Generated from protobuf field <code>optional string extra_data = 14;</code>
+     * Generated from protobuf field <code>map<string, string> extra_data = 14;</code>
      */
-    protected $extra_data = null;
+    private $extra_data;
 
     /**
      * Constructor.
@@ -93,7 +93,7 @@ class RoomMetadata extends \Google\Protobuf\Internal\Message
      *     @type \Mynaparrot\PlugnmeetProto\CopyrightConf $copyright_conf
      *     @type string $metadata_id
      *           we'll use this as version control
-     *     @type string $extra_data
+     *     @type array|\Google\Protobuf\Internal\MapField $extra_data
      * }
      */
     public function __construct($data = NULL) {
@@ -462,33 +462,23 @@ class RoomMetadata extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional string extra_data = 14;</code>
-     * @return string
+     * Generated from protobuf field <code>map<string, string> extra_data = 14;</code>
+     * @return \Google\Protobuf\Internal\MapField
      */
     public function getExtraData()
     {
-        return isset($this->extra_data) ? $this->extra_data : '';
-    }
-
-    public function hasExtraData()
-    {
-        return isset($this->extra_data);
-    }
-
-    public function clearExtraData()
-    {
-        unset($this->extra_data);
+        return $this->extra_data;
     }
 
     /**
-     * Generated from protobuf field <code>optional string extra_data = 14;</code>
-     * @param string $var
+     * Generated from protobuf field <code>map<string, string> extra_data = 14;</code>
+     * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
     public function setExtraData($var)
     {
-        GPBUtil::checkString($var, True);
-        $this->extra_data = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->extra_data = $arr;
 
         return $this;
     }
