@@ -50363,22 +50363,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RoomMetadata\u003A\u003AgetExtraData\u0028\u0029",
             "name": "getExtraData",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020extra_data\u0020\u003D\u002014\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Emap\u003Cstring,\u0020string\u003E\u0020extra_data\u0020\u003D\u002014\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-RoomMetadata.html#method_getExtraData"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RoomMetadata\u003A\u003AhasExtraData\u0028\u0029",
-            "name": "hasExtraData",
-            "summary": "",
-            "url": "classes/Mynaparrot-PlugnmeetProto-RoomMetadata.html#method_hasExtraData"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RoomMetadata\u003A\u003AclearExtraData\u0028\u0029",
-            "name": "clearExtraData",
-            "summary": "",
-            "url": "classes/Mynaparrot-PlugnmeetProto-RoomMetadata.html#method_clearExtraData"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RoomMetadata\u003A\u003AsetExtraData\u0028\u0029",
             "name": "setExtraData",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020extra_data\u0020\u003D\u002014\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Emap\u003Cstring,\u0020string\u003E\u0020extra_data\u0020\u003D\u002014\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-RoomMetadata.html#method_setExtraData"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RoomMetadata\u003A\u003A\u0024room_title",
@@ -50448,7 +50438,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RoomMetadata\u003A\u003A\u0024extra_data",
             "name": "extra_data",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020extra_data\u0020\u003D\u002014\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Emap\u003Cstring,\u0020string\u003E\u0020extra_data\u0020\u003D\u002014\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-RoomMetadata.html#property_extra_data"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RoomUploadedFileMetadata",
@@ -52418,22 +52408,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\UserMetadata\u003A\u003AgetExtraData\u0028\u0029",
             "name": "getExtraData",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020extra_data\u0020\u003D\u002010\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Emap\u003Cstring,\u0020string\u003E\u0020extra_data\u0020\u003D\u002010\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#method_getExtraData"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\UserMetadata\u003A\u003AhasExtraData\u0028\u0029",
-            "name": "hasExtraData",
-            "summary": "",
-            "url": "classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#method_hasExtraData"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\UserMetadata\u003A\u003AclearExtraData\u0028\u0029",
-            "name": "clearExtraData",
-            "summary": "",
-            "url": "classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#method_clearExtraData"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\UserMetadata\u003A\u003AsetExtraData\u0028\u0029",
             "name": "setExtraData",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020extra_data\u0020\u003D\u002010\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Emap\u003Cstring,\u0020string\u003E\u0020extra_data\u0020\u003D\u002010\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#method_setExtraData"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\UserMetadata\u003A\u003AgetExUserId\u0028\u0029",
@@ -52503,7 +52483,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\UserMetadata\u003A\u003A\u0024extra_data",
             "name": "extra_data",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020extra_data\u0020\u003D\u002010\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Emap\u003Cstring,\u0020string\u003E\u0020extra_data\u0020\u003D\u002010\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#property_extra_data"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\UserMetadata\u003A\u003A\u0024ex_user_id",

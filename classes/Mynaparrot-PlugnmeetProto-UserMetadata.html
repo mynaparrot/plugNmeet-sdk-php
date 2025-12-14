@@ -257,13 +257,6 @@
 <dd>if remain empty then will use value from user_id</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a class="" href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#property_extra_data">$extra_data</a>
-    <span>
-                        &nbsp;: mixed            </span>
-</dt>
-<dd>Generated from protobuf field &lt;code&gt;optional string extra_data = 10;&lt;/code&gt;</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#property_is_admin">$is_admin</a>
     <span>
                         &nbsp;: mixed            </span>
@@ -326,6 +319,13 @@
 </dt>
 <dd>Generated from protobuf field &lt;code&gt;bool wait_for_approval = 6 [(.buf.validate.field) = {&lt;/code&gt;</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#property_extra_data">$extra_data</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;map&lt;string, string&gt; extra_data = 10;&lt;/code&gt;</dd>
+
     </dl>
 
 <h4 id="toc-methods">
@@ -340,12 +340,6 @@
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Constructor.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#method_clearExtraData">clearExtraData()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#method_clearExUserId">clearExUserId()</a>
@@ -386,9 +380,9 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#method_getExtraData">getExtraData()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: <abbr title="\Google\Protobuf\Internal\MapField">MapField</abbr>    </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;optional string extra_data = 10;&lt;/code&gt;</dd>
+<dd>Generated from protobuf field &lt;code&gt;map&lt;string, string&gt; extra_data = 10;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#method_getExUserId">getExUserId()</a>
@@ -461,12 +455,6 @@
 <dd>Generated from protobuf field &lt;code&gt;bool wait_for_approval = 6 [(.buf.validate.field) = {&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#method_hasExtraData">hasExtraData()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#method_hasExUserId">hasExUserId()</a>
     <span>
                                 &nbsp;: mixed    </span>
@@ -507,7 +495,7 @@
     <span>
                                 &nbsp;: $this    </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;optional string extra_data = 10;&lt;/code&gt;</dd>
+<dd>Generated from protobuf field &lt;code&gt;map&lt;string, string&gt; extra_data = 10;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#method_setExUserId">setExUserId()</a>
@@ -625,44 +613,6 @@
         <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">optional string ex_user_id = 11;</code></p>
 </section>
 
-    
-    
-
-        
-        
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                                    "
->
-    <h4 class="phpdocumentor-element__name" id="property_extra_data">
-        $extra_data
-        <a href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#property_extra_data" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                            </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/UserMetadata.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-usermetadata.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/UserMetadata.php">UserMetadata.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">58</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;optional string extra_data = 10;&lt;/code&gt;</p>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-        <span class="phpdocumentor-signature__visibility">protected</span>
-            <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">$extra_data</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
-
-    
     
     
 
@@ -1014,6 +964,44 @@
         
 
 </article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_extra_data">
+        $extra_data
+        <a href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#property_extra_data" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/UserMetadata.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-usermetadata.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/UserMetadata.php">UserMetadata.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">58</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;map&lt;string, string&gt; extra_data = 10;&lt;/code&gt;</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$extra_data</span>
+    </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
             </section>
 
             <section class="phpdocumentor-methods">
@@ -1069,7 +1057,7 @@ Optional. Data for populating the Message object.</p>
 @type \Mynaparrot\PlugnmeetProto\LockSettings $lock_settings
 @type string $metadata_id
       we'll use this as version control
-@type string $extra_data
+@type array|\Google\Protobuf\Internal\MapField $extra_data
 @type string $ex_user_id
       if remain empty then will use value from user_id
 </code></pre>
@@ -1091,40 +1079,6 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_clearExtraData">
-        clearExtraData()
-        <a href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#method_clearExtraData" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/UserMetadata.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-usermetadata.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/UserMetadata.php">UserMetadata.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">358</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">clearExtraData</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-        
-    
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_clearExUserId">
         clearExUserId()
         <a href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#method_clearExUserId" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1133,7 +1087,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/UserMetadata.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-usermetadata.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/UserMetadata.php">UserMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">392</span>
+    <span class="phpdocumentor-element-found-in__line">382</span>
 
     </aside>
 
@@ -1341,11 +1295,11 @@ Optional. Data for populating the Message object.</p>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;optional string extra_data = 10;&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;map&lt;string, string&gt; extra_data = 10;&lt;/code&gt;</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getExtraData</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getExtraData</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Internal\MapField">MapField</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1358,7 +1312,7 @@ Optional. Data for populating the Message object.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Internal\MapField">MapField</abbr></span>
             </section>
 
 </article>
@@ -1376,7 +1330,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/UserMetadata.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-usermetadata.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/UserMetadata.php">UserMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">382</span>
+    <span class="phpdocumentor-element-found-in__line">372</span>
 
     </aside>
 
@@ -1762,40 +1716,6 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_hasExtraData">
-        hasExtraData()
-        <a href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#method_hasExtraData" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/UserMetadata.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-usermetadata.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/UserMetadata.php">UserMetadata.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">353</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">hasExtraData</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-        
-    
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_hasExUserId">
         hasExUserId()
         <a href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#method_hasExUserId" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1804,7 +1724,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/UserMetadata.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-usermetadata.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/UserMetadata.php">UserMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">387</span>
+    <span class="phpdocumentor-element-found-in__line">377</span>
 
     </aside>
 
@@ -2008,15 +1928,15 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/UserMetadata.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-usermetadata.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/UserMetadata.php">UserMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">368</span>
+    <span class="phpdocumentor-element-found-in__line">358</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;optional string extra_data = 10;&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;map&lt;string, string&gt; extra_data = 10;&lt;/code&gt;</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setExtraData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                    <span class="phpdocumentor-signature__name">setExtraData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;|<abbr title="\Google\Protobuf\Internal\MapField">MapField</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2026,7 +1946,7 @@ Optional. Data for populating the Message object.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$var</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;|<abbr title="\Google\Protobuf\Internal\MapField">MapField</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -2057,7 +1977,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/UserMetadata.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-usermetadata.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/UserMetadata.php">UserMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">404</span>
+    <span class="phpdocumentor-element-found-in__line">394</span>
 
     </aside>
 
@@ -2653,7 +2573,6 @@ Optional. Data for populating the Message object.</p>
                 <li>
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#property_ex_user_id">$ex_user_id</a></li>
-                                                    <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#property_extra_data">$extra_data</a></li>
                                                     <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#property_is_admin">$is_admin</a></li>
                                                     <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#property_is_presenter">$is_presenter</a></li>
                                                     <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#property_lock_settings">$lock_settings</a></li>
@@ -2663,6 +2582,7 @@ Optional. Data for populating the Message object.</p>
                                                     <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#property_raised_hand">$raised_hand</a></li>
                                                     <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#property_record_webcam">$record_webcam</a></li>
                                                     <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#property_wait_for_approval">$wait_for_approval</a></li>
+                                                    <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#property_extra_data">$extra_data</a></li>
                                             </ul>
                 </li>
             
@@ -2670,7 +2590,6 @@ Optional. Data for populating the Message object.</p>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#method_clearExtraData">clearExtraData()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#method_clearExUserId">clearExUserId()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#method_clearLockSettings">clearLockSettings()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#method_clearMetadataId">clearMetadataId()</a></li>
@@ -2688,7 +2607,6 @@ Optional. Data for populating the Message object.</p>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#method_getRaisedHand">getRaisedHand()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#method_getRecordWebcam">getRecordWebcam()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#method_getWaitForApproval">getWaitForApproval()</a></li>
-                                            <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#method_hasExtraData">hasExtraData()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#method_hasExUserId">hasExUserId()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#method_hasLockSettings">hasLockSettings()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-UserMetadata.html#method_hasMetadataId">hasMetadataId()</a></li>
