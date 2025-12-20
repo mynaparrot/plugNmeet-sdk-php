@@ -118,6 +118,7 @@ $roomMetadata = array(
         ),
         "end_to_end_encryption_features" => array(
             "is_enabled" => false,
+            "enabled_self_insert_encryption_key" => false,
             "included_chat_messages" => false,
             // this may use more CPU for the user end.
             // do not enable it unless really necessary
