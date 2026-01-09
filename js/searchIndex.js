@@ -618,12 +618,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Livekit\\AcceptWhatsAppCallRequest\u003A\u003AgetWhatsappPhoneNumberId\u0028\u0029",
             "name": "getWhatsappPhoneNumberId",
-            "summary": "Required\u0020\u002D\u0020The\u0020number\u0020of\u0020the\u0020business\u0020that\u0020is\u0020conencting\u0020the\u0020call",
+            "summary": "Required\u0020\u002D\u0020The\u0020phone\u0020number\u0020id\u0020of\u0020the\u0020business\u0020that\u0020is\u0020conencting\u0020the\u0020call",
             "url": "classes/Livekit-AcceptWhatsAppCallRequest.html#method_getWhatsappPhoneNumberId"
         },                {
             "fqsen": "\\Livekit\\AcceptWhatsAppCallRequest\u003A\u003AsetWhatsappPhoneNumberId\u0028\u0029",
             "name": "setWhatsappPhoneNumberId",
-            "summary": "Required\u0020\u002D\u0020The\u0020number\u0020of\u0020the\u0020business\u0020that\u0020is\u0020conencting\u0020the\u0020call",
+            "summary": "Required\u0020\u002D\u0020The\u0020phone\u0020number\u0020id\u0020of\u0020the\u0020business\u0020that\u0020is\u0020conencting\u0020the\u0020call",
             "url": "classes/Livekit-AcceptWhatsAppCallRequest.html#method_setWhatsappPhoneNumberId"
         },                {
             "fqsen": "\\Livekit\\AcceptWhatsAppCallRequest\u003A\u003AgetWhatsappApiKey\u0028\u0029",
@@ -708,12 +708,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Livekit\\AcceptWhatsAppCallRequest\u003A\u003AgetParticipantIdentity\u0028\u0029",
             "name": "getParticipantIdentity",
-            "summary": "Optional\u0020\u002D\u0020Identity\u0020of\u0020the\u0020participant\u0020in\u0020LiveKit\u0020room",
+            "summary": "Optional\u0020\u002D\u0020Identity\u0020of\u0020the\u0020participant\u0020in\u0020LiveKit\u0020room\nThis\u0020is\u0020used\u0020for\u0020logging\u0020purposes,\u0020so\u0020it\u0020is\u0020advised\u0020to\u0020not\u0020put\u0020PII\u0020in\u0020this\u0020field.",
             "url": "classes/Livekit-AcceptWhatsAppCallRequest.html#method_getParticipantIdentity"
         },                {
             "fqsen": "\\Livekit\\AcceptWhatsAppCallRequest\u003A\u003AsetParticipantIdentity\u0028\u0029",
             "name": "setParticipantIdentity",
-            "summary": "Optional\u0020\u002D\u0020Identity\u0020of\u0020the\u0020participant\u0020in\u0020LiveKit\u0020room",
+            "summary": "Optional\u0020\u002D\u0020Identity\u0020of\u0020the\u0020participant\u0020in\u0020LiveKit\u0020room\nThis\u0020is\u0020used\u0020for\u0020logging\u0020purposes,\u0020so\u0020it\u0020is\u0020advised\u0020to\u0020not\u0020put\u0020PII\u0020in\u0020this\u0020field.",
             "url": "classes/Livekit-AcceptWhatsAppCallRequest.html#method_setParticipantIdentity"
         },                {
             "fqsen": "\\Livekit\\AcceptWhatsAppCallRequest\u003A\u003AgetParticipantName\u0028\u0029",
@@ -758,7 +758,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Livekit\\AcceptWhatsAppCallRequest\u003A\u003A\u0024whatsapp_phone_number_id",
             "name": "whatsapp_phone_number_id",
-            "summary": "Required\u0020\u002D\u0020The\u0020number\u0020of\u0020the\u0020business\u0020that\u0020is\u0020conencting\u0020the\u0020call",
+            "summary": "Required\u0020\u002D\u0020The\u0020phone\u0020number\u0020id\u0020of\u0020the\u0020business\u0020that\u0020is\u0020conencting\u0020the\u0020call",
             "url": "classes/Livekit-AcceptWhatsAppCallRequest.html#property_whatsapp_phone_number_id"
         },                {
             "fqsen": "\\Livekit\\AcceptWhatsAppCallRequest\u003A\u003A\u0024whatsapp_api_key",
@@ -798,7 +798,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Livekit\\AcceptWhatsAppCallRequest\u003A\u003A\u0024participant_identity",
             "name": "participant_identity",
-            "summary": "Optional\u0020\u002D\u0020Identity\u0020of\u0020the\u0020participant\u0020in\u0020LiveKit\u0020room",
+            "summary": "Optional\u0020\u002D\u0020Identity\u0020of\u0020the\u0020participant\u0020in\u0020LiveKit\u0020room\nThis\u0020is\u0020used\u0020for\u0020logging\u0020purposes,\u0020so\u0020it\u0020is\u0020advised\u0020to\u0020not\u0020put\u0020PII\u0020in\u0020this\u0020field.",
             "url": "classes/Livekit-AcceptWhatsAppCallRequest.html#property_participant_identity"
         },                {
             "fqsen": "\\Livekit\\AcceptWhatsAppCallRequest\u003A\u003A\u0024participant_name",
@@ -1383,12 +1383,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Livekit\\AgentDispatch\u003A\u003AgetMetadata\u0028\u0029",
             "name": "getMetadata",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020metadata\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020metadata\u0020\u003D\u00204\u0020\u005B\u0028.logger.redact\u0029\u0020\u003D\u0020true\u005D\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-AgentDispatch.html#method_getMetadata"
         },                {
             "fqsen": "\\Livekit\\AgentDispatch\u003A\u003AsetMetadata\u0028\u0029",
             "name": "setMetadata",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020metadata\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020metadata\u0020\u003D\u00204\u0020\u005B\u0028.logger.redact\u0029\u0020\u003D\u0020true\u005D\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-AgentDispatch.html#method_setMetadata"
         },                {
             "fqsen": "\\Livekit\\AgentDispatch\u003A\u003AgetState\u0028\u0029",
@@ -1428,7 +1428,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Livekit\\AgentDispatch\u003A\u003A\u0024metadata",
             "name": "metadata",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020metadata\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020metadata\u0020\u003D\u00204\u0020\u005B\u0028.logger.redact\u0029\u0020\u003D\u0020true\u005D\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-AgentDispatch.html#property_metadata"
         },                {
             "fqsen": "\\Livekit\\AgentDispatch\u003A\u003A\u0024state",
@@ -5963,12 +5963,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Livekit\\ConnectTwilioCallRequest\u003A\u003AgetParticipantIdentity\u0028\u0029",
             "name": "getParticipantIdentity",
-            "summary": "Optional\u0020identity\u0020of\u0020the\u0020participant\u0020in\u0020LiveKit\u0020room",
+            "summary": "Optional\u0020identity\u0020of\u0020the\u0020participant\u0020in\u0020LiveKit\u0020room\nThis\u0020is\u0020used\u0020for\u0020logging\u0020purposes,\u0020so\u0020it\u0020is\u0020advised\u0020to\u0020not\u0020put\u0020PII\u0020in\u0020this\u0020field.",
             "url": "classes/Livekit-ConnectTwilioCallRequest.html#method_getParticipantIdentity"
         },                {
             "fqsen": "\\Livekit\\ConnectTwilioCallRequest\u003A\u003AsetParticipantIdentity\u0028\u0029",
             "name": "setParticipantIdentity",
-            "summary": "Optional\u0020identity\u0020of\u0020the\u0020participant\u0020in\u0020LiveKit\u0020room",
+            "summary": "Optional\u0020identity\u0020of\u0020the\u0020participant\u0020in\u0020LiveKit\u0020room\nThis\u0020is\u0020used\u0020for\u0020logging\u0020purposes,\u0020so\u0020it\u0020is\u0020advised\u0020to\u0020not\u0020put\u0020PII\u0020in\u0020this\u0020field.",
             "url": "classes/Livekit-ConnectTwilioCallRequest.html#method_setParticipantIdentity"
         },                {
             "fqsen": "\\Livekit\\ConnectTwilioCallRequest\u003A\u003AgetParticipantName\u0028\u0029",
@@ -6028,7 +6028,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Livekit\\ConnectTwilioCallRequest\u003A\u003A\u0024participant_identity",
             "name": "participant_identity",
-            "summary": "Optional\u0020identity\u0020of\u0020the\u0020participant\u0020in\u0020LiveKit\u0020room",
+            "summary": "Optional\u0020identity\u0020of\u0020the\u0020participant\u0020in\u0020LiveKit\u0020room\nThis\u0020is\u0020used\u0020for\u0020logging\u0020purposes,\u0020so\u0020it\u0020is\u0020advised\u0020to\u0020not\u0020put\u0020PII\u0020in\u0020this\u0020field.",
             "url": "classes/Livekit-ConnectTwilioCallRequest.html#property_participant_identity"
         },                {
             "fqsen": "\\Livekit\\ConnectTwilioCallRequest\u003A\u003A\u0024participant_name",
@@ -6168,12 +6168,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Livekit\\CreateAgentDispatchRequest\u003A\u003AgetMetadata\u0028\u0029",
             "name": "getMetadata",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020metadata\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020metadata\u0020\u003D\u00203\u0020\u005B\u0028.logger.redact\u0029\u0020\u003D\u0020true\u005D\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-CreateAgentDispatchRequest.html#method_getMetadata"
         },                {
             "fqsen": "\\Livekit\\CreateAgentDispatchRequest\u003A\u003AsetMetadata\u0028\u0029",
             "name": "setMetadata",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020metadata\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020metadata\u0020\u003D\u00203\u0020\u005B\u0028.logger.redact\u0029\u0020\u003D\u0020true\u005D\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-CreateAgentDispatchRequest.html#method_setMetadata"
         },                {
             "fqsen": "\\Livekit\\CreateAgentDispatchRequest\u003A\u003A\u0024agent_name",
@@ -6188,7 +6188,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Livekit\\CreateAgentDispatchRequest\u003A\u003A\u0024metadata",
             "name": "metadata",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020metadata\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020metadata\u0020\u003D\u00203\u0020\u005B\u0028.logger.redact\u0029\u0020\u003D\u0020true\u005D\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-CreateAgentDispatchRequest.html#property_metadata"
         },                {
             "fqsen": "\\Livekit\\CreateAgentRequest",
@@ -9353,12 +9353,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Livekit\\DialWhatsAppCallRequest\u003A\u003AgetWhatsappPhoneNumberId\u0028\u0029",
             "name": "getWhatsappPhoneNumberId",
-            "summary": "Required\u0020\u002D\u0020The\u0020number\u0020of\u0020the\u0020business\u0020that\u0020is\u0020initiating\u0020the\u0020call",
+            "summary": "Required\u0020\u002D\u0020The\u0020phone\u0020number\u0020id\u0020of\u0020the\u0020business\u0020that\u0020is\u0020initiating\u0020the\u0020call",
             "url": "classes/Livekit-DialWhatsAppCallRequest.html#method_getWhatsappPhoneNumberId"
         },                {
             "fqsen": "\\Livekit\\DialWhatsAppCallRequest\u003A\u003AsetWhatsappPhoneNumberId\u0028\u0029",
             "name": "setWhatsappPhoneNumberId",
-            "summary": "Required\u0020\u002D\u0020The\u0020number\u0020of\u0020the\u0020business\u0020that\u0020is\u0020initiating\u0020the\u0020call",
+            "summary": "Required\u0020\u002D\u0020The\u0020phone\u0020number\u0020id\u0020of\u0020the\u0020business\u0020that\u0020is\u0020initiating\u0020the\u0020call",
             "url": "classes/Livekit-DialWhatsAppCallRequest.html#method_setWhatsappPhoneNumberId"
         },                {
             "fqsen": "\\Livekit\\DialWhatsAppCallRequest\u003A\u003AgetWhatsappToPhoneNumber\u0028\u0029",
@@ -9423,12 +9423,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Livekit\\DialWhatsAppCallRequest\u003A\u003AgetParticipantIdentity\u0028\u0029",
             "name": "getParticipantIdentity",
-            "summary": "Optional\u0020\u002D\u0020Identity\u0020of\u0020the\u0020participant\u0020in\u0020LiveKit\u0020room",
+            "summary": "Optional\u0020\u002D\u0020Identity\u0020of\u0020the\u0020participant\u0020in\u0020LiveKit\u0020room\nThis\u0020is\u0020used\u0020for\u0020logging\u0020purposes,\u0020so\u0020it\u0020is\u0020advised\u0020to\u0020not\u0020put\u0020PII\u0020in\u0020this\u0020field.",
             "url": "classes/Livekit-DialWhatsAppCallRequest.html#method_getParticipantIdentity"
         },                {
             "fqsen": "\\Livekit\\DialWhatsAppCallRequest\u003A\u003AsetParticipantIdentity\u0028\u0029",
             "name": "setParticipantIdentity",
-            "summary": "Optional\u0020\u002D\u0020Identity\u0020of\u0020the\u0020participant\u0020in\u0020LiveKit\u0020room",
+            "summary": "Optional\u0020\u002D\u0020Identity\u0020of\u0020the\u0020participant\u0020in\u0020LiveKit\u0020room\nThis\u0020is\u0020used\u0020for\u0020logging\u0020purposes,\u0020so\u0020it\u0020is\u0020advised\u0020to\u0020not\u0020put\u0020PII\u0020in\u0020this\u0020field.",
             "url": "classes/Livekit-DialWhatsAppCallRequest.html#method_setParticipantIdentity"
         },                {
             "fqsen": "\\Livekit\\DialWhatsAppCallRequest\u003A\u003AgetParticipantName\u0028\u0029",
@@ -9473,7 +9473,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Livekit\\DialWhatsAppCallRequest\u003A\u003A\u0024whatsapp_phone_number_id",
             "name": "whatsapp_phone_number_id",
-            "summary": "Required\u0020\u002D\u0020The\u0020number\u0020of\u0020the\u0020business\u0020that\u0020is\u0020initiating\u0020the\u0020call",
+            "summary": "Required\u0020\u002D\u0020The\u0020phone\u0020number\u0020id\u0020of\u0020the\u0020business\u0020that\u0020is\u0020initiating\u0020the\u0020call",
             "url": "classes/Livekit-DialWhatsAppCallRequest.html#property_whatsapp_phone_number_id"
         },                {
             "fqsen": "\\Livekit\\DialWhatsAppCallRequest\u003A\u003A\u0024whatsapp_to_phone_number",
@@ -9508,7 +9508,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Livekit\\DialWhatsAppCallRequest\u003A\u003A\u0024participant_identity",
             "name": "participant_identity",
-            "summary": "Optional\u0020\u002D\u0020Identity\u0020of\u0020the\u0020participant\u0020in\u0020LiveKit\u0020room",
+            "summary": "Optional\u0020\u002D\u0020Identity\u0020of\u0020the\u0020participant\u0020in\u0020LiveKit\u0020room\nThis\u0020is\u0020used\u0020for\u0020logging\u0020purposes,\u0020so\u0020it\u0020is\u0020advised\u0020to\u0020not\u0020put\u0020PII\u0020in\u0020this\u0020field.",
             "url": "classes/Livekit-DialWhatsAppCallRequest.html#property_participant_identity"
         },                {
             "fqsen": "\\Livekit\\DialWhatsAppCallRequest\u003A\u003A\u0024participant_name",
@@ -9821,6 +9821,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Livekit-DisconnectReason.html#property_valueToName"
         },                {
+            "fqsen": "\\Livekit\\DisconnectWhatsAppCallRequest\\DisconnectReason",
+            "name": "DisconnectReason",
+            "summary": "Protobuf\u0020type\u0020\u003Ccode\u003Elivekit.DisconnectWhatsAppCallRequest.DisconnectReason\u003C\/code\u003E",
+            "url": "classes/Livekit-DisconnectWhatsAppCallRequest-DisconnectReason.html"
+        },                {
+            "fqsen": "\\Livekit\\DisconnectWhatsAppCallRequest\\DisconnectReason\u003A\u003Aname\u0028\u0029",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Livekit-DisconnectWhatsAppCallRequest-DisconnectReason.html#method_name"
+        },                {
+            "fqsen": "\\Livekit\\DisconnectWhatsAppCallRequest\\DisconnectReason\u003A\u003Avalue\u0028\u0029",
+            "name": "value",
+            "summary": "",
+            "url": "classes/Livekit-DisconnectWhatsAppCallRequest-DisconnectReason.html#method_value"
+        },                {
+            "fqsen": "\\Livekit\\DisconnectWhatsAppCallRequest\\DisconnectReason\u003A\u003ABUSINESS_INITIATED",
+            "name": "BUSINESS_INITIATED",
+            "summary": "The\u0020call\u0020is\u0020being\u0020disconnected\u0020by\u0020the\u0020business",
+            "url": "classes/Livekit-DisconnectWhatsAppCallRequest-DisconnectReason.html#constant_BUSINESS_INITIATED"
+        },                {
+            "fqsen": "\\Livekit\\DisconnectWhatsAppCallRequest\\DisconnectReason\u003A\u003AUSER_INITIATED",
+            "name": "USER_INITIATED",
+            "summary": "The\u0020call\u0020is\u0020disconnected\u0020by\u0020the\u0020user.",
+            "url": "classes/Livekit-DisconnectWhatsAppCallRequest-DisconnectReason.html#constant_USER_INITIATED"
+        },                {
+            "fqsen": "\\Livekit\\DisconnectWhatsAppCallRequest\\DisconnectReason\u003A\u003A\u0024valueToName",
+            "name": "valueToName",
+            "summary": "",
+            "url": "classes/Livekit-DisconnectWhatsAppCallRequest-DisconnectReason.html#property_valueToName"
+        },                {
             "fqsen": "\\Livekit\\DisconnectWhatsAppCallRequest",
             "name": "DisconnectWhatsAppCallRequest",
             "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Elivekit.DisconnectWhatsAppCallRequest\u003C\/code\u003E",
@@ -9843,13 +9873,23 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Livekit\\DisconnectWhatsAppCallRequest\u003A\u003AgetWhatsappApiKey\u0028\u0029",
             "name": "getWhatsappApiKey",
-            "summary": "Required\u0020\u002D\u0020The\u0020API\u0020key\u0020of\u0020the\u0020business\u0020that\u0020is\u0020disconnecting\u0020the\u0020call",
+            "summary": "The\u0020API\u0020key\u0020of\u0020the\u0020whatsapp\u0020business.",
             "url": "classes/Livekit-DisconnectWhatsAppCallRequest.html#method_getWhatsappApiKey"
         },                {
             "fqsen": "\\Livekit\\DisconnectWhatsAppCallRequest\u003A\u003AsetWhatsappApiKey\u0028\u0029",
             "name": "setWhatsappApiKey",
-            "summary": "Required\u0020\u002D\u0020The\u0020API\u0020key\u0020of\u0020the\u0020business\u0020that\u0020is\u0020disconnecting\u0020the\u0020call",
+            "summary": "The\u0020API\u0020key\u0020of\u0020the\u0020whatsapp\u0020business.",
             "url": "classes/Livekit-DisconnectWhatsAppCallRequest.html#method_setWhatsappApiKey"
+        },                {
+            "fqsen": "\\Livekit\\DisconnectWhatsAppCallRequest\u003A\u003AgetDisconnectReason\u0028\u0029",
+            "name": "getDisconnectReason",
+            "summary": "The\u0020reason\u0020for\u0020disconnecting\u0020the\u0020call",
+            "url": "classes/Livekit-DisconnectWhatsAppCallRequest.html#method_getDisconnectReason"
+        },                {
+            "fqsen": "\\Livekit\\DisconnectWhatsAppCallRequest\u003A\u003AsetDisconnectReason\u0028\u0029",
+            "name": "setDisconnectReason",
+            "summary": "The\u0020reason\u0020for\u0020disconnecting\u0020the\u0020call",
+            "url": "classes/Livekit-DisconnectWhatsAppCallRequest.html#method_setDisconnectReason"
         },                {
             "fqsen": "\\Livekit\\DisconnectWhatsAppCallRequest\u003A\u003A\u0024whatsapp_call_id",
             "name": "whatsapp_call_id",
@@ -9858,8 +9898,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Livekit\\DisconnectWhatsAppCallRequest\u003A\u003A\u0024whatsapp_api_key",
             "name": "whatsapp_api_key",
-            "summary": "Required\u0020\u002D\u0020The\u0020API\u0020key\u0020of\u0020the\u0020business\u0020that\u0020is\u0020disconnecting\u0020the\u0020call",
+            "summary": "The\u0020API\u0020key\u0020of\u0020the\u0020whatsapp\u0020business.",
             "url": "classes/Livekit-DisconnectWhatsAppCallRequest.html#property_whatsapp_api_key"
+        },                {
+            "fqsen": "\\Livekit\\DisconnectWhatsAppCallRequest\u003A\u003A\u0024disconnect_reason",
+            "name": "disconnect_reason",
+            "summary": "The\u0020reason\u0020for\u0020disconnecting\u0020the\u0020call",
+            "url": "classes/Livekit-DisconnectWhatsAppCallRequest.html#property_disconnect_reason"
         },                {
             "fqsen": "\\Livekit\\DisconnectWhatsAppCallResponse",
             "name": "DisconnectWhatsAppCallResponse",
@@ -12638,22 +12683,22 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Livekit\\IngressInfo\u003A\u003AgetParticipantName\u0028\u0029",
             "name": "getParticipantName",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020participant_name\u0020\u003D\u002010\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020participant_name\u0020\u003D\u002010\u0020\u005B\u0028.logger.redact\u0029\u0020\u003D\u0020true\u005D\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-IngressInfo.html#method_getParticipantName"
         },                {
             "fqsen": "\\Livekit\\IngressInfo\u003A\u003AsetParticipantName\u0028\u0029",
             "name": "setParticipantName",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020participant_name\u0020\u003D\u002010\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020participant_name\u0020\u003D\u002010\u0020\u005B\u0028.logger.redact\u0029\u0020\u003D\u0020true\u005D\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-IngressInfo.html#method_setParticipantName"
         },                {
             "fqsen": "\\Livekit\\IngressInfo\u003A\u003AgetParticipantMetadata\u0028\u0029",
             "name": "getParticipantMetadata",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020participant_metadata\u0020\u003D\u002014\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020participant_metadata\u0020\u003D\u002014\u0020\u005B\u0028.logger.redact\u0029\u0020\u003D\u0020true,\u0020\u0028.logger.redact_format\u0029\u0020\u003D\u0020\u0022\u003Credacted\u0020\u0028\u007B\u007B\u0020.Size\u0020\u007D\u007D\u0020bytes\u0029\u003E\u0022\u005D\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-IngressInfo.html#method_getParticipantMetadata"
         },                {
             "fqsen": "\\Livekit\\IngressInfo\u003A\u003AsetParticipantMetadata\u0028\u0029",
             "name": "setParticipantMetadata",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020participant_metadata\u0020\u003D\u002014\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020participant_metadata\u0020\u003D\u002014\u0020\u005B\u0028.logger.redact\u0029\u0020\u003D\u0020true,\u0020\u0028.logger.redact_format\u0029\u0020\u003D\u0020\u0022\u003Credacted\u0020\u0028\u007B\u007B\u0020.Size\u0020\u007D\u007D\u0020bytes\u0029\u003E\u0022\u005D\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-IngressInfo.html#method_setParticipantMetadata"
         },                {
             "fqsen": "\\Livekit\\IngressInfo\u003A\u003AgetReusable\u0028\u0029",
@@ -12763,12 +12808,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Livekit\\IngressInfo\u003A\u003A\u0024participant_name",
             "name": "participant_name",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020participant_name\u0020\u003D\u002010\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020participant_name\u0020\u003D\u002010\u0020\u005B\u0028.logger.redact\u0029\u0020\u003D\u0020true\u005D\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-IngressInfo.html#property_participant_name"
         },                {
             "fqsen": "\\Livekit\\IngressInfo\u003A\u003A\u0024participant_metadata",
             "name": "participant_metadata",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020participant_metadata\u0020\u003D\u002014\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020participant_metadata\u0020\u003D\u002014\u0020\u005B\u0028.logger.redact\u0029\u0020\u003D\u0020true,\u0020\u0028.logger.redact_format\u0029\u0020\u003D\u0020\u0022\u003Credacted\u0020\u0028\u007B\u007B\u0020.Size\u0020\u007D\u007D\u0020bytes\u0029\u003E\u0022\u005D\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-IngressInfo.html#property_participant_metadata"
         },                {
             "fqsen": "\\Livekit\\IngressInfo\u003A\u003A\u0024reusable",
@@ -19461,6 +19506,46 @@ Search.appendIndex(
             "summary": "Details\u0020of\u0020the\u0020purchased\u0020phone\u0020numbers",
             "url": "classes/Livekit-PurchasePhoneNumberResponse.html#property_phone_numbers"
         },                {
+            "fqsen": "\\Livekit\\PushTextRequest",
+            "name": "PushTextRequest",
+            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Elivekit.PushTextRequest\u003C\/code\u003E",
+            "url": "classes/Livekit-PushTextRequest.html"
+        },                {
+            "fqsen": "\\Livekit\\PushTextRequest\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Livekit-PushTextRequest.html#method___construct"
+        },                {
+            "fqsen": "\\Livekit\\PushTextRequest\u003A\u003AgetMessageId\u0028\u0029",
+            "name": "getMessageId",
+            "summary": "The\u0020message_id\u0020of\u0020the\u0020TextMessageRequest\u0020that\u0020this\u0020push\u0020is\u0020for",
+            "url": "classes/Livekit-PushTextRequest.html#method_getMessageId"
+        },                {
+            "fqsen": "\\Livekit\\PushTextRequest\u003A\u003AsetMessageId\u0028\u0029",
+            "name": "setMessageId",
+            "summary": "The\u0020message_id\u0020of\u0020the\u0020TextMessageRequest\u0020that\u0020this\u0020push\u0020is\u0020for",
+            "url": "classes/Livekit-PushTextRequest.html#method_setMessageId"
+        },                {
+            "fqsen": "\\Livekit\\PushTextRequest\u003A\u003AgetContent\u0028\u0029",
+            "name": "getContent",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020content\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-PushTextRequest.html#method_getContent"
+        },                {
+            "fqsen": "\\Livekit\\PushTextRequest\u003A\u003AsetContent\u0028\u0029",
+            "name": "setContent",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020content\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-PushTextRequest.html#method_setContent"
+        },                {
+            "fqsen": "\\Livekit\\PushTextRequest\u003A\u003A\u0024message_id",
+            "name": "message_id",
+            "summary": "The\u0020message_id\u0020of\u0020the\u0020TextMessageRequest\u0020that\u0020this\u0020push\u0020is\u0020for",
+            "url": "classes/Livekit-PushTextRequest.html#property_message_id"
+        },                {
+            "fqsen": "\\Livekit\\PushTextRequest\u003A\u003A\u0024content",
+            "name": "content",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020content\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-PushTextRequest.html#property_content"
+        },                {
             "fqsen": "\\Livekit\\ReconnectReason",
             "name": "ReconnectReason",
             "summary": "Protobuf\u0020type\u0020\u003Ccode\u003Elivekit.ReconnectReason\u003C\/code\u003E",
@@ -20638,12 +20723,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Livekit\\RoomAgentDispatch\u003A\u003AgetMetadata\u0028\u0029",
             "name": "getMetadata",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020metadata\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020metadata\u0020\u003D\u00202\u0020\u005B\u0028.logger.redact\u0029\u0020\u003D\u0020true\u005D\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-RoomAgentDispatch.html#method_getMetadata"
         },                {
             "fqsen": "\\Livekit\\RoomAgentDispatch\u003A\u003AsetMetadata\u0028\u0029",
             "name": "setMetadata",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020metadata\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020metadata\u0020\u003D\u00202\u0020\u005B\u0028.logger.redact\u0029\u0020\u003D\u0020true\u005D\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-RoomAgentDispatch.html#method_setMetadata"
         },                {
             "fqsen": "\\Livekit\\RoomAgentDispatch\u003A\u003A\u0024agent_name",
@@ -20653,7 +20738,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Livekit\\RoomAgentDispatch\u003A\u003A\u0024metadata",
             "name": "metadata",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020metadata\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020metadata\u0020\u003D\u00202\u0020\u005B\u0028.logger.redact\u0029\u0020\u003D\u0020true\u005D\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-RoomAgentDispatch.html#property_metadata"
         },                {
             "fqsen": "\\Livekit\\RoomCompositeEgressRequest",
@@ -24141,6 +24226,21 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.livekit.WorkerPong\u0020pong\u0020\u003D\u00204\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-ServerMessage.html#method_setPong"
         },                {
+            "fqsen": "\\Livekit\\ServerMessage\u003A\u003AgetTextRequest\u0028\u0029",
+            "name": "getTextRequest",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.livekit.TextMessageRequest\u0020text_request\u0020\u003D\u00206\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-ServerMessage.html#method_getTextRequest"
+        },                {
+            "fqsen": "\\Livekit\\ServerMessage\u003A\u003AhasTextRequest\u0028\u0029",
+            "name": "hasTextRequest",
+            "summary": "",
+            "url": "classes/Livekit-ServerMessage.html#method_hasTextRequest"
+        },                {
+            "fqsen": "\\Livekit\\ServerMessage\u003A\u003AsetTextRequest\u0028\u0029",
+            "name": "setTextRequest",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.livekit.TextMessageRequest\u0020text_request\u0020\u003D\u00206\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-ServerMessage.html#method_setTextRequest"
+        },                {
             "fqsen": "\\Livekit\\ServerMessage\u003A\u003AgetMessage\u0028\u0029",
             "name": "getMessage",
             "summary": "",
@@ -26248,13 +26348,23 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Livekit\\SIPDispatchRuleInfo\u003A\u003AgetInboundNumbers\u0028\u0029",
             "name": "getInboundNumbers",
-            "summary": "Dispatch\u0020Rule\u0020will\u0020only\u0020accept\u0020a\u0020call\u0020made\u0020to\u0020these\u0020numbers\u0020\u0028if\u0020set\u0029.",
+            "summary": "Dispatch\u0020Rule\u0020will\u0020only\u0020accept\u0020a\u0020call\u0020made\u0020from\u0020these\u0020numbers\u0020\u0028if\u0020set\u0029.",
             "url": "classes/Livekit-SIPDispatchRuleInfo.html#method_getInboundNumbers"
         },                {
             "fqsen": "\\Livekit\\SIPDispatchRuleInfo\u003A\u003AsetInboundNumbers\u0028\u0029",
             "name": "setInboundNumbers",
-            "summary": "Dispatch\u0020Rule\u0020will\u0020only\u0020accept\u0020a\u0020call\u0020made\u0020to\u0020these\u0020numbers\u0020\u0028if\u0020set\u0029.",
+            "summary": "Dispatch\u0020Rule\u0020will\u0020only\u0020accept\u0020a\u0020call\u0020made\u0020from\u0020these\u0020numbers\u0020\u0028if\u0020set\u0029.",
             "url": "classes/Livekit-SIPDispatchRuleInfo.html#method_setInboundNumbers"
+        },                {
+            "fqsen": "\\Livekit\\SIPDispatchRuleInfo\u003A\u003AgetNumbers\u0028\u0029",
+            "name": "getNumbers",
+            "summary": "Dispatch\u0020Rule\u0020will\u0020only\u0020accept\u0020a\u0020call\u0020made\u0020to\u0020these\u0020numbers\u0020\u0028if\u0020set\u0029.",
+            "url": "classes/Livekit-SIPDispatchRuleInfo.html#method_getNumbers"
+        },                {
+            "fqsen": "\\Livekit\\SIPDispatchRuleInfo\u003A\u003AsetNumbers\u0028\u0029",
+            "name": "setNumbers",
+            "summary": "Dispatch\u0020Rule\u0020will\u0020only\u0020accept\u0020a\u0020call\u0020made\u0020to\u0020these\u0020numbers\u0020\u0028if\u0020set\u0029.",
+            "url": "classes/Livekit-SIPDispatchRuleInfo.html#method_setNumbers"
         },                {
             "fqsen": "\\Livekit\\SIPDispatchRuleInfo\u003A\u003AgetName\u0028\u0029",
             "name": "getName",
@@ -26328,12 +26438,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Livekit\\SIPDispatchRuleInfo\u003A\u003AgetMediaEncryption\u0028\u0029",
             "name": "getMediaEncryption",
-            "summary": "NEXT\u0020ID\u003A\u002013",
+            "summary": "NEXT\u0020ID\u003A\u002014",
             "url": "classes/Livekit-SIPDispatchRuleInfo.html#method_getMediaEncryption"
         },                {
             "fqsen": "\\Livekit\\SIPDispatchRuleInfo\u003A\u003AsetMediaEncryption\u0028\u0029",
             "name": "setMediaEncryption",
-            "summary": "NEXT\u0020ID\u003A\u002013",
+            "summary": "NEXT\u0020ID\u003A\u002014",
             "url": "classes/Livekit-SIPDispatchRuleInfo.html#method_setMediaEncryption"
         },                {
             "fqsen": "\\Livekit\\SIPDispatchRuleInfo\u003A\u003A\u0024sip_dispatch_rule_id",
@@ -26358,8 +26468,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Livekit\\SIPDispatchRuleInfo\u003A\u003A\u0024inbound_numbers",
             "name": "inbound_numbers",
-            "summary": "Dispatch\u0020Rule\u0020will\u0020only\u0020accept\u0020a\u0020call\u0020made\u0020to\u0020these\u0020numbers\u0020\u0028if\u0020set\u0029.",
+            "summary": "Dispatch\u0020Rule\u0020will\u0020only\u0020accept\u0020a\u0020call\u0020made\u0020from\u0020these\u0020numbers\u0020\u0028if\u0020set\u0029.",
             "url": "classes/Livekit-SIPDispatchRuleInfo.html#property_inbound_numbers"
+        },                {
+            "fqsen": "\\Livekit\\SIPDispatchRuleInfo\u003A\u003A\u0024numbers",
+            "name": "numbers",
+            "summary": "Dispatch\u0020Rule\u0020will\u0020only\u0020accept\u0020a\u0020call\u0020made\u0020to\u0020these\u0020numbers\u0020\u0028if\u0020set\u0029.",
+            "url": "classes/Livekit-SIPDispatchRuleInfo.html#property_numbers"
         },                {
             "fqsen": "\\Livekit\\SIPDispatchRuleInfo\u003A\u003A\u0024name",
             "name": "name",
@@ -26393,7 +26508,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Livekit\\SIPDispatchRuleInfo\u003A\u003A\u0024media_encryption",
             "name": "media_encryption",
-            "summary": "NEXT\u0020ID\u003A\u002013",
+            "summary": "NEXT\u0020ID\u003A\u002014",
             "url": "classes/Livekit-SIPDispatchRuleInfo.html#property_media_encryption"
         },                {
             "fqsen": "\\Livekit\\SIPDispatchRuleUpdate",
@@ -30216,6 +30331,161 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.livekit.PublishDataTrackResponse\u0020publish_data_tracks\u0020\u003D\u00208\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-SyncState.html#property_publish_data_tracks"
         },                {
+            "fqsen": "\\Livekit\\TextMessageRequest",
+            "name": "TextMessageRequest",
+            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Elivekit.TextMessageRequest\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageRequest.html"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Livekit-TextMessageRequest.html#method___construct"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003AgetMessageId\u0028\u0029",
+            "name": "getMessageId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020message_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageRequest.html#method_getMessageId"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003AsetMessageId\u0028\u0029",
+            "name": "setMessageId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020message_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageRequest.html#method_setMessageId"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003AgetSessionId\u0028\u0029",
+            "name": "getSessionId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020session_id\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageRequest.html#method_getSessionId"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003AsetSessionId\u0028\u0029",
+            "name": "setSessionId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020session_id\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageRequest.html#method_setSessionId"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003AgetAgentName\u0028\u0029",
+            "name": "getAgentName",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020agent_name\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageRequest.html#method_getAgentName"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003AsetAgentName\u0028\u0029",
+            "name": "setAgentName",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020agent_name\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageRequest.html#method_setAgentName"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003AgetMetadata\u0028\u0029",
+            "name": "getMetadata",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020metadata\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageRequest.html#method_getMetadata"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003AsetMetadata\u0028\u0029",
+            "name": "setMetadata",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020metadata\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageRequest.html#method_setMetadata"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003AgetSessionData\u0028\u0029",
+            "name": "getSessionData",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebytes\u0020session_data\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageRequest.html#method_getSessionData"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003AsetSessionData\u0028\u0029",
+            "name": "setSessionData",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebytes\u0020session_data\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageRequest.html#method_setSessionData"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003AgetText\u0028\u0029",
+            "name": "getText",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020text\u0020\u003D\u00206\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageRequest.html#method_getText"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003AsetText\u0028\u0029",
+            "name": "setText",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020text\u0020\u003D\u00206\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageRequest.html#method_setText"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003A\u0024message_id",
+            "name": "message_id",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020message_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageRequest.html#property_message_id"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003A\u0024session_id",
+            "name": "session_id",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020session_id\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageRequest.html#property_session_id"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003A\u0024agent_name",
+            "name": "agent_name",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020agent_name\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageRequest.html#property_agent_name"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003A\u0024metadata",
+            "name": "metadata",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020metadata\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageRequest.html#property_metadata"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003A\u0024session_data",
+            "name": "session_data",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebytes\u0020session_data\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageRequest.html#property_session_data"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003A\u0024text",
+            "name": "text",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020text\u0020\u003D\u00206\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageRequest.html#property_text"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageResponse",
+            "name": "TextMessageResponse",
+            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Elivekit.TextMessageResponse\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageResponse.html"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageResponse\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Livekit-TextMessageResponse.html#method___construct"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageResponse\u003A\u003AgetMessageId\u0028\u0029",
+            "name": "getMessageId",
+            "summary": "Indicate\u0020the\u0020request\u0020is\u0020completed",
+            "url": "classes/Livekit-TextMessageResponse.html#method_getMessageId"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageResponse\u003A\u003AsetMessageId\u0028\u0029",
+            "name": "setMessageId",
+            "summary": "Indicate\u0020the\u0020request\u0020is\u0020completed",
+            "url": "classes/Livekit-TextMessageResponse.html#method_setMessageId"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageResponse\u003A\u003AgetSessionData\u0028\u0029",
+            "name": "getSessionData",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebytes\u0020session_data\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageResponse.html#method_getSessionData"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageResponse\u003A\u003AsetSessionData\u0028\u0029",
+            "name": "setSessionData",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebytes\u0020session_data\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageResponse.html#method_setSessionData"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageResponse\u003A\u003AgetError\u0028\u0029",
+            "name": "getError",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020error\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageResponse.html#method_getError"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageResponse\u003A\u003AsetError\u0028\u0029",
+            "name": "setError",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020error\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageResponse.html#method_setError"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageResponse\u003A\u003A\u0024message_id",
+            "name": "message_id",
+            "summary": "Indicate\u0020the\u0020request\u0020is\u0020completed",
+            "url": "classes/Livekit-TextMessageResponse.html#property_message_id"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageResponse\u003A\u003A\u0024session_data",
+            "name": "session_data",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebytes\u0020session_data\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageResponse.html#property_session_data"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageResponse\u003A\u003A\u0024error",
+            "name": "error",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020error\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageResponse.html#property_error"
+        },                {
             "fqsen": "\\Livekit\\TimedVersion",
             "name": "TimedVersion",
             "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Elivekit.TimedVersion\u003C\/code\u003E",
@@ -32308,22 +32578,22 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Livekit\\UpdateIngressRequest\u003A\u003AgetParticipantName\u0028\u0029",
             "name": "getParticipantName",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020participant_name\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020participant_name\u0020\u003D\u00205\u0020\u005B\u0028.logger.redact\u0029\u0020\u003D\u0020true\u005D\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-UpdateIngressRequest.html#method_getParticipantName"
         },                {
             "fqsen": "\\Livekit\\UpdateIngressRequest\u003A\u003AsetParticipantName\u0028\u0029",
             "name": "setParticipantName",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020participant_name\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020participant_name\u0020\u003D\u00205\u0020\u005B\u0028.logger.redact\u0029\u0020\u003D\u0020true\u005D\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-UpdateIngressRequest.html#method_setParticipantName"
         },                {
             "fqsen": "\\Livekit\\UpdateIngressRequest\u003A\u003AgetParticipantMetadata\u0028\u0029",
             "name": "getParticipantMetadata",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020participant_metadata\u0020\u003D\u00209\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020participant_metadata\u0020\u003D\u00209\u0020\u005B\u0028.logger.redact\u0029\u0020\u003D\u0020true,\u0020\u0028.logger.redact_format\u0029\u0020\u003D\u0020\u0022\u003Credacted\u0020\u0028\u007B\u007B\u0020.Size\u0020\u007D\u007D\u0020bytes\u0029\u003E\u0022\u005D\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-UpdateIngressRequest.html#method_getParticipantMetadata"
         },                {
             "fqsen": "\\Livekit\\UpdateIngressRequest\u003A\u003AsetParticipantMetadata\u0028\u0029",
             "name": "setParticipantMetadata",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020participant_metadata\u0020\u003D\u00209\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020participant_metadata\u0020\u003D\u00209\u0020\u005B\u0028.logger.redact\u0029\u0020\u003D\u0020true,\u0020\u0028.logger.redact_format\u0029\u0020\u003D\u0020\u0022\u003Credacted\u0020\u0028\u007B\u007B\u0020.Size\u0020\u007D\u007D\u0020bytes\u0029\u003E\u0022\u005D\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-UpdateIngressRequest.html#method_setParticipantMetadata"
         },                {
             "fqsen": "\\Livekit\\UpdateIngressRequest\u003A\u003AgetBypassTranscoding\u0028\u0029",
@@ -32448,12 +32718,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Livekit\\UpdateIngressRequest\u003A\u003A\u0024participant_name",
             "name": "participant_name",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020participant_name\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020participant_name\u0020\u003D\u00205\u0020\u005B\u0028.logger.redact\u0029\u0020\u003D\u0020true\u005D\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-UpdateIngressRequest.html#property_participant_name"
         },                {
             "fqsen": "\\Livekit\\UpdateIngressRequest\u003A\u003A\u0024participant_metadata",
             "name": "participant_metadata",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020participant_metadata\u0020\u003D\u00209\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020participant_metadata\u0020\u003D\u00209\u0020\u005B\u0028.logger.redact\u0029\u0020\u003D\u0020true,\u0020\u0028.logger.redact_format\u0029\u0020\u003D\u0020\u0022\u003Credacted\u0020\u0028\u007B\u007B\u0020.Size\u0020\u007D\u007D\u0020bytes\u0029\u003E\u0022\u005D\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-UpdateIngressRequest.html#property_participant_metadata"
         },                {
             "fqsen": "\\Livekit\\UpdateIngressRequest\u003A\u003A\u0024bypass_transcoding",
@@ -34021,6 +34291,16 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020rid\u0020\u003D\u00207\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-VideoLayer.html#method_setRid"
         },                {
+            "fqsen": "\\Livekit\\VideoLayer\u003A\u003AgetRepairSsrc\u0028\u0029",
+            "name": "getRepairSsrc",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint32\u0020repair_ssrc\u0020\u003D\u00208\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-VideoLayer.html#method_getRepairSsrc"
+        },                {
+            "fqsen": "\\Livekit\\VideoLayer\u003A\u003AsetRepairSsrc\u0028\u0029",
+            "name": "setRepairSsrc",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint32\u0020repair_ssrc\u0020\u003D\u00208\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-VideoLayer.html#method_setRepairSsrc"
+        },                {
             "fqsen": "\\Livekit\\VideoLayer\u003A\u003A\u0024quality",
             "name": "quality",
             "summary": "for\u0020tracks\u0020with\u0020a\u0020single\u0020layer,\u0020this\u0020should\u0020be\u0020HIGH",
@@ -34055,6 +34335,11 @@ Search.appendIndex(
             "name": "rid",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020rid\u0020\u003D\u00207\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-VideoLayer.html#property_rid"
+        },                {
+            "fqsen": "\\Livekit\\VideoLayer\u003A\u003A\u0024repair_ssrc",
+            "name": "repair_ssrc",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint32\u0020repair_ssrc\u0020\u003D\u00208\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-VideoLayer.html#property_repair_ssrc"
         },                {
             "fqsen": "\\Livekit\\VideoQuality",
             "name": "VideoQuality",
@@ -35265,6 +35550,36 @@ Search.appendIndex(
             "name": "setMigrateJob",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.livekit.MigrateJobRequest\u0020migrate_job\u0020\u003D\u00207\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-WorkerMessage.html#method_setMigrateJob"
+        },                {
+            "fqsen": "\\Livekit\\WorkerMessage\u003A\u003AgetTextResponse\u0028\u0029",
+            "name": "getTextResponse",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.livekit.TextMessageResponse\u0020text_response\u0020\u003D\u00208\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-WorkerMessage.html#method_getTextResponse"
+        },                {
+            "fqsen": "\\Livekit\\WorkerMessage\u003A\u003AhasTextResponse\u0028\u0029",
+            "name": "hasTextResponse",
+            "summary": "",
+            "url": "classes/Livekit-WorkerMessage.html#method_hasTextResponse"
+        },                {
+            "fqsen": "\\Livekit\\WorkerMessage\u003A\u003AsetTextResponse\u0028\u0029",
+            "name": "setTextResponse",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.livekit.TextMessageResponse\u0020text_response\u0020\u003D\u00208\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-WorkerMessage.html#method_setTextResponse"
+        },                {
+            "fqsen": "\\Livekit\\WorkerMessage\u003A\u003AgetPushText\u0028\u0029",
+            "name": "getPushText",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.livekit.PushTextRequest\u0020push_text\u0020\u003D\u00209\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-WorkerMessage.html#method_getPushText"
+        },                {
+            "fqsen": "\\Livekit\\WorkerMessage\u003A\u003AhasPushText\u0028\u0029",
+            "name": "hasPushText",
+            "summary": "",
+            "url": "classes/Livekit-WorkerMessage.html#method_hasPushText"
+        },                {
+            "fqsen": "\\Livekit\\WorkerMessage\u003A\u003AsetPushText\u0028\u0029",
+            "name": "setPushText",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.livekit.PushTextRequest\u0020push_text\u0020\u003D\u00209\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-WorkerMessage.html#method_setPushText"
         },                {
             "fqsen": "\\Livekit\\WorkerMessage\u003A\u003AgetMessage\u0028\u0029",
             "name": "getMessage",
@@ -42211,6 +42526,26 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020string\u0020js_files\u0020\u003D\u00206\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-GetClientFilesRes.html#method_setJsFiles"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GetClientFilesRes\u003A\u003AgetStaticAssetsPath\u0028\u0029",
+            "name": "getStaticAssetsPath",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020static_assets_path\u0020\u003D\u00207\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-GetClientFilesRes.html#method_getStaticAssetsPath"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GetClientFilesRes\u003A\u003AhasStaticAssetsPath\u0028\u0029",
+            "name": "hasStaticAssetsPath",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-GetClientFilesRes.html#method_hasStaticAssetsPath"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GetClientFilesRes\u003A\u003AclearStaticAssetsPath\u0028\u0029",
+            "name": "clearStaticAssetsPath",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-GetClientFilesRes.html#method_clearStaticAssetsPath"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GetClientFilesRes\u003A\u003AsetStaticAssetsPath\u0028\u0029",
+            "name": "setStaticAssetsPath",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020static_assets_path\u0020\u003D\u00207\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-GetClientFilesRes.html#method_setStaticAssetsPath"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GetClientFilesRes\u003A\u003A\u0024status",
             "name": "status",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020status\u0020\u003D\u00201\u003B\u003C\/code\u003E",
@@ -42240,6 +42575,11 @@ Search.appendIndex(
             "name": "js_files",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020string\u0020js_files\u0020\u003D\u00206\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-GetClientFilesRes.html#property_js_files"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GetClientFilesRes\u003A\u003A\u0024static_assets_path",
+            "name": "static_assets_path",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020static_assets_path\u0020\u003D\u00207\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-GetClientFilesRes.html#property_static_assets_path"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GetDownloadTokenReq",
             "name": "GetDownloadTokenReq",
@@ -53510,6 +53850,11 @@ Search.appendIndex(
             "name": "DataTrackSubscriberHandles",
             "summary": "",
             "url": "namespaces/livekit-datatracksubscriberhandles.html"
+        },                {
+            "fqsen": "\\Livekit\\DisconnectWhatsAppCallRequest",
+            "name": "DisconnectWhatsAppCallRequest",
+            "summary": "",
+            "url": "namespaces/livekit-disconnectwhatsappcallrequest.html"
         },                {
             "fqsen": "\\Livekit\\Encryption",
             "name": "Encryption",

@@ -95,6 +95,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/livekit-disconnectwhatsappcallrequest.html" class="">DisconnectWhatsAppCallRequest</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/livekit-encryption.html" class="">Encryption</a>
                 
             </li>
@@ -272,6 +276,13 @@
 <dd>for tracks with a single layer, this should be HIGH</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Livekit-VideoLayer.html#property_repair_ssrc">$repair_ssrc</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;uint32 repair_ssrc = 8;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Livekit-VideoLayer.html#property_rid">$rid</a>
     <span>
                         &nbsp;: mixed            </span>
@@ -336,6 +347,13 @@
 <dd>for tracks with a single layer, this should be HIGH</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-VideoLayer.html#method_getRepairSsrc">getRepairSsrc()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;uint32 repair_ssrc = 8;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-VideoLayer.html#method_getRid">getRid()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -383,6 +401,13 @@
                                 &nbsp;: $this    </span>
 </dt>
 <dd>for tracks with a single layer, this should be HIGH</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-VideoLayer.html#method_setRepairSsrc">setRepairSsrc()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;uint32 repair_ssrc = 8;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-VideoLayer.html#method_setRid">setRid()</a>
@@ -536,6 +561,44 @@
         <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.livekit.VideoQuality quality = 1;</code></p>
 </section>
 
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_repair_ssrc">
+        $repair_ssrc
+        <a href="classes/Livekit-VideoLayer.html#property_repair_ssrc" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/VideoLayer.php"><a href="files/src-gen-livekit-videolayer.html"><abbr title="src/gen/Livekit/VideoLayer.php">VideoLayer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">54</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;uint32 repair_ssrc = 8;&lt;/code&gt;</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$repair_ssrc</span>
+     = <span class="phpdocumentor-signature__default-value">0</span></code>
+
+    
     
     
 
@@ -717,7 +780,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/VideoLayer.php"><a href="files/src-gen-livekit-videolayer.html"><abbr title="src/gen/Livekit/VideoLayer.php">VideoLayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -749,6 +812,7 @@ Optional. Data for populating the Message object.</p>
 @type int $ssrc
 @type int $spatial_layer
 @type string $rid
+@type int $repair_ssrc
 </code></pre>
 <p>}</p>
 </section>
@@ -776,7 +840,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/VideoLayer.php"><a href="files/src-gen-livekit-videolayer.html"><abbr title="src/gen/Livekit/VideoLayer.php">VideoLayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">150</span>
+    <span class="phpdocumentor-element-found-in__line">155</span>
 
     </aside>
 
@@ -817,7 +881,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/VideoLayer.php"><a href="files/src-gen-livekit-videolayer.html"><abbr title="src/gen/Livekit/VideoLayer.php">VideoLayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">126</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
@@ -856,7 +920,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/VideoLayer.php"><a href="files/src-gen-livekit-videolayer.html"><abbr title="src/gen/Livekit/VideoLayer.php">VideoLayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">85</span>
 
     </aside>
 
@@ -889,6 +953,45 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getRepairSsrc">
+        getRepairSsrc()
+        <a href="classes/Livekit-VideoLayer.html#method_getRepairSsrc" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/VideoLayer.php"><a href="files/src-gen-livekit-videolayer.html"><abbr title="src/gen/Livekit/VideoLayer.php">VideoLayer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">245</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;uint32 repair_ssrc = 8;&lt;/code&gt;</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getRepairSsrc</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getRid">
         getRid()
         <a href="classes/Livekit-VideoLayer.html#method_getRid" class="headerlink"><i class="fas fa-link"></i></a>
@@ -897,7 +1000,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/VideoLayer.php"><a href="files/src-gen-livekit-videolayer.html"><abbr title="src/gen/Livekit/VideoLayer.php">VideoLayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">218</span>
+    <span class="phpdocumentor-element-found-in__line">223</span>
 
     </aside>
 
@@ -936,7 +1039,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/VideoLayer.php"><a href="files/src-gen-livekit-videolayer.html"><abbr title="src/gen/Livekit/VideoLayer.php">VideoLayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">196</span>
+    <span class="phpdocumentor-element-found-in__line">201</span>
 
     </aside>
 
@@ -975,7 +1078,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/VideoLayer.php"><a href="files/src-gen-livekit-videolayer.html"><abbr title="src/gen/Livekit/VideoLayer.php">VideoLayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">174</span>
+    <span class="phpdocumentor-element-found-in__line">179</span>
 
     </aside>
 
@@ -1014,7 +1117,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/VideoLayer.php"><a href="files/src-gen-livekit-videolayer.html"><abbr title="src/gen/Livekit/VideoLayer.php">VideoLayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">109</span>
 
     </aside>
 
@@ -1053,7 +1156,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/VideoLayer.php"><a href="files/src-gen-livekit-videolayer.html"><abbr title="src/gen/Livekit/VideoLayer.php">VideoLayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">162</span>
+    <span class="phpdocumentor-element-found-in__line">167</span>
 
     </aside>
 
@@ -1104,7 +1207,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/VideoLayer.php"><a href="files/src-gen-livekit-videolayer.html"><abbr title="src/gen/Livekit/VideoLayer.php">VideoLayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">136</span>
+    <span class="phpdocumentor-element-found-in__line">141</span>
 
     </aside>
 
@@ -1153,7 +1256,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/VideoLayer.php"><a href="files/src-gen-livekit-videolayer.html"><abbr title="src/gen/Livekit/VideoLayer.php">VideoLayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">97</span>
 
     </aside>
 
@@ -1196,6 +1299,55 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_setRepairSsrc">
+        setRepairSsrc()
+        <a href="classes/Livekit-VideoLayer.html#method_setRepairSsrc" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/VideoLayer.php"><a href="files/src-gen-livekit-videolayer.html"><abbr title="src/gen/Livekit/VideoLayer.php">VideoLayer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">255</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;uint32 repair_ssrc = 8;&lt;/code&gt;</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setRepairSsrc</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setRid">
         setRid()
         <a href="classes/Livekit-VideoLayer.html#method_setRid" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1204,7 +1356,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/VideoLayer.php"><a href="files/src-gen-livekit-videolayer.html"><abbr title="src/gen/Livekit/VideoLayer.php">VideoLayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">228</span>
+    <span class="phpdocumentor-element-found-in__line">233</span>
 
     </aside>
 
@@ -1253,7 +1405,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/VideoLayer.php"><a href="files/src-gen-livekit-videolayer.html"><abbr title="src/gen/Livekit/VideoLayer.php">VideoLayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">206</span>
+    <span class="phpdocumentor-element-found-in__line">211</span>
 
     </aside>
 
@@ -1302,7 +1454,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/VideoLayer.php"><a href="files/src-gen-livekit-videolayer.html"><abbr title="src/gen/Livekit/VideoLayer.php">VideoLayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">184</span>
+    <span class="phpdocumentor-element-found-in__line">189</span>
 
     </aside>
 
@@ -1351,7 +1503,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/VideoLayer.php"><a href="files/src-gen-livekit-videolayer.html"><abbr title="src/gen/Livekit/VideoLayer.php">VideoLayer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">114</span>
+    <span class="phpdocumentor-element-found-in__line">119</span>
 
     </aside>
 
@@ -1504,6 +1656,7 @@ Optional. Data for populating the Message object.</p>
                                                     <li class=""><a href="classes/Livekit-VideoLayer.html#property_bitrate">$bitrate</a></li>
                                                     <li class=""><a href="classes/Livekit-VideoLayer.html#property_height">$height</a></li>
                                                     <li class=""><a href="classes/Livekit-VideoLayer.html#property_quality">$quality</a></li>
+                                                    <li class=""><a href="classes/Livekit-VideoLayer.html#property_repair_ssrc">$repair_ssrc</a></li>
                                                     <li class=""><a href="classes/Livekit-VideoLayer.html#property_rid">$rid</a></li>
                                                     <li class=""><a href="classes/Livekit-VideoLayer.html#property_spatial_layer">$spatial_layer</a></li>
                                                     <li class=""><a href="classes/Livekit-VideoLayer.html#property_ssrc">$ssrc</a></li>
@@ -1518,6 +1671,7 @@ Optional. Data for populating the Message object.</p>
                                             <li class=""><a href="classes/Livekit-VideoLayer.html#method_getBitrate">getBitrate()</a></li>
                                             <li class=""><a href="classes/Livekit-VideoLayer.html#method_getHeight">getHeight()</a></li>
                                             <li class=""><a href="classes/Livekit-VideoLayer.html#method_getQuality">getQuality()</a></li>
+                                            <li class=""><a href="classes/Livekit-VideoLayer.html#method_getRepairSsrc">getRepairSsrc()</a></li>
                                             <li class=""><a href="classes/Livekit-VideoLayer.html#method_getRid">getRid()</a></li>
                                             <li class=""><a href="classes/Livekit-VideoLayer.html#method_getSpatialLayer">getSpatialLayer()</a></li>
                                             <li class=""><a href="classes/Livekit-VideoLayer.html#method_getSsrc">getSsrc()</a></li>
@@ -1525,6 +1679,7 @@ Optional. Data for populating the Message object.</p>
                                             <li class=""><a href="classes/Livekit-VideoLayer.html#method_setBitrate">setBitrate()</a></li>
                                             <li class=""><a href="classes/Livekit-VideoLayer.html#method_setHeight">setHeight()</a></li>
                                             <li class=""><a href="classes/Livekit-VideoLayer.html#method_setQuality">setQuality()</a></li>
+                                            <li class=""><a href="classes/Livekit-VideoLayer.html#method_setRepairSsrc">setRepairSsrc()</a></li>
                                             <li class=""><a href="classes/Livekit-VideoLayer.html#method_setRid">setRid()</a></li>
                                             <li class=""><a href="classes/Livekit-VideoLayer.html#method_setSpatialLayer">setSpatialLayer()</a></li>
                                             <li class=""><a href="classes/Livekit-VideoLayer.html#method_setSsrc">setSsrc()</a></li>
