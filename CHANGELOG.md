@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.0.0...v2.0.1) (2026-01-09)
+
+
+### Bug Fixes
+
+* to use `staticAssetsPath` CDN host ([58110df](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/58110dfe1a4dc1b9cf252746e22ce970fb285b70))
+
 ## [2.0.0](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v1.6.2...v2.0.0) (2025-12-20)
 
 
