@@ -15,7 +15,7 @@ use Google\Protobuf\RepeatedField;
 class AcceptWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Required - The number of the business that is conencting the call
+     * Required - The phone number id of the business that is conencting the call
      *
      * Generated from protobuf field <code>string whatsapp_phone_number_id = 1;</code>
      */
@@ -65,6 +65,7 @@ class AcceptWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
     private $agents;
     /**
      * Optional - Identity of the participant in LiveKit room
+     * This is used for logging purposes, so it is advised to not put PII in this field.
      *
      * Generated from protobuf field <code>string participant_identity = 8;</code>
      */
@@ -101,7 +102,7 @@ class AcceptWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $whatsapp_phone_number_id
-     *           Required - The number of the business that is conencting the call
+     *           Required - The phone number id of the business that is conencting the call
      *     @type string $whatsapp_api_key
      *           Required - The API key of the business that is connecting the call
      *     @type string $whatsapp_cloud_api_version
@@ -119,6 +120,7 @@ class AcceptWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
      *           Optional - Agents to dispatch the call to
      *     @type string $participant_identity
      *           Optional - Identity of the participant in LiveKit room
+     *           This is used for logging purposes, so it is advised to not put PII in this field.
      *     @type string $participant_name
      *           Optional - Name of the participant in LiveKit room
      *     @type string $participant_metadata
@@ -135,7 +137,7 @@ class AcceptWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Required - The number of the business that is conencting the call
+     * Required - The phone number id of the business that is conencting the call
      *
      * Generated from protobuf field <code>string whatsapp_phone_number_id = 1;</code>
      * @return string
@@ -146,7 +148,7 @@ class AcceptWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Required - The number of the business that is conencting the call
+     * Required - The phone number id of the business that is conencting the call
      *
      * Generated from protobuf field <code>string whatsapp_phone_number_id = 1;</code>
      * @param string $var
@@ -356,6 +358,7 @@ class AcceptWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Optional - Identity of the participant in LiveKit room
+     * This is used for logging purposes, so it is advised to not put PII in this field.
      *
      * Generated from protobuf field <code>string participant_identity = 8;</code>
      * @return string
@@ -367,6 +370,7 @@ class AcceptWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Optional - Identity of the participant in LiveKit room
+     * This is used for logging purposes, so it is advised to not put PII in this field.
      *
      * Generated from protobuf field <code>string participant_identity = 8;</code>
      * @param string $var

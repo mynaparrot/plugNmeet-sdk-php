@@ -34,6 +34,7 @@ class ConnectTwilioCallRequest extends \Google\Protobuf\Internal\Message
     private $agents;
     /**
      * Optional identity of the participant in LiveKit room
+     * This is used for logging purposes, so it is advised to not put PII in this field.
      *
      * Generated from protobuf field <code>string participant_identity = 4;</code>
      */
@@ -77,6 +78,7 @@ class ConnectTwilioCallRequest extends \Google\Protobuf\Internal\Message
      *           Optional agents to dispatch the call to
      *     @type string $participant_identity
      *           Optional identity of the participant in LiveKit room
+     *           This is used for logging purposes, so it is advised to not put PII in this field.
      *     @type string $participant_name
      *           Optional name of the participant in LiveKit room
      *     @type string $participant_metadata
@@ -172,6 +174,7 @@ class ConnectTwilioCallRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Optional identity of the participant in LiveKit room
+     * This is used for logging purposes, so it is advised to not put PII in this field.
      *
      * Generated from protobuf field <code>string participant_identity = 4;</code>
      * @return string
@@ -183,6 +186,7 @@ class ConnectTwilioCallRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Optional identity of the participant in LiveKit room
+     * This is used for logging purposes, so it is advised to not put PII in this field.
      *
      * Generated from protobuf field <code>string participant_identity = 4;</code>
      * @param string $var

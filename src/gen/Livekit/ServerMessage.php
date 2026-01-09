@@ -31,6 +31,7 @@ class ServerMessage extends \Google\Protobuf\Internal\Message
      *     @type \Livekit\JobAssignment $assignment
      *     @type \Livekit\JobTermination $termination
      *     @type \Livekit\WorkerPong $pong
+     *     @type \Livekit\TextMessageRequest $text_request
      * }
      */
     public function __construct($data = NULL) {
@@ -177,6 +178,33 @@ class ServerMessage extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Livekit\WorkerPong::class);
         $this->writeOneof(4, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.livekit.TextMessageRequest text_request = 6;</code>
+     * @return \Livekit\TextMessageRequest|null
+     */
+    public function getTextRequest()
+    {
+        return $this->readOneof(6);
+    }
+
+    public function hasTextRequest()
+    {
+        return $this->hasOneof(6);
+    }
+
+    /**
+     * Generated from protobuf field <code>.livekit.TextMessageRequest text_request = 6;</code>
+     * @param \Livekit\TextMessageRequest $var
+     * @return $this
+     */
+    public function setTextRequest($var)
+    {
+        GPBUtil::checkMessage($var, \Livekit\TextMessageRequest::class);
+        $this->writeOneof(6, $var);
 
         return $this;
     }

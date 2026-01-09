@@ -53,21 +53,25 @@ $config->plugnmeet_secret = "zumyyYWqv7KR2kUqvYdq4z4sXg7XTBD2ljT6";
 $connect = new plugNmeetConnect($config);
 // https://www.plugnmeet.org/docs/api/get-client-files
 try {
-    $files = $connect->getClientFiles();
+    $res = $connect->getClientFiles();
 } catch (Exception $e) {
     die($e->getMessage());
 }
 
-if (!$files->getStatus()) {
-    die($files->getMsg());
+if (!$res->getStatus()) {
+    die($res->getMsg());
 }
 
-$jsFiles = $files->getJsFiles();
-$cssFiles = $files->getCssFiles();
+$jsFiles = $res->getJsFiles();
+$cssFiles = $res->getCssFiles();
 $assetsPath = $config->plugnmeet_server_url . "/assets";
 
 if (empty($jsFiles) || empty($cssFiles)) {
     die("didn't get required files to build interface");
+}
+
+if (!empty($res->getStaticAssetsPath())){
+    $assetsPath = $res->getStaticAssetsPath();
 }
 
 $jsTags = "";

@@ -21,11 +21,19 @@ class DisconnectWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
      */
     protected $whatsapp_call_id = '';
     /**
-     * Required - The API key of the business that is disconnecting the call
+     * The API key of the whatsapp business.
+     * Required if the DisconnectReason is BUSINESS_INITIATED.
+     * Optional for  USER_INITIATED as no API call to WhatsApp is needed.
      *
      * Generated from protobuf field <code>string whatsapp_api_key = 2 [(.logger.redact) = true];</code>
      */
     protected $whatsapp_api_key = '';
+    /**
+     * The reason for disconnecting the call
+     *
+     * Generated from protobuf field <code>.livekit.DisconnectWhatsAppCallRequest.DisconnectReason disconnect_reason = 3;</code>
+     */
+    protected $disconnect_reason = 0;
 
     /**
      * Constructor.
@@ -36,7 +44,11 @@ class DisconnectWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
      *     @type string $whatsapp_call_id
      *           Required - Call ID sent by Meta
      *     @type string $whatsapp_api_key
-     *           Required - The API key of the business that is disconnecting the call
+     *           The API key of the whatsapp business.
+     *           Required if the DisconnectReason is BUSINESS_INITIATED.
+     *           Optional for  USER_INITIATED as no API call to WhatsApp is needed.
+     *     @type int $disconnect_reason
+     *           The reason for disconnecting the call
      * }
      */
     public function __construct($data = NULL) {
@@ -71,7 +83,9 @@ class DisconnectWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Required - The API key of the business that is disconnecting the call
+     * The API key of the whatsapp business.
+     * Required if the DisconnectReason is BUSINESS_INITIATED.
+     * Optional for  USER_INITIATED as no API call to WhatsApp is needed.
      *
      * Generated from protobuf field <code>string whatsapp_api_key = 2 [(.logger.redact) = true];</code>
      * @return string
@@ -82,7 +96,9 @@ class DisconnectWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Required - The API key of the business that is disconnecting the call
+     * The API key of the whatsapp business.
+     * Required if the DisconnectReason is BUSINESS_INITIATED.
+     * Optional for  USER_INITIATED as no API call to WhatsApp is needed.
      *
      * Generated from protobuf field <code>string whatsapp_api_key = 2 [(.logger.redact) = true];</code>
      * @param string $var
@@ -92,6 +108,32 @@ class DisconnectWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->whatsapp_api_key = $var;
+
+        return $this;
+    }
+
+    /**
+     * The reason for disconnecting the call
+     *
+     * Generated from protobuf field <code>.livekit.DisconnectWhatsAppCallRequest.DisconnectReason disconnect_reason = 3;</code>
+     * @return int
+     */
+    public function getDisconnectReason()
+    {
+        return $this->disconnect_reason;
+    }
+
+    /**
+     * The reason for disconnecting the call
+     *
+     * Generated from protobuf field <code>.livekit.DisconnectWhatsAppCallRequest.DisconnectReason disconnect_reason = 3;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setDisconnectReason($var)
+    {
+        GPBUtil::checkEnum($var, \Livekit\DisconnectWhatsAppCallRequest\DisconnectReason::class);
+        $this->disconnect_reason = $var;
 
         return $this;
     }

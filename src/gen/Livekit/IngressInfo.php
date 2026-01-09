@@ -66,11 +66,11 @@ class IngressInfo extends \Google\Protobuf\Internal\Message
      */
     protected $participant_identity = '';
     /**
-     * Generated from protobuf field <code>string participant_name = 10;</code>
+     * Generated from protobuf field <code>string participant_name = 10 [(.logger.redact) = true];</code>
      */
     protected $participant_name = '';
     /**
-     * Generated from protobuf field <code>string participant_metadata = 14;</code>
+     * Generated from protobuf field <code>string participant_metadata = 14 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
      */
     protected $participant_metadata = '';
     /**
@@ -416,7 +416,7 @@ class IngressInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string participant_name = 10;</code>
+     * Generated from protobuf field <code>string participant_name = 10 [(.logger.redact) = true];</code>
      * @return string
      */
     public function getParticipantName()
@@ -425,7 +425,7 @@ class IngressInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string participant_name = 10;</code>
+     * Generated from protobuf field <code>string participant_name = 10 [(.logger.redact) = true];</code>
      * @param string $var
      * @return $this
      */
@@ -438,7 +438,7 @@ class IngressInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string participant_metadata = 14;</code>
+     * Generated from protobuf field <code>string participant_metadata = 14 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
      * @return string
      */
     public function getParticipantMetadata()
@@ -447,7 +447,7 @@ class IngressInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string participant_metadata = 14;</code>
+     * Generated from protobuf field <code>string participant_metadata = 14 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
      * @param string $var
      * @return $this
      */

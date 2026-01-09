@@ -40,6 +40,10 @@ class GetClientFilesRes extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated string js_files = 6;</code>
      */
     private $js_files;
+    /**
+     * Generated from protobuf field <code>optional string static_assets_path = 7;</code>
+     */
+    protected $static_assets_path = null;
 
     /**
      * Constructor.
@@ -53,6 +57,7 @@ class GetClientFilesRes extends \Google\Protobuf\Internal\Message
      *     @type string[] $js
      *     @type string[] $css_files
      *     @type string[] $js_files
+     *     @type string $static_assets_path
      * }
      */
     public function __construct($data = NULL) {
@@ -204,6 +209,38 @@ class GetClientFilesRes extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->js_files = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string static_assets_path = 7;</code>
+     * @return string
+     */
+    public function getStaticAssetsPath()
+    {
+        return isset($this->static_assets_path) ? $this->static_assets_path : '';
+    }
+
+    public function hasStaticAssetsPath()
+    {
+        return isset($this->static_assets_path);
+    }
+
+    public function clearStaticAssetsPath()
+    {
+        unset($this->static_assets_path);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string static_assets_path = 7;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setStaticAssetsPath($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->static_assets_path = $var;
 
         return $this;
     }

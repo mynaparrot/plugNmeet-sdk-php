@@ -31,11 +31,17 @@ class SIPDispatchRuleInfo extends \Google\Protobuf\Internal\Message
      */
     protected $hide_phone_number = false;
     /**
-     * Dispatch Rule will only accept a call made to these numbers (if set).
+     * Dispatch Rule will only accept a call made from these numbers (if set).
      *
      * Generated from protobuf field <code>repeated string inbound_numbers = 7;</code>
      */
     private $inbound_numbers;
+    /**
+     * Dispatch Rule will only accept a call made to these numbers (if set).
+     *
+     * Generated from protobuf field <code>repeated string numbers = 13;</code>
+     */
+    private $numbers;
     /**
      * Human-readable name for the Dispatch Rule.
      *
@@ -73,7 +79,7 @@ class SIPDispatchRuleInfo extends \Google\Protobuf\Internal\Message
      */
     protected $krisp_enabled = false;
     /**
-     * NEXT ID: 13
+     * NEXT ID: 14
      *
      * Generated from protobuf field <code>.livekit.SIPMediaEncryption media_encryption = 12;</code>
      */
@@ -90,6 +96,8 @@ class SIPDispatchRuleInfo extends \Google\Protobuf\Internal\Message
      *     @type string[] $trunk_ids
      *     @type bool $hide_phone_number
      *     @type string[] $inbound_numbers
+     *           Dispatch Rule will only accept a call made from these numbers (if set).
+     *     @type string[] $numbers
      *           Dispatch Rule will only accept a call made to these numbers (if set).
      *     @type string $name
      *           Human-readable name for the Dispatch Rule.
@@ -105,7 +113,7 @@ class SIPDispatchRuleInfo extends \Google\Protobuf\Internal\Message
      *           RoomConfiguration to use if the participant initiates the room
      *     @type bool $krisp_enabled
      *     @type int $media_encryption
-     *           NEXT ID: 13
+     *           NEXT ID: 14
      * }
      */
     public function __construct($data = NULL) {
@@ -212,7 +220,7 @@ class SIPDispatchRuleInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Dispatch Rule will only accept a call made to these numbers (if set).
+     * Dispatch Rule will only accept a call made from these numbers (if set).
      *
      * Generated from protobuf field <code>repeated string inbound_numbers = 7;</code>
      * @return RepeatedField<string>
@@ -223,7 +231,7 @@ class SIPDispatchRuleInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Dispatch Rule will only accept a call made to these numbers (if set).
+     * Dispatch Rule will only accept a call made from these numbers (if set).
      *
      * Generated from protobuf field <code>repeated string inbound_numbers = 7;</code>
      * @param string[] $var
@@ -233,6 +241,32 @@ class SIPDispatchRuleInfo extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->inbound_numbers = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Dispatch Rule will only accept a call made to these numbers (if set).
+     *
+     * Generated from protobuf field <code>repeated string numbers = 13;</code>
+     * @return RepeatedField<string>
+     */
+    public function getNumbers()
+    {
+        return $this->numbers;
+    }
+
+    /**
+     * Dispatch Rule will only accept a call made to these numbers (if set).
+     *
+     * Generated from protobuf field <code>repeated string numbers = 13;</code>
+     * @param string[] $var
+     * @return $this
+     */
+    public function setNumbers($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->numbers = $arr;
 
         return $this;
     }
@@ -404,7 +438,7 @@ class SIPDispatchRuleInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * NEXT ID: 13
+     * NEXT ID: 14
      *
      * Generated from protobuf field <code>.livekit.SIPMediaEncryption media_encryption = 12;</code>
      * @return int
@@ -415,7 +449,7 @@ class SIPDispatchRuleInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * NEXT ID: 13
+     * NEXT ID: 14
      *
      * Generated from protobuf field <code>.livekit.SIPMediaEncryption media_encryption = 12;</code>
      * @param int $var

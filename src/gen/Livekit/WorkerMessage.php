@@ -35,6 +35,8 @@ class WorkerMessage extends \Google\Protobuf\Internal\Message
      *     @type \Livekit\WorkerPing $ping
      *     @type \Livekit\SimulateJobRequest $simulate_job
      *     @type \Livekit\MigrateJobRequest $migrate_job
+     *     @type \Livekit\TextMessageResponse $text_response
+     *     @type \Livekit\PushTextRequest $push_text
      * }
      */
     public function __construct($data = NULL) {
@@ -243,6 +245,60 @@ class WorkerMessage extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Livekit\MigrateJobRequest::class);
         $this->writeOneof(7, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.livekit.TextMessageResponse text_response = 8;</code>
+     * @return \Livekit\TextMessageResponse|null
+     */
+    public function getTextResponse()
+    {
+        return $this->readOneof(8);
+    }
+
+    public function hasTextResponse()
+    {
+        return $this->hasOneof(8);
+    }
+
+    /**
+     * Generated from protobuf field <code>.livekit.TextMessageResponse text_response = 8;</code>
+     * @param \Livekit\TextMessageResponse $var
+     * @return $this
+     */
+    public function setTextResponse($var)
+    {
+        GPBUtil::checkMessage($var, \Livekit\TextMessageResponse::class);
+        $this->writeOneof(8, $var);
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.livekit.PushTextRequest push_text = 9;</code>
+     * @return \Livekit\PushTextRequest|null
+     */
+    public function getPushText()
+    {
+        return $this->readOneof(9);
+    }
+
+    public function hasPushText()
+    {
+        return $this->hasOneof(9);
+    }
+
+    /**
+     * Generated from protobuf field <code>.livekit.PushTextRequest push_text = 9;</code>
+     * @param \Livekit\PushTextRequest $var
+     * @return $this
+     */
+    public function setPushText($var)
+    {
+        GPBUtil::checkMessage($var, \Livekit\PushTextRequest::class);
+        $this->writeOneof(9, $var);
 
         return $this;
     }
