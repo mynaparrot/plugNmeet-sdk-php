@@ -591,21 +591,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/GPBMetadata-PlugnmeetRoomArtifacts.html#property_is_initialized"
         },                {
-            "fqsen": "\\GPBMetadata\\PlugnmeetSpeechServices",
-            "name": "PlugnmeetSpeechServices",
-            "summary": "",
-            "url": "classes/GPBMetadata-PlugnmeetSpeechServices.html"
-        },                {
-            "fqsen": "\\GPBMetadata\\PlugnmeetSpeechServices\u003A\u003AinitOnce\u0028\u0029",
-            "name": "initOnce",
-            "summary": "",
-            "url": "classes/GPBMetadata-PlugnmeetSpeechServices.html#method_initOnce"
-        },                {
-            "fqsen": "\\GPBMetadata\\PlugnmeetSpeechServices\u003A\u003A\u0024is_initialized",
-            "name": "is_initialized",
-            "summary": "",
-            "url": "classes/GPBMetadata-PlugnmeetSpeechServices.html#property_is_initialized"
-        },                {
             "fqsen": "\\Livekit\\AcceptWhatsAppCallRequest",
             "name": "AcceptWhatsAppCallRequest",
             "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Elivekit.AcceptWhatsAppCallRequest\u003C\/code\u003E",
@@ -1276,6 +1261,16 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020server_region\u0020\u003D\u002013\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-AgentDeployment.html#method_setServerRegion"
         },                {
+            "fqsen": "\\Livekit\\AgentDeployment\u003A\u003AgetEvents\u0028\u0029",
+            "name": "getEvents",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.livekit.AgentEvent\u0020events\u0020\u003D\u002014\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentDeployment.html#method_getEvents"
+        },                {
+            "fqsen": "\\Livekit\\AgentDeployment\u003A\u003AsetEvents\u0028\u0029",
+            "name": "setEvents",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.livekit.AgentEvent\u0020events\u0020\u003D\u002014\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentDeployment.html#method_setEvents"
+        },                {
             "fqsen": "\\Livekit\\AgentDeployment\u003A\u003A\u0024region",
             "name": "region",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020region\u0020\u003D\u00201\u003B\u003C\/code\u003E",
@@ -1340,6 +1335,11 @@ Search.appendIndex(
             "name": "server_region",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020server_region\u0020\u003D\u002013\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-AgentDeployment.html#property_server_region"
+        },                {
+            "fqsen": "\\Livekit\\AgentDeployment\u003A\u003A\u0024events",
+            "name": "events",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.livekit.AgentEvent\u0020events\u0020\u003D\u002014\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentDeployment.html#property_events"
         },                {
             "fqsen": "\\Livekit\\AgentDispatch",
             "name": "AgentDispatch",
@@ -1490,6 +1490,111 @@ Search.appendIndex(
             "name": "deleted_at",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eint64\u0020deleted_at\u0020\u003D\u00203\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-AgentDispatchState.html#property_deleted_at"
+        },                {
+            "fqsen": "\\Livekit\\AgentEvent",
+            "name": "AgentEvent",
+            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Elivekit.AgentEvent\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentEvent.html"
+        },                {
+            "fqsen": "\\Livekit\\AgentEvent\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Livekit-AgentEvent.html#method___construct"
+        },                {
+            "fqsen": "\\Livekit\\AgentEvent\u003A\u003AgetType\u0028\u0029",
+            "name": "getType",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.livekit.AgentEventType\u0020type\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentEvent.html#method_getType"
+        },                {
+            "fqsen": "\\Livekit\\AgentEvent\u003A\u003AsetType\u0028\u0029",
+            "name": "setType",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.livekit.AgentEventType\u0020type\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentEvent.html#method_setType"
+        },                {
+            "fqsen": "\\Livekit\\AgentEvent\u003A\u003AgetCount\u0028\u0029",
+            "name": "getCount",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eint32\u0020count\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentEvent.html#method_getCount"
+        },                {
+            "fqsen": "\\Livekit\\AgentEvent\u003A\u003AsetCount\u0028\u0029",
+            "name": "setCount",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eint32\u0020count\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentEvent.html#method_setCount"
+        },                {
+            "fqsen": "\\Livekit\\AgentEvent\u003A\u003AgetTimestamp\u0028\u0029",
+            "name": "getTimestamp",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.google.protobuf.Timestamp\u0020timestamp\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentEvent.html#method_getTimestamp"
+        },                {
+            "fqsen": "\\Livekit\\AgentEvent\u003A\u003AhasTimestamp\u0028\u0029",
+            "name": "hasTimestamp",
+            "summary": "",
+            "url": "classes/Livekit-AgentEvent.html#method_hasTimestamp"
+        },                {
+            "fqsen": "\\Livekit\\AgentEvent\u003A\u003AclearTimestamp\u0028\u0029",
+            "name": "clearTimestamp",
+            "summary": "",
+            "url": "classes/Livekit-AgentEvent.html#method_clearTimestamp"
+        },                {
+            "fqsen": "\\Livekit\\AgentEvent\u003A\u003AsetTimestamp\u0028\u0029",
+            "name": "setTimestamp",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.google.protobuf.Timestamp\u0020timestamp\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentEvent.html#method_setTimestamp"
+        },                {
+            "fqsen": "\\Livekit\\AgentEvent\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.livekit.AgentEventType\u0020type\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentEvent.html#property_type"
+        },                {
+            "fqsen": "\\Livekit\\AgentEvent\u003A\u003A\u0024count",
+            "name": "count",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eint32\u0020count\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentEvent.html#property_count"
+        },                {
+            "fqsen": "\\Livekit\\AgentEvent\u003A\u003A\u0024timestamp",
+            "name": "timestamp",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.google.protobuf.Timestamp\u0020timestamp\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentEvent.html#property_timestamp"
+        },                {
+            "fqsen": "\\Livekit\\AgentEventType",
+            "name": "AgentEventType",
+            "summary": "Protobuf\u0020type\u0020\u003Ccode\u003Elivekit.AgentEventType\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentEventType.html"
+        },                {
+            "fqsen": "\\Livekit\\AgentEventType\u003A\u003Aname\u0028\u0029",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Livekit-AgentEventType.html#method_name"
+        },                {
+            "fqsen": "\\Livekit\\AgentEventType\u003A\u003Avalue\u0028\u0029",
+            "name": "value",
+            "summary": "",
+            "url": "classes/Livekit-AgentEventType.html#method_value"
+        },                {
+            "fqsen": "\\Livekit\\AgentEventType\u003A\u003AAGENT_EVENT_TYPE_UNKNOWN",
+            "name": "AGENT_EVENT_TYPE_UNKNOWN",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EAGENT_EVENT_TYPE_UNKNOWN\u0020\u003D\u00200\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentEventType.html#constant_AGENT_EVENT_TYPE_UNKNOWN"
+        },                {
+            "fqsen": "\\Livekit\\AgentEventType\u003A\u003AAGENT_EVENT_TYPE_APPLICATION_CRASHED",
+            "name": "AGENT_EVENT_TYPE_APPLICATION_CRASHED",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EAGENT_EVENT_TYPE_APPLICATION_CRASHED\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentEventType.html#constant_AGENT_EVENT_TYPE_APPLICATION_CRASHED"
+        },                {
+            "fqsen": "\\Livekit\\AgentEventType\u003A\u003AAGENT_EVENT_TYPE_RESTARTED_HIGH_DISK_USAGE",
+            "name": "AGENT_EVENT_TYPE_RESTARTED_HIGH_DISK_USAGE",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EAGENT_EVENT_TYPE_RESTARTED_HIGH_DISK_USAGE\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentEventType.html#constant_AGENT_EVENT_TYPE_RESTARTED_HIGH_DISK_USAGE"
+        },                {
+            "fqsen": "\\Livekit\\AgentEventType\u003A\u003AAGENT_EVENT_TYPE_RESTARTED_HIGH_MEMORY_USAGE",
+            "name": "AGENT_EVENT_TYPE_RESTARTED_HIGH_MEMORY_USAGE",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EAGENT_EVENT_TYPE_RESTARTED_HIGH_MEMORY_USAGE\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentEventType.html#constant_AGENT_EVENT_TYPE_RESTARTED_HIGH_MEMORY_USAGE"
+        },                {
+            "fqsen": "\\Livekit\\AgentEventType\u003A\u003A\u0024valueToName",
+            "name": "valueToName",
+            "summary": "",
+            "url": "classes/Livekit-AgentEventType.html#property_valueToName"
         },                {
             "fqsen": "\\Livekit\\AgentInfo",
             "name": "AgentInfo",
@@ -5836,6 +5941,26 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020disable_ice_lite\u0020\u003D\u00204\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-ConnectionSettings.html#method_setDisableIceLite"
         },                {
+            "fqsen": "\\Livekit\\ConnectionSettings\u003A\u003AgetAutoSubscribeDataTrack\u0028\u0029",
+            "name": "getAutoSubscribeDataTrack",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020bool\u0020auto_subscribe_data_track\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-ConnectionSettings.html#method_getAutoSubscribeDataTrack"
+        },                {
+            "fqsen": "\\Livekit\\ConnectionSettings\u003A\u003AhasAutoSubscribeDataTrack\u0028\u0029",
+            "name": "hasAutoSubscribeDataTrack",
+            "summary": "",
+            "url": "classes/Livekit-ConnectionSettings.html#method_hasAutoSubscribeDataTrack"
+        },                {
+            "fqsen": "\\Livekit\\ConnectionSettings\u003A\u003AclearAutoSubscribeDataTrack\u0028\u0029",
+            "name": "clearAutoSubscribeDataTrack",
+            "summary": "",
+            "url": "classes/Livekit-ConnectionSettings.html#method_clearAutoSubscribeDataTrack"
+        },                {
+            "fqsen": "\\Livekit\\ConnectionSettings\u003A\u003AsetAutoSubscribeDataTrack\u0028\u0029",
+            "name": "setAutoSubscribeDataTrack",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020bool\u0020auto_subscribe_data_track\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-ConnectionSettings.html#method_setAutoSubscribeDataTrack"
+        },                {
             "fqsen": "\\Livekit\\ConnectionSettings\u003A\u003A\u0024auto_subscribe",
             "name": "auto_subscribe",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020auto_subscribe\u0020\u003D\u00201\u003B\u003C\/code\u003E",
@@ -5855,6 +5980,11 @@ Search.appendIndex(
             "name": "disable_ice_lite",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020disable_ice_lite\u0020\u003D\u00204\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-ConnectionSettings.html#property_disable_ice_lite"
+        },                {
+            "fqsen": "\\Livekit\\ConnectionSettings\u003A\u003A\u0024auto_subscribe_data_track",
+            "name": "auto_subscribe_data_track",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020bool\u0020auto_subscribe_data_track\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-ConnectionSettings.html#property_auto_subscribe_data_track"
         },                {
             "fqsen": "\\Livekit\\ConnectorType",
             "name": "ConnectorType",
@@ -11376,6 +11506,16 @@ Search.appendIndex(
             "summary": "time\u0020ranges\u0020during\u0020which\u0020the\u0020feature\u0020was\u0020enabled.",
             "url": "classes/Livekit-FeatureUsageInfo.html#method_setTimeRanges"
         },                {
+            "fqsen": "\\Livekit\\FeatureUsageInfo\u003A\u003AgetFeatureInfo\u0028\u0029",
+            "name": "getFeatureInfo",
+            "summary": "Feature\u0020specific\u0020metadata\u0020included\u0020in\u0020the\u0020report",
+            "url": "classes/Livekit-FeatureUsageInfo.html#method_getFeatureInfo"
+        },                {
+            "fqsen": "\\Livekit\\FeatureUsageInfo\u003A\u003AsetFeatureInfo\u0028\u0029",
+            "name": "setFeatureInfo",
+            "summary": "Feature\u0020specific\u0020metadata\u0020included\u0020in\u0020the\u0020report",
+            "url": "classes/Livekit-FeatureUsageInfo.html#method_setFeatureInfo"
+        },                {
             "fqsen": "\\Livekit\\FeatureUsageInfo\u003A\u003A\u0024feature",
             "name": "feature",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.livekit.FeatureUsageInfo.Feature\u0020feature\u0020\u003D\u00201\u003B\u003C\/code\u003E",
@@ -11415,6 +11555,11 @@ Search.appendIndex(
             "name": "time_ranges",
             "summary": "time\u0020ranges\u0020during\u0020which\u0020the\u0020feature\u0020was\u0020enabled.",
             "url": "classes/Livekit-FeatureUsageInfo.html#property_time_ranges"
+        },                {
+            "fqsen": "\\Livekit\\FeatureUsageInfo\u003A\u003A\u0024feature_info",
+            "name": "feature_info",
+            "summary": "Feature\u0020specific\u0020metadata\u0020included\u0020in\u0020the\u0020report",
+            "url": "classes/Livekit-FeatureUsageInfo.html#property_feature_info"
         },                {
             "fqsen": "\\Livekit\\FileInfo",
             "name": "FileInfo",
@@ -25906,6 +26051,16 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.livekit.ProviderInfo\u0020provider_info\u0020\u003D\u002027\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-SIPCallInfo.html#method_setProviderInfo"
         },                {
+            "fqsen": "\\Livekit\\SIPCallInfo\u003A\u003AgetSipCallId\u0028\u0029",
+            "name": "getSipCallId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020sip_call_id\u0020\u003D\u002028\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-SIPCallInfo.html#method_getSipCallId"
+        },                {
+            "fqsen": "\\Livekit\\SIPCallInfo\u003A\u003AsetSipCallId\u0028\u0029",
+            "name": "setSipCallId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020sip_call_id\u0020\u003D\u002028\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-SIPCallInfo.html#method_setSipCallId"
+        },                {
             "fqsen": "\\Livekit\\SIPCallInfo\u003A\u003A\u0024call_id",
             "name": "call_id",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020call_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
@@ -26040,6 +26195,11 @@ Search.appendIndex(
             "name": "provider_info",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.livekit.ProviderInfo\u0020provider_info\u0020\u003D\u002027\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-SIPCallInfo.html#property_provider_info"
+        },                {
+            "fqsen": "\\Livekit\\SIPCallInfo\u003A\u003A\u0024sip_call_id",
+            "name": "sip_call_id",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020sip_call_id\u0020\u003D\u002028\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-SIPCallInfo.html#property_sip_call_id"
         },                {
             "fqsen": "\\Livekit\\SIPCallStatus",
             "name": "SIPCallStatus",
@@ -29056,6 +29216,26 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020auto_subscribe\u0020\u003D\u00209\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-StartSession.html#method_setAutoSubscribe"
         },                {
+            "fqsen": "\\Livekit\\StartSession\u003A\u003AgetAutoSubscribeDataTrack\u0028\u0029",
+            "name": "getAutoSubscribeDataTrack",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020bool\u0020auto_subscribe_data_track\u0020\u003D\u002025\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-StartSession.html#method_getAutoSubscribeDataTrack"
+        },                {
+            "fqsen": "\\Livekit\\StartSession\u003A\u003AhasAutoSubscribeDataTrack\u0028\u0029",
+            "name": "hasAutoSubscribeDataTrack",
+            "summary": "",
+            "url": "classes/Livekit-StartSession.html#method_hasAutoSubscribeDataTrack"
+        },                {
+            "fqsen": "\\Livekit\\StartSession\u003A\u003AclearAutoSubscribeDataTrack\u0028\u0029",
+            "name": "clearAutoSubscribeDataTrack",
+            "summary": "",
+            "url": "classes/Livekit-StartSession.html#method_clearAutoSubscribeDataTrack"
+        },                {
+            "fqsen": "\\Livekit\\StartSession\u003A\u003AsetAutoSubscribeDataTrack\u0028\u0029",
+            "name": "setAutoSubscribeDataTrack",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020bool\u0020auto_subscribe_data_track\u0020\u003D\u002025\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-StartSession.html#method_setAutoSubscribeDataTrack"
+        },                {
             "fqsen": "\\Livekit\\StartSession\u003A\u003AgetHidden\u0028\u0029",
             "name": "getHidden",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020hidden\u0020\u003D\u002010\u0020\u005Bdeprecated\u0020\u003D\u0020true\u005D\u003B\u003C\/code\u003E",
@@ -29280,6 +29460,11 @@ Search.appendIndex(
             "name": "auto_subscribe",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020auto_subscribe\u0020\u003D\u00209\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-StartSession.html#property_auto_subscribe"
+        },                {
+            "fqsen": "\\Livekit\\StartSession\u003A\u003A\u0024auto_subscribe_data_track",
+            "name": "auto_subscribe_data_track",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020bool\u0020auto_subscribe_data_track\u0020\u003D\u002025\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-StartSession.html#property_auto_subscribe_data_track"
         },                {
             "fqsen": "\\Livekit\\StartSession\u003A\u003A\u0024hidden",
             "name": "hidden",
@@ -37516,76 +37701,6 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.PastRoomInfo\u0020room_info\u0020\u003D\u00204\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-ArtifactInfoRes.html#property_room_info"
         },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\AzureTokenRenewReq",
-            "name": "AzureTokenRenewReq",
-            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.AzureTokenRenewReq\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-AzureTokenRenewReq.html"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\AzureTokenRenewReq\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Constructor.",
-            "url": "classes/Mynaparrot-PlugnmeetProto-AzureTokenRenewReq.html#method___construct"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\AzureTokenRenewReq\u003A\u003AgetRoomId\u0028\u0029",
-            "name": "getRoomId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-AzureTokenRenewReq.html#method_getRoomId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\AzureTokenRenewReq\u003A\u003AsetRoomId\u0028\u0029",
-            "name": "setRoomId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-AzureTokenRenewReq.html#method_setRoomId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\AzureTokenRenewReq\u003A\u003AgetUserSid\u0028\u0029",
-            "name": "getUserSid",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020user_sid\u0020\u003D\u00202\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-AzureTokenRenewReq.html#method_getUserSid"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\AzureTokenRenewReq\u003A\u003AsetUserSid\u0028\u0029",
-            "name": "setUserSid",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020user_sid\u0020\u003D\u00202\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-AzureTokenRenewReq.html#method_setUserSid"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\AzureTokenRenewReq\u003A\u003AgetServiceRegion\u0028\u0029",
-            "name": "getServiceRegion",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020service_region\u0020\u003D\u00203\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-AzureTokenRenewReq.html#method_getServiceRegion"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\AzureTokenRenewReq\u003A\u003AsetServiceRegion\u0028\u0029",
-            "name": "setServiceRegion",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020service_region\u0020\u003D\u00203\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-AzureTokenRenewReq.html#method_setServiceRegion"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\AzureTokenRenewReq\u003A\u003AgetKeyId\u0028\u0029",
-            "name": "getKeyId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020key_id\u0020\u003D\u00204\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-AzureTokenRenewReq.html#method_getKeyId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\AzureTokenRenewReq\u003A\u003AsetKeyId\u0028\u0029",
-            "name": "setKeyId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020key_id\u0020\u003D\u00204\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-AzureTokenRenewReq.html#method_setKeyId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\AzureTokenRenewReq\u003A\u003A\u0024room_id",
-            "name": "room_id",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-AzureTokenRenewReq.html#property_room_id"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\AzureTokenRenewReq\u003A\u003A\u0024user_sid",
-            "name": "user_sid",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020user_sid\u0020\u003D\u00202\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-AzureTokenRenewReq.html#property_user_sid"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\AzureTokenRenewReq\u003A\u003A\u0024service_region",
-            "name": "service_region",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020service_region\u0020\u003D\u00203\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-AzureTokenRenewReq.html#property_service_region"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\AzureTokenRenewReq\u003A\u003A\u0024key_id",
-            "name": "key_id",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020key_id\u0020\u003D\u00204\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-AzureTokenRenewReq.html#property_key_id"
-        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoom",
             "name": "BreakoutRoom",
             "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.BreakoutRoom\u003C\/code\u003E",
@@ -40013,13 +40128,8 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataMsgBodyType\u003A\u003APUSH_JOIN_BREAKOUT_ROOM",
             "name": "PUSH_JOIN_BREAKOUT_ROOM",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EPUSH_JOIN_BREAKOUT_ROOM\u0020\u003D\u002019\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EPUSH_JOIN_BREAKOUT_ROOM\u0020\u003D\u00207\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-DataMsgBodyType.html#constant_PUSH_JOIN_BREAKOUT_ROOM"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataMsgBodyType\u003A\u003ASPEECH_SUBTITLE_TEXT",
-            "name": "SPEECH_SUBTITLE_TEXT",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ESPEECH_SUBTITLE_TEXT\u0020\u003D\u00207\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-DataMsgBodyType.html#constant_SPEECH_SUBTITLE_TEXT"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataMsgBodyType\u003A\u003AREQ_FULL_WHITEBOARD_DATA",
             "name": "REQ_FULL_WHITEBOARD_DATA",
@@ -40048,37 +40158,27 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataMsgBodyType\u003A\u003APAGE_CHANGE",
             "name": "PAGE_CHANGE",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EPAGE_CHANGE\u0020\u003D\u002015\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EPAGE_CHANGE\u0020\u003D\u002013\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-DataMsgBodyType.html#constant_PAGE_CHANGE"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataMsgBodyType\u003A\u003AFILE_CHANGE",
             "name": "FILE_CHANGE",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EFILE_CHANGE\u0020\u003D\u002017\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EFILE_CHANGE\u0020\u003D\u002014\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-DataMsgBodyType.html#constant_FILE_CHANGE"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataMsgBodyType\u003A\u003AUPDATE_CURRENT_OFFICE_FILE_PAGES",
             "name": "UPDATE_CURRENT_OFFICE_FILE_PAGES",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EUPDATE_CURRENT_OFFICE_FILE_PAGES\u0020\u003D\u002018\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EUPDATE_CURRENT_OFFICE_FILE_PAGES\u0020\u003D\u002015\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-DataMsgBodyType.html#constant_UPDATE_CURRENT_OFFICE_FILE_PAGES"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataMsgBodyType\u003A\u003AWHITEBOARD_RESET",
             "name": "WHITEBOARD_RESET",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EWHITEBOARD_RESET\u0020\u003D\u002020\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EWHITEBOARD_RESET\u0020\u003D\u002016\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-DataMsgBodyType.html#constant_WHITEBOARD_RESET"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataMsgBodyType\u003A\u003AADD_WHITEBOARD_FILE",
-            "name": "ADD_WHITEBOARD_FILE",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EADD_WHITEBOARD_FILE\u0020\u003D\u002013\u0020\u005Bdeprecated\u0020\u003D\u0020true\u005D\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-DataMsgBodyType.html#constant_ADD_WHITEBOARD_FILE"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataMsgBodyType\u003A\u003AADD_WHITEBOARD_OFFICE_FILE",
-            "name": "ADD_WHITEBOARD_OFFICE_FILE",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EADD_WHITEBOARD_OFFICE_FILE\u0020\u003D\u002014\u0020\u005Bdeprecated\u0020\u003D\u0020true\u005D\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-DataMsgBodyType.html#constant_ADD_WHITEBOARD_OFFICE_FILE"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataMsgBodyType\u003A\u003AUSER_CONNECTION_QUALITY_CHANGE",
             "name": "USER_CONNECTION_QUALITY_CHANGE",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EUSER_CONNECTION_QUALITY_CHANGE\u0020\u003D\u002016\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EUSER_CONNECTION_QUALITY_CHANGE\u0020\u003D\u002017\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-DataMsgBodyType.html#constant_USER_CONNECTION_QUALITY_CHANGE"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataMsgBodyType\u003A\u003A\u0024valueToName",
@@ -40370,6 +40470,46 @@ Search.appendIndex(
             "name": "shared_by",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020shared_by\u0020\u003D\u00204\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-DisplayExternalLinkFeatures.html#property_shared_by"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\EnableSipDialInReq",
+            "name": "EnableSipDialInReq",
+            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.EnableSipDialInReq\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-EnableSipDialInReq.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\EnableSipDialInReq\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Mynaparrot-PlugnmeetProto-EnableSipDialInReq.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\EnableSipDialInReq\u003A\u003AgetRoomId\u0028\u0029",
+            "name": "getRoomId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-EnableSipDialInReq.html#method_getRoomId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\EnableSipDialInReq\u003A\u003AsetRoomId\u0028\u0029",
+            "name": "setRoomId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-EnableSipDialInReq.html#method_setRoomId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\EnableSipDialInReq\u003A\u003AgetHidePhoneNumber\u0028\u0029",
+            "name": "getHidePhoneNumber",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020hide_phone_number\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-EnableSipDialInReq.html#method_getHidePhoneNumber"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\EnableSipDialInReq\u003A\u003AsetHidePhoneNumber\u0028\u0029",
+            "name": "setHidePhoneNumber",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020hide_phone_number\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-EnableSipDialInReq.html#method_setHidePhoneNumber"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\EnableSipDialInReq\u003A\u003A\u0024room_id",
+            "name": "room_id",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-EnableSipDialInReq.html#property_room_id"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\EnableSipDialInReq\u003A\u003A\u0024hide_phone_number",
+            "name": "hide_phone_number",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020hide_phone_number\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-EnableSipDialInReq.html#property_hide_phone_number"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\EndBreakoutRoomReq",
             "name": "EndBreakoutRoomReq",
@@ -41845,176 +41985,6 @@ Search.appendIndex(
             "name": "recordings_list",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.plugnmeet.RecordingInfo\u0020recordings_list\u0020\u003D\u00205\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-FetchRecordingsResult.html#property_recordings_list"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenReq",
-            "name": "GenerateAzureTokenReq",
-            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.GenerateAzureTokenReq\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenReq.html"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenReq\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Constructor.",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenReq.html#method___construct"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenReq\u003A\u003AgetRoomId\u0028\u0029",
-            "name": "getRoomId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenReq.html#method_getRoomId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenReq\u003A\u003AsetRoomId\u0028\u0029",
-            "name": "setRoomId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenReq.html#method_setRoomId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenReq\u003A\u003AgetUserSid\u0028\u0029",
-            "name": "getUserSid",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020user_sid\u0020\u003D\u00202\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenReq.html#method_getUserSid"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenReq\u003A\u003AsetUserSid\u0028\u0029",
-            "name": "setUserSid",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020user_sid\u0020\u003D\u00202\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenReq.html#method_setUserSid"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenReq\u003A\u003A\u0024room_id",
-            "name": "room_id",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenReq.html#property_room_id"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenReq\u003A\u003A\u0024user_sid",
-            "name": "user_sid",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020user_sid\u0020\u003D\u00202\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenReq.html#property_user_sid"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenRes",
-            "name": "GenerateAzureTokenRes",
-            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.GenerateAzureTokenRes\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenRes.html"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenRes\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Constructor.",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenRes.html#method___construct"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenRes\u003A\u003AgetStatus\u0028\u0029",
-            "name": "getStatus",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020status\u0020\u003D\u00201\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenRes.html#method_getStatus"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenRes\u003A\u003AsetStatus\u0028\u0029",
-            "name": "setStatus",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020status\u0020\u003D\u00201\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenRes.html#method_setStatus"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenRes\u003A\u003AgetMsg\u0028\u0029",
-            "name": "getMsg",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020msg\u0020\u003D\u00202\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenRes.html#method_getMsg"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenRes\u003A\u003AsetMsg\u0028\u0029",
-            "name": "setMsg",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020msg\u0020\u003D\u00202\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenRes.html#method_setMsg"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenRes\u003A\u003AgetToken\u0028\u0029",
-            "name": "getToken",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020token\u0020\u003D\u00203\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenRes.html#method_getToken"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenRes\u003A\u003AhasToken\u0028\u0029",
-            "name": "hasToken",
-            "summary": "",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenRes.html#method_hasToken"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenRes\u003A\u003AclearToken\u0028\u0029",
-            "name": "clearToken",
-            "summary": "",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenRes.html#method_clearToken"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenRes\u003A\u003AsetToken\u0028\u0029",
-            "name": "setToken",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020token\u0020\u003D\u00203\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenRes.html#method_setToken"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenRes\u003A\u003AgetServiceRegion\u0028\u0029",
-            "name": "getServiceRegion",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020service_region\u0020\u003D\u00204\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenRes.html#method_getServiceRegion"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenRes\u003A\u003AhasServiceRegion\u0028\u0029",
-            "name": "hasServiceRegion",
-            "summary": "",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenRes.html#method_hasServiceRegion"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenRes\u003A\u003AclearServiceRegion\u0028\u0029",
-            "name": "clearServiceRegion",
-            "summary": "",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenRes.html#method_clearServiceRegion"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenRes\u003A\u003AsetServiceRegion\u0028\u0029",
-            "name": "setServiceRegion",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020service_region\u0020\u003D\u00204\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenRes.html#method_setServiceRegion"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenRes\u003A\u003AgetKeyId\u0028\u0029",
-            "name": "getKeyId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020key_id\u0020\u003D\u00205\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenRes.html#method_getKeyId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenRes\u003A\u003AhasKeyId\u0028\u0029",
-            "name": "hasKeyId",
-            "summary": "",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenRes.html#method_hasKeyId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenRes\u003A\u003AclearKeyId\u0028\u0029",
-            "name": "clearKeyId",
-            "summary": "",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenRes.html#method_clearKeyId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenRes\u003A\u003AsetKeyId\u0028\u0029",
-            "name": "setKeyId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020key_id\u0020\u003D\u00205\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenRes.html#method_setKeyId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenRes\u003A\u003AgetRenew\u0028\u0029",
-            "name": "getRenew",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020renew\u0020\u003D\u00206\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenRes.html#method_getRenew"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenRes\u003A\u003AsetRenew\u0028\u0029",
-            "name": "setRenew",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020renew\u0020\u003D\u00206\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenRes.html#method_setRenew"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenRes\u003A\u003A\u0024status",
-            "name": "status",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020status\u0020\u003D\u00201\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenRes.html#property_status"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenRes\u003A\u003A\u0024msg",
-            "name": "msg",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020msg\u0020\u003D\u00202\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenRes.html#property_msg"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenRes\u003A\u003A\u0024token",
-            "name": "token",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020token\u0020\u003D\u00203\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenRes.html#property_token"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenRes\u003A\u003A\u0024service_region",
-            "name": "service_region",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020service_region\u0020\u003D\u00204\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenRes.html#property_service_region"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenRes\u003A\u003A\u0024key_id",
-            "name": "key_id",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020key_id\u0020\u003D\u00205\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenRes.html#property_key_id"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateAzureTokenRes\u003A\u003A\u0024renew",
-            "name": "renew",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020renew\u0020\u003D\u00206\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-GenerateAzureTokenRes.html#property_renew"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\GenerateTokenReq",
             "name": "GenerateTokenReq",
@@ -46193,42 +46163,42 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgClientToServerEvents\u003A\u003AREQ_MEDIA_SERVER_DATA",
             "name": "REQ_MEDIA_SERVER_DATA",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EREQ_MEDIA_SERVER_DATA\u0020\u003D\u00208\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EREQ_MEDIA_SERVER_DATA\u0020\u003D\u00201\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgClientToServerEvents.html#constant_REQ_MEDIA_SERVER_DATA"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgClientToServerEvents\u003A\u003AREQ_JOINED_USERS_LIST",
             "name": "REQ_JOINED_USERS_LIST",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EREQ_JOINED_USERS_LIST\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EREQ_JOINED_USERS_LIST\u0020\u003D\u00202\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgClientToServerEvents.html#constant_REQ_JOINED_USERS_LIST"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgClientToServerEvents\u003A\u003AREQ_RENEW_PNM_TOKEN",
             "name": "REQ_RENEW_PNM_TOKEN",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EREQ_RENEW_PNM_TOKEN\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EREQ_RENEW_PNM_TOKEN\u0020\u003D\u00203\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgClientToServerEvents.html#constant_REQ_RENEW_PNM_TOKEN"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgClientToServerEvents\u003A\u003APING",
             "name": "PING",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EPING\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EPING\u0020\u003D\u00204\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgClientToServerEvents.html#constant_PING"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgClientToServerEvents\u003A\u003AREQ_RAISE_HAND",
             "name": "REQ_RAISE_HAND",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EREQ_RAISE_HAND\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EREQ_RAISE_HAND\u0020\u003D\u00205\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgClientToServerEvents.html#constant_REQ_RAISE_HAND"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgClientToServerEvents\u003A\u003AREQ_LOWER_HAND",
             "name": "REQ_LOWER_HAND",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EREQ_LOWER_HAND\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EREQ_LOWER_HAND\u0020\u003D\u00206\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgClientToServerEvents.html#constant_REQ_LOWER_HAND"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgClientToServerEvents\u003A\u003AREQ_LOWER_OTHER_USER_HAND",
             "name": "REQ_LOWER_OTHER_USER_HAND",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EREQ_LOWER_OTHER_USER_HAND\u0020\u003D\u00206\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EREQ_LOWER_OTHER_USER_HAND\u0020\u003D\u00207\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgClientToServerEvents.html#constant_REQ_LOWER_OTHER_USER_HAND"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgClientToServerEvents\u003A\u003APUSH_ANALYTICS_DATA",
             "name": "PUSH_ANALYTICS_DATA",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EPUSH_ANALYTICS_DATA\u0020\u003D\u00207\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EPUSH_ANALYTICS_DATA\u0020\u003D\u00208\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgClientToServerEvents.html#constant_PUSH_ANALYTICS_DATA"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgClientToServerEvents\u003A\u003A\u0024valueToName",
@@ -46318,48 +46288,43 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClientEvents\u003A\u003ARES_MEDIA_SERVER_DATA",
             "name": "RES_MEDIA_SERVER_DATA",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ERES_MEDIA_SERVER_DATA\u0020\u003D\u002016\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ERES_MEDIA_SERVER_DATA\u0020\u003D\u00202\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgServerToClientEvents.html#constant_RES_MEDIA_SERVER_DATA"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClientEvents\u003A\u003AROOM_METADATA_UPDATE",
             "name": "ROOM_METADATA_UPDATE",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EROOM_METADATA_UPDATE\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EROOM_METADATA_UPDATE\u0020\u003D\u00203\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgServerToClientEvents.html#constant_ROOM_METADATA_UPDATE"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClientEvents\u003A\u003AUSER_METADATA_UPDATE",
             "name": "USER_METADATA_UPDATE",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EUSER_METADATA_UPDATE\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EUSER_METADATA_UPDATE\u0020\u003D\u00204\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgServerToClientEvents.html#constant_USER_METADATA_UPDATE"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClientEvents\u003A\u003AUSER_JOINED",
             "name": "USER_JOINED",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EUSER_JOINED\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EUSER_JOINED\u0020\u003D\u00205\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgServerToClientEvents.html#constant_USER_JOINED"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClientEvents\u003A\u003AUSER_DISCONNECTED",
             "name": "USER_DISCONNECTED",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EUSER_DISCONNECTED\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EUSER_DISCONNECTED\u0020\u003D\u00206\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgServerToClientEvents.html#constant_USER_DISCONNECTED"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClientEvents\u003A\u003AUSER_OFFLINE",
             "name": "USER_OFFLINE",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EUSER_OFFLINE\u0020\u003D\u00206\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EUSER_OFFLINE\u0020\u003D\u00207\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgServerToClientEvents.html#constant_USER_OFFLINE"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClientEvents\u003A\u003ARESP_RENEW_PNM_TOKEN",
             "name": "RESP_RENEW_PNM_TOKEN",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ERESP_RENEW_PNM_TOKEN\u0020\u003D\u00207\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ERESP_RENEW_PNM_TOKEN\u0020\u003D\u00208\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgServerToClientEvents.html#constant_RESP_RENEW_PNM_TOKEN"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClientEvents\u003A\u003ASYSTEM_NOTIFICATION",
             "name": "SYSTEM_NOTIFICATION",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ESYSTEM_NOTIFICATION\u0020\u003D\u00208\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ESYSTEM_NOTIFICATION\u0020\u003D\u00209\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgServerToClientEvents.html#constant_SYSTEM_NOTIFICATION"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClientEvents\u003A\u003AAZURE_COGNITIVE_SERVICE_SPEECH_TOKEN",
-            "name": "AZURE_COGNITIVE_SERVICE_SPEECH_TOKEN",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EAZURE_COGNITIVE_SERVICE_SPEECH_TOKEN\u0020\u003D\u00209\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgServerToClientEvents.html#constant_AZURE_COGNITIVE_SERVICE_SPEECH_TOKEN"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClientEvents\u003A\u003ASESSION_ENDED",
             "name": "SESSION_ENDED",
@@ -46383,7 +46348,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClientEvents\u003A\u003ABREAKOUT_ROOM_ENDED",
             "name": "BREAKOUT_ROOM_ENDED",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EBREAKOUT_ROOM_ENDED\u0020\u003D\u002015\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EBREAKOUT_ROOM_ENDED\u0020\u003D\u002014\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgServerToClientEvents.html#constant_BREAKOUT_ROOM_ENDED"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClientEvents\u003A\u003ASYSTEM_CHAT_MSG",
@@ -46393,12 +46358,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClientEvents\u003A\u003ATRANSCRIPTION_OUTPUT_TEXT",
             "name": "TRANSCRIPTION_OUTPUT_TEXT",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ETRANSCRIPTION_OUTPUT_TEXT\u0020\u003D\u002017\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ETRANSCRIPTION_OUTPUT_TEXT\u0020\u003D\u002016\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgServerToClientEvents.html#constant_TRANSCRIPTION_OUTPUT_TEXT"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClientEvents\u003A\u003ARESP_INSIGHTS_AI_TEXT_CHAT",
             "name": "RESP_INSIGHTS_AI_TEXT_CHAT",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ERESP_INSIGHTS_AI_TEXT_CHAT\u0020\u003D\u002019\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ERESP_INSIGHTS_AI_TEXT_CHAT\u0020\u003D\u002017\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgServerToClientEvents.html#constant_RESP_INSIGHTS_AI_TEXT_CHAT"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClientEvents\u003A\u003A\u0024valueToName",
@@ -50253,7 +50218,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RoomCreateFeatures\u003A\u003AgetInsightsFeatures\u0028\u0029",
             "name": "getInsightsFeatures",
-            "summary": "next\u0020ID\u003A\u002027",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.plugnmeet.InsightsFeatures\u0020insights_features\u0020\u003D\u002026\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-RoomCreateFeatures.html#method_getInsightsFeatures"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RoomCreateFeatures\u003A\u003AhasInsightsFeatures\u0028\u0029",
@@ -50268,8 +50233,28 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RoomCreateFeatures\u003A\u003AsetInsightsFeatures\u0028\u0029",
             "name": "setInsightsFeatures",
-            "summary": "next\u0020ID\u003A\u002027",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.plugnmeet.InsightsFeatures\u0020insights_features\u0020\u003D\u002026\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-RoomCreateFeatures.html#method_setInsightsFeatures"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RoomCreateFeatures\u003A\u003AgetSipDialInFeatures\u0028\u0029",
+            "name": "getSipDialInFeatures",
+            "summary": "next\u0020ID\u003A\u002028",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RoomCreateFeatures.html#method_getSipDialInFeatures"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RoomCreateFeatures\u003A\u003AhasSipDialInFeatures\u0028\u0029",
+            "name": "hasSipDialInFeatures",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RoomCreateFeatures.html#method_hasSipDialInFeatures"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RoomCreateFeatures\u003A\u003AclearSipDialInFeatures\u0028\u0029",
+            "name": "clearSipDialInFeatures",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RoomCreateFeatures.html#method_clearSipDialInFeatures"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RoomCreateFeatures\u003A\u003AsetSipDialInFeatures\u0028\u0029",
+            "name": "setSipDialInFeatures",
+            "summary": "next\u0020ID\u003A\u002028",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RoomCreateFeatures.html#method_setSipDialInFeatures"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RoomCreateFeatures\u003A\u003A\u0024allow_webcams",
             "name": "allow_webcams",
@@ -50398,8 +50383,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RoomCreateFeatures\u003A\u003A\u0024insights_features",
             "name": "insights_features",
-            "summary": "next\u0020ID\u003A\u002027",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.plugnmeet.InsightsFeatures\u0020insights_features\u0020\u003D\u002026\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-RoomCreateFeatures.html#property_insights_features"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RoomCreateFeatures\u003A\u003A\u0024sip_dial_in_features",
+            "name": "sip_dial_in_features",
+            "summary": "next\u0020ID\u003A\u002028",
+            "url": "classes/Mynaparrot-PlugnmeetProto-RoomCreateFeatures.html#property_sip_dial_in_features"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RoomEndAPIReq",
             "name": "RoomEndAPIReq",
@@ -51106,6 +51096,141 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020read_only_pad_id\u0020\u003D\u00207\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-SharedNotePadFeatures.html#property_read_only_pad_id"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures",
+            "name": "SipDialInFeatures",
+            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.SipDialInFeatures\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SipDialInFeatures.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SipDialInFeatures.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures\u003A\u003AgetIsAllow\u0028\u0029",
+            "name": "getIsAllow",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_allow\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SipDialInFeatures.html#method_getIsAllow"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures\u003A\u003AsetIsAllow\u0028\u0029",
+            "name": "setIsAllow",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_allow\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SipDialInFeatures.html#method_setIsAllow"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures\u003A\u003AgetEnableDialInOnCreate\u0028\u0029",
+            "name": "getEnableDialInOnCreate",
+            "summary": "If\u0020true,\u0020the\u0020system\u0020will\u0020immediately\u0020prepare\u0020the\u0020room\u0020for\u0020SIP\u0020dial\u002Din\nby\u0020creating\u0020a\u0020dispatch\u0020rule\u0020and\u0020assigning\u0020a\u0020PIN\u0020upon\u0020creation.",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SipDialInFeatures.html#method_getEnableDialInOnCreate"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures\u003A\u003AsetEnableDialInOnCreate\u0028\u0029",
+            "name": "setEnableDialInOnCreate",
+            "summary": "If\u0020true,\u0020the\u0020system\u0020will\u0020immediately\u0020prepare\u0020the\u0020room\u0020for\u0020SIP\u0020dial\u002Din\nby\u0020creating\u0020a\u0020dispatch\u0020rule\u0020and\u0020assigning\u0020a\u0020PIN\u0020upon\u0020creation.",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SipDialInFeatures.html#method_setEnableDialInOnCreate"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures\u003A\u003AgetHidePhoneNumber\u0028\u0029",
+            "name": "getHidePhoneNumber",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020hide_phone_number\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SipDialInFeatures.html#method_getHidePhoneNumber"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures\u003A\u003AsetHidePhoneNumber\u0028\u0029",
+            "name": "setHidePhoneNumber",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020hide_phone_number\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SipDialInFeatures.html#method_setHidePhoneNumber"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures\u003A\u003AgetIsActive\u0028\u0029",
+            "name": "getIsActive",
+            "summary": "all\u0020internal\u0020usage\u0020fields",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SipDialInFeatures.html#method_getIsActive"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures\u003A\u003AsetIsActive\u0028\u0029",
+            "name": "setIsActive",
+            "summary": "all\u0020internal\u0020usage\u0020fields",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SipDialInFeatures.html#method_setIsActive"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures\u003A\u003AgetPhoneNumbers\u0028\u0029",
+            "name": "getPhoneNumbers",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020string\u0020phone_numbers\u0020\u003D\u00205\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SipDialInFeatures.html#method_getPhoneNumbers"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures\u003A\u003AsetPhoneNumbers\u0028\u0029",
+            "name": "setPhoneNumbers",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020string\u0020phone_numbers\u0020\u003D\u00205\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SipDialInFeatures.html#method_setPhoneNumbers"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures\u003A\u003AgetPin\u0028\u0029",
+            "name": "getPin",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020pin\u0020\u003D\u00206\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SipDialInFeatures.html#method_getPin"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures\u003A\u003AhasPin\u0028\u0029",
+            "name": "hasPin",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SipDialInFeatures.html#method_hasPin"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures\u003A\u003AclearPin\u0028\u0029",
+            "name": "clearPin",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SipDialInFeatures.html#method_clearPin"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures\u003A\u003AsetPin\u0028\u0029",
+            "name": "setPin",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020pin\u0020\u003D\u00206\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SipDialInFeatures.html#method_setPin"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures\u003A\u003AgetDispatchRuleId\u0028\u0029",
+            "name": "getDispatchRuleId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020dispatch_rule_id\u0020\u003D\u00207\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SipDialInFeatures.html#method_getDispatchRuleId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures\u003A\u003AhasDispatchRuleId\u0028\u0029",
+            "name": "hasDispatchRuleId",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SipDialInFeatures.html#method_hasDispatchRuleId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures\u003A\u003AclearDispatchRuleId\u0028\u0029",
+            "name": "clearDispatchRuleId",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SipDialInFeatures.html#method_clearDispatchRuleId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures\u003A\u003AsetDispatchRuleId\u0028\u0029",
+            "name": "setDispatchRuleId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020dispatch_rule_id\u0020\u003D\u00207\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SipDialInFeatures.html#method_setDispatchRuleId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures\u003A\u003A\u0024is_allow",
+            "name": "is_allow",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_allow\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SipDialInFeatures.html#property_is_allow"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures\u003A\u003A\u0024enable_dial_in_on_create",
+            "name": "enable_dial_in_on_create",
+            "summary": "If\u0020true,\u0020the\u0020system\u0020will\u0020immediately\u0020prepare\u0020the\u0020room\u0020for\u0020SIP\u0020dial\u002Din\nby\u0020creating\u0020a\u0020dispatch\u0020rule\u0020and\u0020assigning\u0020a\u0020PIN\u0020upon\u0020creation.",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SipDialInFeatures.html#property_enable_dial_in_on_create"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures\u003A\u003A\u0024hide_phone_number",
+            "name": "hide_phone_number",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020hide_phone_number\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SipDialInFeatures.html#property_hide_phone_number"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures\u003A\u003A\u0024is_active",
+            "name": "is_active",
+            "summary": "all\u0020internal\u0020usage\u0020fields",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SipDialInFeatures.html#property_is_active"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures\u003A\u003A\u0024phone_numbers",
+            "name": "phone_numbers",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020string\u0020phone_numbers\u0020\u003D\u00205\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SipDialInFeatures.html#property_phone_numbers"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures\u003A\u003A\u0024pin",
+            "name": "pin",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020pin\u0020\u003D\u00206\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SipDialInFeatures.html#property_pin"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures\u003A\u003A\u0024dispatch_rule_id",
+            "name": "dispatch_rule_id",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020dispatch_rule_id\u0020\u003D\u00207\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SipDialInFeatures.html#property_dispatch_rule_id"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechServiceEvent",
             "name": "SpeechServiceEvent",
             "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.SpeechServiceEvent\u003C\/code\u003E",
@@ -51155,126 +51280,6 @@ Search.appendIndex(
             "name": "total_usage",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eint64\u0020total_usage\u0020\u003D\u00204\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-SpeechServiceEvent.html#property_total_usage"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechServiceUserStatusReq",
-            "name": "SpeechServiceUserStatusReq",
-            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.SpeechServiceUserStatusReq\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechServiceUserStatusReq.html"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechServiceUserStatusReq\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Constructor.",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechServiceUserStatusReq.html#method___construct"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechServiceUserStatusReq\u003A\u003AgetRoomId\u0028\u0029",
-            "name": "getRoomId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechServiceUserStatusReq.html#method_getRoomId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechServiceUserStatusReq\u003A\u003AsetRoomId\u0028\u0029",
-            "name": "setRoomId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechServiceUserStatusReq.html#method_setRoomId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechServiceUserStatusReq\u003A\u003AgetRoomSid\u0028\u0029",
-            "name": "getRoomSid",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_sid\u0020\u003D\u00202\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechServiceUserStatusReq.html#method_getRoomSid"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechServiceUserStatusReq\u003A\u003AsetRoomSid\u0028\u0029",
-            "name": "setRoomSid",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_sid\u0020\u003D\u00202\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechServiceUserStatusReq.html#method_setRoomSid"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechServiceUserStatusReq\u003A\u003AgetUserId\u0028\u0029",
-            "name": "getUserId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020user_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechServiceUserStatusReq.html#method_getUserId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechServiceUserStatusReq\u003A\u003AsetUserId\u0028\u0029",
-            "name": "setUserId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020user_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechServiceUserStatusReq.html#method_setUserId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechServiceUserStatusReq\u003A\u003AgetKeyId\u0028\u0029",
-            "name": "getKeyId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020key_id\u0020\u003D\u00204\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechServiceUserStatusReq.html#method_getKeyId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechServiceUserStatusReq\u003A\u003AsetKeyId\u0028\u0029",
-            "name": "setKeyId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020key_id\u0020\u003D\u00204\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechServiceUserStatusReq.html#method_setKeyId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechServiceUserStatusReq\u003A\u003AgetTask\u0028\u0029",
-            "name": "getTask",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.plugnmeet.SpeechServiceUserStatusTasks\u0020task\u0020\u003D\u00205\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechServiceUserStatusReq.html#method_getTask"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechServiceUserStatusReq\u003A\u003AsetTask\u0028\u0029",
-            "name": "setTask",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.plugnmeet.SpeechServiceUserStatusTasks\u0020task\u0020\u003D\u00205\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechServiceUserStatusReq.html#method_setTask"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechServiceUserStatusReq\u003A\u003A\u0024room_id",
-            "name": "room_id",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechServiceUserStatusReq.html#property_room_id"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechServiceUserStatusReq\u003A\u003A\u0024room_sid",
-            "name": "room_sid",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_sid\u0020\u003D\u00202\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechServiceUserStatusReq.html#property_room_sid"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechServiceUserStatusReq\u003A\u003A\u0024user_id",
-            "name": "user_id",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020user_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechServiceUserStatusReq.html#property_user_id"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechServiceUserStatusReq\u003A\u003A\u0024key_id",
-            "name": "key_id",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020key_id\u0020\u003D\u00204\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechServiceUserStatusReq.html#property_key_id"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechServiceUserStatusReq\u003A\u003A\u0024task",
-            "name": "task",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.plugnmeet.SpeechServiceUserStatusTasks\u0020task\u0020\u003D\u00205\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechServiceUserStatusReq.html#property_task"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechServiceUserStatusTasks",
-            "name": "SpeechServiceUserStatusTasks",
-            "summary": "Protobuf\u0020type\u0020\u003Ccode\u003Eplugnmeet.SpeechServiceUserStatusTasks\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechServiceUserStatusTasks.html"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechServiceUserStatusTasks\u003A\u003Aname\u0028\u0029",
-            "name": "name",
-            "summary": "",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechServiceUserStatusTasks.html#method_name"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechServiceUserStatusTasks\u003A\u003Avalue\u0028\u0029",
-            "name": "value",
-            "summary": "",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechServiceUserStatusTasks.html#method_value"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechServiceUserStatusTasks\u003A\u003ASPEECH_TO_TEXT_SESSION_STARTED",
-            "name": "SPEECH_TO_TEXT_SESSION_STARTED",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ESPEECH_TO_TEXT_SESSION_STARTED\u0020\u003D\u00200\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechServiceUserStatusTasks.html#constant_SPEECH_TO_TEXT_SESSION_STARTED"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechServiceUserStatusTasks\u003A\u003ASPEECH_TO_TEXT_SESSION_ENDED",
-            "name": "SPEECH_TO_TEXT_SESSION_ENDED",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ESPEECH_TO_TEXT_SESSION_ENDED\u0020\u003D\u00201\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechServiceUserStatusTasks.html#constant_SPEECH_TO_TEXT_SESSION_ENDED"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechServiceUserStatusTasks\u003A\u003ASPEECH_TO_TEXT_TOTAL_USAGE",
-            "name": "SPEECH_TO_TEXT_TOTAL_USAGE",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ESPEECH_TO_TEXT_TOTAL_USAGE\u0020\u003D\u00202\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechServiceUserStatusTasks.html#constant_SPEECH_TO_TEXT_TOTAL_USAGE"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechServiceUserStatusTasks\u003A\u003A\u0024valueToName",
-            "name": "valueToName",
-            "summary": "",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechServiceUserStatusTasks.html#property_valueToName"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechToTextTranslationFeatures",
             "name": "SpeechToTextTranslationFeatures",
@@ -51430,131 +51435,6 @@ Search.appendIndex(
             "name": "default_subtitle_lang",
             "summary": "next\u0020ID\u003A\u002012",
             "url": "classes/Mynaparrot-PlugnmeetProto-SpeechToTextTranslationFeatures.html#property_default_subtitle_lang"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechToTextTranslationReq",
-            "name": "SpeechToTextTranslationReq",
-            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.SpeechToTextTranslationReq\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechToTextTranslationReq.html"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechToTextTranslationReq\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Constructor.",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechToTextTranslationReq.html#method___construct"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechToTextTranslationReq\u003A\u003AgetRoomId\u0028\u0029",
-            "name": "getRoomId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechToTextTranslationReq.html#method_getRoomId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechToTextTranslationReq\u003A\u003AsetRoomId\u0028\u0029",
-            "name": "setRoomId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechToTextTranslationReq.html#method_setRoomId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechToTextTranslationReq\u003A\u003AgetIsEnabled\u0028\u0029",
-            "name": "getIsEnabled",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_enabled\u0020\u003D\u00203\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechToTextTranslationReq.html#method_getIsEnabled"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechToTextTranslationReq\u003A\u003AsetIsEnabled\u0028\u0029",
-            "name": "setIsEnabled",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_enabled\u0020\u003D\u00203\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechToTextTranslationReq.html#method_setIsEnabled"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechToTextTranslationReq\u003A\u003AgetAllowedSpeechLangs\u0028\u0029",
-            "name": "getAllowedSpeechLangs",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020string\u0020allowed_speech_langs\u0020\u003D\u00204\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechToTextTranslationReq.html#method_getAllowedSpeechLangs"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechToTextTranslationReq\u003A\u003AsetAllowedSpeechLangs\u0028\u0029",
-            "name": "setAllowedSpeechLangs",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020string\u0020allowed_speech_langs\u0020\u003D\u00204\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechToTextTranslationReq.html#method_setAllowedSpeechLangs"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechToTextTranslationReq\u003A\u003AgetAllowedSpeechUsers\u0028\u0029",
-            "name": "getAllowedSpeechUsers",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020string\u0020allowed_speech_users\u0020\u003D\u00205\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechToTextTranslationReq.html#method_getAllowedSpeechUsers"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechToTextTranslationReq\u003A\u003AsetAllowedSpeechUsers\u0028\u0029",
-            "name": "setAllowedSpeechUsers",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020string\u0020allowed_speech_users\u0020\u003D\u00205\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechToTextTranslationReq.html#method_setAllowedSpeechUsers"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechToTextTranslationReq\u003A\u003AgetIsEnabledTranslation\u0028\u0029",
-            "name": "getIsEnabledTranslation",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_enabled_translation\u0020\u003D\u00206\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechToTextTranslationReq.html#method_getIsEnabledTranslation"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechToTextTranslationReq\u003A\u003AsetIsEnabledTranslation\u0028\u0029",
-            "name": "setIsEnabledTranslation",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_enabled_translation\u0020\u003D\u00206\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechToTextTranslationReq.html#method_setIsEnabledTranslation"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechToTextTranslationReq\u003A\u003AgetAllowedTransLangs\u0028\u0029",
-            "name": "getAllowedTransLangs",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020string\u0020allowed_trans_langs\u0020\u003D\u00207\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechToTextTranslationReq.html#method_getAllowedTransLangs"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechToTextTranslationReq\u003A\u003AsetAllowedTransLangs\u0028\u0029",
-            "name": "setAllowedTransLangs",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020string\u0020allowed_trans_langs\u0020\u003D\u00207\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechToTextTranslationReq.html#method_setAllowedTransLangs"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechToTextTranslationReq\u003A\u003AgetDefaultSubtitleLang\u0028\u0029",
-            "name": "getDefaultSubtitleLang",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020default_subtitle_lang\u0020\u003D\u00208\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechToTextTranslationReq.html#method_getDefaultSubtitleLang"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechToTextTranslationReq\u003A\u003AhasDefaultSubtitleLang\u0028\u0029",
-            "name": "hasDefaultSubtitleLang",
-            "summary": "",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechToTextTranslationReq.html#method_hasDefaultSubtitleLang"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechToTextTranslationReq\u003A\u003AclearDefaultSubtitleLang\u0028\u0029",
-            "name": "clearDefaultSubtitleLang",
-            "summary": "",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechToTextTranslationReq.html#method_clearDefaultSubtitleLang"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechToTextTranslationReq\u003A\u003AsetDefaultSubtitleLang\u0028\u0029",
-            "name": "setDefaultSubtitleLang",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020default_subtitle_lang\u0020\u003D\u00208\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechToTextTranslationReq.html#method_setDefaultSubtitleLang"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechToTextTranslationReq\u003A\u003A\u0024room_id",
-            "name": "room_id",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechToTextTranslationReq.html#property_room_id"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechToTextTranslationReq\u003A\u003A\u0024is_enabled",
-            "name": "is_enabled",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_enabled\u0020\u003D\u00203\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechToTextTranslationReq.html#property_is_enabled"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechToTextTranslationReq\u003A\u003A\u0024allowed_speech_langs",
-            "name": "allowed_speech_langs",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020string\u0020allowed_speech_langs\u0020\u003D\u00204\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechToTextTranslationReq.html#property_allowed_speech_langs"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechToTextTranslationReq\u003A\u003A\u0024allowed_speech_users",
-            "name": "allowed_speech_users",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020string\u0020allowed_speech_users\u0020\u003D\u00205\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechToTextTranslationReq.html#property_allowed_speech_users"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechToTextTranslationReq\u003A\u003A\u0024is_enabled_translation",
-            "name": "is_enabled_translation",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_enabled_translation\u0020\u003D\u00206\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechToTextTranslationReq.html#property_is_enabled_translation"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechToTextTranslationReq\u003A\u003A\u0024allowed_trans_langs",
-            "name": "allowed_trans_langs",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020string\u0020allowed_trans_langs\u0020\u003D\u00207\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechToTextTranslationReq.html#property_allowed_trans_langs"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SpeechToTextTranslationReq\u003A\u003A\u0024default_subtitle_lang",
-            "name": "default_subtitle_lang",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020default_subtitle_lang\u0020\u003D\u00208\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SpeechToTextTranslationReq.html#property_default_subtitle_lang"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SubmitPollResponseReq",
             "name": "SubmitPollResponseReq",
