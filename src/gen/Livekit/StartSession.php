@@ -37,6 +37,10 @@ class StartSession extends \Google\Protobuf\Internal\Message
      */
     protected $auto_subscribe = false;
     /**
+     * Generated from protobuf field <code>optional bool auto_subscribe_data_track = 25;</code>
+     */
+    protected $auto_subscribe_data_track = null;
+    /**
      * Generated from protobuf field <code>bool hidden = 10 [deprecated = true];</code>
      * @deprecated
      */
@@ -115,6 +119,7 @@ class StartSession extends \Google\Protobuf\Internal\Message
      *     @type bool $reconnect
      *           if a client is reconnecting (i.e. resume instead of restart)
      *     @type bool $auto_subscribe
+     *     @type bool $auto_subscribe_data_track
      *     @type bool $hidden
      *     @type \Livekit\ClientInfo $client
      *     @type bool $recorder
@@ -249,6 +254,38 @@ class StartSession extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->auto_subscribe = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional bool auto_subscribe_data_track = 25;</code>
+     * @return bool
+     */
+    public function getAutoSubscribeDataTrack()
+    {
+        return isset($this->auto_subscribe_data_track) ? $this->auto_subscribe_data_track : false;
+    }
+
+    public function hasAutoSubscribeDataTrack()
+    {
+        return isset($this->auto_subscribe_data_track);
+    }
+
+    public function clearAutoSubscribeDataTrack()
+    {
+        unset($this->auto_subscribe_data_track);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional bool auto_subscribe_data_track = 25;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setAutoSubscribeDataTrack($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->auto_subscribe_data_track = $var;
 
         return $this;
     }

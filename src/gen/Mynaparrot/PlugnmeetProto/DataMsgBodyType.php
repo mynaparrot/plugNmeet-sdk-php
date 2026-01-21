@@ -43,13 +43,9 @@ class DataMsgBodyType
      */
     const NEW_POLL_RESPONSE = 6;
     /**
-     * Generated from protobuf enum <code>PUSH_JOIN_BREAKOUT_ROOM = 19;</code>
+     * Generated from protobuf enum <code>PUSH_JOIN_BREAKOUT_ROOM = 7;</code>
      */
-    const PUSH_JOIN_BREAKOUT_ROOM = 19;
-    /**
-     * Generated from protobuf enum <code>SPEECH_SUBTITLE_TEXT = 7;</code>
-     */
-    const SPEECH_SUBTITLE_TEXT = 7;
+    const PUSH_JOIN_BREAKOUT_ROOM = 7;
     /**
      * WHITEBOARD type
      *
@@ -73,33 +69,25 @@ class DataMsgBodyType
      */
     const WHITEBOARD_APP_STATE_CHANGE = 12;
     /**
-     * Generated from protobuf enum <code>PAGE_CHANGE = 15;</code>
+     * Generated from protobuf enum <code>PAGE_CHANGE = 13;</code>
      */
-    const PAGE_CHANGE = 15;
+    const PAGE_CHANGE = 13;
     /**
-     * Generated from protobuf enum <code>FILE_CHANGE = 17;</code>
+     * Generated from protobuf enum <code>FILE_CHANGE = 14;</code>
      */
-    const FILE_CHANGE = 17;
+    const FILE_CHANGE = 14;
     /**
-     * Generated from protobuf enum <code>UPDATE_CURRENT_OFFICE_FILE_PAGES = 18;</code>
+     * Generated from protobuf enum <code>UPDATE_CURRENT_OFFICE_FILE_PAGES = 15;</code>
      */
-    const UPDATE_CURRENT_OFFICE_FILE_PAGES = 18;
+    const UPDATE_CURRENT_OFFICE_FILE_PAGES = 15;
     /**
-     * Generated from protobuf enum <code>WHITEBOARD_RESET = 20;</code>
+     * Generated from protobuf enum <code>WHITEBOARD_RESET = 16;</code>
      */
-    const WHITEBOARD_RESET = 20;
+    const WHITEBOARD_RESET = 16;
     /**
-     * Generated from protobuf enum <code>ADD_WHITEBOARD_FILE = 13 [deprecated = true];</code>
+     * Generated from protobuf enum <code>USER_CONNECTION_QUALITY_CHANGE = 17;</code>
      */
-    const ADD_WHITEBOARD_FILE = 13;
-    /**
-     * Generated from protobuf enum <code>ADD_WHITEBOARD_OFFICE_FILE = 14 [deprecated = true];</code>
-     */
-    const ADD_WHITEBOARD_OFFICE_FILE = 14;
-    /**
-     * Generated from protobuf enum <code>USER_CONNECTION_QUALITY_CHANGE = 16;</code>
-     */
-    const USER_CONNECTION_QUALITY_CHANGE = 16;
+    const USER_CONNECTION_QUALITY_CHANGE = 17;
 
     private static $valueToName = [
         self::UNKNOWN => 'UNKNOWN',
@@ -110,7 +98,6 @@ class DataMsgBodyType
         self::EXTERNAL_MEDIA_PLAYER_EVENTS => 'EXTERNAL_MEDIA_PLAYER_EVENTS',
         self::NEW_POLL_RESPONSE => 'NEW_POLL_RESPONSE',
         self::PUSH_JOIN_BREAKOUT_ROOM => 'PUSH_JOIN_BREAKOUT_ROOM',
-        self::SPEECH_SUBTITLE_TEXT => 'SPEECH_SUBTITLE_TEXT',
         self::REQ_FULL_WHITEBOARD_DATA => 'REQ_FULL_WHITEBOARD_DATA',
         self::RES_FULL_WHITEBOARD_DATA => 'RES_FULL_WHITEBOARD_DATA',
         self::SCENE_UPDATE => 'SCENE_UPDATE',
@@ -120,8 +107,6 @@ class DataMsgBodyType
         self::FILE_CHANGE => 'FILE_CHANGE',
         self::UPDATE_CURRENT_OFFICE_FILE_PAGES => 'UPDATE_CURRENT_OFFICE_FILE_PAGES',
         self::WHITEBOARD_RESET => 'WHITEBOARD_RESET',
-        self::ADD_WHITEBOARD_FILE => 'ADD_WHITEBOARD_FILE',
-        self::ADD_WHITEBOARD_OFFICE_FILE => 'ADD_WHITEBOARD_OFFICE_FILE',
         self::USER_CONNECTION_QUALITY_CHANGE => 'USER_CONNECTION_QUALITY_CHANGE',
     ];
 

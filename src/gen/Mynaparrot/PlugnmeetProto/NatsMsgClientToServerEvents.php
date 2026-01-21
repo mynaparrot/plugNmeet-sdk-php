@@ -17,37 +17,37 @@ class NatsMsgClientToServerEvents
      */
     const REQ_INITIAL_DATA = 0;
     /**
-     * Generated from protobuf enum <code>REQ_MEDIA_SERVER_DATA = 8;</code>
+     * Generated from protobuf enum <code>REQ_MEDIA_SERVER_DATA = 1;</code>
      */
-    const REQ_MEDIA_SERVER_DATA = 8;
+    const REQ_MEDIA_SERVER_DATA = 1;
     /**
-     * Generated from protobuf enum <code>REQ_JOINED_USERS_LIST = 1;</code>
+     * Generated from protobuf enum <code>REQ_JOINED_USERS_LIST = 2;</code>
      */
-    const REQ_JOINED_USERS_LIST = 1;
+    const REQ_JOINED_USERS_LIST = 2;
     /**
-     * Generated from protobuf enum <code>REQ_RENEW_PNM_TOKEN = 2;</code>
+     * Generated from protobuf enum <code>REQ_RENEW_PNM_TOKEN = 3;</code>
      */
-    const REQ_RENEW_PNM_TOKEN = 2;
+    const REQ_RENEW_PNM_TOKEN = 3;
     /**
-     * Generated from protobuf enum <code>PING = 3;</code>
+     * Generated from protobuf enum <code>PING = 4;</code>
      */
-    const PING = 3;
+    const PING = 4;
     /**
-     * Generated from protobuf enum <code>REQ_RAISE_HAND = 4;</code>
+     * Generated from protobuf enum <code>REQ_RAISE_HAND = 5;</code>
      */
-    const REQ_RAISE_HAND = 4;
+    const REQ_RAISE_HAND = 5;
     /**
-     * Generated from protobuf enum <code>REQ_LOWER_HAND = 5;</code>
+     * Generated from protobuf enum <code>REQ_LOWER_HAND = 6;</code>
      */
-    const REQ_LOWER_HAND = 5;
+    const REQ_LOWER_HAND = 6;
     /**
-     * Generated from protobuf enum <code>REQ_LOWER_OTHER_USER_HAND = 6;</code>
+     * Generated from protobuf enum <code>REQ_LOWER_OTHER_USER_HAND = 7;</code>
      */
-    const REQ_LOWER_OTHER_USER_HAND = 6;
+    const REQ_LOWER_OTHER_USER_HAND = 7;
     /**
-     * Generated from protobuf enum <code>PUSH_ANALYTICS_DATA = 7;</code>
+     * Generated from protobuf enum <code>PUSH_ANALYTICS_DATA = 8;</code>
      */
-    const PUSH_ANALYTICS_DATA = 7;
+    const PUSH_ANALYTICS_DATA = 8;
 
     private static $valueToName = [
         self::REQ_INITIAL_DATA => 'REQ_INITIAL_DATA',

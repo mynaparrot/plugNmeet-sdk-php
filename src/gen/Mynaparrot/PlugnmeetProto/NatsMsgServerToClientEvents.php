@@ -23,41 +23,37 @@ class NatsMsgServerToClientEvents
      */
     const RES_JOINED_USERS_LIST = 1;
     /**
-     * Generated from protobuf enum <code>RES_MEDIA_SERVER_DATA = 16;</code>
+     * Generated from protobuf enum <code>RES_MEDIA_SERVER_DATA = 2;</code>
      */
-    const RES_MEDIA_SERVER_DATA = 16;
+    const RES_MEDIA_SERVER_DATA = 2;
     /**
-     * Generated from protobuf enum <code>ROOM_METADATA_UPDATE = 2;</code>
+     * Generated from protobuf enum <code>ROOM_METADATA_UPDATE = 3;</code>
      */
-    const ROOM_METADATA_UPDATE = 2;
+    const ROOM_METADATA_UPDATE = 3;
     /**
-     * Generated from protobuf enum <code>USER_METADATA_UPDATE = 3;</code>
+     * Generated from protobuf enum <code>USER_METADATA_UPDATE = 4;</code>
      */
-    const USER_METADATA_UPDATE = 3;
+    const USER_METADATA_UPDATE = 4;
     /**
-     * Generated from protobuf enum <code>USER_JOINED = 4;</code>
+     * Generated from protobuf enum <code>USER_JOINED = 5;</code>
      */
-    const USER_JOINED = 4;
+    const USER_JOINED = 5;
     /**
-     * Generated from protobuf enum <code>USER_DISCONNECTED = 5;</code>
+     * Generated from protobuf enum <code>USER_DISCONNECTED = 6;</code>
      */
-    const USER_DISCONNECTED = 5;
+    const USER_DISCONNECTED = 6;
     /**
-     * Generated from protobuf enum <code>USER_OFFLINE = 6;</code>
+     * Generated from protobuf enum <code>USER_OFFLINE = 7;</code>
      */
-    const USER_OFFLINE = 6;
+    const USER_OFFLINE = 7;
     /**
-     * Generated from protobuf enum <code>RESP_RENEW_PNM_TOKEN = 7;</code>
+     * Generated from protobuf enum <code>RESP_RENEW_PNM_TOKEN = 8;</code>
      */
-    const RESP_RENEW_PNM_TOKEN = 7;
+    const RESP_RENEW_PNM_TOKEN = 8;
     /**
-     * Generated from protobuf enum <code>SYSTEM_NOTIFICATION = 8;</code>
+     * Generated from protobuf enum <code>SYSTEM_NOTIFICATION = 9;</code>
      */
-    const SYSTEM_NOTIFICATION = 8;
-    /**
-     * Generated from protobuf enum <code>AZURE_COGNITIVE_SERVICE_SPEECH_TOKEN = 9;</code>
-     */
-    const AZURE_COGNITIVE_SERVICE_SPEECH_TOKEN = 9;
+    const SYSTEM_NOTIFICATION = 9;
     /**
      * Generated from protobuf enum <code>SESSION_ENDED = 10;</code>
      */
@@ -75,23 +71,23 @@ class NatsMsgServerToClientEvents
      */
     const JOIN_BREAKOUT_ROOM = 13;
     /**
-     * Generated from protobuf enum <code>BREAKOUT_ROOM_ENDED = 15;</code>
+     * Generated from protobuf enum <code>BREAKOUT_ROOM_ENDED = 14;</code>
      */
-    const BREAKOUT_ROOM_ENDED = 15;
+    const BREAKOUT_ROOM_ENDED = 14;
     /**
      * mostly system message display in chat
      *
-     * Generated from protobuf enum <code>SYSTEM_CHAT_MSG = 14;</code>
+     * Generated from protobuf enum <code>SYSTEM_CHAT_MSG = 15;</code>
      */
-    const SYSTEM_CHAT_MSG = 14;
+    const SYSTEM_CHAT_MSG = 15;
     /**
-     * Generated from protobuf enum <code>TRANSCRIPTION_OUTPUT_TEXT = 17;</code>
+     * Generated from protobuf enum <code>TRANSCRIPTION_OUTPUT_TEXT = 16;</code>
      */
-    const TRANSCRIPTION_OUTPUT_TEXT = 17;
+    const TRANSCRIPTION_OUTPUT_TEXT = 16;
     /**
-     * Generated from protobuf enum <code>RESP_INSIGHTS_AI_TEXT_CHAT = 19;</code>
+     * Generated from protobuf enum <code>RESP_INSIGHTS_AI_TEXT_CHAT = 17;</code>
      */
-    const RESP_INSIGHTS_AI_TEXT_CHAT = 19;
+    const RESP_INSIGHTS_AI_TEXT_CHAT = 17;
 
     private static $valueToName = [
         self::RES_INITIAL_DATA => 'RES_INITIAL_DATA',
@@ -104,7 +100,6 @@ class NatsMsgServerToClientEvents
         self::USER_OFFLINE => 'USER_OFFLINE',
         self::RESP_RENEW_PNM_TOKEN => 'RESP_RENEW_PNM_TOKEN',
         self::SYSTEM_NOTIFICATION => 'SYSTEM_NOTIFICATION',
-        self::AZURE_COGNITIVE_SERVICE_SPEECH_TOKEN => 'AZURE_COGNITIVE_SERVICE_SPEECH_TOKEN',
         self::SESSION_ENDED => 'SESSION_ENDED',
         self::POLL_CLOSED => 'POLL_CLOSED',
         self::POLL_CREATED => 'POLL_CREATED',

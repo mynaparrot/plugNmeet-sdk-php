@@ -96,6 +96,11 @@ $roomMetadata = array(
         "polls_features" => array(
             "is_allow" => true,
         ),
+        "sip_dial_in_features" => array(
+            "is_allow" => true,
+            //"enable_dial_in_on_create" => true,
+            //"hide_phone_number" => true,
+        ),
         "insights_features" => array(
             "is_allow" => true,
             "transcription_features" => array(

@@ -30,6 +30,10 @@ class ConnectionSettings extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool disable_ice_lite = 4;</code>
      */
     protected $disable_ice_lite = false;
+    /**
+     * Generated from protobuf field <code>optional bool auto_subscribe_data_track = 5;</code>
+     */
+    protected $auto_subscribe_data_track = null;
 
     /**
      * Constructor.
@@ -41,6 +45,7 @@ class ConnectionSettings extends \Google\Protobuf\Internal\Message
      *     @type bool $adaptive_stream
      *     @type bool $subscriber_allow_pause
      *     @type bool $disable_ice_lite
+     *     @type bool $auto_subscribe_data_track
      * }
      */
     public function __construct($data = NULL) {
@@ -142,6 +147,38 @@ class ConnectionSettings extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->disable_ice_lite = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional bool auto_subscribe_data_track = 5;</code>
+     * @return bool
+     */
+    public function getAutoSubscribeDataTrack()
+    {
+        return isset($this->auto_subscribe_data_track) ? $this->auto_subscribe_data_track : false;
+    }
+
+    public function hasAutoSubscribeDataTrack()
+    {
+        return isset($this->auto_subscribe_data_track);
+    }
+
+    public function clearAutoSubscribeDataTrack()
+    {
+        unset($this->auto_subscribe_data_track);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional bool auto_subscribe_data_track = 5;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setAutoSubscribeDataTrack($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->auto_subscribe_data_track = $var;
 
         return $this;
     }

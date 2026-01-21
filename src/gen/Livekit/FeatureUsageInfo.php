@@ -45,11 +45,17 @@ class FeatureUsageInfo extends \Google\Protobuf\Internal\Message
     /**
      * time ranges during which the feature was enabled.
      * for e. g., noise cancellation may not be applied when a media track is paused/muted,
-     * this allows reporting only periods during which a feature is avtive.
+     * this allows reporting only periods during which a feature is active.
      *
      * Generated from protobuf field <code>repeated .livekit.TimeRange time_ranges = 8;</code>
      */
     private $time_ranges;
+    /**
+     * Feature specific metadata included in the report
+     *
+     * Generated from protobuf field <code>map<string, string> feature_info = 9;</code>
+     */
+    private $feature_info;
 
     /**
      * Constructor.
@@ -67,7 +73,9 @@ class FeatureUsageInfo extends \Google\Protobuf\Internal\Message
      *     @type \Livekit\TimeRange[] $time_ranges
      *           time ranges during which the feature was enabled.
      *           for e. g., noise cancellation may not be applied when a media track is paused/muted,
-     *           this allows reporting only periods during which a feature is avtive.
+     *           this allows reporting only periods during which a feature is active.
+     *     @type array|\Google\Protobuf\Internal\MapField $feature_info
+     *           Feature specific metadata included in the report
      * }
      */
     public function __construct($data = NULL) {
@@ -232,7 +240,7 @@ class FeatureUsageInfo extends \Google\Protobuf\Internal\Message
     /**
      * time ranges during which the feature was enabled.
      * for e. g., noise cancellation may not be applied when a media track is paused/muted,
-     * this allows reporting only periods during which a feature is avtive.
+     * this allows reporting only periods during which a feature is active.
      *
      * Generated from protobuf field <code>repeated .livekit.TimeRange time_ranges = 8;</code>
      * @return RepeatedField<\Livekit\TimeRange>
@@ -245,7 +253,7 @@ class FeatureUsageInfo extends \Google\Protobuf\Internal\Message
     /**
      * time ranges during which the feature was enabled.
      * for e. g., noise cancellation may not be applied when a media track is paused/muted,
-     * this allows reporting only periods during which a feature is avtive.
+     * this allows reporting only periods during which a feature is active.
      *
      * Generated from protobuf field <code>repeated .livekit.TimeRange time_ranges = 8;</code>
      * @param \Livekit\TimeRange[] $var
@@ -255,6 +263,32 @@ class FeatureUsageInfo extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\TimeRange::class);
         $this->time_ranges = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Feature specific metadata included in the report
+     *
+     * Generated from protobuf field <code>map<string, string> feature_info = 9;</code>
+     * @return \Google\Protobuf\Internal\MapField
+     */
+    public function getFeatureInfo()
+    {
+        return $this->feature_info;
+    }
+
+    /**
+     * Feature specific metadata included in the report
+     *
+     * Generated from protobuf field <code>map<string, string> feature_info = 9;</code>
+     * @param array|\Google\Protobuf\Internal\MapField $var
+     * @return $this
+     */
+    public function setFeatureInfo($var)
+    {
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->feature_info = $arr;
 
         return $this;
     }

@@ -127,6 +127,10 @@ class SIPCallInfo extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.livekit.ProviderInfo provider_info = 27;</code>
      */
     protected $provider_info = null;
+    /**
+     * Generated from protobuf field <code>string sip_call_id = 28;</code>
+     */
+    protected $sip_call_id = '';
 
     /**
      * Constructor.
@@ -162,6 +166,7 @@ class SIPCallInfo extends \Google\Protobuf\Internal\Message
      *     @type string $pcap_file_link
      *     @type \Google\Protobuf\Any[] $call_context
      *     @type \Livekit\ProviderInfo $provider_info
+     *     @type string $sip_call_id
      * }
      */
     public function __construct($data = NULL) {
@@ -821,6 +826,28 @@ class SIPCallInfo extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Livekit\ProviderInfo::class);
         $this->provider_info = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string sip_call_id = 28;</code>
+     * @return string
+     */
+    public function getSipCallId()
+    {
+        return $this->sip_call_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>string sip_call_id = 28;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setSipCallId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->sip_call_id = $var;
 
         return $this;
     }

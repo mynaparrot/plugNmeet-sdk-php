@@ -121,11 +121,15 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      */
     protected $polls_features = null;
     /**
-     * next ID: 27
-     *
      * Generated from protobuf field <code>.plugnmeet.InsightsFeatures insights_features = 26;</code>
      */
     protected $insights_features = null;
+    /**
+     * next ID: 28
+     *
+     * Generated from protobuf field <code>.plugnmeet.SipDialInFeatures sip_dial_in_features = 27;</code>
+     */
+    protected $sip_dial_in_features = null;
 
     /**
      * Constructor.
@@ -161,7 +165,8 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      *     @type \Mynaparrot\PlugnmeetProto\EndToEndEncryptionFeatures $end_to_end_encryption_features
      *     @type \Mynaparrot\PlugnmeetProto\PollsFeatures $polls_features
      *     @type \Mynaparrot\PlugnmeetProto\InsightsFeatures $insights_features
-     *           next ID: 27
+     *     @type \Mynaparrot\PlugnmeetProto\SipDialInFeatures $sip_dial_in_features
+     *           next ID: 28
      * }
      */
     public function __construct($data = NULL) {
@@ -918,8 +923,6 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * next ID: 27
-     *
      * Generated from protobuf field <code>.plugnmeet.InsightsFeatures insights_features = 26;</code>
      * @return \Mynaparrot\PlugnmeetProto\InsightsFeatures|null
      */
@@ -939,8 +942,6 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * next ID: 27
-     *
      * Generated from protobuf field <code>.plugnmeet.InsightsFeatures insights_features = 26;</code>
      * @param \Mynaparrot\PlugnmeetProto\InsightsFeatures $var
      * @return $this
@@ -949,6 +950,42 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\InsightsFeatures::class);
         $this->insights_features = $var;
+
+        return $this;
+    }
+
+    /**
+     * next ID: 28
+     *
+     * Generated from protobuf field <code>.plugnmeet.SipDialInFeatures sip_dial_in_features = 27;</code>
+     * @return \Mynaparrot\PlugnmeetProto\SipDialInFeatures|null
+     */
+    public function getSipDialInFeatures()
+    {
+        return $this->sip_dial_in_features;
+    }
+
+    public function hasSipDialInFeatures()
+    {
+        return isset($this->sip_dial_in_features);
+    }
+
+    public function clearSipDialInFeatures()
+    {
+        unset($this->sip_dial_in_features);
+    }
+
+    /**
+     * next ID: 28
+     *
+     * Generated from protobuf field <code>.plugnmeet.SipDialInFeatures sip_dial_in_features = 27;</code>
+     * @param \Mynaparrot\PlugnmeetProto\SipDialInFeatures $var
+     * @return $this
+     */
+    public function setSipDialInFeatures($var)
+    {
+        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\SipDialInFeatures::class);
+        $this->sip_dial_in_features = $var;
 
         return $this;
     }

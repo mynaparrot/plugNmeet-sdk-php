@@ -66,6 +66,10 @@ class AgentDeployment extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string server_region = 13;</code>
      */
     protected $server_region = '';
+    /**
+     * Generated from protobuf field <code>repeated .livekit.AgentEvent events = 14;</code>
+     */
+    private $events;
 
     /**
      * Constructor.
@@ -86,6 +90,7 @@ class AgentDeployment extends \Google\Protobuf\Internal\Message
      *     @type string $mem_limit
      *     @type string $cpu_limit
      *     @type string $server_region
+     *     @type \Livekit\AgentEvent[] $events
      * }
      */
     public function __construct($data = NULL) {
@@ -375,6 +380,28 @@ class AgentDeployment extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->server_region = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .livekit.AgentEvent events = 14;</code>
+     * @return RepeatedField<\Livekit\AgentEvent>
+     */
+    public function getEvents()
+    {
+        return $this->events;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .livekit.AgentEvent events = 14;</code>
+     * @param \Livekit\AgentEvent[] $var
+     * @return $this
+     */
+    public function setEvents($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\AgentEvent::class);
+        $this->events = $arr;
 
         return $this;
     }
