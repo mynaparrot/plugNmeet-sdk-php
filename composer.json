@@ -27,13 +27,13 @@
     "ext-curl": "*",
     "ext-json": "*",
     "ext-bcmath": "*",
-    "ramsey/uuid": "4.7.6",
-    "firebase/php-jwt": "6.11.1",
+    "ramsey/uuid": "4.9.2",
+    "firebase/php-jwt": "7.0.2",
     "guzzlehttp/guzzle": "7.10",
     "google/protobuf": "4.33.4"
   },
   "require-dev": {
-    "overtrue/phplint": "9.5.6",
-    "squizlabs/php_codesniffer": "3.11.3"
+    "overtrue/phplint": "9.7.1",
+    "squizlabs/php_codesniffer": "4.0.1"
   }
 }
