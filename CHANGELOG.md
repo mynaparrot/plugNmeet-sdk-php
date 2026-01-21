@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.1.0](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.0.1...v2.1.0) (2026-01-21)
+
+
+### Features
+
+* SIP/VoIP dial in ([8625d73](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/8625d732b2f8da58275ea321cd07d402b709fafb))
+
+
+### Bug Fixes
+
+* bump deps ([25dafa3](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/25dafa3704ff5a1350786633f7de831a802afc0f))
+* **deps:** update dependency google/protobuf to v4.33.4 ([f274542](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/f2745428e5777b30e722224fe7c09f7ee97b380d))
+* **deps:** update dependency google/protobuf to v4.33.4 ([4240c2c](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/4240c2c90a2476fa4a7394de71757cb6de45dc59))
+
 ## [2.0.1](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.0.0...v2.0.1) (2026-01-09)
 
 
