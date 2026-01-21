@@ -27,7 +27,7 @@
     "ext-curl": "*",
     "ext-json": "*",
     "ext-bcmath": "*",
-    "ramsey/uuid": "4.7.6",
+    "ramsey/uuid": "4.9.2",
     "firebase/php-jwt": "6.11.1",
     "guzzlehttp/guzzle": "7.10",
     "google/protobuf": "4.33.4"
