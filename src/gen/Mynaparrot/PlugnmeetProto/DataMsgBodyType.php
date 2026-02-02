@@ -88,6 +88,14 @@ class DataMsgBodyType
      * Generated from protobuf enum <code>USER_CONNECTION_QUALITY_CHANGE = 17;</code>
      */
     const USER_CONNECTION_QUALITY_CHANGE = 17;
+    /**
+     * Generated from protobuf enum <code>REQ_PUBLIC_CHAT_DATA = 18;</code>
+     */
+    const REQ_PUBLIC_CHAT_DATA = 18;
+    /**
+     * Generated from protobuf enum <code>RES_PUBLIC_CHAT_DATA = 19;</code>
+     */
+    const RES_PUBLIC_CHAT_DATA = 19;
 
     private static $valueToName = [
         self::UNKNOWN => 'UNKNOWN',
@@ -108,6 +116,8 @@ class DataMsgBodyType
         self::UPDATE_CURRENT_OFFICE_FILE_PAGES => 'UPDATE_CURRENT_OFFICE_FILE_PAGES',
         self::WHITEBOARD_RESET => 'WHITEBOARD_RESET',
         self::USER_CONNECTION_QUALITY_CHANGE => 'USER_CONNECTION_QUALITY_CHANGE',
+        self::REQ_PUBLIC_CHAT_DATA => 'REQ_PUBLIC_CHAT_DATA',
+        self::RES_PUBLIC_CHAT_DATA => 'RES_PUBLIC_CHAT_DATA',
     ];
 
     public static function name($value)

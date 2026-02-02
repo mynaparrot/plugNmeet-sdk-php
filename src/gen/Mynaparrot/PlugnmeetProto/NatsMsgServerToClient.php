@@ -26,6 +26,10 @@ class NatsMsgServerToClient extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string msg = 3;</code>
      */
     protected $msg = '';
+    /**
+     * Generated from protobuf field <code>bytes bin_msg = 4;</code>
+     */
+    protected $bin_msg = '';
 
     /**
      * Constructor.
@@ -36,6 +40,7 @@ class NatsMsgServerToClient extends \Google\Protobuf\Internal\Message
      *     @type string $id
      *     @type int $event
      *     @type string $msg
+     *     @type string $bin_msg
      * }
      */
     public function __construct($data = NULL) {
@@ -105,6 +110,28 @@ class NatsMsgServerToClient extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->msg = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bytes bin_msg = 4;</code>
+     * @return string
+     */
+    public function getBinMsg()
+    {
+        return $this->bin_msg;
+    }
+
+    /**
+     * Generated from protobuf field <code>bytes bin_msg = 4;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setBinMsg($var)
+    {
+        GPBUtil::checkString($var, False);
+        $this->bin_msg = $var;
 
         return $this;
     }

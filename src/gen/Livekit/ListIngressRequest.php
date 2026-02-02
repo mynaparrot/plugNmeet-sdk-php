@@ -15,6 +15,10 @@ use Google\Protobuf\RepeatedField;
 class ListIngressRequest extends \Google\Protobuf\Internal\Message
 {
     /**
+     * Generated from protobuf field <code>.livekit.TokenPagination page_token = 3;</code>
+     */
+    protected $page_token = null;
+    /**
      * when blank, lists all ingress endpoints
      *
      * Generated from protobuf field <code>string room_name = 1;</code>
@@ -33,6 +37,7 @@ class ListIngressRequest extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
+     *     @type \Livekit\TokenPagination $page_token
      *     @type string $room_name
      *           when blank, lists all ingress endpoints
      *     @type string $ingress_id
@@ -42,6 +47,38 @@ class ListIngressRequest extends \Google\Protobuf\Internal\Message
     public function __construct($data = NULL) {
         \GPBMetadata\LivekitIngress::initOnce();
         parent::__construct($data);
+    }
+
+    /**
+     * Generated from protobuf field <code>.livekit.TokenPagination page_token = 3;</code>
+     * @return \Livekit\TokenPagination|null
+     */
+    public function getPageToken()
+    {
+        return $this->page_token;
+    }
+
+    public function hasPageToken()
+    {
+        return isset($this->page_token);
+    }
+
+    public function clearPageToken()
+    {
+        unset($this->page_token);
+    }
+
+    /**
+     * Generated from protobuf field <code>.livekit.TokenPagination page_token = 3;</code>
+     * @param \Livekit\TokenPagination $var
+     * @return $this
+     */
+    public function setPageToken($var)
+    {
+        GPBUtil::checkMessage($var, \Livekit\TokenPagination::class);
+        $this->page_token = $var;
+
+        return $this;
     }
 
     /**

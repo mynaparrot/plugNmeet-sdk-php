@@ -39,15 +39,19 @@ class VerifyTokenRes extends \Google\Protobuf\Internal\Message
      */
     protected $user_id = null;
     /**
-     * Generated from protobuf field <code>optional .plugnmeet.NatsSubjects nats_subjects = 7;</code>
+     * Generated from protobuf field <code>optional string room_stream_name = 7;</code>
+     */
+    protected $room_stream_name = null;
+    /**
+     * Generated from protobuf field <code>optional .plugnmeet.NatsSubjects nats_subjects = 8;</code>
      */
     protected $nats_subjects = null;
     /**
-     * Generated from protobuf field <code>optional bool enabled_self_insert_encryption_key = 8;</code>
+     * Generated from protobuf field <code>optional bool enabled_self_insert_encryption_key = 9;</code>
      */
     protected $enabled_self_insert_encryption_key = null;
     /**
-     * Generated from protobuf field <code>optional bool is_cloud = 9;</code>
+     * Generated from protobuf field <code>optional bool is_cloud = 10;</code>
      */
     protected $is_cloud = null;
 
@@ -63,6 +67,7 @@ class VerifyTokenRes extends \Google\Protobuf\Internal\Message
      *     @type string $server_version
      *     @type string $room_id
      *     @type string $user_id
+     *     @type string $room_stream_name
      *     @type \Mynaparrot\PlugnmeetProto\NatsSubjects $nats_subjects
      *     @type bool $enabled_self_insert_encryption_key
      *     @type bool $is_cloud
@@ -236,7 +241,39 @@ class VerifyTokenRes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional .plugnmeet.NatsSubjects nats_subjects = 7;</code>
+     * Generated from protobuf field <code>optional string room_stream_name = 7;</code>
+     * @return string
+     */
+    public function getRoomStreamName()
+    {
+        return isset($this->room_stream_name) ? $this->room_stream_name : '';
+    }
+
+    public function hasRoomStreamName()
+    {
+        return isset($this->room_stream_name);
+    }
+
+    public function clearRoomStreamName()
+    {
+        unset($this->room_stream_name);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string room_stream_name = 7;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setRoomStreamName($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->room_stream_name = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .plugnmeet.NatsSubjects nats_subjects = 8;</code>
      * @return \Mynaparrot\PlugnmeetProto\NatsSubjects|null
      */
     public function getNatsSubjects()
@@ -255,7 +292,7 @@ class VerifyTokenRes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional .plugnmeet.NatsSubjects nats_subjects = 7;</code>
+     * Generated from protobuf field <code>optional .plugnmeet.NatsSubjects nats_subjects = 8;</code>
      * @param \Mynaparrot\PlugnmeetProto\NatsSubjects $var
      * @return $this
      */
@@ -268,7 +305,7 @@ class VerifyTokenRes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional bool enabled_self_insert_encryption_key = 8;</code>
+     * Generated from protobuf field <code>optional bool enabled_self_insert_encryption_key = 9;</code>
      * @return bool
      */
     public function getEnabledSelfInsertEncryptionKey()
@@ -287,7 +324,7 @@ class VerifyTokenRes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional bool enabled_self_insert_encryption_key = 8;</code>
+     * Generated from protobuf field <code>optional bool enabled_self_insert_encryption_key = 9;</code>
      * @param bool $var
      * @return $this
      */
@@ -300,7 +337,7 @@ class VerifyTokenRes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional bool is_cloud = 9;</code>
+     * Generated from protobuf field <code>optional bool is_cloud = 10;</code>
      * @return bool
      */
     public function getIsCloud()
@@ -319,7 +356,7 @@ class VerifyTokenRes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional bool is_cloud = 9;</code>
+     * Generated from protobuf field <code>optional bool is_cloud = 10;</code>
      * @param bool $var
      * @return $this
      */

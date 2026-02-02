@@ -21,9 +21,9 @@ class TextMessageResponse extends \Google\Protobuf\Internal\Message
      */
     protected $message_id = '';
     /**
-     * Generated from protobuf field <code>bytes session_data = 2;</code>
+     * Generated from protobuf field <code>.livekit.AgentSessionState session_state = 2;</code>
      */
-    protected $session_data = '';
+    protected $session_state = null;
     /**
      * Generated from protobuf field <code>string error = 3;</code>
      */
@@ -37,7 +37,7 @@ class TextMessageResponse extends \Google\Protobuf\Internal\Message
      *
      *     @type string $message_id
      *           Indicate the request is completed
-     *     @type string $session_data
+     *     @type \Livekit\AgentSessionState $session_state
      *     @type string $error
      * }
      */
@@ -73,23 +73,33 @@ class TextMessageResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>bytes session_data = 2;</code>
-     * @return string
+     * Generated from protobuf field <code>.livekit.AgentSessionState session_state = 2;</code>
+     * @return \Livekit\AgentSessionState|null
      */
-    public function getSessionData()
+    public function getSessionState()
     {
-        return $this->session_data;
+        return $this->session_state;
+    }
+
+    public function hasSessionState()
+    {
+        return isset($this->session_state);
+    }
+
+    public function clearSessionState()
+    {
+        unset($this->session_state);
     }
 
     /**
-     * Generated from protobuf field <code>bytes session_data = 2;</code>
-     * @param string $var
+     * Generated from protobuf field <code>.livekit.AgentSessionState session_state = 2;</code>
+     * @param \Livekit\AgentSessionState $var
      * @return $this
      */
-    public function setSessionData($var)
+    public function setSessionState($var)
     {
-        GPBUtil::checkString($var, False);
-        $this->session_data = $var;
+        GPBUtil::checkMessage($var, \Livekit\AgentSessionState::class);
+        $this->session_state = $var;
 
         return $this;
     }

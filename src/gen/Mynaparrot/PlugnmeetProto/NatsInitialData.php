@@ -22,10 +22,6 @@ class NatsInitialData extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.plugnmeet.NatsKvUserInfo local_user = 2;</code>
      */
     protected $local_user = null;
-    /**
-     * Generated from protobuf field <code>.plugnmeet.MediaServerConnInfo media_server_info = 3;</code>
-     */
-    protected $media_server_info = null;
 
     /**
      * Constructor.
@@ -35,7 +31,6 @@ class NatsInitialData extends \Google\Protobuf\Internal\Message
      *
      *     @type \Mynaparrot\PlugnmeetProto\NatsKvRoomInfo $room
      *     @type \Mynaparrot\PlugnmeetProto\NatsKvUserInfo $local_user
-     *     @type \Mynaparrot\PlugnmeetProto\MediaServerConnInfo $media_server_info
      * }
      */
     public function __construct($data = NULL) {
@@ -103,38 +98,6 @@ class NatsInitialData extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\NatsKvUserInfo::class);
         $this->local_user = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>.plugnmeet.MediaServerConnInfo media_server_info = 3;</code>
-     * @return \Mynaparrot\PlugnmeetProto\MediaServerConnInfo|null
-     */
-    public function getMediaServerInfo()
-    {
-        return $this->media_server_info;
-    }
-
-    public function hasMediaServerInfo()
-    {
-        return isset($this->media_server_info);
-    }
-
-    public function clearMediaServerInfo()
-    {
-        unset($this->media_server_info);
-    }
-
-    /**
-     * Generated from protobuf field <code>.plugnmeet.MediaServerConnInfo media_server_info = 3;</code>
-     * @param \Mynaparrot\PlugnmeetProto\MediaServerConnInfo $var
-     * @return $this
-     */
-    public function setMediaServerInfo($var)
-    {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\MediaServerConnInfo::class);
-        $this->media_server_info = $var;
 
         return $this;
     }
