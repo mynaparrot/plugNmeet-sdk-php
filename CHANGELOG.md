@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.1.1](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.1.0...v2.1.1) (2026-02-02)
+
+
+### Bug Fixes
+
+* bump proto ([5e9eb7f](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/5e9eb7f70d02e2941b657ea4eff045d28c41728b))
+* bump proto ([2b64600](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/2b646002da2faa68db56fc5319671a2ad073f6f4))
+* **deps:** update dependency google/protobuf to v4.33.5 ([31fde1d](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/31fde1dc3559f013a99c55cf6ce12e5608c81fed))
+* **deps:** update dependency google/protobuf to v4.33.5 ([093de05](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/093de05150b29690e0e8c68345bf1133e2d3c1bc))
+
 ## [2.1.0](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.0.1...v2.1.0) (2026-01-21)
 
 
