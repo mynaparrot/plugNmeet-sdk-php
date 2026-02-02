@@ -196,7 +196,7 @@
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    ListIngressRequest
+    AgentSessionState
 
         <span class="phpdocumentor-element__extends">
         extends <abbr title="\Google\Protobuf\Internal\Message">Message</abbr>
@@ -218,13 +218,13 @@
 </div>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ListIngressRequest.php"><a href="files/src-gen-livekit-listingressrequest.html"><abbr title="src/gen/Livekit/ListIngressRequest.php">ListIngressRequest.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentSessionState.php"><a href="files/src-gen-livekit-agentsessionstate.html"><abbr title="src/gen/Livekit/AgentSessionState.php">AgentSessionState.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Generated from protobuf message &lt;code&gt;livekit.ListIngressRequest&lt;/code&gt;</p>
+            <p class="phpdocumentor-summary">Generated from protobuf message &lt;code&gt;livekit.AgentSessionState&lt;/code&gt;</p>
 
 
 
@@ -234,7 +234,7 @@
     
 <h3 id="toc">
     Table of Contents
-    <a href="classes/Livekit-ListIngressRequest.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Livekit-AgentSessionState.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h3>
 
@@ -248,99 +248,87 @@
 
 <h4 id="toc-properties">
     Properties
-    <a href="classes/Livekit-ListIngressRequest.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Livekit-AgentSessionState.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a class="" href="classes/Livekit-ListIngressRequest.html#property_ingress_id">$ingress_id</a>
+    <a class="" href="classes/Livekit-AgentSessionState.html#property_delta">$delta</a>
     <span>
                         &nbsp;: mixed            </span>
 </dt>
-<dd>(optional, filter by ingress ID)</dd>
+<dd>Generated from protobuf field &lt;code&gt;bytes delta = 3;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a class="" href="classes/Livekit-ListIngressRequest.html#property_page_token">$page_token</a>
+    <a class="" href="classes/Livekit-AgentSessionState.html#property_snapshot">$snapshot</a>
     <span>
                         &nbsp;: mixed            </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;.livekit.TokenPagination page_token = 3;&lt;/code&gt;</dd>
+<dd>Generated from protobuf field &lt;code&gt;bytes snapshot = 2;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a class="" href="classes/Livekit-ListIngressRequest.html#property_room_name">$room_name</a>
+    <a class="" href="classes/Livekit-AgentSessionState.html#property_version">$version</a>
     <span>
                         &nbsp;: mixed            </span>
 </dt>
-<dd>when blank, lists all ingress endpoints</dd>
+<dd>Generated from protobuf field &lt;code&gt;uint64 version = 1;&lt;/code&gt;</dd>
 
     </dl>
 
 <h4 id="toc-methods">
     Methods
-    <a href="classes/Livekit-ListIngressRequest.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Livekit-AgentSessionState.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Livekit-ListIngressRequest.html#method___construct">__construct()</a>
+    <a class="" href="classes/Livekit-AgentSessionState.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Livekit-ListIngressRequest.html#method_clearPageToken">clearPageToken()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Livekit-ListIngressRequest.html#method_getIngressId">getIngressId()</a>
+    <a class="" href="classes/Livekit-AgentSessionState.html#method_getDelta">getDelta()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>(optional, filter by ingress ID)</dd>
+<dd>Generated from protobuf field &lt;code&gt;bytes delta = 3;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Livekit-ListIngressRequest.html#method_getPageToken">getPageToken()</a>
-    <span>
-                                &nbsp;: <a href="classes/Livekit-TokenPagination.html"><abbr title="\Livekit\TokenPagination">TokenPagination</abbr></a>|null    </span>
-</dt>
-<dd>Generated from protobuf field &lt;code&gt;.livekit.TokenPagination page_token = 3;&lt;/code&gt;</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Livekit-ListIngressRequest.html#method_getRoomName">getRoomName()</a>
+    <a class="" href="classes/Livekit-AgentSessionState.html#method_getSnapshot">getSnapshot()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>when blank, lists all ingress endpoints</dd>
+<dd>Generated from protobuf field &lt;code&gt;bytes snapshot = 2;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Livekit-ListIngressRequest.html#method_hasPageToken">hasPageToken()</a>
+    <a class="" href="classes/Livekit-AgentSessionState.html#method_getVersion">getVersion()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: int|string    </span>
 </dt>
+<dd>Generated from protobuf field &lt;code&gt;uint64 version = 1;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Livekit-ListIngressRequest.html#method_setIngressId">setIngressId()</a>
-    <span>
-                                &nbsp;: $this    </span>
-</dt>
-<dd>(optional, filter by ingress ID)</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Livekit-ListIngressRequest.html#method_setPageToken">setPageToken()</a>
+    <a class="" href="classes/Livekit-AgentSessionState.html#method_setDelta">setDelta()</a>
     <span>
                                 &nbsp;: $this    </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;.livekit.TokenPagination page_token = 3;&lt;/code&gt;</dd>
+<dd>Generated from protobuf field &lt;code&gt;bytes delta = 3;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Livekit-ListIngressRequest.html#method_setRoomName">setRoomName()</a>
+    <a class="" href="classes/Livekit-AgentSessionState.html#method_setSnapshot">setSnapshot()</a>
     <span>
                                 &nbsp;: $this    </span>
 </dt>
-<dd>when blank, lists all ingress endpoints</dd>
+<dd>Generated from protobuf field &lt;code&gt;bytes snapshot = 2;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-AgentSessionState.html#method_setVersion">setVersion()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;uint64 version = 1;&lt;/code&gt;</dd>
 
     </dl>
 
@@ -352,7 +340,7 @@
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Livekit-ListIngressRequest.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Livekit-AgentSessionState.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
@@ -362,32 +350,30 @@
             -protected
                                                                     "
 >
-    <h4 class="phpdocumentor-element__name" id="property_ingress_id">
-        $ingress_id
-        <a href="classes/Livekit-ListIngressRequest.html#property_ingress_id" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_delta">
+        $delta
+        <a href="classes/Livekit-AgentSessionState.html#property_delta" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                             </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ListIngressRequest.php"><a href="files/src-gen-livekit-listingressrequest.html"><abbr title="src/gen/Livekit/ListIngressRequest.php">ListIngressRequest.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentSessionState.php"><a href="files/src-gen-livekit-agentsessionstate.html"><abbr title="src/gen/Livekit/AgentSessionState.php">AgentSessionState.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">(optional, filter by ingress ID)</p>
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;bytes delta = 3;&lt;/code&gt;</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">protected</span>
             <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">$ingress_id</span>
+    <span class="phpdocumentor-signature__name">$delta</span>
      = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
 
-        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">string ingress_id = 2;</code></p>
-</section>
-
+    
     
     
 
@@ -402,70 +388,68 @@
             -protected
                                                                     "
 >
-    <h4 class="phpdocumentor-element__name" id="property_page_token">
-        $page_token
-        <a href="classes/Livekit-ListIngressRequest.html#property_page_token" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_snapshot">
+        $snapshot
+        <a href="classes/Livekit-AgentSessionState.html#property_snapshot" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                             </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ListIngressRequest.php"><a href="files/src-gen-livekit-listingressrequest.html"><abbr title="src/gen/Livekit/ListIngressRequest.php">ListIngressRequest.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentSessionState.php"><a href="files/src-gen-livekit-agentsessionstate.html"><abbr title="src/gen/Livekit/AgentSessionState.php">AgentSessionState.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">24</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;bytes snapshot = 2;&lt;/code&gt;</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$snapshot</span>
+     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_version">
+        $version
+        <a href="classes/Livekit-AgentSessionState.html#property_version" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentSessionState.php"><a href="files/src-gen-livekit-agentsessionstate.html"><abbr title="src/gen/Livekit/AgentSessionState.php">AgentSessionState.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;.livekit.TokenPagination page_token = 3;&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;uint64 version = 1;&lt;/code&gt;</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">protected</span>
             <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">$page_token</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
+    <span class="phpdocumentor-signature__name">$version</span>
+     = <span class="phpdocumentor-signature__default-value">0</span></code>
 
     
-    
-    
-
-        
-        
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                                    "
->
-    <h4 class="phpdocumentor-element__name" id="property_room_name">
-        $room_name
-        <a href="classes/Livekit-ListIngressRequest.html#property_room_name" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                            </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ListIngressRequest.php"><a href="files/src-gen-livekit-listingressrequest.html"><abbr title="src/gen/Livekit/ListIngressRequest.php">ListIngressRequest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">26</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">when blank, lists all ingress endpoints</p>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-        <span class="phpdocumentor-signature__visibility">protected</span>
-            <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">$room_name</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
-
-        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">string room_name = 1;</code></p>
-</section>
-
     
     
 
@@ -478,7 +462,7 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Livekit-ListIngressRequest.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Livekit-AgentSessionState.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
@@ -489,13 +473,13 @@
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Livekit-ListIngressRequest.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Livekit-AgentSessionState.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ListIngressRequest.php"><a href="files/src-gen-livekit-listingressrequest.html"><abbr title="src/gen/Livekit/ListIngressRequest.php">ListIngressRequest.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentSessionState.php"><a href="files/src-gen-livekit-agentsessionstate.html"><abbr title="src/gen/Livekit/AgentSessionState.php">AgentSessionState.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -518,11 +502,9 @@
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>{
 Optional. Data for populating the Message object.</p>
-<pre class="prettyprint"><code class="prettyprint">@type \Livekit\TokenPagination $page_token
-@type string $room_name
-      when blank, lists all ingress endpoints
-@type string $ingress_id
-      (optional, filter by ingress ID)
+<pre class="prettyprint"><code class="prettyprint">@type int|string $version
+@type string $snapshot
+@type string $delta
 </code></pre>
 <p>}</p>
 </section>
@@ -542,64 +524,28 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_clearPageToken">
-        clearPageToken()
-        <a href="classes/Livekit-ListIngressRequest.html#method_clearPageToken" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getDelta">
+        getDelta()
+        <a href="classes/Livekit-AgentSessionState.html#method_getDelta" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ListIngressRequest.php"><a href="files/src-gen-livekit-listingressrequest.html"><abbr title="src/gen/Livekit/ListIngressRequest.php">ListIngressRequest.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentSessionState.php"><a href="files/src-gen-livekit-agentsessionstate.html"><abbr title="src/gen/Livekit/AgentSessionState.php">AgentSessionState.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">94</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;bytes delta = 3;&lt;/code&gt;</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">clearPageToken</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">getDelta</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
     
-    
-    
-
-        
-    
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getIngressId">
-        getIngressId()
-        <a href="classes/Livekit-ListIngressRequest.html#method_getIngressId" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ListIngressRequest.php"><a href="files/src-gen-livekit-listingressrequest.html"><abbr title="src/gen/Livekit/ListIngressRequest.php">ListIngressRequest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">116</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">(optional, filter by ingress ID)</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getIngressId</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">string ingress_id = 2;</code></p>
-</section>
-
     
     
 
@@ -617,69 +563,28 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getPageToken">
-        getPageToken()
-        <a href="classes/Livekit-ListIngressRequest.html#method_getPageToken" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getSnapshot">
+        getSnapshot()
+        <a href="classes/Livekit-AgentSessionState.html#method_getSnapshot" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ListIngressRequest.php"><a href="files/src-gen-livekit-listingressrequest.html"><abbr title="src/gen/Livekit/ListIngressRequest.php">ListIngressRequest.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentSessionState.php"><a href="files/src-gen-livekit-agentsessionstate.html"><abbr title="src/gen/Livekit/AgentSessionState.php">AgentSessionState.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;.livekit.TokenPagination page_token = 3;&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;bytes snapshot = 2;&lt;/code&gt;</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getPageToken</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Livekit-TokenPagination.html"><abbr title="\Livekit\TokenPagination">TokenPagination</abbr></a>|null</span></code>
+                    <span class="phpdocumentor-signature__name">getSnapshot</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
     
-    
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Livekit-TokenPagination.html"><abbr title="\Livekit\TokenPagination">TokenPagination</abbr></a>|null</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getRoomName">
-        getRoomName()
-        <a href="classes/Livekit-ListIngressRequest.html#method_getRoomName" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ListIngressRequest.php"><a href="files/src-gen-livekit-listingressrequest.html"><abbr title="src/gen/Livekit/ListIngressRequest.php">ListIngressRequest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">90</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">when blank, lists all ingress endpoints</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getRoomName</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">string room_name = 1;</code></p>
-</section>
-
     
     
 
@@ -697,22 +602,23 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_hasPageToken">
-        hasPageToken()
-        <a href="classes/Livekit-ListIngressRequest.html#method_hasPageToken" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getVersion">
+        getVersion()
+        <a href="classes/Livekit-AgentSessionState.html#method_getVersion" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ListIngressRequest.php"><a href="files/src-gen-livekit-listingressrequest.html"><abbr title="src/gen/Livekit/ListIngressRequest.php">ListIngressRequest.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentSessionState.php"><a href="files/src-gen-livekit-agentsessionstate.html"><abbr title="src/gen/Livekit/AgentSessionState.php">AgentSessionState.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;uint64 version = 1;&lt;/code&gt;</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">hasPageToken</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">getVersion</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -723,7 +629,11 @@ Optional. Data for populating the Message object.</p>
 
         
     
-    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int|string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -731,30 +641,28 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_setIngressId">
-        setIngressId()
-        <a href="classes/Livekit-ListIngressRequest.html#method_setIngressId" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_setDelta">
+        setDelta()
+        <a href="classes/Livekit-AgentSessionState.html#method_setDelta" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ListIngressRequest.php"><a href="files/src-gen-livekit-listingressrequest.html"><abbr title="src/gen/Livekit/ListIngressRequest.php">ListIngressRequest.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentSessionState.php"><a href="files/src-gen-livekit-agentsessionstate.html"><abbr title="src/gen/Livekit/AgentSessionState.php">AgentSessionState.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">128</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">(optional, filter by ingress ID)</p>
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;bytes delta = 3;&lt;/code&gt;</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setIngressId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                    <span class="phpdocumentor-signature__name">setDelta</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">string ingress_id = 2;</code></p>
-</section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -782,23 +690,23 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_setPageToken">
-        setPageToken()
-        <a href="classes/Livekit-ListIngressRequest.html#method_setPageToken" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_setSnapshot">
+        setSnapshot()
+        <a href="classes/Livekit-AgentSessionState.html#method_setSnapshot" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ListIngressRequest.php"><a href="files/src-gen-livekit-listingressrequest.html"><abbr title="src/gen/Livekit/ListIngressRequest.php">ListIngressRequest.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentSessionState.php"><a href="files/src-gen-livekit-agentsessionstate.html"><abbr title="src/gen/Livekit/AgentSessionState.php">AgentSessionState.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;.livekit.TokenPagination page_token = 3;&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;bytes snapshot = 2;&lt;/code&gt;</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setPageToken</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Livekit-TokenPagination.html"><abbr title="\Livekit\TokenPagination">TokenPagination</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                    <span class="phpdocumentor-signature__name">setSnapshot</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -808,7 +716,7 @@ Optional. Data for populating the Message object.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$var</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Livekit-TokenPagination.html"><abbr title="\Livekit\TokenPagination">TokenPagination</abbr></a></span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -831,35 +739,33 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_setRoomName">
-        setRoomName()
-        <a href="classes/Livekit-ListIngressRequest.html#method_setRoomName" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_setVersion">
+        setVersion()
+        <a href="classes/Livekit-AgentSessionState.html#method_setVersion" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ListIngressRequest.php"><a href="files/src-gen-livekit-listingressrequest.html"><abbr title="src/gen/Livekit/ListIngressRequest.php">ListIngressRequest.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentSessionState.php"><a href="files/src-gen-livekit-agentsessionstate.html"><abbr title="src/gen/Livekit/AgentSessionState.php">AgentSessionState.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">when blank, lists all ingress endpoints</p>
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;uint64 version = 1;&lt;/code&gt;</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setRoomName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                    <span class="phpdocumentor-signature__name">setVersion</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">string room_name = 1;</code></p>
-</section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$var</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int|string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -882,7 +788,7 @@ Optional. Data for populating the Message object.</p>
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
         <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/src/gen/Livekit/ListIngressRequest.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/src/gen/Livekit/AgentSessionState.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
         </div>
         <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
     </div>
@@ -983,32 +889,30 @@ Optional. Data for populating the Message object.</p>
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                            <li><a href="classes/Livekit-ListIngressRequest.html#toc-properties">Properties</a></li>
-                                                            <li><a href="classes/Livekit-ListIngressRequest.html#toc-methods">Methods</a></li>
+                                                            <li><a href="classes/Livekit-AgentSessionState.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Livekit-AgentSessionState.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
             
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li class=""><a href="classes/Livekit-ListIngressRequest.html#property_ingress_id">$ingress_id</a></li>
-                                                    <li class=""><a href="classes/Livekit-ListIngressRequest.html#property_page_token">$page_token</a></li>
-                                                    <li class=""><a href="classes/Livekit-ListIngressRequest.html#property_room_name">$room_name</a></li>
+                                                    <li class=""><a href="classes/Livekit-AgentSessionState.html#property_delta">$delta</a></li>
+                                                    <li class=""><a href="classes/Livekit-AgentSessionState.html#property_snapshot">$snapshot</a></li>
+                                                    <li class=""><a href="classes/Livekit-AgentSessionState.html#property_version">$version</a></li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li class=""><a href="classes/Livekit-ListIngressRequest.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Livekit-ListIngressRequest.html#method_clearPageToken">clearPageToken()</a></li>
-                                            <li class=""><a href="classes/Livekit-ListIngressRequest.html#method_getIngressId">getIngressId()</a></li>
-                                            <li class=""><a href="classes/Livekit-ListIngressRequest.html#method_getPageToken">getPageToken()</a></li>
-                                            <li class=""><a href="classes/Livekit-ListIngressRequest.html#method_getRoomName">getRoomName()</a></li>
-                                            <li class=""><a href="classes/Livekit-ListIngressRequest.html#method_hasPageToken">hasPageToken()</a></li>
-                                            <li class=""><a href="classes/Livekit-ListIngressRequest.html#method_setIngressId">setIngressId()</a></li>
-                                            <li class=""><a href="classes/Livekit-ListIngressRequest.html#method_setPageToken">setPageToken()</a></li>
-                                            <li class=""><a href="classes/Livekit-ListIngressRequest.html#method_setRoomName">setRoomName()</a></li>
+                                            <li class=""><a href="classes/Livekit-AgentSessionState.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Livekit-AgentSessionState.html#method_getDelta">getDelta()</a></li>
+                                            <li class=""><a href="classes/Livekit-AgentSessionState.html#method_getSnapshot">getSnapshot()</a></li>
+                                            <li class=""><a href="classes/Livekit-AgentSessionState.html#method_getVersion">getVersion()</a></li>
+                                            <li class=""><a href="classes/Livekit-AgentSessionState.html#method_setDelta">setDelta()</a></li>
+                                            <li class=""><a href="classes/Livekit-AgentSessionState.html#method_setSnapshot">setSnapshot()</a></li>
+                                            <li class=""><a href="classes/Livekit-AgentSessionState.html#method_setVersion">setVersion()</a></li>
                                     </ul>
             </li>
                     </ul>
@@ -1028,7 +932,7 @@ Optional. Data for populating the Message object.</p>
     </section>
 </section>
         </div>
-        <a href="classes/Livekit-ListIngressRequest.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Livekit-AgentSessionState.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

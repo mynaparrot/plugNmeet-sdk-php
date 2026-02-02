@@ -1846,6 +1846,61 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Livekit-AgentSecretKind.html#property_valueToName"
         },                {
+            "fqsen": "\\Livekit\\AgentSessionState",
+            "name": "AgentSessionState",
+            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Elivekit.AgentSessionState\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentSessionState.html"
+        },                {
+            "fqsen": "\\Livekit\\AgentSessionState\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Livekit-AgentSessionState.html#method___construct"
+        },                {
+            "fqsen": "\\Livekit\\AgentSessionState\u003A\u003AgetVersion\u0028\u0029",
+            "name": "getVersion",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint64\u0020version\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentSessionState.html#method_getVersion"
+        },                {
+            "fqsen": "\\Livekit\\AgentSessionState\u003A\u003AsetVersion\u0028\u0029",
+            "name": "setVersion",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint64\u0020version\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentSessionState.html#method_setVersion"
+        },                {
+            "fqsen": "\\Livekit\\AgentSessionState\u003A\u003AgetSnapshot\u0028\u0029",
+            "name": "getSnapshot",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebytes\u0020snapshot\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentSessionState.html#method_getSnapshot"
+        },                {
+            "fqsen": "\\Livekit\\AgentSessionState\u003A\u003AsetSnapshot\u0028\u0029",
+            "name": "setSnapshot",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebytes\u0020snapshot\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentSessionState.html#method_setSnapshot"
+        },                {
+            "fqsen": "\\Livekit\\AgentSessionState\u003A\u003AgetDelta\u0028\u0029",
+            "name": "getDelta",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebytes\u0020delta\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentSessionState.html#method_getDelta"
+        },                {
+            "fqsen": "\\Livekit\\AgentSessionState\u003A\u003AsetDelta\u0028\u0029",
+            "name": "setDelta",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebytes\u0020delta\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentSessionState.html#method_setDelta"
+        },                {
+            "fqsen": "\\Livekit\\AgentSessionState\u003A\u003A\u0024version",
+            "name": "version",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint64\u0020version\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentSessionState.html#property_version"
+        },                {
+            "fqsen": "\\Livekit\\AgentSessionState\u003A\u003A\u0024snapshot",
+            "name": "snapshot",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebytes\u0020snapshot\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentSessionState.html#property_snapshot"
+        },                {
+            "fqsen": "\\Livekit\\AgentSessionState\u003A\u003A\u0024delta",
+            "name": "delta",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebytes\u0020delta\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-AgentSessionState.html#property_delta"
+        },                {
             "fqsen": "\\Livekit\\AgentVersion",
             "name": "AgentVersion",
             "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Elivekit.AgentVersion\u003C\/code\u003E",
@@ -15031,6 +15086,26 @@ Search.appendIndex(
             "summary": "Constructor.",
             "url": "classes/Livekit-ListIngressRequest.html#method___construct"
         },                {
+            "fqsen": "\\Livekit\\ListIngressRequest\u003A\u003AgetPageToken\u0028\u0029",
+            "name": "getPageToken",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.livekit.TokenPagination\u0020page_token\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-ListIngressRequest.html#method_getPageToken"
+        },                {
+            "fqsen": "\\Livekit\\ListIngressRequest\u003A\u003AhasPageToken\u0028\u0029",
+            "name": "hasPageToken",
+            "summary": "",
+            "url": "classes/Livekit-ListIngressRequest.html#method_hasPageToken"
+        },                {
+            "fqsen": "\\Livekit\\ListIngressRequest\u003A\u003AclearPageToken\u0028\u0029",
+            "name": "clearPageToken",
+            "summary": "",
+            "url": "classes/Livekit-ListIngressRequest.html#method_clearPageToken"
+        },                {
+            "fqsen": "\\Livekit\\ListIngressRequest\u003A\u003AsetPageToken\u0028\u0029",
+            "name": "setPageToken",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.livekit.TokenPagination\u0020page_token\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-ListIngressRequest.html#method_setPageToken"
+        },                {
             "fqsen": "\\Livekit\\ListIngressRequest\u003A\u003AgetRoomName\u0028\u0029",
             "name": "getRoomName",
             "summary": "when\u0020blank,\u0020lists\u0020all\u0020ingress\u0020endpoints",
@@ -15050,6 +15125,11 @@ Search.appendIndex(
             "name": "setIngressId",
             "summary": "\u0028optional,\u0020filter\u0020by\u0020ingress\u0020ID\u0029",
             "url": "classes/Livekit-ListIngressRequest.html#method_setIngressId"
+        },                {
+            "fqsen": "\\Livekit\\ListIngressRequest\u003A\u003A\u0024page_token",
+            "name": "page_token",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.livekit.TokenPagination\u0020page_token\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-ListIngressRequest.html#property_page_token"
         },                {
             "fqsen": "\\Livekit\\ListIngressRequest\u003A\u003A\u0024room_name",
             "name": "room_name",
@@ -15071,19 +15151,44 @@ Search.appendIndex(
             "summary": "Constructor.",
             "url": "classes/Livekit-ListIngressResponse.html#method___construct"
         },                {
+            "fqsen": "\\Livekit\\ListIngressResponse\u003A\u003AgetNextPageToken\u0028\u0029",
+            "name": "getNextPageToken",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.livekit.TokenPagination\u0020next_page_token\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-ListIngressResponse.html#method_getNextPageToken"
+        },                {
+            "fqsen": "\\Livekit\\ListIngressResponse\u003A\u003AhasNextPageToken\u0028\u0029",
+            "name": "hasNextPageToken",
+            "summary": "",
+            "url": "classes/Livekit-ListIngressResponse.html#method_hasNextPageToken"
+        },                {
+            "fqsen": "\\Livekit\\ListIngressResponse\u003A\u003AclearNextPageToken\u0028\u0029",
+            "name": "clearNextPageToken",
+            "summary": "",
+            "url": "classes/Livekit-ListIngressResponse.html#method_clearNextPageToken"
+        },                {
+            "fqsen": "\\Livekit\\ListIngressResponse\u003A\u003AsetNextPageToken\u0028\u0029",
+            "name": "setNextPageToken",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.livekit.TokenPagination\u0020next_page_token\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-ListIngressResponse.html#method_setNextPageToken"
+        },                {
             "fqsen": "\\Livekit\\ListIngressResponse\u003A\u003AgetItems\u0028\u0029",
             "name": "getItems",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.livekit.IngressInfo\u0020items\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "summary": "next\u0020field\u0020id\u003A\u00203",
             "url": "classes/Livekit-ListIngressResponse.html#method_getItems"
         },                {
             "fqsen": "\\Livekit\\ListIngressResponse\u003A\u003AsetItems\u0028\u0029",
             "name": "setItems",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.livekit.IngressInfo\u0020items\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "summary": "next\u0020field\u0020id\u003A\u00203",
             "url": "classes/Livekit-ListIngressResponse.html#method_setItems"
+        },                {
+            "fqsen": "\\Livekit\\ListIngressResponse\u003A\u003A\u0024next_page_token",
+            "name": "next_page_token",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.livekit.TokenPagination\u0020next_page_token\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-ListIngressResponse.html#property_next_page_token"
         },                {
             "fqsen": "\\Livekit\\ListIngressResponse\u003A\u003A\u0024items",
             "name": "items",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.livekit.IngressInfo\u0020items\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "summary": "next\u0020field\u0020id\u003A\u00203",
             "url": "classes/Livekit-ListIngressResponse.html#property_items"
         },                {
             "fqsen": "\\Livekit\\ListParticipantsRequest",
@@ -18556,6 +18661,16 @@ Search.appendIndex(
             "summary": "if\u0020a\u0020participant\u0020can\u0020subscribe\u0020to\u0020metrics",
             "url": "classes/Livekit-ParticipantPermission.html#method_setCanSubscribeMetrics"
         },                {
+            "fqsen": "\\Livekit\\ParticipantPermission\u003A\u003AgetCanManageAgentSession\u0028\u0029",
+            "name": "getCanManageAgentSession",
+            "summary": "if\u0020a\u0020participant\u0020can\u0020manage\u0020an\u0020agent\u0020session\u0020via\u0020RemoteSession\u0020\u0028control\u0020and\u0020access\u0020state\u0029",
+            "url": "classes/Livekit-ParticipantPermission.html#method_getCanManageAgentSession"
+        },                {
+            "fqsen": "\\Livekit\\ParticipantPermission\u003A\u003AsetCanManageAgentSession\u0028\u0029",
+            "name": "setCanManageAgentSession",
+            "summary": "if\u0020a\u0020participant\u0020can\u0020manage\u0020an\u0020agent\u0020session\u0020via\u0020RemoteSession\u0020\u0028control\u0020and\u0020access\u0020state\u0029",
+            "url": "classes/Livekit-ParticipantPermission.html#method_setCanManageAgentSession"
+        },                {
             "fqsen": "\\Livekit\\ParticipantPermission\u003A\u003A\u0024can_subscribe",
             "name": "can_subscribe",
             "summary": "allow\u0020participant\u0020to\u0020subscribe\u0020to\u0020other\u0020tracks\u0020in\u0020the\u0020room",
@@ -18600,6 +18715,11 @@ Search.appendIndex(
             "name": "can_subscribe_metrics",
             "summary": "if\u0020a\u0020participant\u0020can\u0020subscribe\u0020to\u0020metrics",
             "url": "classes/Livekit-ParticipantPermission.html#property_can_subscribe_metrics"
+        },                {
+            "fqsen": "\\Livekit\\ParticipantPermission\u003A\u003A\u0024can_manage_agent_session",
+            "name": "can_manage_agent_session",
+            "summary": "if\u0020a\u0020participant\u0020can\u0020manage\u0020an\u0020agent\u0020session\u0020via\u0020RemoteSession\u0020\u0028control\u0020and\u0020access\u0020state\u0029",
+            "url": "classes/Livekit-ParticipantPermission.html#property_can_manage_agent_session"
         },                {
             "fqsen": "\\Livekit\\ParticipantTracks",
             "name": "ParticipantTracks",
@@ -30566,15 +30686,25 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020metadata\u0020\u003D\u00204\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-TextMessageRequest.html#method_setMetadata"
         },                {
-            "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003AgetSessionData\u0028\u0029",
-            "name": "getSessionData",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebytes\u0020session_data\u0020\u003D\u00205\u003B\u003C\/code\u003E",
-            "url": "classes/Livekit-TextMessageRequest.html#method_getSessionData"
+            "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003AgetSessionState\u0028\u0029",
+            "name": "getSessionState",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.livekit.AgentSessionState\u0020session_state\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageRequest.html#method_getSessionState"
         },                {
-            "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003AsetSessionData\u0028\u0029",
-            "name": "setSessionData",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebytes\u0020session_data\u0020\u003D\u00205\u003B\u003C\/code\u003E",
-            "url": "classes/Livekit-TextMessageRequest.html#method_setSessionData"
+            "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003AhasSessionState\u0028\u0029",
+            "name": "hasSessionState",
+            "summary": "",
+            "url": "classes/Livekit-TextMessageRequest.html#method_hasSessionState"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003AclearSessionState\u0028\u0029",
+            "name": "clearSessionState",
+            "summary": "",
+            "url": "classes/Livekit-TextMessageRequest.html#method_clearSessionState"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003AsetSessionState\u0028\u0029",
+            "name": "setSessionState",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.livekit.AgentSessionState\u0020session_state\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageRequest.html#method_setSessionState"
         },                {
             "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003AgetText\u0028\u0029",
             "name": "getText",
@@ -30606,10 +30736,10 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020metadata\u0020\u003D\u00204\u003B\u003C\/code\u003E",
             "url": "classes/Livekit-TextMessageRequest.html#property_metadata"
         },                {
-            "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003A\u0024session_data",
-            "name": "session_data",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebytes\u0020session_data\u0020\u003D\u00205\u003B\u003C\/code\u003E",
-            "url": "classes/Livekit-TextMessageRequest.html#property_session_data"
+            "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003A\u0024session_state",
+            "name": "session_state",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.livekit.AgentSessionState\u0020session_state\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageRequest.html#property_session_state"
         },                {
             "fqsen": "\\Livekit\\TextMessageRequest\u003A\u003A\u0024text",
             "name": "text",
@@ -30636,15 +30766,25 @@ Search.appendIndex(
             "summary": "Indicate\u0020the\u0020request\u0020is\u0020completed",
             "url": "classes/Livekit-TextMessageResponse.html#method_setMessageId"
         },                {
-            "fqsen": "\\Livekit\\TextMessageResponse\u003A\u003AgetSessionData\u0028\u0029",
-            "name": "getSessionData",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebytes\u0020session_data\u0020\u003D\u00202\u003B\u003C\/code\u003E",
-            "url": "classes/Livekit-TextMessageResponse.html#method_getSessionData"
+            "fqsen": "\\Livekit\\TextMessageResponse\u003A\u003AgetSessionState\u0028\u0029",
+            "name": "getSessionState",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.livekit.AgentSessionState\u0020session_state\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageResponse.html#method_getSessionState"
         },                {
-            "fqsen": "\\Livekit\\TextMessageResponse\u003A\u003AsetSessionData\u0028\u0029",
-            "name": "setSessionData",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebytes\u0020session_data\u0020\u003D\u00202\u003B\u003C\/code\u003E",
-            "url": "classes/Livekit-TextMessageResponse.html#method_setSessionData"
+            "fqsen": "\\Livekit\\TextMessageResponse\u003A\u003AhasSessionState\u0028\u0029",
+            "name": "hasSessionState",
+            "summary": "",
+            "url": "classes/Livekit-TextMessageResponse.html#method_hasSessionState"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageResponse\u003A\u003AclearSessionState\u0028\u0029",
+            "name": "clearSessionState",
+            "summary": "",
+            "url": "classes/Livekit-TextMessageResponse.html#method_clearSessionState"
+        },                {
+            "fqsen": "\\Livekit\\TextMessageResponse\u003A\u003AsetSessionState\u0028\u0029",
+            "name": "setSessionState",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.livekit.AgentSessionState\u0020session_state\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageResponse.html#method_setSessionState"
         },                {
             "fqsen": "\\Livekit\\TextMessageResponse\u003A\u003AgetError\u0028\u0029",
             "name": "getError",
@@ -30661,10 +30801,10 @@ Search.appendIndex(
             "summary": "Indicate\u0020the\u0020request\u0020is\u0020completed",
             "url": "classes/Livekit-TextMessageResponse.html#property_message_id"
         },                {
-            "fqsen": "\\Livekit\\TextMessageResponse\u003A\u003A\u0024session_data",
-            "name": "session_data",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebytes\u0020session_data\u0020\u003D\u00202\u003B\u003C\/code\u003E",
-            "url": "classes/Livekit-TextMessageResponse.html#property_session_data"
+            "fqsen": "\\Livekit\\TextMessageResponse\u003A\u003A\u0024session_state",
+            "name": "session_state",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.livekit.AgentSessionState\u0020session_state\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Livekit-TextMessageResponse.html#property_session_state"
         },                {
             "fqsen": "\\Livekit\\TextMessageResponse\u003A\u003A\u0024error",
             "name": "error",
@@ -40181,6 +40321,16 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EUSER_CONNECTION_QUALITY_CHANGE\u0020\u003D\u002017\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-DataMsgBodyType.html#constant_USER_CONNECTION_QUALITY_CHANGE"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataMsgBodyType\u003A\u003AREQ_PUBLIC_CHAT_DATA",
+            "name": "REQ_PUBLIC_CHAT_DATA",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EREQ_PUBLIC_CHAT_DATA\u0020\u003D\u002018\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-DataMsgBodyType.html#constant_REQ_PUBLIC_CHAT_DATA"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataMsgBodyType\u003A\u003ARES_PUBLIC_CHAT_DATA",
+            "name": "RES_PUBLIC_CHAT_DATA",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ERES_PUBLIC_CHAT_DATA\u0020\u003D\u002019\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-DataMsgBodyType.html#constant_RES_PUBLIC_CHAT_DATA"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataMsgBodyType\u003A\u003A\u0024valueToName",
             "name": "valueToName",
             "summary": "",
@@ -45746,26 +45896,6 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.plugnmeet.NatsKvUserInfo\u0020local_user\u0020\u003D\u00202\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsInitialData.html#method_setLocalUser"
         },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsInitialData\u003A\u003AgetMediaServerInfo\u0028\u0029",
-            "name": "getMediaServerInfo",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.plugnmeet.MediaServerConnInfo\u0020media_server_info\u0020\u003D\u00203\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-NatsInitialData.html#method_getMediaServerInfo"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsInitialData\u003A\u003AhasMediaServerInfo\u0028\u0029",
-            "name": "hasMediaServerInfo",
-            "summary": "",
-            "url": "classes/Mynaparrot-PlugnmeetProto-NatsInitialData.html#method_hasMediaServerInfo"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsInitialData\u003A\u003AclearMediaServerInfo\u0028\u0029",
-            "name": "clearMediaServerInfo",
-            "summary": "",
-            "url": "classes/Mynaparrot-PlugnmeetProto-NatsInitialData.html#method_clearMediaServerInfo"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsInitialData\u003A\u003AsetMediaServerInfo\u0028\u0029",
-            "name": "setMediaServerInfo",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.plugnmeet.MediaServerConnInfo\u0020media_server_info\u0020\u003D\u00203\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-NatsInitialData.html#method_setMediaServerInfo"
-        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsInitialData\u003A\u003A\u0024room",
             "name": "room",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.plugnmeet.NatsKvRoomInfo\u0020room\u0020\u003D\u00201\u003B\u003C\/code\u003E",
@@ -45775,11 +45905,6 @@ Search.appendIndex(
             "name": "local_user",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.plugnmeet.NatsKvUserInfo\u0020local_user\u0020\u003D\u00202\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsInitialData.html#property_local_user"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsInitialData\u003A\u003A\u0024media_server_info",
-            "name": "media_server_info",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.plugnmeet.MediaServerConnInfo\u0020media_server_info\u0020\u003D\u00203\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-NatsInitialData.html#property_media_server_info"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsKvRoomInfo",
             "name": "NatsKvRoomInfo",
@@ -46201,6 +46326,16 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EPUSH_ANALYTICS_DATA\u0020\u003D\u00208\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgClientToServerEvents.html#constant_PUSH_ANALYTICS_DATA"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgClientToServerEvents\u003A\u003AREQ_ONLINE_USERS_LIST",
+            "name": "REQ_ONLINE_USERS_LIST",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EREQ_ONLINE_USERS_LIST\u0020\u003D\u00209\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgClientToServerEvents.html#constant_REQ_ONLINE_USERS_LIST"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgClientToServerEvents\u003A\u003AREQ_PRIVATE_DATA_DELIVERY",
+            "name": "REQ_PRIVATE_DATA_DELIVERY",
+            "summary": "next\u0020ID\u003A\u002011",
+            "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgClientToServerEvents.html#constant_REQ_PRIVATE_DATA_DELIVERY"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgClientToServerEvents\u003A\u003A\u0024valueToName",
             "name": "valueToName",
             "summary": "",
@@ -46246,6 +46381,16 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020msg\u0020\u003D\u00203\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgServerToClient.html#method_setMsg"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClient\u003A\u003AgetBinMsg\u0028\u0029",
+            "name": "getBinMsg",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebytes\u0020bin_msg\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgServerToClient.html#method_getBinMsg"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClient\u003A\u003AsetBinMsg\u0028\u0029",
+            "name": "setBinMsg",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebytes\u0020bin_msg\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgServerToClient.html#method_setBinMsg"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClient\u003A\u003A\u0024id",
             "name": "id",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
@@ -46260,6 +46405,11 @@ Search.appendIndex(
             "name": "msg",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020msg\u0020\u003D\u00203\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgServerToClient.html#property_msg"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClient\u003A\u003A\u0024bin_msg",
+            "name": "bin_msg",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebytes\u0020bin_msg\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgServerToClient.html#property_bin_msg"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClientEvents",
             "name": "NatsMsgServerToClientEvents",
@@ -46365,6 +46515,16 @@ Search.appendIndex(
             "name": "RESP_INSIGHTS_AI_TEXT_CHAT",
             "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ERESP_INSIGHTS_AI_TEXT_CHAT\u0020\u003D\u002017\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgServerToClientEvents.html#constant_RESP_INSIGHTS_AI_TEXT_CHAT"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClientEvents\u003A\u003ARESP_ONLINE_USERS_LIST",
+            "name": "RESP_ONLINE_USERS_LIST",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ERESP_ONLINE_USERS_LIST\u0020\u003D\u002018\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgServerToClientEvents.html#constant_RESP_ONLINE_USERS_LIST"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClientEvents\u003A\u003ADELIVERY_PRIVATE_DATA",
+            "name": "DELIVERY_PRIVATE_DATA",
+            "summary": "next\u0020ID\u003A\u002020",
+            "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgServerToClientEvents.html#constant_DELIVERY_PRIVATE_DATA"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClientEvents\u003A\u003A\u0024valueToName",
             "name": "valueToName",
@@ -47790,6 +47950,61 @@ Search.appendIndex(
             "name": "total_running",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint64\u0020total_running\u0020\u003D\u00202\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-PollsStats.html#property_total_running"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PrivateDataDelivery",
+            "name": "PrivateDataDelivery",
+            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.PrivateDataDelivery\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PrivateDataDelivery.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PrivateDataDelivery\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PrivateDataDelivery.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PrivateDataDelivery\u003A\u003AgetToUserId\u0028\u0029",
+            "name": "getToUserId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020to_user_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PrivateDataDelivery.html#method_getToUserId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PrivateDataDelivery\u003A\u003AsetToUserId\u0028\u0029",
+            "name": "setToUserId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020to_user_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PrivateDataDelivery.html#method_setToUserId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PrivateDataDelivery\u003A\u003AgetEchoToSender\u0028\u0029",
+            "name": "getEchoToSender",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020echo_to_sender\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PrivateDataDelivery.html#method_getEchoToSender"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PrivateDataDelivery\u003A\u003AsetEchoToSender\u0028\u0029",
+            "name": "setEchoToSender",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020echo_to_sender\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PrivateDataDelivery.html#method_setEchoToSender"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PrivateDataDelivery\u003A\u003AgetType\u0028\u0029",
+            "name": "getType",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020type\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PrivateDataDelivery.html#method_getType"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PrivateDataDelivery\u003A\u003AsetType\u0028\u0029",
+            "name": "setType",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020type\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PrivateDataDelivery.html#method_setType"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PrivateDataDelivery\u003A\u003A\u0024to_user_id",
+            "name": "to_user_id",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020to_user_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PrivateDataDelivery.html#property_to_user_id"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PrivateDataDelivery\u003A\u003A\u0024echo_to_sender",
+            "name": "echo_to_sender",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020echo_to_sender\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PrivateDataDelivery.html#property_echo_to_sender"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PrivateDataDelivery\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020type\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PrivateDataDelivery.html#property_type"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RecorderInfoKeys",
             "name": "RecorderInfoKeys",
@@ -52846,9 +53061,29 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020user_id\u0020\u003D\u00206\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-VerifyTokenRes.html#method_setUserId"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\VerifyTokenRes\u003A\u003AgetRoomStreamName\u0028\u0029",
+            "name": "getRoomStreamName",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020room_stream_name\u0020\u003D\u00207\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-VerifyTokenRes.html#method_getRoomStreamName"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\VerifyTokenRes\u003A\u003AhasRoomStreamName\u0028\u0029",
+            "name": "hasRoomStreamName",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-VerifyTokenRes.html#method_hasRoomStreamName"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\VerifyTokenRes\u003A\u003AclearRoomStreamName\u0028\u0029",
+            "name": "clearRoomStreamName",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-VerifyTokenRes.html#method_clearRoomStreamName"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\VerifyTokenRes\u003A\u003AsetRoomStreamName\u0028\u0029",
+            "name": "setRoomStreamName",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020room_stream_name\u0020\u003D\u00207\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-VerifyTokenRes.html#method_setRoomStreamName"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\VerifyTokenRes\u003A\u003AgetNatsSubjects\u0028\u0029",
             "name": "getNatsSubjects",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.NatsSubjects\u0020nats_subjects\u0020\u003D\u00207\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.NatsSubjects\u0020nats_subjects\u0020\u003D\u00208\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-VerifyTokenRes.html#method_getNatsSubjects"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\VerifyTokenRes\u003A\u003AhasNatsSubjects\u0028\u0029",
@@ -52863,12 +53098,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\VerifyTokenRes\u003A\u003AsetNatsSubjects\u0028\u0029",
             "name": "setNatsSubjects",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.NatsSubjects\u0020nats_subjects\u0020\u003D\u00207\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.NatsSubjects\u0020nats_subjects\u0020\u003D\u00208\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-VerifyTokenRes.html#method_setNatsSubjects"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\VerifyTokenRes\u003A\u003AgetEnabledSelfInsertEncryptionKey\u0028\u0029",
             "name": "getEnabledSelfInsertEncryptionKey",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020bool\u0020enabled_self_insert_encryption_key\u0020\u003D\u00208\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020bool\u0020enabled_self_insert_encryption_key\u0020\u003D\u00209\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-VerifyTokenRes.html#method_getEnabledSelfInsertEncryptionKey"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\VerifyTokenRes\u003A\u003AhasEnabledSelfInsertEncryptionKey\u0028\u0029",
@@ -52883,12 +53118,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\VerifyTokenRes\u003A\u003AsetEnabledSelfInsertEncryptionKey\u0028\u0029",
             "name": "setEnabledSelfInsertEncryptionKey",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020bool\u0020enabled_self_insert_encryption_key\u0020\u003D\u00208\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020bool\u0020enabled_self_insert_encryption_key\u0020\u003D\u00209\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-VerifyTokenRes.html#method_setEnabledSelfInsertEncryptionKey"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\VerifyTokenRes\u003A\u003AgetIsCloud\u0028\u0029",
             "name": "getIsCloud",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020bool\u0020is_cloud\u0020\u003D\u00209\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020bool\u0020is_cloud\u0020\u003D\u002010\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-VerifyTokenRes.html#method_getIsCloud"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\VerifyTokenRes\u003A\u003AhasIsCloud\u0028\u0029",
@@ -52903,7 +53138,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\VerifyTokenRes\u003A\u003AsetIsCloud\u0028\u0029",
             "name": "setIsCloud",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020bool\u0020is_cloud\u0020\u003D\u00209\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020bool\u0020is_cloud\u0020\u003D\u002010\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-VerifyTokenRes.html#method_setIsCloud"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\VerifyTokenRes\u003A\u003A\u0024status",
@@ -52936,19 +53171,24 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020user_id\u0020\u003D\u00206\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-VerifyTokenRes.html#property_user_id"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\VerifyTokenRes\u003A\u003A\u0024room_stream_name",
+            "name": "room_stream_name",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020room_stream_name\u0020\u003D\u00207\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-VerifyTokenRes.html#property_room_stream_name"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\VerifyTokenRes\u003A\u003A\u0024nats_subjects",
             "name": "nats_subjects",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.NatsSubjects\u0020nats_subjects\u0020\u003D\u00207\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.NatsSubjects\u0020nats_subjects\u0020\u003D\u00208\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-VerifyTokenRes.html#property_nats_subjects"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\VerifyTokenRes\u003A\u003A\u0024enabled_self_insert_encryption_key",
             "name": "enabled_self_insert_encryption_key",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020bool\u0020enabled_self_insert_encryption_key\u0020\u003D\u00208\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020bool\u0020enabled_self_insert_encryption_key\u0020\u003D\u00209\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-VerifyTokenRes.html#property_enabled_self_insert_encryption_key"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\VerifyTokenRes\u003A\u003A\u0024is_cloud",
             "name": "is_cloud",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020bool\u0020is_cloud\u0020\u003D\u00209\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020bool\u0020is_cloud\u0020\u003D\u002010\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-VerifyTokenRes.html#property_is_cloud"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\WaitingRoomFeatures",
