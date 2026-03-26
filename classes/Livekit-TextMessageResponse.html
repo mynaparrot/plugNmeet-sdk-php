@@ -267,11 +267,11 @@
 <dd>Indicate the request is completed</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a class="" href="classes/Livekit-TextMessageResponse.html#property_session_data">$session_data</a>
+    <a class="" href="classes/Livekit-TextMessageResponse.html#property_session_state">$session_state</a>
     <span>
                         &nbsp;: mixed            </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;bytes session_data = 2;&lt;/code&gt;</dd>
+<dd>Generated from protobuf field &lt;code&gt;.livekit.AgentSessionState session_state = 2;&lt;/code&gt;</dd>
 
     </dl>
 
@@ -289,6 +289,12 @@
 <dd>Constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-TextMessageResponse.html#method_clearSessionState">clearSessionState()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-TextMessageResponse.html#method_getError">getError()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -303,11 +309,17 @@
 <dd>Indicate the request is completed</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Livekit-TextMessageResponse.html#method_getSessionData">getSessionData()</a>
+    <a class="" href="classes/Livekit-TextMessageResponse.html#method_getSessionState">getSessionState()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: <a href="classes/Livekit-AgentSessionState.html"><abbr title="\Livekit\AgentSessionState">AgentSessionState</abbr></a>|null    </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;bytes session_data = 2;&lt;/code&gt;</dd>
+<dd>Generated from protobuf field &lt;code&gt;.livekit.AgentSessionState session_state = 2;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-TextMessageResponse.html#method_hasSessionState">hasSessionState()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-TextMessageResponse.html#method_setError">setError()</a>
@@ -324,11 +336,11 @@
 <dd>Indicate the request is completed</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Livekit-TextMessageResponse.html#method_setSessionData">setSessionData()</a>
+    <a class="" href="classes/Livekit-TextMessageResponse.html#method_setSessionState">setSessionState()</a>
     <span>
                                 &nbsp;: $this    </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;bytes session_data = 2;&lt;/code&gt;</dd>
+<dd>Generated from protobuf field &lt;code&gt;.livekit.AgentSessionState session_state = 2;&lt;/code&gt;</dd>
 
     </dl>
 
@@ -428,9 +440,9 @@
             -protected
                                                                     "
 >
-    <h4 class="phpdocumentor-element__name" id="property_session_data">
-        $session_data
-        <a href="classes/Livekit-TextMessageResponse.html#property_session_data" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_session_state">
+        $session_state
+        <a href="classes/Livekit-TextMessageResponse.html#property_session_state" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                             </span>
@@ -442,14 +454,14 @@
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;bytes session_data = 2;&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;.livekit.AgentSessionState session_state = 2;&lt;/code&gt;</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">protected</span>
             <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">$session_data</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
+    <span class="phpdocumentor-signature__name">$session_state</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -506,7 +518,7 @@
 Optional. Data for populating the Message object.</p>
 <pre class="prettyprint"><code class="prettyprint">@type string $message_id
       Indicate the request is completed
-@type string $session_data
+@type \Livekit\AgentSessionState $session_state
 @type string $error
 </code></pre>
 <p>}</p>
@@ -527,6 +539,40 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_clearSessionState">
+        clearSessionState()
+        <a href="classes/Livekit-TextMessageResponse.html#method_clearSessionState" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/TextMessageResponse.php"><a href="files/src-gen-livekit-textmessageresponse.html"><abbr title="src/gen/Livekit/TextMessageResponse.php">TextMessageResponse.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">89</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">clearSessionState</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getError">
         getError()
         <a href="classes/Livekit-TextMessageResponse.html#method_getError" class="headerlink"><i class="fas fa-link"></i></a>
@@ -535,7 +581,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/TextMessageResponse.php"><a href="files/src-gen-livekit-textmessageresponse.html"><abbr title="src/gen/Livekit/TextMessageResponse.php">TextMessageResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">111</span>
 
     </aside>
 
@@ -607,9 +653,9 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getSessionData">
-        getSessionData()
-        <a href="classes/Livekit-TextMessageResponse.html#method_getSessionData" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getSessionState">
+        getSessionState()
+        <a href="classes/Livekit-TextMessageResponse.html#method_getSessionState" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
@@ -619,11 +665,11 @@ Optional. Data for populating the Message object.</p>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;bytes session_data = 2;&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;.livekit.AgentSessionState session_state = 2;&lt;/code&gt;</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getSessionData</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getSessionState</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Livekit-AgentSessionState.html"><abbr title="\Livekit\AgentSessionState">AgentSessionState</abbr></a>|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -636,9 +682,43 @@ Optional. Data for populating the Message object.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Livekit-AgentSessionState.html"><abbr title="\Livekit\AgentSessionState">AgentSessionState</abbr></a>|null</span>
             </section>
 
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_hasSessionState">
+        hasSessionState()
+        <a href="classes/Livekit-TextMessageResponse.html#method_hasSessionState" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/TextMessageResponse.php"><a href="files/src-gen-livekit-textmessageresponse.html"><abbr title="src/gen/Livekit/TextMessageResponse.php">TextMessageResponse.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">84</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">hasSessionState</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -654,7 +734,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/TextMessageResponse.php"><a href="files/src-gen-livekit-textmessageresponse.html"><abbr title="src/gen/Livekit/TextMessageResponse.php">TextMessageResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">111</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 
     </aside>
 
@@ -746,23 +826,23 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_setSessionData">
-        setSessionData()
-        <a href="classes/Livekit-TextMessageResponse.html#method_setSessionData" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_setSessionState">
+        setSessionState()
+        <a href="classes/Livekit-TextMessageResponse.html#method_setSessionState" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/TextMessageResponse.php"><a href="files/src-gen-livekit-textmessageresponse.html"><abbr title="src/gen/Livekit/TextMessageResponse.php">TextMessageResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;bytes session_data = 2;&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;.livekit.AgentSessionState session_state = 2;&lt;/code&gt;</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setSessionData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                    <span class="phpdocumentor-signature__name">setSessionState</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Livekit-AgentSessionState.html"><abbr title="\Livekit\AgentSessionState">AgentSessionState</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -772,7 +852,7 @@ Optional. Data for populating the Message object.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$var</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Livekit-AgentSessionState.html"><abbr title="\Livekit\AgentSessionState">AgentSessionState</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -906,7 +986,7 @@ Optional. Data for populating the Message object.</p>
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="classes/Livekit-TextMessageResponse.html#property_error">$error</a></li>
                                                     <li class=""><a href="classes/Livekit-TextMessageResponse.html#property_message_id">$message_id</a></li>
-                                                    <li class=""><a href="classes/Livekit-TextMessageResponse.html#property_session_data">$session_data</a></li>
+                                                    <li class=""><a href="classes/Livekit-TextMessageResponse.html#property_session_state">$session_state</a></li>
                                             </ul>
                 </li>
             
@@ -914,12 +994,14 @@ Optional. Data for populating the Message object.</p>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Livekit-TextMessageResponse.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Livekit-TextMessageResponse.html#method_clearSessionState">clearSessionState()</a></li>
                                             <li class=""><a href="classes/Livekit-TextMessageResponse.html#method_getError">getError()</a></li>
                                             <li class=""><a href="classes/Livekit-TextMessageResponse.html#method_getMessageId">getMessageId()</a></li>
-                                            <li class=""><a href="classes/Livekit-TextMessageResponse.html#method_getSessionData">getSessionData()</a></li>
+                                            <li class=""><a href="classes/Livekit-TextMessageResponse.html#method_getSessionState">getSessionState()</a></li>
+                                            <li class=""><a href="classes/Livekit-TextMessageResponse.html#method_hasSessionState">hasSessionState()</a></li>
                                             <li class=""><a href="classes/Livekit-TextMessageResponse.html#method_setError">setError()</a></li>
                                             <li class=""><a href="classes/Livekit-TextMessageResponse.html#method_setMessageId">setMessageId()</a></li>
-                                            <li class=""><a href="classes/Livekit-TextMessageResponse.html#method_setSessionData">setSessionData()</a></li>
+                                            <li class=""><a href="classes/Livekit-TextMessageResponse.html#method_setSessionState">setSessionState()</a></li>
                                     </ul>
             </li>
                     </ul>
