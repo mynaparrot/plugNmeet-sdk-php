@@ -93,11 +93,15 @@ class NatsMsgServerToClientEvents
      */
     const RESP_ONLINE_USERS_LIST = 18;
     /**
-     *next ID: 20
-     *
      * Generated from protobuf enum <code>DELIVERY_PRIVATE_DATA = 19;</code>
      */
     const DELIVERY_PRIVATE_DATA = 19;
+    /**
+     *next ID: 21
+     *
+     * Generated from protobuf enum <code>PONG = 20;</code>
+     */
+    const PONG = 20;
 
     private static $valueToName = [
         self::RES_INITIAL_DATA => 'RES_INITIAL_DATA',
@@ -120,6 +124,7 @@ class NatsMsgServerToClientEvents
         self::RESP_INSIGHTS_AI_TEXT_CHAT => 'RESP_INSIGHTS_AI_TEXT_CHAT',
         self::RESP_ONLINE_USERS_LIST => 'RESP_ONLINE_USERS_LIST',
         self::DELIVERY_PRIVATE_DATA => 'DELIVERY_PRIVATE_DATA',
+        self::PONG => 'PONG',
     ];
 
     public static function name($value)

@@ -19,7 +19,7 @@ class FeatureUsageInfo extends \Google\Protobuf\Internal\Message
      */
     protected $feature = 0;
     /**
-     * Generated from protobuf field <code>string project_id = 2;</code>
+     * Generated from protobuf field <code>string project_id = 2 [(.logger.name) = "projectID"];</code>
      */
     protected $project_id = '';
     /**
@@ -27,7 +27,7 @@ class FeatureUsageInfo extends \Google\Protobuf\Internal\Message
      */
     protected $room_name = '';
     /**
-     * Generated from protobuf field <code>string room_id = 4;</code>
+     * Generated from protobuf field <code>string room_id = 4 [(.logger.name) = "roomID"];</code>
      */
     protected $room_id = '';
     /**
@@ -35,11 +35,11 @@ class FeatureUsageInfo extends \Google\Protobuf\Internal\Message
      */
     protected $participant_identity = '';
     /**
-     * Generated from protobuf field <code>string participant_id = 6;</code>
+     * Generated from protobuf field <code>string participant_id = 6 [(.logger.name) = "participantID"];</code>
      */
     protected $participant_id = '';
     /**
-     * Generated from protobuf field <code>string track_id = 7;</code>
+     * Generated from protobuf field <code>string track_id = 7 [(.logger.name) = "trackID"];</code>
      */
     protected $track_id = '';
     /**
@@ -106,7 +106,7 @@ class FeatureUsageInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string project_id = 2;</code>
+     * Generated from protobuf field <code>string project_id = 2 [(.logger.name) = "projectID"];</code>
      * @return string
      */
     public function getProjectId()
@@ -115,7 +115,7 @@ class FeatureUsageInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string project_id = 2;</code>
+     * Generated from protobuf field <code>string project_id = 2 [(.logger.name) = "projectID"];</code>
      * @param string $var
      * @return $this
      */
@@ -150,7 +150,7 @@ class FeatureUsageInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string room_id = 4;</code>
+     * Generated from protobuf field <code>string room_id = 4 [(.logger.name) = "roomID"];</code>
      * @return string
      */
     public function getRoomId()
@@ -159,7 +159,7 @@ class FeatureUsageInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string room_id = 4;</code>
+     * Generated from protobuf field <code>string room_id = 4 [(.logger.name) = "roomID"];</code>
      * @param string $var
      * @return $this
      */
@@ -194,7 +194,7 @@ class FeatureUsageInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string participant_id = 6;</code>
+     * Generated from protobuf field <code>string participant_id = 6 [(.logger.name) = "participantID"];</code>
      * @return string
      */
     public function getParticipantId()
@@ -203,7 +203,7 @@ class FeatureUsageInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string participant_id = 6;</code>
+     * Generated from protobuf field <code>string participant_id = 6 [(.logger.name) = "participantID"];</code>
      * @param string $var
      * @return $this
      */
@@ -216,7 +216,7 @@ class FeatureUsageInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string track_id = 7;</code>
+     * Generated from protobuf field <code>string track_id = 7 [(.logger.name) = "trackID"];</code>
      * @return string
      */
     public function getTrackId()
@@ -225,7 +225,7 @@ class FeatureUsageInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string track_id = 7;</code>
+     * Generated from protobuf field <code>string track_id = 7 [(.logger.name) = "trackID"];</code>
      * @param string $var
      * @return $this
      */

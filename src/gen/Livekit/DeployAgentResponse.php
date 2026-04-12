@@ -23,7 +23,7 @@ class DeployAgentResponse extends \Google\Protobuf\Internal\Message
      */
     protected $message = '';
     /**
-     * Generated from protobuf field <code>string agent_id = 3;</code>
+     * Generated from protobuf field <code>string agent_id = 3 [(.logger.name) = "agentID"];</code>
      */
     protected $agent_id = '';
     /**
@@ -103,7 +103,7 @@ class DeployAgentResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string agent_id = 3;</code>
+     * Generated from protobuf field <code>string agent_id = 3 [(.logger.name) = "agentID"];</code>
      * @return string
      */
     public function getAgentId()
@@ -112,7 +112,7 @@ class DeployAgentResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string agent_id = 3;</code>
+     * Generated from protobuf field <code>string agent_id = 3 [(.logger.name) = "agentID"];</code>
      * @param string $var
      * @return $this
      */

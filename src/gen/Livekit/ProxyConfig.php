@@ -23,7 +23,7 @@ class ProxyConfig extends \Google\Protobuf\Internal\Message
      */
     protected $username = '';
     /**
-     * Generated from protobuf field <code>string password = 3;</code>
+     * Generated from protobuf field <code>string password = 3 [(.logger.redact) = true];</code>
      */
     protected $password = '';
 
@@ -88,7 +88,7 @@ class ProxyConfig extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string password = 3;</code>
+     * Generated from protobuf field <code>string password = 3 [(.logger.redact) = true];</code>
      * @return string
      */
     public function getPassword()
@@ -97,7 +97,7 @@ class ProxyConfig extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string password = 3;</code>
+     * Generated from protobuf field <code>string password = 3 [(.logger.redact) = true];</code>
      * @param string $var
      * @return $this
      */

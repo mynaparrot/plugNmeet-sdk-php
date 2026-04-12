@@ -10,27 +10,19 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * record audio and video from a single participant
- *
  * Generated from protobuf message <code>livekit.ParticipantEgressRequest</code>
  */
 class ParticipantEgressRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * required
-     *
      * Generated from protobuf field <code>string room_name = 1;</code>
      */
     protected $room_name = '';
     /**
-     * required
-     *
      * Generated from protobuf field <code>string identity = 2;</code>
      */
     protected $identity = '';
     /**
-     * (default false)
-     *
      * Generated from protobuf field <code>bool screen_share = 3;</code>
      */
     protected $screen_share = false;
@@ -51,8 +43,6 @@ class ParticipantEgressRequest extends \Google\Protobuf\Internal\Message
      */
     private $image_outputs;
     /**
-     * extra webhooks to call for this request
-     *
      * Generated from protobuf field <code>repeated .livekit.WebhookConfig webhooks = 10;</code>
      */
     private $webhooks;
@@ -65,21 +55,15 @@ class ParticipantEgressRequest extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $room_name
-     *           required
      *     @type string $identity
-     *           required
      *     @type bool $screen_share
-     *           (default false)
      *     @type int $preset
-     *           (default H264_720P_30)
      *     @type \Livekit\EncodingOptions $advanced
-     *           (optional)
      *     @type \Livekit\EncodedFileOutput[] $file_outputs
      *     @type \Livekit\StreamOutput[] $stream_outputs
      *     @type \Livekit\SegmentedFileOutput[] $segment_outputs
      *     @type \Livekit\ImageOutput[] $image_outputs
      *     @type \Livekit\WebhookConfig[] $webhooks
-     *           extra webhooks to call for this request
      * }
      */
     public function __construct($data = NULL) {
@@ -88,8 +72,6 @@ class ParticipantEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * required
-     *
      * Generated from protobuf field <code>string room_name = 1;</code>
      * @return string
      */
@@ -99,8 +81,6 @@ class ParticipantEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * required
-     *
      * Generated from protobuf field <code>string room_name = 1;</code>
      * @param string $var
      * @return $this
@@ -114,8 +94,6 @@ class ParticipantEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * required
-     *
      * Generated from protobuf field <code>string identity = 2;</code>
      * @return string
      */
@@ -125,8 +103,6 @@ class ParticipantEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * required
-     *
      * Generated from protobuf field <code>string identity = 2;</code>
      * @param string $var
      * @return $this
@@ -140,8 +116,6 @@ class ParticipantEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * (default false)
-     *
      * Generated from protobuf field <code>bool screen_share = 3;</code>
      * @return bool
      */
@@ -151,8 +125,6 @@ class ParticipantEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * (default false)
-     *
      * Generated from protobuf field <code>bool screen_share = 3;</code>
      * @param bool $var
      * @return $this
@@ -166,8 +138,6 @@ class ParticipantEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * (default H264_720P_30)
-     *
      * Generated from protobuf field <code>.livekit.EncodingOptionsPreset preset = 4;</code>
      * @return int
      */
@@ -182,8 +152,6 @@ class ParticipantEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * (default H264_720P_30)
-     *
      * Generated from protobuf field <code>.livekit.EncodingOptionsPreset preset = 4;</code>
      * @param int $var
      * @return $this
@@ -197,8 +165,6 @@ class ParticipantEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * (optional)
-     *
      * Generated from protobuf field <code>.livekit.EncodingOptions advanced = 5;</code>
      * @return \Livekit\EncodingOptions|null
      */
@@ -213,8 +179,6 @@ class ParticipantEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * (optional)
-     *
      * Generated from protobuf field <code>.livekit.EncodingOptions advanced = 5;</code>
      * @param \Livekit\EncodingOptions $var
      * @return $this
@@ -316,8 +280,6 @@ class ParticipantEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * extra webhooks to call for this request
-     *
      * Generated from protobuf field <code>repeated .livekit.WebhookConfig webhooks = 10;</code>
      * @return RepeatedField<\Livekit\WebhookConfig>
      */
@@ -327,8 +289,6 @@ class ParticipantEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * extra webhooks to call for this request
-     *
      * Generated from protobuf field <code>repeated .livekit.WebhookConfig webhooks = 10;</code>
      * @param \Livekit\WebhookConfig[] $var
      * @return $this

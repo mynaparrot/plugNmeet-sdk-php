@@ -210,7 +210,7 @@ class plugNmeetConnect
      * @return GenerateTokenRes
      * @throws Exception
      */
-    public function getJoinToken(string $roomId, string $name, string $userId, bool $isAdmin, bool $isHidden = false, UserMetadata $userMetadata = null, LockSettings $lockSettings = null): GenerateTokenRes
+    public function getJoinToken(string $roomId, string $name, string $userId, bool $isAdmin, bool $isHidden = false, UserMetadata|null $userMetadata = null, LockSettings|null $lockSettings = null): GenerateTokenRes
     {
         $userInfo = new UserInfo();
         $userInfo->setUserId($userId);

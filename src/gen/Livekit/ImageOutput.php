@@ -10,6 +10,8 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
+ * Capture images at a specified interval
+ *
  * Generated from protobuf message <code>livekit.ImageOutput</code>
  */
 class ImageOutput extends \Google\Protobuf\Internal\Message

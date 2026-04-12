@@ -29,7 +29,7 @@ class SessionDescription extends \Google\Protobuf\Internal\Message
      */
     protected $id = 0;
     /**
-     * Generated from protobuf field <code>map<string, string> mid_to_track_id = 4;</code>
+     * Generated from protobuf field <code>map<string, string> mid_to_track_id = 4 [(.logger.name) = "midToTrackID"];</code>
      */
     private $mid_to_track_id;
 
@@ -122,7 +122,7 @@ class SessionDescription extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>map<string, string> mid_to_track_id = 4;</code>
+     * Generated from protobuf field <code>map<string, string> mid_to_track_id = 4 [(.logger.name) = "midToTrackID"];</code>
      * @return \Google\Protobuf\Internal\MapField
      */
     public function getMidToTrackId()
@@ -131,7 +131,7 @@ class SessionDescription extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>map<string, string> mid_to_track_id = 4;</code>
+     * Generated from protobuf field <code>map<string, string> mid_to_track_id = 4 [(.logger.name) = "midToTrackID"];</code>
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */

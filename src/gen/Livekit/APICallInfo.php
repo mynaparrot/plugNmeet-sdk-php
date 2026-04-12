@@ -15,7 +15,7 @@ use Google\Protobuf\RepeatedField;
 class APICallInfo extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string project_id = 1;</code>
+     * Generated from protobuf field <code>string project_id = 1 [(.logger.name) = "projectID"];</code>
      */
     protected $project_id = '';
     /**
@@ -31,7 +31,7 @@ class APICallInfo extends \Google\Protobuf\Internal\Message
      */
     protected $method = '';
     /**
-     * Generated from protobuf field <code>string node_id = 5;</code>
+     * Generated from protobuf field <code>string node_id = 5 [(.logger.name) = "nodeID"];</code>
      */
     protected $node_id = '';
     /**
@@ -51,7 +51,7 @@ class APICallInfo extends \Google\Protobuf\Internal\Message
      */
     protected $room_name = '';
     /**
-     * Generated from protobuf field <code>string room_id = 10;</code>
+     * Generated from protobuf field <code>string room_id = 10 [(.logger.name) = "roomID"];</code>
      */
     protected $room_id = '';
     /**
@@ -59,11 +59,11 @@ class APICallInfo extends \Google\Protobuf\Internal\Message
      */
     protected $participant_identity = '';
     /**
-     * Generated from protobuf field <code>string participant_id = 12;</code>
+     * Generated from protobuf field <code>string participant_id = 12 [(.logger.name) = "participantID"];</code>
      */
     protected $participant_id = '';
     /**
-     * Generated from protobuf field <code>string track_id = 13;</code>
+     * Generated from protobuf field <code>string track_id = 13 [(.logger.name) = "trackID"];</code>
      */
     protected $track_id = '';
     /**
@@ -104,7 +104,7 @@ class APICallInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string project_id = 1;</code>
+     * Generated from protobuf field <code>string project_id = 1 [(.logger.name) = "projectID"];</code>
      * @return string
      */
     public function getProjectId()
@@ -113,7 +113,7 @@ class APICallInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string project_id = 1;</code>
+     * Generated from protobuf field <code>string project_id = 1 [(.logger.name) = "projectID"];</code>
      * @param string $var
      * @return $this
      */
@@ -202,7 +202,7 @@ class APICallInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string node_id = 5;</code>
+     * Generated from protobuf field <code>string node_id = 5 [(.logger.name) = "nodeID"];</code>
      * @return string
      */
     public function getNodeId()
@@ -211,7 +211,7 @@ class APICallInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string node_id = 5;</code>
+     * Generated from protobuf field <code>string node_id = 5 [(.logger.name) = "nodeID"];</code>
      * @param string $var
      * @return $this
      */
@@ -312,7 +312,7 @@ class APICallInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string room_id = 10;</code>
+     * Generated from protobuf field <code>string room_id = 10 [(.logger.name) = "roomID"];</code>
      * @return string
      */
     public function getRoomId()
@@ -321,7 +321,7 @@ class APICallInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string room_id = 10;</code>
+     * Generated from protobuf field <code>string room_id = 10 [(.logger.name) = "roomID"];</code>
      * @param string $var
      * @return $this
      */
@@ -356,7 +356,7 @@ class APICallInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string participant_id = 12;</code>
+     * Generated from protobuf field <code>string participant_id = 12 [(.logger.name) = "participantID"];</code>
      * @return string
      */
     public function getParticipantId()
@@ -365,7 +365,7 @@ class APICallInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string participant_id = 12;</code>
+     * Generated from protobuf field <code>string participant_id = 12 [(.logger.name) = "participantID"];</code>
      * @param string $var
      * @return $this
      */
@@ -378,7 +378,7 @@ class APICallInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string track_id = 13;</code>
+     * Generated from protobuf field <code>string track_id = 13 [(.logger.name) = "trackID"];</code>
      * @return string
      */
     public function getTrackId()
@@ -387,7 +387,7 @@ class APICallInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string track_id = 13;</code>
+     * Generated from protobuf field <code>string track_id = 13 [(.logger.name) = "trackID"];</code>
      * @param string $var
      * @return $this
      */

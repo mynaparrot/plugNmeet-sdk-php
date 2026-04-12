@@ -10,8 +10,6 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * record any website
- *
  * Generated from protobuf message <code>livekit.WebEgressRequest</code>
  */
 class WebEgressRequest extends \Google\Protobuf\Internal\Message
@@ -49,8 +47,6 @@ class WebEgressRequest extends \Google\Protobuf\Internal\Message
      */
     private $image_outputs;
     /**
-     * extra webhooks to call for this request
-     *
      * Generated from protobuf field <code>repeated .livekit.WebhookConfig webhooks = 14;</code>
      */
     private $webhooks;
@@ -77,7 +73,6 @@ class WebEgressRequest extends \Google\Protobuf\Internal\Message
      *     @type \Livekit\SegmentedFileOutput[] $segment_outputs
      *     @type \Livekit\ImageOutput[] $image_outputs
      *     @type \Livekit\WebhookConfig[] $webhooks
-     *           extra webhooks to call for this request
      * }
      */
     public function __construct($data = NULL) {
@@ -424,8 +419,6 @@ class WebEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * extra webhooks to call for this request
-     *
      * Generated from protobuf field <code>repeated .livekit.WebhookConfig webhooks = 14;</code>
      * @return RepeatedField<\Livekit\WebhookConfig>
      */
@@ -435,8 +428,6 @@ class WebEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * extra webhooks to call for this request
-     *
      * Generated from protobuf field <code>repeated .livekit.WebhookConfig webhooks = 14;</code>
      * @param \Livekit\WebhookConfig[] $var
      * @return $this

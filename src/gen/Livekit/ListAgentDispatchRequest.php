@@ -17,7 +17,7 @@ class ListAgentDispatchRequest extends \Google\Protobuf\Internal\Message
     /**
      * if set, only the dispatch whose id is given will be returned
      *
-     * Generated from protobuf field <code>string dispatch_id = 1;</code>
+     * Generated from protobuf field <code>string dispatch_id = 1 [(.logger.name) = "dispatchID"];</code>
      */
     protected $dispatch_id = '';
     /**
@@ -47,7 +47,7 @@ class ListAgentDispatchRequest extends \Google\Protobuf\Internal\Message
     /**
      * if set, only the dispatch whose id is given will be returned
      *
-     * Generated from protobuf field <code>string dispatch_id = 1;</code>
+     * Generated from protobuf field <code>string dispatch_id = 1 [(.logger.name) = "dispatchID"];</code>
      * @return string
      */
     public function getDispatchId()
@@ -58,7 +58,7 @@ class ListAgentDispatchRequest extends \Google\Protobuf\Internal\Message
     /**
      * if set, only the dispatch whose id is given will be returned
      *
-     * Generated from protobuf field <code>string dispatch_id = 1;</code>
+     * Generated from protobuf field <code>string dispatch_id = 1 [(.logger.name) = "dispatchID"];</code>
      * @param string $var
      * @return $this
      */

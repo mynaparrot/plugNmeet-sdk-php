@@ -19,27 +19,35 @@ class NatsSubjects extends \Google\Protobuf\Internal\Message
      */
     protected $system_api_worker = '';
     /**
+     * jetstream worker
+     *
      * Generated from protobuf field <code>string system_js_worker = 2;</code>
      */
     protected $system_js_worker = '';
     /**
-     * Generated from protobuf field <code>string system_public = 3;</code>
+     * core pub/sub worker
+     *
+     * Generated from protobuf field <code>string system_core_worker = 3;</code>
+     */
+    protected $system_core_worker = '';
+    /**
+     * Generated from protobuf field <code>string system_public = 4;</code>
      */
     protected $system_public = '';
     /**
-     * Generated from protobuf field <code>string system_private = 4;</code>
+     * Generated from protobuf field <code>string system_private = 5;</code>
      */
     protected $system_private = '';
     /**
-     * Generated from protobuf field <code>string chat = 5;</code>
+     * Generated from protobuf field <code>string chat = 6;</code>
      */
     protected $chat = '';
     /**
-     * Generated from protobuf field <code>string whiteboard = 6;</code>
+     * Generated from protobuf field <code>string whiteboard = 7;</code>
      */
     protected $whiteboard = '';
     /**
-     * Generated from protobuf field <code>string data_channel = 7;</code>
+     * Generated from protobuf field <code>string data_channel = 8;</code>
      */
     protected $data_channel = '';
 
@@ -51,6 +59,9 @@ class NatsSubjects extends \Google\Protobuf\Internal\Message
      *
      *     @type string $system_api_worker
      *     @type string $system_js_worker
+     *           jetstream worker
+     *     @type string $system_core_worker
+     *           core pub/sub worker
      *     @type string $system_public
      *     @type string $system_private
      *     @type string $chat
@@ -86,6 +97,8 @@ class NatsSubjects extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * jetstream worker
+     *
      * Generated from protobuf field <code>string system_js_worker = 2;</code>
      * @return string
      */
@@ -95,6 +108,8 @@ class NatsSubjects extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * jetstream worker
+     *
      * Generated from protobuf field <code>string system_js_worker = 2;</code>
      * @param string $var
      * @return $this
@@ -108,7 +123,33 @@ class NatsSubjects extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string system_public = 3;</code>
+     * core pub/sub worker
+     *
+     * Generated from protobuf field <code>string system_core_worker = 3;</code>
+     * @return string
+     */
+    public function getSystemCoreWorker()
+    {
+        return $this->system_core_worker;
+    }
+
+    /**
+     * core pub/sub worker
+     *
+     * Generated from protobuf field <code>string system_core_worker = 3;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setSystemCoreWorker($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->system_core_worker = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string system_public = 4;</code>
      * @return string
      */
     public function getSystemPublic()
@@ -117,7 +158,7 @@ class NatsSubjects extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string system_public = 3;</code>
+     * Generated from protobuf field <code>string system_public = 4;</code>
      * @param string $var
      * @return $this
      */
@@ -130,7 +171,7 @@ class NatsSubjects extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string system_private = 4;</code>
+     * Generated from protobuf field <code>string system_private = 5;</code>
      * @return string
      */
     public function getSystemPrivate()
@@ -139,7 +180,7 @@ class NatsSubjects extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string system_private = 4;</code>
+     * Generated from protobuf field <code>string system_private = 5;</code>
      * @param string $var
      * @return $this
      */
@@ -152,7 +193,7 @@ class NatsSubjects extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string chat = 5;</code>
+     * Generated from protobuf field <code>string chat = 6;</code>
      * @return string
      */
     public function getChat()
@@ -161,7 +202,7 @@ class NatsSubjects extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string chat = 5;</code>
+     * Generated from protobuf field <code>string chat = 6;</code>
      * @param string $var
      * @return $this
      */
@@ -174,7 +215,7 @@ class NatsSubjects extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string whiteboard = 6;</code>
+     * Generated from protobuf field <code>string whiteboard = 7;</code>
      * @return string
      */
     public function getWhiteboard()
@@ -183,7 +224,7 @@ class NatsSubjects extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string whiteboard = 6;</code>
+     * Generated from protobuf field <code>string whiteboard = 7;</code>
      * @param string $var
      * @return $this
      */
@@ -196,7 +237,7 @@ class NatsSubjects extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string data_channel = 7;</code>
+     * Generated from protobuf field <code>string data_channel = 8;</code>
      * @return string
      */
     public function getDataChannel()
@@ -205,7 +246,7 @@ class NatsSubjects extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string data_channel = 7;</code>
+     * Generated from protobuf field <code>string data_channel = 8;</code>
      * @param string $var
      * @return $this
      */

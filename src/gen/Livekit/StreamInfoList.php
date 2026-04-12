@@ -10,7 +10,6 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * @deprecated
  * Generated from protobuf message <code>livekit.StreamInfoList</code>
  */
 class StreamInfoList extends \Google\Protobuf\Internal\Message

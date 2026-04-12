@@ -10,27 +10,19 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * record tracks individually, without transcoding
- *
  * Generated from protobuf message <code>livekit.TrackEgressRequest</code>
  */
 class TrackEgressRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * required
-     *
      * Generated from protobuf field <code>string room_name = 1;</code>
      */
     protected $room_name = '';
     /**
-     * required
-     *
-     * Generated from protobuf field <code>string track_id = 2;</code>
+     * Generated from protobuf field <code>string track_id = 2 [(.logger.name) = "trackID"];</code>
      */
     protected $track_id = '';
     /**
-     * extra webhooks to call for this request
-     *
      * Generated from protobuf field <code>repeated .livekit.WebhookConfig webhooks = 5;</code>
      */
     private $webhooks;
@@ -43,13 +35,10 @@ class TrackEgressRequest extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $room_name
-     *           required
      *     @type string $track_id
-     *           required
      *     @type \Livekit\DirectFileOutput $file
      *     @type string $websocket_url
      *     @type \Livekit\WebhookConfig[] $webhooks
-     *           extra webhooks to call for this request
      * }
      */
     public function __construct($data = NULL) {
@@ -58,8 +47,6 @@ class TrackEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * required
-     *
      * Generated from protobuf field <code>string room_name = 1;</code>
      * @return string
      */
@@ -69,8 +56,6 @@ class TrackEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * required
-     *
      * Generated from protobuf field <code>string room_name = 1;</code>
      * @param string $var
      * @return $this
@@ -84,9 +69,7 @@ class TrackEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * required
-     *
-     * Generated from protobuf field <code>string track_id = 2;</code>
+     * Generated from protobuf field <code>string track_id = 2 [(.logger.name) = "trackID"];</code>
      * @return string
      */
     public function getTrackId()
@@ -95,9 +78,7 @@ class TrackEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * required
-     *
-     * Generated from protobuf field <code>string track_id = 2;</code>
+     * Generated from protobuf field <code>string track_id = 2 [(.logger.name) = "trackID"];</code>
      * @param string $var
      * @return $this
      */
@@ -164,8 +145,6 @@ class TrackEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * extra webhooks to call for this request
-     *
      * Generated from protobuf field <code>repeated .livekit.WebhookConfig webhooks = 5;</code>
      * @return RepeatedField<\Livekit\WebhookConfig>
      */
@@ -175,8 +154,6 @@ class TrackEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * extra webhooks to call for this request
-     *
      * Generated from protobuf field <code>repeated .livekit.WebhookConfig webhooks = 5;</code>
      * @param \Livekit\WebhookConfig[] $var
      * @return $this

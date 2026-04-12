@@ -15,7 +15,7 @@ use Google\Protobuf\RepeatedField;
 class AnalyticsNodeRooms extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string node_id = 1;</code>
+     * Generated from protobuf field <code>string node_id = 1 [(.logger.name) = "nodeID"];</code>
      */
     protected $node_id = '';
     /**
@@ -49,7 +49,7 @@ class AnalyticsNodeRooms extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string node_id = 1;</code>
+     * Generated from protobuf field <code>string node_id = 1 [(.logger.name) = "nodeID"];</code>
      * @return string
      */
     public function getNodeId()
@@ -58,7 +58,7 @@ class AnalyticsNodeRooms extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string node_id = 1;</code>
+     * Generated from protobuf field <code>string node_id = 1 [(.logger.name) = "nodeID"];</code>
      * @param string $var
      * @return $this
      */

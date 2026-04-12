@@ -35,7 +35,7 @@ class IngressState extends \Google\Protobuf\Internal\Message
     /**
      * ID of the current/previous room published to
      *
-     * Generated from protobuf field <code>string room_id = 5;</code>
+     * Generated from protobuf field <code>string room_id = 5 [(.logger.name) = "roomID"];</code>
      */
     protected $room_id = '';
     /**
@@ -51,7 +51,7 @@ class IngressState extends \Google\Protobuf\Internal\Message
      */
     protected $updated_at = 0;
     /**
-     * Generated from protobuf field <code>string resource_id = 9;</code>
+     * Generated from protobuf field <code>string resource_id = 9 [(.logger.name) = "resourceID"];</code>
      */
     protected $resource_id = '';
     /**
@@ -199,7 +199,7 @@ class IngressState extends \Google\Protobuf\Internal\Message
     /**
      * ID of the current/previous room published to
      *
-     * Generated from protobuf field <code>string room_id = 5;</code>
+     * Generated from protobuf field <code>string room_id = 5 [(.logger.name) = "roomID"];</code>
      * @return string
      */
     public function getRoomId()
@@ -210,7 +210,7 @@ class IngressState extends \Google\Protobuf\Internal\Message
     /**
      * ID of the current/previous room published to
      *
-     * Generated from protobuf field <code>string room_id = 5;</code>
+     * Generated from protobuf field <code>string room_id = 5 [(.logger.name) = "roomID"];</code>
      * @param string $var
      * @return $this
      */
@@ -289,7 +289,7 @@ class IngressState extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string resource_id = 9;</code>
+     * Generated from protobuf field <code>string resource_id = 9 [(.logger.name) = "resourceID"];</code>
      * @return string
      */
     public function getResourceId()
@@ -298,7 +298,7 @@ class IngressState extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string resource_id = 9;</code>
+     * Generated from protobuf field <code>string resource_id = 9 [(.logger.name) = "resourceID"];</code>
      * @param string $var
      * @return $this
      */

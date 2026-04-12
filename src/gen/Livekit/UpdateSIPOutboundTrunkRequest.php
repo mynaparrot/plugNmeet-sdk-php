@@ -15,7 +15,7 @@ use Google\Protobuf\RepeatedField;
 class UpdateSIPOutboundTrunkRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string sip_trunk_id = 1;</code>
+     * Generated from protobuf field <code>string sip_trunk_id = 1 [(.logger.name) = "sipTrunkID"];</code>
      */
     protected $sip_trunk_id = '';
     protected $action;
@@ -37,7 +37,7 @@ class UpdateSIPOutboundTrunkRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string sip_trunk_id = 1;</code>
+     * Generated from protobuf field <code>string sip_trunk_id = 1 [(.logger.name) = "sipTrunkID"];</code>
      * @return string
      */
     public function getSipTrunkId()
@@ -46,7 +46,7 @@ class UpdateSIPOutboundTrunkRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string sip_trunk_id = 1;</code>
+     * Generated from protobuf field <code>string sip_trunk_id = 1 [(.logger.name) = "sipTrunkID"];</code>
      * @param string $var
      * @return $this
      */

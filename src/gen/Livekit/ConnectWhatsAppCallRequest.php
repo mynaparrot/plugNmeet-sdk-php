@@ -17,7 +17,7 @@ class ConnectWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
     /**
      * Required - Call ID sent by Meta
      *
-     * Generated from protobuf field <code>string whatsapp_call_id = 1;</code>
+     * Generated from protobuf field <code>string whatsapp_call_id = 1 [(.logger.name) = "whatsappCallID"];</code>
      */
     protected $whatsapp_call_id = '';
     /**
@@ -49,7 +49,7 @@ class ConnectWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
     /**
      * Required - Call ID sent by Meta
      *
-     * Generated from protobuf field <code>string whatsapp_call_id = 1;</code>
+     * Generated from protobuf field <code>string whatsapp_call_id = 1 [(.logger.name) = "whatsappCallID"];</code>
      * @return string
      */
     public function getWhatsappCallId()
@@ -60,7 +60,7 @@ class ConnectWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
     /**
      * Required - Call ID sent by Meta
      *
-     * Generated from protobuf field <code>string whatsapp_call_id = 1;</code>
+     * Generated from protobuf field <code>string whatsapp_call_id = 1 [(.logger.name) = "whatsappCallID"];</code>
      * @param string $var
      * @return $this
      */

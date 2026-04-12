@@ -15,7 +15,7 @@ use Google\Protobuf\RepeatedField;
 class RpcAck extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string request_id = 1;</code>
+     * Generated from protobuf field <code>string request_id = 1 [(.logger.name) = "requestID"];</code>
      */
     protected $request_id = '';
 
@@ -34,7 +34,7 @@ class RpcAck extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string request_id = 1;</code>
+     * Generated from protobuf field <code>string request_id = 1 [(.logger.name) = "requestID"];</code>
      * @return string
      */
     public function getRequestId()
@@ -43,7 +43,7 @@ class RpcAck extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string request_id = 1;</code>
+     * Generated from protobuf field <code>string request_id = 1 [(.logger.name) = "requestID"];</code>
      * @param string $var
      * @return $this
      */

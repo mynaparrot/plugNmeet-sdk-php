@@ -34,6 +34,12 @@ class AgentDispatch extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.livekit.AgentDispatchState state = 5;</code>
      */
     protected $state = null;
+    /**
+     * cloud only
+     *
+     * Generated from protobuf field <code>.livekit.JobRestartPolicy restart_policy = 6;</code>
+     */
+    protected $restart_policy = 0;
 
     /**
      * Constructor.
@@ -46,6 +52,8 @@ class AgentDispatch extends \Google\Protobuf\Internal\Message
      *     @type string $room
      *     @type string $metadata
      *     @type \Livekit\AgentDispatchState $state
+     *     @type int $restart_policy
+     *           cloud only
      * }
      */
     public function __construct($data = NULL) {
@@ -169,6 +177,32 @@ class AgentDispatch extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Livekit\AgentDispatchState::class);
         $this->state = $var;
+
+        return $this;
+    }
+
+    /**
+     * cloud only
+     *
+     * Generated from protobuf field <code>.livekit.JobRestartPolicy restart_policy = 6;</code>
+     * @return int
+     */
+    public function getRestartPolicy()
+    {
+        return $this->restart_policy;
+    }
+
+    /**
+     * cloud only
+     *
+     * Generated from protobuf field <code>.livekit.JobRestartPolicy restart_policy = 6;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setRestartPolicy($var)
+    {
+        GPBUtil::checkEnum($var, \Livekit\JobRestartPolicy::class);
+        $this->restart_policy = $var;
 
         return $this;
     }

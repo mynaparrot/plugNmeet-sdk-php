@@ -47,7 +47,7 @@ class CreateRoomRequest extends \Google\Protobuf\Internal\Message
     /**
      * override the node room is allocated to, for debugging
      *
-     * Generated from protobuf field <code>string node_id = 4;</code>
+     * Generated from protobuf field <code>string node_id = 4 [(.logger.name) = "nodeID"];</code>
      */
     protected $node_id = '';
     /**
@@ -264,7 +264,7 @@ class CreateRoomRequest extends \Google\Protobuf\Internal\Message
     /**
      * override the node room is allocated to, for debugging
      *
-     * Generated from protobuf field <code>string node_id = 4;</code>
+     * Generated from protobuf field <code>string node_id = 4 [(.logger.name) = "nodeID"];</code>
      * @return string
      */
     public function getNodeId()
@@ -275,7 +275,7 @@ class CreateRoomRequest extends \Google\Protobuf\Internal\Message
     /**
      * override the node room is allocated to, for debugging
      *
-     * Generated from protobuf field <code>string node_id = 4;</code>
+     * Generated from protobuf field <code>string node_id = 4 [(.logger.name) = "nodeID"];</code>
      * @param string $var
      * @return $this
      */

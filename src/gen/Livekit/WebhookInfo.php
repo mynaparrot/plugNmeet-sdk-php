@@ -15,7 +15,7 @@ use Google\Protobuf\RepeatedField;
 class WebhookInfo extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string event_id = 1;</code>
+     * Generated from protobuf field <code>string event_id = 1 [(.logger.name) = "eventID"];</code>
      */
     protected $event_id = '';
     /**
@@ -23,7 +23,7 @@ class WebhookInfo extends \Google\Protobuf\Internal\Message
      */
     protected $event = '';
     /**
-     * Generated from protobuf field <code>string project_id = 3;</code>
+     * Generated from protobuf field <code>string project_id = 3 [(.logger.name) = "projectID"];</code>
      */
     protected $project_id = '';
     /**
@@ -31,7 +31,7 @@ class WebhookInfo extends \Google\Protobuf\Internal\Message
      */
     protected $room_name = '';
     /**
-     * Generated from protobuf field <code>string room_id = 5;</code>
+     * Generated from protobuf field <code>string room_id = 5 [(.logger.name) = "roomID"];</code>
      */
     protected $room_id = '';
     /**
@@ -39,19 +39,19 @@ class WebhookInfo extends \Google\Protobuf\Internal\Message
      */
     protected $participant_identity = '';
     /**
-     * Generated from protobuf field <code>string participant_id = 7;</code>
+     * Generated from protobuf field <code>string participant_id = 7 [(.logger.name) = "participantID"];</code>
      */
     protected $participant_id = '';
     /**
-     * Generated from protobuf field <code>string track_id = 8;</code>
+     * Generated from protobuf field <code>string track_id = 8 [(.logger.name) = "trackID"];</code>
      */
     protected $track_id = '';
     /**
-     * Generated from protobuf field <code>string egress_id = 9;</code>
+     * Generated from protobuf field <code>string egress_id = 9 [(.logger.name) = "egressID"];</code>
      */
     protected $egress_id = '';
     /**
-     * Generated from protobuf field <code>string ingress_id = 10;</code>
+     * Generated from protobuf field <code>string ingress_id = 10 [(.logger.name) = "ingressID"];</code>
      */
     protected $ingress_id = '';
     /**
@@ -139,7 +139,7 @@ class WebhookInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string event_id = 1;</code>
+     * Generated from protobuf field <code>string event_id = 1 [(.logger.name) = "eventID"];</code>
      * @return string
      */
     public function getEventId()
@@ -148,7 +148,7 @@ class WebhookInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string event_id = 1;</code>
+     * Generated from protobuf field <code>string event_id = 1 [(.logger.name) = "eventID"];</code>
      * @param string $var
      * @return $this
      */
@@ -183,7 +183,7 @@ class WebhookInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string project_id = 3;</code>
+     * Generated from protobuf field <code>string project_id = 3 [(.logger.name) = "projectID"];</code>
      * @return string
      */
     public function getProjectId()
@@ -192,7 +192,7 @@ class WebhookInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string project_id = 3;</code>
+     * Generated from protobuf field <code>string project_id = 3 [(.logger.name) = "projectID"];</code>
      * @param string $var
      * @return $this
      */
@@ -227,7 +227,7 @@ class WebhookInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string room_id = 5;</code>
+     * Generated from protobuf field <code>string room_id = 5 [(.logger.name) = "roomID"];</code>
      * @return string
      */
     public function getRoomId()
@@ -236,7 +236,7 @@ class WebhookInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string room_id = 5;</code>
+     * Generated from protobuf field <code>string room_id = 5 [(.logger.name) = "roomID"];</code>
      * @param string $var
      * @return $this
      */
@@ -271,7 +271,7 @@ class WebhookInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string participant_id = 7;</code>
+     * Generated from protobuf field <code>string participant_id = 7 [(.logger.name) = "participantID"];</code>
      * @return string
      */
     public function getParticipantId()
@@ -280,7 +280,7 @@ class WebhookInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string participant_id = 7;</code>
+     * Generated from protobuf field <code>string participant_id = 7 [(.logger.name) = "participantID"];</code>
      * @param string $var
      * @return $this
      */
@@ -293,7 +293,7 @@ class WebhookInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string track_id = 8;</code>
+     * Generated from protobuf field <code>string track_id = 8 [(.logger.name) = "trackID"];</code>
      * @return string
      */
     public function getTrackId()
@@ -302,7 +302,7 @@ class WebhookInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string track_id = 8;</code>
+     * Generated from protobuf field <code>string track_id = 8 [(.logger.name) = "trackID"];</code>
      * @param string $var
      * @return $this
      */
@@ -315,7 +315,7 @@ class WebhookInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string egress_id = 9;</code>
+     * Generated from protobuf field <code>string egress_id = 9 [(.logger.name) = "egressID"];</code>
      * @return string
      */
     public function getEgressId()
@@ -324,7 +324,7 @@ class WebhookInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string egress_id = 9;</code>
+     * Generated from protobuf field <code>string egress_id = 9 [(.logger.name) = "egressID"];</code>
      * @param string $var
      * @return $this
      */
@@ -337,7 +337,7 @@ class WebhookInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string ingress_id = 10;</code>
+     * Generated from protobuf field <code>string ingress_id = 10 [(.logger.name) = "ingressID"];</code>
      * @return string
      */
     public function getIngressId()
@@ -346,7 +346,7 @@ class WebhookInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string ingress_id = 10;</code>
+     * Generated from protobuf field <code>string ingress_id = 10 [(.logger.name) = "ingressID"];</code>
      * @param string $var
      * @return $this
      */

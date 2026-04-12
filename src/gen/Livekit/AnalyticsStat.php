@@ -37,7 +37,7 @@ class AnalyticsStat extends \Google\Protobuf\Internal\Message
      */
     protected $node = '';
     /**
-     * Generated from protobuf field <code>string room_id = 5;</code>
+     * Generated from protobuf field <code>string room_id = 5 [(.logger.name) = "roomID"];</code>
      */
     protected $room_id = '';
     /**
@@ -45,11 +45,11 @@ class AnalyticsStat extends \Google\Protobuf\Internal\Message
      */
     protected $room_name = '';
     /**
-     * Generated from protobuf field <code>string participant_id = 7;</code>
+     * Generated from protobuf field <code>string participant_id = 7 [(.logger.name) = "participantID"];</code>
      */
     protected $participant_id = '';
     /**
-     * Generated from protobuf field <code>string track_id = 8;</code>
+     * Generated from protobuf field <code>string track_id = 8 [(.logger.name) = "trackID"];</code>
      */
     protected $track_id = '';
     /**
@@ -229,7 +229,7 @@ class AnalyticsStat extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string room_id = 5;</code>
+     * Generated from protobuf field <code>string room_id = 5 [(.logger.name) = "roomID"];</code>
      * @return string
      */
     public function getRoomId()
@@ -238,7 +238,7 @@ class AnalyticsStat extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string room_id = 5;</code>
+     * Generated from protobuf field <code>string room_id = 5 [(.logger.name) = "roomID"];</code>
      * @param string $var
      * @return $this
      */
@@ -273,7 +273,7 @@ class AnalyticsStat extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string participant_id = 7;</code>
+     * Generated from protobuf field <code>string participant_id = 7 [(.logger.name) = "participantID"];</code>
      * @return string
      */
     public function getParticipantId()
@@ -282,7 +282,7 @@ class AnalyticsStat extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string participant_id = 7;</code>
+     * Generated from protobuf field <code>string participant_id = 7 [(.logger.name) = "participantID"];</code>
      * @param string $var
      * @return $this
      */
@@ -295,7 +295,7 @@ class AnalyticsStat extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string track_id = 8;</code>
+     * Generated from protobuf field <code>string track_id = 8 [(.logger.name) = "trackID"];</code>
      * @return string
      */
     public function getTrackId()
@@ -304,7 +304,7 @@ class AnalyticsStat extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string track_id = 8;</code>
+     * Generated from protobuf field <code>string track_id = 8 [(.logger.name) = "trackID"];</code>
      * @param string $var
      * @return $this
      */

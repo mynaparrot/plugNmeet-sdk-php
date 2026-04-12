@@ -27,7 +27,7 @@ class ListIngressRequest extends \Google\Protobuf\Internal\Message
     /**
      * (optional, filter by ingress ID)
      *
-     * Generated from protobuf field <code>string ingress_id = 2;</code>
+     * Generated from protobuf field <code>string ingress_id = 2 [(.logger.name) = "ingressID"];</code>
      */
     protected $ingress_id = '';
 
@@ -110,7 +110,7 @@ class ListIngressRequest extends \Google\Protobuf\Internal\Message
     /**
      * (optional, filter by ingress ID)
      *
-     * Generated from protobuf field <code>string ingress_id = 2;</code>
+     * Generated from protobuf field <code>string ingress_id = 2 [(.logger.name) = "ingressID"];</code>
      * @return string
      */
     public function getIngressId()
@@ -121,7 +121,7 @@ class ListIngressRequest extends \Google\Protobuf\Internal\Message
     /**
      * (optional, filter by ingress ID)
      *
-     * Generated from protobuf field <code>string ingress_id = 2;</code>
+     * Generated from protobuf field <code>string ingress_id = 2 [(.logger.name) = "ingressID"];</code>
      * @param string $var
      * @return $this
      */

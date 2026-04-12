@@ -15,7 +15,7 @@ use Google\Protobuf\RepeatedField;
 class IngressInfo extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string ingress_id = 1;</code>
+     * Generated from protobuf field <code>string ingress_id = 1 [(.logger.name) = "ingressID"];</code>
      */
     protected $ingress_id = '';
     /**
@@ -126,7 +126,7 @@ class IngressInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string ingress_id = 1;</code>
+     * Generated from protobuf field <code>string ingress_id = 1 [(.logger.name) = "ingressID"];</code>
      * @return string
      */
     public function getIngressId()
@@ -135,7 +135,7 @@ class IngressInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string ingress_id = 1;</code>
+     * Generated from protobuf field <code>string ingress_id = 1 [(.logger.name) = "ingressID"];</code>
      * @param string $var
      * @return $this
      */

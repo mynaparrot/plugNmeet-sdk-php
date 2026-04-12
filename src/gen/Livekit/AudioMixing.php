@@ -13,20 +13,14 @@ use UnexpectedValueException;
 class AudioMixing
 {
     /**
-     * all users are mixed together
-     *
      * Generated from protobuf enum <code>DEFAULT_MIXING = 0;</code>
      */
     const DEFAULT_MIXING = 0;
     /**
-     * agent audio in the left channel, all other audio in the right channel
-     *
      * Generated from protobuf enum <code>DUAL_CHANNEL_AGENT = 1;</code>
      */
     const DUAL_CHANNEL_AGENT = 1;
     /**
-     * each new audio track alternates between left and right channels
-     *
      * Generated from protobuf enum <code>DUAL_CHANNEL_ALTERNATE = 2;</code>
      */
     const DUAL_CHANNEL_ALTERNATE = 2;

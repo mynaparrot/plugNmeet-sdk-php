@@ -15,20 +15,14 @@ use Google\Protobuf\RepeatedField;
 class EncodedFileOutput extends \Google\Protobuf\Internal\Message
 {
     /**
-     * (optional)
-     *
      * Generated from protobuf field <code>.livekit.EncodedFileType file_type = 1;</code>
      */
     protected $file_type = 0;
     /**
-     * see egress docs for templating (default {room_name}-{time})
-     *
      * Generated from protobuf field <code>string filepath = 2;</code>
      */
     protected $filepath = '';
     /**
-     * disable upload of manifest file (default false)
-     *
      * Generated from protobuf field <code>bool disable_manifest = 6;</code>
      */
     protected $disable_manifest = false;
@@ -41,11 +35,8 @@ class EncodedFileOutput extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int $file_type
-     *           (optional)
      *     @type string $filepath
-     *           see egress docs for templating (default {room_name}-{time})
      *     @type bool $disable_manifest
-     *           disable upload of manifest file (default false)
      *     @type \Livekit\S3Upload $s3
      *     @type \Livekit\GCPUpload $gcp
      *     @type \Livekit\AzureBlobUpload $azure
@@ -58,8 +49,6 @@ class EncodedFileOutput extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * (optional)
-     *
      * Generated from protobuf field <code>.livekit.EncodedFileType file_type = 1;</code>
      * @return int
      */
@@ -69,8 +58,6 @@ class EncodedFileOutput extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * (optional)
-     *
      * Generated from protobuf field <code>.livekit.EncodedFileType file_type = 1;</code>
      * @param int $var
      * @return $this
@@ -84,8 +71,6 @@ class EncodedFileOutput extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * see egress docs for templating (default {room_name}-{time})
-     *
      * Generated from protobuf field <code>string filepath = 2;</code>
      * @return string
      */
@@ -95,8 +80,6 @@ class EncodedFileOutput extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * see egress docs for templating (default {room_name}-{time})
-     *
      * Generated from protobuf field <code>string filepath = 2;</code>
      * @param string $var
      * @return $this
@@ -110,8 +93,6 @@ class EncodedFileOutput extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * disable upload of manifest file (default false)
-     *
      * Generated from protobuf field <code>bool disable_manifest = 6;</code>
      * @return bool
      */
@@ -121,8 +102,6 @@ class EncodedFileOutput extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * disable upload of manifest file (default false)
-     *
      * Generated from protobuf field <code>bool disable_manifest = 6;</code>
      * @param bool $var
      * @return $this

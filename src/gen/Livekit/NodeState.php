@@ -24,11 +24,16 @@ class NodeState
      * Generated from protobuf enum <code>SHUTTING_DOWN = 2;</code>
      */
     const SHUTTING_DOWN = 2;
+    /**
+     * Generated from protobuf enum <code>SUSPENDED = 3;</code>
+     */
+    const SUSPENDED = 3;
 
     private static $valueToName = [
         self::STARTING_UP => 'STARTING_UP',
         self::SERVING => 'SERVING',
         self::SHUTTING_DOWN => 'SHUTTING_DOWN',
+        self::SUSPENDED => 'SUSPENDED',
     ];
 
     public static function name($value)

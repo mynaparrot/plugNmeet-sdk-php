@@ -89,6 +89,12 @@ class ParticipantInfo extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .livekit.DataTrackInfo data_tracks = 19;</code>
      */
     private $data_tracks;
+    /**
+     * protocol version used for client feature compatibility
+     *
+     * Generated from protobuf field <code>int32 client_protocol = 20;</code>
+     */
+    protected $client_protocol = 0;
 
     /**
      * Constructor.
@@ -117,6 +123,8 @@ class ParticipantInfo extends \Google\Protobuf\Internal\Message
      *     @type int $disconnect_reason
      *     @type int[] $kind_details
      *     @type \Livekit\DataTrackInfo[] $data_tracks
+     *     @type int $client_protocol
+     *           protocol version used for client feature compatibility
      * }
      */
     public function __construct($data = NULL) {
@@ -518,6 +526,32 @@ class ParticipantInfo extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\DataTrackInfo::class);
         $this->data_tracks = $arr;
+
+        return $this;
+    }
+
+    /**
+     * protocol version used for client feature compatibility
+     *
+     * Generated from protobuf field <code>int32 client_protocol = 20;</code>
+     * @return int
+     */
+    public function getClientProtocol()
+    {
+        return $this->client_protocol;
+    }
+
+    /**
+     * protocol version used for client feature compatibility
+     *
+     * Generated from protobuf field <code>int32 client_protocol = 20;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setClientProtocol($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->client_protocol = $var;
 
         return $this;
     }

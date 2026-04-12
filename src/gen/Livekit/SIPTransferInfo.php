@@ -15,11 +15,11 @@ use Google\Protobuf\RepeatedField;
 class SIPTransferInfo extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string transfer_id = 1;</code>
+     * Generated from protobuf field <code>string transfer_id = 1 [(.logger.name) = "transferID"];</code>
      */
     protected $transfer_id = '';
     /**
-     * Generated from protobuf field <code>string call_id = 2;</code>
+     * Generated from protobuf field <code>string call_id = 2 [(.logger.name) = "callID"];</code>
      */
     protected $call_id = '';
     /**
@@ -69,7 +69,7 @@ class SIPTransferInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string transfer_id = 1;</code>
+     * Generated from protobuf field <code>string transfer_id = 1 [(.logger.name) = "transferID"];</code>
      * @return string
      */
     public function getTransferId()
@@ -78,7 +78,7 @@ class SIPTransferInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string transfer_id = 1;</code>
+     * Generated from protobuf field <code>string transfer_id = 1 [(.logger.name) = "transferID"];</code>
      * @param string $var
      * @return $this
      */
@@ -91,7 +91,7 @@ class SIPTransferInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string call_id = 2;</code>
+     * Generated from protobuf field <code>string call_id = 2 [(.logger.name) = "callID"];</code>
      * @return string
      */
     public function getCallId()
@@ -100,7 +100,7 @@ class SIPTransferInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string call_id = 2;</code>
+     * Generated from protobuf field <code>string call_id = 2 [(.logger.name) = "callID"];</code>
      * @param string $var
      * @return $this
      */

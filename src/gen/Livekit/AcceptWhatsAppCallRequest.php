@@ -17,7 +17,7 @@ class AcceptWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
     /**
      * Required - The phone number id of the business that is conencting the call
      *
-     * Generated from protobuf field <code>string whatsapp_phone_number_id = 1;</code>
+     * Generated from protobuf field <code>string whatsapp_phone_number_id = 1 [(.logger.name) = "whatsappPhoneNumberID"];</code>
      */
     protected $whatsapp_phone_number_id = '';
     /**
@@ -35,7 +35,7 @@ class AcceptWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
     /**
      * Required - Call ID sent by Meta
      *
-     * Generated from protobuf field <code>string whatsapp_call_id = 3;</code>
+     * Generated from protobuf field <code>string whatsapp_call_id = 3 [(.logger.name) = "whatsappCallID"];</code>
      */
     protected $whatsapp_call_id = '';
     /**
@@ -94,6 +94,18 @@ class AcceptWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string destination_country = 12;</code>
      */
     protected $destination_country = '';
+    /**
+     * Max time for the callee to answer the call.
+     *
+     * Generated from protobuf field <code>.google.protobuf.Duration ringing_timeout = 14;</code>
+     */
+    protected $ringing_timeout = null;
+    /**
+     * Wait for the answer for the call before returning.
+     *
+     * Generated from protobuf field <code>bool wait_until_answered = 15;</code>
+     */
+    protected $wait_until_answered = false;
 
     /**
      * Constructor.
@@ -129,6 +141,10 @@ class AcceptWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
      *           Optional - User-defined attributes. Will be attached to a created Participant in the room.
      *     @type string $destination_country
      *           Optional - Country where the call terminates as ISO 3166-1 alpha-2 (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). This will be used by the livekit infrastructure to route calls.
+     *     @type \Google\Protobuf\Duration $ringing_timeout
+     *           Max time for the callee to answer the call.
+     *     @type bool $wait_until_answered
+     *           Wait for the answer for the call before returning.
      * }
      */
     public function __construct($data = NULL) {
@@ -139,7 +155,7 @@ class AcceptWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
     /**
      * Required - The phone number id of the business that is conencting the call
      *
-     * Generated from protobuf field <code>string whatsapp_phone_number_id = 1;</code>
+     * Generated from protobuf field <code>string whatsapp_phone_number_id = 1 [(.logger.name) = "whatsappPhoneNumberID"];</code>
      * @return string
      */
     public function getWhatsappPhoneNumberId()
@@ -150,7 +166,7 @@ class AcceptWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
     /**
      * Required - The phone number id of the business that is conencting the call
      *
-     * Generated from protobuf field <code>string whatsapp_phone_number_id = 1;</code>
+     * Generated from protobuf field <code>string whatsapp_phone_number_id = 1 [(.logger.name) = "whatsappPhoneNumberID"];</code>
      * @param string $var
      * @return $this
      */
@@ -217,7 +233,7 @@ class AcceptWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
     /**
      * Required - Call ID sent by Meta
      *
-     * Generated from protobuf field <code>string whatsapp_call_id = 3;</code>
+     * Generated from protobuf field <code>string whatsapp_call_id = 3 [(.logger.name) = "whatsappCallID"];</code>
      * @return string
      */
     public function getWhatsappCallId()
@@ -228,7 +244,7 @@ class AcceptWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
     /**
      * Required - Call ID sent by Meta
      *
-     * Generated from protobuf field <code>string whatsapp_call_id = 3;</code>
+     * Generated from protobuf field <code>string whatsapp_call_id = 3 [(.logger.name) = "whatsappCallID"];</code>
      * @param string $var
      * @return $this
      */
@@ -484,6 +500,68 @@ class AcceptWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->destination_country = $var;
+
+        return $this;
+    }
+
+    /**
+     * Max time for the callee to answer the call.
+     *
+     * Generated from protobuf field <code>.google.protobuf.Duration ringing_timeout = 14;</code>
+     * @return \Google\Protobuf\Duration|null
+     */
+    public function getRingingTimeout()
+    {
+        return $this->ringing_timeout;
+    }
+
+    public function hasRingingTimeout()
+    {
+        return isset($this->ringing_timeout);
+    }
+
+    public function clearRingingTimeout()
+    {
+        unset($this->ringing_timeout);
+    }
+
+    /**
+     * Max time for the callee to answer the call.
+     *
+     * Generated from protobuf field <code>.google.protobuf.Duration ringing_timeout = 14;</code>
+     * @param \Google\Protobuf\Duration $var
+     * @return $this
+     */
+    public function setRingingTimeout($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Protobuf\Duration::class);
+        $this->ringing_timeout = $var;
+
+        return $this;
+    }
+
+    /**
+     * Wait for the answer for the call before returning.
+     *
+     * Generated from protobuf field <code>bool wait_until_answered = 15;</code>
+     * @return bool
+     */
+    public function getWaitUntilAnswered()
+    {
+        return $this->wait_until_answered;
+    }
+
+    /**
+     * Wait for the answer for the call before returning.
+     *
+     * Generated from protobuf field <code>bool wait_until_answered = 15;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setWaitUntilAnswered($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->wait_until_answered = $var;
 
         return $this;
     }

@@ -30,7 +30,7 @@ class UpdateParticipantMetadata extends \Google\Protobuf\Internal\Message
      */
     private $attributes;
     /**
-     * Generated from protobuf field <code>uint32 request_id = 4;</code>
+     * Generated from protobuf field <code>uint32 request_id = 4 [(.logger.name) = "requestID"];</code>
      */
     protected $request_id = 0;
 
@@ -126,7 +126,7 @@ class UpdateParticipantMetadata extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 request_id = 4;</code>
+     * Generated from protobuf field <code>uint32 request_id = 4 [(.logger.name) = "requestID"];</code>
      * @return int
      */
     public function getRequestId()
@@ -135,7 +135,7 @@ class UpdateParticipantMetadata extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 request_id = 4;</code>
+     * Generated from protobuf field <code>uint32 request_id = 4 [(.logger.name) = "requestID"];</code>
      * @param int $var
      * @return $this
      */

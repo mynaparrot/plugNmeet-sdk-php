@@ -42,6 +42,10 @@ class AgentVersion extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string owner = 7;</code>
      */
     protected $owner = '';
+    /**
+     * Generated from protobuf field <code>bool draining = 8;</code>
+     */
+    protected $draining = false;
 
     /**
      * Constructor.
@@ -56,6 +60,7 @@ class AgentVersion extends \Google\Protobuf\Internal\Message
      *     @type array|\Google\Protobuf\Internal\MapField $attributes
      *     @type string $status
      *     @type string $owner
+     *     @type bool $draining
      * }
      */
     public function __construct($data = NULL) {
@@ -233,6 +238,28 @@ class AgentVersion extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->owner = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool draining = 8;</code>
+     * @return bool
+     */
+    public function getDraining()
+    {
+        return $this->draining;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool draining = 8;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setDraining($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->draining = $var;
 
         return $this;
     }

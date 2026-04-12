@@ -29,7 +29,7 @@ class AnalyticsEvent extends \Google\Protobuf\Internal\Message
      */
     protected $timestamp = null;
     /**
-     * Generated from protobuf field <code>string room_id = 3;</code>
+     * Generated from protobuf field <code>string room_id = 3 [(.logger.name) = "roomID"];</code>
      */
     protected $room_id = '';
     /**
@@ -37,7 +37,7 @@ class AnalyticsEvent extends \Google\Protobuf\Internal\Message
      */
     protected $room = null;
     /**
-     * Generated from protobuf field <code>string participant_id = 5;</code>
+     * Generated from protobuf field <code>string participant_id = 5 [(.logger.name) = "participantID"];</code>
      */
     protected $participant_id = '';
     /**
@@ -45,7 +45,7 @@ class AnalyticsEvent extends \Google\Protobuf\Internal\Message
      */
     protected $participant = null;
     /**
-     * Generated from protobuf field <code>string track_id = 7;</code>
+     * Generated from protobuf field <code>string track_id = 7 [(.logger.name) = "trackID"];</code>
      */
     protected $track_id = '';
     /**
@@ -65,11 +65,11 @@ class AnalyticsEvent extends \Google\Protobuf\Internal\Message
      */
     protected $client_meta = null;
     /**
-     * Generated from protobuf field <code>string egress_id = 13;</code>
+     * Generated from protobuf field <code>string egress_id = 13 [(.logger.name) = "egressID"];</code>
      */
     protected $egress_id = '';
     /**
-     * Generated from protobuf field <code>string ingress_id = 19;</code>
+     * Generated from protobuf field <code>string ingress_id = 19 [(.logger.name) = "ingressID"];</code>
      */
     protected $ingress_id = '';
     /**
@@ -105,11 +105,11 @@ class AnalyticsEvent extends \Google\Protobuf\Internal\Message
      */
     protected $video_layer = 0;
     /**
-     * Generated from protobuf field <code>string node_id = 24;</code>
+     * Generated from protobuf field <code>string node_id = 24 [(.logger.name) = "nodeID"];</code>
      */
     protected $node_id = '';
     /**
-     * Generated from protobuf field <code>string sip_call_id = 26;</code>
+     * Generated from protobuf field <code>string sip_call_id = 26 [(.logger.name) = "sipCallID"];</code>
      */
     protected $sip_call_id = '';
     /**
@@ -117,7 +117,7 @@ class AnalyticsEvent extends \Google\Protobuf\Internal\Message
      */
     protected $sip_call = null;
     /**
-     * Generated from protobuf field <code>string sip_trunk_id = 28;</code>
+     * Generated from protobuf field <code>string sip_trunk_id = 28 [(.logger.name) = "sipTrunkID"];</code>
      */
     protected $sip_trunk_id = '';
     /**
@@ -129,7 +129,7 @@ class AnalyticsEvent extends \Google\Protobuf\Internal\Message
      */
     protected $sip_outbound_trunk = null;
     /**
-     * Generated from protobuf field <code>string sip_dispatch_rule_id = 31;</code>
+     * Generated from protobuf field <code>string sip_dispatch_rule_id = 31 [(.logger.name) = "sipDispatchRuleID"];</code>
      */
     protected $sip_dispatch_rule_id = '';
     /**
@@ -282,7 +282,7 @@ class AnalyticsEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string room_id = 3;</code>
+     * Generated from protobuf field <code>string room_id = 3 [(.logger.name) = "roomID"];</code>
      * @return string
      */
     public function getRoomId()
@@ -291,7 +291,7 @@ class AnalyticsEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string room_id = 3;</code>
+     * Generated from protobuf field <code>string room_id = 3 [(.logger.name) = "roomID"];</code>
      * @param string $var
      * @return $this
      */
@@ -336,7 +336,7 @@ class AnalyticsEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string participant_id = 5;</code>
+     * Generated from protobuf field <code>string participant_id = 5 [(.logger.name) = "participantID"];</code>
      * @return string
      */
     public function getParticipantId()
@@ -345,7 +345,7 @@ class AnalyticsEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string participant_id = 5;</code>
+     * Generated from protobuf field <code>string participant_id = 5 [(.logger.name) = "participantID"];</code>
      * @param string $var
      * @return $this
      */
@@ -390,7 +390,7 @@ class AnalyticsEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string track_id = 7;</code>
+     * Generated from protobuf field <code>string track_id = 7 [(.logger.name) = "trackID"];</code>
      * @return string
      */
     public function getTrackId()
@@ -399,7 +399,7 @@ class AnalyticsEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string track_id = 7;</code>
+     * Generated from protobuf field <code>string track_id = 7 [(.logger.name) = "trackID"];</code>
      * @param string $var
      * @return $this
      */
@@ -530,7 +530,7 @@ class AnalyticsEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string egress_id = 13;</code>
+     * Generated from protobuf field <code>string egress_id = 13 [(.logger.name) = "egressID"];</code>
      * @return string
      */
     public function getEgressId()
@@ -539,7 +539,7 @@ class AnalyticsEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string egress_id = 13;</code>
+     * Generated from protobuf field <code>string egress_id = 13 [(.logger.name) = "egressID"];</code>
      * @param string $var
      * @return $this
      */
@@ -552,7 +552,7 @@ class AnalyticsEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string ingress_id = 19;</code>
+     * Generated from protobuf field <code>string ingress_id = 19 [(.logger.name) = "ingressID"];</code>
      * @return string
      */
     public function getIngressId()
@@ -561,7 +561,7 @@ class AnalyticsEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string ingress_id = 19;</code>
+     * Generated from protobuf field <code>string ingress_id = 19 [(.logger.name) = "ingressID"];</code>
      * @param string $var
      * @return $this
      */
@@ -790,7 +790,7 @@ class AnalyticsEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string node_id = 24;</code>
+     * Generated from protobuf field <code>string node_id = 24 [(.logger.name) = "nodeID"];</code>
      * @return string
      */
     public function getNodeId()
@@ -799,7 +799,7 @@ class AnalyticsEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string node_id = 24;</code>
+     * Generated from protobuf field <code>string node_id = 24 [(.logger.name) = "nodeID"];</code>
      * @param string $var
      * @return $this
      */
@@ -812,7 +812,7 @@ class AnalyticsEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string sip_call_id = 26;</code>
+     * Generated from protobuf field <code>string sip_call_id = 26 [(.logger.name) = "sipCallID"];</code>
      * @return string
      */
     public function getSipCallId()
@@ -821,7 +821,7 @@ class AnalyticsEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string sip_call_id = 26;</code>
+     * Generated from protobuf field <code>string sip_call_id = 26 [(.logger.name) = "sipCallID"];</code>
      * @param string $var
      * @return $this
      */
@@ -866,7 +866,7 @@ class AnalyticsEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string sip_trunk_id = 28;</code>
+     * Generated from protobuf field <code>string sip_trunk_id = 28 [(.logger.name) = "sipTrunkID"];</code>
      * @return string
      */
     public function getSipTrunkId()
@@ -875,7 +875,7 @@ class AnalyticsEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string sip_trunk_id = 28;</code>
+     * Generated from protobuf field <code>string sip_trunk_id = 28 [(.logger.name) = "sipTrunkID"];</code>
      * @param string $var
      * @return $this
      */
@@ -952,7 +952,7 @@ class AnalyticsEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string sip_dispatch_rule_id = 31;</code>
+     * Generated from protobuf field <code>string sip_dispatch_rule_id = 31 [(.logger.name) = "sipDispatchRuleID"];</code>
      * @return string
      */
     public function getSipDispatchRuleId()
@@ -961,7 +961,7 @@ class AnalyticsEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string sip_dispatch_rule_id = 31;</code>
+     * Generated from protobuf field <code>string sip_dispatch_rule_id = 31 [(.logger.name) = "sipDispatchRuleID"];</code>
      * @param string $var
      * @return $this
      */

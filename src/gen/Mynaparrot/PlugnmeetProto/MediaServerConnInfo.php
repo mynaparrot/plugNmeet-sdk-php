@@ -26,6 +26,10 @@ class MediaServerConnInfo extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool enabled_e2ee = 3;</code>
      */
     protected $enabled_e2ee = false;
+    /**
+     * Generated from protobuf field <code>optional .plugnmeet.TurnCredentials turn_credentials = 4;</code>
+     */
+    protected $turn_credentials = null;
 
     /**
      * Constructor.
@@ -36,6 +40,7 @@ class MediaServerConnInfo extends \Google\Protobuf\Internal\Message
      *     @type string $url
      *     @type string $token
      *     @type bool $enabled_e2ee
+     *     @type \Mynaparrot\PlugnmeetProto\TurnCredentials $turn_credentials
      * }
      */
     public function __construct($data = NULL) {
@@ -105,6 +110,38 @@ class MediaServerConnInfo extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->enabled_e2ee = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .plugnmeet.TurnCredentials turn_credentials = 4;</code>
+     * @return \Mynaparrot\PlugnmeetProto\TurnCredentials|null
+     */
+    public function getTurnCredentials()
+    {
+        return $this->turn_credentials;
+    }
+
+    public function hasTurnCredentials()
+    {
+        return isset($this->turn_credentials);
+    }
+
+    public function clearTurnCredentials()
+    {
+        unset($this->turn_credentials);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .plugnmeet.TurnCredentials turn_credentials = 4;</code>
+     * @param \Mynaparrot\PlugnmeetProto\TurnCredentials $var
+     * @return $this
+     */
+    public function setTurnCredentials($var)
+    {
+        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\TurnCredentials::class);
+        $this->turn_credentials = $var;
 
         return $this;
     }

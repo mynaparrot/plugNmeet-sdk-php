@@ -31,7 +31,7 @@ class UpdatePhoneNumberRequest extends \Google\Protobuf\Internal\Message
     /**
      * SIP dispatch rule ID to assign to the phone number
      *
-     * Generated from protobuf field <code>optional string sip_dispatch_rule_id = 3;</code>
+     * Generated from protobuf field <code>optional string sip_dispatch_rule_id = 3 [(.logger.name) = "sipDispatchRuleID"];</code>
      */
     protected $sip_dispatch_rule_id = null;
 
@@ -129,7 +129,7 @@ class UpdatePhoneNumberRequest extends \Google\Protobuf\Internal\Message
     /**
      * SIP dispatch rule ID to assign to the phone number
      *
-     * Generated from protobuf field <code>optional string sip_dispatch_rule_id = 3;</code>
+     * Generated from protobuf field <code>optional string sip_dispatch_rule_id = 3 [(.logger.name) = "sipDispatchRuleID"];</code>
      * @return string
      */
     public function getSipDispatchRuleId()
@@ -150,7 +150,7 @@ class UpdatePhoneNumberRequest extends \Google\Protobuf\Internal\Message
     /**
      * SIP dispatch rule ID to assign to the phone number
      *
-     * Generated from protobuf field <code>optional string sip_dispatch_rule_id = 3;</code>
+     * Generated from protobuf field <code>optional string sip_dispatch_rule_id = 3 [(.logger.name) = "sipDispatchRuleID"];</code>
      * @param string $var
      * @return $this
      */

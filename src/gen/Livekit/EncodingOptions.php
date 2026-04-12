@@ -51,12 +51,6 @@ class EncodingOptions extends \Google\Protobuf\Internal\Message
      */
     protected $audio_bitrate = 0;
     /**
-     * quality setting on audio encoder
-     *
-     * Generated from protobuf field <code>int32 audio_quality = 11;</code>
-     */
-    protected $audio_quality = 0;
-    /**
      * (default 44100)
      *
      * Generated from protobuf field <code>int32 audio_frequency = 7;</code>
@@ -75,17 +69,25 @@ class EncodingOptions extends \Google\Protobuf\Internal\Message
      */
     protected $video_bitrate = 0;
     /**
-     * quality setting on video encoder
-     *
-     * Generated from protobuf field <code>int32 video_quality = 12;</code>
-     */
-    protected $video_quality = 0;
-    /**
      * in seconds (default 4s for streaming, segment duration for segmented output, encoder default for files)
      *
      * Generated from protobuf field <code>double key_frame_interval = 10;</code>
      */
     protected $key_frame_interval = 0.0;
+    /**
+     * --- Deprecated ---
+     *
+     * Generated from protobuf field <code>int32 audio_quality = 11 [deprecated = true];</code>
+     * @deprecated
+     */
+    protected $audio_quality = 0;
+    /**
+     * quality setting on video encoder
+     *
+     * Generated from protobuf field <code>int32 video_quality = 12 [deprecated = true];</code>
+     * @deprecated
+     */
+    protected $video_quality = 0;
 
     /**
      * Constructor.
@@ -105,18 +107,18 @@ class EncodingOptions extends \Google\Protobuf\Internal\Message
      *           (default OPUS)
      *     @type int $audio_bitrate
      *           (default 128)
-     *     @type int $audio_quality
-     *           quality setting on audio encoder
      *     @type int $audio_frequency
      *           (default 44100)
      *     @type int $video_codec
      *           (default H264_MAIN)
      *     @type int $video_bitrate
      *           (default 4500)
-     *     @type int $video_quality
-     *           quality setting on video encoder
      *     @type float $key_frame_interval
      *           in seconds (default 4s for streaming, segment duration for segmented output, encoder default for files)
+     *     @type int $audio_quality
+     *           --- Deprecated ---
+     *     @type int $video_quality
+     *           quality setting on video encoder
      * }
      */
     public function __construct($data = NULL) {
@@ -281,32 +283,6 @@ class EncodingOptions extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * quality setting on audio encoder
-     *
-     * Generated from protobuf field <code>int32 audio_quality = 11;</code>
-     * @return int
-     */
-    public function getAudioQuality()
-    {
-        return $this->audio_quality;
-    }
-
-    /**
-     * quality setting on audio encoder
-     *
-     * Generated from protobuf field <code>int32 audio_quality = 11;</code>
-     * @param int $var
-     * @return $this
-     */
-    public function setAudioQuality($var)
-    {
-        GPBUtil::checkInt32($var);
-        $this->audio_quality = $var;
-
-        return $this;
-    }
-
-    /**
      * (default 44100)
      *
      * Generated from protobuf field <code>int32 audio_frequency = 7;</code>
@@ -385,32 +361,6 @@ class EncodingOptions extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * quality setting on video encoder
-     *
-     * Generated from protobuf field <code>int32 video_quality = 12;</code>
-     * @return int
-     */
-    public function getVideoQuality()
-    {
-        return $this->video_quality;
-    }
-
-    /**
-     * quality setting on video encoder
-     *
-     * Generated from protobuf field <code>int32 video_quality = 12;</code>
-     * @param int $var
-     * @return $this
-     */
-    public function setVideoQuality($var)
-    {
-        GPBUtil::checkInt32($var);
-        $this->video_quality = $var;
-
-        return $this;
-    }
-
-    /**
      * in seconds (default 4s for streaming, segment duration for segmented output, encoder default for files)
      *
      * Generated from protobuf field <code>double key_frame_interval = 10;</code>
@@ -432,6 +382,70 @@ class EncodingOptions extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkDouble($var);
         $this->key_frame_interval = $var;
+
+        return $this;
+    }
+
+    /**
+     * --- Deprecated ---
+     *
+     * Generated from protobuf field <code>int32 audio_quality = 11 [deprecated = true];</code>
+     * @return int
+     * @deprecated
+     */
+    public function getAudioQuality()
+    {
+        if ($this->audio_quality !== 0) {
+            @trigger_error('audio_quality is deprecated.', E_USER_DEPRECATED);
+        }
+        return $this->audio_quality;
+    }
+
+    /**
+     * --- Deprecated ---
+     *
+     * Generated from protobuf field <code>int32 audio_quality = 11 [deprecated = true];</code>
+     * @param int $var
+     * @return $this
+     * @deprecated
+     */
+    public function setAudioQuality($var)
+    {
+        @trigger_error('audio_quality is deprecated.', E_USER_DEPRECATED);
+        GPBUtil::checkInt32($var);
+        $this->audio_quality = $var;
+
+        return $this;
+    }
+
+    /**
+     * quality setting on video encoder
+     *
+     * Generated from protobuf field <code>int32 video_quality = 12 [deprecated = true];</code>
+     * @return int
+     * @deprecated
+     */
+    public function getVideoQuality()
+    {
+        if ($this->video_quality !== 0) {
+            @trigger_error('video_quality is deprecated.', E_USER_DEPRECATED);
+        }
+        return $this->video_quality;
+    }
+
+    /**
+     * quality setting on video encoder
+     *
+     * Generated from protobuf field <code>int32 video_quality = 12 [deprecated = true];</code>
+     * @param int $var
+     * @return $this
+     * @deprecated
+     */
+    public function setVideoQuality($var)
+    {
+        @trigger_error('video_quality is deprecated.', E_USER_DEPRECATED);
+        GPBUtil::checkInt32($var);
+        $this->video_quality = $var;
 
         return $this;
     }

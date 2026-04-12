@@ -23,7 +23,7 @@ class StartSession extends \Google\Protobuf\Internal\Message
      */
     protected $identity = '';
     /**
-     * Generated from protobuf field <code>string connection_id = 3;</code>
+     * Generated from protobuf field <code>string connection_id = 3 [(.logger.name) = "connectionID"];</code>
      */
     protected $connection_id = '';
     /**
@@ -71,7 +71,7 @@ class StartSession extends \Google\Protobuf\Internal\Message
     /**
      *if reconnect, client will set current sid
      *
-     * Generated from protobuf field <code>string participant_id = 16;</code>
+     * Generated from protobuf field <code>string participant_id = 16 [(.logger.name) = "participantID"];</code>
      */
     protected $participant_id = '';
     /**
@@ -189,7 +189,7 @@ class StartSession extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string connection_id = 3;</code>
+     * Generated from protobuf field <code>string connection_id = 3 [(.logger.name) = "connectionID"];</code>
      * @return string
      */
     public function getConnectionId()
@@ -198,7 +198,7 @@ class StartSession extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string connection_id = 3;</code>
+     * Generated from protobuf field <code>string connection_id = 3 [(.logger.name) = "connectionID"];</code>
      * @param string $var
      * @return $this
      */
@@ -451,7 +451,7 @@ class StartSession extends \Google\Protobuf\Internal\Message
     /**
      *if reconnect, client will set current sid
      *
-     * Generated from protobuf field <code>string participant_id = 16;</code>
+     * Generated from protobuf field <code>string participant_id = 16 [(.logger.name) = "participantID"];</code>
      * @return string
      */
     public function getParticipantId()
@@ -462,7 +462,7 @@ class StartSession extends \Google\Protobuf\Internal\Message
     /**
      *if reconnect, client will set current sid
      *
-     * Generated from protobuf field <code>string participant_id = 16;</code>
+     * Generated from protobuf field <code>string participant_id = 16 [(.logger.name) = "participantID"];</code>
      * @param string $var
      * @return $this
      */

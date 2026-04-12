@@ -17,7 +17,7 @@ class WhatsAppCall extends \Google\Protobuf\Internal\Message
     /**
      * list of call ids that are currently active
      *
-     * Generated from protobuf field <code>string whatsapp_call_id = 1;</code>
+     * Generated from protobuf field <code>string whatsapp_call_id = 1 [(.logger.name) = "whatsappCallID"];</code>
      */
     protected $whatsapp_call_id = '';
     /**
@@ -47,7 +47,7 @@ class WhatsAppCall extends \Google\Protobuf\Internal\Message
     /**
      * list of call ids that are currently active
      *
-     * Generated from protobuf field <code>string whatsapp_call_id = 1;</code>
+     * Generated from protobuf field <code>string whatsapp_call_id = 1 [(.logger.name) = "whatsappCallID"];</code>
      * @return string
      */
     public function getWhatsappCallId()
@@ -58,7 +58,7 @@ class WhatsAppCall extends \Google\Protobuf\Internal\Message
     /**
      * list of call ids that are currently active
      *
-     * Generated from protobuf field <code>string whatsapp_call_id = 1;</code>
+     * Generated from protobuf field <code>string whatsapp_call_id = 1 [(.logger.name) = "whatsappCallID"];</code>
      * @param string $var
      * @return $this
      */

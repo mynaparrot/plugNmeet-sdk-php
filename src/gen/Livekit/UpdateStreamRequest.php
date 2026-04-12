@@ -15,7 +15,7 @@ use Google\Protobuf\RepeatedField;
 class UpdateStreamRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string egress_id = 1;</code>
+     * Generated from protobuf field <code>string egress_id = 1 [(.logger.name) = "egressID"];</code>
      */
     protected $egress_id = '';
     /**
@@ -44,7 +44,7 @@ class UpdateStreamRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string egress_id = 1;</code>
+     * Generated from protobuf field <code>string egress_id = 1 [(.logger.name) = "egressID"];</code>
      * @return string
      */
     public function getEgressId()
@@ -53,7 +53,7 @@ class UpdateStreamRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string egress_id = 1;</code>
+     * Generated from protobuf field <code>string egress_id = 1 [(.logger.name) = "egressID"];</code>
      * @param string $var
      * @return $this
      */

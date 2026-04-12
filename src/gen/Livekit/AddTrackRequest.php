@@ -99,6 +99,10 @@ class AddTrackRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .livekit.AudioTrackFeature audio_features = 17;</code>
      */
     private $audio_features;
+    /**
+     * Generated from protobuf field <code>repeated .livekit.PacketTrailerFeature packet_trailer_features = 18;</code>
+     */
+    private $packet_trailer_features;
 
     /**
      * Constructor.
@@ -131,6 +135,7 @@ class AddTrackRequest extends \Google\Protobuf\Internal\Message
      *           if not specified, server will infer it from track source to bundle camera/microphone, screenshare/audio together
      *     @type int $backup_codec_policy
      *     @type int[] $audio_features
+     *     @type int[] $packet_trailer_features
      * }
      */
     public function __construct($data = NULL) {
@@ -550,6 +555,28 @@ class AddTrackRequest extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Livekit\AudioTrackFeature::class);
         $this->audio_features = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .livekit.PacketTrailerFeature packet_trailer_features = 18;</code>
+     * @return RepeatedField<int>
+     */
+    public function getPacketTrailerFeatures()
+    {
+        return $this->packet_trailer_features;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .livekit.PacketTrailerFeature packet_trailer_features = 18;</code>
+     * @param int[] $var
+     * @return $this
+     */
+    public function setPacketTrailerFeatures($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Livekit\PacketTrailerFeature::class);
+        $this->packet_trailer_features = $arr;
 
         return $this;
     }

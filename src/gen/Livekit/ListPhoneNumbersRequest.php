@@ -37,7 +37,7 @@ class ListPhoneNumbersRequest extends \Google\Protobuf\Internal\Message
     /**
      * Filter by SIP dispatch rule ID
      *
-     * Generated from protobuf field <code>optional string sip_dispatch_rule_id = 4;</code>
+     * Generated from protobuf field <code>optional string sip_dispatch_rule_id = 4 [(.logger.name) = "sipDispatchRuleID"];</code>
      */
     protected $sip_dispatch_rule_id = null;
 
@@ -163,7 +163,7 @@ class ListPhoneNumbersRequest extends \Google\Protobuf\Internal\Message
     /**
      * Filter by SIP dispatch rule ID
      *
-     * Generated from protobuf field <code>optional string sip_dispatch_rule_id = 4;</code>
+     * Generated from protobuf field <code>optional string sip_dispatch_rule_id = 4 [(.logger.name) = "sipDispatchRuleID"];</code>
      * @return string
      */
     public function getSipDispatchRuleId()
@@ -184,7 +184,7 @@ class ListPhoneNumbersRequest extends \Google\Protobuf\Internal\Message
     /**
      * Filter by SIP dispatch rule ID
      *
-     * Generated from protobuf field <code>optional string sip_dispatch_rule_id = 4;</code>
+     * Generated from protobuf field <code>optional string sip_dispatch_rule_id = 4 [(.logger.name) = "sipDispatchRuleID"];</code>
      * @param string $var
      * @return $this
      */

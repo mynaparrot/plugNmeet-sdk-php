@@ -25,7 +25,7 @@ class PurchasePhoneNumberRequest extends \Google\Protobuf\Internal\Message
     /**
      * SIP dispatch rule ID to apply to all purchased numbers
      *
-     * Generated from protobuf field <code>optional string sip_dispatch_rule_id = 2;</code>
+     * Generated from protobuf field <code>optional string sip_dispatch_rule_id = 2 [(.logger.name) = "sipDispatchRuleID"];</code>
      */
     protected $sip_dispatch_rule_id = null;
 
@@ -75,7 +75,7 @@ class PurchasePhoneNumberRequest extends \Google\Protobuf\Internal\Message
     /**
      * SIP dispatch rule ID to apply to all purchased numbers
      *
-     * Generated from protobuf field <code>optional string sip_dispatch_rule_id = 2;</code>
+     * Generated from protobuf field <code>optional string sip_dispatch_rule_id = 2 [(.logger.name) = "sipDispatchRuleID"];</code>
      * @return string
      */
     public function getSipDispatchRuleId()
@@ -96,7 +96,7 @@ class PurchasePhoneNumberRequest extends \Google\Protobuf\Internal\Message
     /**
      * SIP dispatch rule ID to apply to all purchased numbers
      *
-     * Generated from protobuf field <code>optional string sip_dispatch_rule_id = 2;</code>
+     * Generated from protobuf field <code>optional string sip_dispatch_rule_id = 2 [(.logger.name) = "sipDispatchRuleID"];</code>
      * @param string $var
      * @return $this
      */

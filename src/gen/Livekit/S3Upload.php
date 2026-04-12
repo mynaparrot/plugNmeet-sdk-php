@@ -35,7 +35,7 @@ class S3Upload extends \Google\Protobuf\Internal\Message
     /**
      * ExternalID to use when assuming role for upload
      *
-     * Generated from protobuf field <code>string assume_role_external_id = 13 [(.logger.redact) = true];</code>
+     * Generated from protobuf field <code>string assume_role_external_id = 13 [(.logger.redact) = true, (.logger.name) = "assumeRoleExternalID"];</code>
      */
     protected $assume_role_external_id = '';
     /**
@@ -197,7 +197,7 @@ class S3Upload extends \Google\Protobuf\Internal\Message
     /**
      * ExternalID to use when assuming role for upload
      *
-     * Generated from protobuf field <code>string assume_role_external_id = 13 [(.logger.redact) = true];</code>
+     * Generated from protobuf field <code>string assume_role_external_id = 13 [(.logger.redact) = true, (.logger.name) = "assumeRoleExternalID"];</code>
      * @return string
      */
     public function getAssumeRoleExternalId()
@@ -208,7 +208,7 @@ class S3Upload extends \Google\Protobuf\Internal\Message
     /**
      * ExternalID to use when assuming role for upload
      *
-     * Generated from protobuf field <code>string assume_role_external_id = 13 [(.logger.redact) = true];</code>
+     * Generated from protobuf field <code>string assume_role_external_id = 13 [(.logger.redact) = true, (.logger.name) = "assumeRoleExternalID"];</code>
      * @param string $var
      * @return $this
      */

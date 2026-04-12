@@ -15,7 +15,7 @@ use Google\Protobuf\RepeatedField;
 class RpcResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string request_id = 1;</code>
+     * Generated from protobuf field <code>string request_id = 1 [(.logger.name) = "requestID"];</code>
      */
     protected $request_id = '';
     protected $value;
@@ -29,6 +29,8 @@ class RpcResponse extends \Google\Protobuf\Internal\Message
      *     @type string $request_id
      *     @type string $payload
      *     @type \Livekit\RpcError $error
+     *     @type string $compressed_payload
+     *           Compressed payload data. When set, this field is used instead of `payload`.
      * }
      */
     public function __construct($data = NULL) {
@@ -37,7 +39,7 @@ class RpcResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string request_id = 1;</code>
+     * Generated from protobuf field <code>string request_id = 1 [(.logger.name) = "requestID"];</code>
      * @return string
      */
     public function getRequestId()
@@ -46,7 +48,7 @@ class RpcResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string request_id = 1;</code>
+     * Generated from protobuf field <code>string request_id = 1 [(.logger.name) = "requestID"];</code>
      * @param string $var
      * @return $this
      */
@@ -108,6 +110,37 @@ class RpcResponse extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Livekit\RpcError::class);
         $this->writeOneof(3, $var);
+
+        return $this;
+    }
+
+    /**
+     * Compressed payload data. When set, this field is used instead of `payload`.
+     *
+     * Generated from protobuf field <code>bytes compressed_payload = 4;</code>
+     * @return string
+     */
+    public function getCompressedPayload()
+    {
+        return $this->readOneof(4);
+    }
+
+    public function hasCompressedPayload()
+    {
+        return $this->hasOneof(4);
+    }
+
+    /**
+     * Compressed payload data. When set, this field is used instead of `payload`.
+     *
+     * Generated from protobuf field <code>bytes compressed_payload = 4;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setCompressedPayload($var)
+    {
+        GPBUtil::checkString($var, False);
+        $this->writeOneof(4, $var);
 
         return $this;
     }

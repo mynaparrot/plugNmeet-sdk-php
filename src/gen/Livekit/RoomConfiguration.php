@@ -73,6 +73,12 @@ class RoomConfiguration extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .livekit.RoomAgentDispatch agents = 10;</code>
      */
     private $agents;
+    /**
+     * Tags to attach to the room
+     *
+     * Generated from protobuf field <code>map<string, string> tags = 12;</code>
+     */
+    private $tags;
 
     /**
      * Constructor.
@@ -100,6 +106,8 @@ class RoomConfiguration extends \Google\Protobuf\Internal\Message
      *           so not recommended for rooms with frequent subscription changes
      *     @type \Livekit\RoomAgentDispatch[] $agents
      *           Define agents that should be dispatched to this room
+     *     @type array|\Google\Protobuf\Internal\MapField $tags
+     *           Tags to attach to the room
      * }
      */
     public function __construct($data = NULL) {
@@ -371,6 +379,32 @@ class RoomConfiguration extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\RoomAgentDispatch::class);
         $this->agents = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Tags to attach to the room
+     *
+     * Generated from protobuf field <code>map<string, string> tags = 12;</code>
+     * @return \Google\Protobuf\Internal\MapField
+     */
+    public function getTags()
+    {
+        return $this->tags;
+    }
+
+    /**
+     * Tags to attach to the room
+     *
+     * Generated from protobuf field <code>map<string, string> tags = 12;</code>
+     * @param array|\Google\Protobuf\Internal\MapField $var
+     * @return $this
+     */
+    public function setTags($var)
+    {
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->tags = $arr;
 
         return $this;
     }

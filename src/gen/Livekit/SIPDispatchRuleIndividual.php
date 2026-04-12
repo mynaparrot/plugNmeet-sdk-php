@@ -26,6 +26,12 @@ class SIPDispatchRuleIndividual extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string pin = 2;</code>
      */
     protected $pin = '';
+    /**
+     * Optionally append random suffix
+     *
+     * Generated from protobuf field <code>bool no_randomness = 3;</code>
+     */
+    protected $no_randomness = false;
 
     /**
      * Constructor.
@@ -37,6 +43,8 @@ class SIPDispatchRuleIndividual extends \Google\Protobuf\Internal\Message
      *           Prefix used on new room name
      *     @type string $pin
      *           Optional pin required to enter room
+     *     @type bool $no_randomness
+     *           Optionally append random suffix
      * }
      */
     public function __construct($data = NULL) {
@@ -92,6 +100,32 @@ class SIPDispatchRuleIndividual extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->pin = $var;
+
+        return $this;
+    }
+
+    /**
+     * Optionally append random suffix
+     *
+     * Generated from protobuf field <code>bool no_randomness = 3;</code>
+     * @return bool
+     */
+    public function getNoRandomness()
+    {
+        return $this->no_randomness;
+    }
+
+    /**
+     * Optionally append random suffix
+     *
+     * Generated from protobuf field <code>bool no_randomness = 3;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setNoRandomness($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->no_randomness = $var;
 
         return $this;
     }

@@ -15,7 +15,7 @@ use Google\Protobuf\RepeatedField;
 class DeleteSIPDispatchRuleRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string sip_dispatch_rule_id = 1;</code>
+     * Generated from protobuf field <code>string sip_dispatch_rule_id = 1 [(.logger.name) = "sipDispatchRuleID"];</code>
      */
     protected $sip_dispatch_rule_id = '';
 
@@ -34,7 +34,7 @@ class DeleteSIPDispatchRuleRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string sip_dispatch_rule_id = 1;</code>
+     * Generated from protobuf field <code>string sip_dispatch_rule_id = 1 [(.logger.name) = "sipDispatchRuleID"];</code>
      * @return string
      */
     public function getSipDispatchRuleId()
@@ -43,7 +43,7 @@ class DeleteSIPDispatchRuleRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string sip_dispatch_rule_id = 1;</code>
+     * Generated from protobuf field <code>string sip_dispatch_rule_id = 1 [(.logger.name) = "sipDispatchRuleID"];</code>
      * @param string $var
      * @return $this
      */

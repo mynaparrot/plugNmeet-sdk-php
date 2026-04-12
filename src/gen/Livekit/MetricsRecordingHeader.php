@@ -15,7 +15,7 @@ use Google\Protobuf\RepeatedField;
 class MetricsRecordingHeader extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string room_id = 1;</code>
+     * Generated from protobuf field <code>string room_id = 1 [(.logger.name) = "roomID"];</code>
      */
     protected $room_id = '';
     /**
@@ -32,6 +32,14 @@ class MetricsRecordingHeader extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>map<string, string> room_tags = 5;</code>
      */
     private $room_tags;
+    /**
+     * Generated from protobuf field <code>string room_name = 6;</code>
+     */
+    protected $room_name = '';
+    /**
+     * Generated from protobuf field <code>.google.protobuf.Timestamp room_start_time = 7;</code>
+     */
+    protected $room_start_time = null;
 
     /**
      * Constructor.
@@ -44,6 +52,8 @@ class MetricsRecordingHeader extends \Google\Protobuf\Internal\Message
      *           milliseconds
      *     @type \Google\Protobuf\Timestamp $start_time
      *     @type array|\Google\Protobuf\Internal\MapField $room_tags
+     *     @type string $room_name
+     *     @type \Google\Protobuf\Timestamp $room_start_time
      * }
      */
     public function __construct($data = NULL) {
@@ -52,7 +62,7 @@ class MetricsRecordingHeader extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string room_id = 1;</code>
+     * Generated from protobuf field <code>string room_id = 1 [(.logger.name) = "roomID"];</code>
      * @return string
      */
     public function getRoomId()
@@ -61,7 +71,7 @@ class MetricsRecordingHeader extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string room_id = 1;</code>
+     * Generated from protobuf field <code>string room_id = 1 [(.logger.name) = "roomID"];</code>
      * @param string $var
      * @return $this
      */
@@ -149,6 +159,60 @@ class MetricsRecordingHeader extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
         $this->room_tags = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string room_name = 6;</code>
+     * @return string
+     */
+    public function getRoomName()
+    {
+        return $this->room_name;
+    }
+
+    /**
+     * Generated from protobuf field <code>string room_name = 6;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setRoomName($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->room_name = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.google.protobuf.Timestamp room_start_time = 7;</code>
+     * @return \Google\Protobuf\Timestamp|null
+     */
+    public function getRoomStartTime()
+    {
+        return $this->room_start_time;
+    }
+
+    public function hasRoomStartTime()
+    {
+        return isset($this->room_start_time);
+    }
+
+    public function clearRoomStartTime()
+    {
+        unset($this->room_start_time);
+    }
+
+    /**
+     * Generated from protobuf field <code>.google.protobuf.Timestamp room_start_time = 7;</code>
+     * @param \Google\Protobuf\Timestamp $var
+     * @return $this
+     */
+    public function setRoomStartTime($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
+        $this->room_start_time = $var;
 
         return $this;
     }

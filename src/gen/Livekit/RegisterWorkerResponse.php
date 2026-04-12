@@ -15,7 +15,7 @@ use Google\Protobuf\RepeatedField;
 class RegisterWorkerResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string worker_id = 1;</code>
+     * Generated from protobuf field <code>string worker_id = 1 [(.logger.name) = "workerID"];</code>
      */
     protected $worker_id = '';
     /**
@@ -39,7 +39,7 @@ class RegisterWorkerResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string worker_id = 1;</code>
+     * Generated from protobuf field <code>string worker_id = 1 [(.logger.name) = "workerID"];</code>
      * @return string
      */
     public function getWorkerId()
@@ -48,7 +48,7 @@ class RegisterWorkerResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string worker_id = 1;</code>
+     * Generated from protobuf field <code>string worker_id = 1 [(.logger.name) = "workerID"];</code>
      * @param string $var
      * @return $this
      */

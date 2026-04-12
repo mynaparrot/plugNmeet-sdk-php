@@ -16,7 +16,7 @@ use Google\Protobuf\RepeatedField;
 class SIPTrunkInfo extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string sip_trunk_id = 1;</code>
+     * Generated from protobuf field <code>string sip_trunk_id = 1 [(.logger.name) = "sipTrunkID"];</code>
      */
     protected $sip_trunk_id = '';
     /**
@@ -65,19 +65,19 @@ class SIPTrunkInfo extends \Google\Protobuf\Internal\Message
      * Username and password used to authenticate inbound and outbound SIP invites
      * May be empty to have no Authentication
      *
-     * Generated from protobuf field <code>string inbound_username = 6 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>string inbound_username = 6 [(.logger.redact) = true];</code>
      */
     protected $inbound_username = '';
     /**
-     * Generated from protobuf field <code>string inbound_password = 7 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>string inbound_password = 7 [(.logger.redact) = true];</code>
      */
     protected $inbound_password = '';
     /**
-     * Generated from protobuf field <code>string outbound_username = 8 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>string outbound_username = 8 [(.logger.redact) = true];</code>
      */
     protected $outbound_username = '';
     /**
-     * Generated from protobuf field <code>string outbound_password = 9 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>string outbound_password = 9 [(.logger.redact) = true];</code>
      */
     protected $outbound_password = '';
     /**
@@ -133,7 +133,7 @@ class SIPTrunkInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string sip_trunk_id = 1;</code>
+     * Generated from protobuf field <code>string sip_trunk_id = 1 [(.logger.name) = "sipTrunkID"];</code>
      * @return string
      */
     public function getSipTrunkId()
@@ -142,7 +142,7 @@ class SIPTrunkInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string sip_trunk_id = 1;</code>
+     * Generated from protobuf field <code>string sip_trunk_id = 1 [(.logger.name) = "sipTrunkID"];</code>
      * @param string $var
      * @return $this
      */
@@ -346,7 +346,7 @@ class SIPTrunkInfo extends \Google\Protobuf\Internal\Message
      * Username and password used to authenticate inbound and outbound SIP invites
      * May be empty to have no Authentication
      *
-     * Generated from protobuf field <code>string inbound_username = 6 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>string inbound_username = 6 [(.logger.redact) = true];</code>
      * @return string
      */
     public function getInboundUsername()
@@ -358,7 +358,7 @@ class SIPTrunkInfo extends \Google\Protobuf\Internal\Message
      * Username and password used to authenticate inbound and outbound SIP invites
      * May be empty to have no Authentication
      *
-     * Generated from protobuf field <code>string inbound_username = 6 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>string inbound_username = 6 [(.logger.redact) = true];</code>
      * @param string $var
      * @return $this
      */
@@ -371,7 +371,7 @@ class SIPTrunkInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string inbound_password = 7 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>string inbound_password = 7 [(.logger.redact) = true];</code>
      * @return string
      */
     public function getInboundPassword()
@@ -380,7 +380,7 @@ class SIPTrunkInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string inbound_password = 7 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>string inbound_password = 7 [(.logger.redact) = true];</code>
      * @param string $var
      * @return $this
      */
@@ -393,7 +393,7 @@ class SIPTrunkInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string outbound_username = 8 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>string outbound_username = 8 [(.logger.redact) = true];</code>
      * @return string
      */
     public function getOutboundUsername()
@@ -402,7 +402,7 @@ class SIPTrunkInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string outbound_username = 8 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>string outbound_username = 8 [(.logger.redact) = true];</code>
      * @param string $var
      * @return $this
      */
@@ -415,7 +415,7 @@ class SIPTrunkInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string outbound_password = 9 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>string outbound_password = 9 [(.logger.redact) = true];</code>
      * @return string
      */
     public function getOutboundPassword()
@@ -424,7 +424,7 @@ class SIPTrunkInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string outbound_password = 9 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>string outbound_password = 9 [(.logger.redact) = true];</code>
      * @param string $var
      * @return $this
      */

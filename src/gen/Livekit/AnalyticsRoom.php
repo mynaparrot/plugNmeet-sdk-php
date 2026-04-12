@@ -23,7 +23,7 @@ class AnalyticsRoom extends \Google\Protobuf\Internal\Message
      */
     protected $name = '';
     /**
-     * Generated from protobuf field <code>string project_id = 5;</code>
+     * Generated from protobuf field <code>string project_id = 5 [(.logger.name) = "projectID"];</code>
      */
     protected $project_id = '';
     /**
@@ -98,7 +98,7 @@ class AnalyticsRoom extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string project_id = 5;</code>
+     * Generated from protobuf field <code>string project_id = 5 [(.logger.name) = "projectID"];</code>
      * @return string
      */
     public function getProjectId()
@@ -107,7 +107,7 @@ class AnalyticsRoom extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string project_id = 5;</code>
+     * Generated from protobuf field <code>string project_id = 5 [(.logger.name) = "projectID"];</code>
      * @param string $var
      * @return $this
      */

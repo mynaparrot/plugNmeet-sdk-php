@@ -10,45 +10,31 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * composite using a web browser
- *
  * Generated from protobuf message <code>livekit.RoomCompositeEgressRequest</code>
  */
 class RoomCompositeEgressRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * required
-     *
      * Generated from protobuf field <code>string room_name = 1;</code>
      */
     protected $room_name = '';
     /**
-     * (optional)
-     *
      * Generated from protobuf field <code>string layout = 2;</code>
      */
     protected $layout = '';
     /**
-     * (default false)
-     *
      * Generated from protobuf field <code>bool audio_only = 3;</code>
      */
     protected $audio_only = false;
     /**
-     * only applies to audio_only egress (default DEFAULT_MIXING)
-     *
      * Generated from protobuf field <code>.livekit.AudioMixing audio_mixing = 15;</code>
      */
     protected $audio_mixing = 0;
     /**
-     * (default false)
-     *
      * Generated from protobuf field <code>bool video_only = 4;</code>
      */
     protected $video_only = false;
     /**
-     * template base url (default https://recorder.livekit.io)
-     *
      * Generated from protobuf field <code>string custom_base_url = 5;</code>
      */
     protected $custom_base_url = '';
@@ -69,8 +55,6 @@ class RoomCompositeEgressRequest extends \Google\Protobuf\Internal\Message
      */
     private $image_outputs;
     /**
-     * extra webhooks to call for this request
-     *
      * Generated from protobuf field <code>repeated .livekit.WebhookConfig webhooks = 16;</code>
      */
     private $webhooks;
@@ -84,30 +68,21 @@ class RoomCompositeEgressRequest extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $room_name
-     *           required
      *     @type string $layout
-     *           (optional)
      *     @type bool $audio_only
-     *           (default false)
      *     @type int $audio_mixing
-     *           only applies to audio_only egress (default DEFAULT_MIXING)
      *     @type bool $video_only
-     *           (default false)
      *     @type string $custom_base_url
-     *           template base url (default https://recorder.livekit.io)
      *     @type \Livekit\EncodedFileOutput $file
      *     @type \Livekit\StreamOutput $stream
      *     @type \Livekit\SegmentedFileOutput $segments
      *     @type int $preset
-     *           (default H264_720P_30)
      *     @type \Livekit\EncodingOptions $advanced
-     *           (optional)
      *     @type \Livekit\EncodedFileOutput[] $file_outputs
      *     @type \Livekit\StreamOutput[] $stream_outputs
      *     @type \Livekit\SegmentedFileOutput[] $segment_outputs
      *     @type \Livekit\ImageOutput[] $image_outputs
      *     @type \Livekit\WebhookConfig[] $webhooks
-     *           extra webhooks to call for this request
      * }
      */
     public function __construct($data = NULL) {
@@ -116,8 +91,6 @@ class RoomCompositeEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * required
-     *
      * Generated from protobuf field <code>string room_name = 1;</code>
      * @return string
      */
@@ -127,8 +100,6 @@ class RoomCompositeEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * required
-     *
      * Generated from protobuf field <code>string room_name = 1;</code>
      * @param string $var
      * @return $this
@@ -142,8 +113,6 @@ class RoomCompositeEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * (optional)
-     *
      * Generated from protobuf field <code>string layout = 2;</code>
      * @return string
      */
@@ -153,8 +122,6 @@ class RoomCompositeEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * (optional)
-     *
      * Generated from protobuf field <code>string layout = 2;</code>
      * @param string $var
      * @return $this
@@ -168,8 +135,6 @@ class RoomCompositeEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * (default false)
-     *
      * Generated from protobuf field <code>bool audio_only = 3;</code>
      * @return bool
      */
@@ -179,8 +144,6 @@ class RoomCompositeEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * (default false)
-     *
      * Generated from protobuf field <code>bool audio_only = 3;</code>
      * @param bool $var
      * @return $this
@@ -194,8 +157,6 @@ class RoomCompositeEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * only applies to audio_only egress (default DEFAULT_MIXING)
-     *
      * Generated from protobuf field <code>.livekit.AudioMixing audio_mixing = 15;</code>
      * @return int
      */
@@ -205,8 +166,6 @@ class RoomCompositeEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * only applies to audio_only egress (default DEFAULT_MIXING)
-     *
      * Generated from protobuf field <code>.livekit.AudioMixing audio_mixing = 15;</code>
      * @param int $var
      * @return $this
@@ -220,8 +179,6 @@ class RoomCompositeEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * (default false)
-     *
      * Generated from protobuf field <code>bool video_only = 4;</code>
      * @return bool
      */
@@ -231,8 +188,6 @@ class RoomCompositeEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * (default false)
-     *
      * Generated from protobuf field <code>bool video_only = 4;</code>
      * @param bool $var
      * @return $this
@@ -246,8 +201,6 @@ class RoomCompositeEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * template base url (default https://recorder.livekit.io)
-     *
      * Generated from protobuf field <code>string custom_base_url = 5;</code>
      * @return string
      */
@@ -257,8 +210,6 @@ class RoomCompositeEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * template base url (default https://recorder.livekit.io)
-     *
      * Generated from protobuf field <code>string custom_base_url = 5;</code>
      * @param string $var
      * @return $this
@@ -380,8 +331,6 @@ class RoomCompositeEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * (default H264_720P_30)
-     *
      * Generated from protobuf field <code>.livekit.EncodingOptionsPreset preset = 8;</code>
      * @return int
      */
@@ -396,8 +345,6 @@ class RoomCompositeEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * (default H264_720P_30)
-     *
      * Generated from protobuf field <code>.livekit.EncodingOptionsPreset preset = 8;</code>
      * @param int $var
      * @return $this
@@ -411,8 +358,6 @@ class RoomCompositeEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * (optional)
-     *
      * Generated from protobuf field <code>.livekit.EncodingOptions advanced = 9;</code>
      * @return \Livekit\EncodingOptions|null
      */
@@ -427,8 +372,6 @@ class RoomCompositeEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * (optional)
-     *
      * Generated from protobuf field <code>.livekit.EncodingOptions advanced = 9;</code>
      * @param \Livekit\EncodingOptions $var
      * @return $this
@@ -530,8 +473,6 @@ class RoomCompositeEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * extra webhooks to call for this request
-     *
      * Generated from protobuf field <code>repeated .livekit.WebhookConfig webhooks = 16;</code>
      * @return RepeatedField<\Livekit\WebhookConfig>
      */
@@ -541,8 +482,6 @@ class RoomCompositeEgressRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * extra webhooks to call for this request
-     *
      * Generated from protobuf field <code>repeated .livekit.WebhookConfig webhooks = 16;</code>
      * @param \Livekit\WebhookConfig[] $var
      * @return $this

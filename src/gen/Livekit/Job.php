@@ -19,7 +19,7 @@ class Job extends \Google\Protobuf\Internal\Message
      */
     protected $id = '';
     /**
-     * Generated from protobuf field <code>string dispatch_id = 9;</code>
+     * Generated from protobuf field <code>string dispatch_id = 9 [(.logger.name) = "dispatchID"];</code>
      */
     protected $dispatch_id = '';
     /**
@@ -102,7 +102,7 @@ class Job extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string dispatch_id = 9;</code>
+     * Generated from protobuf field <code>string dispatch_id = 9 [(.logger.name) = "dispatchID"];</code>
      * @return string
      */
     public function getDispatchId()
@@ -111,7 +111,7 @@ class Job extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string dispatch_id = 9;</code>
+     * Generated from protobuf field <code>string dispatch_id = 9 [(.logger.name) = "dispatchID"];</code>
      * @param string $var
      * @return $this
      */

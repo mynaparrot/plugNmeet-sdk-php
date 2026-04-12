@@ -15,14 +15,10 @@ use Google\Protobuf\RepeatedField;
 class DirectFileOutput extends \Google\Protobuf\Internal\Message
 {
     /**
-     * see egress docs for templating (default {track_id}-{time})
-     *
      * Generated from protobuf field <code>string filepath = 1;</code>
      */
     protected $filepath = '';
     /**
-     * disable upload of manifest file (default false)
-     *
      * Generated from protobuf field <code>bool disable_manifest = 5;</code>
      */
     protected $disable_manifest = false;
@@ -35,9 +31,7 @@ class DirectFileOutput extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $filepath
-     *           see egress docs for templating (default {track_id}-{time})
      *     @type bool $disable_manifest
-     *           disable upload of manifest file (default false)
      *     @type \Livekit\S3Upload $s3
      *     @type \Livekit\GCPUpload $gcp
      *     @type \Livekit\AzureBlobUpload $azure
@@ -50,8 +44,6 @@ class DirectFileOutput extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * see egress docs for templating (default {track_id}-{time})
-     *
      * Generated from protobuf field <code>string filepath = 1;</code>
      * @return string
      */
@@ -61,8 +53,6 @@ class DirectFileOutput extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * see egress docs for templating (default {track_id}-{time})
-     *
      * Generated from protobuf field <code>string filepath = 1;</code>
      * @param string $var
      * @return $this
@@ -76,8 +66,6 @@ class DirectFileOutput extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * disable upload of manifest file (default false)
-     *
      * Generated from protobuf field <code>bool disable_manifest = 5;</code>
      * @return bool
      */
@@ -87,8 +75,6 @@ class DirectFileOutput extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * disable upload of manifest file (default false)
-     *
      * Generated from protobuf field <code>bool disable_manifest = 5;</code>
      * @param bool $var
      * @return $this

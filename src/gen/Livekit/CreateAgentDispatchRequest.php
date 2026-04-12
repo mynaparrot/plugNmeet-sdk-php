@@ -26,6 +26,12 @@ class CreateAgentDispatchRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string metadata = 3 [(.logger.redact) = true];</code>
      */
     protected $metadata = '';
+    /**
+     * cloud only
+     *
+     * Generated from protobuf field <code>.livekit.JobRestartPolicy restart_policy = 4;</code>
+     */
+    protected $restart_policy = 0;
 
     /**
      * Constructor.
@@ -36,6 +42,8 @@ class CreateAgentDispatchRequest extends \Google\Protobuf\Internal\Message
      *     @type string $agent_name
      *     @type string $room
      *     @type string $metadata
+     *     @type int $restart_policy
+     *           cloud only
      * }
      */
     public function __construct($data = NULL) {
@@ -105,6 +113,32 @@ class CreateAgentDispatchRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->metadata = $var;
+
+        return $this;
+    }
+
+    /**
+     * cloud only
+     *
+     * Generated from protobuf field <code>.livekit.JobRestartPolicy restart_policy = 4;</code>
+     * @return int
+     */
+    public function getRestartPolicy()
+    {
+        return $this->restart_policy;
+    }
+
+    /**
+     * cloud only
+     *
+     * Generated from protobuf field <code>.livekit.JobRestartPolicy restart_policy = 4;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setRestartPolicy($var)
+    {
+        GPBUtil::checkEnum($var, \Livekit\JobRestartPolicy::class);
+        $this->restart_policy = $var;
 
         return $this;
     }

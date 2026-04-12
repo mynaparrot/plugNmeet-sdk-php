@@ -15,7 +15,7 @@ use Google\Protobuf\RepeatedField;
 class UpdateAgentSecretsRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string agent_id = 1;</code>
+     * Generated from protobuf field <code>string agent_id = 1 [(.logger.name) = "agentID"];</code>
      */
     protected $agent_id = '';
     /**
@@ -54,7 +54,7 @@ class UpdateAgentSecretsRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string agent_id = 1;</code>
+     * Generated from protobuf field <code>string agent_id = 1 [(.logger.name) = "agentID"];</code>
      * @return string
      */
     public function getAgentId()
@@ -63,7 +63,7 @@ class UpdateAgentSecretsRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string agent_id = 1;</code>
+     * Generated from protobuf field <code>string agent_id = 1 [(.logger.name) = "agentID"];</code>
      * @param string $var
      * @return $this
      */

@@ -103,7 +103,7 @@ class PhoneNumber extends \Google\Protobuf\Internal\Message
     /**
      * Associated SIP dispatch rule ID (deprecated: use sip_dispatch_rule_ids instead)
      *
-     * Generated from protobuf field <code>string sip_dispatch_rule_id = 15 [deprecated = true];</code>
+     * Generated from protobuf field <code>string sip_dispatch_rule_id = 15 [deprecated = true, (.logger.name) = "sipDispatchRuleID"];</code>
      * @deprecated
      */
     protected $sip_dispatch_rule_id = '';
@@ -566,7 +566,7 @@ class PhoneNumber extends \Google\Protobuf\Internal\Message
     /**
      * Associated SIP dispatch rule ID (deprecated: use sip_dispatch_rule_ids instead)
      *
-     * Generated from protobuf field <code>string sip_dispatch_rule_id = 15 [deprecated = true];</code>
+     * Generated from protobuf field <code>string sip_dispatch_rule_id = 15 [deprecated = true, (.logger.name) = "sipDispatchRuleID"];</code>
      * @return string
      * @deprecated
      */
@@ -581,7 +581,7 @@ class PhoneNumber extends \Google\Protobuf\Internal\Message
     /**
      * Associated SIP dispatch rule ID (deprecated: use sip_dispatch_rule_ids instead)
      *
-     * Generated from protobuf field <code>string sip_dispatch_rule_id = 15 [deprecated = true];</code>
+     * Generated from protobuf field <code>string sip_dispatch_rule_id = 15 [deprecated = true, (.logger.name) = "sipDispatchRuleID"];</code>
      * @param string $var
      * @return $this
      * @deprecated

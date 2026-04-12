@@ -31,11 +31,11 @@ class SIPOutboundTrunkUpdate extends \Google\Protobuf\Internal\Message
      */
     protected $numbers = null;
     /**
-     * Generated from protobuf field <code>optional string auth_username = 4 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>optional string auth_username = 4 [(.logger.redact) = true];</code>
      */
     protected $auth_username = null;
     /**
-     * Generated from protobuf field <code>optional string auth_password = 5 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>optional string auth_password = 5 [(.logger.redact) = true];</code>
      */
     protected $auth_password = null;
     /**
@@ -50,6 +50,10 @@ class SIPOutboundTrunkUpdate extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional .livekit.SIPMediaEncryption media_encryption = 8;</code>
      */
     protected $media_encryption = null;
+    /**
+     * Generated from protobuf field <code>optional string from_host = 10;</code>
+     */
+    protected $from_host = null;
 
     /**
      * Constructor.
@@ -66,6 +70,7 @@ class SIPOutboundTrunkUpdate extends \Google\Protobuf\Internal\Message
      *     @type string $name
      *     @type string $metadata
      *     @type int $media_encryption
+     *     @type string $from_host
      * }
      */
     public function __construct($data = NULL) {
@@ -202,7 +207,7 @@ class SIPOutboundTrunkUpdate extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional string auth_username = 4 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>optional string auth_username = 4 [(.logger.redact) = true];</code>
      * @return string
      */
     public function getAuthUsername()
@@ -221,7 +226,7 @@ class SIPOutboundTrunkUpdate extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional string auth_username = 4 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>optional string auth_username = 4 [(.logger.redact) = true];</code>
      * @param string $var
      * @return $this
      */
@@ -234,7 +239,7 @@ class SIPOutboundTrunkUpdate extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional string auth_password = 5 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>optional string auth_password = 5 [(.logger.redact) = true];</code>
      * @return string
      */
     public function getAuthPassword()
@@ -253,7 +258,7 @@ class SIPOutboundTrunkUpdate extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional string auth_password = 5 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>optional string auth_password = 5 [(.logger.redact) = true];</code>
      * @param string $var
      * @return $this
      */
@@ -357,6 +362,38 @@ class SIPOutboundTrunkUpdate extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkEnum($var, \Livekit\SIPMediaEncryption::class);
         $this->media_encryption = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string from_host = 10;</code>
+     * @return string
+     */
+    public function getFromHost()
+    {
+        return isset($this->from_host) ? $this->from_host : '';
+    }
+
+    public function hasFromHost()
+    {
+        return isset($this->from_host);
+    }
+
+    public function clearFromHost()
+    {
+        unset($this->from_host);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string from_host = 10;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setFromHost($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->from_host = $var;
 
         return $this;
     }

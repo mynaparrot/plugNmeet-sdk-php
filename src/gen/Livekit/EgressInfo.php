@@ -15,11 +15,11 @@ use Google\Protobuf\RepeatedField;
 class EgressInfo extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string egress_id = 1;</code>
+     * Generated from protobuf field <code>string egress_id = 1 [(.logger.name) = "egressID"];</code>
      */
     protected $egress_id = '';
     /**
-     * Generated from protobuf field <code>string room_id = 2;</code>
+     * Generated from protobuf field <code>string room_id = 2 [(.logger.name) = "roomID"];</code>
      */
     protected $room_id = '';
     /**
@@ -47,18 +47,6 @@ class EgressInfo extends \Google\Protobuf\Internal\Message
      */
     protected $updated_at = 0;
     /**
-     * Generated from protobuf field <code>string details = 21;</code>
-     */
-    protected $details = '';
-    /**
-     * Generated from protobuf field <code>string error = 9;</code>
-     */
-    protected $error = '';
-    /**
-     * Generated from protobuf field <code>int32 error_code = 22;</code>
-     */
-    protected $error_code = 0;
-    /**
      * Generated from protobuf field <code>repeated .livekit.StreamInfo stream_results = 15;</code>
      */
     private $stream_results;
@@ -75,15 +63,29 @@ class EgressInfo extends \Google\Protobuf\Internal\Message
      */
     private $image_results;
     /**
+     * Generated from protobuf field <code>string error = 9;</code>
+     */
+    protected $error = '';
+    /**
+     * Generated from protobuf field <code>int32 error_code = 22;</code>
+     */
+    protected $error_code = 0;
+    /**
+     * Generated from protobuf field <code>string details = 21;</code>
+     */
+    protected $details = '';
+    /**
      * Generated from protobuf field <code>string manifest_location = 23;</code>
      */
     protected $manifest_location = '';
     /**
-     * next ID: 27
-     *
      * Generated from protobuf field <code>bool backup_storage_used = 25;</code>
      */
     protected $backup_storage_used = false;
+    /**
+     * Generated from protobuf field <code>int32 retry_count = 27;</code>
+     */
+    protected $retry_count = 0;
     protected $request;
     protected $result;
 
@@ -101,24 +103,26 @@ class EgressInfo extends \Google\Protobuf\Internal\Message
      *     @type int|string $started_at
      *     @type int|string $ended_at
      *     @type int|string $updated_at
-     *     @type string $details
-     *     @type string $error
-     *     @type int $error_code
+     *     @type \Livekit\ExportReplayRequest $replay
+     *           StartEgressRequest egress = 29;
      *     @type \Livekit\RoomCompositeEgressRequest $room_composite
      *     @type \Livekit\WebEgressRequest $web
      *     @type \Livekit\ParticipantEgressRequest $participant
      *     @type \Livekit\TrackCompositeEgressRequest $track_composite
      *     @type \Livekit\TrackEgressRequest $track
-     *     @type \Livekit\StreamInfoList $stream
-     *     @type \Livekit\FileInfo $file
-     *     @type \Livekit\SegmentsInfo $segments
      *     @type \Livekit\StreamInfo[] $stream_results
      *     @type \Livekit\FileInfo[] $file_results
      *     @type \Livekit\SegmentsInfo[] $segment_results
      *     @type \Livekit\ImagesInfo[] $image_results
+     *     @type string $error
+     *     @type int $error_code
+     *     @type string $details
      *     @type string $manifest_location
      *     @type bool $backup_storage_used
-     *           next ID: 27
+     *     @type int $retry_count
+     *     @type \Livekit\StreamInfoList $stream
+     *     @type \Livekit\FileInfo $file
+     *     @type \Livekit\SegmentsInfo $segments
      * }
      */
     public function __construct($data = NULL) {
@@ -127,7 +131,7 @@ class EgressInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string egress_id = 1;</code>
+     * Generated from protobuf field <code>string egress_id = 1 [(.logger.name) = "egressID"];</code>
      * @return string
      */
     public function getEgressId()
@@ -136,7 +140,7 @@ class EgressInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string egress_id = 1;</code>
+     * Generated from protobuf field <code>string egress_id = 1 [(.logger.name) = "egressID"];</code>
      * @param string $var
      * @return $this
      */
@@ -149,7 +153,7 @@ class EgressInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string room_id = 2;</code>
+     * Generated from protobuf field <code>string room_id = 2 [(.logger.name) = "roomID"];</code>
      * @return string
      */
     public function getRoomId()
@@ -158,7 +162,7 @@ class EgressInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string room_id = 2;</code>
+     * Generated from protobuf field <code>string room_id = 2 [(.logger.name) = "roomID"];</code>
      * @param string $var
      * @return $this
      */
@@ -303,67 +307,32 @@ class EgressInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string details = 21;</code>
-     * @return string
+     * StartEgressRequest egress = 29;
+     *
+     * Generated from protobuf field <code>.livekit.ExportReplayRequest replay = 30;</code>
+     * @return \Livekit\ExportReplayRequest|null
      */
-    public function getDetails()
+    public function getReplay()
     {
-        return $this->details;
+        return $this->readOneof(30);
+    }
+
+    public function hasReplay()
+    {
+        return $this->hasOneof(30);
     }
 
     /**
-     * Generated from protobuf field <code>string details = 21;</code>
-     * @param string $var
+     * StartEgressRequest egress = 29;
+     *
+     * Generated from protobuf field <code>.livekit.ExportReplayRequest replay = 30;</code>
+     * @param \Livekit\ExportReplayRequest $var
      * @return $this
      */
-    public function setDetails($var)
+    public function setReplay($var)
     {
-        GPBUtil::checkString($var, True);
-        $this->details = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>string error = 9;</code>
-     * @return string
-     */
-    public function getError()
-    {
-        return $this->error;
-    }
-
-    /**
-     * Generated from protobuf field <code>string error = 9;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setError($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->error = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>int32 error_code = 22;</code>
-     * @return int
-     */
-    public function getErrorCode()
-    {
-        return $this->error_code;
-    }
-
-    /**
-     * Generated from protobuf field <code>int32 error_code = 22;</code>
-     * @param int $var
-     * @return $this
-     */
-    public function setErrorCode($var)
-    {
-        GPBUtil::checkInt32($var);
-        $this->error_code = $var;
+        GPBUtil::checkMessage($var, \Livekit\ExportReplayRequest::class);
+        $this->writeOneof(30, $var);
 
         return $this;
     }
@@ -504,6 +473,226 @@ class EgressInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Generated from protobuf field <code>repeated .livekit.StreamInfo stream_results = 15;</code>
+     * @return RepeatedField<\Livekit\StreamInfo>
+     */
+    public function getStreamResults()
+    {
+        return $this->stream_results;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .livekit.StreamInfo stream_results = 15;</code>
+     * @param \Livekit\StreamInfo[] $var
+     * @return $this
+     */
+    public function setStreamResults($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\StreamInfo::class);
+        $this->stream_results = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .livekit.FileInfo file_results = 16;</code>
+     * @return RepeatedField<\Livekit\FileInfo>
+     */
+    public function getFileResults()
+    {
+        return $this->file_results;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .livekit.FileInfo file_results = 16;</code>
+     * @param \Livekit\FileInfo[] $var
+     * @return $this
+     */
+    public function setFileResults($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\FileInfo::class);
+        $this->file_results = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .livekit.SegmentsInfo segment_results = 17;</code>
+     * @return RepeatedField<\Livekit\SegmentsInfo>
+     */
+    public function getSegmentResults()
+    {
+        return $this->segment_results;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .livekit.SegmentsInfo segment_results = 17;</code>
+     * @param \Livekit\SegmentsInfo[] $var
+     * @return $this
+     */
+    public function setSegmentResults($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\SegmentsInfo::class);
+        $this->segment_results = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .livekit.ImagesInfo image_results = 20;</code>
+     * @return RepeatedField<\Livekit\ImagesInfo>
+     */
+    public function getImageResults()
+    {
+        return $this->image_results;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .livekit.ImagesInfo image_results = 20;</code>
+     * @param \Livekit\ImagesInfo[] $var
+     * @return $this
+     */
+    public function setImageResults($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\ImagesInfo::class);
+        $this->image_results = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string error = 9;</code>
+     * @return string
+     */
+    public function getError()
+    {
+        return $this->error;
+    }
+
+    /**
+     * Generated from protobuf field <code>string error = 9;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setError($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->error = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 error_code = 22;</code>
+     * @return int
+     */
+    public function getErrorCode()
+    {
+        return $this->error_code;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 error_code = 22;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setErrorCode($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->error_code = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string details = 21;</code>
+     * @return string
+     */
+    public function getDetails()
+    {
+        return $this->details;
+    }
+
+    /**
+     * Generated from protobuf field <code>string details = 21;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setDetails($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->details = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string manifest_location = 23;</code>
+     * @return string
+     */
+    public function getManifestLocation()
+    {
+        return $this->manifest_location;
+    }
+
+    /**
+     * Generated from protobuf field <code>string manifest_location = 23;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setManifestLocation($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->manifest_location = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool backup_storage_used = 25;</code>
+     * @return bool
+     */
+    public function getBackupStorageUsed()
+    {
+        return $this->backup_storage_used;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool backup_storage_used = 25;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setBackupStorageUsed($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->backup_storage_used = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 retry_count = 27;</code>
+     * @return int
+     */
+    public function getRetryCount()
+    {
+        return $this->retry_count;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 retry_count = 27;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setRetryCount($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->retry_count = $var;
+
+        return $this;
+    }
+
+    /**
      * Generated from protobuf field <code>.livekit.StreamInfoList stream = 7 [deprecated = true];</code>
      * @return \Livekit\StreamInfoList|null
      * @deprecated
@@ -607,142 +796,6 @@ class EgressInfo extends \Google\Protobuf\Internal\Message
         @trigger_error('segments is deprecated.', E_USER_DEPRECATED);
         GPBUtil::checkMessage($var, \Livekit\SegmentsInfo::class);
         $this->writeOneof(12, $var);
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>repeated .livekit.StreamInfo stream_results = 15;</code>
-     * @return RepeatedField<\Livekit\StreamInfo>
-     */
-    public function getStreamResults()
-    {
-        return $this->stream_results;
-    }
-
-    /**
-     * Generated from protobuf field <code>repeated .livekit.StreamInfo stream_results = 15;</code>
-     * @param \Livekit\StreamInfo[] $var
-     * @return $this
-     */
-    public function setStreamResults($var)
-    {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\StreamInfo::class);
-        $this->stream_results = $arr;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>repeated .livekit.FileInfo file_results = 16;</code>
-     * @return RepeatedField<\Livekit\FileInfo>
-     */
-    public function getFileResults()
-    {
-        return $this->file_results;
-    }
-
-    /**
-     * Generated from protobuf field <code>repeated .livekit.FileInfo file_results = 16;</code>
-     * @param \Livekit\FileInfo[] $var
-     * @return $this
-     */
-    public function setFileResults($var)
-    {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\FileInfo::class);
-        $this->file_results = $arr;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>repeated .livekit.SegmentsInfo segment_results = 17;</code>
-     * @return RepeatedField<\Livekit\SegmentsInfo>
-     */
-    public function getSegmentResults()
-    {
-        return $this->segment_results;
-    }
-
-    /**
-     * Generated from protobuf field <code>repeated .livekit.SegmentsInfo segment_results = 17;</code>
-     * @param \Livekit\SegmentsInfo[] $var
-     * @return $this
-     */
-    public function setSegmentResults($var)
-    {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\SegmentsInfo::class);
-        $this->segment_results = $arr;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>repeated .livekit.ImagesInfo image_results = 20;</code>
-     * @return RepeatedField<\Livekit\ImagesInfo>
-     */
-    public function getImageResults()
-    {
-        return $this->image_results;
-    }
-
-    /**
-     * Generated from protobuf field <code>repeated .livekit.ImagesInfo image_results = 20;</code>
-     * @param \Livekit\ImagesInfo[] $var
-     * @return $this
-     */
-    public function setImageResults($var)
-    {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\ImagesInfo::class);
-        $this->image_results = $arr;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>string manifest_location = 23;</code>
-     * @return string
-     */
-    public function getManifestLocation()
-    {
-        return $this->manifest_location;
-    }
-
-    /**
-     * Generated from protobuf field <code>string manifest_location = 23;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setManifestLocation($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->manifest_location = $var;
-
-        return $this;
-    }
-
-    /**
-     * next ID: 27
-     *
-     * Generated from protobuf field <code>bool backup_storage_used = 25;</code>
-     * @return bool
-     */
-    public function getBackupStorageUsed()
-    {
-        return $this->backup_storage_used;
-    }
-
-    /**
-     * next ID: 27
-     *
-     * Generated from protobuf field <code>bool backup_storage_used = 25;</code>
-     * @param bool $var
-     * @return $this
-     */
-    public function setBackupStorageUsed($var)
-    {
-        GPBUtil::checkBool($var);
-        $this->backup_storage_used = $var;
 
         return $this;
     }

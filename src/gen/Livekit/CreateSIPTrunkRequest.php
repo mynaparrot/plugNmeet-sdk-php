@@ -51,19 +51,19 @@ class CreateSIPTrunkRequest extends \Google\Protobuf\Internal\Message
      * Username and password used to authenticate inbound and outbound SIP invites
      * May be empty to have no Authentication
      *
-     * Generated from protobuf field <code>string inbound_username = 5 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>string inbound_username = 5 [(.logger.redact) = true];</code>
      */
     protected $inbound_username = '';
     /**
-     * Generated from protobuf field <code>string inbound_password = 6 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>string inbound_password = 6 [(.logger.redact) = true];</code>
      */
     protected $inbound_password = '';
     /**
-     * Generated from protobuf field <code>string outbound_username = 7 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>string outbound_username = 7 [(.logger.redact) = true];</code>
      */
     protected $outbound_username = '';
     /**
-     * Generated from protobuf field <code>string outbound_password = 8 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>string outbound_password = 8 [(.logger.redact) = true];</code>
      */
     protected $outbound_password = '';
     /**
@@ -258,7 +258,7 @@ class CreateSIPTrunkRequest extends \Google\Protobuf\Internal\Message
      * Username and password used to authenticate inbound and outbound SIP invites
      * May be empty to have no Authentication
      *
-     * Generated from protobuf field <code>string inbound_username = 5 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>string inbound_username = 5 [(.logger.redact) = true];</code>
      * @return string
      */
     public function getInboundUsername()
@@ -270,7 +270,7 @@ class CreateSIPTrunkRequest extends \Google\Protobuf\Internal\Message
      * Username and password used to authenticate inbound and outbound SIP invites
      * May be empty to have no Authentication
      *
-     * Generated from protobuf field <code>string inbound_username = 5 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>string inbound_username = 5 [(.logger.redact) = true];</code>
      * @param string $var
      * @return $this
      */
@@ -283,7 +283,7 @@ class CreateSIPTrunkRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string inbound_password = 6 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>string inbound_password = 6 [(.logger.redact) = true];</code>
      * @return string
      */
     public function getInboundPassword()
@@ -292,7 +292,7 @@ class CreateSIPTrunkRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string inbound_password = 6 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>string inbound_password = 6 [(.logger.redact) = true];</code>
      * @param string $var
      * @return $this
      */
@@ -305,7 +305,7 @@ class CreateSIPTrunkRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string outbound_username = 7 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>string outbound_username = 7 [(.logger.redact) = true];</code>
      * @return string
      */
     public function getOutboundUsername()
@@ -314,7 +314,7 @@ class CreateSIPTrunkRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string outbound_username = 7 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>string outbound_username = 7 [(.logger.redact) = true];</code>
      * @param string $var
      * @return $this
      */
@@ -327,7 +327,7 @@ class CreateSIPTrunkRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string outbound_password = 8 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>string outbound_password = 8 [(.logger.redact) = true];</code>
      * @return string
      */
     public function getOutboundPassword()
@@ -336,7 +336,7 @@ class CreateSIPTrunkRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string outbound_password = 8 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
+     * Generated from protobuf field <code>string outbound_password = 8 [(.logger.redact) = true];</code>
      * @param string $var
      * @return $this
      */

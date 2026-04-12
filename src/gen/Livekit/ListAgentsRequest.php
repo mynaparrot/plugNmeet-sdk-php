@@ -19,7 +19,7 @@ class ListAgentsRequest extends \Google\Protobuf\Internal\Message
      */
     protected $agent_name = '';
     /**
-     * Generated from protobuf field <code>string agent_id = 2;</code>
+     * Generated from protobuf field <code>string agent_id = 2 [(.logger.name) = "agentID"];</code>
      */
     protected $agent_id = '';
 
@@ -61,7 +61,7 @@ class ListAgentsRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string agent_id = 2;</code>
+     * Generated from protobuf field <code>string agent_id = 2 [(.logger.name) = "agentID"];</code>
      * @return string
      */
     public function getAgentId()
@@ -70,7 +70,7 @@ class ListAgentsRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string agent_id = 2;</code>
+     * Generated from protobuf field <code>string agent_id = 2 [(.logger.name) = "agentID"];</code>
      * @param string $var
      * @return $this
      */
