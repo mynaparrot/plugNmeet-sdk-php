@@ -83,6 +83,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/livekit-createprivatelinkrequest.html" class="">CreatePrivateLinkRequest</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/livekit-datapacket.html" class="">DataPacket</a>
                 
             </li>
@@ -119,11 +123,35 @@
                 
             </li>
                     <li>
+                <a href="namespaces/livekit-privatelink.html" class="">PrivateLink</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-privatelinkstatus.html" class="">PrivateLinkStatus</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/livekit-requestresponse.html" class="">RequestResponse</a>
                 
             </li>
                     <li>
+                <a href="namespaces/livekit-scenario.html" class="">Scenario</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-scenariogroup.html" class="">ScenarioGroup</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/livekit-serverinfo.html" class="">ServerInfo</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-simulationrun.html" class="">SimulationRun</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-simulationrunsummary.html" class="">SimulationRunSummary</a>
                 
             </li>
                     <li>
@@ -161,10 +189,6 @@
                 
             </li>
             </ul>
-
-                                    <h4 class="phpdocumentor-sidebar__root-namespace">
-    <a href="namespaces/replay.html" class="">Replay</a>
-</h4>
 
                         </section>
                 <section class="phpdocumentor-sidebar__category -packages">
@@ -257,7 +281,7 @@
     <span>
                         &nbsp;: mixed            </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;string auth_password = 4 [(.logger.redact) = true, (.logger.redact_format) = &quot;&lt;redacted ({{ .Size }} bytes)&gt;&quot;];&lt;/code&gt;</dd>
+<dd>Generated from protobuf field &lt;code&gt;string auth_password = 4 [(.logger.redact) = true];&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Livekit-SIPOutboundConfig.html#property_auth_username">$auth_username</a>
@@ -272,6 +296,13 @@
                         &nbsp;: mixed            </span>
 </dt>
 <dd>country where the call terminates as ISO 3166-1 alpha-2 (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). This will be used by the livekit infrastructure to route calls.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Livekit-SIPOutboundConfig.html#property_from_host">$from_host</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Optional custom hostname for the &#039;From&#039; SIP header. When set, outbound calls use this host instead of the default project SIP domain.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Livekit-SIPOutboundConfig.html#property_hostname">$hostname</a>
@@ -328,7 +359,7 @@
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;string auth_password = 4 [(.logger.redact) = true, (.logger.redact_format) = &quot;&lt;redacted ({{ .Size }} bytes)&gt;&quot;];&lt;/code&gt;</dd>
+<dd>Generated from protobuf field &lt;code&gt;string auth_password = 4 [(.logger.redact) = true];&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-SIPOutboundConfig.html#method_getAuthUsername">getAuthUsername()</a>
@@ -343,6 +374,13 @@
                                 &nbsp;: string    </span>
 </dt>
 <dd>country where the call terminates as ISO 3166-1 alpha-2 (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). This will be used by the livekit infrastructure to route calls.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-SIPOutboundConfig.html#method_getFromHost">getFromHost()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Optional custom hostname for the &#039;From&#039; SIP header. When set, outbound calls use this host instead of the default project SIP domain.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-SIPOutboundConfig.html#method_getHeadersToAttributes">getHeadersToAttributes()</a>
@@ -377,7 +415,7 @@
     <span>
                                 &nbsp;: $this    </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;string auth_password = 4 [(.logger.redact) = true, (.logger.redact_format) = &quot;&lt;redacted ({{ .Size }} bytes)&gt;&quot;];&lt;/code&gt;</dd>
+<dd>Generated from protobuf field &lt;code&gt;string auth_password = 4 [(.logger.redact) = true];&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-SIPOutboundConfig.html#method_setAuthUsername">setAuthUsername()</a>
@@ -392,6 +430,13 @@
                                 &nbsp;: $this    </span>
 </dt>
 <dd>country where the call terminates as ISO 3166-1 alpha-2 (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). This will be used by the livekit infrastructure to route calls.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-SIPOutboundConfig.html#method_setFromHost">setFromHost()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>Optional custom hostname for the &#039;From&#039; SIP header. When set, outbound calls use this host instead of the default project SIP domain.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-SIPOutboundConfig.html#method_setHeadersToAttributes">setHeadersToAttributes()</a>
@@ -448,7 +493,7 @@
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;string auth_password = 4 [(.logger.redact) = true, (.logger.redact_format) = &quot;&lt;redacted ({{ .Size }} bytes)&gt;&quot;];&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;string auth_password = 4 [(.logger.redact) = true];&lt;/code&gt;</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -496,7 +541,7 @@
      = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
 
         <section class="phpdocumentor-description"><p>May be empty to have no authentication.</p>
-<p>Generated from protobuf field <code class="prettyprint">string auth_username = 3 [(.logger.redact) = true, (.logger.redact_format) = &quot;&lt;redacted ({{ .Size }} bytes)&gt;&quot;];</code></p>
+<p>Generated from protobuf field <code class="prettyprint">string auth_username = 3 [(.logger.redact) = true];</code></p>
 </section>
 
     
@@ -537,6 +582,46 @@
      = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
 
         <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">string destination_country = 7;</code></p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_from_host">
+        $from_host
+        <a href="classes/Livekit-SIPOutboundConfig.html#property_from_host" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundConfig.php"><a href="files/src-gen-livekit-sipoutboundconfig.html"><abbr title="src/gen/Livekit/SIPOutboundConfig.php">SIPOutboundConfig.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">65</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Optional custom hostname for the &#039;From&#039; SIP header. When set, outbound calls use this host instead of the default project SIP domain.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$from_host</span>
+     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
+
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">string from_host = 8;</code></p>
 </section>
 
     
@@ -730,7 +815,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundConfig.php"><a href="files/src-gen-livekit-sipoutboundconfig.html"><abbr title="src/gen/Livekit/SIPOutboundConfig.php">SIPOutboundConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">93</span>
 
     </aside>
 
@@ -769,6 +854,8 @@ Optional. Data for populating the Message object.</p>
 @type array|\Google\Protobuf\Internal\MapField $attributes_to_headers
       Map LiveKit attributes to SIP X-* headers when sending BYE or REFER requests.
       Keys are the names of attributes and values are the names of X-* headers they will be mapped to.
+@type string $from_host
+      Optional custom hostname for the 'From' SIP header. When set, outbound calls use this host instead of the default project SIP domain.
 </code></pre>
 <p>}</p>
 </section>
@@ -796,7 +883,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundConfig.php"><a href="files/src-gen-livekit-sipoutboundconfig.html"><abbr title="src/gen/Livekit/SIPOutboundConfig.php">SIPOutboundConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">253</span>
+    <span class="phpdocumentor-element-found-in__line">261</span>
 
     </aside>
 
@@ -838,11 +925,11 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundConfig.php"><a href="files/src-gen-livekit-sipoutboundconfig.html"><abbr title="src/gen/Livekit/SIPOutboundConfig.php">SIPOutboundConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">200</span>
+    <span class="phpdocumentor-element-found-in__line">208</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;string auth_password = 4 [(.logger.redact) = true, (.logger.redact_format) = &quot;&lt;redacted ({{ .Size }} bytes)&gt;&quot;];&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;string auth_password = 4 [(.logger.redact) = true];&lt;/code&gt;</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -877,7 +964,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundConfig.php"><a href="files/src-gen-livekit-sipoutboundconfig.html"><abbr title="src/gen/Livekit/SIPOutboundConfig.php">SIPOutboundConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">175</span>
+    <span class="phpdocumentor-element-found-in__line">183</span>
 
     </aside>
 
@@ -891,7 +978,7 @@ Optional. Data for populating the Message object.</p>
         </div>
     
         <section class="phpdocumentor-description"><p>May be empty to have no authentication.</p>
-<p>Generated from protobuf field <code class="prettyprint">string auth_username = 3 [(.logger.redact) = true, (.logger.redact_format) = &quot;&lt;redacted ({{ .Size }} bytes)&gt;&quot;];</code></p>
+<p>Generated from protobuf field <code class="prettyprint">string auth_username = 3 [(.logger.redact) = true];</code></p>
 </section>
 
     
@@ -919,7 +1006,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundConfig.php"><a href="files/src-gen-livekit-sipoutboundconfig.html"><abbr title="src/gen/Livekit/SIPOutboundConfig.php">SIPOutboundConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">122</span>
+    <span class="phpdocumentor-element-found-in__line">130</span>
 
     </aside>
 
@@ -952,6 +1039,47 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getFromHost">
+        getFromHost()
+        <a href="classes/Livekit-SIPOutboundConfig.html#method_getFromHost" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundConfig.php"><a href="files/src-gen-livekit-sipoutboundconfig.html"><abbr title="src/gen/Livekit/SIPOutboundConfig.php">SIPOutboundConfig.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">288</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Optional custom hostname for the &#039;From&#039; SIP header. When set, outbound calls use this host instead of the default project SIP domain.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getFromHost</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">string from_host = 8;</code></p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getHeadersToAttributes">
         getHeadersToAttributes()
         <a href="classes/Livekit-SIPOutboundConfig.html#method_getHeadersToAttributes" class="headerlink"><i class="fas fa-link"></i></a>
@@ -960,7 +1088,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundConfig.php"><a href="files/src-gen-livekit-sipoutboundconfig.html"><abbr title="src/gen/Livekit/SIPOutboundConfig.php">SIPOutboundConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">225</span>
+    <span class="phpdocumentor-element-found-in__line">233</span>
 
     </aside>
 
@@ -1002,7 +1130,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundConfig.php"><a href="files/src-gen-livekit-sipoutboundconfig.html"><abbr title="src/gen/Livekit/SIPOutboundConfig.php">SIPOutboundConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -1043,7 +1171,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundConfig.php"><a href="files/src-gen-livekit-sipoutboundconfig.html"><abbr title="src/gen/Livekit/SIPOutboundConfig.php">SIPOutboundConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">148</span>
+    <span class="phpdocumentor-element-found-in__line">156</span>
 
     </aside>
 
@@ -1084,7 +1212,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundConfig.php"><a href="files/src-gen-livekit-sipoutboundconfig.html"><abbr title="src/gen/Livekit/SIPOutboundConfig.php">SIPOutboundConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">266</span>
+    <span class="phpdocumentor-element-found-in__line">274</span>
 
     </aside>
 
@@ -1136,11 +1264,11 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundConfig.php"><a href="files/src-gen-livekit-sipoutboundconfig.html"><abbr title="src/gen/Livekit/SIPOutboundConfig.php">SIPOutboundConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">210</span>
+    <span class="phpdocumentor-element-found-in__line">218</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;string auth_password = 4 [(.logger.redact) = true, (.logger.redact_format) = &quot;&lt;redacted ({{ .Size }} bytes)&gt;&quot;];&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;string auth_password = 4 [(.logger.redact) = true];&lt;/code&gt;</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -1185,7 +1313,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundConfig.php"><a href="files/src-gen-livekit-sipoutboundconfig.html"><abbr title="src/gen/Livekit/SIPOutboundConfig.php">SIPOutboundConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">188</span>
+    <span class="phpdocumentor-element-found-in__line">196</span>
 
     </aside>
 
@@ -1199,7 +1327,7 @@ Optional. Data for populating the Message object.</p>
         </div>
     
         <section class="phpdocumentor-description"><p>May be empty to have no authentication.</p>
-<p>Generated from protobuf field <code class="prettyprint">string auth_username = 3 [(.logger.redact) = true, (.logger.redact_format) = &quot;&lt;redacted ({{ .Size }} bytes)&gt;&quot;];</code></p>
+<p>Generated from protobuf field <code class="prettyprint">string auth_username = 3 [(.logger.redact) = true];</code></p>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1237,7 +1365,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundConfig.php"><a href="files/src-gen-livekit-sipoutboundconfig.html"><abbr title="src/gen/Livekit/SIPOutboundConfig.php">SIPOutboundConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">134</span>
+    <span class="phpdocumentor-element-found-in__line">142</span>
 
     </aside>
 
@@ -1280,6 +1408,57 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_setFromHost">
+        setFromHost()
+        <a href="classes/Livekit-SIPOutboundConfig.html#method_setFromHost" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundConfig.php"><a href="files/src-gen-livekit-sipoutboundconfig.html"><abbr title="src/gen/Livekit/SIPOutboundConfig.php">SIPOutboundConfig.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">300</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Optional custom hostname for the &#039;From&#039; SIP header. When set, outbound calls use this host instead of the default project SIP domain.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setFromHost</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">string from_host = 8;</code></p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setHeadersToAttributes">
         setHeadersToAttributes()
         <a href="classes/Livekit-SIPOutboundConfig.html#method_setHeadersToAttributes" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1288,7 +1467,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundConfig.php"><a href="files/src-gen-livekit-sipoutboundconfig.html"><abbr title="src/gen/Livekit/SIPOutboundConfig.php">SIPOutboundConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">238</span>
+    <span class="phpdocumentor-element-found-in__line">246</span>
 
     </aside>
 
@@ -1340,7 +1519,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundConfig.php"><a href="files/src-gen-livekit-sipoutboundconfig.html"><abbr title="src/gen/Livekit/SIPOutboundConfig.php">SIPOutboundConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">108</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -1391,7 +1570,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundConfig.php"><a href="files/src-gen-livekit-sipoutboundconfig.html"><abbr title="src/gen/Livekit/SIPOutboundConfig.php">SIPOutboundConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">160</span>
+    <span class="phpdocumentor-element-found-in__line">168</span>
 
     </aside>
 
@@ -1546,6 +1725,7 @@ Optional. Data for populating the Message object.</p>
                                                     <li class=""><a href="classes/Livekit-SIPOutboundConfig.html#property_auth_password">$auth_password</a></li>
                                                     <li class=""><a href="classes/Livekit-SIPOutboundConfig.html#property_auth_username">$auth_username</a></li>
                                                     <li class=""><a href="classes/Livekit-SIPOutboundConfig.html#property_destination_country">$destination_country</a></li>
+                                                    <li class=""><a href="classes/Livekit-SIPOutboundConfig.html#property_from_host">$from_host</a></li>
                                                     <li class=""><a href="classes/Livekit-SIPOutboundConfig.html#property_hostname">$hostname</a></li>
                                                     <li class=""><a href="classes/Livekit-SIPOutboundConfig.html#property_transport">$transport</a></li>
                                                     <li class=""><a href="classes/Livekit-SIPOutboundConfig.html#property_attributes_to_headers">$attributes_to_headers</a></li>
@@ -1561,6 +1741,7 @@ Optional. Data for populating the Message object.</p>
                                             <li class=""><a href="classes/Livekit-SIPOutboundConfig.html#method_getAuthPassword">getAuthPassword()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundConfig.html#method_getAuthUsername">getAuthUsername()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundConfig.html#method_getDestinationCountry">getDestinationCountry()</a></li>
+                                            <li class=""><a href="classes/Livekit-SIPOutboundConfig.html#method_getFromHost">getFromHost()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundConfig.html#method_getHeadersToAttributes">getHeadersToAttributes()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundConfig.html#method_getHostname">getHostname()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundConfig.html#method_getTransport">getTransport()</a></li>
@@ -1568,6 +1749,7 @@ Optional. Data for populating the Message object.</p>
                                             <li class=""><a href="classes/Livekit-SIPOutboundConfig.html#method_setAuthPassword">setAuthPassword()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundConfig.html#method_setAuthUsername">setAuthUsername()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundConfig.html#method_setDestinationCountry">setDestinationCountry()</a></li>
+                                            <li class=""><a href="classes/Livekit-SIPOutboundConfig.html#method_setFromHost">setFromHost()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundConfig.html#method_setHeadersToAttributes">setHeadersToAttributes()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundConfig.html#method_setHostname">setHostname()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundConfig.html#method_setTransport">setTransport()</a></li>

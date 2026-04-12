@@ -83,6 +83,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/livekit-createprivatelinkrequest.html" class="">CreatePrivateLinkRequest</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/livekit-datapacket.html" class="">DataPacket</a>
                 
             </li>
@@ -119,11 +123,35 @@
                 
             </li>
                     <li>
+                <a href="namespaces/livekit-privatelink.html" class="">PrivateLink</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-privatelinkstatus.html" class="">PrivateLinkStatus</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/livekit-requestresponse.html" class="">RequestResponse</a>
                 
             </li>
                     <li>
+                <a href="namespaces/livekit-scenario.html" class="">Scenario</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-scenariogroup.html" class="">ScenarioGroup</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/livekit-serverinfo.html" class="">ServerInfo</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-simulationrun.html" class="">SimulationRun</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-simulationrunsummary.html" class="">SimulationRunSummary</a>
                 
             </li>
                     <li>
@@ -161,10 +189,6 @@
                 
             </li>
             </ul>
-
-                                    <h4 class="phpdocumentor-sidebar__root-namespace">
-    <a href="namespaces/replay.html" class="">Replay</a>
-</h4>
 
                         </section>
                 <section class="phpdocumentor-sidebar__category -packages">
@@ -253,6 +277,13 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Livekit-RpcRequest.html#property_compressed_payload">$compressed_payload</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Compressed payload data. When set, this field is used instead of `payload`.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Livekit-RpcRequest.html#property_id">$id</a>
     <span>
                         &nbsp;: mixed            </span>
@@ -303,6 +334,13 @@
 <dd>Constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-RpcRequest.html#method_getCompressedPayload">getCompressedPayload()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Compressed payload data. When set, this field is used instead of `payload`.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-RpcRequest.html#method_getId">getId()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -336,6 +374,13 @@
                                 &nbsp;: int    </span>
 </dt>
 <dd>Generated from protobuf field &lt;code&gt;uint32 version = 5;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-RpcRequest.html#method_setCompressedPayload">setCompressedPayload()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>Compressed payload data. When set, this field is used instead of `payload`.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-RpcRequest.html#method_setId">setId()</a>
@@ -385,6 +430,46 @@
             <a href="classes/Livekit-RpcRequest.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_compressed_payload">
+        $compressed_payload
+        <a href="classes/Livekit-RpcRequest.html#property_compressed_payload" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RpcRequest.php"><a href="files/src-gen-livekit-rpcrequest.html"><abbr title="src/gen/Livekit/RpcRequest.php">RpcRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">42</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Compressed payload data. When set, this field is used instead of `payload`.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$compressed_payload</span>
+     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
+
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">bytes compressed_payload = 6;</code></p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
                     <article
         class="
             phpdocumentor-element
@@ -597,7 +682,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RpcRequest.php"><a href="files/src-gen-livekit-rpcrequest.html"><abbr title="src/gen/Livekit/RpcRequest.php">RpcRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -625,6 +710,8 @@ Optional. Data for populating the Message object.</p>
 @type string $payload
 @type int $response_timeout_ms
 @type int $version
+@type string $compressed_payload
+      Compressed payload data. When set, this field is used instead of `payload`.
 </code></pre>
 <p>}</p>
 </section>
@@ -644,6 +731,47 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getCompressedPayload">
+        getCompressedPayload()
+        <a href="classes/Livekit-RpcRequest.html#method_getCompressedPayload" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RpcRequest.php"><a href="files/src-gen-livekit-rpcrequest.html"><abbr title="src/gen/Livekit/RpcRequest.php">RpcRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">180</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Compressed payload data. When set, this field is used instead of `payload`.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getCompressedPayload</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">bytes compressed_payload = 6;</code></p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getId">
         getId()
         <a href="classes/Livekit-RpcRequest.html#method_getId" class="headerlink"><i class="fas fa-link"></i></a>
@@ -652,7 +780,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RpcRequest.php"><a href="files/src-gen-livekit-rpcrequest.html"><abbr title="src/gen/Livekit/RpcRequest.php">RpcRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -691,7 +819,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RpcRequest.php"><a href="files/src-gen-livekit-rpcrequest.html"><abbr title="src/gen/Livekit/RpcRequest.php">RpcRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
 
     </aside>
 
@@ -730,7 +858,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RpcRequest.php"><a href="files/src-gen-livekit-rpcrequest.html"><abbr title="src/gen/Livekit/RpcRequest.php">RpcRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">112</span>
 
     </aside>
 
@@ -769,7 +897,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RpcRequest.php"><a href="files/src-gen-livekit-rpcrequest.html"><abbr title="src/gen/Livekit/RpcRequest.php">RpcRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">126</span>
+    <span class="phpdocumentor-element-found-in__line">134</span>
 
     </aside>
 
@@ -808,7 +936,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RpcRequest.php"><a href="files/src-gen-livekit-rpcrequest.html"><abbr title="src/gen/Livekit/RpcRequest.php">RpcRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">148</span>
+    <span class="phpdocumentor-element-found-in__line">156</span>
 
     </aside>
 
@@ -839,6 +967,57 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_setCompressedPayload">
+        setCompressedPayload()
+        <a href="classes/Livekit-RpcRequest.html#method_setCompressedPayload" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RpcRequest.php"><a href="files/src-gen-livekit-rpcrequest.html"><abbr title="src/gen/Livekit/RpcRequest.php">RpcRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">192</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Compressed payload data. When set, this field is used instead of `payload`.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setCompressedPayload</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">bytes compressed_payload = 6;</code></p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setId">
         setId()
         <a href="classes/Livekit-RpcRequest.html#method_setId" class="headerlink"><i class="fas fa-link"></i></a>
@@ -847,7 +1026,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RpcRequest.php"><a href="files/src-gen-livekit-rpcrequest.html"><abbr title="src/gen/Livekit/RpcRequest.php">RpcRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -896,7 +1075,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RpcRequest.php"><a href="files/src-gen-livekit-rpcrequest.html"><abbr title="src/gen/Livekit/RpcRequest.php">RpcRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
     </aside>
 
@@ -945,7 +1124,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RpcRequest.php"><a href="files/src-gen-livekit-rpcrequest.html"><abbr title="src/gen/Livekit/RpcRequest.php">RpcRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">114</span>
+    <span class="phpdocumentor-element-found-in__line">122</span>
 
     </aside>
 
@@ -994,7 +1173,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RpcRequest.php"><a href="files/src-gen-livekit-rpcrequest.html"><abbr title="src/gen/Livekit/RpcRequest.php">RpcRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">136</span>
+    <span class="phpdocumentor-element-found-in__line">144</span>
 
     </aside>
 
@@ -1043,7 +1222,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RpcRequest.php"><a href="files/src-gen-livekit-rpcrequest.html"><abbr title="src/gen/Livekit/RpcRequest.php">RpcRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">158</span>
+    <span class="phpdocumentor-element-found-in__line">166</span>
 
     </aside>
 
@@ -1193,6 +1372,7 @@ Optional. Data for populating the Message object.</p>
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Livekit-RpcRequest.html#property_compressed_payload">$compressed_payload</a></li>
                                                     <li class=""><a href="classes/Livekit-RpcRequest.html#property_id">$id</a></li>
                                                     <li class=""><a href="classes/Livekit-RpcRequest.html#property_method">$method</a></li>
                                                     <li class=""><a href="classes/Livekit-RpcRequest.html#property_payload">$payload</a></li>
@@ -1205,11 +1385,13 @@ Optional. Data for populating the Message object.</p>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Livekit-RpcRequest.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Livekit-RpcRequest.html#method_getCompressedPayload">getCompressedPayload()</a></li>
                                             <li class=""><a href="classes/Livekit-RpcRequest.html#method_getId">getId()</a></li>
                                             <li class=""><a href="classes/Livekit-RpcRequest.html#method_getMethod">getMethod()</a></li>
                                             <li class=""><a href="classes/Livekit-RpcRequest.html#method_getPayload">getPayload()</a></li>
                                             <li class=""><a href="classes/Livekit-RpcRequest.html#method_getResponseTimeoutMs">getResponseTimeoutMs()</a></li>
                                             <li class=""><a href="classes/Livekit-RpcRequest.html#method_getVersion">getVersion()</a></li>
+                                            <li class=""><a href="classes/Livekit-RpcRequest.html#method_setCompressedPayload">setCompressedPayload()</a></li>
                                             <li class=""><a href="classes/Livekit-RpcRequest.html#method_setId">setId()</a></li>
                                             <li class=""><a href="classes/Livekit-RpcRequest.html#method_setMethod">setMethod()</a></li>
                                             <li class=""><a href="classes/Livekit-RpcRequest.html#method_setPayload">setPayload()</a></li>

@@ -83,6 +83,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/livekit-createprivatelinkrequest.html" class="">CreatePrivateLinkRequest</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/livekit-datapacket.html" class="">DataPacket</a>
                 
             </li>
@@ -119,11 +123,35 @@
                 
             </li>
                     <li>
+                <a href="namespaces/livekit-privatelink.html" class="">PrivateLink</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-privatelinkstatus.html" class="">PrivateLinkStatus</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/livekit-requestresponse.html" class="">RequestResponse</a>
                 
             </li>
                     <li>
+                <a href="namespaces/livekit-scenario.html" class="">Scenario</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-scenariogroup.html" class="">ScenarioGroup</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/livekit-serverinfo.html" class="">ServerInfo</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-simulationrun.html" class="">SimulationRun</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-simulationrunsummary.html" class="">SimulationRunSummary</a>
                 
             </li>
                     <li>
@@ -161,10 +189,6 @@
                 
             </li>
             </ul>
-
-                                    <h4 class="phpdocumentor-sidebar__root-namespace">
-    <a href="namespaces/replay.html" class="">Replay</a>
-</h4>
 
                         </section>
                 <section class="phpdocumentor-sidebar__category -packages">
@@ -252,6 +276,13 @@
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Livekit-ParticipantInfo.html#property_client_protocol">$client_protocol</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>protocol version used for client feature compatibility</dd>
+
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Livekit-ParticipantInfo.html#property_disconnect_reason">$disconnect_reason</a>
     <span>
@@ -401,6 +432,13 @@ and can publish to the server</dd>
 <dd>Generated from protobuf field &lt;code&gt;map&lt;string, string&gt; attributes = 15 [(.logger.redact) = true, (.logger.redact_format) = &quot;&lt;redacted ({{ .Size }} bytes)&gt;&quot;];&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-ParticipantInfo.html#method_getClientProtocol">getClientProtocol()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+<dd>protocol version used for client feature compatibility</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-ParticipantInfo.html#method_getDataTracks">getDataTracks()</a>
     <span>
                                 &nbsp;: <abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, <a href="classes/Livekit-DataTrackInfo.html"><abbr title="\Livekit\DataTrackInfo">DataTrackInfo</abbr></a>&gt;    </span>
@@ -525,6 +563,13 @@ and can publish to the server</dd>
                                 &nbsp;: $this    </span>
 </dt>
 <dd>Generated from protobuf field &lt;code&gt;map&lt;string, string&gt; attributes = 15 [(.logger.redact) = true, (.logger.redact_format) = &quot;&lt;redacted ({{ .Size }} bytes)&gt;&quot;];&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-ParticipantInfo.html#method_setClientProtocol">setClientProtocol()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>protocol version used for client feature compatibility</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-ParticipantInfo.html#method_setDataTracks">setDataTracks()</a>
@@ -652,6 +697,46 @@ and can publish to the server</dd>
             <a href="classes/Livekit-ParticipantInfo.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_client_protocol">
+        $client_protocol
+        <a href="classes/Livekit-ParticipantInfo.html#property_client_protocol" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">97</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">protocol version used for client feature compatibility</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$client_protocol</span>
+     = <span class="phpdocumentor-signature__default-value">0</span></code>
+
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">int32 client_protocol = 20;</code></p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
                     <article
         class="
             phpdocumentor-element
@@ -1327,7 +1412,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">122</span>
+    <span class="phpdocumentor-element-found-in__line">130</span>
 
     </aside>
 
@@ -1371,6 +1456,8 @@ Optional. Data for populating the Message object.</p>
 @type int $disconnect_reason
 @type int[] $kind_details
 @type \Livekit\DataTrackInfo[] $data_tracks
+@type int $client_protocol
+      protocol version used for client feature compatibility
 </code></pre>
 <p>}</p>
 </section>
@@ -1398,7 +1485,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">347</span>
+    <span class="phpdocumentor-element-found-in__line">355</span>
 
     </aside>
 
@@ -1432,7 +1519,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">441</span>
+    <span class="phpdocumentor-element-found-in__line">449</span>
 
     </aside>
 
@@ -1463,6 +1550,47 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getClientProtocol">
+        getClientProtocol()
+        <a href="classes/Livekit-ParticipantInfo.html#method_getClientProtocol" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">539</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">protocol version used for client feature compatibility</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getClientProtocol</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">int32 client_protocol = 20;</code></p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getDataTracks">
         getDataTracks()
         <a href="classes/Livekit-ParticipantInfo.html#method_getDataTracks" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1471,7 +1599,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">507</span>
+    <span class="phpdocumentor-element-found-in__line">515</span>
 
     </aside>
 
@@ -1510,7 +1638,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">463</span>
+    <span class="phpdocumentor-element-found-in__line">471</span>
 
     </aside>
 
@@ -1549,7 +1677,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">153</span>
+    <span class="phpdocumentor-element-found-in__line">161</span>
 
     </aside>
 
@@ -1588,7 +1716,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">394</span>
+    <span class="phpdocumentor-element-found-in__line">402</span>
 
     </aside>
 
@@ -1630,7 +1758,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">243</span>
+    <span class="phpdocumentor-element-found-in__line">251</span>
 
     </aside>
 
@@ -1671,7 +1799,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">269</span>
+    <span class="phpdocumentor-element-found-in__line">277</span>
 
     </aside>
 
@@ -1712,7 +1840,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">419</span>
+    <span class="phpdocumentor-element-found-in__line">427</span>
 
     </aside>
 
@@ -1751,7 +1879,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">485</span>
+    <span class="phpdocumentor-element-found-in__line">493</span>
 
     </aside>
 
@@ -1790,7 +1918,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">219</span>
+    <span class="phpdocumentor-element-found-in__line">227</span>
 
     </aside>
 
@@ -1829,7 +1957,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">293</span>
+    <span class="phpdocumentor-element-found-in__line">301</span>
 
     </aside>
 
@@ -1868,7 +1996,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">337</span>
+    <span class="phpdocumentor-element-found-in__line">345</span>
 
     </aside>
 
@@ -1907,7 +2035,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">369</span>
+    <span class="phpdocumentor-element-found-in__line">377</span>
 
     </aside>
 
@@ -1946,7 +2074,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">139</span>
 
     </aside>
 
@@ -1985,7 +2113,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">175</span>
+    <span class="phpdocumentor-element-found-in__line">183</span>
 
     </aside>
 
@@ -2024,7 +2152,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">197</span>
+    <span class="phpdocumentor-element-found-in__line">205</span>
 
     </aside>
 
@@ -2063,7 +2191,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">315</span>
+    <span class="phpdocumentor-element-found-in__line">323</span>
 
     </aside>
 
@@ -2102,7 +2230,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">342</span>
+    <span class="phpdocumentor-element-found-in__line">350</span>
 
     </aside>
 
@@ -2136,7 +2264,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">451</span>
+    <span class="phpdocumentor-element-found-in__line">459</span>
 
     </aside>
 
@@ -2177,6 +2305,57 @@ and can publish to the server</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_setClientProtocol">
+        setClientProtocol()
+        <a href="classes/Livekit-ParticipantInfo.html#method_setClientProtocol" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">551</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">protocol version used for client feature compatibility</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setClientProtocol</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">int32 client_protocol = 20;</code></p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setDataTracks">
         setDataTracks()
         <a href="classes/Livekit-ParticipantInfo.html#method_setDataTracks" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2185,7 +2364,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">517</span>
+    <span class="phpdocumentor-element-found-in__line">525</span>
 
     </aside>
 
@@ -2234,7 +2413,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">473</span>
+    <span class="phpdocumentor-element-found-in__line">481</span>
 
     </aside>
 
@@ -2283,7 +2462,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">163</span>
+    <span class="phpdocumentor-element-found-in__line">171</span>
 
     </aside>
 
@@ -2332,7 +2511,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">407</span>
+    <span class="phpdocumentor-element-found-in__line">415</span>
 
     </aside>
 
@@ -2384,7 +2563,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">255</span>
+    <span class="phpdocumentor-element-found-in__line">263</span>
 
     </aside>
 
@@ -2435,7 +2614,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">281</span>
+    <span class="phpdocumentor-element-found-in__line">289</span>
 
     </aside>
 
@@ -2486,7 +2665,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">429</span>
+    <span class="phpdocumentor-element-found-in__line">437</span>
 
     </aside>
 
@@ -2535,7 +2714,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">495</span>
+    <span class="phpdocumentor-element-found-in__line">503</span>
 
     </aside>
 
@@ -2584,7 +2763,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">229</span>
+    <span class="phpdocumentor-element-found-in__line">237</span>
 
     </aside>
 
@@ -2633,7 +2812,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">303</span>
+    <span class="phpdocumentor-element-found-in__line">311</span>
 
     </aside>
 
@@ -2682,7 +2861,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">357</span>
+    <span class="phpdocumentor-element-found-in__line">365</span>
 
     </aside>
 
@@ -2731,7 +2910,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">379</span>
+    <span class="phpdocumentor-element-found-in__line">387</span>
 
     </aside>
 
@@ -2780,7 +2959,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">141</span>
+    <span class="phpdocumentor-element-found-in__line">149</span>
 
     </aside>
 
@@ -2829,7 +3008,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">185</span>
+    <span class="phpdocumentor-element-found-in__line">193</span>
 
     </aside>
 
@@ -2878,7 +3057,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">207</span>
+    <span class="phpdocumentor-element-found-in__line">215</span>
 
     </aside>
 
@@ -2927,7 +3106,7 @@ and can publish to the server</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ParticipantInfo.php"><a href="files/src-gen-livekit-participantinfo.html"><abbr title="src/gen/Livekit/ParticipantInfo.php">ParticipantInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">325</span>
+    <span class="phpdocumentor-element-found-in__line">333</span>
 
     </aside>
 
@@ -3077,6 +3256,7 @@ and can publish to the server</p>
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Livekit-ParticipantInfo.html#property_client_protocol">$client_protocol</a></li>
                                                     <li class=""><a href="classes/Livekit-ParticipantInfo.html#property_disconnect_reason">$disconnect_reason</a></li>
                                                     <li class=""><a href="classes/Livekit-ParticipantInfo.html#property_identity">$identity</a></li>
                                                     <li class=""><a href="classes/Livekit-ParticipantInfo.html#property_is_publisher">$is_publisher</a></li>
@@ -3103,6 +3283,7 @@ and can publish to the server</p>
                                             <li class=""><a href="classes/Livekit-ParticipantInfo.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Livekit-ParticipantInfo.html#method_clearPermission">clearPermission()</a></li>
                                             <li class=""><a href="classes/Livekit-ParticipantInfo.html#method_getAttributes">getAttributes()</a></li>
+                                            <li class=""><a href="classes/Livekit-ParticipantInfo.html#method_getClientProtocol">getClientProtocol()</a></li>
                                             <li class=""><a href="classes/Livekit-ParticipantInfo.html#method_getDataTracks">getDataTracks()</a></li>
                                             <li class=""><a href="classes/Livekit-ParticipantInfo.html#method_getDisconnectReason">getDisconnectReason()</a></li>
                                             <li class=""><a href="classes/Livekit-ParticipantInfo.html#method_getIdentity">getIdentity()</a></li>
@@ -3121,6 +3302,7 @@ and can publish to the server</p>
                                             <li class=""><a href="classes/Livekit-ParticipantInfo.html#method_getVersion">getVersion()</a></li>
                                             <li class=""><a href="classes/Livekit-ParticipantInfo.html#method_hasPermission">hasPermission()</a></li>
                                             <li class=""><a href="classes/Livekit-ParticipantInfo.html#method_setAttributes">setAttributes()</a></li>
+                                            <li class=""><a href="classes/Livekit-ParticipantInfo.html#method_setClientProtocol">setClientProtocol()</a></li>
                                             <li class=""><a href="classes/Livekit-ParticipantInfo.html#method_setDataTracks">setDataTracks()</a></li>
                                             <li class=""><a href="classes/Livekit-ParticipantInfo.html#method_setDisconnectReason">setDisconnectReason()</a></li>
                                             <li class=""><a href="classes/Livekit-ParticipantInfo.html#method_setIdentity">setIdentity()</a></li>

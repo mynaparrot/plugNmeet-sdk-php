@@ -83,6 +83,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/livekit-createprivatelinkrequest.html" class="">CreatePrivateLinkRequest</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/livekit-datapacket.html" class="">DataPacket</a>
                 
             </li>
@@ -119,11 +123,35 @@
                 
             </li>
                     <li>
+                <a href="namespaces/livekit-privatelink.html" class="">PrivateLink</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-privatelinkstatus.html" class="">PrivateLinkStatus</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/livekit-requestresponse.html" class="">RequestResponse</a>
                 
             </li>
                     <li>
+                <a href="namespaces/livekit-scenario.html" class="">Scenario</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-scenariogroup.html" class="">ScenarioGroup</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/livekit-serverinfo.html" class="">ServerInfo</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-simulationrun.html" class="">SimulationRun</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-simulationrunsummary.html" class="">SimulationRunSummary</a>
                 
             </li>
                     <li>
@@ -161,10 +189,6 @@
                 
             </li>
             </ul>
-
-                                    <h4 class="phpdocumentor-sidebar__root-namespace">
-    <a href="namespaces/replay.html" class="">Replay</a>
-</h4>
 
                         </section>
                 <section class="phpdocumentor-sidebar__category -packages">
@@ -247,6 +271,13 @@
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Livekit-DisconnectReason.html#constant_AGENT_ERROR">AGENT_ERROR</a>
+    <span>
+        &nbsp;= 16                            </span>
+</dt>
+<dd>agent encountered an error</dd>
+
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Livekit-DisconnectReason.html#constant_CLIENT_INITIATED">CLIENT_INITIATED</a>
     <span>
@@ -405,6 +436,39 @@
             <a href="classes/Livekit-DisconnectReason.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_AGENT_ERROR">
+        AGENT_ERROR
+        <a href="classes/Livekit-DisconnectReason.html#constant_AGENT_ERROR" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DisconnectReason.php"><a href="files/src-gen-livekit-disconnectreason.html"><abbr title="src/gen/Livekit/DisconnectReason.php">DisconnectReason.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">114</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">agent encountered an error</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">AGENT_ERROR</span>
+    = <span class="phpdocumentor-signature__default-value">16</span>
+</code>
+
+
+        <section class="phpdocumentor-description"><p>Generated from protobuf enum <code class="prettyprint">AGENT_ERROR = 16;</code></p>
+</section>
+
+    
+    
+
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_CLIENT_INITIATED">
         CLIENT_INITIATED
@@ -957,7 +1021,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DisconnectReason.php"><a href="files/src-gen-livekit-disconnectreason.html"><abbr title="src/gen/Livekit/DisconnectReason.php">DisconnectReason.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">110</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -967,7 +1031,7 @@
         <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">$valueToName</span>
-     = <span class="phpdocumentor-signature__default-value">[self::UNKNOWN_REASON =&gt; &#039;UNKNOWN_REASON&#039;, self::CLIENT_INITIATED =&gt; &#039;CLIENT_INITIATED&#039;, self::DUPLICATE_IDENTITY =&gt; &#039;DUPLICATE_IDENTITY&#039;, self::SERVER_SHUTDOWN =&gt; &#039;SERVER_SHUTDOWN&#039;, self::PARTICIPANT_REMOVED =&gt; &#039;PARTICIPANT_REMOVED&#039;, self::ROOM_DELETED =&gt; &#039;ROOM_DELETED&#039;, self::STATE_MISMATCH =&gt; &#039;STATE_MISMATCH&#039;, self::JOIN_FAILURE =&gt; &#039;JOIN_FAILURE&#039;, self::MIGRATION =&gt; &#039;MIGRATION&#039;, self::SIGNAL_CLOSE =&gt; &#039;SIGNAL_CLOSE&#039;, self::ROOM_CLOSED =&gt; &#039;ROOM_CLOSED&#039;, self::USER_UNAVAILABLE =&gt; &#039;USER_UNAVAILABLE&#039;, self::USER_REJECTED =&gt; &#039;USER_REJECTED&#039;, self::SIP_TRUNK_FAILURE =&gt; &#039;SIP_TRUNK_FAILURE&#039;, self::CONNECTION_TIMEOUT =&gt; &#039;CONNECTION_TIMEOUT&#039;, self::MEDIA_FAILURE =&gt; &#039;MEDIA_FAILURE&#039;]</span></code>
+     = <span class="phpdocumentor-signature__default-value">[self::UNKNOWN_REASON =&gt; &#039;UNKNOWN_REASON&#039;, self::CLIENT_INITIATED =&gt; &#039;CLIENT_INITIATED&#039;, self::DUPLICATE_IDENTITY =&gt; &#039;DUPLICATE_IDENTITY&#039;, self::SERVER_SHUTDOWN =&gt; &#039;SERVER_SHUTDOWN&#039;, self::PARTICIPANT_REMOVED =&gt; &#039;PARTICIPANT_REMOVED&#039;, self::ROOM_DELETED =&gt; &#039;ROOM_DELETED&#039;, self::STATE_MISMATCH =&gt; &#039;STATE_MISMATCH&#039;, self::JOIN_FAILURE =&gt; &#039;JOIN_FAILURE&#039;, self::MIGRATION =&gt; &#039;MIGRATION&#039;, self::SIGNAL_CLOSE =&gt; &#039;SIGNAL_CLOSE&#039;, self::ROOM_CLOSED =&gt; &#039;ROOM_CLOSED&#039;, self::USER_UNAVAILABLE =&gt; &#039;USER_UNAVAILABLE&#039;, self::USER_REJECTED =&gt; &#039;USER_REJECTED&#039;, self::SIP_TRUNK_FAILURE =&gt; &#039;SIP_TRUNK_FAILURE&#039;, self::CONNECTION_TIMEOUT =&gt; &#039;CONNECTION_TIMEOUT&#039;, self::MEDIA_FAILURE =&gt; &#039;MEDIA_FAILURE&#039;, self::AGENT_ERROR =&gt; &#039;AGENT_ERROR&#039;]</span></code>
 
     
     
@@ -999,7 +1063,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DisconnectReason.php"><a href="files/src-gen-livekit-disconnectreason.html"><abbr title="src/gen/Livekit/DisconnectReason.php">DisconnectReason.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">129</span>
+    <span class="phpdocumentor-element-found-in__line">136</span>
 
     </aside>
 
@@ -1043,7 +1107,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DisconnectReason.php"><a href="files/src-gen-livekit-disconnectreason.html"><abbr title="src/gen/Livekit/DisconnectReason.php">DisconnectReason.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">139</span>
+    <span class="phpdocumentor-element-found-in__line">146</span>
 
     </aside>
 
@@ -1188,6 +1252,7 @@
                             <li class="phpdocumentor-on-this-page-section__title">Constants</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Livekit-DisconnectReason.html#constant_AGENT_ERROR">AGENT_ERROR</a></li>
                                                     <li class=""><a href="classes/Livekit-DisconnectReason.html#constant_CLIENT_INITIATED">CLIENT_INITIATED</a></li>
                                                     <li class=""><a href="classes/Livekit-DisconnectReason.html#constant_CONNECTION_TIMEOUT">CONNECTION_TIMEOUT</a></li>
                                                     <li class=""><a href="classes/Livekit-DisconnectReason.html#constant_DUPLICATE_IDENTITY">DUPLICATE_IDENTITY</a></li>

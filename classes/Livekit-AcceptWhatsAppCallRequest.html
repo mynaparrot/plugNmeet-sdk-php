@@ -83,6 +83,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/livekit-createprivatelinkrequest.html" class="">CreatePrivateLinkRequest</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/livekit-datapacket.html" class="">DataPacket</a>
                 
             </li>
@@ -119,11 +123,35 @@
                 
             </li>
                     <li>
+                <a href="namespaces/livekit-privatelink.html" class="">PrivateLink</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-privatelinkstatus.html" class="">PrivateLinkStatus</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/livekit-requestresponse.html" class="">RequestResponse</a>
                 
             </li>
                     <li>
+                <a href="namespaces/livekit-scenario.html" class="">Scenario</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-scenariogroup.html" class="">ScenarioGroup</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/livekit-serverinfo.html" class="">ServerInfo</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-simulationrun.html" class="">SimulationRun</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-simulationrunsummary.html" class="">SimulationRunSummary</a>
                 
             </li>
                     <li>
@@ -161,10 +189,6 @@
                 
             </li>
             </ul>
-
-                                    <h4 class="phpdocumentor-sidebar__root-namespace">
-    <a href="namespaces/replay.html" class="">Replay</a>
-</h4>
 
                         </section>
                 <section class="phpdocumentor-sidebar__category -packages">
@@ -282,6 +306,13 @@ This is used for logging purposes, so it is advised to not put PII in this field
 <dd>Optional - Name of the participant in LiveKit room</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Livekit-AcceptWhatsAppCallRequest.html#property_ringing_timeout">$ringing_timeout</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Max time for the callee to answer the call.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Livekit-AcceptWhatsAppCallRequest.html#property_room_name">$room_name</a>
     <span>
                         &nbsp;: mixed            </span>
@@ -295,6 +326,13 @@ This is used for logging purposes, so it is advised to not put PII in this field
 </dt>
 <dd>Required - The call accept webhook comes with SDP from Meta
 It is the for a user initiated call</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Livekit-AcceptWhatsAppCallRequest.html#property_wait_until_answered">$wait_until_answered</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Wait for the answer for the call before returning.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Livekit-AcceptWhatsAppCallRequest.html#property_whatsapp_api_key">$whatsapp_api_key</a>
@@ -361,6 +399,12 @@ It is the for a user initiated call</dd>
 <dd>Constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_clearRingingTimeout">clearRingingTimeout()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_clearSdp">clearSdp()</a>
     <span>
                                 &nbsp;: mixed    </span>
@@ -410,6 +454,13 @@ This is used for logging purposes, so it is advised to not put PII in this field
 <dd>Optional - Name of the participant in LiveKit room</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_getRingingTimeout">getRingingTimeout()</a>
+    <span>
+                                &nbsp;: <abbr title="\Google\Protobuf\Duration">Duration</abbr>|null    </span>
+</dt>
+<dd>Max time for the callee to answer the call.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_getRoomName">getRoomName()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -423,6 +474,13 @@ This is used for logging purposes, so it is advised to not put PII in this field
 </dt>
 <dd>Required - The call accept webhook comes with SDP from Meta
 It is the for a user initiated call</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_getWaitUntilAnswered">getWaitUntilAnswered()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Wait for the answer for the call before returning.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_getWhatsappApiKey">getWhatsappApiKey()</a>
@@ -458,6 +516,12 @@ It is the for a user initiated call</dd>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Required - The phone number id of the business that is conencting the call</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_hasRingingTimeout">hasRingingTimeout()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_hasSdp">hasSdp()</a>
@@ -509,6 +573,13 @@ This is used for logging purposes, so it is advised to not put PII in this field
 <dd>Optional - Name of the participant in LiveKit room</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_setRingingTimeout">setRingingTimeout()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>Max time for the callee to answer the call.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_setRoomName">setRoomName()</a>
     <span>
                                 &nbsp;: $this    </span>
@@ -522,6 +593,13 @@ This is used for logging purposes, so it is advised to not put PII in this field
 </dt>
 <dd>Required - The call accept webhook comes with SDP from Meta
 It is the for a user initiated call</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_setWaitUntilAnswered">setWaitUntilAnswered()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>Wait for the answer for the call before returning.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_setWhatsappApiKey">setWhatsappApiKey()</a>
@@ -739,6 +817,46 @@ This is used for logging purposes, so it is advised to not put PII in this field
             -protected
                                                                     "
 >
+    <h4 class="phpdocumentor-element__name" id="property_ringing_timeout">
+        $ringing_timeout
+        <a href="classes/Livekit-AcceptWhatsAppCallRequest.html#property_ringing_timeout" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">102</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Max time for the callee to answer the call.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$ringing_timeout</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.google.protobuf.Duration ringing_timeout = 14;</code></p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
     <h4 class="phpdocumentor-element__name" id="property_room_name">
         $room_name
         <a href="classes/Livekit-AcceptWhatsAppCallRequest.html#property_room_name" class="headerlink"><i class="fas fa-link"></i></a>
@@ -804,6 +922,46 @@ It is the for a user initiated call</p>
      = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.livekit.SessionDescription sdp = 5;</code></p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_wait_until_answered">
+        $wait_until_answered
+        <a href="classes/Livekit-AcceptWhatsAppCallRequest.html#property_wait_until_answered" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">108</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Wait for the answer for the call before returning.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$wait_until_answered</span>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
+
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">bool wait_until_answered = 15;</code></p>
 </section>
 
     
@@ -923,7 +1081,7 @@ It is the for a user initiated call</p>
     <span class="phpdocumentor-signature__name">$whatsapp_call_id</span>
      = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
 
-        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">string whatsapp_call_id = 3;</code></p>
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">string whatsapp_call_id = 3 [(.logger.name) = &quot;whatsappCallID&quot;];</code></p>
 </section>
 
     
@@ -1003,7 +1161,7 @@ It is the for a user initiated call</p>
     <span class="phpdocumentor-signature__name">$whatsapp_phone_number_id</span>
      = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
 
-        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">string whatsapp_phone_number_id = 1;</code></p>
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">string whatsapp_phone_number_id = 1 [(.logger.name) = &quot;whatsappPhoneNumberID&quot;];</code></p>
 </section>
 
     
@@ -1115,7 +1273,7 @@ It is the for a user initiated call</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">134</span>
+    <span class="phpdocumentor-element-found-in__line">150</span>
 
     </aside>
 
@@ -1166,6 +1324,10 @@ Optional. Data for populating the Message object.</p>
       Optional - User-defined attributes. Will be attached to a created Participant in the room.
 @type string $destination_country
       Optional - Country where the call terminates as ISO 3166-1 alpha-2 (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). This will be used by the livekit infrastructure to route calls.
+@type \Google\Protobuf\Duration $ringing_timeout
+      Max time for the callee to answer the call.
+@type bool $wait_until_answered
+      Wait for the answer for the call before returning.
 </code></pre>
 <p>}</p>
 </section>
@@ -1173,6 +1335,40 @@ Optional. Data for populating the Message object.</p>
             </dd>
             </dl>
 
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_clearRingingTimeout">
+        clearRingingTimeout()
+        <a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_clearRingingTimeout" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">523</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">clearRingingTimeout</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
     
 
         
@@ -1193,7 +1389,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">286</span>
+    <span class="phpdocumentor-element-found-in__line">302</span>
 
     </aside>
 
@@ -1227,7 +1423,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">339</span>
+    <span class="phpdocumentor-element-found-in__line">355</span>
 
     </aside>
 
@@ -1268,7 +1464,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">471</span>
+    <span class="phpdocumentor-element-found-in__line">487</span>
 
     </aside>
 
@@ -1309,7 +1505,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">445</span>
+    <span class="phpdocumentor-element-found-in__line">461</span>
 
     </aside>
 
@@ -1350,7 +1546,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">366</span>
+    <span class="phpdocumentor-element-found-in__line">382</span>
 
     </aside>
 
@@ -1392,7 +1588,7 @@ This is used for logging purposes, so it is advised to not put PII in this field
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">419</span>
+    <span class="phpdocumentor-element-found-in__line">435</span>
 
     </aside>
 
@@ -1433,7 +1629,7 @@ This is used for logging purposes, so it is advised to not put PII in this field
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">393</span>
+    <span class="phpdocumentor-element-found-in__line">409</span>
 
     </aside>
 
@@ -1466,6 +1662,47 @@ This is used for logging purposes, so it is advised to not put PII in this field
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getRingingTimeout">
+        getRingingTimeout()
+        <a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_getRingingTimeout" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">513</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Max time for the callee to answer the call.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getRingingTimeout</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Duration">Duration</abbr>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.google.protobuf.Duration ringing_timeout = 14;</code></p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Duration">Duration</abbr>|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getRoomName">
         getRoomName()
         <a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_getRoomName" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1474,7 +1711,7 @@ This is used for logging purposes, so it is advised to not put PII in this field
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">313</span>
+    <span class="phpdocumentor-element-found-in__line">329</span>
 
     </aside>
 
@@ -1515,7 +1752,7 @@ This is used for logging purposes, so it is advised to not put PII in this field
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">276</span>
+    <span class="phpdocumentor-element-found-in__line">292</span>
 
     </aside>
 
@@ -1549,6 +1786,47 @@ It is the for a user initiated call</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getWaitUntilAnswered">
+        getWaitUntilAnswered()
+        <a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_getWaitUntilAnswered" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">549</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Wait for the answer for the call before returning.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getWaitUntilAnswered</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">bool wait_until_answered = 15;</code></p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getWhatsappApiKey">
         getWhatsappApiKey()
         <a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_getWhatsappApiKey" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1557,7 +1835,7 @@ It is the for a user initiated call</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">171</span>
+    <span class="phpdocumentor-element-found-in__line">187</span>
 
     </aside>
 
@@ -1598,7 +1876,7 @@ It is the for a user initiated call</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">249</span>
+    <span class="phpdocumentor-element-found-in__line">265</span>
 
     </aside>
 
@@ -1639,7 +1917,7 @@ It is the for a user initiated call</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">223</span>
+    <span class="phpdocumentor-element-found-in__line">239</span>
 
     </aside>
 
@@ -1652,7 +1930,7 @@ It is the for a user initiated call</p>
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">string whatsapp_call_id = 3;</code></p>
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">string whatsapp_call_id = 3 [(.logger.name) = &quot;whatsappCallID&quot;];</code></p>
 </section>
 
     
@@ -1680,7 +1958,7 @@ It is the for a user initiated call</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">197</span>
+    <span class="phpdocumentor-element-found-in__line">213</span>
 
     </aside>
 
@@ -1721,7 +1999,7 @@ It is the for a user initiated call</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">145</span>
+    <span class="phpdocumentor-element-found-in__line">161</span>
 
     </aside>
 
@@ -1734,7 +2012,7 @@ It is the for a user initiated call</p>
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">string whatsapp_phone_number_id = 1;</code></p>
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">string whatsapp_phone_number_id = 1 [(.logger.name) = &quot;whatsappPhoneNumberID&quot;];</code></p>
 </section>
 
     
@@ -1754,6 +2032,40 @@ It is the for a user initiated call</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_hasRingingTimeout">
+        hasRingingTimeout()
+        <a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_hasRingingTimeout" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">518</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">hasRingingTimeout</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_hasSdp">
         hasSdp()
         <a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_hasSdp" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1762,7 +2074,7 @@ It is the for a user initiated call</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">281</span>
+    <span class="phpdocumentor-element-found-in__line">297</span>
 
     </aside>
 
@@ -1796,7 +2108,7 @@ It is the for a user initiated call</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">351</span>
+    <span class="phpdocumentor-element-found-in__line">367</span>
 
     </aside>
 
@@ -1847,7 +2159,7 @@ It is the for a user initiated call</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">483</span>
+    <span class="phpdocumentor-element-found-in__line">499</span>
 
     </aside>
 
@@ -1898,7 +2210,7 @@ It is the for a user initiated call</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">457</span>
+    <span class="phpdocumentor-element-found-in__line">473</span>
 
     </aside>
 
@@ -1949,7 +2261,7 @@ It is the for a user initiated call</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">379</span>
+    <span class="phpdocumentor-element-found-in__line">395</span>
 
     </aside>
 
@@ -2001,7 +2313,7 @@ This is used for logging purposes, so it is advised to not put PII in this field
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">431</span>
+    <span class="phpdocumentor-element-found-in__line">447</span>
 
     </aside>
 
@@ -2052,7 +2364,7 @@ This is used for logging purposes, so it is advised to not put PII in this field
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">405</span>
+    <span class="phpdocumentor-element-found-in__line">421</span>
 
     </aside>
 
@@ -2095,6 +2407,57 @@ This is used for logging purposes, so it is advised to not put PII in this field
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_setRingingTimeout">
+        setRingingTimeout()
+        <a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_setRingingTimeout" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">535</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Max time for the callee to answer the call.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setRingingTimeout</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Google\Protobuf\Duration">Duration</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.google.protobuf.Duration ringing_timeout = 14;</code></p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Google\Protobuf\Duration">Duration</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setRoomName">
         setRoomName()
         <a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_setRoomName" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2103,7 +2466,7 @@ This is used for logging purposes, so it is advised to not put PII in this field
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">325</span>
+    <span class="phpdocumentor-element-found-in__line">341</span>
 
     </aside>
 
@@ -2154,7 +2517,7 @@ This is used for logging purposes, so it is advised to not put PII in this field
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">299</span>
+    <span class="phpdocumentor-element-found-in__line">315</span>
 
     </aside>
 
@@ -2198,6 +2561,57 @@ It is the for a user initiated call</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_setWaitUntilAnswered">
+        setWaitUntilAnswered()
+        <a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_setWaitUntilAnswered" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">561</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Wait for the answer for the call before returning.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setWaitUntilAnswered</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">bool wait_until_answered = 15;</code></p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setWhatsappApiKey">
         setWhatsappApiKey()
         <a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_setWhatsappApiKey" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2206,7 +2620,7 @@ It is the for a user initiated call</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">183</span>
+    <span class="phpdocumentor-element-found-in__line">199</span>
 
     </aside>
 
@@ -2257,7 +2671,7 @@ It is the for a user initiated call</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">261</span>
+    <span class="phpdocumentor-element-found-in__line">277</span>
 
     </aside>
 
@@ -2308,7 +2722,7 @@ It is the for a user initiated call</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">235</span>
+    <span class="phpdocumentor-element-found-in__line">251</span>
 
     </aside>
 
@@ -2321,7 +2735,7 @@ It is the for a user initiated call</p>
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">string whatsapp_call_id = 3;</code></p>
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">string whatsapp_call_id = 3 [(.logger.name) = &quot;whatsappCallID&quot;];</code></p>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -2359,7 +2773,7 @@ It is the for a user initiated call</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">209</span>
+    <span class="phpdocumentor-element-found-in__line">225</span>
 
     </aside>
 
@@ -2410,7 +2824,7 @@ It is the for a user initiated call</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AcceptWhatsAppCallRequest.php"><a href="files/src-gen-livekit-acceptwhatsappcallrequest.html"><abbr title="src/gen/Livekit/AcceptWhatsAppCallRequest.php">AcceptWhatsAppCallRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">157</span>
+    <span class="phpdocumentor-element-found-in__line">173</span>
 
     </aside>
 
@@ -2423,7 +2837,7 @@ It is the for a user initiated call</p>
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">string whatsapp_phone_number_id = 1;</code></p>
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">string whatsapp_phone_number_id = 1 [(.logger.name) = &quot;whatsappPhoneNumberID&quot;];</code></p>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -2566,8 +2980,10 @@ It is the for a user initiated call</p>
                                                     <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#property_participant_identity">$participant_identity</a></li>
                                                     <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#property_participant_metadata">$participant_metadata</a></li>
                                                     <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#property_participant_name">$participant_name</a></li>
+                                                    <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#property_ringing_timeout">$ringing_timeout</a></li>
                                                     <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#property_room_name">$room_name</a></li>
                                                     <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#property_sdp">$sdp</a></li>
+                                                    <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#property_wait_until_answered">$wait_until_answered</a></li>
                                                     <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#property_whatsapp_api_key">$whatsapp_api_key</a></li>
                                                     <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#property_whatsapp_biz_opaque_callback_data">$whatsapp_biz_opaque_callback_data</a></li>
                                                     <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#property_whatsapp_call_id">$whatsapp_call_id</a></li>
@@ -2582,6 +2998,7 @@ It is the for a user initiated call</p>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_clearRingingTimeout">clearRingingTimeout()</a></li>
                                             <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_clearSdp">clearSdp()</a></li>
                                             <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_getAgents">getAgents()</a></li>
                                             <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_getDestinationCountry">getDestinationCountry()</a></li>
@@ -2589,13 +3006,16 @@ It is the for a user initiated call</p>
                                             <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_getParticipantIdentity">getParticipantIdentity()</a></li>
                                             <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_getParticipantMetadata">getParticipantMetadata()</a></li>
                                             <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_getParticipantName">getParticipantName()</a></li>
+                                            <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_getRingingTimeout">getRingingTimeout()</a></li>
                                             <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_getRoomName">getRoomName()</a></li>
                                             <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_getSdp">getSdp()</a></li>
+                                            <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_getWaitUntilAnswered">getWaitUntilAnswered()</a></li>
                                             <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_getWhatsappApiKey">getWhatsappApiKey()</a></li>
                                             <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_getWhatsappBizOpaqueCallbackData">getWhatsappBizOpaqueCallbackData()</a></li>
                                             <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_getWhatsappCallId">getWhatsappCallId()</a></li>
                                             <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_getWhatsappCloudApiVersion">getWhatsappCloudApiVersion()</a></li>
                                             <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_getWhatsappPhoneNumberId">getWhatsappPhoneNumberId()</a></li>
+                                            <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_hasRingingTimeout">hasRingingTimeout()</a></li>
                                             <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_hasSdp">hasSdp()</a></li>
                                             <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_setAgents">setAgents()</a></li>
                                             <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_setDestinationCountry">setDestinationCountry()</a></li>
@@ -2603,8 +3023,10 @@ It is the for a user initiated call</p>
                                             <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_setParticipantIdentity">setParticipantIdentity()</a></li>
                                             <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_setParticipantMetadata">setParticipantMetadata()</a></li>
                                             <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_setParticipantName">setParticipantName()</a></li>
+                                            <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_setRingingTimeout">setRingingTimeout()</a></li>
                                             <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_setRoomName">setRoomName()</a></li>
                                             <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_setSdp">setSdp()</a></li>
+                                            <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_setWaitUntilAnswered">setWaitUntilAnswered()</a></li>
                                             <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_setWhatsappApiKey">setWhatsappApiKey()</a></li>
                                             <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_setWhatsappBizOpaqueCallbackData">setWhatsappBizOpaqueCallbackData()</a></li>
                                             <li class=""><a href="classes/Livekit-AcceptWhatsAppCallRequest.html#method_setWhatsappCallId">setWhatsappCallId()</a></li>

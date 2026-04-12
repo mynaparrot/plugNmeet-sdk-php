@@ -83,6 +83,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/livekit-createprivatelinkrequest.html" class="">CreatePrivateLinkRequest</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/livekit-datapacket.html" class="">DataPacket</a>
                 
             </li>
@@ -119,11 +123,35 @@
                 
             </li>
                     <li>
+                <a href="namespaces/livekit-privatelink.html" class="">PrivateLink</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-privatelinkstatus.html" class="">PrivateLinkStatus</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/livekit-requestresponse.html" class="">RequestResponse</a>
                 
             </li>
                     <li>
+                <a href="namespaces/livekit-scenario.html" class="">Scenario</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-scenariogroup.html" class="">ScenarioGroup</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/livekit-serverinfo.html" class="">ServerInfo</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-simulationrun.html" class="">SimulationRun</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-simulationrunsummary.html" class="">SimulationRunSummary</a>
                 
             </li>
                     <li>
@@ -161,10 +189,6 @@
                 
             </li>
             </ul>
-
-                                    <h4 class="phpdocumentor-sidebar__root-namespace">
-    <a href="namespaces/replay.html" class="">Replay</a>
-</h4>
 
                         </section>
                 <section class="phpdocumentor-sidebar__category -packages">
@@ -323,6 +347,13 @@ so not recommended for rooms with frequent subscription changes</dd>
 </dt>
 <dd>Define agents that should be dispatched to this room</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Livekit-RoomConfiguration.html#property_tags">$tags</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Tags to attach to the room</dd>
+
     </dl>
 
 <h4 id="toc-methods">
@@ -416,6 +447,13 @@ so not recommended for rooms with frequent subscription changes</dd>
 so not recommended for rooms with frequent subscription changes</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-RoomConfiguration.html#method_getTags">getTags()</a>
+    <span>
+                                &nbsp;: <abbr title="\Google\Protobuf\Internal\MapField">MapField</abbr>    </span>
+</dt>
+<dd>Tags to attach to the room</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-RoomConfiguration.html#method_hasEgress">hasEgress()</a>
     <span>
                                 &nbsp;: mixed    </span>
@@ -491,6 +529,13 @@ so not recommended for rooms with frequent subscription changes</dd>
 </dt>
 <dd>improves A/V sync when playout_delay set to a value larger than 200ms. It will disables transceiver re-use
 so not recommended for rooms with frequent subscription changes</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-RoomConfiguration.html#method_setTags">setTags()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>Tags to attach to the room</dd>
 
     </dl>
 
@@ -904,6 +949,46 @@ so not recommended for rooms with frequent subscription changes</p>
         
 
 </article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_tags">
+        $tags
+        <a href="classes/Livekit-RoomConfiguration.html#property_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RoomConfiguration.php"><a href="files/src-gen-livekit-roomconfiguration.html"><abbr title="src/gen/Livekit/RoomConfiguration.php">RoomConfiguration.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">81</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Tags to attach to the room</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$tags</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">map&lt;string, string&gt; tags = 12;</code></p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
             </section>
 
             <section class="phpdocumentor-methods">
@@ -926,7 +1011,7 @@ so not recommended for rooms with frequent subscription changes</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RoomConfiguration.php"><a href="files/src-gen-livekit-roomconfiguration.html"><abbr title="src/gen/Livekit/RoomConfiguration.php">RoomConfiguration.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 
@@ -969,6 +1054,8 @@ Optional. Data for populating the Message object.</p>
       so not recommended for rooms with frequent subscription changes
 @type \Livekit\RoomAgentDispatch[] $agents
       Define agents that should be dispatched to this room
+@type array|\Google\Protobuf\Internal\MapField $tags
+      Tags to attach to the room
 </code></pre>
 <p>}</p>
 </section>
@@ -996,7 +1083,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RoomConfiguration.php"><a href="files/src-gen-livekit-roomconfiguration.html"><abbr title="src/gen/Livekit/RoomConfiguration.php">RoomConfiguration.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">256</span>
+    <span class="phpdocumentor-element-found-in__line">264</span>
 
     </aside>
 
@@ -1030,7 +1117,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RoomConfiguration.php"><a href="files/src-gen-livekit-roomconfiguration.html"><abbr title="src/gen/Livekit/RoomConfiguration.php">RoomConfiguration.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">358</span>
+    <span class="phpdocumentor-element-found-in__line">366</span>
 
     </aside>
 
@@ -1071,7 +1158,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RoomConfiguration.php"><a href="files/src-gen-livekit-roomconfiguration.html"><abbr title="src/gen/Livekit/RoomConfiguration.php">RoomConfiguration.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">168</span>
+    <span class="phpdocumentor-element-found-in__line">176</span>
 
     </aside>
 
@@ -1112,7 +1199,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RoomConfiguration.php"><a href="files/src-gen-livekit-roomconfiguration.html"><abbr title="src/gen/Livekit/RoomConfiguration.php">RoomConfiguration.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">246</span>
+    <span class="phpdocumentor-element-found-in__line">254</span>
 
     </aside>
 
@@ -1153,7 +1240,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RoomConfiguration.php"><a href="files/src-gen-livekit-roomconfiguration.html"><abbr title="src/gen/Livekit/RoomConfiguration.php">RoomConfiguration.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">142</span>
+    <span class="phpdocumentor-element-found-in__line">150</span>
 
     </aside>
 
@@ -1194,7 +1281,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RoomConfiguration.php"><a href="files/src-gen-livekit-roomconfiguration.html"><abbr title="src/gen/Livekit/RoomConfiguration.php">RoomConfiguration.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">194</span>
+    <span class="phpdocumentor-element-found-in__line">202</span>
 
     </aside>
 
@@ -1235,7 +1322,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RoomConfiguration.php"><a href="files/src-gen-livekit-roomconfiguration.html"><abbr title="src/gen/Livekit/RoomConfiguration.php">RoomConfiguration.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">306</span>
+    <span class="phpdocumentor-element-found-in__line">314</span>
 
     </aside>
 
@@ -1274,7 +1361,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RoomConfiguration.php"><a href="files/src-gen-livekit-roomconfiguration.html"><abbr title="src/gen/Livekit/RoomConfiguration.php">RoomConfiguration.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">220</span>
+    <span class="phpdocumentor-element-found-in__line">228</span>
 
     </aside>
 
@@ -1315,7 +1402,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RoomConfiguration.php"><a href="files/src-gen-livekit-roomconfiguration.html"><abbr title="src/gen/Livekit/RoomConfiguration.php">RoomConfiguration.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">282</span>
+    <span class="phpdocumentor-element-found-in__line">290</span>
 
     </aside>
 
@@ -1356,7 +1443,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RoomConfiguration.php"><a href="files/src-gen-livekit-roomconfiguration.html"><abbr title="src/gen/Livekit/RoomConfiguration.php">RoomConfiguration.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">116</span>
+    <span class="phpdocumentor-element-found-in__line">124</span>
 
     </aside>
 
@@ -1397,7 +1484,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RoomConfiguration.php"><a href="files/src-gen-livekit-roomconfiguration.html"><abbr title="src/gen/Livekit/RoomConfiguration.php">RoomConfiguration.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">331</span>
+    <span class="phpdocumentor-element-found-in__line">339</span>
 
     </aside>
 
@@ -1431,6 +1518,47 @@ so not recommended for rooms with frequent subscription changes</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getTags">
+        getTags()
+        <a href="classes/Livekit-RoomConfiguration.html#method_getTags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RoomConfiguration.php"><a href="files/src-gen-livekit-roomconfiguration.html"><abbr title="src/gen/Livekit/RoomConfiguration.php">RoomConfiguration.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">392</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Tags to attach to the room</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getTags</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Internal\MapField">MapField</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">map&lt;string, string&gt; tags = 12;</code></p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Internal\MapField">MapField</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_hasEgress">
         hasEgress()
         <a href="classes/Livekit-RoomConfiguration.html#method_hasEgress" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1439,7 +1567,7 @@ so not recommended for rooms with frequent subscription changes</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RoomConfiguration.php"><a href="files/src-gen-livekit-roomconfiguration.html"><abbr title="src/gen/Livekit/RoomConfiguration.php">RoomConfiguration.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">251</span>
+    <span class="phpdocumentor-element-found-in__line">259</span>
 
     </aside>
 
@@ -1473,7 +1601,7 @@ so not recommended for rooms with frequent subscription changes</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RoomConfiguration.php"><a href="files/src-gen-livekit-roomconfiguration.html"><abbr title="src/gen/Livekit/RoomConfiguration.php">RoomConfiguration.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">370</span>
+    <span class="phpdocumentor-element-found-in__line">378</span>
 
     </aside>
 
@@ -1524,7 +1652,7 @@ so not recommended for rooms with frequent subscription changes</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RoomConfiguration.php"><a href="files/src-gen-livekit-roomconfiguration.html"><abbr title="src/gen/Livekit/RoomConfiguration.php">RoomConfiguration.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">180</span>
+    <span class="phpdocumentor-element-found-in__line">188</span>
 
     </aside>
 
@@ -1575,7 +1703,7 @@ so not recommended for rooms with frequent subscription changes</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RoomConfiguration.php"><a href="files/src-gen-livekit-roomconfiguration.html"><abbr title="src/gen/Livekit/RoomConfiguration.php">RoomConfiguration.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">268</span>
+    <span class="phpdocumentor-element-found-in__line">276</span>
 
     </aside>
 
@@ -1626,7 +1754,7 @@ so not recommended for rooms with frequent subscription changes</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RoomConfiguration.php"><a href="files/src-gen-livekit-roomconfiguration.html"><abbr title="src/gen/Livekit/RoomConfiguration.php">RoomConfiguration.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">154</span>
+    <span class="phpdocumentor-element-found-in__line">162</span>
 
     </aside>
 
@@ -1677,7 +1805,7 @@ so not recommended for rooms with frequent subscription changes</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RoomConfiguration.php"><a href="files/src-gen-livekit-roomconfiguration.html"><abbr title="src/gen/Livekit/RoomConfiguration.php">RoomConfiguration.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">206</span>
+    <span class="phpdocumentor-element-found-in__line">214</span>
 
     </aside>
 
@@ -1728,7 +1856,7 @@ so not recommended for rooms with frequent subscription changes</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RoomConfiguration.php"><a href="files/src-gen-livekit-roomconfiguration.html"><abbr title="src/gen/Livekit/RoomConfiguration.php">RoomConfiguration.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">316</span>
+    <span class="phpdocumentor-element-found-in__line">324</span>
 
     </aside>
 
@@ -1777,7 +1905,7 @@ so not recommended for rooms with frequent subscription changes</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RoomConfiguration.php"><a href="files/src-gen-livekit-roomconfiguration.html"><abbr title="src/gen/Livekit/RoomConfiguration.php">RoomConfiguration.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">232</span>
+    <span class="phpdocumentor-element-found-in__line">240</span>
 
     </aside>
 
@@ -1828,7 +1956,7 @@ so not recommended for rooms with frequent subscription changes</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RoomConfiguration.php"><a href="files/src-gen-livekit-roomconfiguration.html"><abbr title="src/gen/Livekit/RoomConfiguration.php">RoomConfiguration.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">294</span>
+    <span class="phpdocumentor-element-found-in__line">302</span>
 
     </aside>
 
@@ -1879,7 +2007,7 @@ so not recommended for rooms with frequent subscription changes</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RoomConfiguration.php"><a href="files/src-gen-livekit-roomconfiguration.html"><abbr title="src/gen/Livekit/RoomConfiguration.php">RoomConfiguration.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">128</span>
+    <span class="phpdocumentor-element-found-in__line">136</span>
 
     </aside>
 
@@ -1930,7 +2058,7 @@ so not recommended for rooms with frequent subscription changes</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RoomConfiguration.php"><a href="files/src-gen-livekit-roomconfiguration.html"><abbr title="src/gen/Livekit/RoomConfiguration.php">RoomConfiguration.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">344</span>
+    <span class="phpdocumentor-element-found-in__line">352</span>
 
     </aside>
 
@@ -1952,6 +2080,57 @@ so not recommended for rooms with frequent subscription changes</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$var</span>
                 : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setTags">
+        setTags()
+        <a href="classes/Livekit-RoomConfiguration.html#method_setTags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/RoomConfiguration.php"><a href="files/src-gen-livekit-roomconfiguration.html"><abbr title="src/gen/Livekit/RoomConfiguration.php">RoomConfiguration.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">404</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Tags to attach to the room</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setTags</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;|<abbr title="\Google\Protobuf\Internal\MapField">MapField</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">map&lt;string, string&gt; tags = 12;</code></p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;|<abbr title="\Google\Protobuf\Internal\MapField">MapField</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -2093,6 +2272,7 @@ so not recommended for rooms with frequent subscription changes</p>
                                                     <li class=""><a href="classes/Livekit-RoomConfiguration.html#property_name">$name</a></li>
                                                     <li class=""><a href="classes/Livekit-RoomConfiguration.html#property_sync_streams">$sync_streams</a></li>
                                                     <li class=""><a href="classes/Livekit-RoomConfiguration.html#property_agents">$agents</a></li>
+                                                    <li class=""><a href="classes/Livekit-RoomConfiguration.html#property_tags">$tags</a></li>
                                             </ul>
                 </li>
             
@@ -2111,6 +2291,7 @@ so not recommended for rooms with frequent subscription changes</p>
                                             <li class=""><a href="classes/Livekit-RoomConfiguration.html#method_getMinPlayoutDelay">getMinPlayoutDelay()</a></li>
                                             <li class=""><a href="classes/Livekit-RoomConfiguration.html#method_getName">getName()</a></li>
                                             <li class=""><a href="classes/Livekit-RoomConfiguration.html#method_getSyncStreams">getSyncStreams()</a></li>
+                                            <li class=""><a href="classes/Livekit-RoomConfiguration.html#method_getTags">getTags()</a></li>
                                             <li class=""><a href="classes/Livekit-RoomConfiguration.html#method_hasEgress">hasEgress()</a></li>
                                             <li class=""><a href="classes/Livekit-RoomConfiguration.html#method_setAgents">setAgents()</a></li>
                                             <li class=""><a href="classes/Livekit-RoomConfiguration.html#method_setDepartureTimeout">setDepartureTimeout()</a></li>
@@ -2122,6 +2303,7 @@ so not recommended for rooms with frequent subscription changes</p>
                                             <li class=""><a href="classes/Livekit-RoomConfiguration.html#method_setMinPlayoutDelay">setMinPlayoutDelay()</a></li>
                                             <li class=""><a href="classes/Livekit-RoomConfiguration.html#method_setName">setName()</a></li>
                                             <li class=""><a href="classes/Livekit-RoomConfiguration.html#method_setSyncStreams">setSyncStreams()</a></li>
+                                            <li class=""><a href="classes/Livekit-RoomConfiguration.html#method_setTags">setTags()</a></li>
                                     </ul>
             </li>
                     </ul>
