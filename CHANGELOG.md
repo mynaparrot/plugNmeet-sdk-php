@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.2](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.1.1...v2.1.2) (2026-04-20)
+
+
+### Bug Fixes
+
+* allow to set custom HttpClient ([da72cb6](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/da72cb6e14401f2e62283fa5882e4268f8de0a40))
+
 ## [2.1.1](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.1.0...v2.1.1) (2026-04-12)
 
 
