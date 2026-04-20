@@ -27,10 +27,6 @@ namespace Mynaparrot\Plugnmeet;
 use Exception;
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
-use GuzzleHttp\Client;
-use GuzzleHttp\Exception\ConnectException;
-use GuzzleHttp\Exception\GuzzleException;
-use GuzzleHttp\Exception\RequestException;
 use Mynaparrot\PlugnmeetProto\ArtifactInfoReq;
 use Mynaparrot\PlugnmeetProto\ArtifactInfoRes;
 use Mynaparrot\PlugnmeetProto\CreateRoomReq;
@@ -91,9 +87,9 @@ class PlugNmeet
     protected string $apiSecret;
 
     /**
-     * @var Client
+     * @var HttpClientInterface
      */
-    protected Client $guzzleClient;
+    protected HttpClientInterface $httpClient;
 
     /**
      * @var string
@@ -109,23 +105,27 @@ class PlugNmeet
      * @param string $serverUrl plugNmeet server URL
      * @param string $apiKey plugNmeet API_Key
      * @param string $apiSecret plugNmeet API_Secret
+     * @param int $timeout
+     * @param bool $verifySSL
+     * @param HttpClientInterface|null $httpClient
      */
     public function __construct(
-        string $serverUrl,
-        string $apiKey,
-        string $apiSecret,
-        int $timeout = 60,
-        bool $verifySSL = true
+        string               $serverUrl,
+        string               $apiKey,
+        string               $apiSecret,
+        int                  $timeout = 60,
+        bool                 $verifySSL = true,
+        ?HttpClientInterface $httpClient = null
     ) {
         $this->serverUrl = rtrim($serverUrl, "/");
         $this->apiKey = $apiKey;
         $this->apiSecret = $apiSecret;
 
-        $this->guzzleClient = new Client([
-                                             'base_uri' => $this->serverUrl,
-                                             'timeout' => $timeout,
-                                             'verify' => $verifySSL,
-                                         ]);
+        if ($httpClient === null) {
+            $this->httpClient = new GuzzleHttpClient($timeout, $verifySSL);
+        } else {
+            $this->httpClient = $httpClient;
+        }
     }
 
     /**
@@ -606,54 +606,23 @@ class PlugNmeet
         $signature = hash_hmac($this->algo, $body, $this->apiSecret);
 
         try {
-            $response = $this->guzzleClient->post($this->defaultPath . $path, [
-                'headers' => [
+            $url = $this->serverUrl . $this->defaultPath . $path;
+            $response = $this->httpClient->post(
+                $url,
+                $body,
+                [
                     'Content-Type' => 'application/json',
                     'API-KEY' => $this->apiKey,
                     'HASH-SIGNATURE' => $signature,
-                ],
-                'body' => $body,
-            ]);
+                ]
+            );
 
             $output->status = true;
-            $output->response = $response->getBody()->getContents();
-        } catch (ConnectException $e) {
-            // Extract the core error message from cURL errors
-            $message = $e->getMessage();
-            if (preg_match('/cURL error \d+: (.*) \(see/', $message, $matches)) {
-                $output->response = $matches[1];
-            } else {
-                $output->response = 'Connection Error: ' . $message;
-            }
-        } catch (RequestException $e) {
-            $output->response = $this->handleRequestException($e);
-        } catch (GuzzleException $e) {
-            $output->response = 'Guzzle Error: ' . $e->getMessage();
+            $output->response = $response;
         } catch (Exception $e) {
             $output->response = $e->getMessage();
         }
 
         return $output;
-    }
-
-    /**
-     * Extracts a meaningful error response from a RequestException.
-     *
-     * @param RequestException $e
-     * @return mixed|string
-     */
-    private function handleRequestException(RequestException $e): mixed
-    {
-        if (!$e->hasResponse()) {
-            return $e->getMessage();
-        }
-
-        $responseBody = $e->getResponse()->getBody()->getContents();
-        $decodedResponse = json_decode($responseBody);
-
-        // Return the decoded JSON if successful, otherwise fall back to the raw body.
-        return json_last_error() === JSON_ERROR_NONE
-            ? $decodedResponse
-            : $responseBody;
     }
 }

@@ -18,7 +18,7 @@
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
  * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * OUT of OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
 
@@ -67,6 +67,7 @@ use Mynaparrot\PlugnmeetProto\UpdateRecordingMetadataReq;
 use Mynaparrot\PlugnmeetProto\UpdateRecordingMetadataRes;
 use Mynaparrot\PlugnmeetProto\UserInfo;
 use Mynaparrot\PlugnmeetProto\UserMetadata;
+use Mynaparrot\Plugnmeet\HttpClientInterface;
 
 require "../vendor/autoload.php";
 
@@ -84,15 +85,17 @@ class plugNmeetConnect
      * @param stdClass $config
      * @param int $timeout
      * @param bool $verifySSL
+     * @param HttpClientInterface|null $httpClient
      */
-    public function __construct(stdClass $config, int $timeout = 60, bool $verifySSL = true)
+    public function __construct(stdClass $config, int $timeout = 60, bool $verifySSL = true, ?HttpClientInterface $httpClient = null)
     {
         $this->plugnmeet = new PlugNmeet(
             $config->plugnmeet_server_url,
             $config->plugnmeet_api_key,
             $config->plugnmeet_secret,
             $timeout,
-            $verifySSL
+            $verifySSL,
+            $httpClient
         );
     }
 
