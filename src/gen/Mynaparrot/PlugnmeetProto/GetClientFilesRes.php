@@ -23,25 +23,29 @@ class GetClientFilesRes extends \Google\Protobuf\Internal\Message
      */
     protected $msg = '';
     /**
-     * Generated from protobuf field <code>repeated string css = 3 [deprecated = true];</code>
+     * Generated from protobuf field <code>.plugnmeet.StatusCode status_code = 3;</code>
+     */
+    protected $status_code = 0;
+    /**
+     * Generated from protobuf field <code>repeated string css = 4 [deprecated = true];</code>
      * @deprecated
      */
     private $css;
     /**
-     * Generated from protobuf field <code>repeated string js = 4 [deprecated = true];</code>
+     * Generated from protobuf field <code>repeated string js = 5 [deprecated = true];</code>
      * @deprecated
      */
     private $js;
     /**
-     * Generated from protobuf field <code>repeated string css_files = 5;</code>
+     * Generated from protobuf field <code>repeated string css_files = 6;</code>
      */
     private $css_files;
     /**
-     * Generated from protobuf field <code>repeated string js_files = 6;</code>
+     * Generated from protobuf field <code>repeated string js_files = 7;</code>
      */
     private $js_files;
     /**
-     * Generated from protobuf field <code>optional string static_assets_path = 7;</code>
+     * Generated from protobuf field <code>optional string static_assets_path = 8;</code>
      */
     protected $static_assets_path = null;
 
@@ -53,6 +57,7 @@ class GetClientFilesRes extends \Google\Protobuf\Internal\Message
      *
      *     @type bool $status
      *     @type string $msg
+     *     @type int $status_code
      *     @type string[] $css
      *     @type string[] $js
      *     @type string[] $css_files
@@ -110,7 +115,29 @@ class GetClientFilesRes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated string css = 3 [deprecated = true];</code>
+     * Generated from protobuf field <code>.plugnmeet.StatusCode status_code = 3;</code>
+     * @return int
+     */
+    public function getStatusCode()
+    {
+        return $this->status_code;
+    }
+
+    /**
+     * Generated from protobuf field <code>.plugnmeet.StatusCode status_code = 3;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setStatusCode($var)
+    {
+        GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\StatusCode::class);
+        $this->status_code = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated string css = 4 [deprecated = true];</code>
      * @return RepeatedField<string>
      * @deprecated
      */
@@ -123,7 +150,7 @@ class GetClientFilesRes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated string css = 3 [deprecated = true];</code>
+     * Generated from protobuf field <code>repeated string css = 4 [deprecated = true];</code>
      * @param string[] $var
      * @return $this
      * @deprecated
@@ -140,7 +167,7 @@ class GetClientFilesRes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated string js = 4 [deprecated = true];</code>
+     * Generated from protobuf field <code>repeated string js = 5 [deprecated = true];</code>
      * @return RepeatedField<string>
      * @deprecated
      */
@@ -153,7 +180,7 @@ class GetClientFilesRes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated string js = 4 [deprecated = true];</code>
+     * Generated from protobuf field <code>repeated string js = 5 [deprecated = true];</code>
      * @param string[] $var
      * @return $this
      * @deprecated
@@ -170,7 +197,7 @@ class GetClientFilesRes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated string css_files = 5;</code>
+     * Generated from protobuf field <code>repeated string css_files = 6;</code>
      * @return RepeatedField<string>
      */
     public function getCssFiles()
@@ -179,7 +206,7 @@ class GetClientFilesRes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated string css_files = 5;</code>
+     * Generated from protobuf field <code>repeated string css_files = 6;</code>
      * @param string[] $var
      * @return $this
      */
@@ -192,7 +219,7 @@ class GetClientFilesRes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated string js_files = 6;</code>
+     * Generated from protobuf field <code>repeated string js_files = 7;</code>
      * @return RepeatedField<string>
      */
     public function getJsFiles()
@@ -201,7 +228,7 @@ class GetClientFilesRes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated string js_files = 6;</code>
+     * Generated from protobuf field <code>repeated string js_files = 7;</code>
      * @param string[] $var
      * @return $this
      */
@@ -214,7 +241,7 @@ class GetClientFilesRes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional string static_assets_path = 7;</code>
+     * Generated from protobuf field <code>optional string static_assets_path = 8;</code>
      * @return string
      */
     public function getStaticAssetsPath()
@@ -233,7 +260,7 @@ class GetClientFilesRes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional string static_assets_path = 7;</code>
+     * Generated from protobuf field <code>optional string static_assets_path = 8;</code>
      * @param string $var
      * @return $this
      */

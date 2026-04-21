@@ -25,7 +25,11 @@ class GetArtifactDownloadTokenRes extends \Google\Protobuf\Internal\Message
      */
     protected $msg = '';
     /**
-     * Generated from protobuf field <code>optional string token = 3;</code>
+     * Generated from protobuf field <code>.plugnmeet.StatusCode status_code = 3;</code>
+     */
+    protected $status_code = 0;
+    /**
+     * Generated from protobuf field <code>optional string token = 4;</code>
      */
     protected $token = null;
 
@@ -37,6 +41,7 @@ class GetArtifactDownloadTokenRes extends \Google\Protobuf\Internal\Message
      *
      *     @type bool $status
      *     @type string $msg
+     *     @type int $status_code
      *     @type string $token
      * }
      */
@@ -90,7 +95,29 @@ class GetArtifactDownloadTokenRes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional string token = 3;</code>
+     * Generated from protobuf field <code>.plugnmeet.StatusCode status_code = 3;</code>
+     * @return int
+     */
+    public function getStatusCode()
+    {
+        return $this->status_code;
+    }
+
+    /**
+     * Generated from protobuf field <code>.plugnmeet.StatusCode status_code = 3;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setStatusCode($var)
+    {
+        GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\StatusCode::class);
+        $this->status_code = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string token = 4;</code>
      * @return string
      */
     public function getToken()
@@ -109,7 +136,7 @@ class GetArtifactDownloadTokenRes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional string token = 3;</code>
+     * Generated from protobuf field <code>optional string token = 4;</code>
      * @param string $var
      * @return $this
      */

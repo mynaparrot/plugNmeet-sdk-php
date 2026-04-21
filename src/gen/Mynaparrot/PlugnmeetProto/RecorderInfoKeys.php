@@ -21,14 +21,26 @@ class RecorderInfoKeys
      */
     const RECORDER_INFO_LAST_PING = 1;
     /**
+     * Total CPU cores
+     *
+     * Generated from protobuf enum <code>RECORDER_INFO_TOTAL_CORES = 2;</code>
+     */
+    const RECORDER_INFO_TOTAL_CORES = 2;
+    /**
      * Generated from protobuf enum <code>RECORDER_INFO_CURRENT_PROGRESS = 3;</code>
      */
     const RECORDER_INFO_CURRENT_PROGRESS = 3;
+    /**
+     * Generated from protobuf enum <code>RECORDER_INFO_CPU_SCORE = 4;</code>
+     */
+    const RECORDER_INFO_CPU_SCORE = 4;
 
     private static $valueToName = [
         self::RECORDER_INFO_MAX_LIMIT => 'RECORDER_INFO_MAX_LIMIT',
         self::RECORDER_INFO_LAST_PING => 'RECORDER_INFO_LAST_PING',
+        self::RECORDER_INFO_TOTAL_CORES => 'RECORDER_INFO_TOTAL_CORES',
         self::RECORDER_INFO_CURRENT_PROGRESS => 'RECORDER_INFO_CURRENT_PROGRESS',
+        self::RECORDER_INFO_CPU_SCORE => 'RECORDER_INFO_CPU_SCORE',
     ];
 
     public static function name($value)

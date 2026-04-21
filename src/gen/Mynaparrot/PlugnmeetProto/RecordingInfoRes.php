@@ -23,11 +23,15 @@ class RecordingInfoRes extends \Google\Protobuf\Internal\Message
      */
     protected $msg = '';
     /**
-     * Generated from protobuf field <code>.plugnmeet.RecordingInfo recording_info = 3;</code>
+     * Generated from protobuf field <code>.plugnmeet.StatusCode status_code = 3;</code>
+     */
+    protected $status_code = 0;
+    /**
+     * Generated from protobuf field <code>.plugnmeet.RecordingInfo recording_info = 4;</code>
      */
     protected $recording_info = null;
     /**
-     * Generated from protobuf field <code>.plugnmeet.PastRoomInfo room_info = 4;</code>
+     * Generated from protobuf field <code>.plugnmeet.PastRoomInfo room_info = 5;</code>
      */
     protected $room_info = null;
 
@@ -39,6 +43,7 @@ class RecordingInfoRes extends \Google\Protobuf\Internal\Message
      *
      *     @type bool $status
      *     @type string $msg
+     *     @type int $status_code
      *     @type \Mynaparrot\PlugnmeetProto\RecordingInfo $recording_info
      *     @type \Mynaparrot\PlugnmeetProto\PastRoomInfo $room_info
      * }
@@ -93,7 +98,29 @@ class RecordingInfoRes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.RecordingInfo recording_info = 3;</code>
+     * Generated from protobuf field <code>.plugnmeet.StatusCode status_code = 3;</code>
+     * @return int
+     */
+    public function getStatusCode()
+    {
+        return $this->status_code;
+    }
+
+    /**
+     * Generated from protobuf field <code>.plugnmeet.StatusCode status_code = 3;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setStatusCode($var)
+    {
+        GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\StatusCode::class);
+        $this->status_code = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.plugnmeet.RecordingInfo recording_info = 4;</code>
      * @return \Mynaparrot\PlugnmeetProto\RecordingInfo|null
      */
     public function getRecordingInfo()
@@ -112,7 +139,7 @@ class RecordingInfoRes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.RecordingInfo recording_info = 3;</code>
+     * Generated from protobuf field <code>.plugnmeet.RecordingInfo recording_info = 4;</code>
      * @param \Mynaparrot\PlugnmeetProto\RecordingInfo $var
      * @return $this
      */
@@ -125,7 +152,7 @@ class RecordingInfoRes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.PastRoomInfo room_info = 4;</code>
+     * Generated from protobuf field <code>.plugnmeet.PastRoomInfo room_info = 5;</code>
      * @return \Mynaparrot\PlugnmeetProto\PastRoomInfo|null
      */
     public function getRoomInfo()
@@ -144,7 +171,7 @@ class RecordingInfoRes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.PastRoomInfo room_info = 4;</code>
+     * Generated from protobuf field <code>.plugnmeet.PastRoomInfo room_info = 5;</code>
      * @param \Mynaparrot\PlugnmeetProto\PastRoomInfo $var
      * @return $this
      */

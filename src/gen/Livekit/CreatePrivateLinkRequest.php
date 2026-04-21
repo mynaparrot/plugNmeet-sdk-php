@@ -30,6 +30,10 @@ class CreatePrivateLinkRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string endpoint = 5;</code>
      */
     protected $endpoint = '';
+    /**
+     * Generated from protobuf field <code>optional string cloud_region = 6;</code>
+     */
+    protected $cloud_region = null;
     protected $config;
 
     /**
@@ -42,6 +46,7 @@ class CreatePrivateLinkRequest extends \Google\Protobuf\Internal\Message
      *     @type string $region
      *     @type int $port
      *     @type string $endpoint
+     *     @type string $cloud_region
      *     @type \Livekit\CreatePrivateLinkRequest\AWSCreateConfig $aws
      * }
      */
@@ -134,6 +139,38 @@ class CreatePrivateLinkRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->endpoint = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string cloud_region = 6;</code>
+     * @return string
+     */
+    public function getCloudRegion()
+    {
+        return isset($this->cloud_region) ? $this->cloud_region : '';
+    }
+
+    public function hasCloudRegion()
+    {
+        return isset($this->cloud_region);
+    }
+
+    public function clearCloudRegion()
+    {
+        unset($this->cloud_region);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string cloud_region = 6;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setCloudRegion($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->cloud_region = $var;
 
         return $this;
     }

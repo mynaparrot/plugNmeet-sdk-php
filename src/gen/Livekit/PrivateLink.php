@@ -38,6 +38,10 @@ class PrivateLink extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string connection_endpoint = 7;</code>
      */
     protected $connection_endpoint = '';
+    /**
+     * Generated from protobuf field <code>string cloud_region = 8;</code>
+     */
+    protected $cloud_region = '';
     protected $config;
 
     /**
@@ -52,6 +56,7 @@ class PrivateLink extends \Google\Protobuf\Internal\Message
      *     @type int $port
      *     @type string $endpoint
      *     @type string $connection_endpoint
+     *     @type string $cloud_region
      *     @type \Livekit\PrivateLink\AWSConfig $aws
      * }
      */
@@ -188,6 +193,28 @@ class PrivateLink extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->connection_endpoint = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string cloud_region = 8;</code>
+     * @return string
+     */
+    public function getCloudRegion()
+    {
+        return $this->cloud_region;
+    }
+
+    /**
+     * Generated from protobuf field <code>string cloud_region = 8;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setCloudRegion($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->cloud_region = $var;
 
         return $this;
     }

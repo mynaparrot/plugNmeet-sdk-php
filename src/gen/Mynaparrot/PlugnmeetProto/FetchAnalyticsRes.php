@@ -23,7 +23,11 @@ class FetchAnalyticsRes extends \Google\Protobuf\Internal\Message
      */
     protected $msg = '';
     /**
-     * Generated from protobuf field <code>.plugnmeet.FetchAnalyticsResult result = 3;</code>
+     * Generated from protobuf field <code>.plugnmeet.StatusCode status_code = 3;</code>
+     */
+    protected $status_code = 0;
+    /**
+     * Generated from protobuf field <code>.plugnmeet.FetchAnalyticsResult result = 4;</code>
      */
     protected $result = null;
 
@@ -35,6 +39,7 @@ class FetchAnalyticsRes extends \Google\Protobuf\Internal\Message
      *
      *     @type bool $status
      *     @type string $msg
+     *     @type int $status_code
      *     @type \Mynaparrot\PlugnmeetProto\FetchAnalyticsResult $result
      * }
      */
@@ -88,7 +93,29 @@ class FetchAnalyticsRes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.FetchAnalyticsResult result = 3;</code>
+     * Generated from protobuf field <code>.plugnmeet.StatusCode status_code = 3;</code>
+     * @return int
+     */
+    public function getStatusCode()
+    {
+        return $this->status_code;
+    }
+
+    /**
+     * Generated from protobuf field <code>.plugnmeet.StatusCode status_code = 3;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setStatusCode($var)
+    {
+        GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\StatusCode::class);
+        $this->status_code = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.plugnmeet.FetchAnalyticsResult result = 4;</code>
      * @return \Mynaparrot\PlugnmeetProto\FetchAnalyticsResult|null
      */
     public function getResult()
@@ -107,7 +134,7 @@ class FetchAnalyticsRes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.FetchAnalyticsResult result = 3;</code>
+     * Generated from protobuf field <code>.plugnmeet.FetchAnalyticsResult result = 4;</code>
      * @param \Mynaparrot\PlugnmeetProto\FetchAnalyticsResult $var
      * @return $this
      */

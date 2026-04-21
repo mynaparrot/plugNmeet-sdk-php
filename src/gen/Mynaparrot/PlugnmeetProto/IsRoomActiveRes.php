@@ -19,13 +19,17 @@ class IsRoomActiveRes extends \Google\Protobuf\Internal\Message
      */
     protected $status = false;
     /**
-     * Generated from protobuf field <code>bool is_active = 2;</code>
-     */
-    protected $is_active = false;
-    /**
-     * Generated from protobuf field <code>string msg = 3;</code>
+     * Generated from protobuf field <code>string msg = 2;</code>
      */
     protected $msg = '';
+    /**
+     * Generated from protobuf field <code>.plugnmeet.StatusCode status_code = 3;</code>
+     */
+    protected $status_code = 0;
+    /**
+     * Generated from protobuf field <code>bool is_active = 4;</code>
+     */
+    protected $is_active = false;
 
     /**
      * Constructor.
@@ -34,8 +38,9 @@ class IsRoomActiveRes extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type bool $status
-     *     @type bool $is_active
      *     @type string $msg
+     *     @type int $status_code
+     *     @type bool $is_active
      * }
      */
     public function __construct($data = NULL) {
@@ -66,29 +71,7 @@ class IsRoomActiveRes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>bool is_active = 2;</code>
-     * @return bool
-     */
-    public function getIsActive()
-    {
-        return $this->is_active;
-    }
-
-    /**
-     * Generated from protobuf field <code>bool is_active = 2;</code>
-     * @param bool $var
-     * @return $this
-     */
-    public function setIsActive($var)
-    {
-        GPBUtil::checkBool($var);
-        $this->is_active = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>string msg = 3;</code>
+     * Generated from protobuf field <code>string msg = 2;</code>
      * @return string
      */
     public function getMsg()
@@ -97,7 +80,7 @@ class IsRoomActiveRes extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string msg = 3;</code>
+     * Generated from protobuf field <code>string msg = 2;</code>
      * @param string $var
      * @return $this
      */
@@ -105,6 +88,50 @@ class IsRoomActiveRes extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->msg = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.plugnmeet.StatusCode status_code = 3;</code>
+     * @return int
+     */
+    public function getStatusCode()
+    {
+        return $this->status_code;
+    }
+
+    /**
+     * Generated from protobuf field <code>.plugnmeet.StatusCode status_code = 3;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setStatusCode($var)
+    {
+        GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\StatusCode::class);
+        $this->status_code = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_active = 4;</code>
+     * @return bool
+     */
+    public function getIsActive()
+    {
+        return $this->is_active;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_active = 4;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsActive($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->is_active = $var;
 
         return $this;
     }

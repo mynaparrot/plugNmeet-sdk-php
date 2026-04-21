@@ -40,6 +40,14 @@ class RoomInternal extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool replay_enabled = 6;</code>
      */
     protected $replay_enabled = false;
+    /**
+     * Generated from protobuf field <code>bool export_room = 7;</code>
+     */
+    protected $export_room = false;
+    /**
+     * Generated from protobuf field <code>map<string, string> tags = 8;</code>
+     */
+    private $tags;
 
     /**
      * Constructor.
@@ -53,6 +61,8 @@ class RoomInternal extends \Google\Protobuf\Internal\Message
      *     @type \Livekit\RoomAgentDispatch[] $agent_dispatches
      *     @type bool $sync_streams
      *     @type bool $replay_enabled
+     *     @type bool $export_room
+     *     @type array|\Google\Protobuf\Internal\MapField $tags
      * }
      */
     public function __construct($data = NULL) {
@@ -218,6 +228,50 @@ class RoomInternal extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->replay_enabled = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool export_room = 7;</code>
+     * @return bool
+     */
+    public function getExportRoom()
+    {
+        return $this->export_room;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool export_room = 7;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setExportRoom($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->export_room = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>map<string, string> tags = 8;</code>
+     * @return \Google\Protobuf\Internal\MapField
+     */
+    public function getTags()
+    {
+        return $this->tags;
+    }
+
+    /**
+     * Generated from protobuf field <code>map<string, string> tags = 8;</code>
+     * @param array|\Google\Protobuf\Internal\MapField $var
+     * @return $this
+     */
+    public function setTags($var)
+    {
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->tags = $arr;
 
         return $this;
     }
