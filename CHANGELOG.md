@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.3](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.1.2...v2.1.3) (2026-04-21)
+
+
+### Bug Fixes
+
+* bump proto ([5764cf2](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/5764cf2631657e0662d113244bf9217e22033b64))
+
 ## [2.1.2](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.1.1...v2.1.2) (2026-04-20)
 
 
