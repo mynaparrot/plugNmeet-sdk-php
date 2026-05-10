@@ -42,6 +42,10 @@ class DeployAgentRequest extends \Google\Protobuf\Internal\Message
      * @deprecated
      */
     protected $cpu_req = '';
+    /**
+     * Generated from protobuf field <code>string environment = 7;</code>
+     */
+    protected $environment = '';
 
     /**
      * Constructor.
@@ -55,6 +59,7 @@ class DeployAgentRequest extends \Google\Protobuf\Internal\Message
      *     @type int $replicas
      *     @type int $max_replicas
      *     @type string $cpu_req
+     *     @type string $environment
      * }
      */
     public function __construct($data = NULL) {
@@ -214,6 +219,28 @@ class DeployAgentRequest extends \Google\Protobuf\Internal\Message
         @trigger_error('cpu_req is deprecated.', E_USER_DEPRECATED);
         GPBUtil::checkString($var, True);
         $this->cpu_req = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string environment = 7;</code>
+     * @return string
+     */
+    public function getEnvironment()
+    {
+        return $this->environment;
+    }
+
+    /**
+     * Generated from protobuf field <code>string environment = 7;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setEnvironment($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->environment = $var;
 
         return $this;
     }

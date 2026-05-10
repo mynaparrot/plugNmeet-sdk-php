@@ -1,7 +1,6 @@
 <?php
-
 /*
- * Copyright (c) 2022 MynaParrot
+ * Copyright (c) 2022 onward MynaParrot
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -18,15 +17,15 @@
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
  * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT of OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
 
-use Google\Protobuf\Internal\DescriptorPool;
-use Google\Protobuf\Internal\GPBType;
 use Google\Protobuf\Internal\MapField;
-use Google\Protobuf\Internal\Message;
+use Mynaparrot\Plugnmeet\AnalyticsFormatter;
+use Mynaparrot\Plugnmeet\HttpClientInterface;
 use Mynaparrot\Plugnmeet\PlugNmeet;
+use Mynaparrot\Plugnmeet\RoomCreateFeaturesBuilder;
 use Mynaparrot\PlugnmeetProto\ArtifactInfoReq;
 use Mynaparrot\PlugnmeetProto\ArtifactInfoRes;
 use Mynaparrot\PlugnmeetProto\CopyrightConf;
@@ -59,7 +58,6 @@ use Mynaparrot\PlugnmeetProto\RecordingInfoReq;
 use Mynaparrot\PlugnmeetProto\RecordingInfoRes;
 use Mynaparrot\PlugnmeetProto\RecordingMetadata;
 use Mynaparrot\PlugnmeetProto\RoomArtifactType;
-use Mynaparrot\PlugnmeetProto\RoomCreateFeatures;
 use Mynaparrot\PlugnmeetProto\RoomEndReq;
 use Mynaparrot\PlugnmeetProto\RoomEndRes;
 use Mynaparrot\PlugnmeetProto\RoomMetadata;
@@ -67,7 +65,6 @@ use Mynaparrot\PlugnmeetProto\UpdateRecordingMetadataReq;
 use Mynaparrot\PlugnmeetProto\UpdateRecordingMetadataRes;
 use Mynaparrot\PlugnmeetProto\UserInfo;
 use Mynaparrot\PlugnmeetProto\UserMetadata;
-use Mynaparrot\Plugnmeet\HttpClientInterface;
 
 require "../vendor/autoload.php";
 
@@ -144,21 +141,8 @@ class plugNmeetConnect
             throw new Exception("room_features required and should be an array");
         }
 
-        // Features can be passed in `room_features` or as top-level keys in `$roomMetadata`.
-        // We're doing this with all of our plugins
-        // We'll merge them, with `room_features` taking precedence.
-        $roomMetadataFeatures = $roomMetadata['room_features'];
-        foreach ($roomMetadata as $k => $data) {
-            if ($k === "room_features" || $k === "default_lock_settings" || $k === "copyright_conf") {
-                continue;
-            }
-            if (!isset($roomMetadataFeatures[$k])) {
-                $roomMetadataFeatures[$k] = $data;
-            }
-        }
-
-        // Build the features message from the array.
-        $features = $this->_buildProtoMessageFromArray($roomMetadataFeatures, RoomCreateFeatures::class);
+        $featuresBuilder = new RoomCreateFeaturesBuilder($roomMetadata);
+        $features = $featuresBuilder->build();
 
         $metadata = new RoomMetadata();
         $metadata->setRoomFeatures($features);
@@ -499,71 +483,13 @@ class plugNmeetConnect
     }
 
     /**
-     * Builds a Protobuf message object from a user-provided array.
-     *
-     * This method recursively builds nested message structures. It leverages the
-     * Protobuf message's setters to handle type conversions, ensuring that
-     * values are cast to the correct type as defined in the .proto file.
-     * It also correctly omits optional string fields that are empty.
-     *
-     * @template T of Message
-     * @param array $data The input array with snake_case keys.
-     * @param class-string<T> $protoClassFqn The fully qualified class name of the Protobuf message.
-     *
-     * @return T The populated Protobuf message object.
-     * @throws Exception
-     * @since 2.0.0
+     * @param string $data
+     * @return array
      */
-    private function _buildProtoMessageFromArray(array $data, string $protoClassFqn): Message
+    public function getFormattedAnalyticData(string $data): array
     {
-        // This ensures the class's metadata is loaded into the pool.
-        if (!class_exists($protoClassFqn)) {
-            throw new Exception("Protobuf class not found: " . $protoClassFqn);
-        }
-        $messageInstance = new $protoClassFqn();
-
-        $pool = DescriptorPool::getGeneratedPool();
-        $desc = $pool->getDescriptorByClassName($protoClassFqn);
-
-        if (!$desc) {
-            return $messageInstance;
-        }
-
-        foreach ($data as $key => $value) {
-            try {
-                // Convert camelCase key to snake_case for field lookup.
-                $snakeKey = strtolower(preg_replace('/(?<!^)[A-Z]/', '_$0', $key));
-                $field    = $desc->getFieldByName($snakeKey);
-
-                if (!$field) {
-                    continue;
-                }
-
-                $type = $field->getType();
-                $setter = $field->getSetter();
-
-                if ($type === GPBType::MESSAGE) {
-                    if (is_array($value) && !empty($value)) {
-                        $subMessageClass = $field->getMessageType()->getClass();
-                        $subResult = $this->_buildProtoMessageFromArray($value, $subMessageClass);
-                        $messageInstance->$setter($subResult);
-                    }
-                } elseif ($type === GPBType::STRING && $value === '') {
-                    // Omit optional fields that have empty string values.
-                    // Do nothing.
-                    continue;
-                } else {
-                    $messageInstance->$setter($value);
-                }
-            } catch (Exception $e) {
-                throw new Exception(
-                    "Failed to set field '{$key}' on message '{$protoClassFqn}': " . $e->getMessage(),
-                    0,
-                    $e
-                );
-            }
-        }
-
-        return $messageInstance;
+        $rawData = json_decode($data, true);
+        $formatter = new AnalyticsFormatter($rawData);
+        return $formatter->getFormattedEventData();
     }
 }

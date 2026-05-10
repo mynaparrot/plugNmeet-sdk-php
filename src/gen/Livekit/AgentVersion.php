@@ -46,6 +46,10 @@ class AgentVersion extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool draining = 8;</code>
      */
     protected $draining = false;
+    /**
+     * Generated from protobuf field <code>bool active = 9;</code>
+     */
+    protected $active = false;
 
     /**
      * Constructor.
@@ -61,6 +65,7 @@ class AgentVersion extends \Google\Protobuf\Internal\Message
      *     @type string $status
      *     @type string $owner
      *     @type bool $draining
+     *     @type bool $active
      * }
      */
     public function __construct($data = NULL) {
@@ -260,6 +265,28 @@ class AgentVersion extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->draining = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool active = 9;</code>
+     * @return bool
+     */
+    public function getActive()
+    {
+        return $this->active;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool active = 9;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setActive($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->active = $var;
 
         return $this;
     }

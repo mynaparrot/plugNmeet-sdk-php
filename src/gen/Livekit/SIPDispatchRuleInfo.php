@@ -75,11 +75,16 @@ class SIPDispatchRuleInfo extends \Google\Protobuf\Internal\Message
      */
     protected $room_config = null;
     /**
+     * Generated from protobuf field <code>.livekit.SIPMediaConfig media = 16;</code>
+     */
+    protected $media = null;
+    /**
      * Generated from protobuf field <code>bool krisp_enabled = 11;</code>
      */
     protected $krisp_enabled = false;
     /**
-     * Generated from protobuf field <code>.livekit.SIPMediaEncryption media_encryption = 12;</code>
+     * Generated from protobuf field <code>.livekit.SIPMediaEncryption media_encryption = 12 [deprecated = true];</code>
+     * @deprecated
      */
     protected $media_encryption = 0;
     /**
@@ -117,6 +122,7 @@ class SIPDispatchRuleInfo extends \Google\Protobuf\Internal\Message
      *           Cloud-only, config preset to use
      *     @type \Livekit\RoomConfiguration $room_config
      *           RoomConfiguration to use if the participant initiates the room
+     *     @type \Livekit\SIPMediaConfig $media
      *     @type bool $krisp_enabled
      *     @type int $media_encryption
      *     @type \Google\Protobuf\Timestamp $created_at
@@ -423,6 +429,38 @@ class SIPDispatchRuleInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Generated from protobuf field <code>.livekit.SIPMediaConfig media = 16;</code>
+     * @return \Livekit\SIPMediaConfig|null
+     */
+    public function getMedia()
+    {
+        return $this->media;
+    }
+
+    public function hasMedia()
+    {
+        return isset($this->media);
+    }
+
+    public function clearMedia()
+    {
+        unset($this->media);
+    }
+
+    /**
+     * Generated from protobuf field <code>.livekit.SIPMediaConfig media = 16;</code>
+     * @param \Livekit\SIPMediaConfig $var
+     * @return $this
+     */
+    public function setMedia($var)
+    {
+        GPBUtil::checkMessage($var, \Livekit\SIPMediaConfig::class);
+        $this->media = $var;
+
+        return $this;
+    }
+
+    /**
      * Generated from protobuf field <code>bool krisp_enabled = 11;</code>
      * @return bool
      */
@@ -445,21 +483,27 @@ class SIPDispatchRuleInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.livekit.SIPMediaEncryption media_encryption = 12;</code>
+     * Generated from protobuf field <code>.livekit.SIPMediaEncryption media_encryption = 12 [deprecated = true];</code>
      * @return int
+     * @deprecated
      */
     public function getMediaEncryption()
     {
+        if ($this->media_encryption !== 0) {
+            @trigger_error('media_encryption is deprecated.', E_USER_DEPRECATED);
+        }
         return $this->media_encryption;
     }
 
     /**
-     * Generated from protobuf field <code>.livekit.SIPMediaEncryption media_encryption = 12;</code>
+     * Generated from protobuf field <code>.livekit.SIPMediaEncryption media_encryption = 12 [deprecated = true];</code>
      * @param int $var
      * @return $this
+     * @deprecated
      */
     public function setMediaEncryption($var)
     {
+        @trigger_error('media_encryption is deprecated.', E_USER_DEPRECATED);
         GPBUtil::checkEnum($var, \Livekit\SIPMediaEncryption::class);
         $this->media_encryption = $var;
 

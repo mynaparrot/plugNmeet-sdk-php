@@ -34,6 +34,10 @@ class ScenarioGroup extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .livekit.Scenario scenarios = 5;</code>
      */
     private $scenarios;
+    /**
+     * Generated from protobuf field <code>int32 scenario_count = 6;</code>
+     */
+    protected $scenario_count = 0;
 
     /**
      * Constructor.
@@ -46,6 +50,7 @@ class ScenarioGroup extends \Google\Protobuf\Internal\Message
      *     @type string $label
      *     @type \Google\Protobuf\Timestamp $created_at
      *     @type \Livekit\Scenario[] $scenarios
+     *     @type int $scenario_count
      * }
      */
     public function __construct($data = NULL) {
@@ -169,6 +174,28 @@ class ScenarioGroup extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\Scenario::class);
         $this->scenarios = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 scenario_count = 6;</code>
+     * @return int
+     */
+    public function getScenarioCount()
+    {
+        return $this->scenario_count;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 scenario_count = 6;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setScenarioCount($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->scenario_count = $var;
 
         return $this;
     }

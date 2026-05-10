@@ -42,6 +42,10 @@ class RegisterWorkerRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.livekit.ParticipantPermission allowed_permissions = 7;</code>
      */
     protected $allowed_permissions = null;
+    /**
+     * Generated from protobuf field <code>string deployment = 9;</code>
+     */
+    protected $deployment = '';
 
     /**
      * Constructor.
@@ -57,6 +61,7 @@ class RegisterWorkerRequest extends \Google\Protobuf\Internal\Message
      *           string name = 4 [deprecated = true];
      *     @type string $namespace
      *     @type \Livekit\ParticipantPermission $allowed_permissions
+     *     @type string $deployment
      * }
      */
     public function __construct($data = NULL) {
@@ -220,6 +225,28 @@ class RegisterWorkerRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Livekit\ParticipantPermission::class);
         $this->allowed_permissions = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string deployment = 9;</code>
+     * @return string
+     */
+    public function getDeployment()
+    {
+        return $this->deployment;
+    }
+
+    /**
+     * Generated from protobuf field <code>string deployment = 9;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setDeployment($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->deployment = $var;
 
         return $this;
     }

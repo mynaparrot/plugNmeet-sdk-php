@@ -10,24 +10,22 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * Generated from protobuf message <code>livekit.DeleteAgentRequest</code>
+ * Generated from protobuf message <code>livekit.CreateAgentV2Response</code>
  */
-class DeleteAgentRequest extends \Google\Protobuf\Internal\Message
+class CreateAgentV2Response extends \Google\Protobuf\Internal\Message
 {
     /**
      * Generated from protobuf field <code>string agent_id = 1 [(.logger.name) = "agentID"];</code>
      */
     protected $agent_id = '';
     /**
-     * Generated from protobuf field <code>string agent_name = 2;</code>
+     * Generated from protobuf field <code>string status = 2;</code>
      */
-    protected $agent_name = '';
+    protected $status = '';
     /**
-     * optional
-     *
-     * Generated from protobuf field <code>string environment = 3;</code>
+     * Generated from protobuf field <code>repeated string server_regions = 3;</code>
      */
-    protected $environment = '';
+    private $server_regions;
 
     /**
      * Constructor.
@@ -36,9 +34,8 @@ class DeleteAgentRequest extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $agent_id
-     *     @type string $agent_name
-     *     @type string $environment
-     *           optional
+     *     @type string $status
+     *     @type string[] $server_regions
      * }
      */
     public function __construct($data = NULL) {
@@ -69,49 +66,45 @@ class DeleteAgentRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string agent_name = 2;</code>
+     * Generated from protobuf field <code>string status = 2;</code>
      * @return string
      */
-    public function getAgentName()
+    public function getStatus()
     {
-        return $this->agent_name;
+        return $this->status;
     }
 
     /**
-     * Generated from protobuf field <code>string agent_name = 2;</code>
+     * Generated from protobuf field <code>string status = 2;</code>
      * @param string $var
      * @return $this
      */
-    public function setAgentName($var)
+    public function setStatus($var)
     {
         GPBUtil::checkString($var, True);
-        $this->agent_name = $var;
+        $this->status = $var;
 
         return $this;
     }
 
     /**
-     * optional
-     *
-     * Generated from protobuf field <code>string environment = 3;</code>
-     * @return string
+     * Generated from protobuf field <code>repeated string server_regions = 3;</code>
+     * @return RepeatedField<string>
      */
-    public function getEnvironment()
+    public function getServerRegions()
     {
-        return $this->environment;
+        return $this->server_regions;
     }
 
     /**
-     * optional
-     *
-     * Generated from protobuf field <code>string environment = 3;</code>
-     * @param string $var
+     * Generated from protobuf field <code>repeated string server_regions = 3;</code>
+     * @param string[] $var
      * @return $this
      */
-    public function setEnvironment($var)
+    public function setServerRegions($var)
     {
-        GPBUtil::checkString($var, True);
-        $this->environment = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->server_regions = $arr;
 
         return $this;
     }

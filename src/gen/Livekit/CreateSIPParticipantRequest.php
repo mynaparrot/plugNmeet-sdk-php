@@ -128,9 +128,14 @@ class CreateSIPParticipantRequest extends \Google\Protobuf\Internal\Message
      */
     protected $krisp_enabled = false;
     /**
-     * Generated from protobuf field <code>.livekit.SIPMediaEncryption media_encryption = 18;</code>
+     * Generated from protobuf field <code>.livekit.SIPMediaEncryption media_encryption = 18 [deprecated = true];</code>
+     * @deprecated
      */
     protected $media_encryption = 0;
+    /**
+     * Generated from protobuf field <code>.livekit.SIPMediaConfig media = 23;</code>
+     */
+    protected $media = null;
     /**
      * Wait for the answer for the call before returning.
      *
@@ -148,7 +153,7 @@ class CreateSIPParticipantRequest extends \Google\Protobuf\Internal\Message
      */
     protected $display_name = null;
     /**
-     * NEXT ID: 23
+     * NEXT ID: 24
      *
      * Generated from protobuf field <code>optional .livekit.Destination destination = 22;</code>
      */
@@ -200,6 +205,7 @@ class CreateSIPParticipantRequest extends \Google\Protobuf\Internal\Message
      *     @type bool $krisp_enabled
      *           Enable voice isolation for the callee.
      *     @type int $media_encryption
+     *     @type \Livekit\SIPMediaConfig $media
      *     @type bool $wait_until_answered
      *           Wait for the answer for the call before returning.
      *     @type string $display_name
@@ -209,7 +215,7 @@ class CreateSIPParticipantRequest extends \Google\Protobuf\Internal\Message
      *           2) Empty string: Do not send a display name, which will result in a CNAM lookup downstream.
      *           3) Non-empty: Use the specified value as the display name.
      *     @type \Livekit\Destination $destination
-     *           NEXT ID: 23
+     *           NEXT ID: 24
      * }
      */
     public function __construct($data = NULL) {
@@ -724,23 +730,61 @@ class CreateSIPParticipantRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.livekit.SIPMediaEncryption media_encryption = 18;</code>
+     * Generated from protobuf field <code>.livekit.SIPMediaEncryption media_encryption = 18 [deprecated = true];</code>
      * @return int
+     * @deprecated
      */
     public function getMediaEncryption()
     {
+        if ($this->media_encryption !== 0) {
+            @trigger_error('media_encryption is deprecated.', E_USER_DEPRECATED);
+        }
         return $this->media_encryption;
     }
 
     /**
-     * Generated from protobuf field <code>.livekit.SIPMediaEncryption media_encryption = 18;</code>
+     * Generated from protobuf field <code>.livekit.SIPMediaEncryption media_encryption = 18 [deprecated = true];</code>
      * @param int $var
      * @return $this
+     * @deprecated
      */
     public function setMediaEncryption($var)
     {
+        @trigger_error('media_encryption is deprecated.', E_USER_DEPRECATED);
         GPBUtil::checkEnum($var, \Livekit\SIPMediaEncryption::class);
         $this->media_encryption = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.livekit.SIPMediaConfig media = 23;</code>
+     * @return \Livekit\SIPMediaConfig|null
+     */
+    public function getMedia()
+    {
+        return $this->media;
+    }
+
+    public function hasMedia()
+    {
+        return isset($this->media);
+    }
+
+    public function clearMedia()
+    {
+        unset($this->media);
+    }
+
+    /**
+     * Generated from protobuf field <code>.livekit.SIPMediaConfig media = 23;</code>
+     * @param \Livekit\SIPMediaConfig $var
+     * @return $this
+     */
+    public function setMedia($var)
+    {
+        GPBUtil::checkMessage($var, \Livekit\SIPMediaConfig::class);
+        $this->media = $var;
 
         return $this;
     }
@@ -816,7 +860,7 @@ class CreateSIPParticipantRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * NEXT ID: 23
+     * NEXT ID: 24
      *
      * Generated from protobuf field <code>optional .livekit.Destination destination = 22;</code>
      * @return \Livekit\Destination|null
@@ -837,7 +881,7 @@ class CreateSIPParticipantRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * NEXT ID: 23
+     * NEXT ID: 24
      *
      * Generated from protobuf field <code>optional .livekit.Destination destination = 22;</code>
      * @param \Livekit\Destination $var

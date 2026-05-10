@@ -10,9 +10,9 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * Generated from protobuf message <code>livekit.DeployAgentResponse</code>
+ * Generated from protobuf message <code>livekit.DeployAgentV2Response</code>
  */
-class DeployAgentResponse extends \Google\Protobuf\Internal\Message
+class DeployAgentV2Response extends \Google\Protobuf\Internal\Message
 {
     /**
      * Generated from protobuf field <code>bool success = 1;</code>
@@ -27,20 +27,15 @@ class DeployAgentResponse extends \Google\Protobuf\Internal\Message
      */
     protected $agent_id = '';
     /**
-     * Generated from protobuf field <code>string presigned_url = 4 [deprecated = true];</code>
-     * @deprecated
-     */
-    protected $presigned_url = '';
-    /**
-     * Generated from protobuf field <code>string tag = 5;</code>
+     * Generated from protobuf field <code>string tag = 4;</code>
      */
     protected $tag = '';
     /**
-     * Generated from protobuf field <code>.livekit.PresignedPostRequest presigned_post_request = 6;</code>
+     * Generated from protobuf field <code>.livekit.PresignedPostRequest presigned_req = 5;</code>
      */
-    protected $presigned_post_request = null;
+    protected $presigned_req = null;
     /**
-     * Generated from protobuf field <code>string environment = 7;</code>
+     * Generated from protobuf field <code>string environment = 6;</code>
      */
     protected $environment = '';
 
@@ -53,9 +48,8 @@ class DeployAgentResponse extends \Google\Protobuf\Internal\Message
      *     @type bool $success
      *     @type string $message
      *     @type string $agent_id
-     *     @type string $presigned_url
      *     @type string $tag
-     *     @type \Livekit\PresignedPostRequest $presigned_post_request
+     *     @type \Livekit\PresignedPostRequest $presigned_req
      *     @type string $environment
      * }
      */
@@ -131,35 +125,7 @@ class DeployAgentResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string presigned_url = 4 [deprecated = true];</code>
-     * @return string
-     * @deprecated
-     */
-    public function getPresignedUrl()
-    {
-        if ($this->presigned_url !== '') {
-            @trigger_error('presigned_url is deprecated.', E_USER_DEPRECATED);
-        }
-        return $this->presigned_url;
-    }
-
-    /**
-     * Generated from protobuf field <code>string presigned_url = 4 [deprecated = true];</code>
-     * @param string $var
-     * @return $this
-     * @deprecated
-     */
-    public function setPresignedUrl($var)
-    {
-        @trigger_error('presigned_url is deprecated.', E_USER_DEPRECATED);
-        GPBUtil::checkString($var, True);
-        $this->presigned_url = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>string tag = 5;</code>
+     * Generated from protobuf field <code>string tag = 4;</code>
      * @return string
      */
     public function getTag()
@@ -168,7 +134,7 @@ class DeployAgentResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string tag = 5;</code>
+     * Generated from protobuf field <code>string tag = 4;</code>
      * @param string $var
      * @return $this
      */
@@ -181,39 +147,39 @@ class DeployAgentResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.livekit.PresignedPostRequest presigned_post_request = 6;</code>
+     * Generated from protobuf field <code>.livekit.PresignedPostRequest presigned_req = 5;</code>
      * @return \Livekit\PresignedPostRequest|null
      */
-    public function getPresignedPostRequest()
+    public function getPresignedReq()
     {
-        return $this->presigned_post_request;
+        return $this->presigned_req;
     }
 
-    public function hasPresignedPostRequest()
+    public function hasPresignedReq()
     {
-        return isset($this->presigned_post_request);
+        return isset($this->presigned_req);
     }
 
-    public function clearPresignedPostRequest()
+    public function clearPresignedReq()
     {
-        unset($this->presigned_post_request);
+        unset($this->presigned_req);
     }
 
     /**
-     * Generated from protobuf field <code>.livekit.PresignedPostRequest presigned_post_request = 6;</code>
+     * Generated from protobuf field <code>.livekit.PresignedPostRequest presigned_req = 5;</code>
      * @param \Livekit\PresignedPostRequest $var
      * @return $this
      */
-    public function setPresignedPostRequest($var)
+    public function setPresignedReq($var)
     {
         GPBUtil::checkMessage($var, \Livekit\PresignedPostRequest::class);
-        $this->presigned_post_request = $var;
+        $this->presigned_req = $var;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>string environment = 7;</code>
+     * Generated from protobuf field <code>string environment = 6;</code>
      * @return string
      */
     public function getEnvironment()
@@ -222,7 +188,7 @@ class DeployAgentResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string environment = 7;</code>
+     * Generated from protobuf field <code>string environment = 6;</code>
      * @param string $var
      * @return $this
      */

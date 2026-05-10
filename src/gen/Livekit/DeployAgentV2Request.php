@@ -10,21 +10,19 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * Generated from protobuf message <code>livekit.DeleteAgentRequest</code>
+ * Generated from protobuf message <code>livekit.DeployAgentV2Request</code>
  */
-class DeleteAgentRequest extends \Google\Protobuf\Internal\Message
+class DeployAgentV2Request extends \Google\Protobuf\Internal\Message
 {
     /**
      * Generated from protobuf field <code>string agent_id = 1 [(.logger.name) = "agentID"];</code>
      */
     protected $agent_id = '';
     /**
-     * Generated from protobuf field <code>string agent_name = 2;</code>
+     * Generated from protobuf field <code>repeated .livekit.AgentSecret secrets = 2;</code>
      */
-    protected $agent_name = '';
+    private $secrets;
     /**
-     * optional
-     *
      * Generated from protobuf field <code>string environment = 3;</code>
      */
     protected $environment = '';
@@ -36,9 +34,8 @@ class DeleteAgentRequest extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $agent_id
-     *     @type string $agent_name
+     *     @type \Livekit\AgentSecret[] $secrets
      *     @type string $environment
-     *           optional
      * }
      */
     public function __construct($data = NULL) {
@@ -69,30 +66,28 @@ class DeleteAgentRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string agent_name = 2;</code>
-     * @return string
+     * Generated from protobuf field <code>repeated .livekit.AgentSecret secrets = 2;</code>
+     * @return RepeatedField<\Livekit\AgentSecret>
      */
-    public function getAgentName()
+    public function getSecrets()
     {
-        return $this->agent_name;
+        return $this->secrets;
     }
 
     /**
-     * Generated from protobuf field <code>string agent_name = 2;</code>
-     * @param string $var
+     * Generated from protobuf field <code>repeated .livekit.AgentSecret secrets = 2;</code>
+     * @param \Livekit\AgentSecret[] $var
      * @return $this
      */
-    public function setAgentName($var)
+    public function setSecrets($var)
     {
-        GPBUtil::checkString($var, True);
-        $this->agent_name = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\AgentSecret::class);
+        $this->secrets = $arr;
 
         return $this;
     }
 
     /**
-     * optional
-     *
      * Generated from protobuf field <code>string environment = 3;</code>
      * @return string
      */
@@ -102,8 +97,6 @@ class DeleteAgentRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * optional
-     *
      * Generated from protobuf field <code>string environment = 3;</code>
      * @param string $var
      * @return $this

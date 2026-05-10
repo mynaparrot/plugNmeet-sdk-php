@@ -55,6 +55,10 @@ class Job extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool enable_recording = 10;</code>
      */
     protected $enable_recording = false;
+    /**
+     * Generated from protobuf field <code>string deployment = 11;</code>
+     */
+    protected $deployment = '';
 
     /**
      * Constructor.
@@ -72,6 +76,7 @@ class Job extends \Google\Protobuf\Internal\Message
      *     @type string $agent_name
      *     @type \Livekit\JobState $state
      *     @type bool $enable_recording
+     *     @type string $deployment
      * }
      */
     public function __construct($data = NULL) {
@@ -331,6 +336,28 @@ class Job extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->enable_recording = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string deployment = 11;</code>
+     * @return string
+     */
+    public function getDeployment()
+    {
+        return $this->deployment;
+    }
+
+    /**
+     * Generated from protobuf field <code>string deployment = 11;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setDeployment($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->deployment = $var;
 
         return $this;
     }

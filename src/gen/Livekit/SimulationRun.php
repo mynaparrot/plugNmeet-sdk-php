@@ -46,6 +46,34 @@ class SimulationRun extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.livekit.SimulationRunSummary summary = 8;</code>
      */
     protected $summary = null;
+    /**
+     * Generated from protobuf field <code>string agent_name = 9;</code>
+     */
+    protected $agent_name = '';
+    /**
+     * Generated from protobuf field <code>.livekit.ScenarioGroup scenario_group = 10;</code>
+     */
+    protected $scenario_group = null;
+    /**
+     * Generated from protobuf field <code>.google.protobuf.Timestamp ended_at = 11;</code>
+     */
+    protected $ended_at = null;
+    /**
+     * Generated from protobuf field <code>int32 job_count = 12;</code>
+     */
+    protected $job_count = 0;
+    /**
+     * Generated from protobuf field <code>int32 passed_count = 13;</code>
+     */
+    protected $passed_count = 0;
+    /**
+     * Generated from protobuf field <code>int32 failed_count = 14;</code>
+     */
+    protected $failed_count = 0;
+    /**
+     * Generated from protobuf field <code>int32 num_simulations = 15;</code>
+     */
+    protected $num_simulations = 0;
 
     /**
      * Constructor.
@@ -61,6 +89,13 @@ class SimulationRun extends \Google\Protobuf\Internal\Message
      *     @type \Google\Protobuf\Timestamp $created_at
      *     @type \Livekit\SimulationRun\Job[] $jobs
      *     @type \Livekit\SimulationRunSummary $summary
+     *     @type string $agent_name
+     *     @type \Livekit\ScenarioGroup $scenario_group
+     *     @type \Google\Protobuf\Timestamp $ended_at
+     *     @type int $job_count
+     *     @type int $passed_count
+     *     @type int $failed_count
+     *     @type int $num_simulations
      * }
      */
     public function __construct($data = NULL) {
@@ -260,6 +295,180 @@ class SimulationRun extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Livekit\SimulationRunSummary::class);
         $this->summary = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string agent_name = 9;</code>
+     * @return string
+     */
+    public function getAgentName()
+    {
+        return $this->agent_name;
+    }
+
+    /**
+     * Generated from protobuf field <code>string agent_name = 9;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setAgentName($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->agent_name = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.livekit.ScenarioGroup scenario_group = 10;</code>
+     * @return \Livekit\ScenarioGroup|null
+     */
+    public function getScenarioGroup()
+    {
+        return $this->scenario_group;
+    }
+
+    public function hasScenarioGroup()
+    {
+        return isset($this->scenario_group);
+    }
+
+    public function clearScenarioGroup()
+    {
+        unset($this->scenario_group);
+    }
+
+    /**
+     * Generated from protobuf field <code>.livekit.ScenarioGroup scenario_group = 10;</code>
+     * @param \Livekit\ScenarioGroup $var
+     * @return $this
+     */
+    public function setScenarioGroup($var)
+    {
+        GPBUtil::checkMessage($var, \Livekit\ScenarioGroup::class);
+        $this->scenario_group = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.google.protobuf.Timestamp ended_at = 11;</code>
+     * @return \Google\Protobuf\Timestamp|null
+     */
+    public function getEndedAt()
+    {
+        return $this->ended_at;
+    }
+
+    public function hasEndedAt()
+    {
+        return isset($this->ended_at);
+    }
+
+    public function clearEndedAt()
+    {
+        unset($this->ended_at);
+    }
+
+    /**
+     * Generated from protobuf field <code>.google.protobuf.Timestamp ended_at = 11;</code>
+     * @param \Google\Protobuf\Timestamp $var
+     * @return $this
+     */
+    public function setEndedAt($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
+        $this->ended_at = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 job_count = 12;</code>
+     * @return int
+     */
+    public function getJobCount()
+    {
+        return $this->job_count;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 job_count = 12;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setJobCount($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->job_count = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 passed_count = 13;</code>
+     * @return int
+     */
+    public function getPassedCount()
+    {
+        return $this->passed_count;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 passed_count = 13;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setPassedCount($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->passed_count = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 failed_count = 14;</code>
+     * @return int
+     */
+    public function getFailedCount()
+    {
+        return $this->failed_count;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 failed_count = 14;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setFailedCount($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->failed_count = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 num_simulations = 15;</code>
+     * @return int
+     */
+    public function getNumSimulations()
+    {
+        return $this->num_simulations;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 num_simulations = 15;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setNumSimulations($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->num_simulations = $var;
 
         return $this;
     }

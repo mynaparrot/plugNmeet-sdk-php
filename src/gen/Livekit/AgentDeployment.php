@@ -70,6 +70,18 @@ class AgentDeployment extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .livekit.AgentEvent events = 14;</code>
      */
     private $events;
+    /**
+     * Generated from protobuf field <code>string environment = 15;</code>
+     */
+    protected $environment = '';
+    /**
+     * Generated from protobuf field <code>string version = 16;</code>
+     */
+    protected $version = '';
+    /**
+     * Generated from protobuf field <code>string agent_name = 17;</code>
+     */
+    protected $agent_name = '';
 
     /**
      * Constructor.
@@ -91,6 +103,9 @@ class AgentDeployment extends \Google\Protobuf\Internal\Message
      *     @type string $cpu_limit
      *     @type string $server_region
      *     @type \Livekit\AgentEvent[] $events
+     *     @type string $environment
+     *     @type string $version
+     *     @type string $agent_name
      * }
      */
     public function __construct($data = NULL) {
@@ -402,6 +417,72 @@ class AgentDeployment extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\AgentEvent::class);
         $this->events = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string environment = 15;</code>
+     * @return string
+     */
+    public function getEnvironment()
+    {
+        return $this->environment;
+    }
+
+    /**
+     * Generated from protobuf field <code>string environment = 15;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setEnvironment($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->environment = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string version = 16;</code>
+     * @return string
+     */
+    public function getVersion()
+    {
+        return $this->version;
+    }
+
+    /**
+     * Generated from protobuf field <code>string version = 16;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setVersion($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->version = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string agent_name = 17;</code>
+     * @return string
+     */
+    public function getAgentName()
+    {
+        return $this->agent_name;
+    }
+
+    /**
+     * Generated from protobuf field <code>string agent_name = 17;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setAgentName($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->agent_name = $var;
 
         return $this;
     }

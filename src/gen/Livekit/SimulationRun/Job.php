@@ -38,6 +38,26 @@ class Job extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string label = 6;</code>
      */
     protected $label = '';
+    /**
+     * Generated from protobuf field <code>repeated string tags = 7;</code>
+     */
+    private $tags;
+    /**
+     * Generated from protobuf field <code>string room_name = 8;</code>
+     */
+    protected $room_name = '';
+    /**
+     * Generated from protobuf field <code>string scenario_id = 9;</code>
+     */
+    protected $scenario_id = '';
+    /**
+     * Generated from protobuf field <code>.google.protobuf.Timestamp started_at = 10;</code>
+     */
+    protected $started_at = null;
+    /**
+     * Generated from protobuf field <code>.google.protobuf.Timestamp ended_at = 11;</code>
+     */
+    protected $ended_at = null;
 
     /**
      * Constructor.
@@ -51,6 +71,11 @@ class Job extends \Google\Protobuf\Internal\Message
      *     @type string $error
      *     @type string $agent_expectations
      *     @type string $label
+     *     @type string[] $tags
+     *     @type string $room_name
+     *     @type string $scenario_id
+     *     @type \Google\Protobuf\Timestamp $started_at
+     *     @type \Google\Protobuf\Timestamp $ended_at
      * }
      */
     public function __construct($data = NULL) {
@@ -186,6 +211,136 @@ class Job extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->label = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated string tags = 7;</code>
+     * @return RepeatedField<string>
+     */
+    public function getTags()
+    {
+        return $this->tags;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated string tags = 7;</code>
+     * @param string[] $var
+     * @return $this
+     */
+    public function setTags($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->tags = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string room_name = 8;</code>
+     * @return string
+     */
+    public function getRoomName()
+    {
+        return $this->room_name;
+    }
+
+    /**
+     * Generated from protobuf field <code>string room_name = 8;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setRoomName($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->room_name = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string scenario_id = 9;</code>
+     * @return string
+     */
+    public function getScenarioId()
+    {
+        return $this->scenario_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>string scenario_id = 9;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setScenarioId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->scenario_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.google.protobuf.Timestamp started_at = 10;</code>
+     * @return \Google\Protobuf\Timestamp|null
+     */
+    public function getStartedAt()
+    {
+        return $this->started_at;
+    }
+
+    public function hasStartedAt()
+    {
+        return isset($this->started_at);
+    }
+
+    public function clearStartedAt()
+    {
+        unset($this->started_at);
+    }
+
+    /**
+     * Generated from protobuf field <code>.google.protobuf.Timestamp started_at = 10;</code>
+     * @param \Google\Protobuf\Timestamp $var
+     * @return $this
+     */
+    public function setStartedAt($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
+        $this->started_at = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.google.protobuf.Timestamp ended_at = 11;</code>
+     * @return \Google\Protobuf\Timestamp|null
+     */
+    public function getEndedAt()
+    {
+        return $this->ended_at;
+    }
+
+    public function hasEndedAt()
+    {
+        return isset($this->ended_at);
+    }
+
+    public function clearEndedAt()
+    {
+        unset($this->ended_at);
+    }
+
+    /**
+     * Generated from protobuf field <code>.google.protobuf.Timestamp ended_at = 11;</code>
+     * @param \Google\Protobuf\Timestamp $var
+     * @return $this
+     */
+    public function setEndedAt($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
+        $this->ended_at = $var;
 
         return $this;
     }

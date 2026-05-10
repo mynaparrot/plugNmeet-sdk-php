@@ -22,6 +22,10 @@ class Request extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string simulation_run_id = 2;</code>
      */
     protected $simulation_run_id = '';
+    /**
+     * Generated from protobuf field <code>string code_entrypoint = 3;</code>
+     */
+    protected $code_entrypoint = '';
 
     /**
      * Constructor.
@@ -31,6 +35,7 @@ class Request extends \Google\Protobuf\Internal\Message
      *
      *     @type string $project_id
      *     @type string $simulation_run_id
+     *     @type string $code_entrypoint
      * }
      */
     public function __construct($data = NULL) {
@@ -78,6 +83,28 @@ class Request extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->simulation_run_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string code_entrypoint = 3;</code>
+     * @return string
+     */
+    public function getCodeEntrypoint()
+    {
+        return $this->code_entrypoint;
+    }
+
+    /**
+     * Generated from protobuf field <code>string code_entrypoint = 3;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setCodeEntrypoint($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->code_entrypoint = $var;
 
         return $this;
     }
