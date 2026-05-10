@@ -57,6 +57,20 @@
                     <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/mynaparrot.html" class="">Mynaparrot</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/mynaparrot-plugnmeet.html" class="">Plugnmeet</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/mynaparrot-plugnmeetproto.html" class="">PlugnmeetProto</a>
+                
+            </li>
+            </ul>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/gpbmetadata.html" class="">GPBMetadata</a>
 </h4>
     <ul class="phpdocumentor-list">
@@ -176,25 +190,15 @@
             </li>
             </ul>
 
-                                    <h4 class="phpdocumentor-sidebar__root-namespace">
-    <a href="namespaces/mynaparrot.html" class="">Mynaparrot</a>
-</h4>
-    <ul class="phpdocumentor-list">
-                    <li>
-                <a href="namespaces/mynaparrot-plugnmeetproto.html" class="">PlugnmeetProto</a>
-                
-            </li>
-                    <li>
-                <a href="namespaces/mynaparrot-plugnmeet.html" class="">Plugnmeet</a>
-                
-            </li>
-            </ul>
-
                         </section>
                 <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/PlugNmeet.html" class="">PlugNmeet</a>
 </h4>
 
                         </section>
@@ -290,6 +294,13 @@
 </dt>
 <dd>Generated from protobuf field &lt;code&gt;string agent_name = 2;&lt;/code&gt;</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Livekit-DeleteAgentRequest.html#property_environment">$environment</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>optional</dd>
+
     </dl>
 
 <h4 id="toc-methods">
@@ -320,6 +331,13 @@
 <dd>Generated from protobuf field &lt;code&gt;string agent_name = 2;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-DeleteAgentRequest.html#method_getEnvironment">getEnvironment()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>optional</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-DeleteAgentRequest.html#method_setAgentId">setAgentId()</a>
     <span>
                                 &nbsp;: $this    </span>
@@ -332,6 +350,13 @@
                                 &nbsp;: $this    </span>
 </dt>
 <dd>Generated from protobuf field &lt;code&gt;string agent_name = 2;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-DeleteAgentRequest.html#method_setEnvironment">setEnvironment()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>optional</dd>
 
     </dl>
 
@@ -422,6 +447,46 @@
         
 
 </article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_environment">
+        $environment
+        <a href="classes/Livekit-DeleteAgentRequest.html#property_environment" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DeleteAgentRequest.php"><a href="files/src-gen-livekit-deleteagentrequest.html"><abbr title="src/gen/Livekit/DeleteAgentRequest.php">DeleteAgentRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">30</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">optional</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$environment</span>
+     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
+
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">string environment = 3;</code></p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
             </section>
 
             <section class="phpdocumentor-methods">
@@ -444,7 +509,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DeleteAgentRequest.php"><a href="files/src-gen-livekit-deleteagentrequest.html"><abbr title="src/gen/Livekit/DeleteAgentRequest.php">DeleteAgentRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -469,6 +534,8 @@
 Optional. Data for populating the Message object.</p>
 <pre class="prettyprint"><code class="prettyprint">@type string $agent_id
 @type string $agent_name
+@type string $environment
+      optional
 </code></pre>
 <p>}</p>
 </section>
@@ -496,7 +563,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DeleteAgentRequest.php"><a href="files/src-gen-livekit-deleteagentrequest.html"><abbr title="src/gen/Livekit/DeleteAgentRequest.php">DeleteAgentRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -535,7 +602,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DeleteAgentRequest.php"><a href="files/src-gen-livekit-deleteagentrequest.html"><abbr title="src/gen/Livekit/DeleteAgentRequest.php">DeleteAgentRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -566,6 +633,47 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getEnvironment">
+        getEnvironment()
+        <a href="classes/Livekit-DeleteAgentRequest.html#method_getEnvironment" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DeleteAgentRequest.php"><a href="files/src-gen-livekit-deleteagentrequest.html"><abbr title="src/gen/Livekit/DeleteAgentRequest.php">DeleteAgentRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">99</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">optional</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getEnvironment</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">string environment = 3;</code></p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setAgentId">
         setAgentId()
         <a href="classes/Livekit-DeleteAgentRequest.html#method_setAgentId" class="headerlink"><i class="fas fa-link"></i></a>
@@ -574,7 +682,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DeleteAgentRequest.php"><a href="files/src-gen-livekit-deleteagentrequest.html"><abbr title="src/gen/Livekit/DeleteAgentRequest.php">DeleteAgentRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -623,7 +731,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DeleteAgentRequest.php"><a href="files/src-gen-livekit-deleteagentrequest.html"><abbr title="src/gen/Livekit/DeleteAgentRequest.php">DeleteAgentRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">85</span>
 
     </aside>
 
@@ -637,6 +745,57 @@ Optional. Data for populating the Message object.</p>
         </div>
     
     
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setEnvironment">
+        setEnvironment()
+        <a href="classes/Livekit-DeleteAgentRequest.html#method_setEnvironment" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DeleteAgentRequest.php"><a href="files/src-gen-livekit-deleteagentrequest.html"><abbr title="src/gen/Livekit/DeleteAgentRequest.php">DeleteAgentRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">111</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">optional</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setEnvironment</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">string environment = 3;</code></p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -775,6 +934,7 @@ Optional. Data for populating the Message object.</p>
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="classes/Livekit-DeleteAgentRequest.html#property_agent_id">$agent_id</a></li>
                                                     <li class=""><a href="classes/Livekit-DeleteAgentRequest.html#property_agent_name">$agent_name</a></li>
+                                                    <li class=""><a href="classes/Livekit-DeleteAgentRequest.html#property_environment">$environment</a></li>
                                             </ul>
                 </li>
             
@@ -784,8 +944,10 @@ Optional. Data for populating the Message object.</p>
                                             <li class=""><a href="classes/Livekit-DeleteAgentRequest.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Livekit-DeleteAgentRequest.html#method_getAgentId">getAgentId()</a></li>
                                             <li class=""><a href="classes/Livekit-DeleteAgentRequest.html#method_getAgentName">getAgentName()</a></li>
+                                            <li class=""><a href="classes/Livekit-DeleteAgentRequest.html#method_getEnvironment">getEnvironment()</a></li>
                                             <li class=""><a href="classes/Livekit-DeleteAgentRequest.html#method_setAgentId">setAgentId()</a></li>
                                             <li class=""><a href="classes/Livekit-DeleteAgentRequest.html#method_setAgentName">setAgentName()</a></li>
+                                            <li class=""><a href="classes/Livekit-DeleteAgentRequest.html#method_setEnvironment">setEnvironment()</a></li>
                                     </ul>
             </li>
                     </ul>
