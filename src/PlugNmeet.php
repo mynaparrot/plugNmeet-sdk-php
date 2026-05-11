@@ -69,55 +69,71 @@ use Ramsey\Uuid\Uuid;
 use stdClass;
 
 /**
- *
+ * The main class for interacting with the plugNmeet API.
  */
 class PlugNmeet
 {
     /**
+     * The URL of the plugNmeet server.
+     *
      * @var string
      */
     protected string $serverUrl;
+
     /**
+     * The API key for the plugNmeet server.
+     *
      * @var string
      */
     protected string $apiKey;
+
     /**
+     * The API secret for the plugNmeet server.
+     *
      * @var string
      */
     protected string $apiSecret;
 
     /**
+     * The HTTP client used to make requests to the plugNmeet server.
+     *
      * @var HttpClientInterface
      */
     protected HttpClientInterface $httpClient;
 
     /**
+     * The default path for API requests.
+     *
      * @var string
      */
     protected string $defaultPath = "/auth";
 
     /**
+     * The hashing algorithm used to sign requests.
+     *
      * @var string
      */
     protected string $algo = "sha256";
 
     /**
-     * @param string $serverUrl plugNmeet server URL
-     * @param string $apiKey plugNmeet API_Key
-     * @param string $apiSecret plugNmeet API_Secret
-     * @param int $timeout
-     * @param bool $verifySSL
-     * @param HttpClientInterface|null $httpClient
+     * Constructs a new PlugNmeet instance.
+     *
+     * @param string $serverUrl The URL of the plugNmeet server.
+     * @param string $apiKey The API key for the plugNmeet server.
+     * @param string $apiSecret The API secret for the plugNmeet server.
+     * @param int $timeout The timeout for API requests in seconds.
+     * @param bool $verifySSL Whether to verify the SSL certificate.
+     * @param HttpClientInterface|null $httpClient An optional custom HTTP client.
      */
     public function __construct(
-        string $serverUrl,
-        string $apiKey,
-        string $apiSecret,
-        int $timeout = 60,
-        bool $verifySSL = true,
+        string               $serverUrl,
+        string               $apiKey,
+        string               $apiSecret,
+        int                  $timeout = 60,
+        bool                 $verifySSL = true,
         ?HttpClientInterface $httpClient = null
     ) {
-        $this->serverUrl = rtrim($serverUrl, "/");
+        $this->serverUrl = $serverUrl;
         $this->apiKey = $apiKey;
         $this->apiSecret = $apiSecret;
 
@@ -129,10 +145,10 @@ class PlugNmeet
     }
 
     /**
-     * Create new room
+     * Creates a new room.
      *
-     * @param CreateRoomReq $createRoomRes
-     * @return CreateRoomRes
+     * @param CreateRoomReq $createRoomRes The request object for creating a room.
+     * @return CreateRoomRes The response from the createRoom API call.
      * @throws Exception
      */
     public function createRoom(CreateRoomReq $createRoomRes): CreateRoomRes
@@ -150,10 +166,10 @@ class PlugNmeet
     }
 
     /**
-     * Generate join token
+     * Generates a token for a user to join a room.
      *
-     * @param GenerateTokenReq $generateTokenReq
-     * @return GenerateTokenRes
+     * @param GenerateTokenReq $generateTokenReq The request object for generating a join token.
+     * @return GenerateTokenRes The response from the getJoinToken API call.
      * @throws Exception
      */
     public function getJoinToken(GenerateTokenReq $generateTokenReq): GenerateTokenRes
@@ -171,10 +187,10 @@ class PlugNmeet
     }
 
     /**
-     * To check if room is active or not
+     * Checks if a room is currently active.
      *
-     * @param IsRoomActiveReq $isRoomActiveReq
-     * @return IsRoomActiveRes
+     * @param IsRoomActiveReq $isRoomActiveReq The request object for checking if a room is active.
+     * @return IsRoomActiveRes The response from the isRoomActive API call.
      * @throws Exception
      */
     public function isRoomActive(IsRoomActiveReq $isRoomActiveReq): IsRoomActiveRes
@@ -192,10 +208,10 @@ class PlugNmeet
     }
 
     /**
-     * Get active room information
+     * Retrieves information about an active room.
      *
-     * @param GetActiveRoomInfoReq $getActiveRoomInfoReq
-     * @return GetActiveRoomInfoRes
+     * @param GetActiveRoomInfoReq $getActiveRoomInfoReq The request object for getting active room information.
+     * @return GetActiveRoomInfoRes The response from the getActiveRoomInfo API call.
      * @throws Exception
      */
     public function getActiveRoomInfo(
@@ -214,9 +230,9 @@ class PlugNmeet
     }
 
     /**
-     * Get all active rooms
+     * Retrieves information about all active rooms.
      *
-     * @return GetActiveRoomsInfoRes
+     * @return GetActiveRoomsInfoRes The response from the getActiveRoomsInfo API call.
      * @throws Exception
      */
     public function getActiveRoomsInfo(): GetActiveRoomsInfoRes
@@ -232,9 +248,10 @@ class PlugNmeet
     }
 
     /**
-     * Get all past rooms
-     * @param FetchPastRoomsReq $fetchPastRoomsReq
-     * @return FetchPastRoomsRes
+     * Retrieves a list of past rooms.
+     *
+     * @param FetchPastRoomsReq $fetchPastRoomsReq The request object for fetching past rooms.
+     * @return FetchPastRoomsRes The response from the fetchPastRoomsInfo API call.
      * @throws Exception
      */
     public function fetchPastRoomsInfo(FetchPastRoomsReq $fetchPastRoomsReq): FetchPastRoomsRes
@@ -252,10 +269,10 @@ class PlugNmeet
     }
 
     /**
-     * End active room
+     * Ends an active session.
      *
-     * @param RoomEndReq $roomEndReq
-     * @return RoomEndRes
+     * @param RoomEndReq $roomEndReq The request object for ending a room.
+     * @return RoomEndRes The response from the endRoom API call.
      * @throws Exception
      */
     public function endRoom(RoomEndReq $roomEndReq): RoomEndRes
@@ -273,10 +290,10 @@ class PlugNmeet
     }
 
     /**
-     * To fetch recordings
+     * Retrieves a list of recordings.
      *
-     * @param FetchRecordingsReq $fetchRecordingsReq
-     * @return FetchRecordingsRes
+     * @param FetchRecordingsReq $fetchRecordingsReq The request object for fetching recordings.
+     * @return FetchRecordingsRes The response from the fetchRecordings API call.
      * @throws Exception
      */
     public function fetchRecordings(FetchRecordingsReq $fetchRecordingsReq): FetchRecordingsRes
@@ -294,10 +311,10 @@ class PlugNmeet
     }
 
     /**
-     * To get recording info
+     * Retrieves information about a specific recording.
      *
-     * @param RecordingInfoReq $recordingInfoReq
-     * @return RecordingInfoRes
+     * @param RecordingInfoReq $recordingInfoReq The request object for getting recording information.
+     * @return RecordingInfoRes The response from the getRecordingInfo API call.
      * @throws Exception
      */
     public function getRecordingInfo(RecordingInfoReq $recordingInfoReq): RecordingInfoRes
@@ -315,10 +332,10 @@ class PlugNmeet
     }
 
     /**
-     * To update recording metadata
+     * Updates the metadata of a recording.
      *
-     * @param UpdateRecordingMetadataReq $updateRecordingMetadataReq
-     * @return UpdateRecordingMetadataRes
+     * @param UpdateRecordingMetadataReq $updateRecordingMetadataReq The request object for updating recording metadata.
+     * @return UpdateRecordingMetadataRes The response from the updateRecordingMetadata API call.
      * @throws Exception
      */
     public function updateRecordingMetadata(
@@ -337,10 +354,10 @@ class PlugNmeet
     }
 
     /**
-     * To delete recording
+     * Deletes a recording.
      *
-     * @param DeleteRecordingReq $deleteRecordingReq
-     * @return DeleteRecordingRes
+     * @param DeleteRecordingReq $deleteRecordingReq The request object for deleting a recording.
+     * @return DeleteRecordingRes The response from the deleteRecordings API call.
      * @throws Exception
      */
     public function deleteRecordings(DeleteRecordingReq $deleteRecordingReq): DeleteRecordingRes
@@ -358,10 +375,10 @@ class PlugNmeet
     }
 
     /**
-     * Generate token to download recording
+     * Generates a download link for a recording.
      *
-     * @param GetDownloadTokenReq $getDownloadTokenReq
-     * @return GetDownloadTokenRes
+     * @param GetDownloadTokenReq $getDownloadTokenReq The request object for getting a recording download token.
+     * @return GetDownloadTokenRes The response from the getRecordingDownloadToken API call.
      * @throws Exception
      */
     public function getRecordingDownloadToken(
@@ -380,10 +397,10 @@ class PlugNmeet
     }
 
     /**
-     * To fetch artifacts list
+     * Retrieves a list of artifacts.
      *
-     * @param FetchArtifactsReq $fetchArtifactsReq
-     * @return FetchArtifactsRes
+     * @param FetchArtifactsReq $fetchArtifactsReq The request object for fetching artifacts.
+     * @return FetchArtifactsRes The response from the fetchArtifacts API call.
      * @throws Exception
      */
     public function fetchArtifacts(FetchArtifactsReq $fetchArtifactsReq): FetchArtifactsRes
@@ -401,10 +418,10 @@ class PlugNmeet
     }
 
     /**
-     * To get details of an artifact
+     * Retrieves information about a specific artifact.
      *
-     * @param ArtifactInfoReq $artifactDetailsReq
-     * @return ArtifactInfoRes
+     * @param ArtifactInfoReq $artifactDetailsReq The request object for getting artifact information.
+     * @return ArtifactInfoRes The response from the getArtifactInfo API call.
      * @throws Exception
      */
     public function getArtifactInfo(ArtifactInfoReq $artifactDetailsReq): ArtifactInfoRes
@@ -422,10 +439,10 @@ class PlugNmeet
     }
 
     /**
-     * To delete artifact
+     * Deletes an artifact.
      *
-     * @param DeleteArtifactReq $deleteArtifactReq
-     * @return DeleteArtifactRes
+     * @param DeleteArtifactReq $deleteArtifactReq The request object for deleting an artifact.
+     * @return DeleteArtifactRes The response from the deleteArtifact API call.
      * @throws Exception
      */
     public function deleteArtifact(DeleteArtifactReq $deleteArtifactReq): DeleteArtifactRes
@@ -443,10 +460,10 @@ class PlugNmeet
     }
 
     /**
-     * Generate token to download artifact file
+     * Generates a download token for an artifact.
      *
-     * @param GetArtifactDownloadTokenReq $getAnalyticsDownloadTokenReq
-     * @return GetArtifactDownloadTokenRes
+     * @param GetArtifactDownloadTokenReq $getAnalyticsDownloadTokenReq The request object for getting an artifact download token.
+     * @return GetArtifactDownloadTokenRes The response from the getArtifactDownloadToken API call.
      * @throws Exception
      */
     public function getArtifactDownloadToken(
@@ -465,12 +482,12 @@ class PlugNmeet
     }
 
     /**
-     * Deprecated: To fetch analytics
+     * Retrieves analytics data.
      *
-     * @param FetchAnalyticsReq $fetchAnalyticsReq
-     * @return FetchAnalyticsRes
+     * @param FetchAnalyticsReq $fetchAnalyticsReq The request object for fetching analytics.
+     * @return FetchAnalyticsRes The response from the fetchAnalytics API call.
      * @throws Exception
-     * @deprecated replaced by artifact
+     * @deprecated This method is deprecated and will be removed in a future version. Use fetchArtifacts instead.
      */
     public function fetchAnalytics(FetchAnalyticsReq $fetchAnalyticsReq): FetchAnalyticsRes
     {
@@ -487,12 +504,12 @@ class PlugNmeet
     }
 
     /**
-     * Deprecated: To delete analytics
+     * Deletes analytics data.
      *
-     * @param DeleteAnalyticsReq $deleteAnalyticsReq
-     * @return DeleteAnalyticsRes
+     * @param DeleteAnalyticsReq $deleteAnalyticsReq The request object for deleting analytics.
+     * @return DeleteAnalyticsRes The response from the deleteAnalytics API call.
      * @throws Exception
-     * @deprecated replaced by artifact
+     * @deprecated This method is deprecated and will be removed in a future version. Use deleteArtifact instead.
      */
     public function deleteAnalytics(DeleteAnalyticsReq $deleteAnalyticsReq): DeleteAnalyticsRes
     {
@@ -509,12 +526,12 @@ class PlugNmeet
     }
 
     /**
-     * Deprecated: Generate token to download analytics
+     * Generates a download token for analytics data.
      *
-     * @param GetAnalyticsDownloadTokenReq $getAnalyticsDownloadTokenReq
-     * @return GetAnalyticsDownloadTokenRes
+     * @param GetAnalyticsDownloadTokenReq $getAnalyticsDownloadTokenReq The request object for getting an analytics download token.
+     * @return GetAnalyticsDownloadTokenRes The response from the getAnalyticsDownloadToken API call.
      * @throws Exception
-     * @deprecated replaced by artifact
+     * @deprecated This method is deprecated and will be removed in a future version. Use getArtifactDownloadToken instead.
      */
     public function getAnalyticsDownloadToken(
         GetAnalyticsDownloadTokenReq $getAnalyticsDownloadTokenReq
@@ -532,7 +549,9 @@ class PlugNmeet
     }
 
     /**
-     * @return GetClientFilesRes
+     * Retrieves the client files needed to build the plugNmeet interface.
+     *
+     * @return GetClientFilesRes The response from the getClientFiles API call.
      * @throws Exception
      */
     public function getClientFiles(): GetClientFilesRes
@@ -548,11 +567,13 @@ class PlugNmeet
     }
 
     /**
-     * @param array $payload
-     * @param int $validity in seconds
-     * @param string $algo
-     * @param array $head
-     * @return string
+     * Encodes a payload into a JWT.
+     *
+     * @param array $payload The payload to encode.
+     * @param int $validity The validity of the token in seconds.
+     * @param string $algo The hashing algorithm to use.
+     * @param array $head Optional headers for the JWT.
+     * @return string The encoded JWT.
      */
     public function getJWTencodedData(array $payload, int $validity, string $algo = "HS256", array $head = []): string
     {
@@ -564,9 +585,11 @@ class PlugNmeet
     }
 
     /**
-     * @param string $raw
-     * @param string $algo
-     * @return stdClass
+     * Decodes a JWT.
+     *
+     * @param string $raw The JWT to decode.
+     * @param string $algo The hashing algorithm used to encode the JWT.
+     * @return stdClass The decoded payload.
      */
     public function decodeJWTData(string $raw, string $algo = "HS256"): stdClass
     {
@@ -574,9 +597,9 @@ class PlugNmeet
     }
 
     /**
-     * Generate UUID random string
+     * Generates a UUID v4 random string.
      *
-     * @return string
+     * @return string The generated UUID v4.
      */
     public function getUUID(): string
     {
@@ -585,9 +608,9 @@ class PlugNmeet
     }
 
     /**
-     * Generate UUID v4 random string
+     * Generates a UUID v4 random string.
      *
-     * @return string
+     * @return string The generated UUID v4.
      */
     public static function generateUuid4(): string
     {
@@ -595,18 +618,24 @@ class PlugNmeet
     }
 
     /**
-     * @param $path
-     * @param string $body
-     * @return stdClass
+     * Sends a request to the plugNmeet server.
+     *
+     * @param string $path The API endpoint to call.
+     * @param string $body The body of the request.
+     * @return stdClass The response from the server.
      */
-    protected function sendRequest($path, string $body): stdClass
+    protected function sendRequest(string $path, string $body): stdClass
     {
         $output = new stdClass();
         $output->status = false;
         $signature = hash_hmac($this->algo, $body, $this->apiSecret);
 
         try {
-            $url = $this->serverUrl . $this->defaultPath . $path;
+            $url = implode('/', [
+                rtrim($this->serverUrl, '/'),
+                trim($this->defaultPath, '/'),
+                trim($path, '/')
+            ]);
             $response = $this->httpClient->post(
                 $url,
                 $body,

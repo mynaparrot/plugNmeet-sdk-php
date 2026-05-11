@@ -22,22 +22,27 @@
  * SOFTWARE.
  */
 
-// this is a simple example to build plugNmeet client using API
-// this way you can avoid to use iFrame to load the interface
-// to generate token have a look quickJoin.php file
-// if the domain is localhost then it will work with http
-// development: http://localhost/conference.php?access_token=TOKEN_HERE
-// during production using https is compulsory otherwise user won't be able to join
+// This is a simple example of how to build a plugNmeet client using the API.
+// This approach avoids using an iFrame to load the interface.
+//
+// To generate a token, see the quickJoin.php file.
+//
+// The domain is localhost, so it will work with http.
+// Development: http://localhost/conference.php?access_token=TOKEN_HERE
+//
+// During production, using HTTPS is compulsory; otherwise, users will not be able to join.
 // Production: https://mydomain.com/conference.php?access_token=TOKEN_HERE
-// you can use any location to build this page, just need to make sure to have
-// GET param `access_token` with token value; OR
-// set cookie name `pnm_access_token` with the value of the access token
-// you can add other params for your own usage
-// the value of token don't need to encoded or any changes else will fail to validate
-
-// Note: To avoid conflict, we recommend that you only utilize plugNmeet client files in this page.
-// However, you are free to use any additional JS files you want, but please ensure that you have done
-// adequate testing before going to production.
+//
+// You can use any location to build this page, but you must ensure that you have one of the following:
+// - A GET parameter `access_token` with the token value.
+// - A cookie named `pnm_access_token` with the value of the access token.
+//
+// You can add other parameters for your own use.
+// The token value does not need to be encoded or changed in any way, as this will cause validation to fail.
+//
+// Note: To avoid conflicts, we recommend that you only use plugNmeet client files on this page.
+// However, you are free to use any additional JS files you want, but please ensure that you have
+// performed adequate testing before going to production.
 
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
