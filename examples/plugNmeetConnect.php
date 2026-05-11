@@ -485,13 +485,14 @@ class plugNmeetConnect
 
     /**
      * @param string|array $rawData
+     * @param string $userTimezone
      * @return AnalyticsFormatter
      */
-    public function getFormattedAnalyticData(string|array $rawData): AnalyticsFormatter
+    public function getAnalyticsFormatter(string|array $rawData, string $userTimezone = 'UTC'): AnalyticsFormatter
     {
         if (!is_array($rawData)) {
             $rawData = json_decode($rawData, true);
         }
-        return new AnalyticsFormatter($rawData);
+        return new AnalyticsFormatter($rawData, $userTimezone);
     }
 }
