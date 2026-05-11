@@ -126,11 +126,11 @@ class PlugNmeet
      * @param HttpClientInterface|null $httpClient An optional custom HTTP client.
      */
     public function __construct(
-        string               $serverUrl,
-        string               $apiKey,
-        string               $apiSecret,
-        int                  $timeout = 60,
-        bool                 $verifySSL = true,
+        string $serverUrl,
+        string $apiKey,
+        string $apiSecret,
+        int $timeout = 60,
+        bool $verifySSL = true,
         ?HttpClientInterface $httpClient = null
     ) {
         $this->serverUrl = $serverUrl;
