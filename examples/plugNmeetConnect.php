@@ -1,4 +1,5 @@
 <?php
+
 /*
  * Copyright (c) 2022 onward MynaParrot
  *
@@ -483,13 +484,14 @@ class plugNmeetConnect
     }
 
     /**
-     * @param string $data
-     * @return array
+     * @param string|array $rawData
+     * @return AnalyticsFormatter
      */
-    public function getFormattedAnalyticData(string $data): array
+    public function getFormattedAnalyticData(string|array $rawData): AnalyticsFormatter
     {
-        $rawData = json_decode($data, true);
-        $formatter = new AnalyticsFormatter($rawData);
-        return $formatter->getFormattedEventData();
+        if (!is_array($rawData)) {
+            $rawData = json_decode($rawData, true);
+        }
+        return new AnalyticsFormatter($rawData);
     }
 }

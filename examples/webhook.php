@@ -59,4 +59,3 @@ if ($our !== $sentHash) {
 $val = json_decode($entityBody, true);
 
 //file_put_contents(__DIR__ . "/out.txt", print_r($val, true));
-

@@ -70,7 +70,7 @@ if (empty($jsFiles) || empty($cssFiles)) {
     die("didn't get required files to build interface");
 }
 
-if (!empty($res->getStaticAssetsPath())){
+if (!empty($res->getStaticAssetsPath())) {
     $assetsPath = $res->getStaticAssetsPath();
 }
 
@@ -146,7 +146,7 @@ $plugNmeetConfig = array(
     'focusActiveSpeakerWebcam' => true,
 
     // Disables the dark mode theme and the user's ability to toggle it.
-    'disableDarkMode'=> false,
+    'disableDarkMode' => false,
 
     // Design customization
     /*'designCustomization' => array(

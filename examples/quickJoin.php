@@ -160,7 +160,6 @@ try {
         $isRoomActive = $res->getIsActive();
         $output->status = true;
     }
-
 } catch (Exception $e) {
     $output->msg = $e->getMessage();
 }
