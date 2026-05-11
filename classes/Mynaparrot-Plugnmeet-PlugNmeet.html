@@ -250,7 +250,8 @@
 
     </aside>
 
-        
+            <p class="phpdocumentor-summary">The main class for interacting with the plugNmeet API.</p>
+
 
 
 
@@ -282,36 +283,42 @@
     <span>
                         &nbsp;: string            </span>
 </dt>
+<dd>The hashing algorithm used to sign requests.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#property_apiKey">$apiKey</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
+<dd>The API key for the plugNmeet server.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#property_apiSecret">$apiSecret</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
+<dd>The API secret for the plugNmeet server.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#property_defaultPath">$defaultPath</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
+<dd>The default path for API requests.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#property_httpClient">$httpClient</a>
     <span>
                         &nbsp;: <a href="classes/Mynaparrot-Plugnmeet-HttpClientInterface.html"><abbr title="\Mynaparrot\Plugnmeet\HttpClientInterface">HttpClientInterface</abbr></a>            </span>
 </dt>
+<dd>The HTTP client used to make requests to the plugNmeet server.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#property_serverUrl">$serverUrl</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
+<dd>The URL of the plugNmeet server.</dd>
 
     </dl>
 
@@ -326,177 +333,182 @@
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
+<dd>Constructs a new PlugNmeet instance.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_createRoom">createRoom()</a>
     <span>
                                 &nbsp;: <a href="classes/Mynaparrot-PlugnmeetProto-CreateRoomRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\CreateRoomRes">CreateRoomRes</abbr></a>    </span>
 </dt>
-<dd>Create new room</dd>
+<dd>Creates a new room.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_decodeJWTData">decodeJWTData()</a>
     <span>
                                 &nbsp;: <abbr title="\stdClass">stdClass</abbr>    </span>
 </dt>
+<dd>Decodes a JWT.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="-deprecated" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_deleteAnalytics">deleteAnalytics()</a>
     <span>
                                 &nbsp;: <a href="classes/Mynaparrot-PlugnmeetProto-DeleteAnalyticsRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\DeleteAnalyticsRes">DeleteAnalyticsRes</abbr></a>    </span>
 </dt>
-<dd>Deprecated: To delete analytics</dd>
+<dd>Deletes analytics data.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_deleteArtifact">deleteArtifact()</a>
     <span>
                                 &nbsp;: <a href="classes/Mynaparrot-PlugnmeetProto-DeleteArtifactRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\DeleteArtifactRes">DeleteArtifactRes</abbr></a>    </span>
 </dt>
-<dd>To delete artifact</dd>
+<dd>Deletes an artifact.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_deleteRecordings">deleteRecordings()</a>
     <span>
                                 &nbsp;: <a href="classes/Mynaparrot-PlugnmeetProto-DeleteRecordingRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\DeleteRecordingRes">DeleteRecordingRes</abbr></a>    </span>
 </dt>
-<dd>To delete recording</dd>
+<dd>Deletes a recording.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_endRoom">endRoom()</a>
     <span>
                                 &nbsp;: <a href="classes/Mynaparrot-PlugnmeetProto-RoomEndRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\RoomEndRes">RoomEndRes</abbr></a>    </span>
 </dt>
-<dd>End active room</dd>
+<dd>Ends an active session.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="-deprecated" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_fetchAnalytics">fetchAnalytics()</a>
     <span>
                                 &nbsp;: <a href="classes/Mynaparrot-PlugnmeetProto-FetchAnalyticsRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\FetchAnalyticsRes">FetchAnalyticsRes</abbr></a>    </span>
 </dt>
-<dd>Deprecated: To fetch analytics</dd>
+<dd>Retrieves analytics data.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_fetchArtifacts">fetchArtifacts()</a>
     <span>
                                 &nbsp;: <a href="classes/Mynaparrot-PlugnmeetProto-FetchArtifactsRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\FetchArtifactsRes">FetchArtifactsRes</abbr></a>    </span>
 </dt>
-<dd>To fetch artifacts list</dd>
+<dd>Retrieves a list of artifacts.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_fetchPastRoomsInfo">fetchPastRoomsInfo()</a>
     <span>
                                 &nbsp;: <a href="classes/Mynaparrot-PlugnmeetProto-FetchPastRoomsRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\FetchPastRoomsRes">FetchPastRoomsRes</abbr></a>    </span>
 </dt>
-<dd>Get all past rooms</dd>
+<dd>Retrieves a list of past rooms.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_fetchRecordings">fetchRecordings()</a>
     <span>
                                 &nbsp;: <a href="classes/Mynaparrot-PlugnmeetProto-FetchRecordingsRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\FetchRecordingsRes">FetchRecordingsRes</abbr></a>    </span>
 </dt>
-<dd>To fetch recordings</dd>
+<dd>Retrieves a list of recordings.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_generateUuid4">generateUuid4()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>Generate UUID v4 random string</dd>
+<dd>Generates a UUID v4 random string.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getActiveRoomInfo">getActiveRoomInfo()</a>
     <span>
                                 &nbsp;: <a href="classes/Mynaparrot-PlugnmeetProto-GetActiveRoomInfoRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\GetActiveRoomInfoRes">GetActiveRoomInfoRes</abbr></a>    </span>
 </dt>
-<dd>Get active room information</dd>
+<dd>Retrieves information about an active room.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getActiveRoomsInfo">getActiveRoomsInfo()</a>
     <span>
                                 &nbsp;: <a href="classes/Mynaparrot-PlugnmeetProto-GetActiveRoomsInfoRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\GetActiveRoomsInfoRes">GetActiveRoomsInfoRes</abbr></a>    </span>
 </dt>
-<dd>Get all active rooms</dd>
+<dd>Retrieves information about all active rooms.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="-deprecated" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getAnalyticsDownloadToken">getAnalyticsDownloadToken()</a>
     <span>
                                 &nbsp;: <a href="classes/Mynaparrot-PlugnmeetProto-GetAnalyticsDownloadTokenRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\GetAnalyticsDownloadTokenRes">GetAnalyticsDownloadTokenRes</abbr></a>    </span>
 </dt>
-<dd>Deprecated: Generate token to download analytics</dd>
+<dd>Generates a download token for analytics data.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getArtifactDownloadToken">getArtifactDownloadToken()</a>
     <span>
                                 &nbsp;: <a href="classes/Mynaparrot-PlugnmeetProto-GetArtifactDownloadTokenRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\GetArtifactDownloadTokenRes">GetArtifactDownloadTokenRes</abbr></a>    </span>
 </dt>
-<dd>Generate token to download artifact file</dd>
+<dd>Generates a download token for an artifact.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getArtifactInfo">getArtifactInfo()</a>
     <span>
                                 &nbsp;: <a href="classes/Mynaparrot-PlugnmeetProto-ArtifactInfoRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\ArtifactInfoRes">ArtifactInfoRes</abbr></a>    </span>
 </dt>
-<dd>To get details of an artifact</dd>
+<dd>Retrieves information about a specific artifact.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getClientFiles">getClientFiles()</a>
     <span>
                                 &nbsp;: <a href="classes/Mynaparrot-PlugnmeetProto-GetClientFilesRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\GetClientFilesRes">GetClientFilesRes</abbr></a>    </span>
 </dt>
+<dd>Retrieves the client files needed to build the plugNmeet interface.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getJoinToken">getJoinToken()</a>
     <span>
                                 &nbsp;: <a href="classes/Mynaparrot-PlugnmeetProto-GenerateTokenRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\GenerateTokenRes">GenerateTokenRes</abbr></a>    </span>
 </dt>
-<dd>Generate join token</dd>
+<dd>Generates a token for a user to join a room.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getJWTencodedData">getJWTencodedData()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
+<dd>Encodes a payload into a JWT.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getRecordingDownloadToken">getRecordingDownloadToken()</a>
     <span>
                                 &nbsp;: <a href="classes/Mynaparrot-PlugnmeetProto-GetDownloadTokenRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\GetDownloadTokenRes">GetDownloadTokenRes</abbr></a>    </span>
 </dt>
-<dd>Generate token to download recording</dd>
+<dd>Generates a download link for a recording.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getRecordingInfo">getRecordingInfo()</a>
     <span>
                                 &nbsp;: <a href="classes/Mynaparrot-PlugnmeetProto-RecordingInfoRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\RecordingInfoRes">RecordingInfoRes</abbr></a>    </span>
 </dt>
-<dd>To get recording info</dd>
+<dd>Retrieves information about a specific recording.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getUUID">getUUID()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>Generate UUID random string</dd>
+<dd>Generates a UUID v4 random string.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_isRoomActive">isRoomActive()</a>
     <span>
                                 &nbsp;: <a href="classes/Mynaparrot-PlugnmeetProto-IsRoomActiveRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\IsRoomActiveRes">IsRoomActiveRes</abbr></a>    </span>
 </dt>
-<dd>To check if room is active or not</dd>
+<dd>Checks if a room is currently active.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_updateRecordingMetadata">updateRecordingMetadata()</a>
     <span>
                                 &nbsp;: <a href="classes/Mynaparrot-PlugnmeetProto-UpdateRecordingMetadataRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\UpdateRecordingMetadataRes">UpdateRecordingMetadataRes</abbr></a>    </span>
 </dt>
-<dd>To update recording metadata</dd>
+<dd>Updates the metadata of a recording.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_sendRequest">sendRequest()</a>
     <span>
                                 &nbsp;: <abbr title="\stdClass">stdClass</abbr>    </span>
 </dt>
+<dd>Sends a request to the plugNmeet server.</dd>
 
     </dl>
 
@@ -528,11 +540,12 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">The hashing algorithm used to sign requests.</p>
+
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">protected</span>
@@ -565,11 +578,12 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">The API key for the plugNmeet server.</p>
+
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">protected</span>
@@ -602,11 +616,12 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">87</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">The API secret for the plugNmeet server.</p>
+
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">protected</span>
@@ -639,11 +654,12 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">97</span>
+    <span class="phpdocumentor-element-found-in__line">109</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">The default path for API requests.</p>
+
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">protected</span>
@@ -676,11 +692,12 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">The HTTP client used to make requests to the plugNmeet server.</p>
+
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">protected</span>
@@ -713,11 +730,12 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">79</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">The URL of the plugNmeet server.</p>
+
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">protected</span>
@@ -755,11 +773,12 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">128</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Constructs a new PlugNmeet instance.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$serverUrl</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$apiKey</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$apiSecret</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$timeout</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">60</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$verifySSL</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Mynaparrot-Plugnmeet-HttpClientInterface.html"><abbr title="\Mynaparrot\Plugnmeet\HttpClientInterface">HttpClientInterface</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$httpClient</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
@@ -775,7 +794,7 @@
                 : <span class="phpdocumentor-argument-list__argument__type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>plugNmeet server URL</p>
+                    <section class="phpdocumentor-description"><p>The URL of the plugNmeet server.</p>
 </section>
 
             </dd>
@@ -784,7 +803,7 @@
                 : <span class="phpdocumentor-argument-list__argument__type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>plugNmeet API_Key</p>
+                    <section class="phpdocumentor-description"><p>The API key for the plugNmeet server.</p>
 </section>
 
             </dd>
@@ -793,7 +812,7 @@
                 : <span class="phpdocumentor-argument-list__argument__type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>plugNmeet API_Secret</p>
+                    <section class="phpdocumentor-description"><p>The API secret for the plugNmeet server.</p>
 </section>
 
             </dd>
@@ -802,21 +821,27 @@
                 : <span class="phpdocumentor-argument-list__argument__type">int</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">60</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>The timeout for API requests in seconds.</p>
+</section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$verifySSL</span>
                 : <span class="phpdocumentor-argument-list__argument__type">bool</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">true</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>Whether to verify the SSL certificate.</p>
+</section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$httpClient</span>
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Mynaparrot-Plugnmeet-HttpClientInterface.html"><abbr title="\Mynaparrot\Plugnmeet\HttpClientInterface">HttpClientInterface</abbr></a>|null</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>An optional custom HTTP client.</p>
+</section>
+
             </dd>
             </dl>
 
@@ -840,11 +865,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">138</span>
+    <span class="phpdocumentor-element-found-in__line">154</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Create new room</p>
+        <p class="phpdocumentor-summary">Creates a new room.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -861,7 +886,9 @@
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Mynaparrot-PlugnmeetProto-CreateRoomReq.html"><abbr title="\Mynaparrot\PlugnmeetProto\CreateRoomReq">CreateRoomReq</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>The request object for creating a room.</p>
+</section>
+
             </dd>
             </dl>
 
@@ -887,6 +914,10 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-CreateRoomRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\CreateRoomRes">CreateRoomRes</abbr></a></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The response from the createRoom API call.</p>
+</section>
+
             </section>
 
 </article>
@@ -904,11 +935,12 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">571</span>
+    <span class="phpdocumentor-element-found-in__line">594</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Decodes a JWT.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">decodeJWTData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$raw</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$algo</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">"HS256"</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span></code>
@@ -924,14 +956,18 @@
                 : <span class="phpdocumentor-argument-list__argument__type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>The JWT to decode.</p>
+</section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$algo</span>
                 : <span class="phpdocumentor-argument-list__argument__type">string</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">"HS256"</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>The hashing algorithm used to encode the JWT.</p>
+</section>
+
             </dd>
             </dl>
 
@@ -942,6 +978,10 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The decoded payload.</p>
+</section>
+
             </section>
 
 </article>
@@ -959,11 +999,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">497</span>
+    <span class="phpdocumentor-element-found-in__line">514</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Deprecated: To delete analytics</p>
+        <p class="phpdocumentor-summary">Deletes analytics data.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -974,7 +1014,7 @@
                 <div class="phpdocumentor-admonition">
         <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
             <article>
-                <p>replaced by artifact</p>
+                <p>This method is deprecated and will be removed in a future version. Use deleteArtifact instead.</p>
 
             </article>
         </div>
@@ -987,7 +1027,9 @@
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Mynaparrot-PlugnmeetProto-DeleteAnalyticsReq.html"><abbr title="\Mynaparrot\PlugnmeetProto\DeleteAnalyticsReq">DeleteAnalyticsReq</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>The request object for deleting analytics.</p>
+</section>
+
             </dd>
             </dl>
 
@@ -1013,6 +1055,10 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-DeleteAnalyticsRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\DeleteAnalyticsRes">DeleteAnalyticsRes</abbr></a></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The response from the deleteAnalytics API call.</p>
+</section>
+
             </section>
 
 </article>
@@ -1030,11 +1076,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">431</span>
+    <span class="phpdocumentor-element-found-in__line">448</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">To delete artifact</p>
+        <p class="phpdocumentor-summary">Deletes an artifact.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -1051,7 +1097,9 @@
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Mynaparrot-PlugnmeetProto-DeleteArtifactReq.html"><abbr title="\Mynaparrot\PlugnmeetProto\DeleteArtifactReq">DeleteArtifactReq</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>The request object for deleting an artifact.</p>
+</section>
+
             </dd>
             </dl>
 
@@ -1077,6 +1125,10 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-DeleteArtifactRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\DeleteArtifactRes">DeleteArtifactRes</abbr></a></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The response from the deleteArtifact API call.</p>
+</section>
+
             </section>
 
 </article>
@@ -1094,11 +1146,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">346</span>
+    <span class="phpdocumentor-element-found-in__line">363</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">To delete recording</p>
+        <p class="phpdocumentor-summary">Deletes a recording.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -1115,7 +1167,9 @@
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Mynaparrot-PlugnmeetProto-DeleteRecordingReq.html"><abbr title="\Mynaparrot\PlugnmeetProto\DeleteRecordingReq">DeleteRecordingReq</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>The request object for deleting a recording.</p>
+</section>
+
             </dd>
             </dl>
 
@@ -1141,6 +1195,10 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-DeleteRecordingRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\DeleteRecordingRes">DeleteRecordingRes</abbr></a></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The response from the deleteRecordings API call.</p>
+</section>
+
             </section>
 
 </article>
@@ -1158,11 +1216,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">261</span>
+    <span class="phpdocumentor-element-found-in__line">278</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">End active room</p>
+        <p class="phpdocumentor-summary">Ends an active session.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -1179,7 +1237,9 @@
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Mynaparrot-PlugnmeetProto-RoomEndReq.html"><abbr title="\Mynaparrot\PlugnmeetProto\RoomEndReq">RoomEndReq</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>The request object for ending a room.</p>
+</section>
+
             </dd>
             </dl>
 
@@ -1205,6 +1265,10 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-RoomEndRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\RoomEndRes">RoomEndRes</abbr></a></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The response from the endRoom API call.</p>
+</section>
+
             </section>
 
 </article>
@@ -1222,11 +1286,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">475</span>
+    <span class="phpdocumentor-element-found-in__line">492</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Deprecated: To fetch analytics</p>
+        <p class="phpdocumentor-summary">Retrieves analytics data.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -1237,7 +1301,7 @@
                 <div class="phpdocumentor-admonition">
         <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
             <article>
-                <p>replaced by artifact</p>
+                <p>This method is deprecated and will be removed in a future version. Use fetchArtifacts instead.</p>
 
             </article>
         </div>
@@ -1250,7 +1314,9 @@
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Mynaparrot-PlugnmeetProto-FetchAnalyticsReq.html"><abbr title="\Mynaparrot\PlugnmeetProto\FetchAnalyticsReq">FetchAnalyticsReq</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>The request object for fetching analytics.</p>
+</section>
+
             </dd>
             </dl>
 
@@ -1276,6 +1342,10 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-FetchAnalyticsRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\FetchAnalyticsRes">FetchAnalyticsRes</abbr></a></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The response from the fetchAnalytics API call.</p>
+</section>
+
             </section>
 
 </article>
@@ -1293,11 +1363,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">389</span>
+    <span class="phpdocumentor-element-found-in__line">406</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">To fetch artifacts list</p>
+        <p class="phpdocumentor-summary">Retrieves a list of artifacts.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -1314,7 +1384,9 @@
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Mynaparrot-PlugnmeetProto-FetchArtifactsReq.html"><abbr title="\Mynaparrot\PlugnmeetProto\FetchArtifactsReq">FetchArtifactsReq</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>The request object for fetching artifacts.</p>
+</section>
+
             </dd>
             </dl>
 
@@ -1340,6 +1412,10 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-FetchArtifactsRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\FetchArtifactsRes">FetchArtifactsRes</abbr></a></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The response from the fetchArtifacts API call.</p>
+</section>
+
             </section>
 
 </article>
@@ -1357,11 +1433,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">240</span>
+    <span class="phpdocumentor-element-found-in__line">257</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get all past rooms</p>
+        <p class="phpdocumentor-summary">Retrieves a list of past rooms.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -1378,7 +1454,9 @@
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Mynaparrot-PlugnmeetProto-FetchPastRoomsReq.html"><abbr title="\Mynaparrot\PlugnmeetProto\FetchPastRoomsReq">FetchPastRoomsReq</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>The request object for fetching past rooms.</p>
+</section>
+
             </dd>
             </dl>
 
@@ -1404,6 +1482,10 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-FetchPastRoomsRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\FetchPastRoomsRes">FetchPastRoomsRes</abbr></a></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The response from the fetchPastRoomsInfo API call.</p>
+</section>
+
             </section>
 
 </article>
@@ -1421,11 +1503,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">282</span>
+    <span class="phpdocumentor-element-found-in__line">299</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">To fetch recordings</p>
+        <p class="phpdocumentor-summary">Retrieves a list of recordings.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -1442,7 +1524,9 @@
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Mynaparrot-PlugnmeetProto-FetchRecordingsReq.html"><abbr title="\Mynaparrot\PlugnmeetProto\FetchRecordingsReq">FetchRecordingsReq</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>The request object for fetching recordings.</p>
+</section>
+
             </dd>
             </dl>
 
@@ -1468,6 +1552,10 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-FetchRecordingsRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\FetchRecordingsRes">FetchRecordingsRes</abbr></a></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The response from the fetchRecordings API call.</p>
+</section>
+
             </section>
 
 </article>
@@ -1485,11 +1573,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">592</span>
+    <span class="phpdocumentor-element-found-in__line">615</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generate UUID v4 random string</p>
+        <p class="phpdocumentor-summary">Generates a UUID v4 random string.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -1507,6 +1595,10 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The generated UUID v4.</p>
+</section>
+
             </section>
 
 </article>
@@ -1524,11 +1616,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">201</span>
+    <span class="phpdocumentor-element-found-in__line">217</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get active room information</p>
+        <p class="phpdocumentor-summary">Retrieves information about an active room.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -1545,7 +1637,9 @@
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Mynaparrot-PlugnmeetProto-GetActiveRoomInfoReq.html"><abbr title="\Mynaparrot\PlugnmeetProto\GetActiveRoomInfoReq">GetActiveRoomInfoReq</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>The request object for getting active room information.</p>
+</section>
+
             </dd>
             </dl>
 
@@ -1571,6 +1665,10 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-GetActiveRoomInfoRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\GetActiveRoomInfoRes">GetActiveRoomInfoRes</abbr></a></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The response from the getActiveRoomInfo API call.</p>
+</section>
+
             </section>
 
 </article>
@@ -1588,11 +1686,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">222</span>
+    <span class="phpdocumentor-element-found-in__line">238</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get all active rooms</p>
+        <p class="phpdocumentor-summary">Retrieves information about all active rooms.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -1625,6 +1723,10 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-GetActiveRoomsInfoRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\GetActiveRoomsInfoRes">GetActiveRoomsInfoRes</abbr></a></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The response from the getActiveRoomsInfo API call.</p>
+</section>
+
             </section>
 
 </article>
@@ -1642,11 +1744,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">519</span>
+    <span class="phpdocumentor-element-found-in__line">536</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Deprecated: Generate token to download analytics</p>
+        <p class="phpdocumentor-summary">Generates a download token for analytics data.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -1657,7 +1759,7 @@
                 <div class="phpdocumentor-admonition">
         <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
             <article>
-                <p>replaced by artifact</p>
+                <p>This method is deprecated and will be removed in a future version. Use getArtifactDownloadToken instead.</p>
 
             </article>
         </div>
@@ -1670,7 +1772,9 @@
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Mynaparrot-PlugnmeetProto-GetAnalyticsDownloadTokenReq.html"><abbr title="\Mynaparrot\PlugnmeetProto\GetAnalyticsDownloadTokenReq">GetAnalyticsDownloadTokenReq</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>The request object for getting an analytics download token.</p>
+</section>
+
             </dd>
             </dl>
 
@@ -1696,6 +1800,10 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-GetAnalyticsDownloadTokenRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\GetAnalyticsDownloadTokenRes">GetAnalyticsDownloadTokenRes</abbr></a></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The response from the getAnalyticsDownloadToken API call.</p>
+</section>
+
             </section>
 
 </article>
@@ -1713,11 +1821,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">452</span>
+    <span class="phpdocumentor-element-found-in__line">469</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generate token to download artifact file</p>
+        <p class="phpdocumentor-summary">Generates a download token for an artifact.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -1734,7 +1842,9 @@
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Mynaparrot-PlugnmeetProto-GetArtifactDownloadTokenReq.html"><abbr title="\Mynaparrot\PlugnmeetProto\GetArtifactDownloadTokenReq">GetArtifactDownloadTokenReq</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>The request object for getting an artifact download token.</p>
+</section>
+
             </dd>
             </dl>
 
@@ -1760,6 +1870,10 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-GetArtifactDownloadTokenRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\GetArtifactDownloadTokenRes">GetArtifactDownloadTokenRes</abbr></a></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The response from the getArtifactDownloadToken API call.</p>
+</section>
+
             </section>
 
 </article>
@@ -1777,11 +1891,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">410</span>
+    <span class="phpdocumentor-element-found-in__line">427</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">To get details of an artifact</p>
+        <p class="phpdocumentor-summary">Retrieves information about a specific artifact.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -1798,7 +1912,9 @@
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Mynaparrot-PlugnmeetProto-ArtifactInfoReq.html"><abbr title="\Mynaparrot\PlugnmeetProto\ArtifactInfoReq">ArtifactInfoReq</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>The request object for getting artifact information.</p>
+</section>
+
             </dd>
             </dl>
 
@@ -1824,6 +1940,10 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-ArtifactInfoRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\ArtifactInfoRes">ArtifactInfoRes</abbr></a></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The response from the getArtifactInfo API call.</p>
+</section>
+
             </section>
 
 </article>
@@ -1841,11 +1961,12 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">538</span>
+    <span class="phpdocumentor-element-found-in__line">557</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Retrieves the client files needed to build the plugNmeet interface.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getClientFiles</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-GetClientFilesRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\GetClientFilesRes">GetClientFilesRes</abbr></a></span></code>
@@ -1877,6 +1998,10 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-GetClientFilesRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\GetClientFilesRes">GetClientFilesRes</abbr></a></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The response from the getClientFiles API call.</p>
+</section>
+
             </section>
 
 </article>
@@ -1894,11 +2019,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">159</span>
+    <span class="phpdocumentor-element-found-in__line">175</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generate join token</p>
+        <p class="phpdocumentor-summary">Generates a token for a user to join a room.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -1915,7 +2040,9 @@
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Mynaparrot-PlugnmeetProto-GenerateTokenReq.html"><abbr title="\Mynaparrot\PlugnmeetProto\GenerateTokenReq">GenerateTokenReq</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>The request object for generating a join token.</p>
+</section>
+
             </dd>
             </dl>
 
@@ -1941,6 +2068,10 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-GenerateTokenRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\GenerateTokenRes">GenerateTokenRes</abbr></a></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The response from the getJoinToken API call.</p>
+</section>
+
             </section>
 
 </article>
@@ -1958,11 +2089,12 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">557</span>
+    <span class="phpdocumentor-element-found-in__line">578</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Encodes a payload into a JWT.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getJWTencodedData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$payload</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$validity</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$algo</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">"HS256"</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$head</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
@@ -1978,14 +2110,16 @@
                 : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>The payload to encode.</p>
+</section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$validity</span>
                 : <span class="phpdocumentor-argument-list__argument__type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>in seconds</p>
+                    <section class="phpdocumentor-description"><p>The validity of the token in seconds.</p>
 </section>
 
             </dd>
@@ -1994,14 +2128,18 @@
                 : <span class="phpdocumentor-argument-list__argument__type">string</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">"HS256"</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>The hashing algorithm to use.</p>
+</section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$head</span>
                 : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>Optional headers for the JWT.</p>
+</section>
+
             </dd>
             </dl>
 
@@ -2012,6 +2150,10 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The encoded JWT.</p>
+</section>
+
             </section>
 
 </article>
@@ -2029,11 +2171,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">367</span>
+    <span class="phpdocumentor-element-found-in__line">384</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generate token to download recording</p>
+        <p class="phpdocumentor-summary">Generates a download link for a recording.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -2050,7 +2192,9 @@
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Mynaparrot-PlugnmeetProto-GetDownloadTokenReq.html"><abbr title="\Mynaparrot\PlugnmeetProto\GetDownloadTokenReq">GetDownloadTokenReq</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>The request object for getting a recording download token.</p>
+</section>
+
             </dd>
             </dl>
 
@@ -2076,6 +2220,10 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-GetDownloadTokenRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\GetDownloadTokenRes">GetDownloadTokenRes</abbr></a></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The response from the getRecordingDownloadToken API call.</p>
+</section>
+
             </section>
 
 </article>
@@ -2093,11 +2241,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">303</span>
+    <span class="phpdocumentor-element-found-in__line">320</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">To get recording info</p>
+        <p class="phpdocumentor-summary">Retrieves information about a specific recording.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -2114,7 +2262,9 @@
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Mynaparrot-PlugnmeetProto-RecordingInfoReq.html"><abbr title="\Mynaparrot\PlugnmeetProto\RecordingInfoReq">RecordingInfoReq</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>The request object for getting recording information.</p>
+</section>
+
             </dd>
             </dl>
 
@@ -2140,6 +2290,10 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-RecordingInfoRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\RecordingInfoRes">RecordingInfoRes</abbr></a></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The response from the getRecordingInfo API call.</p>
+</section>
+
             </section>
 
 </article>
@@ -2157,11 +2311,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">581</span>
+    <span class="phpdocumentor-element-found-in__line">604</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generate UUID random string</p>
+        <p class="phpdocumentor-summary">Generates a UUID v4 random string.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -2179,6 +2333,10 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The generated UUID v4.</p>
+</section>
+
             </section>
 
 </article>
@@ -2196,11 +2354,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">180</span>
+    <span class="phpdocumentor-element-found-in__line">196</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">To check if room is active or not</p>
+        <p class="phpdocumentor-summary">Checks if a room is currently active.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -2217,7 +2375,9 @@
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Mynaparrot-PlugnmeetProto-IsRoomActiveReq.html"><abbr title="\Mynaparrot\PlugnmeetProto\IsRoomActiveReq">IsRoomActiveReq</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>The request object for checking if a room is active.</p>
+</section>
+
             </dd>
             </dl>
 
@@ -2243,6 +2403,10 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-IsRoomActiveRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\IsRoomActiveRes">IsRoomActiveRes</abbr></a></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The response from the isRoomActive API call.</p>
+</section>
+
             </section>
 
 </article>
@@ -2260,11 +2424,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">324</span>
+    <span class="phpdocumentor-element-found-in__line">341</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">To update recording metadata</p>
+        <p class="phpdocumentor-summary">Updates the metadata of a recording.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -2281,7 +2445,9 @@
                 : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Mynaparrot-PlugnmeetProto-UpdateRecordingMetadataReq.html"><abbr title="\Mynaparrot\PlugnmeetProto\UpdateRecordingMetadataReq">UpdateRecordingMetadataReq</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>The request object for updating recording metadata.</p>
+</section>
+
             </dd>
             </dl>
 
@@ -2307,6 +2473,10 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-UpdateRecordingMetadataRes.html"><abbr title="\Mynaparrot\PlugnmeetProto\UpdateRecordingMetadataRes">UpdateRecordingMetadataRes</abbr></a></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The response from the updateRecordingMetadata API call.</p>
+</section>
+
             </section>
 
 </article>
@@ -2324,14 +2494,15 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">602</span>
+    <span class="phpdocumentor-element-found-in__line">627</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Sends a request to the plugNmeet server.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">sendRequest</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$body</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">sendRequest</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$body</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2341,17 +2512,21 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$path</span>
-                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>The API endpoint to call.</p>
+</section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$body</span>
                 : <span class="phpdocumentor-argument-list__argument__type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>The body of the request.</p>
+</section>
+
             </dd>
             </dl>
 
@@ -2362,6 +2537,10 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The response from the server.</p>
+</section>
+
             </section>
 
 </article>
