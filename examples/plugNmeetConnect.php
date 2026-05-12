@@ -13,7 +13,7 @@
  * The above copyright notice and this permission notice shall be included in all
  * copies or substantial portions of the Software.
  *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
  * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -421,19 +421,19 @@ class plugNmeetConnect
      */
     public function getArtifacts(array $roomIds, string|null $roomSid = null, int|null $artifactsType = null, int $from = 0, int $limit = 20, string $orderBy = "DESC"): FetchArtifactsRes
     {
-        $fetchRecordingsReq = new FetchArtifactsReq();
-        $fetchRecordingsReq->setRoomIds($roomIds);
+        $fetchArtifactsReq = new FetchArtifactsReq();
+        $fetchArtifactsReq->setRoomIds($roomIds);
         if (!is_null($roomSid)) {
-            $fetchRecordingsReq->setRoomSid($roomSid);
+            $fetchArtifactsReq->setRoomSid($roomSid);
         }
         if (!is_null($artifactsType)) {
-            $fetchRecordingsReq->setType($artifactsType);
+            $fetchArtifactsReq->setType($artifactsType);
         }
-        $fetchRecordingsReq->setFrom($from);
-        $fetchRecordingsReq->setLimit($limit);
-        $fetchRecordingsReq->setOrderBy($orderBy);
+        $fetchArtifactsReq->setFrom($from);
+        $fetchArtifactsReq->setLimit($limit);
+        $fetchArtifactsReq->setOrderBy($orderBy);
 
-        return $this->plugnmeet->fetchArtifacts($fetchRecordingsReq);
+        return $this->plugnmeet->fetchArtifacts($fetchArtifactsReq);
     }
 
     /**
@@ -445,10 +445,10 @@ class plugNmeetConnect
      */
     public function getArtifactInfo(string $artifactId): ArtifactInfoRes
     {
-        $recordingInfoReq = new ArtifactInfoReq();
-        $recordingInfoReq->setArtifactId($artifactId);
+        $artifactInfoReq = new ArtifactInfoReq();
+        $artifactInfoReq->setArtifactId($artifactId);
 
-        return $this->plugnmeet->getArtifactInfo($recordingInfoReq);
+        return $this->plugnmeet->getArtifactInfo($artifactInfoReq);
     }
 
     /**
@@ -475,10 +475,10 @@ class plugNmeetConnect
      */
     public function deleteArtifact(string $artifactId): DeleteArtifactRes
     {
-        $deleteRecordingReq = new DeleteArtifactReq();
-        $deleteRecordingReq->setArtifactId($artifactId);
+        $deleteArtifactReq = new DeleteArtifactReq();
+        $deleteArtifactReq->setArtifactId($artifactId);
 
-        return $this->plugnmeet->deleteArtifact($deleteRecordingReq);
+        return $this->plugnmeet->deleteArtifact($deleteArtifactReq);
     }
 
     /**
@@ -539,7 +539,7 @@ class plugNmeetConnect
      * @param string $userTimezone The user's timezone.
      * @return AnalyticsFormatter An AnalyticsFormatter instance.
      */
-    public function getAnalyticsFormatter(string|array $rawData, string $userTimezone = 'UTC'): AnalyticsFormatter
+    public static function getAnalyticsFormatter(string|array $rawData, string $userTimezone = 'UTC'): AnalyticsFormatter
     {
         if (!is_array($rawData)) {
             $rawData = json_decode($rawData, true);
