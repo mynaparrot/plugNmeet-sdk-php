@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.1.4](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.1.3...v2.1.4) (2026-05-12)
+
+
+### Bug Fixes
+
+* added helper class to simplify/formate analytics data ([8f29d3d](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/8f29d3d5e82bab838a731cd1134da1c6642816f6))
+* added more clear docs ([8ba79cf](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/8ba79cf6ae6c2e09dfe5929548ef145d6e3a8e05))
+* lint ([2529fc0](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/2529fc0c6d05ba22cf524984f8559c95be4a2d90))
+* lint ([5335f56](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/5335f5666441b381c90209524f2cadad1c40e074))
+
+
+### Miscellaneous Chores
+
+* **deps:** update googleapis/release-please-action action to v5 ([df22872](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/df22872ff4bb685b5d157505cfefe780486bd7df))
+* **deps:** update googleapis/release-please-action action to v5 ([396665b](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/396665b95bd1f80981705c608480b223d8b08b03))
+
 ## [2.1.3](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.1.2...v2.1.3) (2026-04-21)
 
 
