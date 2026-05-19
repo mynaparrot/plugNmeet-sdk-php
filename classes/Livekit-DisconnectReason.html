@@ -6,7 +6,10 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="../">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"/>
     <link rel="icon" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -278,119 +281,119 @@
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Livekit-DisconnectReason.html#constant_AGENT_ERROR">AGENT_ERROR</a>
     <span>
-        &nbsp;= 16                            </span>
+        &nbsp;: mixed&nbsp;= 16                            </span>
 </dt>
 <dd>agent encountered an error</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Livekit-DisconnectReason.html#constant_CLIENT_INITIATED">CLIENT_INITIATED</a>
     <span>
-        &nbsp;= 1                            </span>
+        &nbsp;: mixed&nbsp;= 1                            </span>
 </dt>
 <dd>the client initiated the disconnect</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Livekit-DisconnectReason.html#constant_CONNECTION_TIMEOUT">CONNECTION_TIMEOUT</a>
     <span>
-        &nbsp;= 14                            </span>
+        &nbsp;: mixed&nbsp;= 14                            </span>
 </dt>
 <dd>server timed out a participant session</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Livekit-DisconnectReason.html#constant_DUPLICATE_IDENTITY">DUPLICATE_IDENTITY</a>
     <span>
-        &nbsp;= 2                            </span>
+        &nbsp;: mixed&nbsp;= 2                            </span>
 </dt>
 <dd>another participant with the same identity has joined the room</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Livekit-DisconnectReason.html#constant_JOIN_FAILURE">JOIN_FAILURE</a>
     <span>
-        &nbsp;= 7                            </span>
+        &nbsp;: mixed&nbsp;= 7                            </span>
 </dt>
 <dd>client was unable to connect fully</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Livekit-DisconnectReason.html#constant_MEDIA_FAILURE">MEDIA_FAILURE</a>
     <span>
-        &nbsp;= 15                            </span>
+        &nbsp;: mixed&nbsp;= 15                            </span>
 </dt>
 <dd>media stream failure or media timeout</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Livekit-DisconnectReason.html#constant_MIGRATION">MIGRATION</a>
     <span>
-        &nbsp;= 8                            </span>
+        &nbsp;: mixed&nbsp;= 8                            </span>
 </dt>
 <dd>Cloud-only, the server requested Participant to migrate the connection elsewhere</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Livekit-DisconnectReason.html#constant_PARTICIPANT_REMOVED">PARTICIPANT_REMOVED</a>
     <span>
-        &nbsp;= 4                            </span>
+        &nbsp;: mixed&nbsp;= 4                            </span>
 </dt>
 <dd>RoomService.RemoveParticipant was called</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Livekit-DisconnectReason.html#constant_ROOM_CLOSED">ROOM_CLOSED</a>
     <span>
-        &nbsp;= 10                            </span>
+        &nbsp;: mixed&nbsp;= 10                            </span>
 </dt>
 <dd>the room was closed, due to all Standard and Ingress participants having left</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Livekit-DisconnectReason.html#constant_ROOM_DELETED">ROOM_DELETED</a>
     <span>
-        &nbsp;= 5                            </span>
+        &nbsp;: mixed&nbsp;= 5                            </span>
 </dt>
 <dd>RoomService.DeleteRoom was called</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Livekit-DisconnectReason.html#constant_SERVER_SHUTDOWN">SERVER_SHUTDOWN</a>
     <span>
-        &nbsp;= 3                            </span>
+        &nbsp;: mixed&nbsp;= 3                            </span>
 </dt>
 <dd>the server instance is shutting down</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Livekit-DisconnectReason.html#constant_SIGNAL_CLOSE">SIGNAL_CLOSE</a>
     <span>
-        &nbsp;= 9                            </span>
+        &nbsp;: mixed&nbsp;= 9                            </span>
 </dt>
 <dd>the signal websocket was closed unexpectedly</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Livekit-DisconnectReason.html#constant_SIP_TRUNK_FAILURE">SIP_TRUNK_FAILURE</a>
     <span>
-        &nbsp;= 13                            </span>
+        &nbsp;: mixed&nbsp;= 13                            </span>
 </dt>
 <dd>SIP protocol failure or unexpected response</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Livekit-DisconnectReason.html#constant_STATE_MISMATCH">STATE_MISMATCH</a>
     <span>
-        &nbsp;= 6                            </span>
+        &nbsp;: mixed&nbsp;= 6                            </span>
 </dt>
 <dd>the client is attempting to resume a session, but server is not aware of it</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Livekit-DisconnectReason.html#constant_UNKNOWN_REASON">UNKNOWN_REASON</a>
     <span>
-        &nbsp;= 0                            </span>
+        &nbsp;: mixed&nbsp;= 0                            </span>
 </dt>
 <dd>Generated from protobuf enum &lt;code&gt;UNKNOWN_REASON = 0;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Livekit-DisconnectReason.html#constant_USER_REJECTED">USER_REJECTED</a>
     <span>
-        &nbsp;= 12                            </span>
+        &nbsp;: mixed&nbsp;= 12                            </span>
 </dt>
 <dd>SIP callee rejected the call (busy)</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a class="" href="classes/Livekit-DisconnectReason.html#constant_USER_UNAVAILABLE">USER_UNAVAILABLE</a>
     <span>
-        &nbsp;= 11                            </span>
+        &nbsp;: mixed&nbsp;= 11                            </span>
 </dt>
 <dd>SIP callee did not respond in time</dd>
 
@@ -1143,100 +1146,7 @@
 </article>
             </section>
 
-        <div class="phpdocumentor-modal" id="source-view">
-    <div class="phpdocumentor-modal-bg" data-exit-button></div>
-    <div class="phpdocumentor-modal-container">
-        <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/src/gen/Livekit/DisconnectReason.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
-        </div>
-        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
-    </div>
-</div>
-
-    <script type="text/javascript">
-        (function () {
-            function loadExternalCodeSnippet(el, url, line) {
-                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
-                    const language = 'php';
-
-                    const code = document.createElement('code');
-                    code.className = 'language-' + language;
-                    pre.textContent = '';
-                    pre.setAttribute('data-line', line)
-                    code.textContent = 'Loading…';
-                    pre.appendChild(code);
-
-                    var xhr = new XMLHttpRequest();
-
-                    xhr.open('GET', src, true);
-
-                    xhr.onreadystatechange = function () {
-                        if (xhr.readyState !== 4) {
-                            return;
-                        }
-
-                        if (xhr.status < 400 && xhr.responseText) {
-                            code.textContent = xhr.responseText;
-                            Prism.highlightElement(code);
-                            d=document.getElementsByClassName("line-numbers");
-                            d[0].scrollTop = d[0].children[1].offsetTop;
-                            return;
-                        }
-
-                        if (xhr.status === 404) {
-                            code.textContent = '✖ Error: File could not be found';
-                            return;
-                        }
-
-                        if (xhr.status >= 400) {
-                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
-                            return;
-                        }
-
-                        code.textContent = '✖ Error: An unknown error occurred';
-                    };
-
-                    xhr.send(null);
-                });
-            }
-
-            const modalButtons = document.querySelectorAll("[data-modal]");
-            const openedAsLocalFile = window.location.protocol === 'file:';
-            if (modalButtons.length > 0 && openedAsLocalFile) {
-                console.warn(
-                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
-                    'browsers block XHR requests when a page is opened this way'
-                );
-            }
-
-            modalButtons.forEach(function (trigger) {
-                if (openedAsLocalFile) {
-                    trigger.setAttribute("hidden", "hidden");
-                }
-
-                trigger.addEventListener("click", function (event) {
-                    event.preventDefault();
-                    const modal = document.getElementById(trigger.dataset.modal);
-                    if (!modal) {
-                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
-                        return;
-                    }
-                    modal.classList.add("phpdocumentor-modal__open");
-
-                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
-                    const exits = modal.querySelectorAll("[data-exit-button]");
-                    exits.forEach(function (exit) {
-                        exit.addEventListener("click", function (event) {
-                            event.preventDefault();
-                            modal.classList.remove("phpdocumentor-modal__open");
-                        });
-                    });
-                });
-            });
-        })();
-    </script>
-
+        
     </article>
                                 </section>
                 <section class="phpdocumentor-on-this-page__sidebar">
