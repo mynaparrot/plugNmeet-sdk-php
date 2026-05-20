@@ -291,6 +291,13 @@
 <dd>Generated from protobuf field &lt;code&gt;optional .livekit.SIPMediaEncryption encryption = 3;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Livekit-SIPMediaConfig.html#property_media_timeout">$media_timeout</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Use specific media timeout. If zero or not specified, will use default timeout.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Livekit-SIPMediaConfig.html#property_only_listed_codecs">$only_listed_codecs</a>
     <span>
                         &nbsp;: mixed            </span>
@@ -326,6 +333,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-SIPMediaConfig.html#method_clearMediaTimeout">clearMediaTimeout()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-SIPMediaConfig.html#method_getCodecs">getCodecs()</a>
     <span>
                                 &nbsp;: <abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, <a href="classes/Livekit-SIPCodec.html"><abbr title="\Livekit\SIPCodec">SIPCodec</abbr></a>&gt;    </span>
@@ -340,6 +353,13 @@
 <dd>Generated from protobuf field &lt;code&gt;optional .livekit.SIPMediaEncryption encryption = 3;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-SIPMediaConfig.html#method_getMediaTimeout">getMediaTimeout()</a>
+    <span>
+                                &nbsp;: <abbr title="\Google\Protobuf\Duration">Duration</abbr>|null    </span>
+</dt>
+<dd>Use specific media timeout. If zero or not specified, will use default timeout.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-SIPMediaConfig.html#method_getOnlyListedCodecs">getOnlyListedCodecs()</a>
     <span>
                                 &nbsp;: bool    </span>
@@ -348,6 +368,12 @@
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-SIPMediaConfig.html#method_hasEncryption">hasEncryption()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-SIPMediaConfig.html#method_hasMediaTimeout">hasMediaTimeout()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
@@ -365,6 +391,13 @@
                                 &nbsp;: $this    </span>
 </dt>
 <dd>Generated from protobuf field &lt;code&gt;optional .livekit.SIPMediaEncryption encryption = 3;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-SIPMediaConfig.html#method_setMediaTimeout">setMediaTimeout()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>Use specific media timeout. If zero or not specified, will use default timeout.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-SIPMediaConfig.html#method_setOnlyListedCodecs">setOnlyListedCodecs()</a>
@@ -417,6 +450,46 @@
      = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_media_timeout">
+        $media_timeout
+        <a href="classes/Livekit-SIPMediaConfig.html#property_media_timeout" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPMediaConfig.php"><a href="files/src-gen-livekit-sipmediaconfig.html"><abbr title="src/gen/Livekit/SIPMediaConfig.php">SIPMediaConfig.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">38</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Use specific media timeout. If zero or not specified, will use default timeout.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$media_timeout</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">optional .google.protobuf.Duration media_timeout = 4;</code></p>
+</section>
+
     
     
 
@@ -526,7 +599,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPMediaConfig.php"><a href="files/src-gen-livekit-sipmediaconfig.html"><abbr title="src/gen/Livekit/SIPMediaConfig.php">SIPMediaConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -554,6 +627,8 @@ Optional. Data for populating the Message object.</p>
 @type \Livekit\SIPCodec[] $codecs
       List of allowed codecs. If only_listed_codecs is not set, this list is added to default codecs.
 @type int $encryption
+@type \Google\Protobuf\Duration $media_timeout
+      Use specific media timeout. If zero or not specified, will use default timeout.
 </code></pre>
 <p>}</p>
 </section>
@@ -581,7 +656,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPMediaConfig.php"><a href="files/src-gen-livekit-sipmediaconfig.html"><abbr title="src/gen/Livekit/SIPMediaConfig.php">SIPMediaConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">118</span>
+    <span class="phpdocumentor-element-found-in__line">126</span>
 
     </aside>
 
@@ -589,6 +664,40 @@ Optional. Data for populating the Message object.</p>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">clearEncryption</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_clearMediaTimeout">
+        clearMediaTimeout()
+        <a href="classes/Livekit-SIPMediaConfig.html#method_clearMediaTimeout" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPMediaConfig.php"><a href="files/src-gen-livekit-sipmediaconfig.html"><abbr title="src/gen/Livekit/SIPMediaConfig.php">SIPMediaConfig.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">160</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">clearMediaTimeout</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -615,7 +724,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPMediaConfig.php"><a href="files/src-gen-livekit-sipmediaconfig.html"><abbr title="src/gen/Livekit/SIPMediaConfig.php">SIPMediaConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">92</span>
 
     </aside>
 
@@ -656,7 +765,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPMediaConfig.php"><a href="files/src-gen-livekit-sipmediaconfig.html"><abbr title="src/gen/Livekit/SIPMediaConfig.php">SIPMediaConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">108</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -687,6 +796,47 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getMediaTimeout">
+        getMediaTimeout()
+        <a href="classes/Livekit-SIPMediaConfig.html#method_getMediaTimeout" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPMediaConfig.php"><a href="files/src-gen-livekit-sipmediaconfig.html"><abbr title="src/gen/Livekit/SIPMediaConfig.php">SIPMediaConfig.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">150</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Use specific media timeout. If zero or not specified, will use default timeout.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getMediaTimeout</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Duration">Duration</abbr>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">optional .google.protobuf.Duration media_timeout = 4;</code></p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Duration">Duration</abbr>|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getOnlyListedCodecs">
         getOnlyListedCodecs()
         <a href="classes/Livekit-SIPMediaConfig.html#method_getOnlyListedCodecs" class="headerlink"><i class="fas fa-link"></i></a>
@@ -695,7 +845,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPMediaConfig.php"><a href="files/src-gen-livekit-sipmediaconfig.html"><abbr title="src/gen/Livekit/SIPMediaConfig.php">SIPMediaConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -736,7 +886,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPMediaConfig.php"><a href="files/src-gen-livekit-sipmediaconfig.html"><abbr title="src/gen/Livekit/SIPMediaConfig.php">SIPMediaConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">113</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 
     </aside>
 
@@ -744,6 +894,40 @@ Optional. Data for populating the Message object.</p>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">hasEncryption</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_hasMediaTimeout">
+        hasMediaTimeout()
+        <a href="classes/Livekit-SIPMediaConfig.html#method_hasMediaTimeout" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPMediaConfig.php"><a href="files/src-gen-livekit-sipmediaconfig.html"><abbr title="src/gen/Livekit/SIPMediaConfig.php">SIPMediaConfig.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">155</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">hasMediaTimeout</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -770,7 +954,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPMediaConfig.php"><a href="files/src-gen-livekit-sipmediaconfig.html"><abbr title="src/gen/Livekit/SIPMediaConfig.php">SIPMediaConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -821,7 +1005,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPMediaConfig.php"><a href="files/src-gen-livekit-sipmediaconfig.html"><abbr title="src/gen/Livekit/SIPMediaConfig.php">SIPMediaConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">128</span>
+    <span class="phpdocumentor-element-found-in__line">136</span>
 
     </aside>
 
@@ -862,6 +1046,57 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_setMediaTimeout">
+        setMediaTimeout()
+        <a href="classes/Livekit-SIPMediaConfig.html#method_setMediaTimeout" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPMediaConfig.php"><a href="files/src-gen-livekit-sipmediaconfig.html"><abbr title="src/gen/Livekit/SIPMediaConfig.php">SIPMediaConfig.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">172</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Use specific media timeout. If zero or not specified, will use default timeout.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setMediaTimeout</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Google\Protobuf\Duration">Duration</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">optional .google.protobuf.Duration media_timeout = 4;</code></p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Google\Protobuf\Duration">Duration</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setOnlyListedCodecs">
         setOnlyListedCodecs()
         <a href="classes/Livekit-SIPMediaConfig.html#method_setOnlyListedCodecs" class="headerlink"><i class="fas fa-link"></i></a>
@@ -870,7 +1105,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPMediaConfig.php"><a href="files/src-gen-livekit-sipmediaconfig.html"><abbr title="src/gen/Livekit/SIPMediaConfig.php">SIPMediaConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -930,6 +1165,7 @@ Optional. Data for populating the Message object.</p>
                 <li>
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="classes/Livekit-SIPMediaConfig.html#property_encryption">$encryption</a></li>
+                                                    <li class=""><a href="classes/Livekit-SIPMediaConfig.html#property_media_timeout">$media_timeout</a></li>
                                                     <li class=""><a href="classes/Livekit-SIPMediaConfig.html#property_only_listed_codecs">$only_listed_codecs</a></li>
                                                     <li class=""><a href="classes/Livekit-SIPMediaConfig.html#property_codecs">$codecs</a></li>
                                             </ul>
@@ -940,12 +1176,16 @@ Optional. Data for populating the Message object.</p>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Livekit-SIPMediaConfig.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPMediaConfig.html#method_clearEncryption">clearEncryption()</a></li>
+                                            <li class=""><a href="classes/Livekit-SIPMediaConfig.html#method_clearMediaTimeout">clearMediaTimeout()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPMediaConfig.html#method_getCodecs">getCodecs()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPMediaConfig.html#method_getEncryption">getEncryption()</a></li>
+                                            <li class=""><a href="classes/Livekit-SIPMediaConfig.html#method_getMediaTimeout">getMediaTimeout()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPMediaConfig.html#method_getOnlyListedCodecs">getOnlyListedCodecs()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPMediaConfig.html#method_hasEncryption">hasEncryption()</a></li>
+                                            <li class=""><a href="classes/Livekit-SIPMediaConfig.html#method_hasMediaTimeout">hasMediaTimeout()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPMediaConfig.html#method_setCodecs">setCodecs()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPMediaConfig.html#method_setEncryption">setEncryption()</a></li>
+                                            <li class=""><a href="classes/Livekit-SIPMediaConfig.html#method_setMediaTimeout">setMediaTimeout()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPMediaConfig.html#method_setOnlyListedCodecs">setOnlyListedCodecs()</a></li>
                                     </ul>
             </li>

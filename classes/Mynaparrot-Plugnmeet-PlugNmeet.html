@@ -249,7 +249,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
@@ -337,6 +337,13 @@
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Constructs a new PlugNmeet instance.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_broadcastToRoom">broadcastToRoom()</a>
+    <span>
+                                &nbsp;: <a href="classes/Mynaparrot-PlugnmeetProto-CommonResponse.html"><abbr title="\Mynaparrot\PlugnmeetProto\CommonResponse">CommonResponse</abbr></a>    </span>
+</dt>
+<dd>Broadcast messages or notifications directly into an active Plug-N-Meet session in real-time</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_createRoom">createRoom()</a>
@@ -506,12 +513,32 @@
 </dt>
 <dd>Updates the metadata of a recording.</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_uploadWhiteboardFile">uploadWhiteboardFile()</a>
+    <span>
+                                &nbsp;: <a href="classes/Mynaparrot-PlugnmeetProto-CommonResponse.html"><abbr title="\Mynaparrot\PlugnmeetProto\CommonResponse">CommonResponse</abbr></a>    </span>
+</dt>
+<dd>Upload a file to the whiteboard.</dd>
+
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_sendRequest">sendRequest()</a>
     <span>
                                 &nbsp;: <abbr title="\stdClass">stdClass</abbr>    </span>
 </dt>
 <dd>Sends a request to the plugNmeet server.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_sendUploadFileRequest">sendUploadFileRequest()</a>
+    <span>
+                                &nbsp;: <abbr title="\stdClass">stdClass</abbr>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_buildUrl">buildUrl()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Builds the full URL for an API endpoint.</dd>
 
     </dl>
 
@@ -543,7 +570,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">116</span>
+    <span class="phpdocumentor-element-found-in__line">119</span>
 
     </aside>
 
@@ -581,7 +608,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 
     </aside>
 
@@ -619,7 +646,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">95</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
@@ -657,7 +684,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">109</span>
+    <span class="phpdocumentor-element-found-in__line">112</span>
 
     </aside>
 
@@ -695,7 +722,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">105</span>
 
     </aside>
 
@@ -733,7 +760,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
     </aside>
 
@@ -776,7 +803,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">128</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
@@ -860,6 +887,75 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_broadcastToRoom">
+        broadcastToRoom()
+        <a href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_broadcastToRoom" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">281</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Broadcast messages or notifications directly into an active Plug-N-Meet session in real-time</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">broadcastToRoom</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Mynaparrot-PlugnmeetProto-BroadcastToRoomReq.html"><abbr title="\Mynaparrot\PlugnmeetProto\BroadcastToRoomReq">BroadcastToRoomReq</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$broadcastToRoomReq</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-CommonResponse.html"><abbr title="\Mynaparrot\PlugnmeetProto\CommonResponse">CommonResponse</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$broadcastToRoomReq</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Mynaparrot-PlugnmeetProto-BroadcastToRoomReq.html"><abbr title="\Mynaparrot\PlugnmeetProto\BroadcastToRoomReq">BroadcastToRoomReq</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The request object for broadcasting to room.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_broadcastToRoom_tags">
+        Tags
+        <a href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_broadcastToRoom_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
+                                                                                    
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-CommonResponse.html"><abbr title="\Mynaparrot\PlugnmeetProto\CommonResponse">CommonResponse</abbr></a></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The response from the API call.</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_createRoom">
         createRoom()
         <a href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_createRoom" class="headerlink"><i class="fas fa-link"></i></a>
@@ -868,7 +964,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">154</span>
+    <span class="phpdocumentor-element-found-in__line">157</span>
 
     </aside>
 
@@ -937,7 +1033,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">594</span>
+    <span class="phpdocumentor-element-found-in__line">674</span>
 
     </aside>
 
@@ -1001,7 +1097,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">514</span>
+    <span class="phpdocumentor-element-found-in__line">594</span>
 
     </aside>
 
@@ -1077,7 +1173,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">448</span>
+    <span class="phpdocumentor-element-found-in__line">528</span>
 
     </aside>
 
@@ -1146,7 +1242,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">363</span>
+    <span class="phpdocumentor-element-found-in__line">443</span>
 
     </aside>
 
@@ -1215,7 +1311,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">278</span>
+    <span class="phpdocumentor-element-found-in__line">358</span>
 
     </aside>
 
@@ -1284,7 +1380,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">492</span>
+    <span class="phpdocumentor-element-found-in__line">572</span>
 
     </aside>
 
@@ -1360,7 +1456,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">406</span>
+    <span class="phpdocumentor-element-found-in__line">486</span>
 
     </aside>
 
@@ -1429,7 +1525,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">257</span>
+    <span class="phpdocumentor-element-found-in__line">260</span>
 
     </aside>
 
@@ -1498,7 +1594,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">299</span>
+    <span class="phpdocumentor-element-found-in__line">379</span>
 
     </aside>
 
@@ -1567,7 +1663,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">615</span>
+    <span class="phpdocumentor-element-found-in__line">695</span>
 
     </aside>
 
@@ -1610,7 +1706,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">217</span>
+    <span class="phpdocumentor-element-found-in__line">220</span>
 
     </aside>
 
@@ -1679,7 +1775,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">238</span>
+    <span class="phpdocumentor-element-found-in__line">241</span>
 
     </aside>
 
@@ -1736,7 +1832,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">536</span>
+    <span class="phpdocumentor-element-found-in__line">616</span>
 
     </aside>
 
@@ -1812,7 +1908,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">469</span>
+    <span class="phpdocumentor-element-found-in__line">549</span>
 
     </aside>
 
@@ -1881,7 +1977,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">427</span>
+    <span class="phpdocumentor-element-found-in__line">507</span>
 
     </aside>
 
@@ -1950,7 +2046,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">557</span>
+    <span class="phpdocumentor-element-found-in__line">637</span>
 
     </aside>
 
@@ -2007,7 +2103,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">175</span>
+    <span class="phpdocumentor-element-found-in__line">178</span>
 
     </aside>
 
@@ -2076,7 +2172,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">578</span>
+    <span class="phpdocumentor-element-found-in__line">658</span>
 
     </aside>
 
@@ -2158,7 +2254,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">384</span>
+    <span class="phpdocumentor-element-found-in__line">464</span>
 
     </aside>
 
@@ -2227,7 +2323,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">320</span>
+    <span class="phpdocumentor-element-found-in__line">400</span>
 
     </aside>
 
@@ -2296,7 +2392,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">604</span>
+    <span class="phpdocumentor-element-found-in__line">684</span>
 
     </aside>
 
@@ -2339,7 +2435,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">196</span>
+    <span class="phpdocumentor-element-found-in__line">199</span>
 
     </aside>
 
@@ -2408,7 +2504,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">341</span>
+    <span class="phpdocumentor-element-found-in__line">421</span>
 
     </aside>
 
@@ -2466,6 +2562,84 @@
                     <article
         class="phpdocumentor-element
             -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_uploadWhiteboardFile">
+        uploadWhiteboardFile()
+        <a href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_uploadWhiteboardFile" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">303</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Upload a file to the whiteboard.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">uploadWhiteboardFile</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$roomId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-CommonResponse.html"><abbr title="\Mynaparrot\PlugnmeetProto\CommonResponse">CommonResponse</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$roomId</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The ID of the room to upload the file to.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$options</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>An array containing either a 'document' (local full file path) or 'document_link' (URL).</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_uploadWhiteboardFile_tags">
+        Tags
+        <a href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_uploadWhiteboardFile_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
+                                                                                    
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-CommonResponse.html"><abbr title="\Mynaparrot\PlugnmeetProto\CommonResponse">CommonResponse</abbr></a></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The response from the server.</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
             -protected
                                                         "
 >
@@ -2477,7 +2651,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">627</span>
+    <span class="phpdocumentor-element-found-in__line">722</span>
 
     </aside>
 
@@ -2527,6 +2701,120 @@
             </section>
 
 </article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_sendUploadFileRequest">
+        sendUploadFileRequest()
+        <a href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_sendUploadFileRequest" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">754</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">sendUploadFileRequest</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$roomId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$multipart</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$roomId</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The ID of the room to upload the file to.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$multipart</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The multipart data to send.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_buildUrl">
+        buildUrl()
+        <a href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_buildUrl" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PlugNmeet.php"><a href="files/src-plugnmeet.html"><abbr title="src/PlugNmeet.php">PlugNmeet.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">706</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Builds the full URL for an API endpoint.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">buildUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$path</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The API endpoint path.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The full URL.</p>
+</section>
+
+            </section>
+
+</article>
             </section>
 
         
@@ -2562,6 +2850,7 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_broadcastToRoom">broadcastToRoom()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_createRoom">createRoom()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_decodeJWTData">decodeJWTData()</a></li>
                                             <li class="-deprecated"><a href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_deleteAnalytics">deleteAnalytics()</a></li>
@@ -2586,7 +2875,10 @@
                                             <li class=""><a href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_getUUID">getUUID()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_isRoomActive">isRoomActive()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_updateRecordingMetadata">updateRecordingMetadata()</a></li>
+                                            <li class=""><a href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_uploadWhiteboardFile">uploadWhiteboardFile()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_sendRequest">sendRequest()</a></li>
+                                            <li class=""><a href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_sendUploadFileRequest">sendUploadFileRequest()</a></li>
+                                            <li class=""><a href="classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_buildUrl">buildUrl()</a></li>
                                     </ul>
             </li>
                     </ul>

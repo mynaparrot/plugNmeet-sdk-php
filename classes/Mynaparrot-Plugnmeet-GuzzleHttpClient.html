@@ -317,6 +317,13 @@
 </dt>
 <dd>Sends a POST request to the specified URL with the given data.</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#method_uploadFile">uploadFile()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Sends a multipart/form-data request to the specified URL with the given data.</dd>
+
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a class="" href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#method_handleRequestException">handleRequestException()</a>
     <span>
@@ -515,6 +522,83 @@
                     <article
         class="phpdocumentor-element
             -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_uploadFile">
+        uploadFile()
+        <a href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#method_uploadFile" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/GuzzleHttpClient.php"><a href="files/src-guzzlehttpclient.html"><abbr title="src/GuzzleHttpClient.php">GuzzleHttpClient.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">92</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Sends a multipart/form-data request to the specified URL with the given data.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">uploadFile</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$multipart</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$headers</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$url</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$multipart</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$headers</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_uploadFile_tags">
+        Tags
+        <a href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#method_uploadFile_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
+                                                                                    
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
             -private
                                                         "
 >
@@ -526,7 +610,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/GuzzleHttpClient.php"><a href="files/src-guzzlehttpclient.html"><abbr title="src/GuzzleHttpClient.php">GuzzleHttpClient.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">91</span>
+    <span class="phpdocumentor-element-found-in__line">123</span>
 
     </aside>
 
@@ -592,6 +676,7 @@
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#method_post">post()</a></li>
+                                            <li class=""><a href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#method_uploadFile">uploadFile()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#method_handleRequestException">handleRequestException()</a></li>
                                     </ul>
             </li>

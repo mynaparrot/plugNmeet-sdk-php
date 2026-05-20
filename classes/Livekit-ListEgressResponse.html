@@ -283,6 +283,13 @@
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Livekit-ListEgressResponse.html#property_next_page_token">$next_page_token</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>next field id: 3</dd>
+
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a class="" href="classes/Livekit-ListEgressResponse.html#property_items">$items</a>
     <span>
@@ -306,6 +313,12 @@
 <dd>Constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-ListEgressResponse.html#method_clearNextPageToken">clearNextPageToken()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-ListEgressResponse.html#method_getItems">getItems()</a>
     <span>
                                 &nbsp;: <abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, <a href="classes/Livekit-EgressInfo.html"><abbr title="\Livekit\EgressInfo">EgressInfo</abbr></a>&gt;    </span>
@@ -313,11 +326,31 @@
 <dd>Generated from protobuf field &lt;code&gt;repeated .livekit.EgressInfo items = 1;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-ListEgressResponse.html#method_getNextPageToken">getNextPageToken()</a>
+    <span>
+                                &nbsp;: <a href="classes/Livekit-TokenPagination.html"><abbr title="\Livekit\TokenPagination">TokenPagination</abbr></a>|null    </span>
+</dt>
+<dd>next field id: 3</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-ListEgressResponse.html#method_hasNextPageToken">hasNextPageToken()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-ListEgressResponse.html#method_setItems">setItems()</a>
     <span>
                                 &nbsp;: $this    </span>
 </dt>
 <dd>Generated from protobuf field &lt;code&gt;repeated .livekit.EgressInfo items = 1;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-ListEgressResponse.html#method_setNextPageToken">setNextPageToken()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>next field id: 3</dd>
 
     </dl>
 
@@ -332,6 +365,46 @@
             <a href="classes/Livekit-ListEgressResponse.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_next_page_token">
+        $next_page_token
+        <a href="classes/Livekit-ListEgressResponse.html#property_next_page_token" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ListEgressResponse.php"><a href="files/src-gen-livekit-listegressresponse.html"><abbr title="src/gen/Livekit/ListEgressResponse.php">ListEgressResponse.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">26</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">next field id: 3</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$next_page_token</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.livekit.TokenPagination next_page_token = 2;</code></p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
                     <article
         class="
             phpdocumentor-element
@@ -392,7 +465,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ListEgressResponse.php"><a href="files/src-gen-livekit-listegressresponse.html"><abbr title="src/gen/Livekit/ListEgressResponse.php">ListEgressResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -416,6 +489,8 @@
                     <section class="phpdocumentor-description"><p>{
 Optional. Data for populating the Message object.</p>
 <pre class="prettyprint"><code class="prettyprint">@type \Livekit\EgressInfo[] $items
+@type \Livekit\TokenPagination $next_page_token
+      next field id: 3
 </code></pre>
 <p>}</p>
 </section>
@@ -423,6 +498,40 @@ Optional. Data for populating the Message object.</p>
             </dd>
             </dl>
 
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_clearNextPageToken">
+        clearNextPageToken()
+        <a href="classes/Livekit-ListEgressResponse.html#method_clearNextPageToken" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ListEgressResponse.php"><a href="files/src-gen-livekit-listegressresponse.html"><abbr title="src/gen/Livekit/ListEgressResponse.php">ListEgressResponse.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">82</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">clearNextPageToken</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
     
 
         
@@ -443,7 +552,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ListEgressResponse.php"><a href="files/src-gen-livekit-listegressresponse.html"><abbr title="src/gen/Livekit/ListEgressResponse.php">ListEgressResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -474,6 +583,81 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getNextPageToken">
+        getNextPageToken()
+        <a href="classes/Livekit-ListEgressResponse.html#method_getNextPageToken" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ListEgressResponse.php"><a href="files/src-gen-livekit-listegressresponse.html"><abbr title="src/gen/Livekit/ListEgressResponse.php">ListEgressResponse.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">72</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">next field id: 3</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getNextPageToken</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Livekit-TokenPagination.html"><abbr title="\Livekit\TokenPagination">TokenPagination</abbr></a>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.livekit.TokenPagination next_page_token = 2;</code></p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Livekit-TokenPagination.html"><abbr title="\Livekit\TokenPagination">TokenPagination</abbr></a>|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_hasNextPageToken">
+        hasNextPageToken()
+        <a href="classes/Livekit-ListEgressResponse.html#method_hasNextPageToken" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ListEgressResponse.php"><a href="files/src-gen-livekit-listegressresponse.html"><abbr title="src/gen/Livekit/ListEgressResponse.php">ListEgressResponse.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">77</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">hasNextPageToken</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setItems">
         setItems()
         <a href="classes/Livekit-ListEgressResponse.html#method_setItems" class="headerlink"><i class="fas fa-link"></i></a>
@@ -482,7 +666,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ListEgressResponse.php"><a href="files/src-gen-livekit-listegressresponse.html"><abbr title="src/gen/Livekit/ListEgressResponse.php">ListEgressResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -501,6 +685,57 @@ Optional. Data for populating the Message object.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$var</span>
                 : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, <a href="classes/Livekit-EgressInfo.html"><abbr title="\Livekit\EgressInfo">EgressInfo</abbr></a>&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setNextPageToken">
+        setNextPageToken()
+        <a href="classes/Livekit-ListEgressResponse.html#method_setNextPageToken" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/ListEgressResponse.php"><a href="files/src-gen-livekit-listegressresponse.html"><abbr title="src/gen/Livekit/ListEgressResponse.php">ListEgressResponse.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">94</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">next field id: 3</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setNextPageToken</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Livekit-TokenPagination.html"><abbr title="\Livekit\TokenPagination">TokenPagination</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.livekit.TokenPagination next_page_token = 2;</code></p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Livekit-TokenPagination.html"><abbr title="\Livekit\TokenPagination">TokenPagination</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -539,6 +774,7 @@ Optional. Data for populating the Message object.</p>
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Livekit-ListEgressResponse.html#property_next_page_token">$next_page_token</a></li>
                                                     <li class=""><a href="classes/Livekit-ListEgressResponse.html#property_items">$items</a></li>
                                             </ul>
                 </li>
@@ -547,8 +783,12 @@ Optional. Data for populating the Message object.</p>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Livekit-ListEgressResponse.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Livekit-ListEgressResponse.html#method_clearNextPageToken">clearNextPageToken()</a></li>
                                             <li class=""><a href="classes/Livekit-ListEgressResponse.html#method_getItems">getItems()</a></li>
+                                            <li class=""><a href="classes/Livekit-ListEgressResponse.html#method_getNextPageToken">getNextPageToken()</a></li>
+                                            <li class=""><a href="classes/Livekit-ListEgressResponse.html#method_hasNextPageToken">hasNextPageToken()</a></li>
                                             <li class=""><a href="classes/Livekit-ListEgressResponse.html#method_setItems">setItems()</a></li>
+                                            <li class=""><a href="classes/Livekit-ListEgressResponse.html#method_setNextPageToken">setNextPageToken()</a></li>
                                     </ul>
             </li>
                     </ul>
