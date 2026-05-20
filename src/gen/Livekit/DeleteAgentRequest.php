@@ -25,9 +25,9 @@ class DeleteAgentRequest extends \Google\Protobuf\Internal\Message
     /**
      * optional
      *
-     * Generated from protobuf field <code>string environment = 3;</code>
+     * Generated from protobuf field <code>string deployment = 3;</code>
      */
-    protected $environment = '';
+    protected $deployment = '';
 
     /**
      * Constructor.
@@ -37,7 +37,7 @@ class DeleteAgentRequest extends \Google\Protobuf\Internal\Message
      *
      *     @type string $agent_id
      *     @type string $agent_name
-     *     @type string $environment
+     *     @type string $deployment
      *           optional
      * }
      */
@@ -93,25 +93,25 @@ class DeleteAgentRequest extends \Google\Protobuf\Internal\Message
     /**
      * optional
      *
-     * Generated from protobuf field <code>string environment = 3;</code>
+     * Generated from protobuf field <code>string deployment = 3;</code>
      * @return string
      */
-    public function getEnvironment()
+    public function getDeployment()
     {
-        return $this->environment;
+        return $this->deployment;
     }
 
     /**
      * optional
      *
-     * Generated from protobuf field <code>string environment = 3;</code>
+     * Generated from protobuf field <code>string deployment = 3;</code>
      * @param string $var
      * @return $this
      */
-    public function setEnvironment($var)
+    public function setDeployment($var)
     {
         GPBUtil::checkString($var, True);
-        $this->environment = $var;
+        $this->deployment = $var;
 
         return $this;
     }

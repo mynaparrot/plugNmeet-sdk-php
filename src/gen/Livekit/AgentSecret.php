@@ -35,9 +35,9 @@ class AgentSecret extends \Google\Protobuf\Internal\Message
      */
     protected $kind = 0;
     /**
-     * Generated from protobuf field <code>repeated string environments = 6;</code>
+     * Generated from protobuf field <code>repeated string deployments = 6;</code>
      */
-    private $environments;
+    private $deployments;
 
     /**
      * Constructor.
@@ -50,7 +50,7 @@ class AgentSecret extends \Google\Protobuf\Internal\Message
      *     @type \Google\Protobuf\Timestamp $created_at
      *     @type \Google\Protobuf\Timestamp $updated_at
      *     @type int $kind
-     *     @type string[] $environments
+     *     @type string[] $deployments
      * }
      */
     public function __construct($data = NULL) {
@@ -189,23 +189,23 @@ class AgentSecret extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated string environments = 6;</code>
+     * Generated from protobuf field <code>repeated string deployments = 6;</code>
      * @return RepeatedField<string>
      */
-    public function getEnvironments()
+    public function getDeployments()
     {
-        return $this->environments;
+        return $this->deployments;
     }
 
     /**
-     * Generated from protobuf field <code>repeated string environments = 6;</code>
+     * Generated from protobuf field <code>repeated string deployments = 6;</code>
      * @param string[] $var
      * @return $this
      */
-    public function setEnvironments($var)
+    public function setDeployments($var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->environments = $arr;
+        $this->deployments = $arr;
 
         return $this;
     }

@@ -71,9 +71,9 @@ class AgentDeployment extends \Google\Protobuf\Internal\Message
      */
     private $events;
     /**
-     * Generated from protobuf field <code>string environment = 15;</code>
+     * Generated from protobuf field <code>string deployment = 15;</code>
      */
-    protected $environment = '';
+    protected $deployment = '';
     /**
      * Generated from protobuf field <code>string version = 16;</code>
      */
@@ -103,7 +103,7 @@ class AgentDeployment extends \Google\Protobuf\Internal\Message
      *     @type string $cpu_limit
      *     @type string $server_region
      *     @type \Livekit\AgentEvent[] $events
-     *     @type string $environment
+     *     @type string $deployment
      *     @type string $version
      *     @type string $agent_name
      * }
@@ -422,23 +422,23 @@ class AgentDeployment extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string environment = 15;</code>
+     * Generated from protobuf field <code>string deployment = 15;</code>
      * @return string
      */
-    public function getEnvironment()
+    public function getDeployment()
     {
-        return $this->environment;
+        return $this->deployment;
     }
 
     /**
-     * Generated from protobuf field <code>string environment = 15;</code>
+     * Generated from protobuf field <code>string deployment = 15;</code>
      * @param string $var
      * @return $this
      */
-    public function setEnvironment($var)
+    public function setDeployment($var)
     {
         GPBUtil::checkString($var, True);
-        $this->environment = $var;
+        $this->deployment = $var;
 
         return $this;
     }

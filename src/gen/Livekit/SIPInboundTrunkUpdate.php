@@ -35,6 +35,10 @@ class SIPInboundTrunkUpdate extends \Google\Protobuf\Internal\Message
      */
     protected $auth_password = null;
     /**
+     * Generated from protobuf field <code>optional string auth_realm = 9;</code>
+     */
+    protected $auth_realm = null;
+    /**
      * Generated from protobuf field <code>optional string name = 6;</code>
      */
     protected $name = null;
@@ -58,6 +62,7 @@ class SIPInboundTrunkUpdate extends \Google\Protobuf\Internal\Message
      *     @type \Livekit\ListUpdate $allowed_numbers
      *     @type string $auth_username
      *     @type string $auth_password
+     *     @type string $auth_realm
      *     @type string $name
      *     @type string $metadata
      *     @type int $media_encryption
@@ -224,6 +229,38 @@ class SIPInboundTrunkUpdate extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->auth_password = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string auth_realm = 9;</code>
+     * @return string
+     */
+    public function getAuthRealm()
+    {
+        return isset($this->auth_realm) ? $this->auth_realm : '';
+    }
+
+    public function hasAuthRealm()
+    {
+        return isset($this->auth_realm);
+    }
+
+    public function clearAuthRealm()
+    {
+        unset($this->auth_realm);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional string auth_realm = 9;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setAuthRealm($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->auth_realm = $var;
 
         return $this;
     }

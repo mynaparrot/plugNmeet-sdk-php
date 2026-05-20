@@ -58,6 +58,10 @@ class Job extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.google.protobuf.Timestamp ended_at = 11;</code>
      */
     protected $ended_at = null;
+    /**
+     * Generated from protobuf field <code>string room_id = 12;</code>
+     */
+    protected $room_id = '';
 
     /**
      * Constructor.
@@ -76,6 +80,7 @@ class Job extends \Google\Protobuf\Internal\Message
      *     @type string $scenario_id
      *     @type \Google\Protobuf\Timestamp $started_at
      *     @type \Google\Protobuf\Timestamp $ended_at
+     *     @type string $room_id
      * }
      */
     public function __construct($data = NULL) {
@@ -341,6 +346,28 @@ class Job extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->ended_at = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string room_id = 12;</code>
+     * @return string
+     */
+    public function getRoomId()
+    {
+        return $this->room_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>string room_id = 12;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setRoomId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->room_id = $var;
 
         return $this;
     }

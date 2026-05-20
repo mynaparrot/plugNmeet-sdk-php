@@ -43,9 +43,9 @@ class DeployAgentRequest extends \Google\Protobuf\Internal\Message
      */
     protected $cpu_req = '';
     /**
-     * Generated from protobuf field <code>string environment = 7;</code>
+     * Generated from protobuf field <code>string deployment = 7;</code>
      */
-    protected $environment = '';
+    protected $deployment = '';
 
     /**
      * Constructor.
@@ -59,7 +59,7 @@ class DeployAgentRequest extends \Google\Protobuf\Internal\Message
      *     @type int $replicas
      *     @type int $max_replicas
      *     @type string $cpu_req
-     *     @type string $environment
+     *     @type string $deployment
      * }
      */
     public function __construct($data = NULL) {
@@ -224,23 +224,23 @@ class DeployAgentRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string environment = 7;</code>
+     * Generated from protobuf field <code>string deployment = 7;</code>
      * @return string
      */
-    public function getEnvironment()
+    public function getDeployment()
     {
-        return $this->environment;
+        return $this->deployment;
     }
 
     /**
-     * Generated from protobuf field <code>string environment = 7;</code>
+     * Generated from protobuf field <code>string deployment = 7;</code>
      * @param string $var
      * @return $this
      */
-    public function setEnvironment($var)
+    public function setDeployment($var)
     {
         GPBUtil::checkString($var, True);
-        $this->environment = $var;
+        $this->deployment = $var;
 
         return $this;
     }

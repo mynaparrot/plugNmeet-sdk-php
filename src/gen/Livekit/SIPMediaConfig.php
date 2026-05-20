@@ -30,6 +30,12 @@ class SIPMediaConfig extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional .livekit.SIPMediaEncryption encryption = 3;</code>
      */
     protected $encryption = null;
+    /**
+     * Use specific media timeout. If zero or not specified, will use default timeout.
+     *
+     * Generated from protobuf field <code>optional .google.protobuf.Duration media_timeout = 4;</code>
+     */
+    protected $media_timeout = null;
 
     /**
      * Constructor.
@@ -42,6 +48,8 @@ class SIPMediaConfig extends \Google\Protobuf\Internal\Message
      *     @type \Livekit\SIPCodec[] $codecs
      *           List of allowed codecs. If only_listed_codecs is not set, this list is added to default codecs.
      *     @type int $encryption
+     *     @type \Google\Protobuf\Duration $media_timeout
+     *           Use specific media timeout. If zero or not specified, will use default timeout.
      * }
      */
     public function __construct($data = NULL) {
@@ -129,6 +137,42 @@ class SIPMediaConfig extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkEnum($var, \Livekit\SIPMediaEncryption::class);
         $this->encryption = $var;
+
+        return $this;
+    }
+
+    /**
+     * Use specific media timeout. If zero or not specified, will use default timeout.
+     *
+     * Generated from protobuf field <code>optional .google.protobuf.Duration media_timeout = 4;</code>
+     * @return \Google\Protobuf\Duration|null
+     */
+    public function getMediaTimeout()
+    {
+        return $this->media_timeout;
+    }
+
+    public function hasMediaTimeout()
+    {
+        return isset($this->media_timeout);
+    }
+
+    public function clearMediaTimeout()
+    {
+        unset($this->media_timeout);
+    }
+
+    /**
+     * Use specific media timeout. If zero or not specified, will use default timeout.
+     *
+     * Generated from protobuf field <code>optional .google.protobuf.Duration media_timeout = 4;</code>
+     * @param \Google\Protobuf\Duration $var
+     * @return $this
+     */
+    public function setMediaTimeout($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Protobuf\Duration::class);
+        $this->media_timeout = $var;
 
         return $this;
     }

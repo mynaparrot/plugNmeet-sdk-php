@@ -63,6 +63,10 @@ class SIPInboundTrunkInfo extends \Google\Protobuf\Internal\Message
      */
     protected $auth_password = '';
     /**
+     * Generated from protobuf field <code>string auth_realm = 19;</code>
+     */
+    protected $auth_realm = '';
+    /**
      * Include these SIP X-* headers in 200 OK responses.
      *
      * Generated from protobuf field <code>map<string, string> headers = 9 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
@@ -143,6 +147,7 @@ class SIPInboundTrunkInfo extends \Google\Protobuf\Internal\Message
      *           Username and password used to authenticate inbound SIP invites.
      *           May be empty to have no authentication.
      *     @type string $auth_password
+     *     @type string $auth_realm
      *     @type array|\Google\Protobuf\Internal\MapField $headers
      *           Include these SIP X-* headers in 200 OK responses.
      *     @type array|\Google\Protobuf\Internal\MapField $headers_to_attributes
@@ -374,6 +379,28 @@ class SIPInboundTrunkInfo extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->auth_password = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string auth_realm = 19;</code>
+     * @return string
+     */
+    public function getAuthRealm()
+    {
+        return $this->auth_realm;
+    }
+
+    /**
+     * Generated from protobuf field <code>string auth_realm = 19;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setAuthRealm($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->auth_realm = $var;
 
         return $this;
     }

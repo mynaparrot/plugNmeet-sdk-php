@@ -18,6 +18,12 @@ class ListEgressResponse extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .livekit.EgressInfo items = 1;</code>
      */
     private $items;
+    /**
+     * next field id: 3
+     *
+     * Generated from protobuf field <code>.livekit.TokenPagination next_page_token = 2;</code>
+     */
+    protected $next_page_token = null;
 
     /**
      * Constructor.
@@ -26,6 +32,8 @@ class ListEgressResponse extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type \Livekit\EgressInfo[] $items
+     *     @type \Livekit\TokenPagination $next_page_token
+     *           next field id: 3
      * }
      */
     public function __construct($data = NULL) {
@@ -51,6 +59,42 @@ class ListEgressResponse extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\EgressInfo::class);
         $this->items = $arr;
+
+        return $this;
+    }
+
+    /**
+     * next field id: 3
+     *
+     * Generated from protobuf field <code>.livekit.TokenPagination next_page_token = 2;</code>
+     * @return \Livekit\TokenPagination|null
+     */
+    public function getNextPageToken()
+    {
+        return $this->next_page_token;
+    }
+
+    public function hasNextPageToken()
+    {
+        return isset($this->next_page_token);
+    }
+
+    public function clearNextPageToken()
+    {
+        unset($this->next_page_token);
+    }
+
+    /**
+     * next field id: 3
+     *
+     * Generated from protobuf field <code>.livekit.TokenPagination next_page_token = 2;</code>
+     * @param \Livekit\TokenPagination $var
+     * @return $this
+     */
+    public function setNextPageToken($var)
+    {
+        GPBUtil::checkMessage($var, \Livekit\TokenPagination::class);
+        $this->next_page_token = $var;
 
         return $this;
     }

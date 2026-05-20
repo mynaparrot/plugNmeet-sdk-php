@@ -23,9 +23,9 @@ class DeployAgentV2Request extends \Google\Protobuf\Internal\Message
      */
     private $secrets;
     /**
-     * Generated from protobuf field <code>string environment = 3;</code>
+     * Generated from protobuf field <code>string deployment = 3;</code>
      */
-    protected $environment = '';
+    protected $deployment = '';
 
     /**
      * Constructor.
@@ -35,7 +35,7 @@ class DeployAgentV2Request extends \Google\Protobuf\Internal\Message
      *
      *     @type string $agent_id
      *     @type \Livekit\AgentSecret[] $secrets
-     *     @type string $environment
+     *     @type string $deployment
      * }
      */
     public function __construct($data = NULL) {
@@ -88,23 +88,23 @@ class DeployAgentV2Request extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string environment = 3;</code>
+     * Generated from protobuf field <code>string deployment = 3;</code>
      * @return string
      */
-    public function getEnvironment()
+    public function getDeployment()
     {
-        return $this->environment;
+        return $this->deployment;
     }
 
     /**
-     * Generated from protobuf field <code>string environment = 3;</code>
+     * Generated from protobuf field <code>string deployment = 3;</code>
      * @param string $var
      * @return $this
      */
-    public function setEnvironment($var)
+    public function setDeployment($var)
     {
         GPBUtil::checkString($var, True);
-        $this->environment = $var;
+        $this->deployment = $var;
 
         return $this;
     }

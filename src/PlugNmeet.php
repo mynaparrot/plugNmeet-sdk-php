@@ -29,6 +29,8 @@ use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 use Mynaparrot\PlugnmeetProto\ArtifactInfoReq;
 use Mynaparrot\PlugnmeetProto\ArtifactInfoRes;
+use Mynaparrot\PlugnmeetProto\BroadcastToRoomReq;
+use Mynaparrot\PlugnmeetProto\CommonResponse;
 use Mynaparrot\PlugnmeetProto\CreateRoomReq;
 use Mynaparrot\PlugnmeetProto\CreateRoomRes;
 use Mynaparrot\PlugnmeetProto\DeleteAnalyticsReq;
@@ -63,6 +65,7 @@ use Mynaparrot\PlugnmeetProto\RecordingInfoReq;
 use Mynaparrot\PlugnmeetProto\RecordingInfoRes;
 use Mynaparrot\PlugnmeetProto\RoomEndReq;
 use Mynaparrot\PlugnmeetProto\RoomEndRes;
+use Mynaparrot\PlugnmeetProto\StatusCode;
 use Mynaparrot\PlugnmeetProto\UpdateRecordingMetadataReq;
 use Mynaparrot\PlugnmeetProto\UpdateRecordingMetadataRes;
 use Ramsey\Uuid\Uuid;
@@ -260,6 +263,83 @@ class PlugNmeet
         $res = $this->sendRequest("/room/fetchPastRooms", $body);
 
         $output = new FetchPastRoomsRes();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response);
+        }
+        return $output;
+    }
+
+    /**
+     * Broadcast messages or notifications directly into an active Plug-N-Meet session in real-time
+     *
+     * @param BroadcastToRoomReq $broadcastToRoomReq The request object for broadcasting to room.
+     * @return CommonResponse The response from the API call.
+     * @throws Exception
+     */
+    public function broadcastToRoom(BroadcastToRoomReq $broadcastToRoomReq): CommonResponse
+    {
+        $body = $broadcastToRoomReq->serializeToJsonString();
+        $res = $this->sendRequest("/room/broadcastToRoom", $body);
+
+        $output = new CommonResponse();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response);
+        }
+        return $output;
+    }
+
+    /**
+     * Upload a file to the whiteboard.
+     *
+     * @param string $roomId The ID of the room to upload the file to.
+     * @param array $options An array containing either a 'document' (local full file path) or 'document_link' (URL).
+     * @return CommonResponse The response from the server.
+     * @throws Exception
+     */
+    public function uploadWhiteboardFile(string $roomId, array $options): CommonResponse
+    {
+        $output = new CommonResponse();
+        $output->setStatusCode(StatusCode::INVALID_PARAMETERS);
+
+        if (!isset($options['document']) && !isset($options['document_link'])) {
+            $output->setMsg("Either 'document' or 'document_link' must be provided.");
+            return $output;
+        }
+
+        if (isset($options['document']) && isset($options['document_link'])) {
+            $output->setMsg("Only one of 'document' or 'document_link' can be provided.");
+            return $output;
+        }
+
+        $multipart = [];
+        if (isset($options['document'])) {
+            if (!is_file($options['document']) || !is_readable($options['document'])) {
+                $output->setMsg("The provided 'document' is not a valid or readable file.");
+                return $output;
+            }
+            $multipart[] = [
+                'name' => 'document',
+                'contents' => fopen($options['document'], 'r'),
+            ];
+        } else {
+            if (filter_var($options['document_link'], FILTER_VALIDATE_URL) === false) {
+                $output->setMsg("The provided 'document_link' is not a valid URL.");
+                return $output;
+            }
+            $multipart[] = [
+                'name' => 'document_link',
+                'contents' => $options['document_link'],
+            ];
+        }
+
+        // initialize new class
+        $output = new CommonResponse();
+        $res = $this->sendUploadFileRequest($roomId, $multipart);
+
         if ($res->status) {
             $output->mergeFromJsonString($res->response, true);
         } else {
@@ -618,6 +698,21 @@ class PlugNmeet
     }
 
     /**
+     * Builds the full URL for an API endpoint.
+     *
+     * @param string $path The API endpoint path.
+     * @return string The full URL.
+     */
+    private function buildUrl(string $path): string
+    {
+        return implode('/', [
+            rtrim($this->serverUrl, '/'),
+            trim($this->defaultPath, '/'),
+            trim($path, '/')
+        ]);
+    }
+
+    /**
      * Sends a request to the plugNmeet server.
      *
      * @param string $path The API endpoint to call.
@@ -631,18 +726,45 @@ class PlugNmeet
         $signature = hash_hmac($this->algo, $body, $this->apiSecret);
 
         try {
-            $url = implode('/', [
-                rtrim($this->serverUrl, '/'),
-                trim($this->defaultPath, '/'),
-                trim($path, '/')
-            ]);
             $response = $this->httpClient->post(
-                $url,
+                $this->buildUrl($path),
                 $body,
                 [
                     'Content-Type' => 'application/json',
                     'API-KEY' => $this->apiKey,
                     'HASH-SIGNATURE' => $signature,
+                ]
+            );
+
+            $output->status = true;
+            $output->response = $response;
+        } catch (Exception $e) {
+            $output->response = $e->getMessage();
+        }
+
+        return $output;
+    }
+
+
+    /**
+     * @param string $roomId The ID of the room to upload the file to.
+     * @param array $multipart The multipart data to send.
+     * @return stdClass
+     */
+    protected function sendUploadFileRequest(string $roomId, array $multipart): stdClass
+    {
+        $output = new stdClass();
+        $output->status = false;
+        $signature = hash_hmac($this->algo, $roomId, $this->apiSecret);
+
+        try {
+            $response = $this->httpClient->uploadFile(
+                $this->buildUrl('room/uploadWhiteboardFile'),
+                $multipart,
+                [
+                    'API-KEY' => $this->apiKey,
+                    'HASH-SIGNATURE' => $signature,
+                    'Room-Id' => $roomId,
                 ]
             );
 

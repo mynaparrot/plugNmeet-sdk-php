@@ -83,6 +83,38 @@ class GuzzleHttpClient implements HttpClientInterface
     }
 
     /**
+     * @param string $url
+     * @param array $multipart
+     * @param array $headers
+     * @return string
+     * @throws Exception
+     */
+    public function uploadFile(string $url, array $multipart, array $headers = []): string
+    {
+        try {
+            $response = $this->guzzleClient->post($url, [
+                'headers' => $headers,
+                'multipart' => $multipart,
+            ]);
+
+            return $response->getBody()->getContents();
+        } catch (ConnectException $e) {
+            $message = $e->getMessage();
+            if (preg_match('/cURL error \d+: (.*) \(see/', $message, $matches)) {
+                throw new Exception($matches[1]);
+            } else {
+                throw new Exception('Connection Error: ' . $message);
+            }
+        } catch (RequestException $e) {
+            throw new Exception($this->handleRequestException($e));
+        } catch (GuzzleException $e) {
+            throw new Exception('Guzzle Error: ' . $e->getMessage());
+        } catch (Exception $e) {
+            throw new Exception($e->getMessage());
+        }
+    }
+
+    /**
      * Extracts a meaningful error response from a RequestException.
      *
      * @param RequestException $e

@@ -36,4 +36,14 @@ interface HttpClientInterface
      * @throws \Exception If the request fails.
      */
     public function post(string $url, string $body, array $headers = []): string;
+
+    /**
+     * Sends a multipart/form-data request to the specified URL with the given data.
+     *
+     * @param string $url The URL to send the request to.
+     * @param array $multipart The multipart data to send.
+     * @param array $headers Optional headers to send with the request.
+     * @return string The response body as a string.
+     */
+    public function uploadFile(string $url, array $multipart, array $headers = []): string;
 }

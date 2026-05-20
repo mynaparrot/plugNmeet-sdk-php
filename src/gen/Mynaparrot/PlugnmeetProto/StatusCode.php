@@ -68,6 +68,10 @@ class StatusCode
      * Generated from protobuf enum <code>USER_NOT_ACTIVE = 13;</code>
      */
     const USER_NOT_ACTIVE = 13;
+    /**
+     * Generated from protobuf enum <code>ROOM_NOT_ACTIVE = 14;</code>
+     */
+    const ROOM_NOT_ACTIVE = 14;
 
     private static $valueToName = [
         self::UNKNOWN_STATUS => 'UNKNOWN_STATUS',
@@ -84,6 +88,7 @@ class StatusCode
         self::USER_NOT_FOUND => 'USER_NOT_FOUND',
         self::USER_BLOCKED => 'USER_BLOCKED',
         self::USER_NOT_ACTIVE => 'USER_NOT_ACTIVE',
+        self::ROOM_NOT_ACTIVE => 'ROOM_NOT_ACTIVE',
     ];
 
     public static function name($value)

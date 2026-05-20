@@ -32,6 +32,12 @@ class ListEgressRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool active = 3;</code>
      */
     protected $active = false;
+    /**
+     * next field id: 5
+     *
+     * Generated from protobuf field <code>.livekit.TokenPagination page_token = 4;</code>
+     */
+    protected $page_token = null;
 
     /**
      * Constructor.
@@ -45,6 +51,8 @@ class ListEgressRequest extends \Google\Protobuf\Internal\Message
      *           (optional, filter by egress ID)
      *     @type bool $active
      *           (optional, list active egress only)
+     *     @type \Livekit\TokenPagination $page_token
+     *           next field id: 5
      * }
      */
     public function __construct($data = NULL) {
@@ -126,6 +134,42 @@ class ListEgressRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->active = $var;
+
+        return $this;
+    }
+
+    /**
+     * next field id: 5
+     *
+     * Generated from protobuf field <code>.livekit.TokenPagination page_token = 4;</code>
+     * @return \Livekit\TokenPagination|null
+     */
+    public function getPageToken()
+    {
+        return $this->page_token;
+    }
+
+    public function hasPageToken()
+    {
+        return isset($this->page_token);
+    }
+
+    public function clearPageToken()
+    {
+        unset($this->page_token);
+    }
+
+    /**
+     * next field id: 5
+     *
+     * Generated from protobuf field <code>.livekit.TokenPagination page_token = 4;</code>
+     * @param \Livekit\TokenPagination $var
+     * @return $this
+     */
+    public function setPageToken($var)
+    {
+        GPBUtil::checkMessage($var, \Livekit\TokenPagination::class);
+        $this->page_token = $var;
 
         return $this;
     }

@@ -35,9 +35,9 @@ class DeployAgentV2Response extends \Google\Protobuf\Internal\Message
      */
     protected $presigned_req = null;
     /**
-     * Generated from protobuf field <code>string environment = 6;</code>
+     * Generated from protobuf field <code>string deployment = 6;</code>
      */
-    protected $environment = '';
+    protected $deployment = '';
 
     /**
      * Constructor.
@@ -50,7 +50,7 @@ class DeployAgentV2Response extends \Google\Protobuf\Internal\Message
      *     @type string $agent_id
      *     @type string $tag
      *     @type \Livekit\PresignedPostRequest $presigned_req
-     *     @type string $environment
+     *     @type string $deployment
      * }
      */
     public function __construct($data = NULL) {
@@ -179,23 +179,23 @@ class DeployAgentV2Response extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string environment = 6;</code>
+     * Generated from protobuf field <code>string deployment = 6;</code>
      * @return string
      */
-    public function getEnvironment()
+    public function getDeployment()
     {
-        return $this->environment;
+        return $this->deployment;
     }
 
     /**
-     * Generated from protobuf field <code>string environment = 6;</code>
+     * Generated from protobuf field <code>string deployment = 6;</code>
      * @param string $var
      * @return $this
      */
-    public function setEnvironment($var)
+    public function setDeployment($var)
     {
         GPBUtil::checkString($var, True);
-        $this->environment = $var;
+        $this->deployment = $var;
 
         return $this;
     }
