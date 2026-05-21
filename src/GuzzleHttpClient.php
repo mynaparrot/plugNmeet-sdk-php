@@ -47,9 +47,9 @@ class GuzzleHttpClient implements HttpClientInterface
     public function __construct(int $timeout = 60, bool $verifySSL = true)
     {
         $this->guzzleClient = new Client([
-            'timeout' => $timeout,
-            'verify' => $verifySSL,
-        ]);
+                                             'timeout' => $timeout,
+                                             'verify' => $verifySSL,
+                                         ]);
     }
 
     /**

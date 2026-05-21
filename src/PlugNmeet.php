@@ -163,7 +163,7 @@ class PlugNmeet
         if ($res->status) {
             $output->mergeFromJsonString($res->response, true);
         } else {
-            $output->setStatus(false)->setMsg($res->response);
+            $output->setStatus(false)->setMsg($res->response)->setStatusCode($res->status_code);
         }
         return $output;
     }
@@ -184,7 +184,7 @@ class PlugNmeet
         if ($res->status) {
             $output->mergeFromJsonString($res->response, true);
         } else {
-            $output->setStatus(false)->setMsg($res->response);
+            $output->setStatus(false)->setMsg($res->response)->setStatusCode($res->status_code);
         }
         return $output;
     }
@@ -205,7 +205,7 @@ class PlugNmeet
         if ($res->status) {
             $output->mergeFromJsonString($res->response, true);
         } else {
-            $output->setStatus(false)->setMsg($res->response);
+            $output->setStatus(false)->setMsg($res->response)->setStatusCode($res->status_code);
         }
         return $output;
     }
@@ -227,7 +227,7 @@ class PlugNmeet
         if ($res->status) {
             $output->mergeFromJsonString($res->response, true);
         } else {
-            $output->setStatus(false)->setMsg($res->response);
+            $output->setStatus(false)->setMsg($res->response)->setStatusCode($res->status_code);
         }
         return $output;
     }
@@ -245,7 +245,7 @@ class PlugNmeet
         if ($res->status) {
             $output->mergeFromJsonString($res->response, true);
         } else {
-            $output->setStatus(false)->setMsg($res->response);
+            $output->setStatus(false)->setMsg($res->response)->setStatusCode($res->status_code);
         }
         return $output;
     }
@@ -266,7 +266,7 @@ class PlugNmeet
         if ($res->status) {
             $output->mergeFromJsonString($res->response, true);
         } else {
-            $output->setStatus(false)->setMsg($res->response);
+            $output->setStatus(false)->setMsg($res->response)->setStatusCode($res->status_code);
         }
         return $output;
     }
@@ -287,7 +287,7 @@ class PlugNmeet
         if ($res->status) {
             $output->mergeFromJsonString($res->response, true);
         } else {
-            $output->setStatus(false)->setMsg($res->response);
+            $output->setStatus(false)->setMsg($res->response)->setStatusCode($res->status_code);
         }
         return $output;
     }
@@ -340,7 +340,7 @@ class PlugNmeet
         if ($res->status) {
             $output->mergeFromJsonString($res->response, true);
         } else {
-            $output->setStatus(false)->setMsg($res->response);
+            $output->setStatus(false)->setMsg($res->response)->setStatusCode($res->status_code);
         }
         return $output;
     }
@@ -361,7 +361,7 @@ class PlugNmeet
         if ($res->status) {
             $output->mergeFromJsonString($res->response, true);
         } else {
-            $output->setStatus(false)->setMsg($res->response);
+            $output->setStatus(false)->setMsg($res->response)->setStatusCode($res->status_code);
         }
         return $output;
     }
@@ -382,7 +382,7 @@ class PlugNmeet
         if ($res->status) {
             $output->mergeFromJsonString($res->response, true);
         } else {
-            $output->setStatus(false)->setMsg($res->response);
+            $output->setStatus(false)->setMsg($res->response)->setStatusCode($res->status_code);
         }
         return $output;
     }
@@ -403,7 +403,7 @@ class PlugNmeet
         if ($res->status) {
             $output->mergeFromJsonString($res->response, true);
         } else {
-            $output->setStatus(false)->setMsg($res->response);
+            $output->setStatus(false)->setMsg($res->response)->setStatusCode($res->status_code);
         }
         return $output;
     }
@@ -425,7 +425,7 @@ class PlugNmeet
         if ($res->status) {
             $output->mergeFromJsonString($res->response, true);
         } else {
-            $output->setStatus(false)->setMsg($res->response);
+            $output->setStatus(false)->setMsg($res->response)->setStatusCode($res->status_code);
         }
         return $output;
     }
@@ -446,7 +446,7 @@ class PlugNmeet
         if ($res->status) {
             $output->mergeFromJsonString($res->response, true);
         } else {
-            $output->setStatus(false)->setMsg($res->response);
+            $output->setStatus(false)->setMsg($res->response)->setStatusCode($res->status_code);
         }
         return $output;
     }
@@ -468,7 +468,7 @@ class PlugNmeet
         if ($res->status) {
             $output->mergeFromJsonString($res->response, true);
         } else {
-            $output->setStatus(false)->setMsg($res->response);
+            $output->setStatus(false)->setMsg($res->response)->setStatusCode($res->status_code);
         }
         return $output;
     }
@@ -489,7 +489,7 @@ class PlugNmeet
         if ($res->status) {
             $output->mergeFromJsonString($res->response, true);
         } else {
-            $output->setStatus(false)->setMsg($res->response);
+            $output->setStatus(false)->setMsg($res->response)->setStatusCode($res->status_code);
         }
         return $output;
     }
@@ -510,7 +510,7 @@ class PlugNmeet
         if ($res->status) {
             $output->mergeFromJsonString($res->response, true);
         } else {
-            $output->setStatus(false)->setMsg($res->response);
+            $output->setStatus(false)->setMsg($res->response)->setStatusCode($res->status_code);
         }
         return $output;
     }
@@ -531,7 +531,7 @@ class PlugNmeet
         if ($res->status) {
             $output->mergeFromJsonString($res->response, true);
         } else {
-            $output->setStatus(false)->setMsg($res->response);
+            $output->setStatus(false)->setMsg($res->response)->setStatusCode($res->status_code);
         }
         return $output;
     }
@@ -553,7 +553,7 @@ class PlugNmeet
         if ($res->status) {
             $output->mergeFromJsonString($res->response, true);
         } else {
-            $output->setStatus(false)->setMsg($res->response);
+            $output->setStatus(false)->setMsg($res->response)->setStatusCode($res->status_code);
         }
         return $output;
     }
@@ -575,7 +575,7 @@ class PlugNmeet
         if ($res->status) {
             $output->mergeFromJsonString($res->response, true);
         } else {
-            $output->setStatus(false)->setMsg($res->response);
+            $output->setStatus(false)->setMsg($res->response)->setStatusCode($res->status_code);
         }
         return $output;
     }
@@ -597,7 +597,7 @@ class PlugNmeet
         if ($res->status) {
             $output->mergeFromJsonString($res->response, true);
         } else {
-            $output->setStatus(false)->setMsg($res->response);
+            $output->setStatus(false)->setMsg($res->response)->setStatusCode($res->status_code);
         }
         return $output;
     }
@@ -620,7 +620,7 @@ class PlugNmeet
         if ($res->status) {
             $output->mergeFromJsonString($res->response, true);
         } else {
-            $output->setStatus(false)->setMsg($res->response);
+            $output->setStatus(false)->setMsg($res->response)->setStatusCode($res->status_code);
         }
         return $output;
     }
@@ -638,7 +638,7 @@ class PlugNmeet
         if ($res->status) {
             $output->mergeFromJsonString($res->response, true);
         } else {
-            $output->setStatus(false)->setMsg($res->response);
+            $output->setStatus(false)->setMsg($res->response)->setStatusCode($res->status_code);
         }
         return $output;
     }
@@ -720,6 +720,7 @@ class PlugNmeet
     {
         $output = new stdClass();
         $output->status = false;
+        $output->status_code = StatusCode::UNKNOWN_STATUS;
         $signature = hash_hmac($this->algo, $body, $this->apiSecret);
 
         try {
@@ -736,7 +737,7 @@ class PlugNmeet
             $output->status = true;
             $output->response = $response;
         } catch (Exception $e) {
-            $output->response = $e->getMessage();
+            $this->handleException($e->getMessage(), $output);
         }
 
         return $output;
@@ -752,6 +753,7 @@ class PlugNmeet
     {
         $output = new stdClass();
         $output->status = false;
+        $output->status_code = StatusCode::UNKNOWN_STATUS;
         $signature = hash_hmac($this->algo, $roomId, $this->apiSecret);
 
         try {
@@ -768,9 +770,27 @@ class PlugNmeet
             $output->status = true;
             $output->response = $response;
         } catch (Exception $e) {
-            $output->response = $e->getMessage();
+            $this->handleException($e->getMessage(), $output);
         }
 
         return $output;
+    }
+
+    /**
+     * Extracts a meaningful error response from a Exception.
+     *
+     * @param string $message
+     * @param $output
+     */
+    private function handleException(string $message, &$output): void
+    {
+        try {
+            $common = new CommonResponse();
+            $common->mergeFromJsonString($message, true);
+            $output->status_code = $common->getStatusCode();
+            $output->response = $common->getMsg();
+        } catch (Exception $e) {
+            $output->response = $message;
+        }
     }
 }
