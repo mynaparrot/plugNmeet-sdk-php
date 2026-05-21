@@ -336,10 +336,7 @@ class PlugNmeet
             ];
         }
 
-        // initialize new class
-        $output = new CommonResponse();
         $res = $this->sendUploadFileRequest($roomId, $multipart);
-
         if ($res->status) {
             $output->mergeFromJsonString($res->response, true);
         } else {

@@ -30,6 +30,9 @@ use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Exception\RequestException;
 
+/**
+ * An HTTP client that uses Guzzle to send requests.
+ */
 class GuzzleHttpClient implements HttpClientInterface
 {
     /**
