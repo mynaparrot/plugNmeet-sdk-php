@@ -14,21 +14,11 @@ use Google\Protobuf\Internal\GPBUtil;
 class ChatFeatures extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>optional bool allow_chat = 1 [deprecated = true];</code>
-     * @deprecated
-     */
-    protected $allow_chat = null;
-    /**
-     * Generated from protobuf field <code>optional bool allow_file_upload = 2 [deprecated = true];</code>
-     * @deprecated
-     */
-    protected $allow_file_upload = null;
-    /**
-     * Generated from protobuf field <code>bool is_allow = 5;</code>
+     * Generated from protobuf field <code>bool is_allow = 1;</code>
      */
     protected $is_allow = false;
     /**
-     * Generated from protobuf field <code>bool is_allow_file_upload = 6;</code>
+     * Generated from protobuf field <code>bool is_allow_file_upload = 2;</code>
      */
     protected $is_allow_file_upload = false;
     /**
@@ -46,8 +36,6 @@ class ChatFeatures extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type bool $allow_chat
-     *     @type bool $allow_file_upload
      *     @type bool $is_allow
      *     @type bool $is_allow_file_upload
      *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $allowed_file_types
@@ -60,83 +48,7 @@ class ChatFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional bool allow_chat = 1 [deprecated = true];</code>
-     * @return bool
-     * @deprecated
-     */
-    public function getAllowChat()
-    {
-        @trigger_error('allow_chat is deprecated.', E_USER_DEPRECATED);
-        return isset($this->allow_chat) ? $this->allow_chat : false;
-    }
-
-    public function hasAllowChat()
-    {
-        @trigger_error('allow_chat is deprecated.', E_USER_DEPRECATED);
-        return isset($this->allow_chat);
-    }
-
-    public function clearAllowChat()
-    {
-        @trigger_error('allow_chat is deprecated.', E_USER_DEPRECATED);
-        unset($this->allow_chat);
-    }
-
-    /**
-     * Generated from protobuf field <code>optional bool allow_chat = 1 [deprecated = true];</code>
-     * @param bool $var
-     * @return $this
-     * @deprecated
-     */
-    public function setAllowChat($var)
-    {
-        @trigger_error('allow_chat is deprecated.', E_USER_DEPRECATED);
-        GPBUtil::checkBool($var);
-        $this->allow_chat = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>optional bool allow_file_upload = 2 [deprecated = true];</code>
-     * @return bool
-     * @deprecated
-     */
-    public function getAllowFileUpload()
-    {
-        @trigger_error('allow_file_upload is deprecated.', E_USER_DEPRECATED);
-        return isset($this->allow_file_upload) ? $this->allow_file_upload : false;
-    }
-
-    public function hasAllowFileUpload()
-    {
-        @trigger_error('allow_file_upload is deprecated.', E_USER_DEPRECATED);
-        return isset($this->allow_file_upload);
-    }
-
-    public function clearAllowFileUpload()
-    {
-        @trigger_error('allow_file_upload is deprecated.', E_USER_DEPRECATED);
-        unset($this->allow_file_upload);
-    }
-
-    /**
-     * Generated from protobuf field <code>optional bool allow_file_upload = 2 [deprecated = true];</code>
-     * @param bool $var
-     * @return $this
-     * @deprecated
-     */
-    public function setAllowFileUpload($var)
-    {
-        @trigger_error('allow_file_upload is deprecated.', E_USER_DEPRECATED);
-        GPBUtil::checkBool($var);
-        $this->allow_file_upload = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>bool is_allow = 5;</code>
+     * Generated from protobuf field <code>bool is_allow = 1;</code>
      * @return bool
      */
     public function getIsAllow()
@@ -145,7 +57,7 @@ class ChatFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>bool is_allow = 5;</code>
+     * Generated from protobuf field <code>bool is_allow = 1;</code>
      * @param bool $var
      * @return $this
      */
@@ -158,7 +70,7 @@ class ChatFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>bool is_allow_file_upload = 6;</code>
+     * Generated from protobuf field <code>bool is_allow_file_upload = 2;</code>
      * @return bool
      */
     public function getIsAllowFileUpload()
@@ -167,7 +79,7 @@ class ChatFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>bool is_allow_file_upload = 6;</code>
+     * Generated from protobuf field <code>bool is_allow_file_upload = 2;</code>
      * @param bool $var
      * @return $this
      */

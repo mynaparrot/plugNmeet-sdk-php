@@ -14,12 +14,7 @@ use Google\Protobuf\Internal\GPBUtil;
 class WhiteboardFeatures extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>optional bool allowed_whiteboard = 1 [deprecated = true];</code>
-     * @deprecated
-     */
-    protected $allowed_whiteboard = null;
-    /**
-     * Generated from protobuf field <code>bool is_allow = 9;</code>
+     * Generated from protobuf field <code>bool is_allow = 1;</code>
      */
     protected $is_allow = false;
     /**
@@ -57,7 +52,6 @@ class WhiteboardFeatures extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type bool $allowed_whiteboard
      *     @type bool $is_allow
      *     @type bool $visible
      *     @type string $preload_file
@@ -74,45 +68,7 @@ class WhiteboardFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional bool allowed_whiteboard = 1 [deprecated = true];</code>
-     * @return bool
-     * @deprecated
-     */
-    public function getAllowedWhiteboard()
-    {
-        @trigger_error('allowed_whiteboard is deprecated.', E_USER_DEPRECATED);
-        return isset($this->allowed_whiteboard) ? $this->allowed_whiteboard : false;
-    }
-
-    public function hasAllowedWhiteboard()
-    {
-        @trigger_error('allowed_whiteboard is deprecated.', E_USER_DEPRECATED);
-        return isset($this->allowed_whiteboard);
-    }
-
-    public function clearAllowedWhiteboard()
-    {
-        @trigger_error('allowed_whiteboard is deprecated.', E_USER_DEPRECATED);
-        unset($this->allowed_whiteboard);
-    }
-
-    /**
-     * Generated from protobuf field <code>optional bool allowed_whiteboard = 1 [deprecated = true];</code>
-     * @param bool $var
-     * @return $this
-     * @deprecated
-     */
-    public function setAllowedWhiteboard($var)
-    {
-        @trigger_error('allowed_whiteboard is deprecated.', E_USER_DEPRECATED);
-        GPBUtil::checkBool($var);
-        $this->allowed_whiteboard = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>bool is_allow = 9;</code>
+     * Generated from protobuf field <code>bool is_allow = 1;</code>
      * @return bool
      */
     public function getIsAllow()
@@ -121,7 +77,7 @@ class WhiteboardFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>bool is_allow = 9;</code>
+     * Generated from protobuf field <code>bool is_allow = 1;</code>
      * @param bool $var
      * @return $this
      */

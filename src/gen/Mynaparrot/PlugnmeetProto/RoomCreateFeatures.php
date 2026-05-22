@@ -45,95 +45,81 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      */
     protected $admin_only_webcams = false;
     /**
-     * deprecated use polls_features
-     *
-     * Generated from protobuf field <code>optional bool allow_polls = 8 [deprecated = true];</code>
-     * @deprecated
-     */
-    protected $allow_polls = null;
-    /**
-     * Generated from protobuf field <code>optional uint64 room_duration = 9;</code>
+     * Generated from protobuf field <code>optional uint64 room_duration = 8;</code>
      */
     protected $room_duration = null;
     /**
-     * Generated from protobuf field <code>bool enable_analytics = 10;</code>
+     * Generated from protobuf field <code>bool enable_analytics = 9;</code>
      */
     protected $enable_analytics = false;
     /**
-     * Generated from protobuf field <code>optional bool allow_virtual_bg = 11;</code>
+     * Generated from protobuf field <code>optional bool allow_virtual_bg = 10;</code>
      */
     protected $allow_virtual_bg = null;
     /**
-     * Generated from protobuf field <code>optional bool allow_raise_hand = 12;</code>
+     * Generated from protobuf field <code>optional bool allow_raise_hand = 11;</code>
      */
     protected $allow_raise_hand = null;
     /**
-     * Generated from protobuf field <code>optional bool auto_gen_user_id = 13;</code>
+     * Generated from protobuf field <code>optional bool auto_gen_user_id = 12;</code>
      */
     protected $auto_gen_user_id = null;
     /**
-     * Generated from protobuf field <code>.plugnmeet.RecordingFeatures recording_features = 14;</code>
+     * Generated from protobuf field <code>.plugnmeet.RecordingFeatures recording_features = 13;</code>
      */
     protected $recording_features = null;
     /**
-     * Generated from protobuf field <code>.plugnmeet.ChatFeatures chat_features = 15;</code>
+     * Generated from protobuf field <code>.plugnmeet.ChatFeatures chat_features = 14;</code>
      */
     protected $chat_features = null;
     /**
-     * Generated from protobuf field <code>.plugnmeet.SharedNotePadFeatures shared_note_pad_features = 16;</code>
+     * Generated from protobuf field <code>.plugnmeet.SharedNotePadFeatures shared_note_pad_features = 15;</code>
      */
     protected $shared_note_pad_features = null;
     /**
-     * Generated from protobuf field <code>.plugnmeet.WhiteboardFeatures whiteboard_features = 17;</code>
+     * Generated from protobuf field <code>.plugnmeet.WhiteboardFeatures whiteboard_features = 16;</code>
      */
     protected $whiteboard_features = null;
     /**
-     * Generated from protobuf field <code>.plugnmeet.ExternalMediaPlayerFeatures external_media_player_features = 18;</code>
+     * Generated from protobuf field <code>.plugnmeet.ExternalMediaPlayerFeatures external_media_player_features = 17;</code>
      */
     protected $external_media_player_features = null;
     /**
-     * Generated from protobuf field <code>.plugnmeet.WaitingRoomFeatures waiting_room_features = 19;</code>
+     * Generated from protobuf field <code>.plugnmeet.WaitingRoomFeatures waiting_room_features = 18;</code>
      */
     protected $waiting_room_features = null;
     /**
-     * Generated from protobuf field <code>.plugnmeet.BreakoutRoomFeatures breakout_room_features = 20;</code>
+     * Generated from protobuf field <code>.plugnmeet.BreakoutRoomFeatures breakout_room_features = 19;</code>
      */
     protected $breakout_room_features = null;
     /**
-     * Generated from protobuf field <code>.plugnmeet.DisplayExternalLinkFeatures display_external_link_features = 21;</code>
+     * Generated from protobuf field <code>.plugnmeet.DisplayExternalLinkFeatures display_external_link_features = 20;</code>
      */
     protected $display_external_link_features = null;
     /**
-     * Generated from protobuf field <code>.plugnmeet.IngressFeatures ingress_features = 22;</code>
+     * Generated from protobuf field <code>.plugnmeet.IngressFeatures ingress_features = 21;</code>
      */
     protected $ingress_features = null;
     /**
-     * deprecated use insights_features
-     *
-     * Generated from protobuf field <code>.plugnmeet.SpeechToTextTranslationFeatures speech_to_text_translation_features = 23 [deprecated = true];</code>
-     * @deprecated
-     */
-    protected $speech_to_text_translation_features = null;
-    /**
-     * Generated from protobuf field <code>.plugnmeet.EndToEndEncryptionFeatures end_to_end_encryption_features = 24;</code>
+     * Generated from protobuf field <code>.plugnmeet.EndToEndEncryptionFeatures end_to_end_encryption_features = 22;</code>
      */
     protected $end_to_end_encryption_features = null;
     /**
-     * Generated from protobuf field <code>.plugnmeet.PollsFeatures polls_features = 25;</code>
+     * Generated from protobuf field <code>.plugnmeet.PollsFeatures polls_features = 23;</code>
      */
     protected $polls_features = null;
     /**
-     * Generated from protobuf field <code>.plugnmeet.InsightsFeatures insights_features = 26;</code>
+     * Generated from protobuf field <code>.plugnmeet.InsightsFeatures insights_features = 24;</code>
      */
     protected $insights_features = null;
     /**
-     * Generated from protobuf field <code>.plugnmeet.SipDialInFeatures sip_dial_in_features = 27;</code>
+     * Generated from protobuf field <code>.plugnmeet.SipDialInFeatures sip_dial_in_features = 25;</code>
      */
     protected $sip_dial_in_features = null;
     /**
-     * next ID: 29
+     * next ID: 27
      *
-     * Generated from protobuf field <code>.plugnmeet.ExternalBroadcastingFeatures external_broadcasting_features = 28;</code>
+     * Generated from protobuf field <code>.plugnmeet.ExternalBroadcastingFeatures external_broadcasting_features = 26;</code>
      */
     protected $external_broadcasting_features = null;
 
@@ -151,8 +137,6 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      *     @type bool $allow_view_other_webcams
      *     @type bool $allow_view_other_users_list
      *     @type bool $admin_only_webcams
-     *     @type bool $allow_polls
-     *           deprecated use polls_features
      *     @type int|string $room_duration
      *     @type bool $enable_analytics
      *     @type bool $allow_virtual_bg
@@ -167,14 +151,12 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      *     @type \Mynaparrot\PlugnmeetProto\BreakoutRoomFeatures $breakout_room_features
      *     @type \Mynaparrot\PlugnmeetProto\DisplayExternalLinkFeatures $display_external_link_features
      *     @type \Mynaparrot\PlugnmeetProto\IngressFeatures $ingress_features
-     *     @type \Mynaparrot\PlugnmeetProto\SpeechToTextTranslationFeatures $speech_to_text_translation_features
-     *           deprecated use insights_features
      *     @type \Mynaparrot\PlugnmeetProto\EndToEndEncryptionFeatures $end_to_end_encryption_features
      *     @type \Mynaparrot\PlugnmeetProto\PollsFeatures $polls_features
      *     @type \Mynaparrot\PlugnmeetProto\InsightsFeatures $insights_features
      *     @type \Mynaparrot\PlugnmeetProto\SipDialInFeatures $sip_dial_in_features
      *     @type \Mynaparrot\PlugnmeetProto\ExternalBroadcastingFeatures $external_broadcasting_features
-     *           next ID: 29
+     *           next ID: 27
      * }
      */
     public function __construct($data = NULL) {
@@ -357,49 +339,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * deprecated use polls_features
-     *
-     * Generated from protobuf field <code>optional bool allow_polls = 8 [deprecated = true];</code>
-     * @return bool
-     * @deprecated
-     */
-    public function getAllowPolls()
-    {
-        @trigger_error('allow_polls is deprecated.', E_USER_DEPRECATED);
-        return isset($this->allow_polls) ? $this->allow_polls : false;
-    }
-
-    public function hasAllowPolls()
-    {
-        @trigger_error('allow_polls is deprecated.', E_USER_DEPRECATED);
-        return isset($this->allow_polls);
-    }
-
-    public function clearAllowPolls()
-    {
-        @trigger_error('allow_polls is deprecated.', E_USER_DEPRECATED);
-        unset($this->allow_polls);
-    }
-
-    /**
-     * deprecated use polls_features
-     *
-     * Generated from protobuf field <code>optional bool allow_polls = 8 [deprecated = true];</code>
-     * @param bool $var
-     * @return $this
-     * @deprecated
-     */
-    public function setAllowPolls($var)
-    {
-        @trigger_error('allow_polls is deprecated.', E_USER_DEPRECATED);
-        GPBUtil::checkBool($var);
-        $this->allow_polls = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>optional uint64 room_duration = 9;</code>
+     * Generated from protobuf field <code>optional uint64 room_duration = 8;</code>
      * @return int|string
      */
     public function getRoomDuration()
@@ -418,7 +358,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional uint64 room_duration = 9;</code>
+     * Generated from protobuf field <code>optional uint64 room_duration = 8;</code>
      * @param int|string $var
      * @return $this
      */
@@ -431,7 +371,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>bool enable_analytics = 10;</code>
+     * Generated from protobuf field <code>bool enable_analytics = 9;</code>
      * @return bool
      */
     public function getEnableAnalytics()
@@ -440,7 +380,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>bool enable_analytics = 10;</code>
+     * Generated from protobuf field <code>bool enable_analytics = 9;</code>
      * @param bool $var
      * @return $this
      */
@@ -453,7 +393,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional bool allow_virtual_bg = 11;</code>
+     * Generated from protobuf field <code>optional bool allow_virtual_bg = 10;</code>
      * @return bool
      */
     public function getAllowVirtualBg()
@@ -472,7 +412,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional bool allow_virtual_bg = 11;</code>
+     * Generated from protobuf field <code>optional bool allow_virtual_bg = 10;</code>
      * @param bool $var
      * @return $this
      */
@@ -485,7 +425,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional bool allow_raise_hand = 12;</code>
+     * Generated from protobuf field <code>optional bool allow_raise_hand = 11;</code>
      * @return bool
      */
     public function getAllowRaiseHand()
@@ -504,7 +444,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional bool allow_raise_hand = 12;</code>
+     * Generated from protobuf field <code>optional bool allow_raise_hand = 11;</code>
      * @param bool $var
      * @return $this
      */
@@ -517,7 +457,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional bool auto_gen_user_id = 13;</code>
+     * Generated from protobuf field <code>optional bool auto_gen_user_id = 12;</code>
      * @return bool
      */
     public function getAutoGenUserId()
@@ -536,7 +476,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional bool auto_gen_user_id = 13;</code>
+     * Generated from protobuf field <code>optional bool auto_gen_user_id = 12;</code>
      * @param bool $var
      * @return $this
      */
@@ -549,7 +489,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.RecordingFeatures recording_features = 14;</code>
+     * Generated from protobuf field <code>.plugnmeet.RecordingFeatures recording_features = 13;</code>
      * @return \Mynaparrot\PlugnmeetProto\RecordingFeatures|null
      */
     public function getRecordingFeatures()
@@ -568,7 +508,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.RecordingFeatures recording_features = 14;</code>
+     * Generated from protobuf field <code>.plugnmeet.RecordingFeatures recording_features = 13;</code>
      * @param \Mynaparrot\PlugnmeetProto\RecordingFeatures $var
      * @return $this
      */
@@ -581,7 +521,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.ChatFeatures chat_features = 15;</code>
+     * Generated from protobuf field <code>.plugnmeet.ChatFeatures chat_features = 14;</code>
      * @return \Mynaparrot\PlugnmeetProto\ChatFeatures|null
      */
     public function getChatFeatures()
@@ -600,7 +540,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.ChatFeatures chat_features = 15;</code>
+     * Generated from protobuf field <code>.plugnmeet.ChatFeatures chat_features = 14;</code>
      * @param \Mynaparrot\PlugnmeetProto\ChatFeatures $var
      * @return $this
      */
@@ -613,7 +553,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.SharedNotePadFeatures shared_note_pad_features = 16;</code>
+     * Generated from protobuf field <code>.plugnmeet.SharedNotePadFeatures shared_note_pad_features = 15;</code>
      * @return \Mynaparrot\PlugnmeetProto\SharedNotePadFeatures|null
      */
     public function getSharedNotePadFeatures()
@@ -632,7 +572,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.SharedNotePadFeatures shared_note_pad_features = 16;</code>
+     * Generated from protobuf field <code>.plugnmeet.SharedNotePadFeatures shared_note_pad_features = 15;</code>
      * @param \Mynaparrot\PlugnmeetProto\SharedNotePadFeatures $var
      * @return $this
      */
@@ -645,7 +585,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.WhiteboardFeatures whiteboard_features = 17;</code>
+     * Generated from protobuf field <code>.plugnmeet.WhiteboardFeatures whiteboard_features = 16;</code>
      * @return \Mynaparrot\PlugnmeetProto\WhiteboardFeatures|null
      */
     public function getWhiteboardFeatures()
@@ -664,7 +604,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.WhiteboardFeatures whiteboard_features = 17;</code>
+     * Generated from protobuf field <code>.plugnmeet.WhiteboardFeatures whiteboard_features = 16;</code>
      * @param \Mynaparrot\PlugnmeetProto\WhiteboardFeatures $var
      * @return $this
      */
@@ -677,7 +617,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.ExternalMediaPlayerFeatures external_media_player_features = 18;</code>
+     * Generated from protobuf field <code>.plugnmeet.ExternalMediaPlayerFeatures external_media_player_features = 17;</code>
      * @return \Mynaparrot\PlugnmeetProto\ExternalMediaPlayerFeatures|null
      */
     public function getExternalMediaPlayerFeatures()
@@ -696,7 +636,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.ExternalMediaPlayerFeatures external_media_player_features = 18;</code>
+     * Generated from protobuf field <code>.plugnmeet.ExternalMediaPlayerFeatures external_media_player_features = 17;</code>
      * @param \Mynaparrot\PlugnmeetProto\ExternalMediaPlayerFeatures $var
      * @return $this
      */
@@ -709,7 +649,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.WaitingRoomFeatures waiting_room_features = 19;</code>
+     * Generated from protobuf field <code>.plugnmeet.WaitingRoomFeatures waiting_room_features = 18;</code>
      * @return \Mynaparrot\PlugnmeetProto\WaitingRoomFeatures|null
      */
     public function getWaitingRoomFeatures()
@@ -728,7 +668,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.WaitingRoomFeatures waiting_room_features = 19;</code>
+     * Generated from protobuf field <code>.plugnmeet.WaitingRoomFeatures waiting_room_features = 18;</code>
      * @param \Mynaparrot\PlugnmeetProto\WaitingRoomFeatures $var
      * @return $this
      */
@@ -741,7 +681,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.BreakoutRoomFeatures breakout_room_features = 20;</code>
+     * Generated from protobuf field <code>.plugnmeet.BreakoutRoomFeatures breakout_room_features = 19;</code>
      * @return \Mynaparrot\PlugnmeetProto\BreakoutRoomFeatures|null
      */
     public function getBreakoutRoomFeatures()
@@ -760,7 +700,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.BreakoutRoomFeatures breakout_room_features = 20;</code>
+     * Generated from protobuf field <code>.plugnmeet.BreakoutRoomFeatures breakout_room_features = 19;</code>
      * @param \Mynaparrot\PlugnmeetProto\BreakoutRoomFeatures $var
      * @return $this
      */
@@ -773,7 +713,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.DisplayExternalLinkFeatures display_external_link_features = 21;</code>
+     * Generated from protobuf field <code>.plugnmeet.DisplayExternalLinkFeatures display_external_link_features = 20;</code>
      * @return \Mynaparrot\PlugnmeetProto\DisplayExternalLinkFeatures|null
      */
     public function getDisplayExternalLinkFeatures()
@@ -792,7 +732,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.DisplayExternalLinkFeatures display_external_link_features = 21;</code>
+     * Generated from protobuf field <code>.plugnmeet.DisplayExternalLinkFeatures display_external_link_features = 20;</code>
      * @param \Mynaparrot\PlugnmeetProto\DisplayExternalLinkFeatures $var
      * @return $this
      */
@@ -805,7 +745,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.IngressFeatures ingress_features = 22;</code>
+     * Generated from protobuf field <code>.plugnmeet.IngressFeatures ingress_features = 21;</code>
      * @return \Mynaparrot\PlugnmeetProto\IngressFeatures|null
      */
     public function getIngressFeatures()
@@ -824,7 +764,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.IngressFeatures ingress_features = 22;</code>
+     * Generated from protobuf field <code>.plugnmeet.IngressFeatures ingress_features = 21;</code>
      * @param \Mynaparrot\PlugnmeetProto\IngressFeatures $var
      * @return $this
      */
@@ -837,49 +777,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * deprecated use insights_features
-     *
-     * Generated from protobuf field <code>.plugnmeet.SpeechToTextTranslationFeatures speech_to_text_translation_features = 23 [deprecated = true];</code>
-     * @return \Mynaparrot\PlugnmeetProto\SpeechToTextTranslationFeatures|null
-     * @deprecated
-     */
-    public function getSpeechToTextTranslationFeatures()
-    {
-        @trigger_error('speech_to_text_translation_features is deprecated.', E_USER_DEPRECATED);
-        return $this->speech_to_text_translation_features;
-    }
-
-    public function hasSpeechToTextTranslationFeatures()
-    {
-        @trigger_error('speech_to_text_translation_features is deprecated.', E_USER_DEPRECATED);
-        return isset($this->speech_to_text_translation_features);
-    }
-
-    public function clearSpeechToTextTranslationFeatures()
-    {
-        @trigger_error('speech_to_text_translation_features is deprecated.', E_USER_DEPRECATED);
-        unset($this->speech_to_text_translation_features);
-    }
-
-    /**
-     * deprecated use insights_features
-     *
-     * Generated from protobuf field <code>.plugnmeet.SpeechToTextTranslationFeatures speech_to_text_translation_features = 23 [deprecated = true];</code>
-     * @param \Mynaparrot\PlugnmeetProto\SpeechToTextTranslationFeatures $var
-     * @return $this
-     * @deprecated
-     */
-    public function setSpeechToTextTranslationFeatures($var)
-    {
-        @trigger_error('speech_to_text_translation_features is deprecated.', E_USER_DEPRECATED);
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\SpeechToTextTranslationFeatures::class);
-        $this->speech_to_text_translation_features = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>.plugnmeet.EndToEndEncryptionFeatures end_to_end_encryption_features = 24;</code>
+     * Generated from protobuf field <code>.plugnmeet.EndToEndEncryptionFeatures end_to_end_encryption_features = 22;</code>
      * @return \Mynaparrot\PlugnmeetProto\EndToEndEncryptionFeatures|null
      */
     public function getEndToEndEncryptionFeatures()
@@ -898,7 +796,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.EndToEndEncryptionFeatures end_to_end_encryption_features = 24;</code>
+     * Generated from protobuf field <code>.plugnmeet.EndToEndEncryptionFeatures end_to_end_encryption_features = 22;</code>
      * @param \Mynaparrot\PlugnmeetProto\EndToEndEncryptionFeatures $var
      * @return $this
      */
@@ -911,7 +809,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.PollsFeatures polls_features = 25;</code>
+     * Generated from protobuf field <code>.plugnmeet.PollsFeatures polls_features = 23;</code>
      * @return \Mynaparrot\PlugnmeetProto\PollsFeatures|null
      */
     public function getPollsFeatures()
@@ -930,7 +828,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.PollsFeatures polls_features = 25;</code>
+     * Generated from protobuf field <code>.plugnmeet.PollsFeatures polls_features = 23;</code>
      * @param \Mynaparrot\PlugnmeetProto\PollsFeatures $var
      * @return $this
      */
@@ -943,7 +841,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.InsightsFeatures insights_features = 26;</code>
+     * Generated from protobuf field <code>.plugnmeet.InsightsFeatures insights_features = 24;</code>
      * @return \Mynaparrot\PlugnmeetProto\InsightsFeatures|null
      */
     public function getInsightsFeatures()
@@ -962,7 +860,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.InsightsFeatures insights_features = 26;</code>
+     * Generated from protobuf field <code>.plugnmeet.InsightsFeatures insights_features = 24;</code>
      * @param \Mynaparrot\PlugnmeetProto\InsightsFeatures $var
      * @return $this
      */
@@ -975,7 +873,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.SipDialInFeatures sip_dial_in_features = 27;</code>
+     * Generated from protobuf field <code>.plugnmeet.SipDialInFeatures sip_dial_in_features = 25;</code>
      * @return \Mynaparrot\PlugnmeetProto\SipDialInFeatures|null
      */
     public function getSipDialInFeatures()
@@ -994,7 +892,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.plugnmeet.SipDialInFeatures sip_dial_in_features = 27;</code>
+     * Generated from protobuf field <code>.plugnmeet.SipDialInFeatures sip_dial_in_features = 25;</code>
      * @param \Mynaparrot\PlugnmeetProto\SipDialInFeatures $var
      * @return $this
      */
@@ -1007,9 +905,9 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * next ID: 29
+     * next ID: 27
      *
-     * Generated from protobuf field <code>.plugnmeet.ExternalBroadcastingFeatures external_broadcasting_features = 28;</code>
+     * Generated from protobuf field <code>.plugnmeet.ExternalBroadcastingFeatures external_broadcasting_features = 26;</code>
      * @return \Mynaparrot\PlugnmeetProto\ExternalBroadcastingFeatures|null
      */
     public function getExternalBroadcastingFeatures()
@@ -1028,9 +926,9 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * next ID: 29
+     * next ID: 27
      *
-     * Generated from protobuf field <code>.plugnmeet.ExternalBroadcastingFeatures external_broadcasting_features = 28;</code>
+     * Generated from protobuf field <code>.plugnmeet.ExternalBroadcastingFeatures external_broadcasting_features = 26;</code>
      * @param \Mynaparrot\PlugnmeetProto\ExternalBroadcastingFeatures $var
      * @return $this
      */

@@ -26,16 +26,6 @@ class GetClientFilesRes extends \Google\Protobuf\Internal\Message
      */
     protected $status_code = 0;
     /**
-     * Generated from protobuf field <code>repeated string css = 4 [deprecated = true];</code>
-     * @deprecated
-     */
-    private $css;
-    /**
-     * Generated from protobuf field <code>repeated string js = 5 [deprecated = true];</code>
-     * @deprecated
-     */
-    private $js;
-    /**
      * Generated from protobuf field <code>repeated string css_files = 6;</code>
      */
     private $css_files;
@@ -57,8 +47,6 @@ class GetClientFilesRes extends \Google\Protobuf\Internal\Message
      *     @type bool $status
      *     @type string $msg
      *     @type int $status_code
-     *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $css
-     *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $js
      *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $css_files
      *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $js_files
      *     @type string $static_assets_path
@@ -131,58 +119,6 @@ class GetClientFilesRes extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\StatusCode::class);
         $this->status_code = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>repeated string css = 4 [deprecated = true];</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
-     * @deprecated
-     */
-    public function getCss()
-    {
-        @trigger_error('css is deprecated.', E_USER_DEPRECATED);
-        return $this->css;
-    }
-
-    /**
-     * Generated from protobuf field <code>repeated string css = 4 [deprecated = true];</code>
-     * @param array<string>|\Google\Protobuf\Internal\RepeatedField $var
-     * @return $this
-     * @deprecated
-     */
-    public function setCss($var)
-    {
-        @trigger_error('css is deprecated.', E_USER_DEPRECATED);
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->css = $arr;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>repeated string js = 5 [deprecated = true];</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
-     * @deprecated
-     */
-    public function getJs()
-    {
-        @trigger_error('js is deprecated.', E_USER_DEPRECATED);
-        return $this->js;
-    }
-
-    /**
-     * Generated from protobuf field <code>repeated string js = 5 [deprecated = true];</code>
-     * @param array<string>|\Google\Protobuf\Internal\RepeatedField $var
-     * @return $this
-     * @deprecated
-     */
-    public function setJs($var)
-    {
-        @trigger_error('js is deprecated.', E_USER_DEPRECATED);
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->js = $arr;
 
         return $this;
     }
