@@ -50,7 +50,6 @@ $roomMetadata = array(
         "allow_webcams" => true,
         "mute_on_start" => false,
         "allow_screen_share" => true,
-        "allow_rtmp" => true,
         "allow_view_other_webcams" => true,
         "allow_view_other_users_list" => true,
         "admin_only_webcams" => false,
@@ -65,6 +64,10 @@ $roomMetadata = array(
             "is_allow_cloud" => true,
             "is_allow_local" => true,
             "enable_auto_cloud_recording" => false
+        ),
+        "external_broadcasting_features" => array(
+            "is_allow" => true,
+            "is_allow_rtmp" => true,
         ),
         "chat_features" => array(
             "is_allow" => true,
