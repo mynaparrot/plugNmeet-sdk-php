@@ -251,7 +251,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DisabledCodecs.php"><a href="files/src-gen-livekit-disabledcodecs.html"><abbr title="src/gen/Livekit/DisabledCodecs.php">DisabledCodecs.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
@@ -315,14 +315,14 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-DisabledCodecs.html#method_getCodecs">getCodecs()</a>
     <span>
-                                &nbsp;: <abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, <a href="classes/Livekit-Codec.html"><abbr title="\Livekit\Codec">Codec</abbr></a>&gt;    </span>
+                                &nbsp;: <abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr>    </span>
 </dt>
 <dd>disabled for both publish and subscribe</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-DisabledCodecs.html#method_getPublish">getPublish()</a>
     <span>
-                                &nbsp;: <abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, <a href="classes/Livekit-Codec.html"><abbr title="\Livekit\Codec">Codec</abbr></a>&gt;    </span>
+                                &nbsp;: <abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr>    </span>
 </dt>
 <dd>only disable for publish</dd>
 
@@ -370,7 +370,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DisabledCodecs.php"><a href="files/src-gen-livekit-disabledcodecs.html"><abbr title="src/gen/Livekit/DisabledCodecs.php">DisabledCodecs.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -410,7 +410,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DisabledCodecs.php"><a href="files/src-gen-livekit-disabledcodecs.html"><abbr title="src/gen/Livekit/DisabledCodecs.php">DisabledCodecs.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -455,7 +455,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DisabledCodecs.php"><a href="files/src-gen-livekit-disabledcodecs.html"><abbr title="src/gen/Livekit/DisabledCodecs.php">DisabledCodecs.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -478,9 +478,9 @@
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>{
 Optional. Data for populating the Message object.</p>
-<pre class="prettyprint"><code class="prettyprint">@type \Livekit\Codec[] $codecs
+<pre class="prettyprint"><code class="prettyprint">@type array&lt;\Livekit\Codec&gt;|\Google\Protobuf\Internal\RepeatedField $codecs
       disabled for both publish and subscribe
-@type \Livekit\Codec[] $publish
+@type array&lt;\Livekit\Codec&gt;|\Google\Protobuf\Internal\RepeatedField $publish
       only disable for publish
 </code></pre>
 <p>}</p>
@@ -509,7 +509,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DisabledCodecs.php"><a href="files/src-gen-livekit-disabledcodecs.html"><abbr title="src/gen/Livekit/DisabledCodecs.php">DisabledCodecs.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -517,7 +517,7 @@ Optional. Data for populating the Message object.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getCodecs</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, <a href="classes/Livekit-Codec.html"><abbr title="\Livekit\Codec">Codec</abbr></a>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">getCodecs</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -532,7 +532,7 @@ Optional. Data for populating the Message object.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, <a href="classes/Livekit-Codec.html"><abbr title="\Livekit\Codec">Codec</abbr></a>&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr></span>
             </section>
 
 </article>
@@ -550,7 +550,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DisabledCodecs.php"><a href="files/src-gen-livekit-disabledcodecs.html"><abbr title="src/gen/Livekit/DisabledCodecs.php">DisabledCodecs.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">79</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -558,7 +558,7 @@ Optional. Data for populating the Message object.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getPublish</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, <a href="classes/Livekit-Codec.html"><abbr title="\Livekit\Codec">Codec</abbr></a>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">getPublish</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -573,7 +573,7 @@ Optional. Data for populating the Message object.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, <a href="classes/Livekit-Codec.html"><abbr title="\Livekit\Codec">Codec</abbr></a>&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr></span>
             </section>
 
 </article>
@@ -591,7 +591,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DisabledCodecs.php"><a href="files/src-gen-livekit-disabledcodecs.html"><abbr title="src/gen/Livekit/DisabledCodecs.php">DisabledCodecs.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -599,7 +599,7 @@ Optional. Data for populating the Message object.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setCodecs</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, <a href="classes/Livekit-Codec.html"><abbr title="\Livekit\Codec">Codec</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                    <span class="phpdocumentor-signature__name">setCodecs</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, <a href="classes/Livekit-Codec.html"><abbr title="\Livekit\Codec">Codec</abbr></a>&gt;|<abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -611,7 +611,7 @@ Optional. Data for populating the Message object.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$var</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, <a href="classes/Livekit-Codec.html"><abbr title="\Livekit\Codec">Codec</abbr></a>&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, <a href="classes/Livekit-Codec.html"><abbr title="\Livekit\Codec">Codec</abbr></a>&gt;|<abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -642,7 +642,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DisabledCodecs.php"><a href="files/src-gen-livekit-disabledcodecs.html"><abbr title="src/gen/Livekit/DisabledCodecs.php">DisabledCodecs.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">91</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
 
     </aside>
 
@@ -650,7 +650,7 @@ Optional. Data for populating the Message object.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setPublish</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, <a href="classes/Livekit-Codec.html"><abbr title="\Livekit\Codec">Codec</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                    <span class="phpdocumentor-signature__name">setPublish</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, <a href="classes/Livekit-Codec.html"><abbr title="\Livekit\Codec">Codec</abbr></a>&gt;|<abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -662,7 +662,7 @@ Optional. Data for populating the Message object.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$var</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, <a href="classes/Livekit-Codec.html"><abbr title="\Livekit\Codec">Codec</abbr></a>&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, <a href="classes/Livekit-Codec.html"><abbr title="\Livekit\Codec">Codec</abbr></a>&gt;|<abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
