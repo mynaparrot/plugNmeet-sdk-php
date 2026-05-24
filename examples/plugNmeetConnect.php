@@ -57,6 +57,7 @@ use Mynaparrot\PlugnmeetProto\GetDownloadTokenRes;
 use Mynaparrot\PlugnmeetProto\IsRoomActiveReq;
 use Mynaparrot\PlugnmeetProto\IsRoomActiveRes;
 use Mynaparrot\PlugnmeetProto\LockSettings;
+use Mynaparrot\PlugnmeetProto\MergeRecordingsReq;
 use Mynaparrot\PlugnmeetProto\RecordingInfoReq;
 use Mynaparrot\PlugnmeetProto\RecordingInfoRes;
 use Mynaparrot\PlugnmeetProto\RecordingMetadata;
@@ -402,6 +403,22 @@ class plugNmeetConnect
         $updateRecordingMetadataReq->setMetadata($metadata);
 
         return $this->plugnmeet->updateRecordingMetadata($updateRecordingMetadataReq);
+    }
+
+    /**
+     * Merge multiple parts of a session's recording into a single new recording.
+     *
+     * @param string $roomSid
+     * @param array $excludeRecordingIds
+     * @return CommonResponse The response from the API call.
+     * @throws Exception
+     */
+    public function mergeRecordings(string $roomSid, array $excludeRecordingIds): CommonResponse {
+        $mergeRecordingsReq = new MergeRecordingsReq();
+        $mergeRecordingsReq->setRoomSid($roomSid);
+        $mergeRecordingsReq->setExcludeRecordingIds($excludeRecordingIds);
+
+        return $this->plugnmeet->mergeRecordings($mergeRecordingsReq);
     }
 
     /**

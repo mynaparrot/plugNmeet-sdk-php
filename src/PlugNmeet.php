@@ -61,6 +61,7 @@ use Mynaparrot\PlugnmeetProto\GetDownloadTokenReq;
 use Mynaparrot\PlugnmeetProto\GetDownloadTokenRes;
 use Mynaparrot\PlugnmeetProto\IsRoomActiveReq;
 use Mynaparrot\PlugnmeetProto\IsRoomActiveRes;
+use Mynaparrot\PlugnmeetProto\MergeRecordingsReq;
 use Mynaparrot\PlugnmeetProto\RecordingInfoReq;
 use Mynaparrot\PlugnmeetProto\RecordingInfoRes;
 use Mynaparrot\PlugnmeetProto\RoomEndReq;
@@ -422,6 +423,28 @@ class PlugNmeet
         $res = $this->sendRequest("/recording/updateMetadata", $body);
 
         $output = new UpdateRecordingMetadataRes();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response)->setStatusCode($res->status_code);
+        }
+        return $output;
+    }
+
+    /**
+     * Merge multiple parts of a session's recording into a single new recording.
+     *
+     * @param MergeRecordingsReq $mergeRecordingsReq The request object for merging recording.
+     * @return CommonResponse The response from the API call.
+     * @throws Exception
+     */
+    public function mergeRecordings(
+        MergeRecordingsReq $mergeRecordingsReq
+    ): CommonResponse {
+        $body = $mergeRecordingsReq->serializeToJsonString();
+        $res = $this->sendRequest("/recording/mergeRecordings", $body);
+
+        $output = new CommonResponse();
         if ($res->status) {
             $output->mergeFromJsonString($res->response, true);
         } else {
