@@ -252,7 +252,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/MergeRecordingsReq.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-mergerecordingsreq.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/MergeRecordingsReq.php">MergeRecordingsReq.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
@@ -285,18 +285,10 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a class="" href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#property_room_sid">$room_sid</a>
+    <a class="" href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#property_merge_scope">$merge_scope</a>
     <span>
                         &nbsp;: mixed            </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;string room_sid = 1 [(.buf.validate.field) = {&lt;/code&gt;</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a class="" href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#property_exclude_recording_ids">$exclude_recording_ids</a>
-    <span>
-                        &nbsp;: mixed            </span>
-</dt>
-<dd>Generated from protobuf field &lt;code&gt;repeated string exclude_recording_ids = 2;&lt;/code&gt;</dd>
 
     </dl>
 
@@ -314,32 +306,50 @@
 <dd>Constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_getExcludeRecordingIds">getExcludeRecordingIds()</a>
+    <a class="" href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_getByIds">getByIds()</a>
     <span>
-                                &nbsp;: <abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, string&gt;    </span>
+                                &nbsp;: <a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsByIds.html"><abbr title="\Mynaparrot\PlugnmeetProto\MergeRecordingsByIds">MergeRecordingsByIds</abbr></a>|null    </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;repeated string exclude_recording_ids = 2;&lt;/code&gt;</dd>
+<dd>Merge a specific list of recordings from the same room.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_getRoomSid">getRoomSid()</a>
+    <a class="" href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_getBySession">getBySession()</a>
+    <span>
+                                &nbsp;: <a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsByRoomSession.html"><abbr title="\Mynaparrot\PlugnmeetProto\MergeRecordingsByRoomSession">MergeRecordingsByRoomSession</abbr></a>|null    </span>
+</dt>
+<dd>Merge recordings based on a single room session.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_getMergeScope">getMergeScope()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;string room_sid = 1 [(.buf.validate.field) = {&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_setExcludeRecordingIds">setExcludeRecordingIds()</a>
+    <a class="" href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_hasByIds">hasByIds()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_hasBySession">hasBySession()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_setByIds">setByIds()</a>
     <span>
                                 &nbsp;: $this    </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;repeated string exclude_recording_ids = 2;&lt;/code&gt;</dd>
+<dd>Merge a specific list of recordings from the same room.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_setRoomSid">setRoomSid()</a>
+    <a class="" href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_setBySession">setBySession()</a>
     <span>
                                 &nbsp;: $this    </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;string room_sid = 1 [(.buf.validate.field) = {&lt;/code&gt;</dd>
+<dd>Merge recordings based on a single room session.</dd>
 
     </dl>
 
@@ -361,9 +371,9 @@
             -protected
                                                                     "
 >
-    <h4 class="phpdocumentor-element__name" id="property_room_sid">
-        $room_sid
-        <a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#property_room_sid" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_merge_scope">
+        $merge_scope
+        <a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#property_merge_scope" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                             </span>
@@ -371,55 +381,16 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/MergeRecordingsReq.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-mergerecordingsreq.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/MergeRecordingsReq.php">MergeRecordingsReq.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;string room_sid = 1 [(.buf.validate.field) = {&lt;/code&gt;</p>
-
+    
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">protected</span>
             <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">$room_sid</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
-
-    
-    
-    
-
-        
-        
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                                    "
->
-    <h4 class="phpdocumentor-element__name" id="property_exclude_recording_ids">
-        $exclude_recording_ids
-        <a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#property_exclude_recording_ids" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                            </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/MergeRecordingsReq.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-mergerecordingsreq.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/MergeRecordingsReq.php">MergeRecordingsReq.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">24</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;repeated string exclude_recording_ids = 2;&lt;/code&gt;</p>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-            <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">$exclude_recording_ids</span>
+    <span class="phpdocumentor-signature__name">$merge_scope</span>
     </code>
 
     
@@ -452,7 +423,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/MergeRecordingsReq.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-mergerecordingsreq.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/MergeRecordingsReq.php">MergeRecordingsReq.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -475,8 +446,10 @@
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>{
 Optional. Data for populating the Message object.</p>
-<pre class="prettyprint"><code class="prettyprint">@type string $room_sid
-@type string[] $exclude_recording_ids
+<pre class="prettyprint"><code class="prettyprint">@type \Mynaparrot\PlugnmeetProto\MergeRecordingsByRoomSession $by_session
+      Merge recordings based on a single room session.
+@type \Mynaparrot\PlugnmeetProto\MergeRecordingsByIds $by_ids
+      Merge a specific list of recordings from the same room.
 </code></pre>
 <p>}</p>
 </section>
@@ -496,28 +469,30 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getExcludeRecordingIds">
-        getExcludeRecordingIds()
-        <a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_getExcludeRecordingIds" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getByIds">
+        getByIds()
+        <a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_getByIds" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/MergeRecordingsReq.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-mergerecordingsreq.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/MergeRecordingsReq.php">MergeRecordingsReq.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;repeated string exclude_recording_ids = 2;&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">Merge a specific list of recordings from the same room.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getExcludeRecordingIds</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, string&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">getByIds</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsByIds.html"><abbr title="\Mynaparrot\PlugnmeetProto\MergeRecordingsByIds">MergeRecordingsByIds</abbr></a>|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.plugnmeet.MergeRecordingsByIds by_ids = 2;</code></p>
+</section>
+
     
     
 
@@ -525,7 +500,7 @@ Optional. Data for populating the Message object.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, string&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsByIds.html"><abbr title="\Mynaparrot\PlugnmeetProto\MergeRecordingsByIds">MergeRecordingsByIds</abbr></a>|null</span>
             </section>
 
 </article>
@@ -535,23 +510,63 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getRoomSid">
-        getRoomSid()
-        <a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_getRoomSid" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getBySession">
+        getBySession()
+        <a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_getBySession" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/MergeRecordingsReq.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-mergerecordingsreq.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/MergeRecordingsReq.php">MergeRecordingsReq.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;string room_sid = 1 [(.buf.validate.field) = {&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">Merge recordings based on a single room session.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getRoomSid</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getBySession</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsByRoomSession.html"><abbr title="\Mynaparrot\PlugnmeetProto\MergeRecordingsByRoomSession">MergeRecordingsByRoomSession</abbr></a>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.plugnmeet.MergeRecordingsByRoomSession by_session = 1;</code></p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsByRoomSession.html"><abbr title="\Mynaparrot\PlugnmeetProto\MergeRecordingsByRoomSession">MergeRecordingsByRoomSession</abbr></a>|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getMergeScope">
+        getMergeScope()
+        <a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_getMergeScope" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/MergeRecordingsReq.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-mergerecordingsreq.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/MergeRecordingsReq.php">MergeRecordingsReq.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">100</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getMergeScope</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -574,9 +589,9 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_setExcludeRecordingIds">
-        setExcludeRecordingIds()
-        <a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_setExcludeRecordingIds" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_hasByIds">
+        hasByIds()
+        <a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_hasByIds" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
@@ -586,21 +601,91 @@ Optional. Data for populating the Message object.</p>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;repeated string exclude_recording_ids = 2;&lt;/code&gt;</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setExcludeRecordingIds</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                    <span class="phpdocumentor-signature__name">hasByIds</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
     
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_hasBySession">
+        hasBySession()
+        <a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_hasBySession" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/MergeRecordingsReq.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-mergerecordingsreq.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/MergeRecordingsReq.php">MergeRecordingsReq.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">46</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">hasBySession</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setByIds">
+        setByIds()
+        <a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_setByIds" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/MergeRecordingsReq.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-mergerecordingsreq.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/MergeRecordingsReq.php">MergeRecordingsReq.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">89</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Merge a specific list of recordings from the same room.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setByIds</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsByIds.html"><abbr title="\Mynaparrot\PlugnmeetProto\MergeRecordingsByIds">MergeRecordingsByIds</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.plugnmeet.MergeRecordingsByIds by_ids = 2;</code></p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$var</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, string&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsByIds.html"><abbr title="\Mynaparrot\PlugnmeetProto\MergeRecordingsByIds">MergeRecordingsByIds</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -623,33 +708,35 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_setRoomSid">
-        setRoomSid()
-        <a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_setRoomSid" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_setBySession">
+        setBySession()
+        <a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_setBySession" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/MergeRecordingsReq.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-mergerecordingsreq.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/MergeRecordingsReq.php">MergeRecordingsReq.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;string room_sid = 1 [(.buf.validate.field) = {&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">Merge recordings based on a single room session.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setRoomSid</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                    <span class="phpdocumentor-signature__name">setBySession</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsByRoomSession.html"><abbr title="\Mynaparrot\PlugnmeetProto\MergeRecordingsByRoomSession">MergeRecordingsByRoomSession</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.plugnmeet.MergeRecordingsByRoomSession by_session = 1;</code></p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$var</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsByRoomSession.html"><abbr title="\Mynaparrot\PlugnmeetProto\MergeRecordingsByRoomSession">MergeRecordingsByRoomSession</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -688,8 +775,7 @@ Optional. Data for populating the Message object.</p>
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#property_room_sid">$room_sid</a></li>
-                                                    <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#property_exclude_recording_ids">$exclude_recording_ids</a></li>
+                                                    <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#property_merge_scope">$merge_scope</a></li>
                                             </ul>
                 </li>
             
@@ -697,10 +783,13 @@ Optional. Data for populating the Message object.</p>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_getExcludeRecordingIds">getExcludeRecordingIds()</a></li>
-                                            <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_getRoomSid">getRoomSid()</a></li>
-                                            <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_setExcludeRecordingIds">setExcludeRecordingIds()</a></li>
-                                            <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_setRoomSid">setRoomSid()</a></li>
+                                            <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_getByIds">getByIds()</a></li>
+                                            <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_getBySession">getBySession()</a></li>
+                                            <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_getMergeScope">getMergeScope()</a></li>
+                                            <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_hasByIds">hasByIds()</a></li>
+                                            <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_hasBySession">hasBySession()</a></li>
+                                            <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_setByIds">setByIds()</a></li>
+                                            <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#method_setBySession">setBySession()</a></li>
                                     </ul>
             </li>
                     </ul>
