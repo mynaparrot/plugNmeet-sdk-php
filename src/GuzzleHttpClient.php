@@ -121,20 +121,22 @@ class GuzzleHttpClient implements HttpClientInterface
      * Extracts a meaningful error response from a RequestException.
      *
      * @param RequestException $e
-     * @return mixed|string
+     * @return string
      */
-    private function handleRequestException(RequestException $e): mixed
+    private function handleRequestException(RequestException $e): string
     {
         if (!$e->hasResponse()) {
             return $e->getMessage();
         }
 
-        $responseBody = $e->getResponse()->getBody()->getContents();
-        $decodedResponse = json_decode($responseBody);
+        $response = $e->getResponse();
+        $message = $response->getBody()->getContents();
+        $contentType = $response->getHeaderLine('Content-Type');
 
-        // Return the decoded JSON if successful, otherwise fall back to the raw body.
-        return json_last_error() === JSON_ERROR_NONE
-            ? json_encode($decodedResponse) // Re-encode to string for consistency
-            : $responseBody;
+        if (str_starts_with($contentType, 'text/html') || str_starts_with($contentType, 'text/plain')) {
+            $message = strip_tags($message);
+        }
+
+        return $message;
     }
 }
