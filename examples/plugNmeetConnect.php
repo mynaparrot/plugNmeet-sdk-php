@@ -406,18 +406,14 @@ class plugNmeetConnect
     }
 
     /**
-     * Merge multiple parts of a session's recording into a single new recording.
+     * Merge multiple parts of recording into a single new recording.
      *
-     * @param string $roomSid
-     * @param array $excludeRecordingIds
+     * @param MergeRecordingsReq $mergeRecordingsReq
      * @return CommonResponse The response from the API call.
      * @throws Exception
      */
-    public function mergeRecordings(string $roomSid, array $excludeRecordingIds): CommonResponse {
-        $mergeRecordingsReq = new MergeRecordingsReq();
-        $mergeRecordingsReq->setRoomSid($roomSid);
-        $mergeRecordingsReq->setExcludeRecordingIds($excludeRecordingIds);
-
+    public function mergeRecordings(MergeRecordingsReq $mergeRecordingsReq): CommonResponse
+    {
         return $this->plugnmeet->mergeRecordings($mergeRecordingsReq);
     }
 
