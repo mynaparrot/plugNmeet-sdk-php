@@ -94,6 +94,12 @@ class GuzzleHttpClient implements HttpClientInterface
      */
     public function uploadFile(string $url, array $multipart, array $headers = []): string
     {
+        foreach ($multipart as &$part) {
+            if (isset($part['name']) && $part['name'] === 'document' && isset($part['contents'])) {
+                $part['contents'] = fopen($part['contents'], 'r');
+            }
+        }
+
         try {
             $response = $this->guzzleClient->post($url, [
                 'headers' => $headers,

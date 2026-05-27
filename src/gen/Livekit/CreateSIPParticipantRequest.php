@@ -27,6 +27,24 @@ class CreateSIPParticipantRequest extends \Google\Protobuf\Internal\Message
      */
     protected $trunk = null;
     /**
+     * INVITE <uri>
+     *
+     * Generated from protobuf field <code>.livekit.SIPRequestDest sip_request_uri = 24;</code>
+     */
+    protected $sip_request_uri = null;
+    /**
+     * To:   "Name" <uri>
+     *
+     * Generated from protobuf field <code>.livekit.SIPNamedDest sip_to_header = 25;</code>
+     */
+    protected $sip_to_header = null;
+    /**
+     * From: "Name" <uri>
+     *
+     * Generated from protobuf field <code>.livekit.SIPNamedDest sip_from_header = 26;</code>
+     */
+    protected $sip_from_header = null;
+    /**
      * What number should be dialed via SIP
      *
      * Generated from protobuf field <code>string sip_call_to = 2;</code>
@@ -152,7 +170,7 @@ class CreateSIPParticipantRequest extends \Google\Protobuf\Internal\Message
      */
     protected $display_name = null;
     /**
-     * NEXT ID: 24
+     * NEXT ID: 27
      *
      * Generated from protobuf field <code>optional .livekit.Destination destination = 22;</code>
      */
@@ -167,6 +185,12 @@ class CreateSIPParticipantRequest extends \Google\Protobuf\Internal\Message
      *     @type string $sip_trunk_id
      *           What SIP Trunk should be used to dial the user
      *     @type \Livekit\SIPOutboundConfig $trunk
+     *     @type \Livekit\SIPRequestDest $sip_request_uri
+     *           INVITE <uri>
+     *     @type \Livekit\SIPNamedDest $sip_to_header
+     *           To:   "Name" <uri>
+     *     @type \Livekit\SIPNamedDest $sip_from_header
+     *           From: "Name" <uri>
      *     @type string $sip_call_to
      *           What number should be dialed via SIP
      *     @type string $sip_number
@@ -214,7 +238,7 @@ class CreateSIPParticipantRequest extends \Google\Protobuf\Internal\Message
      *           2) Empty string: Do not send a display name, which will result in a CNAM lookup downstream.
      *           3) Non-empty: Use the specified value as the display name.
      *     @type \Livekit\Destination $destination
-     *           NEXT ID: 24
+     *           NEXT ID: 27
      * }
      */
     public function __construct($data = NULL) {
@@ -276,6 +300,114 @@ class CreateSIPParticipantRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Livekit\SIPOutboundConfig::class);
         $this->trunk = $var;
+
+        return $this;
+    }
+
+    /**
+     * INVITE <uri>
+     *
+     * Generated from protobuf field <code>.livekit.SIPRequestDest sip_request_uri = 24;</code>
+     * @return \Livekit\SIPRequestDest|null
+     */
+    public function getSipRequestUri()
+    {
+        return $this->sip_request_uri;
+    }
+
+    public function hasSipRequestUri()
+    {
+        return isset($this->sip_request_uri);
+    }
+
+    public function clearSipRequestUri()
+    {
+        unset($this->sip_request_uri);
+    }
+
+    /**
+     * INVITE <uri>
+     *
+     * Generated from protobuf field <code>.livekit.SIPRequestDest sip_request_uri = 24;</code>
+     * @param \Livekit\SIPRequestDest $var
+     * @return $this
+     */
+    public function setSipRequestUri($var)
+    {
+        GPBUtil::checkMessage($var, \Livekit\SIPRequestDest::class);
+        $this->sip_request_uri = $var;
+
+        return $this;
+    }
+
+    /**
+     * To:   "Name" <uri>
+     *
+     * Generated from protobuf field <code>.livekit.SIPNamedDest sip_to_header = 25;</code>
+     * @return \Livekit\SIPNamedDest|null
+     */
+    public function getSipToHeader()
+    {
+        return $this->sip_to_header;
+    }
+
+    public function hasSipToHeader()
+    {
+        return isset($this->sip_to_header);
+    }
+
+    public function clearSipToHeader()
+    {
+        unset($this->sip_to_header);
+    }
+
+    /**
+     * To:   "Name" <uri>
+     *
+     * Generated from protobuf field <code>.livekit.SIPNamedDest sip_to_header = 25;</code>
+     * @param \Livekit\SIPNamedDest $var
+     * @return $this
+     */
+    public function setSipToHeader($var)
+    {
+        GPBUtil::checkMessage($var, \Livekit\SIPNamedDest::class);
+        $this->sip_to_header = $var;
+
+        return $this;
+    }
+
+    /**
+     * From: "Name" <uri>
+     *
+     * Generated from protobuf field <code>.livekit.SIPNamedDest sip_from_header = 26;</code>
+     * @return \Livekit\SIPNamedDest|null
+     */
+    public function getSipFromHeader()
+    {
+        return $this->sip_from_header;
+    }
+
+    public function hasSipFromHeader()
+    {
+        return isset($this->sip_from_header);
+    }
+
+    public function clearSipFromHeader()
+    {
+        unset($this->sip_from_header);
+    }
+
+    /**
+     * From: "Name" <uri>
+     *
+     * Generated from protobuf field <code>.livekit.SIPNamedDest sip_from_header = 26;</code>
+     * @param \Livekit\SIPNamedDest $var
+     * @return $this
+     */
+    public function setSipFromHeader($var)
+    {
+        GPBUtil::checkMessage($var, \Livekit\SIPNamedDest::class);
+        $this->sip_from_header = $var;
 
         return $this;
     }
@@ -855,7 +987,7 @@ class CreateSIPParticipantRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * NEXT ID: 24
+     * NEXT ID: 27
      *
      * Generated from protobuf field <code>optional .livekit.Destination destination = 22;</code>
      * @return \Livekit\Destination|null
@@ -876,7 +1008,7 @@ class CreateSIPParticipantRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * NEXT ID: 24
+     * NEXT ID: 27
      *
      * Generated from protobuf field <code>optional .livekit.Destination destination = 22;</code>
      * @param \Livekit\Destination $var

@@ -21,6 +21,10 @@ class Issue extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string suggestion = 2;</code>
      */
     protected $suggestion = '';
+    /**
+     * Generated from protobuf field <code>string label = 3;</code>
+     */
+    protected $label = '';
 
     /**
      * Constructor.
@@ -30,6 +34,7 @@ class Issue extends \Google\Protobuf\Internal\Message
      *
      *     @type string $description
      *     @type string $suggestion
+     *     @type string $label
      * }
      */
     public function __construct($data = NULL) {
@@ -77,6 +82,28 @@ class Issue extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->suggestion = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string label = 3;</code>
+     * @return string
+     */
+    public function getLabel()
+    {
+        return $this->label;
+    }
+
+    /**
+     * Generated from protobuf field <code>string label = 3;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setLabel($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->label = $var;
 
         return $this;
     }

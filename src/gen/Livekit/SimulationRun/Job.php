@@ -61,6 +61,10 @@ class Job extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string room_id = 12;</code>
      */
     protected $room_id = '';
+    /**
+     * Generated from protobuf field <code>.livekit.SimulationRun.Job.Usage usage = 13;</code>
+     */
+    protected $usage = null;
 
     /**
      * Constructor.
@@ -80,6 +84,7 @@ class Job extends \Google\Protobuf\Internal\Message
      *     @type \Google\Protobuf\Timestamp $started_at
      *     @type \Google\Protobuf\Timestamp $ended_at
      *     @type string $room_id
+     *     @type \Livekit\SimulationRun\Job\Usage $usage
      * }
      */
     public function __construct($data = NULL) {
@@ -367,6 +372,38 @@ class Job extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->room_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.livekit.SimulationRun.Job.Usage usage = 13;</code>
+     * @return \Livekit\SimulationRun\Job\Usage|null
+     */
+    public function getUsage()
+    {
+        return $this->usage;
+    }
+
+    public function hasUsage()
+    {
+        return isset($this->usage);
+    }
+
+    public function clearUsage()
+    {
+        unset($this->usage);
+    }
+
+    /**
+     * Generated from protobuf field <code>.livekit.SimulationRun.Job.Usage usage = 13;</code>
+     * @param \Livekit\SimulationRun\Job\Usage $var
+     * @return $this
+     */
+    public function setUsage($var)
+    {
+        GPBUtil::checkMessage($var, \Livekit\SimulationRun\Job\Usage::class);
+        $this->usage = $var;
 
         return $this;
     }

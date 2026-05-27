@@ -324,7 +324,7 @@ class PlugNmeet
             }
             $multipart[] = [
                 'name' => 'document',
-                'contents' => fopen($options['document'], 'r'),
+                'contents' => $options['document'],
             ];
         } else {
             if (filter_var($options['document_link'], FILTER_VALIDATE_URL) === false) {

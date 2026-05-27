@@ -23,11 +23,16 @@ class Feature
      * Generated from protobuf enum <code>AIC_AUDIO_ENHANCEMENT = 2;</code>
      */
     const AIC_AUDIO_ENHANCEMENT = 2;
+    /**
+     * Generated from protobuf enum <code>KRISP_VIVA = 3;</code>
+     */
+    const KRISP_VIVA = 3;
 
     private static $valueToName = [
         self::KRISP_NOISE_CANCELLATION => 'KRISP_NOISE_CANCELLATION',
         self::KRISP_BACKGROUND_VOICE_CANCELLATION => 'KRISP_BACKGROUND_VOICE_CANCELLATION',
         self::AIC_AUDIO_ENHANCEMENT => 'AIC_AUDIO_ENHANCEMENT',
+        self::KRISP_VIVA => 'KRISP_VIVA',
     ];
 
     public static function name($value)

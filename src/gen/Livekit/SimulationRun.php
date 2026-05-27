@@ -73,6 +73,12 @@ class SimulationRun extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int32 num_simulations = 15;</code>
      */
     protected $num_simulations = 0;
+    /**
+     * Aggregate usage across all jobs in this run (sum of Job.usage).
+     *
+     * Generated from protobuf field <code>.livekit.SimulationRun.Usage usage = 16;</code>
+     */
+    protected $usage = null;
 
     /**
      * Constructor.
@@ -95,6 +101,8 @@ class SimulationRun extends \Google\Protobuf\Internal\Message
      *     @type int $passed_count
      *     @type int $failed_count
      *     @type int $num_simulations
+     *     @type \Livekit\SimulationRun\Usage $usage
+     *           Aggregate usage across all jobs in this run (sum of Job.usage).
      * }
      */
     public function __construct($data = NULL) {
@@ -468,6 +476,42 @@ class SimulationRun extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->num_simulations = $var;
+
+        return $this;
+    }
+
+    /**
+     * Aggregate usage across all jobs in this run (sum of Job.usage).
+     *
+     * Generated from protobuf field <code>.livekit.SimulationRun.Usage usage = 16;</code>
+     * @return \Livekit\SimulationRun\Usage|null
+     */
+    public function getUsage()
+    {
+        return $this->usage;
+    }
+
+    public function hasUsage()
+    {
+        return isset($this->usage);
+    }
+
+    public function clearUsage()
+    {
+        unset($this->usage);
+    }
+
+    /**
+     * Aggregate usage across all jobs in this run (sum of Job.usage).
+     *
+     * Generated from protobuf field <code>.livekit.SimulationRun.Usage usage = 16;</code>
+     * @param \Livekit\SimulationRun\Usage $var
+     * @return $this
+     */
+    public function setUsage($var)
+    {
+        GPBUtil::checkMessage($var, \Livekit\SimulationRun\Usage::class);
+        $this->usage = $var;
 
         return $this;
     }
