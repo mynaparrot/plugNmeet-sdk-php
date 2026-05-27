@@ -222,14 +222,17 @@
             <div class="phpdocumentor-column -nine phpdocumentor-content">
                                 <section>
                                         <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/mynaparrot.html">Mynaparrot</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/mynaparrot-plugnmeet.html">Plugnmeet</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/livekit.html">Livekit</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/livekit-simulationrun.html">SimulationRun</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    GuzzleHttpClient
+    Usage
 
+        <span class="phpdocumentor-element__extends">
+        extends <abbr title="\Google\Protobuf\Internal\Message">Message</abbr>
+    </span>
     
             <div class="phpdocumentor-element__package">
             in package
@@ -238,9 +241,6 @@
                             </ul>
         </div>
     
-            <span class="phpdocumentor-element__implements">
-            implements
-                            <a href="classes/Mynaparrot-Plugnmeet-HttpClientInterface.html"><abbr title="\Mynaparrot\Plugnmeet\HttpClientInterface">HttpClientInterface</abbr></a>                    </span>
     
     </h2>
 
@@ -250,13 +250,13 @@
 </div>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/GuzzleHttpClient.php"><a href="files/src-guzzlehttpclient.html"><abbr title="src/GuzzleHttpClient.php">GuzzleHttpClient.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Usage.php"><a href="files/src-gen-livekit-simulationrun-usage.html"><abbr title="src/gen/Livekit/SimulationRun/Usage.php">Usage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">An HTTP client that uses Guzzle to send requests.</p>
+            <p class="phpdocumentor-summary">Generated from protobuf message &lt;code&gt;livekit.SimulationRun.Usage&lt;/code&gt;</p>
 
 
 
@@ -266,19 +266,12 @@
     
 <h3 id="toc">
     Table of Contents
-    <a href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Livekit-SimulationRun-Usage.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h3>
 
 
 
-    <h4 id="toc-interfaces">
-        Interfaces
-        <a href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Mynaparrot-Plugnmeet-HttpClientInterface.html"><abbr title="\Mynaparrot\Plugnmeet\HttpClientInterface">HttpClientInterface</abbr></a></dt>    </dl>
 
 
 
@@ -287,50 +280,66 @@
 
 <h4 id="toc-properties">
     Properties
-    <a href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Livekit-SimulationRun-Usage.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a class="" href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#property_guzzleClient">$guzzleClient</a>
+    <a class="" href="classes/Livekit-SimulationRun-Usage.html#property_audio_turns_count">$audio_turns_count</a>
     <span>
-                        &nbsp;: <abbr title="\GuzzleHttp\Client">Client</abbr>            </span>
+                        &nbsp;: mixed            </span>
 </dt>
+<dd>Generated from protobuf field &lt;code&gt;int32 audio_turns_count = 2;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Livekit-SimulationRun-Usage.html#property_text_turns_count">$text_turns_count</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;int32 text_turns_count = 1;&lt;/code&gt;</dd>
 
     </dl>
 
 <h4 id="toc-methods">
     Methods
-    <a href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Livekit-SimulationRun-Usage.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#method___construct">__construct()</a>
+    <a class="" href="classes/Livekit-SimulationRun-Usage.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
+<dd>Constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#method_post">post()</a>
+    <a class="" href="classes/Livekit-SimulationRun-Usage.html#method_getAudioTurnsCount">getAudioTurnsCount()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: int    </span>
 </dt>
-<dd>Sends a POST request to the specified URL with the given data.</dd>
+<dd>Generated from protobuf field &lt;code&gt;int32 audio_turns_count = 2;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#method_uploadFile">uploadFile()</a>
+    <a class="" href="classes/Livekit-SimulationRun-Usage.html#method_getTextTurnsCount">getTextTurnsCount()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: int    </span>
 </dt>
-<dd>Sends a multipart/form-data request to the specified URL with the given data.</dd>
+<dd>Generated from protobuf field &lt;code&gt;int32 text_turns_count = 1;&lt;/code&gt;</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a class="" href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#method_handleRequestException">handleRequestException()</a>
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-SimulationRun-Usage.html#method_setAudioTurnsCount">setAudioTurnsCount()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: $this    </span>
 </dt>
-<dd>Extracts a meaningful error response from a RequestException.</dd>
+<dd>Generated from protobuf field &lt;code&gt;int32 audio_turns_count = 2;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-SimulationRun-Usage.html#method_setTextTurnsCount">setTextTurnsCount()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;int32 text_turns_count = 1;&lt;/code&gt;</dd>
 
     </dl>
 
@@ -342,7 +351,7 @@
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Livekit-SimulationRun-Usage.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
@@ -352,27 +361,66 @@
             -protected
                                                                     "
 >
-    <h4 class="phpdocumentor-element__name" id="property_guzzleClient">
-        $guzzleClient
-        <a href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#property_guzzleClient" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_audio_turns_count">
+        $audio_turns_count
+        <a href="classes/Livekit-SimulationRun-Usage.html#property_audio_turns_count" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                             </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/GuzzleHttpClient.php"><a href="files/src-guzzlehttpclient.html"><abbr title="src/GuzzleHttpClient.php">GuzzleHttpClient.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Usage.php"><a href="files/src-gen-livekit-simulationrun-usage.html"><abbr title="src/gen/Livekit/SimulationRun/Usage.php">Usage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;int32 audio_turns_count = 2;&lt;/code&gt;</p>
+
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">protected</span>
-            <span class="phpdocumentor-signature__type"><abbr title="\GuzzleHttp\Client">Client</abbr></span>
-    <span class="phpdocumentor-signature__name">$guzzleClient</span>
-    </code>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$audio_turns_count</span>
+     = <span class="phpdocumentor-signature__default-value">0</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_text_turns_count">
+        $text_turns_count
+        <a href="classes/Livekit-SimulationRun-Usage.html#property_text_turns_count" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Usage.php"><a href="files/src-gen-livekit-simulationrun-usage.html"><abbr title="src/gen/Livekit/SimulationRun/Usage.php">Usage.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">19</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;int32 text_turns_count = 1;&lt;/code&gt;</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$text_turns_count</span>
+     = <span class="phpdocumentor-signature__default-value">0</span></code>
 
     
     
@@ -387,7 +435,7 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Livekit-SimulationRun-Usage.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
@@ -398,20 +446,21 @@
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Livekit-SimulationRun-Usage.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/GuzzleHttpClient.php"><a href="files/src-guzzlehttpclient.html"><abbr title="src/GuzzleHttpClient.php">GuzzleHttpClient.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Usage.php"><a href="files/src-gen-livekit-simulationrun-usage.html"><abbr title="src/gen/Livekit/SimulationRun/Usage.php">Usage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Constructor.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$timeout</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">60</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$verifySSL</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -420,103 +469,63 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$timeout</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">60</span>            </dt>
+                <span class="phpdocumentor-argument-list__argument__name">$data</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$verifySSL</span>
-                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">true</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_post">
-        post()
-        <a href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#method_post" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/GuzzleHttpClient.php"><a href="files/src-guzzlehttpclient.html"><abbr title="src/GuzzleHttpClient.php">GuzzleHttpClient.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">62</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Sends a POST request to the specified URL with the given data.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">post</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$body</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$headers</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$url</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The full URL for the request</p>
+                    <section class="phpdocumentor-description"><p>{
+Optional. Data for populating the Message object.</p>
+<pre class="prettyprint"><code class="prettyprint">@type int $text_turns_count
+@type int $audio_turns_count
+</code></pre>
+<p>}</p>
 </section>
 
             </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$body</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$headers</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="method_post_tags">
-        Tags
-        <a href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#method_post_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                    <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">throws</span>
-            </dt>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
-                                                                                    
-                                    </dd>
-                        </dl>
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getAudioTurnsCount">
+        getAudioTurnsCount()
+        <a href="classes/Livekit-SimulationRun-Usage.html#method_getAudioTurnsCount" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Usage.php"><a href="files/src-gen-livekit-simulationrun-usage.html"><abbr title="src/gen/Livekit/SimulationRun/Usage.php">Usage.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">66</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;int32 audio_turns_count = 2;&lt;/code&gt;</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getAudioTurnsCount</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
 
         
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
+        <span class="phpdocumentor-signature__response_type">int</span>
             </section>
 
 </article>
@@ -526,100 +535,62 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_uploadFile">
-        uploadFile()
-        <a href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#method_uploadFile" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getTextTurnsCount">
+        getTextTurnsCount()
+        <a href="classes/Livekit-SimulationRun-Usage.html#method_getTextTurnsCount" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/GuzzleHttpClient.php"><a href="files/src-guzzlehttpclient.html"><abbr title="src/GuzzleHttpClient.php">GuzzleHttpClient.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Usage.php"><a href="files/src-gen-livekit-simulationrun-usage.html"><abbr title="src/gen/Livekit/SimulationRun/Usage.php">Usage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">95</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Sends a multipart/form-data request to the specified URL with the given data.</p>
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;int32 text_turns_count = 1;&lt;/code&gt;</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">uploadFile</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$multipart</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$headers</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getTextTurnsCount</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
     
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$url</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$multipart</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$headers</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
     
-    <h5 class="phpdocumentor-tag-list__heading" id="method_uploadFile_tags">
-        Tags
-        <a href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#method_uploadFile_tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                    <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">throws</span>
-            </dt>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
-                                                                                    
-                                    </dd>
-                        </dl>
+    
 
         
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
+        <span class="phpdocumentor-signature__response_type">int</span>
             </section>
 
 </article>
                     <article
         class="phpdocumentor-element
             -method
-            -private
+            -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_handleRequestException">
-        handleRequestException()
-        <a href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#method_handleRequestException" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_setAudioTurnsCount">
+        setAudioTurnsCount()
+        <a href="classes/Livekit-SimulationRun-Usage.html#method_setAudioTurnsCount" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/GuzzleHttpClient.php"><a href="files/src-guzzlehttpclient.html"><abbr title="src/GuzzleHttpClient.php">GuzzleHttpClient.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Usage.php"><a href="files/src-gen-livekit-simulationrun-usage.html"><abbr title="src/gen/Livekit/SimulationRun/Usage.php">Usage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Extracts a meaningful error response from a RequestException.</p>
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;int32 audio_turns_count = 2;&lt;/code&gt;</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">handleRequestException</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\GuzzleHttp\Exception\RequestException">RequestException</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$e</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setAudioTurnsCount</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -628,8 +599,8 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$e</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\GuzzleHttp\Exception\RequestException">RequestException</abbr></span>
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -642,7 +613,56 @@
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setTextTurnsCount">
+        setTextTurnsCount()
+        <a href="classes/Livekit-SimulationRun-Usage.html#method_setTextTurnsCount" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Usage.php"><a href="files/src-gen-livekit-simulationrun-usage.html"><abbr title="src/gen/Livekit/SimulationRun/Usage.php">Usage.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">54</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;int32 text_turns_count = 1;&lt;/code&gt;</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setTextTurnsCount</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
             </section>
 
 </article>
@@ -660,25 +680,27 @@
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                            <li><a href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#toc-properties">Properties</a></li>
-                                                            <li><a href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#toc-methods">Methods</a></li>
+                                                            <li><a href="classes/Livekit-SimulationRun-Usage.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Livekit-SimulationRun-Usage.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
             
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li class=""><a href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#property_guzzleClient">$guzzleClient</a></li>
+                                                    <li class=""><a href="classes/Livekit-SimulationRun-Usage.html#property_audio_turns_count">$audio_turns_count</a></li>
+                                                    <li class=""><a href="classes/Livekit-SimulationRun-Usage.html#property_text_turns_count">$text_turns_count</a></li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li class=""><a href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#method_post">post()</a></li>
-                                            <li class=""><a href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#method_uploadFile">uploadFile()</a></li>
-                                            <li class=""><a href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#method_handleRequestException">handleRequestException()</a></li>
+                                            <li class=""><a href="classes/Livekit-SimulationRun-Usage.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Livekit-SimulationRun-Usage.html#method_getAudioTurnsCount">getAudioTurnsCount()</a></li>
+                                            <li class=""><a href="classes/Livekit-SimulationRun-Usage.html#method_getTextTurnsCount">getTextTurnsCount()</a></li>
+                                            <li class=""><a href="classes/Livekit-SimulationRun-Usage.html#method_setAudioTurnsCount">setAudioTurnsCount()</a></li>
+                                            <li class=""><a href="classes/Livekit-SimulationRun-Usage.html#method_setTextTurnsCount">setTextTurnsCount()</a></li>
                                     </ul>
             </li>
                     </ul>
@@ -698,7 +720,7 @@
     </section>
 </section>
         </div>
-        <a href="classes/Mynaparrot-Plugnmeet-GuzzleHttpClient.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Livekit-SimulationRun-Usage.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

@@ -291,7 +291,7 @@ a SIP Trunk into a SIP DispatchRule</p>
     <span>
                         &nbsp;: mixed            </span>
 </dt>
-<dd>NEXT ID: 24</dd>
+<dd>NEXT ID: 27</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Livekit-CreateSIPParticipantRequest.html#property_display_name">$display_name</a>
@@ -406,11 +406,32 @@ a SIP Trunk into a SIP DispatchRule</p>
 <dd>What number should be dialed via SIP</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Livekit-CreateSIPParticipantRequest.html#property_sip_from_header">$sip_from_header</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>From: &quot;Name&quot; &lt;uri&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Livekit-CreateSIPParticipantRequest.html#property_sip_number">$sip_number</a>
     <span>
                         &nbsp;: mixed            </span>
 </dt>
 <dd>Optional SIP From number to use. If empty, trunk number is used.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Livekit-CreateSIPParticipantRequest.html#property_sip_request_uri">$sip_request_uri</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>INVITE &lt;uri&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Livekit-CreateSIPParticipantRequest.html#property_sip_to_header">$sip_to_header</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>To:   &quot;Name&quot; &lt;uri&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Livekit-CreateSIPParticipantRequest.html#property_sip_trunk_id">$sip_trunk_id</a>
@@ -493,6 +514,24 @@ a SIP Trunk into a SIP DispatchRule</p>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-CreateSIPParticipantRequest.html#method_clearSipFromHeader">clearSipFromHeader()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-CreateSIPParticipantRequest.html#method_clearSipRequestUri">clearSipRequestUri()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-CreateSIPParticipantRequest.html#method_clearSipToHeader">clearSipToHeader()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-CreateSIPParticipantRequest.html#method_clearTrunk">clearTrunk()</a>
     <span>
                                 &nbsp;: mixed    </span>
@@ -503,7 +542,7 @@ a SIP Trunk into a SIP DispatchRule</p>
     <span>
                                 &nbsp;: <a href="classes/Livekit-Destination.html"><abbr title="\Livekit\Destination">Destination</abbr></a>|null    </span>
 </dt>
-<dd>NEXT ID: 24</dd>
+<dd>NEXT ID: 27</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-CreateSIPParticipantRequest.html#method_getDisplayName">getDisplayName()</a>
@@ -632,11 +671,32 @@ a SIP Trunk into a SIP DispatchRule</p>
 <dd>What number should be dialed via SIP</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-CreateSIPParticipantRequest.html#method_getSipFromHeader">getSipFromHeader()</a>
+    <span>
+                                &nbsp;: <a href="classes/Livekit-SIPNamedDest.html"><abbr title="\Livekit\SIPNamedDest">SIPNamedDest</abbr></a>|null    </span>
+</dt>
+<dd>From: &quot;Name&quot; &lt;uri&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-CreateSIPParticipantRequest.html#method_getSipNumber">getSipNumber()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Optional SIP From number to use. If empty, trunk number is used.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-CreateSIPParticipantRequest.html#method_getSipRequestUri">getSipRequestUri()</a>
+    <span>
+                                &nbsp;: <a href="classes/Livekit-SIPRequestDest.html"><abbr title="\Livekit\SIPRequestDest">SIPRequestDest</abbr></a>|null    </span>
+</dt>
+<dd>INVITE &lt;uri&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-CreateSIPParticipantRequest.html#method_getSipToHeader">getSipToHeader()</a>
+    <span>
+                                &nbsp;: <a href="classes/Livekit-SIPNamedDest.html"><abbr title="\Livekit\SIPNamedDest">SIPNamedDest</abbr></a>|null    </span>
+</dt>
+<dd>To:   &quot;Name&quot; &lt;uri&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-CreateSIPParticipantRequest.html#method_getSipTrunkId">getSipTrunkId()</a>
@@ -690,6 +750,24 @@ a SIP Trunk into a SIP DispatchRule</p>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-CreateSIPParticipantRequest.html#method_hasSipFromHeader">hasSipFromHeader()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-CreateSIPParticipantRequest.html#method_hasSipRequestUri">hasSipRequestUri()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-CreateSIPParticipantRequest.html#method_hasSipToHeader">hasSipToHeader()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-CreateSIPParticipantRequest.html#method_hasTrunk">hasTrunk()</a>
     <span>
                                 &nbsp;: mixed    </span>
@@ -700,7 +778,7 @@ a SIP Trunk into a SIP DispatchRule</p>
     <span>
                                 &nbsp;: $this    </span>
 </dt>
-<dd>NEXT ID: 24</dd>
+<dd>NEXT ID: 27</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-CreateSIPParticipantRequest.html#method_setDisplayName">setDisplayName()</a>
@@ -829,11 +907,32 @@ a SIP Trunk into a SIP DispatchRule</p>
 <dd>What number should be dialed via SIP</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-CreateSIPParticipantRequest.html#method_setSipFromHeader">setSipFromHeader()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>From: &quot;Name&quot; &lt;uri&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-CreateSIPParticipantRequest.html#method_setSipNumber">setSipNumber()</a>
     <span>
                                 &nbsp;: $this    </span>
 </dt>
 <dd>Optional SIP From number to use. If empty, trunk number is used.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-CreateSIPParticipantRequest.html#method_setSipRequestUri">setSipRequestUri()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>INVITE &lt;uri&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-CreateSIPParticipantRequest.html#method_setSipToHeader">setSipToHeader()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>To:   &quot;Name&quot; &lt;uri&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-CreateSIPParticipantRequest.html#method_setSipTrunkId">setSipTrunkId()</a>
@@ -886,11 +985,11 @@ a SIP Trunk into a SIP DispatchRule</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">159</span>
+    <span class="phpdocumentor-element-found-in__line">177</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">NEXT ID: 24</p>
+        <p class="phpdocumentor-summary">NEXT ID: 27</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -926,7 +1025,7 @@ a SIP Trunk into a SIP DispatchRule</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">153</span>
+    <span class="phpdocumentor-element-found-in__line">171</span>
 
     </aside>
 
@@ -972,7 +1071,7 @@ a SIP Trunk into a SIP DispatchRule</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
@@ -1013,7 +1112,7 @@ a SIP Trunk into a SIP DispatchRule</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">95</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 
@@ -1054,7 +1153,7 @@ a SIP Trunk into a SIP DispatchRule</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">110</span>
+    <span class="phpdocumentor-element-found-in__line">128</span>
 
     </aside>
 
@@ -1097,7 +1196,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">128</span>
+    <span class="phpdocumentor-element-found-in__line">146</span>
 
     </aside>
 
@@ -1137,7 +1236,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">122</span>
+    <span class="phpdocumentor-element-found-in__line">140</span>
 
     </aside>
 
@@ -1177,7 +1276,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">155</span>
 
     </aside>
 
@@ -1215,7 +1314,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">133</span>
+    <span class="phpdocumentor-element-found-in__line">151</span>
 
     </aside>
 
@@ -1259,7 +1358,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -1299,7 +1398,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
@@ -1339,7 +1438,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
@@ -1379,7 +1478,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 
     </aside>
 
@@ -1417,7 +1516,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
@@ -1463,7 +1562,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">116</span>
+    <span class="phpdocumentor-element-found-in__line">134</span>
 
     </aside>
 
@@ -1503,7 +1602,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -1543,7 +1642,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -1573,6 +1672,46 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
             -protected
                                                                     "
 >
+    <h4 class="phpdocumentor-element__name" id="property_sip_from_header">
+        $sip_from_header
+        <a href="classes/Livekit-CreateSIPParticipantRequest.html#property_sip_from_header" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">46</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">From: &quot;Name&quot; &lt;uri&gt;</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$sip_from_header</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.livekit.SIPNamedDest sip_from_header = 26;</code></p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
     <h4 class="phpdocumentor-element__name" id="property_sip_number">
         $sip_number
         <a href="classes/Livekit-CreateSIPParticipantRequest.html#property_sip_number" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1583,7 +1722,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -1597,6 +1736,86 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
      = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
 
         <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">string sip_number = 15;</code></p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_sip_request_uri">
+        $sip_request_uri
+        <a href="classes/Livekit-CreateSIPParticipantRequest.html#property_sip_request_uri" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">34</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">INVITE &lt;uri&gt;</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$sip_request_uri</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.livekit.SIPRequestDest sip_request_uri = 24;</code></p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_sip_to_header">
+        $sip_to_header
+        <a href="classes/Livekit-CreateSIPParticipantRequest.html#property_sip_to_header" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">40</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">To:   &quot;Name&quot; &lt;uri&gt;</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$sip_to_header</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.livekit.SIPNamedDest sip_to_header = 25;</code></p>
 </section>
 
     
@@ -1701,7 +1920,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">143</span>
+    <span class="phpdocumentor-element-found-in__line">161</span>
 
     </aside>
 
@@ -1741,7 +1960,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">119</span>
 
     </aside>
 
@@ -1781,7 +2000,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
@@ -1826,7 +2045,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">220</span>
+    <span class="phpdocumentor-element-found-in__line">244</span>
 
     </aside>
 
@@ -1852,6 +2071,12 @@ Optional. Data for populating the Message object.</p>
 <pre class="prettyprint"><code class="prettyprint">@type string $sip_trunk_id
       What SIP Trunk should be used to dial the user
 @type \Livekit\SIPOutboundConfig $trunk
+@type \Livekit\SIPRequestDest $sip_request_uri
+      INVITE &lt;uri&gt;
+@type \Livekit\SIPNamedDest $sip_to_header
+      To:   &quot;Name&quot; &lt;uri&gt;
+@type \Livekit\SIPNamedDest $sip_from_header
+      From: &quot;Name&quot; &lt;uri&gt;
 @type string $sip_call_to
       What number should be dialed via SIP
 @type string $sip_number
@@ -1899,7 +2124,7 @@ Optional. Data for populating the Message object.</p>
       2) Empty string: Do not send a display name, which will result in a CNAM lookup downstream.
       3) Non-empty: Use the specified value as the display name.
 @type \Livekit\Destination $destination
-      NEXT ID: 24
+      NEXT ID: 27
 </code></pre>
 <p>}</p>
 </section>
@@ -1927,7 +2152,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">873</span>
+    <span class="phpdocumentor-element-found-in__line">1005</span>
 
     </aside>
 
@@ -1961,7 +2186,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">833</span>
+    <span class="phpdocumentor-element-found-in__line">965</span>
 
     </aside>
 
@@ -1995,7 +2220,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">683</span>
+    <span class="phpdocumentor-element-found-in__line">815</span>
 
     </aside>
 
@@ -2029,7 +2254,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">769</span>
+    <span class="phpdocumentor-element-found-in__line">901</span>
 
     </aside>
 
@@ -2063,7 +2288,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">647</span>
+    <span class="phpdocumentor-element-found-in__line">779</span>
 
     </aside>
 
@@ -2071,6 +2296,108 @@ Optional. Data for populating the Message object.</p>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">clearRingingTimeout</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_clearSipFromHeader">
+        clearSipFromHeader()
+        <a href="classes/Livekit-CreateSIPParticipantRequest.html#method_clearSipFromHeader" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">395</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">clearSipFromHeader</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_clearSipRequestUri">
+        clearSipRequestUri()
+        <a href="classes/Livekit-CreateSIPParticipantRequest.html#method_clearSipRequestUri" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">323</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">clearSipRequestUri</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_clearSipToHeader">
+        clearSipToHeader()
+        <a href="classes/Livekit-CreateSIPParticipantRequest.html#method_clearSipToHeader" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">359</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">clearSipToHeader</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2097,7 +2424,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">265</span>
+    <span class="phpdocumentor-element-found-in__line">289</span>
 
     </aside>
 
@@ -2131,11 +2458,11 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">863</span>
+    <span class="phpdocumentor-element-found-in__line">995</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">NEXT ID: 24</p>
+        <p class="phpdocumentor-summary">NEXT ID: 27</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -2172,7 +2499,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">823</span>
+    <span class="phpdocumentor-element-found-in__line">955</span>
 
     </aside>
 
@@ -2219,7 +2546,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">472</span>
+    <span class="phpdocumentor-element-found-in__line">604</span>
 
     </aside>
 
@@ -2261,7 +2588,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">579</span>
+    <span class="phpdocumentor-element-found-in__line">711</span>
 
     </aside>
 
@@ -2302,7 +2629,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">552</span>
+    <span class="phpdocumentor-element-found-in__line">684</span>
 
     </aside>
 
@@ -2344,7 +2671,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">608</span>
+    <span class="phpdocumentor-element-found-in__line">740</span>
 
     </aside>
 
@@ -2388,7 +2715,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">709</span>
+    <span class="phpdocumentor-element-found-in__line">841</span>
 
     </aside>
 
@@ -2429,7 +2756,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">673</span>
+    <span class="phpdocumentor-element-found-in__line">805</span>
 
     </aside>
 
@@ -2470,7 +2797,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">759</span>
+    <span class="phpdocumentor-element-found-in__line">891</span>
 
     </aside>
 
@@ -2509,7 +2836,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">734</span>
+    <span class="phpdocumentor-element-found-in__line">866</span>
 
     </aside>
 
@@ -2554,7 +2881,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">445</span>
+    <span class="phpdocumentor-element-found-in__line">577</span>
 
     </aside>
 
@@ -2595,7 +2922,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">367</span>
+    <span class="phpdocumentor-element-found-in__line">499</span>
 
     </aside>
 
@@ -2636,7 +2963,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">419</span>
+    <span class="phpdocumentor-element-found-in__line">551</span>
 
     </aside>
 
@@ -2677,7 +3004,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">393</span>
+    <span class="phpdocumentor-element-found-in__line">525</span>
 
     </aside>
 
@@ -2718,7 +3045,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">527</span>
+    <span class="phpdocumentor-element-found-in__line">659</span>
 
     </aside>
 
@@ -2757,7 +3084,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">500</span>
+    <span class="phpdocumentor-element-found-in__line">632</span>
 
     </aside>
 
@@ -2804,7 +3131,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">637</span>
+    <span class="phpdocumentor-element-found-in__line">769</span>
 
     </aside>
 
@@ -2845,7 +3172,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">341</span>
+    <span class="phpdocumentor-element-found-in__line">473</span>
 
     </aside>
 
@@ -2886,7 +3213,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">289</span>
+    <span class="phpdocumentor-element-found-in__line">421</span>
 
     </aside>
 
@@ -2919,6 +3246,47 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getSipFromHeader">
+        getSipFromHeader()
+        <a href="classes/Livekit-CreateSIPParticipantRequest.html#method_getSipFromHeader" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">385</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">From: &quot;Name&quot; &lt;uri&gt;</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getSipFromHeader</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Livekit-SIPNamedDest.html"><abbr title="\Livekit\SIPNamedDest">SIPNamedDest</abbr></a>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.livekit.SIPNamedDest sip_from_header = 26;</code></p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Livekit-SIPNamedDest.html"><abbr title="\Livekit\SIPNamedDest">SIPNamedDest</abbr></a>|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getSipNumber">
         getSipNumber()
         <a href="classes/Livekit-CreateSIPParticipantRequest.html#method_getSipNumber" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2927,7 +3295,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">315</span>
+    <span class="phpdocumentor-element-found-in__line">447</span>
 
     </aside>
 
@@ -2960,6 +3328,88 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getSipRequestUri">
+        getSipRequestUri()
+        <a href="classes/Livekit-CreateSIPParticipantRequest.html#method_getSipRequestUri" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">313</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">INVITE &lt;uri&gt;</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getSipRequestUri</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Livekit-SIPRequestDest.html"><abbr title="\Livekit\SIPRequestDest">SIPRequestDest</abbr></a>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.livekit.SIPRequestDest sip_request_uri = 24;</code></p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Livekit-SIPRequestDest.html"><abbr title="\Livekit\SIPRequestDest">SIPRequestDest</abbr></a>|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getSipToHeader">
+        getSipToHeader()
+        <a href="classes/Livekit-CreateSIPParticipantRequest.html#method_getSipToHeader" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">349</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">To:   &quot;Name&quot; &lt;uri&gt;</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getSipToHeader</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Livekit-SIPNamedDest.html"><abbr title="\Livekit\SIPNamedDest">SIPNamedDest</abbr></a>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.livekit.SIPNamedDest sip_to_header = 25;</code></p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Livekit-SIPNamedDest.html"><abbr title="\Livekit\SIPNamedDest">SIPNamedDest</abbr></a>|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getSipTrunkId">
         getSipTrunkId()
         <a href="classes/Livekit-CreateSIPParticipantRequest.html#method_getSipTrunkId" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2968,7 +3418,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">231</span>
+    <span class="phpdocumentor-element-found-in__line">255</span>
 
     </aside>
 
@@ -3009,7 +3459,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">255</span>
+    <span class="phpdocumentor-element-found-in__line">279</span>
 
     </aside>
 
@@ -3048,7 +3498,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">793</span>
+    <span class="phpdocumentor-element-found-in__line">925</span>
 
     </aside>
 
@@ -3089,7 +3539,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">868</span>
+    <span class="phpdocumentor-element-found-in__line">1000</span>
 
     </aside>
 
@@ -3123,7 +3573,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">828</span>
+    <span class="phpdocumentor-element-found-in__line">960</span>
 
     </aside>
 
@@ -3157,7 +3607,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">678</span>
+    <span class="phpdocumentor-element-found-in__line">810</span>
 
     </aside>
 
@@ -3191,7 +3641,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">764</span>
+    <span class="phpdocumentor-element-found-in__line">896</span>
 
     </aside>
 
@@ -3225,7 +3675,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">642</span>
+    <span class="phpdocumentor-element-found-in__line">774</span>
 
     </aside>
 
@@ -3233,6 +3683,108 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">hasRingingTimeout</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_hasSipFromHeader">
+        hasSipFromHeader()
+        <a href="classes/Livekit-CreateSIPParticipantRequest.html#method_hasSipFromHeader" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">390</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">hasSipFromHeader</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_hasSipRequestUri">
+        hasSipRequestUri()
+        <a href="classes/Livekit-CreateSIPParticipantRequest.html#method_hasSipRequestUri" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">318</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">hasSipRequestUri</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_hasSipToHeader">
+        hasSipToHeader()
+        <a href="classes/Livekit-CreateSIPParticipantRequest.html#method_hasSipToHeader" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">354</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">hasSipToHeader</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -3259,7 +3811,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">260</span>
+    <span class="phpdocumentor-element-found-in__line">284</span>
 
     </aside>
 
@@ -3293,11 +3845,11 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">885</span>
+    <span class="phpdocumentor-element-found-in__line">1017</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">NEXT ID: 24</p>
+        <p class="phpdocumentor-summary">NEXT ID: 27</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -3344,7 +3896,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">849</span>
+    <span class="phpdocumentor-element-found-in__line">981</span>
 
     </aside>
 
@@ -3401,7 +3953,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">485</span>
+    <span class="phpdocumentor-element-found-in__line">617</span>
 
     </aside>
 
@@ -3453,7 +4005,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">591</span>
+    <span class="phpdocumentor-element-found-in__line">723</span>
 
     </aside>
 
@@ -3504,7 +4056,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">565</span>
+    <span class="phpdocumentor-element-found-in__line">697</span>
 
     </aside>
 
@@ -3556,7 +4108,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">623</span>
+    <span class="phpdocumentor-element-found-in__line">755</span>
 
     </aside>
 
@@ -3610,7 +4162,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">721</span>
+    <span class="phpdocumentor-element-found-in__line">853</span>
 
     </aside>
 
@@ -3661,7 +4213,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">695</span>
+    <span class="phpdocumentor-element-found-in__line">827</span>
 
     </aside>
 
@@ -3712,7 +4264,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">779</span>
+    <span class="phpdocumentor-element-found-in__line">911</span>
 
     </aside>
 
@@ -3761,7 +4313,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">746</span>
+    <span class="phpdocumentor-element-found-in__line">878</span>
 
     </aside>
 
@@ -3816,7 +4368,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">457</span>
+    <span class="phpdocumentor-element-found-in__line">589</span>
 
     </aside>
 
@@ -3867,7 +4419,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">379</span>
+    <span class="phpdocumentor-element-found-in__line">511</span>
 
     </aside>
 
@@ -3918,7 +4470,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">431</span>
+    <span class="phpdocumentor-element-found-in__line">563</span>
 
     </aside>
 
@@ -3969,7 +4521,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">405</span>
+    <span class="phpdocumentor-element-found-in__line">537</span>
 
     </aside>
 
@@ -4020,7 +4572,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">537</span>
+    <span class="phpdocumentor-element-found-in__line">669</span>
 
     </aside>
 
@@ -4069,7 +4621,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">514</span>
+    <span class="phpdocumentor-element-found-in__line">646</span>
 
     </aside>
 
@@ -4126,7 +4678,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">659</span>
+    <span class="phpdocumentor-element-found-in__line">791</span>
 
     </aside>
 
@@ -4177,7 +4729,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">353</span>
+    <span class="phpdocumentor-element-found-in__line">485</span>
 
     </aside>
 
@@ -4228,7 +4780,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">301</span>
+    <span class="phpdocumentor-element-found-in__line">433</span>
 
     </aside>
 
@@ -4271,6 +4823,57 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_setSipFromHeader">
+        setSipFromHeader()
+        <a href="classes/Livekit-CreateSIPParticipantRequest.html#method_setSipFromHeader" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">407</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">From: &quot;Name&quot; &lt;uri&gt;</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setSipFromHeader</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Livekit-SIPNamedDest.html"><abbr title="\Livekit\SIPNamedDest">SIPNamedDest</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.livekit.SIPNamedDest sip_from_header = 26;</code></p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Livekit-SIPNamedDest.html"><abbr title="\Livekit\SIPNamedDest">SIPNamedDest</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setSipNumber">
         setSipNumber()
         <a href="classes/Livekit-CreateSIPParticipantRequest.html#method_setSipNumber" class="headerlink"><i class="fas fa-link"></i></a>
@@ -4279,7 +4882,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">327</span>
+    <span class="phpdocumentor-element-found-in__line">459</span>
 
     </aside>
 
@@ -4322,6 +4925,108 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_setSipRequestUri">
+        setSipRequestUri()
+        <a href="classes/Livekit-CreateSIPParticipantRequest.html#method_setSipRequestUri" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">335</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">INVITE &lt;uri&gt;</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setSipRequestUri</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Livekit-SIPRequestDest.html"><abbr title="\Livekit\SIPRequestDest">SIPRequestDest</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.livekit.SIPRequestDest sip_request_uri = 24;</code></p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Livekit-SIPRequestDest.html"><abbr title="\Livekit\SIPRequestDest">SIPRequestDest</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setSipToHeader">
+        setSipToHeader()
+        <a href="classes/Livekit-CreateSIPParticipantRequest.html#method_setSipToHeader" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">371</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">To:   &quot;Name&quot; &lt;uri&gt;</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setSipToHeader</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Livekit-SIPNamedDest.html"><abbr title="\Livekit\SIPNamedDest">SIPNamedDest</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.livekit.SIPNamedDest sip_to_header = 25;</code></p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Livekit-SIPNamedDest.html"><abbr title="\Livekit\SIPNamedDest">SIPNamedDest</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setSipTrunkId">
         setSipTrunkId()
         <a href="classes/Livekit-CreateSIPParticipantRequest.html#method_setSipTrunkId" class="headerlink"><i class="fas fa-link"></i></a>
@@ -4330,7 +5035,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">243</span>
+    <span class="phpdocumentor-element-found-in__line">267</span>
 
     </aside>
 
@@ -4381,7 +5086,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">275</span>
+    <span class="phpdocumentor-element-found-in__line">299</span>
 
     </aside>
 
@@ -4430,7 +5135,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/CreateSIPParticipantRequest.php"><a href="files/src-gen-livekit-createsipparticipantrequest.html"><abbr title="src/gen/Livekit/CreateSIPParticipantRequest.php">CreateSIPParticipantRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">805</span>
+    <span class="phpdocumentor-element-found-in__line">937</span>
 
     </aside>
 
@@ -4506,7 +5211,10 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
                                                     <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#property_ringing_timeout">$ringing_timeout</a></li>
                                                     <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#property_room_name">$room_name</a></li>
                                                     <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#property_sip_call_to">$sip_call_to</a></li>
+                                                    <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#property_sip_from_header">$sip_from_header</a></li>
                                                     <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#property_sip_number">$sip_number</a></li>
+                                                    <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#property_sip_request_uri">$sip_request_uri</a></li>
+                                                    <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#property_sip_to_header">$sip_to_header</a></li>
                                                     <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#property_sip_trunk_id">$sip_trunk_id</a></li>
                                                     <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#property_trunk">$trunk</a></li>
                                                     <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#property_wait_until_answered">$wait_until_answered</a></li>
@@ -4524,6 +5232,9 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
                                             <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_clearMaxCallDuration">clearMaxCallDuration()</a></li>
                                             <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_clearMedia">clearMedia()</a></li>
                                             <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_clearRingingTimeout">clearRingingTimeout()</a></li>
+                                            <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_clearSipFromHeader">clearSipFromHeader()</a></li>
+                                            <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_clearSipRequestUri">clearSipRequestUri()</a></li>
+                                            <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_clearSipToHeader">clearSipToHeader()</a></li>
                                             <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_clearTrunk">clearTrunk()</a></li>
                                             <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_getDestination">getDestination()</a></li>
                                             <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_getDisplayName">getDisplayName()</a></li>
@@ -4544,7 +5255,10 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
                                             <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_getRingingTimeout">getRingingTimeout()</a></li>
                                             <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_getRoomName">getRoomName()</a></li>
                                             <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_getSipCallTo">getSipCallTo()</a></li>
+                                            <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_getSipFromHeader">getSipFromHeader()</a></li>
                                             <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_getSipNumber">getSipNumber()</a></li>
+                                            <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_getSipRequestUri">getSipRequestUri()</a></li>
+                                            <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_getSipToHeader">getSipToHeader()</a></li>
                                             <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_getSipTrunkId">getSipTrunkId()</a></li>
                                             <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_getTrunk">getTrunk()</a></li>
                                             <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_getWaitUntilAnswered">getWaitUntilAnswered()</a></li>
@@ -4553,6 +5267,9 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
                                             <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_hasMaxCallDuration">hasMaxCallDuration()</a></li>
                                             <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_hasMedia">hasMedia()</a></li>
                                             <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_hasRingingTimeout">hasRingingTimeout()</a></li>
+                                            <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_hasSipFromHeader">hasSipFromHeader()</a></li>
+                                            <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_hasSipRequestUri">hasSipRequestUri()</a></li>
+                                            <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_hasSipToHeader">hasSipToHeader()</a></li>
                                             <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_hasTrunk">hasTrunk()</a></li>
                                             <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_setDestination">setDestination()</a></li>
                                             <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_setDisplayName">setDisplayName()</a></li>
@@ -4573,7 +5290,10 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
                                             <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_setRingingTimeout">setRingingTimeout()</a></li>
                                             <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_setRoomName">setRoomName()</a></li>
                                             <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_setSipCallTo">setSipCallTo()</a></li>
+                                            <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_setSipFromHeader">setSipFromHeader()</a></li>
                                             <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_setSipNumber">setSipNumber()</a></li>
+                                            <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_setSipRequestUri">setSipRequestUri()</a></li>
+                                            <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_setSipToHeader">setSipToHeader()</a></li>
                                             <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_setSipTrunkId">setSipTrunkId()</a></li>
                                             <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_setTrunk">setTrunk()</a></li>
                                             <li class=""><a href="classes/Livekit-CreateSIPParticipantRequest.html#method_setWaitUntilAnswered">setWaitUntilAnswered()</a></li>
