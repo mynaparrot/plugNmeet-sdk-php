@@ -1,5 +1,35 @@
 # Changelog
 
+## [2.2.0](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.1.4...v2.2.0) (2026-05-30)
+
+
+### Features
+
+* added new `broadcastToRoom` and `uploadWhiteboardFile` endpoint ([b0cedf3](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/b0cedf35706e20c71190565dd07447794420645c))
+* **API:** added new API endpoint `mergeRecordings` ([311a7e0](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/311a7e00270cb907cf493a96b0f58ae29da38dd5))
+
+
+### Bug Fixes
+
+* bump proto ([9bcad14](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/9bcad14aad161066ba01f00252eaa9f02bd39cae))
+* bump proto ([fb874ad](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/fb874ade56b2a57d5d2a9208e1faf045bedf5b95))
+* bump proto ([fe69010](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/fe69010510eca012dd5bddb540a4c49125f47fda))
+* **deps:** update dependency google/protobuf to v5.35.0 ([cbb1653](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/cbb16535ec93ad7efbf0d6d95f225162eca5ccd8))
+* **deps:** update dependency google/protobuf to v5.35.0 ([cae3a89](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/cae3a8906f379f69dd058096fa4a4954031dde7c))
+* **deps:** update dependency guzzlehttp/guzzle to v7.10.1 ([11cfbd3](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/11cfbd3edd30c46cb417a54aae190d641eaca2f7))
+* **deps:** update dependency guzzlehttp/guzzle to v7.10.1 ([0b4c13b](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/0b4c13bfa4121f5f3ea4dc1509d0ca6d19032869))
+* **deps:** update dependency guzzlehttp/guzzle to v7.10.2 ([58fd8d2](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/58fd8d2c0d9838657e0aa6e41a296c541eabf1c2))
+* **deps:** update dependency guzzlehttp/guzzle to v7.10.2 ([ca8cedf](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/ca8cedfced99d6c5d5333ec11fb15d956ad87ac1))
+* **deps:** update dependency guzzlehttp/guzzle to v7.10.3 ([3e3d077](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/3e3d07774e0e5aa076006a149e84872a4ab6988b))
+* **deps:** update dependency guzzlehttp/guzzle to v7.10.3 ([c815a51](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/c815a51ab695311dfbc8cce7d15bd7eddf1516c2))
+* **deps:** update dependency guzzlehttp/guzzle to v7.10.4 ([621b91e](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/621b91e908c21cb9e2ec7788cdcd8c8ebeede514))
+* **deps:** update dependency guzzlehttp/guzzle to v7.10.4 ([30cd0b4](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/30cd0b44395e91651096fdca86ba2affbc313157))
+* **deps:** update dependency guzzlehttp/guzzle to v7.10.5 ([4513159](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/45131594b938ec2408cad077698557fe288c9e28))
+* **deps:** update dependency guzzlehttp/guzzle to v7.10.5 ([914c43c](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/914c43c5fae7c1a67cce206ad8c7a43050707efa))
+* handle error message better way ([f321855](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/f321855a509c29845232ce6ca036159193fb98f8))
+* handle network error related messages better way ([adc33ac](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/adc33ac80c04ea83f901731f51fc7eeda1ab5448))
+* just path the path and client to decide what to do ([2e3e6dd](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/2e3e6dd338c3cd054f0c0e77dc9aeeca784b04a4))
+
 ## [2.1.4](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.1.3...v2.1.4) (2026-05-12)
 
 
