@@ -1,0 +1,12 @@
+# Exclude directories from archives
+/.github export-ignore
+/examples export-ignore
+/patch export-ignore
+/protocol export-ignore
+
+# Exclude specific files from archives
+/.gitignore export-ignore
+/.gitmodules export-ignore
+/.phplint.yml export-ignore
+/renovate.json export-ignore
+/generate_proto.sh export-ignore
