@@ -43,7 +43,7 @@
     "google/protobuf": "5.35.0"
   },
   "require-dev": {
-    "overtrue/phplint": "9.7.1",
+    "overtrue/phplint": "9.7.2",
     "squizlabs/php_codesniffer": "4.0.1"
   }
 }
