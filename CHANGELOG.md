@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.2](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.2.1...v2.2.2) (2026-06-04)
+
+
+### Bug Fixes
+
+* exclude `composer.lock` from archive ([f139ec3](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/f139ec3e8a526678b1899103f05dedb0f8d1a9cc))
+
 ## [2.2.1](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.2.0...v2.2.1) (2026-06-04)
 
 
