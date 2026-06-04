@@ -35,5 +35,6 @@ jobs:
           rsync -ar src composer.json LICENSE README.md build/
           cd build
           composer install --no-dev --optimize-autoloader --no-scripts --ignore-platform-reqs
+          rm -f composer.lock
           zip -X -r plugNmeet-sdk-php-release.zip *
           gh release upload ${{ steps.release.outputs.tag_name }} plugNmeet-sdk-php-release.zip

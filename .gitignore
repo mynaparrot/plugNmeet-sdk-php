@@ -2,5 +2,6 @@
 .DS_Store
 .phpdoc
 composer.phar
+composer.lock
 build/
 /vendor/

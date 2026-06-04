@@ -22,16 +22,6 @@
     "phpcs": "phpcs --standard=PSR12 src/ --ignore=gen",
     "phpcbf": "phpcbf --standard=PSR12 src/ --ignore=gen"
   },
-  "archive": {
-    "exclude": [
-      "/*",
-      "/.*",
-      "!/src",
-      "!/LICENSE",
-      "!/README.md",
-      "!/CHANGELOG.md"
-    ]
-  },
   "require": {
     "php": "^8.0",
     "ext-curl": "*",

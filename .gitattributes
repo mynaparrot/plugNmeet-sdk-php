@@ -8,5 +8,6 @@
 /.gitignore export-ignore
 /.gitmodules export-ignore
 /.phplint.yml export-ignore
+/composer.lock export-ignore
 /renovate.json export-ignore
 /generate_proto.sh export-ignore
