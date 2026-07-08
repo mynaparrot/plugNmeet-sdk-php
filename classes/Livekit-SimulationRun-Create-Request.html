@@ -112,6 +112,14 @@
                 
             </li>
                     <li>
+                <a href="namespaces/livekit-datatrackframeencoding.html" class="">DataTrackFrameEncoding</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-datatrackschemaencoding.html" class="">DataTrackSchemaEncoding</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/livekit-datatracksubscriberhandles.html" class="">DataTrackSubscriberHandles</a>
                 
             </li>
@@ -153,10 +161,6 @@
             </li>
                     <li>
                 <a href="namespaces/livekit-scenario.html" class="">Scenario</a>
-                
-            </li>
-                    <li>
-                <a href="namespaces/livekit-scenariogroup.html" class="">ScenarioGroup</a>
                 
             </li>
                     <li>
@@ -253,7 +257,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
@@ -286,18 +290,26 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#property_agent_description">$agent_description</a>
-    <span>
-                        &nbsp;: mixed            </span>
-</dt>
-<dd>Generated from protobuf field &lt;code&gt;string agent_description = 3;&lt;/code&gt;</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#property_agent_name">$agent_name</a>
     <span>
                         &nbsp;: mixed            </span>
 </dt>
 <dd>Generated from protobuf field &lt;code&gt;string agent_name = 2;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#property_concurrency">$concurrency</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Maximum simulate jobs running in parallel for this run. Clamped to the
+project&#039;s concurrency quota; 0/unset uses the server default.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#property_mode">$mode</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Conversation mode for every job in this run; unspecified = TEXT.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#property_num_simulations">$num_simulations</a>
@@ -321,10 +333,11 @@
 <dd>Generated from protobuf field &lt;code&gt;string region = 6;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#property_source">$source</a>
+    <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#property_scenario_group">$scenario_group</a>
     <span>
                         &nbsp;: mixed            </span>
 </dt>
+<dd>When set, run these scenarios (loaded from a scenarios.yaml).</dd>
 
     </dl>
 
@@ -342,11 +355,16 @@
 <dd>Constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#method_getAgentDescription">getAgentDescription()</a>
+    <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#method_clearConcurrency">clearConcurrency()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: mixed    </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;string agent_description = 3;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#method_clearScenarioGroup">clearScenarioGroup()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#method_getAgentName">getAgentName()</a>
@@ -356,11 +374,19 @@
 <dd>Generated from protobuf field &lt;code&gt;string agent_name = 2;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#method_getGroupId">getGroupId()</a>
+    <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#method_getConcurrency">getConcurrency()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: int    </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;string group_id = 5;&lt;/code&gt;</dd>
+<dd>Maximum simulate jobs running in parallel for this run. Clamped to the
+project&#039;s concurrency quota; 0/unset uses the server default.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#method_getMode">getMode()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+<dd>Conversation mode for every job in this run; unspecified = TEXT.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#method_getNumSimulations">getNumSimulations()</a>
@@ -384,36 +410,23 @@
 <dd>Generated from protobuf field &lt;code&gt;string region = 6;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#method_getScenarios">getScenarios()</a>
+    <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#method_getScenarioGroup">getScenarioGroup()</a>
     <span>
-                                &nbsp;: <a href="classes/Livekit-SimulationRun-Create-Scenarios.html"><abbr title="\Livekit\SimulationRun\Create\Scenarios">Scenarios</abbr></a>|null    </span>
+                                &nbsp;: <a href="classes/Livekit-ScenarioGroup.html"><abbr title="\Livekit\ScenarioGroup">ScenarioGroup</abbr></a>|null    </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;.livekit.SimulationRun.Create.Scenarios scenarios = 7;&lt;/code&gt;</dd>
+<dd>When set, run these scenarios (loaded from a scenarios.yaml).</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#method_getSource">getSource()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#method_hasGroupId">hasGroupId()</a>
+    <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#method_hasConcurrency">hasConcurrency()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#method_hasScenarios">hasScenarios()</a>
+    <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#method_hasScenarioGroup">hasScenarioGroup()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#method_setAgentDescription">setAgentDescription()</a>
-    <span>
-                                &nbsp;: $this    </span>
-</dt>
-<dd>Generated from protobuf field &lt;code&gt;string agent_description = 3;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#method_setAgentName">setAgentName()</a>
@@ -423,11 +436,19 @@
 <dd>Generated from protobuf field &lt;code&gt;string agent_name = 2;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#method_setGroupId">setGroupId()</a>
+    <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#method_setConcurrency">setConcurrency()</a>
     <span>
                                 &nbsp;: $this    </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;string group_id = 5;&lt;/code&gt;</dd>
+<dd>Maximum simulate jobs running in parallel for this run. Clamped to the
+project&#039;s concurrency quota; 0/unset uses the server default.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#method_setMode">setMode()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>Conversation mode for every job in this run; unspecified = TEXT.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#method_setNumSimulations">setNumSimulations()</a>
@@ -451,11 +472,11 @@
 <dd>Generated from protobuf field &lt;code&gt;string region = 6;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#method_setScenarios">setScenarios()</a>
+    <a class="" href="classes/Livekit-SimulationRun-Create-Request.html#method_setScenarioGroup">setScenarioGroup()</a>
     <span>
                                 &nbsp;: $this    </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;.livekit.SimulationRun.Create.Scenarios scenarios = 7;&lt;/code&gt;</dd>
+<dd>When set, run these scenarios (loaded from a scenarios.yaml).</dd>
 
     </dl>
 
@@ -477,44 +498,6 @@
             -protected
                                                                     "
 >
-    <h4 class="phpdocumentor-element__name" id="property_agent_description">
-        $agent_description
-        <a href="classes/Livekit-SimulationRun-Create-Request.html#property_agent_description" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                            </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">28</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;string agent_description = 3;&lt;/code&gt;</p>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-        <span class="phpdocumentor-signature__visibility">protected</span>
-            <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">$agent_description</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
-
-    
-    
-    
-
-        
-        
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                                    "
->
     <h4 class="phpdocumentor-element__name" id="property_agent_name">
         $agent_name
         <a href="classes/Livekit-SimulationRun-Create-Request.html#property_agent_name" class="headerlink"><i class="fas fa-link"></i></a>
@@ -525,7 +508,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -553,6 +536,87 @@
             -protected
                                                                     "
 >
+    <h4 class="phpdocumentor-element__name" id="property_concurrency">
+        $concurrency
+        <a href="classes/Livekit-SimulationRun-Create-Request.html#property_concurrency" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">45</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Maximum simulate jobs running in parallel for this run. Clamped to the
+project&#039;s concurrency quota; 0/unset uses the server default.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$concurrency</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">optional int32 concurrency = 8;</code></p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_mode">
+        $mode
+        <a href="classes/Livekit-SimulationRun-Create-Request.html#property_mode" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">51</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Conversation mode for every job in this run; unspecified = TEXT.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$mode</span>
+     = <span class="phpdocumentor-signature__default-value">0</span></code>
+
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.livekit.SimulationMode mode = 9;</code></p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
     <h4 class="phpdocumentor-element__name" id="property_num_simulations">
         $num_simulations
         <a href="classes/Livekit-SimulationRun-Create-Request.html#property_num_simulations" class="headerlink"><i class="fas fa-link"></i></a>
@@ -563,7 +627,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -601,7 +665,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -639,7 +703,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -667,9 +731,9 @@
             -protected
                                                                     "
 >
-    <h4 class="phpdocumentor-element__name" id="property_source">
-        $source
-        <a href="classes/Livekit-SimulationRun-Create-Request.html#property_source" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_scenario_group">
+        $scenario_group
+        <a href="classes/Livekit-SimulationRun-Create-Request.html#property_scenario_group" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                             </span>
@@ -677,19 +741,23 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">When set, run these scenarios (loaded from a scenarios.yaml).</p>
+
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
         <span class="phpdocumentor-signature__visibility">protected</span>
             <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">$source</span>
-    </code>
+    <span class="phpdocumentor-signature__name">$scenario_group</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
-    
+        <section class="phpdocumentor-description"><p>When unset, generate num_simulations scenarios from the uploaded agent source.</p>
+<p>Generated from protobuf field <code class="prettyprint">optional .livekit.ScenarioGroup scenario_group = 7;</code></p>
+</section>
+
     
     
 
@@ -719,7 +787,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
@@ -744,11 +812,16 @@
 Optional. Data for populating the Message object.</p>
 <pre class="prettyprint"><code class="prettyprint">@type string $project_id
 @type string $agent_name
-@type string $agent_description
 @type int $num_simulations
 @type string $region
-@type \Livekit\SimulationRun\Create\Scenarios $scenarios
-@type string $group_id
+@type \Livekit\ScenarioGroup $scenario_group
+      When set, run these scenarios (loaded from a scenarios.yaml).
+      When unset, generate num_simulations scenarios from the uploaded agent source.
+@type int $concurrency
+      Maximum simulate jobs running in parallel for this run. Clamped to the
+      project's concurrency quota; 0/unset uses the server default.
+@type int $mode
+      Conversation mode for every job in this run; unspecified = TEXT.
 </code></pre>
 <p>}</p>
 </section>
@@ -768,23 +841,22 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getAgentDescription">
-        getAgentDescription()
-        <a href="classes/Livekit-SimulationRun-Create-Request.html#method_getAgentDescription" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_clearConcurrency">
+        clearConcurrency()
+        <a href="classes/Livekit-SimulationRun-Create-Request.html#method_clearConcurrency" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">107</span>
+    <span class="phpdocumentor-element-found-in__line">221</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;string agent_description = 3;&lt;/code&gt;</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getAgentDescription</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">clearConcurrency</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -795,11 +867,41 @@ Optional. Data for populating the Message object.</p>
 
         
     
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
-            </section>
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_clearScenarioGroup">
+        clearScenarioGroup()
+        <a href="classes/Livekit-SimulationRun-Create-Request.html#method_clearScenarioGroup" class="headerlink"><i class="fas fa-link"></i></a>
 
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">183</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">clearScenarioGroup</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -815,7 +917,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -846,28 +948,31 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getGroupId">
-        getGroupId()
-        <a href="classes/Livekit-SimulationRun-Create-Request.html#method_getGroupId" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getConcurrency">
+        getConcurrency()
+        <a href="classes/Livekit-SimulationRun-Create-Request.html#method_getConcurrency" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">200</span>
+    <span class="phpdocumentor-element-found-in__line">211</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;string group_id = 5;&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">Maximum simulate jobs running in parallel for this run. Clamped to the
+project&#039;s concurrency quota; 0/unset uses the server default.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getGroupId</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getConcurrency</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">optional int32 concurrency = 8;</code></p>
+</section>
+
     
     
 
@@ -875,7 +980,48 @@ Optional. Data for populating the Message object.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getMode">
+        getMode()
+        <a href="classes/Livekit-SimulationRun-Create-Request.html#method_getMode" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">248</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Conversation mode for every job in this run; unspecified = TEXT.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getMode</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.livekit.SimulationMode mode = 9;</code></p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
             </section>
 
 </article>
@@ -893,7 +1039,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">129</span>
+    <span class="phpdocumentor-element-found-in__line">126</span>
 
     </aside>
 
@@ -932,7 +1078,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
@@ -971,7 +1117,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">151</span>
+    <span class="phpdocumentor-element-found-in__line">148</span>
 
     </aside>
 
@@ -1002,9 +1148,9 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getScenarios">
-        getScenarios()
-        <a href="classes/Livekit-SimulationRun-Create-Request.html#method_getScenarios" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getScenarioGroup">
+        getScenarioGroup()
+        <a href="classes/Livekit-SimulationRun-Create-Request.html#method_getScenarioGroup" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
@@ -1014,16 +1160,19 @@ Optional. Data for populating the Message object.</p>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;.livekit.SimulationRun.Create.Scenarios scenarios = 7;&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">When set, run these scenarios (loaded from a scenarios.yaml).</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getScenarios</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Livekit-SimulationRun-Create-Scenarios.html"><abbr title="\Livekit\SimulationRun\Create\Scenarios">Scenarios</abbr></a>|null</span></code>
+                    <span class="phpdocumentor-signature__name">getScenarioGroup</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Livekit-ScenarioGroup.html"><abbr title="\Livekit\ScenarioGroup">ScenarioGroup</abbr></a>|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>When unset, generate num_simulations scenarios from the uploaded agent source.</p>
+<p>Generated from protobuf field <code class="prettyprint">optional .livekit.ScenarioGroup scenario_group = 7;</code></p>
+</section>
+
     
     
 
@@ -1031,7 +1180,7 @@ Optional. Data for populating the Message object.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Livekit-SimulationRun-Create-Scenarios.html"><abbr title="\Livekit\SimulationRun\Create\Scenarios">Scenarios</abbr></a>|null</span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Livekit-ScenarioGroup.html"><abbr title="\Livekit\ScenarioGroup">ScenarioGroup</abbr></a>|null</span>
             </section>
 
 </article>
@@ -1041,60 +1190,22 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getSource">
-        getSource()
-        <a href="classes/Livekit-SimulationRun-Create-Request.html#method_getSource" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_hasConcurrency">
+        hasConcurrency()
+        <a href="classes/Livekit-SimulationRun-Create-Request.html#method_hasConcurrency" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">226</span>
+    <span class="phpdocumentor-element-found-in__line">216</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getSource</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_hasGroupId">
-        hasGroupId()
-        <a href="classes/Livekit-SimulationRun-Create-Request.html#method_hasGroupId" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">205</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">hasGroupId</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">hasConcurrency</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1113,9 +1224,9 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_hasScenarios">
-        hasScenarios()
-        <a href="classes/Livekit-SimulationRun-Create-Request.html#method_hasScenarios" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_hasScenarioGroup">
+        hasScenarioGroup()
+        <a href="classes/Livekit-SimulationRun-Create-Request.html#method_hasScenarioGroup" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
@@ -1128,7 +1239,7 @@ Optional. Data for populating the Message object.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">hasScenarios</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">hasScenarioGroup</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1140,55 +1251,6 @@ Optional. Data for populating the Message object.</p>
         
     
     
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setAgentDescription">
-        setAgentDescription()
-        <a href="classes/Livekit-SimulationRun-Create-Request.html#method_setAgentDescription" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">117</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;string agent_description = 3;&lt;/code&gt;</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setAgentDescription</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$var</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        
-    
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">$this</span>
-            </section>
-
 </article>
                     <article
         class="phpdocumentor-element
@@ -1204,7 +1266,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">95</span>
+    <span class="phpdocumentor-element-found-in__line">114</span>
 
     </aside>
 
@@ -1245,33 +1307,87 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_setGroupId">
-        setGroupId()
-        <a href="classes/Livekit-SimulationRun-Create-Request.html#method_setGroupId" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_setConcurrency">
+        setConcurrency()
+        <a href="classes/Livekit-SimulationRun-Create-Request.html#method_setConcurrency" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">215</span>
+    <span class="phpdocumentor-element-found-in__line">234</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;string group_id = 5;&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">Maximum simulate jobs running in parallel for this run. Clamped to the
+project&#039;s concurrency quota; 0/unset uses the server default.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setGroupId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                    <span class="phpdocumentor-signature__name">setConcurrency</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">optional int32 concurrency = 8;</code></p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$var</span>
-                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setMode">
+        setMode()
+        <a href="classes/Livekit-SimulationRun-Create-Request.html#method_setMode" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">260</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Conversation mode for every job in this run; unspecified = TEXT.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setMode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.livekit.SimulationMode mode = 9;</code></p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1302,7 +1418,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">139</span>
+    <span class="phpdocumentor-element-found-in__line">136</span>
 
     </aside>
 
@@ -1351,7 +1467,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">92</span>
 
     </aside>
 
@@ -1400,7 +1516,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">161</span>
+    <span class="phpdocumentor-element-found-in__line">158</span>
 
     </aside>
 
@@ -1441,33 +1557,36 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_setScenarios">
-        setScenarios()
-        <a href="classes/Livekit-SimulationRun-Create-Request.html#method_setScenarios" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_setScenarioGroup">
+        setScenarioGroup()
+        <a href="classes/Livekit-SimulationRun-Create-Request.html#method_setScenarioGroup" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun/Create/Request.php"><a href="files/src-gen-livekit-simulationrun-create-request.html"><abbr title="src/gen/Livekit/SimulationRun/Create/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">188</span>
+    <span class="phpdocumentor-element-found-in__line">196</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;.livekit.SimulationRun.Create.Scenarios scenarios = 7;&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">When set, run these scenarios (loaded from a scenarios.yaml).</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setScenarios</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Livekit-SimulationRun-Create-Scenarios.html"><abbr title="\Livekit\SimulationRun\Create\Scenarios">Scenarios</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                    <span class="phpdocumentor-signature__name">setScenarioGroup</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Livekit-ScenarioGroup.html"><abbr title="\Livekit\ScenarioGroup">ScenarioGroup</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>When unset, generate num_simulations scenarios from the uploaded agent source.</p>
+<p>Generated from protobuf field <code class="prettyprint">optional .livekit.ScenarioGroup scenario_group = 7;</code></p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$var</span>
-                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Livekit-SimulationRun-Create-Scenarios.html"><abbr title="\Livekit\SimulationRun\Create\Scenarios">Scenarios</abbr></a></span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Livekit-ScenarioGroup.html"><abbr title="\Livekit\ScenarioGroup">ScenarioGroup</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1506,12 +1625,13 @@ Optional. Data for populating the Message object.</p>
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#property_agent_description">$agent_description</a></li>
                                                     <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#property_agent_name">$agent_name</a></li>
+                                                    <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#property_concurrency">$concurrency</a></li>
+                                                    <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#property_mode">$mode</a></li>
                                                     <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#property_num_simulations">$num_simulations</a></li>
                                                     <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#property_project_id">$project_id</a></li>
                                                     <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#property_region">$region</a></li>
-                                                    <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#property_source">$source</a></li>
+                                                    <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#property_scenario_group">$scenario_group</a></li>
                                             </ul>
                 </li>
             
@@ -1519,23 +1639,24 @@ Optional. Data for populating the Message object.</p>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method_getAgentDescription">getAgentDescription()</a></li>
+                                            <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method_clearConcurrency">clearConcurrency()</a></li>
+                                            <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method_clearScenarioGroup">clearScenarioGroup()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method_getAgentName">getAgentName()</a></li>
-                                            <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method_getGroupId">getGroupId()</a></li>
+                                            <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method_getConcurrency">getConcurrency()</a></li>
+                                            <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method_getMode">getMode()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method_getNumSimulations">getNumSimulations()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method_getProjectId">getProjectId()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method_getRegion">getRegion()</a></li>
-                                            <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method_getScenarios">getScenarios()</a></li>
-                                            <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method_getSource">getSource()</a></li>
-                                            <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method_hasGroupId">hasGroupId()</a></li>
-                                            <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method_hasScenarios">hasScenarios()</a></li>
-                                            <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method_setAgentDescription">setAgentDescription()</a></li>
+                                            <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method_getScenarioGroup">getScenarioGroup()</a></li>
+                                            <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method_hasConcurrency">hasConcurrency()</a></li>
+                                            <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method_hasScenarioGroup">hasScenarioGroup()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method_setAgentName">setAgentName()</a></li>
-                                            <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method_setGroupId">setGroupId()</a></li>
+                                            <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method_setConcurrency">setConcurrency()</a></li>
+                                            <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method_setMode">setMode()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method_setNumSimulations">setNumSimulations()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method_setProjectId">setProjectId()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method_setRegion">setRegion()</a></li>
-                                            <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method_setScenarios">setScenarios()</a></li>
+                                            <li class=""><a href="classes/Livekit-SimulationRun-Create-Request.html#method_setScenarioGroup">setScenarioGroup()</a></li>
                                     </ul>
             </li>
                     </ul>

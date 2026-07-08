@@ -112,6 +112,14 @@
                 
             </li>
                     <li>
+                <a href="namespaces/livekit-datatrackframeencoding.html" class="">DataTrackFrameEncoding</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-datatrackschemaencoding.html" class="">DataTrackSchemaEncoding</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/livekit-datatracksubscriberhandles.html" class="">DataTrackSubscriberHandles</a>
                 
             </li>
@@ -153,10 +161,6 @@
             </li>
                     <li>
                 <a href="namespaces/livekit-scenario.html" class="">Scenario</a>
-                
-            </li>
-                    <li>
-                <a href="namespaces/livekit-scenariogroup.html" class="">ScenarioGroup</a>
                 
             </li>
                     <li>
@@ -251,7 +255,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
@@ -333,11 +337,18 @@
 <dd>Map SIP headers from 200 OK to sip.h.* participant attributes automatically.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a class="" href="classes/Livekit-SIPOutboundTrunkInfo.html#property_media_encryption">$media_encryption</a>
+    <a class="" href="classes/Livekit-SIPOutboundTrunkInfo.html#property_media">$media</a>
     <span>
                         &nbsp;: mixed            </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;.livekit.SIPMediaEncryption media_encryption = 13;&lt;/code&gt;</dd>
+<dd>Generated from protobuf field &lt;code&gt;.livekit.SIPMediaConfig media = 18;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="-deprecated" href="classes/Livekit-SIPOutboundTrunkInfo.html#property_media_encryption">$media_encryption</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;.livekit.SIPMediaEncryption media_encryption = 13 [deprecated = true];&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Livekit-SIPOutboundTrunkInfo.html#property_metadata">$metadata</a>
@@ -424,6 +435,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-SIPOutboundTrunkInfo.html#method_clearMedia">clearMedia()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-SIPOutboundTrunkInfo.html#method_clearUpdatedAt">clearUpdatedAt()</a>
     <span>
                                 &nbsp;: mixed    </span>
@@ -500,11 +517,18 @@
 <dd>Map SIP headers from 200 OK to sip.h.* participant attributes automatically.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Livekit-SIPOutboundTrunkInfo.html#method_getMediaEncryption">getMediaEncryption()</a>
+    <a class="" href="classes/Livekit-SIPOutboundTrunkInfo.html#method_getMedia">getMedia()</a>
+    <span>
+                                &nbsp;: <a href="classes/Livekit-SIPMediaConfig.html"><abbr title="\Livekit\SIPMediaConfig">SIPMediaConfig</abbr></a>|null    </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;.livekit.SIPMediaConfig media = 18;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="-deprecated" href="classes/Livekit-SIPOutboundTrunkInfo.html#method_getMediaEncryption">getMediaEncryption()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;.livekit.SIPMediaEncryption media_encryption = 13;&lt;/code&gt;</dd>
+<dd>Generated from protobuf field &lt;code&gt;.livekit.SIPMediaEncryption media_encryption = 13 [deprecated = true];&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-SIPOutboundTrunkInfo.html#method_getMetadata">getMetadata()</a>
@@ -523,7 +547,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-SIPOutboundTrunkInfo.html#method_getNumbers">getNumbers()</a>
     <span>
-                                &nbsp;: <abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, string&gt;    </span>
+                                &nbsp;: <abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr>    </span>
 </dt>
 <dd>Numbers used to make the calls. Random one from this list will be selected.</dd>
 
@@ -550,6 +574,12 @@
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-SIPOutboundTrunkInfo.html#method_hasCreatedAt">hasCreatedAt()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-SIPOutboundTrunkInfo.html#method_hasMedia">hasMedia()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
@@ -631,11 +661,18 @@
 <dd>Map SIP headers from 200 OK to sip.h.* participant attributes automatically.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Livekit-SIPOutboundTrunkInfo.html#method_setMediaEncryption">setMediaEncryption()</a>
+    <a class="" href="classes/Livekit-SIPOutboundTrunkInfo.html#method_setMedia">setMedia()</a>
     <span>
                                 &nbsp;: $this    </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;.livekit.SIPMediaEncryption media_encryption = 13;&lt;/code&gt;</dd>
+<dd>Generated from protobuf field &lt;code&gt;.livekit.SIPMediaConfig media = 18;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="-deprecated" href="classes/Livekit-SIPOutboundTrunkInfo.html#method_setMediaEncryption">setMediaEncryption()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;.livekit.SIPMediaEncryption media_encryption = 13 [deprecated = true];&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-SIPOutboundTrunkInfo.html#method_setMetadata">setMetadata()</a>
@@ -709,7 +746,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -750,7 +787,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -788,7 +825,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -829,7 +866,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">114</span>
+    <span class="phpdocumentor-element-found-in__line">118</span>
 
     </aside>
 
@@ -867,7 +904,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -907,7 +944,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">110</span>
+    <span class="phpdocumentor-element-found-in__line">114</span>
 
     </aside>
 
@@ -949,7 +986,7 @@ Enables originating calls from custom domains.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">98</span>
+    <span class="phpdocumentor-element-found-in__line">97</span>
 
     </aside>
 
@@ -982,6 +1019,44 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
             -protected
                                                                     "
 >
+    <h4 class="phpdocumentor-element__name" id="property_media">
+        $media
+        <a href="classes/Livekit-SIPOutboundTrunkInfo.html#property_media" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">106</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;.livekit.SIPMediaConfig media = 18;&lt;/code&gt;</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$media</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                        -deprecated                                            "
+>
     <h4 class="phpdocumentor-element__name" id="property_media_encryption">
         $media_encryption
         <a href="classes/Livekit-SIPOutboundTrunkInfo.html#property_media_encryption" class="headerlink"><i class="fas fa-link"></i></a>
@@ -996,10 +1071,16 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;.livekit.SIPMediaEncryption media_encryption = 13;&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;.livekit.SIPMediaEncryption media_encryption = 13 [deprecated = true];&lt;/code&gt;</p>
 
+                <div class="phpdocumentor-admonition">
+        <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+            <article>
+                
+            </article>
+        </div>
     
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
         <span class="phpdocumentor-signature__visibility">protected</span>
             <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">$media_encryption</span>
@@ -1030,7 +1111,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -1070,7 +1151,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -1110,7 +1191,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -1148,7 +1229,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -1188,7 +1269,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">118</span>
+    <span class="phpdocumentor-element-found-in__line">122</span>
 
     </aside>
 
@@ -1226,7 +1307,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
@@ -1267,7 +1348,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -1308,7 +1389,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
@@ -1349,7 +1430,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -1394,7 +1475,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">167</span>
+    <span class="phpdocumentor-element-found-in__line">172</span>
 
     </aside>
 
@@ -1429,7 +1510,7 @@ Optional. Data for populating the Message object.</p>
       country where the call terminates as ISO 3166-1 alpha-2 (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). This will be used by the livekit infrastructure to route calls.
 @type int $transport
       SIP Transport used for outbound call.
-@type string[] $numbers
+@type array&lt;string&gt;|\Google\Protobuf\Internal\RepeatedField $numbers
       Numbers used to make the calls. Random one from this list will be selected.
 @type string $auth_username
       Username and password used to authenticate with SIP server.
@@ -1450,6 +1531,7 @@ Optional. Data for populating the Message object.</p>
       When mapping 200 OK headers to follow-up request headers with attributes_to_headers map,
       lowercase header names should be used, for example: sip.h.x-custom-header.
 @type int $media_encryption
+@type \Livekit\SIPMediaConfig $media
 @type string $from_host
       Optional custom hostname for the 'From' SIP header in outbound INVITEs.
       When set, outbound calls from this trunk will use this host instead of the default project SIP domain.
@@ -1483,7 +1565,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">584</span>
+    <span class="phpdocumentor-element-found-in__line">625</span>
 
     </aside>
 
@@ -1491,6 +1573,40 @@ Optional. Data for populating the Message object.</p>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">clearCreatedAt</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_clearMedia">
+        clearMedia()
+        <a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_clearMedia" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">563</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">clearMedia</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1517,7 +1633,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">616</span>
+    <span class="phpdocumentor-element-found-in__line">657</span>
 
     </aside>
 
@@ -1551,7 +1667,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">253</span>
+    <span class="phpdocumentor-element-found-in__line">258</span>
 
     </aside>
 
@@ -1593,7 +1709,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">465</span>
+    <span class="phpdocumentor-element-found-in__line">470</span>
 
     </aside>
 
@@ -1635,7 +1751,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">384</span>
+    <span class="phpdocumentor-element-found-in__line">389</span>
 
     </aside>
 
@@ -1674,7 +1790,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">359</span>
+    <span class="phpdocumentor-element-found-in__line">364</span>
 
     </aside>
 
@@ -1716,7 +1832,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">574</span>
+    <span class="phpdocumentor-element-found-in__line">615</span>
 
     </aside>
 
@@ -1755,7 +1871,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">280</span>
+    <span class="phpdocumentor-element-found-in__line">285</span>
 
     </aside>
 
@@ -1796,7 +1912,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">548</span>
+    <span class="phpdocumentor-element-found-in__line">589</span>
 
     </aside>
 
@@ -1839,7 +1955,7 @@ Enables originating calls from custom domains.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">409</span>
+    <span class="phpdocumentor-element-found-in__line">414</span>
 
     </aside>
 
@@ -1881,7 +1997,7 @@ Enables originating calls from custom domains.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">437</span>
+    <span class="phpdocumentor-element-found-in__line">442</span>
 
     </aside>
 
@@ -1923,7 +2039,7 @@ Enables originating calls from custom domains.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">495</span>
+    <span class="phpdocumentor-element-found-in__line">500</span>
 
     </aside>
 
@@ -1959,6 +2075,45 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getMedia">
+        getMedia()
+        <a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_getMedia" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">553</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;.livekit.SIPMediaConfig media = 18;&lt;/code&gt;</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getMedia</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Livekit-SIPMediaConfig.html"><abbr title="\Livekit\SIPMediaConfig">SIPMediaConfig</abbr></a>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Livekit-SIPMediaConfig.html"><abbr title="\Livekit\SIPMediaConfig">SIPMediaConfig</abbr></a>|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+            -deprecated                                            "
+>
     <h4 class="phpdocumentor-element__name" id="method_getMediaEncryption">
         getMediaEncryption()
         <a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_getMediaEncryption" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1967,17 +2122,23 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">522</span>
+    <span class="phpdocumentor-element-found-in__line">528</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;.livekit.SIPMediaEncryption media_encryption = 13;&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;.livekit.SIPMediaEncryption media_encryption = 13 [deprecated = true];&lt;/code&gt;</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getMediaEncryption</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
     <div class="phpdocumentor-label-line">
+        </div>
+                <div class="phpdocumentor-admonition">
+        <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+            <article>
+                
+            </article>
         </div>
     
     
@@ -2006,7 +2167,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">226</span>
+    <span class="phpdocumentor-element-found-in__line">231</span>
 
     </aside>
 
@@ -2047,7 +2208,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">200</span>
+    <span class="phpdocumentor-element-found-in__line">205</span>
 
     </aside>
 
@@ -2088,7 +2249,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">332</span>
+    <span class="phpdocumentor-element-found-in__line">337</span>
 
     </aside>
 
@@ -2096,7 +2257,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getNumbers</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, string&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">getNumbers</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2111,7 +2272,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, string&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr></span>
             </section>
 
 </article>
@@ -2129,7 +2290,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">176</span>
+    <span class="phpdocumentor-element-found-in__line">181</span>
 
     </aside>
 
@@ -2168,7 +2329,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">306</span>
+    <span class="phpdocumentor-element-found-in__line">311</span>
 
     </aside>
 
@@ -2209,7 +2370,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">606</span>
+    <span class="phpdocumentor-element-found-in__line">647</span>
 
     </aside>
 
@@ -2248,7 +2409,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">579</span>
+    <span class="phpdocumentor-element-found-in__line">620</span>
 
     </aside>
 
@@ -2256,6 +2417,40 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">hasCreatedAt</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_hasMedia">
+        hasMedia()
+        <a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_hasMedia" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">558</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">hasMedia</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2282,7 +2477,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">611</span>
+    <span class="phpdocumentor-element-found-in__line">652</span>
 
     </aside>
 
@@ -2316,7 +2511,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">266</span>
+    <span class="phpdocumentor-element-found-in__line">271</span>
 
     </aside>
 
@@ -2368,7 +2563,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">478</span>
+    <span class="phpdocumentor-element-found-in__line">483</span>
 
     </aside>
 
@@ -2420,7 +2615,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">394</span>
+    <span class="phpdocumentor-element-found-in__line">399</span>
 
     </aside>
 
@@ -2469,7 +2664,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">372</span>
+    <span class="phpdocumentor-element-found-in__line">377</span>
 
     </aside>
 
@@ -2521,7 +2716,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">594</span>
+    <span class="phpdocumentor-element-found-in__line">635</span>
 
     </aside>
 
@@ -2570,7 +2765,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">292</span>
+    <span class="phpdocumentor-element-found-in__line">297</span>
 
     </aside>
 
@@ -2621,7 +2816,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">562</span>
+    <span class="phpdocumentor-element-found-in__line">603</span>
 
     </aside>
 
@@ -2674,7 +2869,7 @@ Enables originating calls from custom domains.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">422</span>
+    <span class="phpdocumentor-element-found-in__line">427</span>
 
     </aside>
 
@@ -2726,7 +2921,7 @@ Enables originating calls from custom domains.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">450</span>
+    <span class="phpdocumentor-element-found-in__line">455</span>
 
     </aside>
 
@@ -2778,7 +2973,7 @@ Enables originating calls from custom domains.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">510</span>
+    <span class="phpdocumentor-element-found-in__line">515</span>
 
     </aside>
 
@@ -2824,6 +3019,55 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_setMedia">
+        setMedia()
+        <a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_setMedia" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">573</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;.livekit.SIPMediaConfig media = 18;&lt;/code&gt;</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setMedia</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Livekit-SIPMediaConfig.html"><abbr title="\Livekit\SIPMediaConfig">SIPMediaConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Livekit-SIPMediaConfig.html"><abbr title="\Livekit\SIPMediaConfig">SIPMediaConfig</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+            -deprecated                                            "
+>
     <h4 class="phpdocumentor-element__name" id="method_setMediaEncryption">
         setMediaEncryption()
         <a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_setMediaEncryption" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2832,17 +3076,23 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">532</span>
+    <span class="phpdocumentor-element-found-in__line">540</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;.livekit.SIPMediaEncryption media_encryption = 13;&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;.livekit.SIPMediaEncryption media_encryption = 13 [deprecated = true];&lt;/code&gt;</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">setMediaEncryption</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
     <div class="phpdocumentor-label-line">
+        </div>
+                <div class="phpdocumentor-admonition">
+        <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+            <article>
+                
+            </article>
         </div>
     
     
@@ -2881,7 +3131,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">238</span>
+    <span class="phpdocumentor-element-found-in__line">243</span>
 
     </aside>
 
@@ -2932,7 +3182,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">212</span>
+    <span class="phpdocumentor-element-found-in__line">217</span>
 
     </aside>
 
@@ -2983,7 +3233,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">344</span>
+    <span class="phpdocumentor-element-found-in__line">349</span>
 
     </aside>
 
@@ -2991,7 +3241,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setNumbers</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                    <span class="phpdocumentor-signature__name">setNumbers</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, string&gt;|<abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -3003,7 +3253,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$var</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, string&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, string&gt;|<abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -3034,7 +3284,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">186</span>
+    <span class="phpdocumentor-element-found-in__line">191</span>
 
     </aside>
 
@@ -3083,7 +3333,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">318</span>
+    <span class="phpdocumentor-element-found-in__line">323</span>
 
     </aside>
 
@@ -3134,7 +3384,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SIPOutboundTrunkInfo.php"><a href="files/src-gen-livekit-sipoutboundtrunkinfo.html"><abbr title="src/gen/Livekit/SIPOutboundTrunkInfo.php">SIPOutboundTrunkInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">626</span>
+    <span class="phpdocumentor-element-found-in__line">667</span>
 
     </aside>
 
@@ -3198,7 +3448,8 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
                                                     <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#property_destination_country">$destination_country</a></li>
                                                     <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#property_from_host">$from_host</a></li>
                                                     <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#property_include_headers">$include_headers</a></li>
-                                                    <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#property_media_encryption">$media_encryption</a></li>
+                                                    <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#property_media">$media</a></li>
+                                                    <li class="-deprecated"><a href="classes/Livekit-SIPOutboundTrunkInfo.html#property_media_encryption">$media_encryption</a></li>
                                                     <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#property_metadata">$metadata</a></li>
                                                     <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#property_name">$name</a></li>
                                                     <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#property_sip_trunk_id">$sip_trunk_id</a></li>
@@ -3216,6 +3467,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_clearCreatedAt">clearCreatedAt()</a></li>
+                                            <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_clearMedia">clearMedia()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_clearUpdatedAt">clearUpdatedAt()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_getAddress">getAddress()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_getAttributesToHeaders">getAttributesToHeaders()</a></li>
@@ -3227,7 +3479,8 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
                                             <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_getHeaders">getHeaders()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_getHeadersToAttributes">getHeadersToAttributes()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_getIncludeHeaders">getIncludeHeaders()</a></li>
-                                            <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_getMediaEncryption">getMediaEncryption()</a></li>
+                                            <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_getMedia">getMedia()</a></li>
+                                            <li class="-deprecated"><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_getMediaEncryption">getMediaEncryption()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_getMetadata">getMetadata()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_getName">getName()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_getNumbers">getNumbers()</a></li>
@@ -3235,6 +3488,7 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
                                             <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_getTransport">getTransport()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_getUpdatedAt">getUpdatedAt()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_hasCreatedAt">hasCreatedAt()</a></li>
+                                            <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_hasMedia">hasMedia()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_hasUpdatedAt">hasUpdatedAt()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_setAddress">setAddress()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_setAttributesToHeaders">setAttributesToHeaders()</a></li>
@@ -3246,7 +3500,8 @@ lowercase header names should be used, for example: sip.h.x-custom-header.</p>
                                             <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_setHeaders">setHeaders()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_setHeadersToAttributes">setHeadersToAttributes()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_setIncludeHeaders">setIncludeHeaders()</a></li>
-                                            <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_setMediaEncryption">setMediaEncryption()</a></li>
+                                            <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_setMedia">setMedia()</a></li>
+                                            <li class="-deprecated"><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_setMediaEncryption">setMediaEncryption()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_setMetadata">setMetadata()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_setName">setName()</a></li>
                                             <li class=""><a href="classes/Livekit-SIPOutboundTrunkInfo.html#method_setNumbers">setNumbers()</a></li>

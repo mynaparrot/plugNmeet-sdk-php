@@ -112,6 +112,14 @@
                 
             </li>
                     <li>
+                <a href="namespaces/livekit-datatrackframeencoding.html" class="">DataTrackFrameEncoding</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-datatrackschemaencoding.html" class="">DataTrackSchemaEncoding</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/livekit-datatracksubscriberhandles.html" class="">DataTrackSubscriberHandles</a>
                 
             </li>
@@ -153,10 +161,6 @@
             </li>
                     <li>
                 <a href="namespaces/livekit-scenario.html" class="">Scenario</a>
-                
-            </li>
-                    <li>
-                <a href="namespaces/livekit-scenariogroup.html" class="">ScenarioGroup</a>
                 
             </li>
                     <li>
@@ -251,7 +255,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
@@ -340,6 +344,13 @@
 <dd>Generated from protobuf field &lt;code&gt;bool deployment_enabled = 18;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Livekit-AgentDeployment.html#property_last_scraped_at">$last_scraped_at</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;.google.protobuf.Timestamp last_scraped_at = 19;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Livekit-AgentDeployment.html#property_max_replicas">$max_replicas</a>
     <span>
                         &nbsp;: mixed            </span>
@@ -425,6 +436,12 @@
 <dd>Constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-AgentDeployment.html#method_clearLastScrapedAt">clearLastScrapedAt()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-AgentDeployment.html#method_getAgentId">getAgentId()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -483,9 +500,16 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-AgentDeployment.html#method_getEvents">getEvents()</a>
     <span>
-                                &nbsp;: <abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, <a href="classes/Livekit-AgentEvent.html"><abbr title="\Livekit\AgentEvent">AgentEvent</abbr></a>&gt;    </span>
+                                &nbsp;: <abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr>    </span>
 </dt>
 <dd>Generated from protobuf field &lt;code&gt;repeated .livekit.AgentEvent events = 14;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-AgentDeployment.html#method_getLastScrapedAt">getLastScrapedAt()</a>
+    <span>
+                                &nbsp;: <abbr title="\Google\Protobuf\Timestamp">Timestamp</abbr>|null    </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;.google.protobuf.Timestamp last_scraped_at = 19;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-AgentDeployment.html#method_getMaxReplicas">getMaxReplicas()</a>
@@ -551,6 +575,12 @@
 <dd>Generated from protobuf field &lt;code&gt;string version = 16;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-AgentDeployment.html#method_hasLastScrapedAt">hasLastScrapedAt()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-AgentDeployment.html#method_setAgentId">setAgentId()</a>
     <span>
                                 &nbsp;: $this    </span>
@@ -612,6 +642,13 @@
                                 &nbsp;: $this    </span>
 </dt>
 <dd>Generated from protobuf field &lt;code&gt;repeated .livekit.AgentEvent events = 14;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-AgentDeployment.html#method_setLastScrapedAt">setLastScrapedAt()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;.google.protobuf.Timestamp last_scraped_at = 19;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-AgentDeployment.html#method_setMaxReplicas">setMaxReplicas()</a>
@@ -706,7 +743,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -744,7 +781,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">83</span>
 
     </aside>
 
@@ -782,7 +819,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -820,7 +857,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -858,7 +895,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -896,7 +933,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
@@ -934,7 +971,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -972,7 +1009,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 
@@ -1000,6 +1037,44 @@
             -protected
                                                                     "
 >
+    <h4 class="phpdocumentor-element__name" id="property_last_scraped_at">
+        $last_scraped_at
+        <a href="classes/Livekit-AgentDeployment.html#property_last_scraped_at" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">91</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;.google.protobuf.Timestamp last_scraped_at = 19;&lt;/code&gt;</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$last_scraped_at</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
     <h4 class="phpdocumentor-element__name" id="property_max_replicas">
         $max_replicas
         <a href="classes/Livekit-AgentDeployment.html#property_max_replicas" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1010,7 +1085,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -1048,7 +1123,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -1086,7 +1161,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -1124,7 +1199,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -1162,7 +1237,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -1200,7 +1275,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -1238,7 +1313,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -1276,7 +1351,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -1314,7 +1389,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
@@ -1352,7 +1427,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -1395,7 +1470,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">116</span>
+    <span class="phpdocumentor-element-found-in__line">120</span>
 
     </aside>
 
@@ -1431,11 +1506,12 @@ Optional. Data for populating the Message object.</p>
 @type string $mem_limit
 @type string $cpu_limit
 @type string $server_region
-@type \Livekit\AgentEvent[] $events
+@type array&lt;\Livekit\AgentEvent&gt;|\Google\Protobuf\Internal\RepeatedField $events
 @type string $deployment
 @type string $version
 @type string $agent_name
 @type bool $deployment_enabled
+@type \Google\Protobuf\Timestamp $last_scraped_at
 </code></pre>
 <p>}</p>
 </section>
@@ -1443,6 +1519,40 @@ Optional. Data for populating the Message object.</p>
             </dd>
             </dl>
 
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_clearLastScrapedAt">
+        clearLastScrapedAt()
+        <a href="classes/Livekit-AgentDeployment.html#method_clearLastScrapedAt" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">535</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">clearLastScrapedAt</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
     
 
         
@@ -1463,7 +1573,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">147</span>
+    <span class="phpdocumentor-element-found-in__line">151</span>
 
     </aside>
 
@@ -1502,7 +1612,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">477</span>
+    <span class="phpdocumentor-element-found-in__line">481</span>
 
     </aside>
 
@@ -1541,7 +1651,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">367</span>
+    <span class="phpdocumentor-element-found-in__line">371</span>
 
     </aside>
 
@@ -1580,7 +1690,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">257</span>
+    <span class="phpdocumentor-element-found-in__line">261</span>
 
     </aside>
 
@@ -1619,7 +1729,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">279</span>
+    <span class="phpdocumentor-element-found-in__line">283</span>
 
     </aside>
 
@@ -1658,7 +1768,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">301</span>
+    <span class="phpdocumentor-element-found-in__line">305</span>
 
     </aside>
 
@@ -1697,7 +1807,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">433</span>
+    <span class="phpdocumentor-element-found-in__line">437</span>
 
     </aside>
 
@@ -1736,7 +1846,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">499</span>
+    <span class="phpdocumentor-element-found-in__line">503</span>
 
     </aside>
 
@@ -1775,7 +1885,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">411</span>
+    <span class="phpdocumentor-element-found-in__line">415</span>
 
     </aside>
 
@@ -1783,7 +1893,7 @@ Optional. Data for populating the Message object.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getEvents</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, <a href="classes/Livekit-AgentEvent.html"><abbr title="\Livekit\AgentEvent">AgentEvent</abbr></a>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">getEvents</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1796,7 +1906,46 @@ Optional. Data for populating the Message object.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, <a href="classes/Livekit-AgentEvent.html"><abbr title="\Livekit\AgentEvent">AgentEvent</abbr></a>&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getLastScrapedAt">
+        getLastScrapedAt()
+        <a href="classes/Livekit-AgentDeployment.html#method_getLastScrapedAt" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">525</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;.google.protobuf.Timestamp last_scraped_at = 19;&lt;/code&gt;</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getLastScrapedAt</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Timestamp">Timestamp</abbr>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Timestamp">Timestamp</abbr>|null</span>
             </section>
 
 </article>
@@ -1814,7 +1963,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">235</span>
+    <span class="phpdocumentor-element-found-in__line">239</span>
 
     </aside>
 
@@ -1853,7 +2002,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">345</span>
+    <span class="phpdocumentor-element-found-in__line">349</span>
 
     </aside>
 
@@ -1892,7 +2041,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">323</span>
+    <span class="phpdocumentor-element-found-in__line">327</span>
 
     </aside>
 
@@ -1931,7 +2080,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">213</span>
+    <span class="phpdocumentor-element-found-in__line">217</span>
 
     </aside>
 
@@ -1970,7 +2119,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">125</span>
+    <span class="phpdocumentor-element-found-in__line">129</span>
 
     </aside>
 
@@ -2009,7 +2158,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">191</span>
+    <span class="phpdocumentor-element-found-in__line">195</span>
 
     </aside>
 
@@ -2048,7 +2197,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">389</span>
+    <span class="phpdocumentor-element-found-in__line">393</span>
 
     </aside>
 
@@ -2087,7 +2236,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">169</span>
+    <span class="phpdocumentor-element-found-in__line">173</span>
 
     </aside>
 
@@ -2126,7 +2275,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">455</span>
+    <span class="phpdocumentor-element-found-in__line">459</span>
 
     </aside>
 
@@ -2157,6 +2306,40 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_hasLastScrapedAt">
+        hasLastScrapedAt()
+        <a href="classes/Livekit-AgentDeployment.html#method_hasLastScrapedAt" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">530</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">hasLastScrapedAt</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setAgentId">
         setAgentId()
         <a href="classes/Livekit-AgentDeployment.html#method_setAgentId" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2165,7 +2348,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">157</span>
+    <span class="phpdocumentor-element-found-in__line">161</span>
 
     </aside>
 
@@ -2214,7 +2397,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">487</span>
+    <span class="phpdocumentor-element-found-in__line">491</span>
 
     </aside>
 
@@ -2263,7 +2446,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">377</span>
+    <span class="phpdocumentor-element-found-in__line">381</span>
 
     </aside>
 
@@ -2312,7 +2495,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">267</span>
+    <span class="phpdocumentor-element-found-in__line">271</span>
 
     </aside>
 
@@ -2361,7 +2544,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">289</span>
+    <span class="phpdocumentor-element-found-in__line">293</span>
 
     </aside>
 
@@ -2410,7 +2593,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">311</span>
+    <span class="phpdocumentor-element-found-in__line">315</span>
 
     </aside>
 
@@ -2459,7 +2642,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">443</span>
+    <span class="phpdocumentor-element-found-in__line">447</span>
 
     </aside>
 
@@ -2508,7 +2691,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">509</span>
+    <span class="phpdocumentor-element-found-in__line">513</span>
 
     </aside>
 
@@ -2557,7 +2740,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">421</span>
+    <span class="phpdocumentor-element-found-in__line">425</span>
 
     </aside>
 
@@ -2565,7 +2748,7 @@ Optional. Data for populating the Message object.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setEvents</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, <a href="classes/Livekit-AgentEvent.html"><abbr title="\Livekit\AgentEvent">AgentEvent</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                    <span class="phpdocumentor-signature__name">setEvents</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, <a href="classes/Livekit-AgentEvent.html"><abbr title="\Livekit\AgentEvent">AgentEvent</abbr></a>&gt;|<abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2575,7 +2758,56 @@ Optional. Data for populating the Message object.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$var</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, <a href="classes/Livekit-AgentEvent.html"><abbr title="\Livekit\AgentEvent">AgentEvent</abbr></a>&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, <a href="classes/Livekit-AgentEvent.html"><abbr title="\Livekit\AgentEvent">AgentEvent</abbr></a>&gt;|<abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setLastScrapedAt">
+        setLastScrapedAt()
+        <a href="classes/Livekit-AgentDeployment.html#method_setLastScrapedAt" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">545</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;.google.protobuf.Timestamp last_scraped_at = 19;&lt;/code&gt;</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setLastScrapedAt</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Google\Protobuf\Timestamp">Timestamp</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Google\Protobuf\Timestamp">Timestamp</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -2606,7 +2838,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">245</span>
+    <span class="phpdocumentor-element-found-in__line">249</span>
 
     </aside>
 
@@ -2655,7 +2887,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">355</span>
+    <span class="phpdocumentor-element-found-in__line">359</span>
 
     </aside>
 
@@ -2704,7 +2936,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">333</span>
+    <span class="phpdocumentor-element-found-in__line">337</span>
 
     </aside>
 
@@ -2753,7 +2985,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">223</span>
+    <span class="phpdocumentor-element-found-in__line">227</span>
 
     </aside>
 
@@ -2802,7 +3034,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">135</span>
+    <span class="phpdocumentor-element-found-in__line">139</span>
 
     </aside>
 
@@ -2851,7 +3083,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">201</span>
+    <span class="phpdocumentor-element-found-in__line">205</span>
 
     </aside>
 
@@ -2900,7 +3132,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">399</span>
+    <span class="phpdocumentor-element-found-in__line">403</span>
 
     </aside>
 
@@ -2949,7 +3181,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">179</span>
+    <span class="phpdocumentor-element-found-in__line">183</span>
 
     </aside>
 
@@ -2998,7 +3230,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/AgentDeployment.php"><a href="files/src-gen-livekit-agentdeployment.html"><abbr title="src/gen/Livekit/AgentDeployment.php">AgentDeployment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">465</span>
+    <span class="phpdocumentor-element-found-in__line">469</span>
 
     </aside>
 
@@ -3063,6 +3295,7 @@ Optional. Data for populating the Message object.</p>
                                                     <li class=""><a href="classes/Livekit-AgentDeployment.html#property_cur_mem">$cur_mem</a></li>
                                                     <li class=""><a href="classes/Livekit-AgentDeployment.html#property_deployment">$deployment</a></li>
                                                     <li class=""><a href="classes/Livekit-AgentDeployment.html#property_deployment_enabled">$deployment_enabled</a></li>
+                                                    <li class=""><a href="classes/Livekit-AgentDeployment.html#property_last_scraped_at">$last_scraped_at</a></li>
                                                     <li class=""><a href="classes/Livekit-AgentDeployment.html#property_max_replicas">$max_replicas</a></li>
                                                     <li class=""><a href="classes/Livekit-AgentDeployment.html#property_mem_limit">$mem_limit</a></li>
                                                     <li class=""><a href="classes/Livekit-AgentDeployment.html#property_mem_req">$mem_req</a></li>
@@ -3080,6 +3313,7 @@ Optional. Data for populating the Message object.</p>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Livekit-AgentDeployment.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Livekit-AgentDeployment.html#method_clearLastScrapedAt">clearLastScrapedAt()</a></li>
                                             <li class=""><a href="classes/Livekit-AgentDeployment.html#method_getAgentId">getAgentId()</a></li>
                                             <li class=""><a href="classes/Livekit-AgentDeployment.html#method_getAgentName">getAgentName()</a></li>
                                             <li class=""><a href="classes/Livekit-AgentDeployment.html#method_getCpuLimit">getCpuLimit()</a></li>
@@ -3089,6 +3323,7 @@ Optional. Data for populating the Message object.</p>
                                             <li class=""><a href="classes/Livekit-AgentDeployment.html#method_getDeployment">getDeployment()</a></li>
                                             <li class=""><a href="classes/Livekit-AgentDeployment.html#method_getDeploymentEnabled">getDeploymentEnabled()</a></li>
                                             <li class=""><a href="classes/Livekit-AgentDeployment.html#method_getEvents">getEvents()</a></li>
+                                            <li class=""><a href="classes/Livekit-AgentDeployment.html#method_getLastScrapedAt">getLastScrapedAt()</a></li>
                                             <li class=""><a href="classes/Livekit-AgentDeployment.html#method_getMaxReplicas">getMaxReplicas()</a></li>
                                             <li class=""><a href="classes/Livekit-AgentDeployment.html#method_getMemLimit">getMemLimit()</a></li>
                                             <li class=""><a href="classes/Livekit-AgentDeployment.html#method_getMemReq">getMemReq()</a></li>
@@ -3098,6 +3333,7 @@ Optional. Data for populating the Message object.</p>
                                             <li class=""><a href="classes/Livekit-AgentDeployment.html#method_getServerRegion">getServerRegion()</a></li>
                                             <li class=""><a href="classes/Livekit-AgentDeployment.html#method_getStatus">getStatus()</a></li>
                                             <li class=""><a href="classes/Livekit-AgentDeployment.html#method_getVersion">getVersion()</a></li>
+                                            <li class=""><a href="classes/Livekit-AgentDeployment.html#method_hasLastScrapedAt">hasLastScrapedAt()</a></li>
                                             <li class=""><a href="classes/Livekit-AgentDeployment.html#method_setAgentId">setAgentId()</a></li>
                                             <li class=""><a href="classes/Livekit-AgentDeployment.html#method_setAgentName">setAgentName()</a></li>
                                             <li class=""><a href="classes/Livekit-AgentDeployment.html#method_setCpuLimit">setCpuLimit()</a></li>
@@ -3107,6 +3343,7 @@ Optional. Data for populating the Message object.</p>
                                             <li class=""><a href="classes/Livekit-AgentDeployment.html#method_setDeployment">setDeployment()</a></li>
                                             <li class=""><a href="classes/Livekit-AgentDeployment.html#method_setDeploymentEnabled">setDeploymentEnabled()</a></li>
                                             <li class=""><a href="classes/Livekit-AgentDeployment.html#method_setEvents">setEvents()</a></li>
+                                            <li class=""><a href="classes/Livekit-AgentDeployment.html#method_setLastScrapedAt">setLastScrapedAt()</a></li>
                                             <li class=""><a href="classes/Livekit-AgentDeployment.html#method_setMaxReplicas">setMaxReplicas()</a></li>
                                             <li class=""><a href="classes/Livekit-AgentDeployment.html#method_setMemLimit">setMemLimit()</a></li>
                                             <li class=""><a href="classes/Livekit-AgentDeployment.html#method_setMemReq">setMemReq()</a></li>

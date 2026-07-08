@@ -112,6 +112,14 @@
                 
             </li>
                     <li>
+                <a href="namespaces/livekit-datatrackframeencoding.html" class="">DataTrackFrameEncoding</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-datatrackschemaencoding.html" class="">DataTrackSchemaEncoding</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/livekit-datatracksubscriberhandles.html" class="">DataTrackSubscriberHandles</a>
                 
             </li>
@@ -153,10 +161,6 @@
             </li>
                     <li>
                 <a href="namespaces/livekit-scenario.html" class="">Scenario</a>
-                
-            </li>
-                    <li>
-                <a href="namespaces/livekit-scenariogroup.html" class="">ScenarioGroup</a>
                 
             </li>
                     <li>
@@ -252,7 +256,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
@@ -287,6 +291,13 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Livekit-DataStream-Header.html#property_compression">$compression</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;.livekit.DataStream.CompressionType compression = 12;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Livekit-DataStream-Header.html#property_content_header">$content_header</a>
     <span>
                         &nbsp;: mixed            </span>
@@ -298,6 +309,13 @@
                         &nbsp;: mixed            </span>
 </dt>
 <dd>this is set on the DataPacket</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Livekit-DataStream-Header.html#property_inline_content">$inline_content</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Optional inline content so that a data stream can be sent as a single packet for short payloads.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Livekit-DataStream-Header.html#property_mime_type">$mime_type</a>
@@ -357,6 +375,12 @@
 <dd>Constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-DataStream-Header.html#method_clearInlineContent">clearInlineContent()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-DataStream-Header.html#method_clearTotalLength">clearTotalLength()</a>
     <span>
                                 &nbsp;: mixed    </span>
@@ -377,6 +401,13 @@
 <dd>Generated from protobuf field &lt;code&gt;.livekit.DataStream.ByteHeader byte_header = 10;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-DataStream-Header.html#method_getCompression">getCompression()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;.livekit.DataStream.CompressionType compression = 12;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-DataStream-Header.html#method_getContentHeader">getContentHeader()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -388,6 +419,13 @@
                                 &nbsp;: int    </span>
 </dt>
 <dd>this is set on the DataPacket</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-DataStream-Header.html#method_getInlineContent">getInlineContent()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Optional inline content so that a data stream can be sent as a single packet for short payloads.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-DataStream-Header.html#method_getMimeType">getMimeType()</a>
@@ -438,6 +476,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-DataStream-Header.html#method_hasInlineContent">hasInlineContent()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-DataStream-Header.html#method_hasTextHeader">hasTextHeader()</a>
     <span>
                                 &nbsp;: mixed    </span>
@@ -464,11 +508,25 @@
 <dd>Generated from protobuf field &lt;code&gt;.livekit.DataStream.ByteHeader byte_header = 10;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-DataStream-Header.html#method_setCompression">setCompression()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;.livekit.DataStream.CompressionType compression = 12;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="-deprecated" href="classes/Livekit-DataStream-Header.html#method_setEncryptionType">setEncryptionType()</a>
     <span>
                                 &nbsp;: $this    </span>
 </dt>
 <dd>this is set on the DataPacket</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-DataStream-Header.html#method_setInlineContent">setInlineContent()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>Optional inline content so that a data stream can be sent as a single packet for short payloads.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-DataStream-Header.html#method_setMimeType">setMimeType()</a>
@@ -532,6 +590,44 @@
             -protected
                                                                     "
 >
+    <h4 class="phpdocumentor-element__name" id="property_compression">
+        $compression
+        <a href="classes/Livekit-DataStream-Header.html#property_compression" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">66</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;.livekit.DataStream.CompressionType compression = 12;&lt;/code&gt;</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$compression</span>
+     = <span class="phpdocumentor-signature__default-value">0</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
     <h4 class="phpdocumentor-element__name" id="property_content_header">
         $content_header
         <a href="classes/Livekit-DataStream-Header.html#property_content_header" class="headerlink"><i class="fas fa-link"></i></a>
@@ -542,7 +638,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -579,7 +675,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -615,6 +711,46 @@
             -protected
                                                                     "
 >
+    <h4 class="phpdocumentor-element__name" id="property_inline_content">
+        $inline_content
+        <a href="classes/Livekit-DataStream-Header.html#property_inline_content" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">62</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Optional inline content so that a data stream can be sent as a single packet for short payloads.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$inline_content</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">optional bytes inline_content = 11;</code></p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
     <h4 class="phpdocumentor-element__name" id="property_mime_type">
         $mime_type
         <a href="classes/Livekit-DataStream-Header.html#property_mime_type" class="headerlink"><i class="fas fa-link"></i></a>
@@ -625,7 +761,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -663,7 +799,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -703,7 +839,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -743,7 +879,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -781,7 +917,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -821,7 +957,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -866,7 +1002,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">94</span>
 
     </aside>
 
@@ -903,6 +1039,9 @@ Optional. Data for populating the Message object.</p>
       user defined attributes map that can carry additional info
 @type \Livekit\DataStream\TextHeader $text_header
 @type \Livekit\DataStream\ByteHeader $byte_header
+@type string $inline_content
+      Optional inline content so that a data stream can be sent as a single packet for short payloads.
+@type int $compression
 </code></pre>
 <p>}</p>
 </section>
@@ -910,6 +1049,40 @@ Optional. Data for populating the Message object.</p>
             </dd>
             </dl>
 
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_clearInlineContent">
+        clearInlineContent()
+        <a href="classes/Livekit-DataStream-Header.html#method_clearInlineContent" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">357</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">clearInlineContent</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
     
 
         
@@ -930,7 +1103,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">199</span>
+    <span class="phpdocumentor-element-found-in__line">211</span>
 
     </aside>
 
@@ -964,7 +1137,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">257</span>
+    <span class="phpdocumentor-element-found-in__line">267</span>
 
     </aside>
 
@@ -1005,7 +1178,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">308</span>
+    <span class="phpdocumentor-element-found-in__line">318</span>
 
     </aside>
 
@@ -1036,6 +1209,45 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getCompression">
+        getCompression()
+        <a href="classes/Livekit-DataStream-Header.html#method_getCompression" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">381</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;.livekit.DataStream.CompressionType compression = 12;&lt;/code&gt;</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getCompression</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getContentHeader">
         getContentHeader()
         <a href="classes/Livekit-DataStream-Header.html#method_getContentHeader" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1044,7 +1256,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">334</span>
+    <span class="phpdocumentor-element-found-in__line">402</span>
 
     </aside>
 
@@ -1082,7 +1294,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">226</span>
+    <span class="phpdocumentor-element-found-in__line">238</span>
 
     </aside>
 
@@ -1121,6 +1333,47 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getInlineContent">
+        getInlineContent()
+        <a href="classes/Livekit-DataStream-Header.html#method_getInlineContent" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">347</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Optional inline content so that a data stream can be sent as a single packet for short payloads.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getInlineContent</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">optional bytes inline_content = 11;</code></p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getMimeType">
         getMimeType()
         <a href="classes/Livekit-DataStream-Header.html#method_getMimeType" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1129,7 +1382,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">165</span>
+    <span class="phpdocumentor-element-found-in__line">177</span>
 
     </aside>
 
@@ -1168,7 +1421,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">93</span>
+    <span class="phpdocumentor-element-found-in__line">105</span>
 
     </aside>
 
@@ -1209,7 +1462,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">281</span>
+    <span class="phpdocumentor-element-found-in__line">291</span>
 
     </aside>
 
@@ -1248,7 +1501,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">119</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
@@ -1289,7 +1542,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">143</span>
+    <span class="phpdocumentor-element-found-in__line">155</span>
 
     </aside>
 
@@ -1328,7 +1581,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">189</span>
+    <span class="phpdocumentor-element-found-in__line">201</span>
 
     </aside>
 
@@ -1369,7 +1622,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">313</span>
+    <span class="phpdocumentor-element-found-in__line">323</span>
 
     </aside>
 
@@ -1377,6 +1630,40 @@ Optional. Data for populating the Message object.</p>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">hasByteHeader</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_hasInlineContent">
+        hasInlineContent()
+        <a href="classes/Livekit-DataStream-Header.html#method_hasInlineContent" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">352</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">hasInlineContent</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1403,7 +1690,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">286</span>
+    <span class="phpdocumentor-element-found-in__line">296</span>
 
     </aside>
 
@@ -1437,7 +1724,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">194</span>
+    <span class="phpdocumentor-element-found-in__line">206</span>
 
     </aside>
 
@@ -1471,7 +1758,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">269</span>
+    <span class="phpdocumentor-element-found-in__line">279</span>
 
     </aside>
 
@@ -1522,7 +1809,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">323</span>
+    <span class="phpdocumentor-element-found-in__line">333</span>
 
     </aside>
 
@@ -1561,6 +1848,55 @@ Optional. Data for populating the Message object.</p>
         class="phpdocumentor-element
             -method
             -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setCompression">
+        setCompression()
+        <a href="classes/Livekit-DataStream-Header.html#method_setCompression" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">391</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;.livekit.DataStream.CompressionType compression = 12;&lt;/code&gt;</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setCompression</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
             -deprecated                                            "
 >
     <h4 class="phpdocumentor-element__name" id="method_setEncryptionType">
@@ -1571,7 +1907,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">242</span>
+    <span class="phpdocumentor-element-found-in__line">252</span>
 
     </aside>
 
@@ -1620,6 +1956,57 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_setInlineContent">
+        setInlineContent()
+        <a href="classes/Livekit-DataStream-Header.html#method_setInlineContent" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">369</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Optional inline content so that a data stream can be sent as a single packet for short payloads.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setInlineContent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">optional bytes inline_content = 11;</code></p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setMimeType">
         setMimeType()
         <a href="classes/Livekit-DataStream-Header.html#method_setMimeType" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1628,7 +2015,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">175</span>
+    <span class="phpdocumentor-element-found-in__line">187</span>
 
     </aside>
 
@@ -1677,7 +2064,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">117</span>
 
     </aside>
 
@@ -1728,7 +2115,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">296</span>
+    <span class="phpdocumentor-element-found-in__line">306</span>
 
     </aside>
 
@@ -1777,7 +2164,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">143</span>
 
     </aside>
 
@@ -1828,7 +2215,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">153</span>
+    <span class="phpdocumentor-element-found-in__line">165</span>
 
     </aside>
 
@@ -1877,7 +2264,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataStream/Header.php"><a href="files/src-gen-livekit-datastream-header.html"><abbr title="src/gen/Livekit/DataStream/Header.php">Header.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">211</span>
+    <span class="phpdocumentor-element-found-in__line">223</span>
 
     </aside>
 
@@ -1936,8 +2323,10 @@ Optional. Data for populating the Message object.</p>
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Livekit-DataStream-Header.html#property_compression">$compression</a></li>
                                                     <li class=""><a href="classes/Livekit-DataStream-Header.html#property_content_header">$content_header</a></li>
                                                     <li class="-deprecated"><a href="classes/Livekit-DataStream-Header.html#property_encryption_type">$encryption_type</a></li>
+                                                    <li class=""><a href="classes/Livekit-DataStream-Header.html#property_inline_content">$inline_content</a></li>
                                                     <li class=""><a href="classes/Livekit-DataStream-Header.html#property_mime_type">$mime_type</a></li>
                                                     <li class=""><a href="classes/Livekit-DataStream-Header.html#property_stream_id">$stream_id</a></li>
                                                     <li class=""><a href="classes/Livekit-DataStream-Header.html#property_timestamp">$timestamp</a></li>
@@ -1951,11 +2340,14 @@ Optional. Data for populating the Message object.</p>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Livekit-DataStream-Header.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Livekit-DataStream-Header.html#method_clearInlineContent">clearInlineContent()</a></li>
                                             <li class=""><a href="classes/Livekit-DataStream-Header.html#method_clearTotalLength">clearTotalLength()</a></li>
                                             <li class=""><a href="classes/Livekit-DataStream-Header.html#method_getAttributes">getAttributes()</a></li>
                                             <li class=""><a href="classes/Livekit-DataStream-Header.html#method_getByteHeader">getByteHeader()</a></li>
+                                            <li class=""><a href="classes/Livekit-DataStream-Header.html#method_getCompression">getCompression()</a></li>
                                             <li class=""><a href="classes/Livekit-DataStream-Header.html#method_getContentHeader">getContentHeader()</a></li>
                                             <li class="-deprecated"><a href="classes/Livekit-DataStream-Header.html#method_getEncryptionType">getEncryptionType()</a></li>
+                                            <li class=""><a href="classes/Livekit-DataStream-Header.html#method_getInlineContent">getInlineContent()</a></li>
                                             <li class=""><a href="classes/Livekit-DataStream-Header.html#method_getMimeType">getMimeType()</a></li>
                                             <li class=""><a href="classes/Livekit-DataStream-Header.html#method_getStreamId">getStreamId()</a></li>
                                             <li class=""><a href="classes/Livekit-DataStream-Header.html#method_getTextHeader">getTextHeader()</a></li>
@@ -1963,11 +2355,14 @@ Optional. Data for populating the Message object.</p>
                                             <li class=""><a href="classes/Livekit-DataStream-Header.html#method_getTopic">getTopic()</a></li>
                                             <li class=""><a href="classes/Livekit-DataStream-Header.html#method_getTotalLength">getTotalLength()</a></li>
                                             <li class=""><a href="classes/Livekit-DataStream-Header.html#method_hasByteHeader">hasByteHeader()</a></li>
+                                            <li class=""><a href="classes/Livekit-DataStream-Header.html#method_hasInlineContent">hasInlineContent()</a></li>
                                             <li class=""><a href="classes/Livekit-DataStream-Header.html#method_hasTextHeader">hasTextHeader()</a></li>
                                             <li class=""><a href="classes/Livekit-DataStream-Header.html#method_hasTotalLength">hasTotalLength()</a></li>
                                             <li class=""><a href="classes/Livekit-DataStream-Header.html#method_setAttributes">setAttributes()</a></li>
                                             <li class=""><a href="classes/Livekit-DataStream-Header.html#method_setByteHeader">setByteHeader()</a></li>
+                                            <li class=""><a href="classes/Livekit-DataStream-Header.html#method_setCompression">setCompression()</a></li>
                                             <li class="-deprecated"><a href="classes/Livekit-DataStream-Header.html#method_setEncryptionType">setEncryptionType()</a></li>
+                                            <li class=""><a href="classes/Livekit-DataStream-Header.html#method_setInlineContent">setInlineContent()</a></li>
                                             <li class=""><a href="classes/Livekit-DataStream-Header.html#method_setMimeType">setMimeType()</a></li>
                                             <li class=""><a href="classes/Livekit-DataStream-Header.html#method_setStreamId">setStreamId()</a></li>
                                             <li class=""><a href="classes/Livekit-DataStream-Header.html#method_setTextHeader">setTextHeader()</a></li>

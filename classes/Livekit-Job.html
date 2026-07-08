@@ -112,6 +112,14 @@
                 
             </li>
                     <li>
+                <a href="namespaces/livekit-datatrackframeencoding.html" class="">DataTrackFrameEncoding</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-datatrackschemaencoding.html" class="">DataTrackSchemaEncoding</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/livekit-datatracksubscriberhandles.html" class="">DataTrackSubscriberHandles</a>
                 
             </li>
@@ -153,10 +161,6 @@
             </li>
                     <li>
                 <a href="namespaces/livekit-scenario.html" class="">Scenario</a>
-                
-            </li>
-                    <li>
-                <a href="namespaces/livekit-scenariogroup.html" class="">ScenarioGroup</a>
                 
             </li>
                     <li>
@@ -251,7 +255,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
@@ -312,6 +316,13 @@
 <dd>Generated from protobuf field &lt;code&gt;bool enable_recording = 10;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Livekit-Job.html#property_enable_redaction">$enable_redaction</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;bool enable_redaction = 13;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Livekit-Job.html#property_id">$id</a>
     <span>
                         &nbsp;: mixed            </span>
@@ -323,7 +334,7 @@
     <span>
                         &nbsp;: mixed            </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;string metadata = 6;&lt;/code&gt;</dd>
+<dd>Generated from protobuf field &lt;code&gt;string metadata = 6 [(.logger.sensitivity) = SENSITIVITY_PII];&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="-deprecated" href="classes/Livekit-Job.html#property_namespace">$namespace</a>
@@ -359,6 +370,13 @@
                         &nbsp;: mixed            </span>
 </dt>
 <dd>Generated from protobuf field &lt;code&gt;.livekit.JobType type = 2;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Livekit-Job.html#property_attributes">$attributes</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;map&lt;string, string&gt; attributes = 12 [(.logger.sensitivity) = SENSITIVITY_PII];&lt;/code&gt;</dd>
 
     </dl>
 
@@ -401,6 +419,13 @@
 <dd>Generated from protobuf field &lt;code&gt;string agent_name = 7;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-Job.html#method_getAttributes">getAttributes()</a>
+    <span>
+                                &nbsp;: <abbr title="\Google\Protobuf\Internal\MapField">MapField</abbr>    </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;map&lt;string, string&gt; attributes = 12 [(.logger.sensitivity) = SENSITIVITY_PII];&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-Job.html#method_getDeployment">getDeployment()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -422,6 +447,13 @@
 <dd>Generated from protobuf field &lt;code&gt;bool enable_recording = 10;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-Job.html#method_getEnableRedaction">getEnableRedaction()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;bool enable_redaction = 13;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-Job.html#method_getId">getId()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -433,7 +465,7 @@
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;string metadata = 6;&lt;/code&gt;</dd>
+<dd>Generated from protobuf field &lt;code&gt;string metadata = 6 [(.logger.sensitivity) = SENSITIVITY_PII];&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="-deprecated" href="classes/Livekit-Job.html#method_getNamespace">getNamespace()</a>
@@ -496,6 +528,13 @@
 <dd>Generated from protobuf field &lt;code&gt;string agent_name = 7;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-Job.html#method_setAttributes">setAttributes()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;map&lt;string, string&gt; attributes = 12 [(.logger.sensitivity) = SENSITIVITY_PII];&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-Job.html#method_setDeployment">setDeployment()</a>
     <span>
                                 &nbsp;: $this    </span>
@@ -517,6 +556,13 @@
 <dd>Generated from protobuf field &lt;code&gt;bool enable_recording = 10;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-Job.html#method_setEnableRedaction">setEnableRedaction()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;bool enable_redaction = 13;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-Job.html#method_setId">setId()</a>
     <span>
                                 &nbsp;: $this    </span>
@@ -528,7 +574,7 @@
     <span>
                                 &nbsp;: $this    </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;string metadata = 6;&lt;/code&gt;</dd>
+<dd>Generated from protobuf field &lt;code&gt;string metadata = 6 [(.logger.sensitivity) = SENSITIVITY_PII];&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="-deprecated" href="classes/Livekit-Job.html#method_setNamespace">setNamespace()</a>
@@ -595,7 +641,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -633,7 +679,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -671,7 +717,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -709,7 +755,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -737,6 +783,44 @@
             -protected
                                                                     "
 >
+    <h4 class="phpdocumentor-element__name" id="property_enable_redaction">
+        $enable_redaction
+        <a href="classes/Livekit-Job.html#property_enable_redaction" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">68</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;bool enable_redaction = 13;&lt;/code&gt;</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$enable_redaction</span>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
     <h4 class="phpdocumentor-element__name" id="property_id">
         $id
         <a href="classes/Livekit-Job.html#property_id" class="headerlink"><i class="fas fa-link"></i></a>
@@ -747,7 +831,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -785,11 +869,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;string metadata = 6;&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;string metadata = 6 [(.logger.sensitivity) = SENSITIVITY_PII];&lt;/code&gt;</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -823,7 +907,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
@@ -867,7 +951,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -905,7 +989,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -943,7 +1027,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -981,7 +1065,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -993,6 +1077,44 @@
             <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">$type</span>
      = <span class="phpdocumentor-signature__default-value">0</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_attributes">
+        $attributes
+        <a href="classes/Livekit-Job.html#property_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">64</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;map&lt;string, string&gt; attributes = 12 [(.logger.sensitivity) = SENSITIVITY_PII];&lt;/code&gt;</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$attributes</span>
+    </code>
 
     
     
@@ -1024,7 +1146,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 
     </aside>
 
@@ -1058,6 +1180,8 @@ Optional. Data for populating the Message object.</p>
 @type \Livekit\JobState $state
 @type bool $enable_recording
 @type string $deployment
+@type array|\Google\Protobuf\Internal\MapField $attributes
+@type bool $enable_redaction
 </code></pre>
 <p>}</p>
 </section>
@@ -1085,7 +1209,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">199</span>
+    <span class="phpdocumentor-element-found-in__line">208</span>
 
     </aside>
 
@@ -1119,7 +1243,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">167</span>
+    <span class="phpdocumentor-element-found-in__line">176</span>
 
     </aside>
 
@@ -1153,7 +1277,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">303</span>
+    <span class="phpdocumentor-element-found-in__line">310</span>
 
     </aside>
 
@@ -1187,7 +1311,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">271</span>
+    <span class="phpdocumentor-element-found-in__line">278</span>
 
     </aside>
 
@@ -1218,6 +1342,45 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getAttributes">
+        getAttributes()
+        <a href="classes/Livekit-Job.html#method_getAttributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">376</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;map&lt;string, string&gt; attributes = 12 [(.logger.sensitivity) = SENSITIVITY_PII];&lt;/code&gt;</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getAttributes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Internal\MapField">MapField</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Internal\MapField">MapField</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getDeployment">
         getDeployment()
         <a href="classes/Livekit-Job.html#method_getDeployment" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1226,7 +1389,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">347</span>
+    <span class="phpdocumentor-element-found-in__line">354</span>
 
     </aside>
 
@@ -1265,7 +1428,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">113</span>
+    <span class="phpdocumentor-element-found-in__line">122</span>
 
     </aside>
 
@@ -1304,7 +1467,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">325</span>
+    <span class="phpdocumentor-element-found-in__line">332</span>
 
     </aside>
 
@@ -1335,6 +1498,45 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getEnableRedaction">
+        getEnableRedaction()
+        <a href="classes/Livekit-Job.html#method_getEnableRedaction" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">398</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;bool enable_redaction = 13;&lt;/code&gt;</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getEnableRedaction</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getId">
         getId()
         <a href="classes/Livekit-Job.html#method_getId" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1343,7 +1545,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">91</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
     </aside>
 
@@ -1382,11 +1584,11 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">249</span>
+    <span class="phpdocumentor-element-found-in__line">256</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;string metadata = 6;&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;string metadata = 6 [(.logger.sensitivity) = SENSITIVITY_PII];&lt;/code&gt;</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -1421,7 +1623,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">222</span>
+    <span class="phpdocumentor-element-found-in__line">231</span>
 
     </aside>
 
@@ -1466,7 +1668,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">189</span>
+    <span class="phpdocumentor-element-found-in__line">198</span>
 
     </aside>
 
@@ -1505,7 +1707,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">157</span>
+    <span class="phpdocumentor-element-found-in__line">166</span>
 
     </aside>
 
@@ -1544,7 +1746,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">293</span>
+    <span class="phpdocumentor-element-found-in__line">300</span>
 
     </aside>
 
@@ -1583,7 +1785,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">135</span>
+    <span class="phpdocumentor-element-found-in__line">144</span>
 
     </aside>
 
@@ -1622,7 +1824,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">194</span>
+    <span class="phpdocumentor-element-found-in__line">203</span>
 
     </aside>
 
@@ -1656,7 +1858,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">162</span>
+    <span class="phpdocumentor-element-found-in__line">171</span>
 
     </aside>
 
@@ -1690,7 +1892,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">298</span>
+    <span class="phpdocumentor-element-found-in__line">305</span>
 
     </aside>
 
@@ -1724,7 +1926,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">281</span>
+    <span class="phpdocumentor-element-found-in__line">288</span>
 
     </aside>
 
@@ -1765,6 +1967,55 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_setAttributes">
+        setAttributes()
+        <a href="classes/Livekit-Job.html#method_setAttributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">386</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;map&lt;string, string&gt; attributes = 12 [(.logger.sensitivity) = SENSITIVITY_PII];&lt;/code&gt;</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setAttributes</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;|<abbr title="\Google\Protobuf\Internal\MapField">MapField</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;|<abbr title="\Google\Protobuf\Internal\MapField">MapField</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setDeployment">
         setDeployment()
         <a href="classes/Livekit-Job.html#method_setDeployment" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1773,7 +2024,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">357</span>
+    <span class="phpdocumentor-element-found-in__line">364</span>
 
     </aside>
 
@@ -1822,7 +2073,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">123</span>
+    <span class="phpdocumentor-element-found-in__line">132</span>
 
     </aside>
 
@@ -1871,7 +2122,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">335</span>
+    <span class="phpdocumentor-element-found-in__line">342</span>
 
     </aside>
 
@@ -1912,6 +2163,55 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_setEnableRedaction">
+        setEnableRedaction()
+        <a href="classes/Livekit-Job.html#method_setEnableRedaction" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">408</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;bool enable_redaction = 13;&lt;/code&gt;</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setEnableRedaction</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setId">
         setId()
         <a href="classes/Livekit-Job.html#method_setId" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1920,7 +2220,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">110</span>
 
     </aside>
 
@@ -1969,11 +2269,11 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">259</span>
+    <span class="phpdocumentor-element-found-in__line">266</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;string metadata = 6;&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;string metadata = 6 [(.logger.sensitivity) = SENSITIVITY_PII];&lt;/code&gt;</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -2018,7 +2318,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">236</span>
+    <span class="phpdocumentor-element-found-in__line">243</span>
 
     </aside>
 
@@ -2073,7 +2373,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">209</span>
+    <span class="phpdocumentor-element-found-in__line">218</span>
 
     </aside>
 
@@ -2122,7 +2422,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">177</span>
+    <span class="phpdocumentor-element-found-in__line">186</span>
 
     </aside>
 
@@ -2171,7 +2471,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">313</span>
+    <span class="phpdocumentor-element-found-in__line">320</span>
 
     </aside>
 
@@ -2220,7 +2520,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/Job.php"><a href="files/src-gen-livekit-job.html"><abbr title="src/gen/Livekit/Job.php">Job.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">145</span>
+    <span class="phpdocumentor-element-found-in__line">154</span>
 
     </aside>
 
@@ -2281,6 +2581,7 @@ Optional. Data for populating the Message object.</p>
                                                     <li class=""><a href="classes/Livekit-Job.html#property_deployment">$deployment</a></li>
                                                     <li class=""><a href="classes/Livekit-Job.html#property_dispatch_id">$dispatch_id</a></li>
                                                     <li class=""><a href="classes/Livekit-Job.html#property_enable_recording">$enable_recording</a></li>
+                                                    <li class=""><a href="classes/Livekit-Job.html#property_enable_redaction">$enable_redaction</a></li>
                                                     <li class=""><a href="classes/Livekit-Job.html#property_id">$id</a></li>
                                                     <li class=""><a href="classes/Livekit-Job.html#property_metadata">$metadata</a></li>
                                                     <li class="-deprecated"><a href="classes/Livekit-Job.html#property_namespace">$namespace</a></li>
@@ -2288,6 +2589,7 @@ Optional. Data for populating the Message object.</p>
                                                     <li class=""><a href="classes/Livekit-Job.html#property_room">$room</a></li>
                                                     <li class=""><a href="classes/Livekit-Job.html#property_state">$state</a></li>
                                                     <li class=""><a href="classes/Livekit-Job.html#property_type">$type</a></li>
+                                                    <li class=""><a href="classes/Livekit-Job.html#property_attributes">$attributes</a></li>
                                             </ul>
                 </li>
             
@@ -2299,9 +2601,11 @@ Optional. Data for populating the Message object.</p>
                                             <li class=""><a href="classes/Livekit-Job.html#method_clearRoom">clearRoom()</a></li>
                                             <li class=""><a href="classes/Livekit-Job.html#method_clearState">clearState()</a></li>
                                             <li class=""><a href="classes/Livekit-Job.html#method_getAgentName">getAgentName()</a></li>
+                                            <li class=""><a href="classes/Livekit-Job.html#method_getAttributes">getAttributes()</a></li>
                                             <li class=""><a href="classes/Livekit-Job.html#method_getDeployment">getDeployment()</a></li>
                                             <li class=""><a href="classes/Livekit-Job.html#method_getDispatchId">getDispatchId()</a></li>
                                             <li class=""><a href="classes/Livekit-Job.html#method_getEnableRecording">getEnableRecording()</a></li>
+                                            <li class=""><a href="classes/Livekit-Job.html#method_getEnableRedaction">getEnableRedaction()</a></li>
                                             <li class=""><a href="classes/Livekit-Job.html#method_getId">getId()</a></li>
                                             <li class=""><a href="classes/Livekit-Job.html#method_getMetadata">getMetadata()</a></li>
                                             <li class="-deprecated"><a href="classes/Livekit-Job.html#method_getNamespace">getNamespace()</a></li>
@@ -2313,9 +2617,11 @@ Optional. Data for populating the Message object.</p>
                                             <li class=""><a href="classes/Livekit-Job.html#method_hasRoom">hasRoom()</a></li>
                                             <li class=""><a href="classes/Livekit-Job.html#method_hasState">hasState()</a></li>
                                             <li class=""><a href="classes/Livekit-Job.html#method_setAgentName">setAgentName()</a></li>
+                                            <li class=""><a href="classes/Livekit-Job.html#method_setAttributes">setAttributes()</a></li>
                                             <li class=""><a href="classes/Livekit-Job.html#method_setDeployment">setDeployment()</a></li>
                                             <li class=""><a href="classes/Livekit-Job.html#method_setDispatchId">setDispatchId()</a></li>
                                             <li class=""><a href="classes/Livekit-Job.html#method_setEnableRecording">setEnableRecording()</a></li>
+                                            <li class=""><a href="classes/Livekit-Job.html#method_setEnableRedaction">setEnableRedaction()</a></li>
                                             <li class=""><a href="classes/Livekit-Job.html#method_setId">setId()</a></li>
                                             <li class=""><a href="classes/Livekit-Job.html#method_setMetadata">setMetadata()</a></li>
                                             <li class="-deprecated"><a href="classes/Livekit-Job.html#method_setNamespace">setNamespace()</a></li>

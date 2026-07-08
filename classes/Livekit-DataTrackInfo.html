@@ -112,6 +112,14 @@
                 
             </li>
                     <li>
+                <a href="namespaces/livekit-datatrackframeencoding.html" class="">DataTrackFrameEncoding</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-datatrackschemaencoding.html" class="">DataTrackSchemaEncoding</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/livekit-datatracksubscriberhandles.html" class="">DataTrackSubscriberHandles</a>
                 
             </li>
@@ -153,10 +161,6 @@
             </li>
                     <li>
                 <a href="namespaces/livekit-scenario.html" class="">Scenario</a>
-                
-            </li>
-                    <li>
-                <a href="namespaces/livekit-scenariogroup.html" class="">ScenarioGroup</a>
                 
             </li>
                     <li>
@@ -251,7 +255,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataTrackInfo.php"><a href="files/src-gen-livekit-datatrackinfo.html"><abbr title="src/gen/Livekit/DataTrackInfo.php">DataTrackInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
@@ -291,6 +295,13 @@
 <dd>Method used for end-to-end encryption (E2EE) on packet payloads.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Livekit-DataTrackInfo.html#property_frame_encoding">$frame_encoding</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Encoding for frame payloads on this track. If unspecified, the track is untyped.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Livekit-DataTrackInfo.html#property_name">$name</a>
     <span>
                         &nbsp;: mixed            </span>
@@ -303,6 +314,13 @@
                         &nbsp;: mixed            </span>
 </dt>
 <dd>Client-assigned, 16-bit identifier that will be attached to packets sent by the publisher.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Livekit-DataTrackInfo.html#property_schema">$schema</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>ID of the schema used by frames on this track if the track is typed.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Livekit-DataTrackInfo.html#property_sid">$sid</a>
@@ -327,11 +345,30 @@
 <dd>Constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-DataTrackInfo.html#method_clearFrameEncoding">clearFrameEncoding()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-DataTrackInfo.html#method_clearSchema">clearSchema()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-DataTrackInfo.html#method_getEncryption">getEncryption()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
 <dd>Method used for end-to-end encryption (E2EE) on packet payloads.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-DataTrackInfo.html#method_getFrameEncoding">getFrameEncoding()</a>
+    <span>
+                                &nbsp;: <a href="classes/Livekit-DataTrackFrameEncoding.html"><abbr title="\Livekit\DataTrackFrameEncoding">DataTrackFrameEncoding</abbr></a>|null    </span>
+</dt>
+<dd>Encoding for frame payloads on this track. If unspecified, the track is untyped.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-DataTrackInfo.html#method_getName">getName()</a>
@@ -348,6 +385,13 @@
 <dd>Client-assigned, 16-bit identifier that will be attached to packets sent by the publisher.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-DataTrackInfo.html#method_getSchema">getSchema()</a>
+    <span>
+                                &nbsp;: <a href="classes/Livekit-DataTrackSchemaId.html"><abbr title="\Livekit\DataTrackSchemaId">DataTrackSchemaId</abbr></a>|null    </span>
+</dt>
+<dd>ID of the schema used by frames on this track if the track is typed.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-DataTrackInfo.html#method_getSid">getSid()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -355,11 +399,30 @@
 <dd>Server-assigned track identifier.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-DataTrackInfo.html#method_hasFrameEncoding">hasFrameEncoding()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-DataTrackInfo.html#method_hasSchema">hasSchema()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-DataTrackInfo.html#method_setEncryption">setEncryption()</a>
     <span>
                                 &nbsp;: $this    </span>
 </dt>
 <dd>Method used for end-to-end encryption (E2EE) on packet payloads.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-DataTrackInfo.html#method_setFrameEncoding">setFrameEncoding()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>Encoding for frame payloads on this track. If unspecified, the track is untyped.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-DataTrackInfo.html#method_setName">setName()</a>
@@ -374,6 +437,13 @@
                                 &nbsp;: $this    </span>
 </dt>
 <dd>Client-assigned, 16-bit identifier that will be attached to packets sent by the publisher.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-DataTrackInfo.html#method_setSchema">setSchema()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>ID of the schema used by frames on this track if the track is typed.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-DataTrackInfo.html#method_setSid">setSid()</a>
@@ -412,7 +482,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataTrackInfo.php"><a href="files/src-gen-livekit-datatrackinfo.html"><abbr title="src/gen/Livekit/DataTrackInfo.php">DataTrackInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -442,6 +512,46 @@
             -protected
                                                                     "
 >
+    <h4 class="phpdocumentor-element__name" id="property_frame_encoding">
+        $frame_encoding
+        <a href="classes/Livekit-DataTrackInfo.html#property_frame_encoding" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataTrackInfo.php"><a href="files/src-gen-livekit-datatrackinfo.html"><abbr title="src/gen/Livekit/DataTrackInfo.php">DataTrackInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">45</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Encoding for frame payloads on this track. If unspecified, the track is untyped.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$frame_encoding</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">optional .livekit.DataTrackFrameEncoding frame_encoding = 5;</code></p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
     <h4 class="phpdocumentor-element__name" id="property_name">
         $name
         <a href="classes/Livekit-DataTrackInfo.html#property_name" class="headerlink"><i class="fas fa-link"></i></a>
@@ -452,7 +562,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataTrackInfo.php"><a href="files/src-gen-livekit-datatrackinfo.html"><abbr title="src/gen/Livekit/DataTrackInfo.php">DataTrackInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -492,7 +602,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataTrackInfo.php"><a href="files/src-gen-livekit-datatrackinfo.html"><abbr title="src/gen/Livekit/DataTrackInfo.php">DataTrackInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -522,6 +632,46 @@
             -protected
                                                                     "
 >
+    <h4 class="phpdocumentor-element__name" id="property_schema">
+        $schema
+        <a href="classes/Livekit-DataTrackInfo.html#property_schema" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataTrackInfo.php"><a href="files/src-gen-livekit-datatrackinfo.html"><abbr title="src/gen/Livekit/DataTrackInfo.php">DataTrackInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">51</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">ID of the schema used by frames on this track if the track is typed.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$schema</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">optional .livekit.DataTrackSchemaId schema = 6;</code></p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
     <h4 class="phpdocumentor-element__name" id="property_sid">
         $sid
         <a href="classes/Livekit-DataTrackInfo.html#property_sid" class="headerlink"><i class="fas fa-link"></i></a>
@@ -532,7 +682,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataTrackInfo.php"><a href="files/src-gen-livekit-datatrackinfo.html"><abbr title="src/gen/Livekit/DataTrackInfo.php">DataTrackInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -577,7 +727,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataTrackInfo.php"><a href="files/src-gen-livekit-datatrackinfo.html"><abbr title="src/gen/Livekit/DataTrackInfo.php">DataTrackInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
@@ -608,6 +758,10 @@ Optional. Data for populating the Message object.</p>
       Human-readable identifier (e.g., `geoLocation`, `servoPosition.x`, etc.), unique per publisher.
 @type int $encryption
       Method used for end-to-end encryption (E2EE) on packet payloads.
+@type \Livekit\DataTrackFrameEncoding $frame_encoding
+      Encoding for frame payloads on this track. If unspecified, the track is untyped.
+@type \Livekit\DataTrackSchemaId $schema
+      ID of the schema used by frames on this track if the track is typed.
 </code></pre>
 <p>}</p>
 </section>
@@ -615,6 +769,74 @@ Optional. Data for populating the Message object.</p>
             </dd>
             </dl>
 
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_clearFrameEncoding">
+        clearFrameEncoding()
+        <a href="classes/Livekit-DataTrackInfo.html#method_clearFrameEncoding" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataTrackInfo.php"><a href="files/src-gen-livekit-datatrackinfo.html"><abbr title="src/gen/Livekit/DataTrackInfo.php">DataTrackInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">198</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">clearFrameEncoding</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_clearSchema">
+        clearSchema()
+        <a href="classes/Livekit-DataTrackInfo.html#method_clearSchema" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataTrackInfo.php"><a href="files/src-gen-livekit-datatrackinfo.html"><abbr title="src/gen/Livekit/DataTrackInfo.php">DataTrackInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">234</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">clearSchema</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
     
 
         
@@ -635,7 +857,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataTrackInfo.php"><a href="files/src-gen-livekit-datatrackinfo.html"><abbr title="src/gen/Livekit/DataTrackInfo.php">DataTrackInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">147</span>
+    <span class="phpdocumentor-element-found-in__line">162</span>
 
     </aside>
 
@@ -668,6 +890,47 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getFrameEncoding">
+        getFrameEncoding()
+        <a href="classes/Livekit-DataTrackInfo.html#method_getFrameEncoding" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataTrackInfo.php"><a href="files/src-gen-livekit-datatrackinfo.html"><abbr title="src/gen/Livekit/DataTrackInfo.php">DataTrackInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">188</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Encoding for frame payloads on this track. If unspecified, the track is untyped.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getFrameEncoding</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Livekit-DataTrackFrameEncoding.html"><abbr title="\Livekit\DataTrackFrameEncoding">DataTrackFrameEncoding</abbr></a>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">optional .livekit.DataTrackFrameEncoding frame_encoding = 5;</code></p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Livekit-DataTrackFrameEncoding.html"><abbr title="\Livekit\DataTrackFrameEncoding">DataTrackFrameEncoding</abbr></a>|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getName">
         getName()
         <a href="classes/Livekit-DataTrackInfo.html#method_getName" class="headerlink"><i class="fas fa-link"></i></a>
@@ -676,7 +939,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataTrackInfo.php"><a href="files/src-gen-livekit-datatrackinfo.html"><abbr title="src/gen/Livekit/DataTrackInfo.php">DataTrackInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">121</span>
+    <span class="phpdocumentor-element-found-in__line">136</span>
 
     </aside>
 
@@ -717,7 +980,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataTrackInfo.php"><a href="files/src-gen-livekit-datatrackinfo.html"><abbr title="src/gen/Livekit/DataTrackInfo.php">DataTrackInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
     </aside>
 
@@ -750,6 +1013,47 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getSchema">
+        getSchema()
+        <a href="classes/Livekit-DataTrackInfo.html#method_getSchema" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataTrackInfo.php"><a href="files/src-gen-livekit-datatrackinfo.html"><abbr title="src/gen/Livekit/DataTrackInfo.php">DataTrackInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">224</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">ID of the schema used by frames on this track if the track is typed.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getSchema</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Livekit-DataTrackSchemaId.html"><abbr title="\Livekit\DataTrackSchemaId">DataTrackSchemaId</abbr></a>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">optional .livekit.DataTrackSchemaId schema = 6;</code></p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Livekit-DataTrackSchemaId.html"><abbr title="\Livekit\DataTrackSchemaId">DataTrackSchemaId</abbr></a>|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getSid">
         getSid()
         <a href="classes/Livekit-DataTrackInfo.html#method_getSid" class="headerlink"><i class="fas fa-link"></i></a>
@@ -758,7 +1062,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataTrackInfo.php"><a href="files/src-gen-livekit-datatrackinfo.html"><abbr title="src/gen/Livekit/DataTrackInfo.php">DataTrackInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">95</span>
+    <span class="phpdocumentor-element-found-in__line">110</span>
 
     </aside>
 
@@ -791,6 +1095,74 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_hasFrameEncoding">
+        hasFrameEncoding()
+        <a href="classes/Livekit-DataTrackInfo.html#method_hasFrameEncoding" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataTrackInfo.php"><a href="files/src-gen-livekit-datatrackinfo.html"><abbr title="src/gen/Livekit/DataTrackInfo.php">DataTrackInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">193</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">hasFrameEncoding</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_hasSchema">
+        hasSchema()
+        <a href="classes/Livekit-DataTrackInfo.html#method_hasSchema" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataTrackInfo.php"><a href="files/src-gen-livekit-datatrackinfo.html"><abbr title="src/gen/Livekit/DataTrackInfo.php">DataTrackInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">229</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">hasSchema</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setEncryption">
         setEncryption()
         <a href="classes/Livekit-DataTrackInfo.html#method_setEncryption" class="headerlink"><i class="fas fa-link"></i></a>
@@ -799,7 +1171,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataTrackInfo.php"><a href="files/src-gen-livekit-datatrackinfo.html"><abbr title="src/gen/Livekit/DataTrackInfo.php">DataTrackInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">159</span>
+    <span class="phpdocumentor-element-found-in__line">174</span>
 
     </aside>
 
@@ -842,6 +1214,57 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_setFrameEncoding">
+        setFrameEncoding()
+        <a href="classes/Livekit-DataTrackInfo.html#method_setFrameEncoding" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataTrackInfo.php"><a href="files/src-gen-livekit-datatrackinfo.html"><abbr title="src/gen/Livekit/DataTrackInfo.php">DataTrackInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">210</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Encoding for frame payloads on this track. If unspecified, the track is untyped.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setFrameEncoding</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Livekit-DataTrackFrameEncoding.html"><abbr title="\Livekit\DataTrackFrameEncoding">DataTrackFrameEncoding</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">optional .livekit.DataTrackFrameEncoding frame_encoding = 5;</code></p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Livekit-DataTrackFrameEncoding.html"><abbr title="\Livekit\DataTrackFrameEncoding">DataTrackFrameEncoding</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setName">
         setName()
         <a href="classes/Livekit-DataTrackInfo.html#method_setName" class="headerlink"><i class="fas fa-link"></i></a>
@@ -850,7 +1273,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataTrackInfo.php"><a href="files/src-gen-livekit-datatrackinfo.html"><abbr title="src/gen/Livekit/DataTrackInfo.php">DataTrackInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">133</span>
+    <span class="phpdocumentor-element-found-in__line">148</span>
 
     </aside>
 
@@ -901,7 +1324,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataTrackInfo.php"><a href="files/src-gen-livekit-datatrackinfo.html"><abbr title="src/gen/Livekit/DataTrackInfo.php">DataTrackInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 
     </aside>
 
@@ -944,6 +1367,57 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_setSchema">
+        setSchema()
+        <a href="classes/Livekit-DataTrackInfo.html#method_setSchema" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataTrackInfo.php"><a href="files/src-gen-livekit-datatrackinfo.html"><abbr title="src/gen/Livekit/DataTrackInfo.php">DataTrackInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">246</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">ID of the schema used by frames on this track if the track is typed.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setSchema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Livekit-DataTrackSchemaId.html"><abbr title="\Livekit\DataTrackSchemaId">DataTrackSchemaId</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">optional .livekit.DataTrackSchemaId schema = 6;</code></p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Livekit-DataTrackSchemaId.html"><abbr title="\Livekit\DataTrackSchemaId">DataTrackSchemaId</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setSid">
         setSid()
         <a href="classes/Livekit-DataTrackInfo.html#method_setSid" class="headerlink"><i class="fas fa-link"></i></a>
@@ -952,7 +1426,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/DataTrackInfo.php"><a href="files/src-gen-livekit-datatrackinfo.html"><abbr title="src/gen/Livekit/DataTrackInfo.php">DataTrackInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">107</span>
+    <span class="phpdocumentor-element-found-in__line">122</span>
 
     </aside>
 
@@ -1012,8 +1486,10 @@ Optional. Data for populating the Message object.</p>
                 <li>
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="classes/Livekit-DataTrackInfo.html#property_encryption">$encryption</a></li>
+                                                    <li class=""><a href="classes/Livekit-DataTrackInfo.html#property_frame_encoding">$frame_encoding</a></li>
                                                     <li class=""><a href="classes/Livekit-DataTrackInfo.html#property_name">$name</a></li>
                                                     <li class=""><a href="classes/Livekit-DataTrackInfo.html#property_pub_handle">$pub_handle</a></li>
+                                                    <li class=""><a href="classes/Livekit-DataTrackInfo.html#property_schema">$schema</a></li>
                                                     <li class=""><a href="classes/Livekit-DataTrackInfo.html#property_sid">$sid</a></li>
                                             </ul>
                 </li>
@@ -1022,13 +1498,21 @@ Optional. Data for populating the Message object.</p>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Livekit-DataTrackInfo.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Livekit-DataTrackInfo.html#method_clearFrameEncoding">clearFrameEncoding()</a></li>
+                                            <li class=""><a href="classes/Livekit-DataTrackInfo.html#method_clearSchema">clearSchema()</a></li>
                                             <li class=""><a href="classes/Livekit-DataTrackInfo.html#method_getEncryption">getEncryption()</a></li>
+                                            <li class=""><a href="classes/Livekit-DataTrackInfo.html#method_getFrameEncoding">getFrameEncoding()</a></li>
                                             <li class=""><a href="classes/Livekit-DataTrackInfo.html#method_getName">getName()</a></li>
                                             <li class=""><a href="classes/Livekit-DataTrackInfo.html#method_getPubHandle">getPubHandle()</a></li>
+                                            <li class=""><a href="classes/Livekit-DataTrackInfo.html#method_getSchema">getSchema()</a></li>
                                             <li class=""><a href="classes/Livekit-DataTrackInfo.html#method_getSid">getSid()</a></li>
+                                            <li class=""><a href="classes/Livekit-DataTrackInfo.html#method_hasFrameEncoding">hasFrameEncoding()</a></li>
+                                            <li class=""><a href="classes/Livekit-DataTrackInfo.html#method_hasSchema">hasSchema()</a></li>
                                             <li class=""><a href="classes/Livekit-DataTrackInfo.html#method_setEncryption">setEncryption()</a></li>
+                                            <li class=""><a href="classes/Livekit-DataTrackInfo.html#method_setFrameEncoding">setFrameEncoding()</a></li>
                                             <li class=""><a href="classes/Livekit-DataTrackInfo.html#method_setName">setName()</a></li>
                                             <li class=""><a href="classes/Livekit-DataTrackInfo.html#method_setPubHandle">setPubHandle()</a></li>
+                                            <li class=""><a href="classes/Livekit-DataTrackInfo.html#method_setSchema">setSchema()</a></li>
                                             <li class=""><a href="classes/Livekit-DataTrackInfo.html#method_setSid">setSid()</a></li>
                                     </ul>
             </li>

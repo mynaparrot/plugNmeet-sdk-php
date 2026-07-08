@@ -112,6 +112,14 @@
                 
             </li>
                     <li>
+                <a href="namespaces/livekit-datatrackframeencoding.html" class="">DataTrackFrameEncoding</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-datatrackschemaencoding.html" class="">DataTrackSchemaEncoding</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/livekit-datatracksubscriberhandles.html" class="">DataTrackSubscriberHandles</a>
                 
             </li>
@@ -153,10 +161,6 @@
             </li>
                     <li>
                 <a href="namespaces/livekit-scenario.html" class="">Scenario</a>
-                
-            </li>
-                    <li>
-                <a href="namespaces/livekit-scenariogroup.html" class="">ScenarioGroup</a>
                 
             </li>
                     <li>
@@ -251,7 +255,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
@@ -494,6 +498,13 @@
 <dd>Generated from protobuf field &lt;code&gt;float packets_out_per_sec = 15 [deprecated = true];&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Livekit-NodeStats.html#property_participant_rtc_active">$participant_rtc_active</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;uint64 participant_rtc_active = 54;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Livekit-NodeStats.html#property_participant_rtc_canceled">$participant_rtc_canceled</a>
     <span>
                         &nbsp;: mixed            </span>
@@ -541,6 +552,20 @@
                         &nbsp;: mixed            </span>
 </dt>
 <dd>Generated from protobuf field &lt;code&gt;float participant_signal_connected_per_sec = 27 [deprecated = true];&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="-deprecated" href="classes/Livekit-NodeStats.html#property_participant_signal_failed">$participant_signal_failed</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;uint64 participant_signal_failed = 55 [deprecated = true];&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="-deprecated" href="classes/Livekit-NodeStats.html#property_participant_signal_validation_failed">$participant_signal_validation_failed</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;uint64 participant_signal_validation_failed = 56 [deprecated = true];&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Livekit-NodeStats.html#property_retransmit_bytes_out">$retransmit_bytes_out</a>
@@ -880,6 +905,13 @@
 <dd>Generated from protobuf field &lt;code&gt;float packets_out_per_sec = 15 [deprecated = true];&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-NodeStats.html#method_getParticipantRtcActive">getParticipantRtcActive()</a>
+    <span>
+                                &nbsp;: int|string    </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;uint64 participant_rtc_active = 54;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-NodeStats.html#method_getParticipantRtcCanceled">getParticipantRtcCanceled()</a>
     <span>
                                 &nbsp;: int|string    </span>
@@ -929,9 +961,23 @@
 <dd>Generated from protobuf field &lt;code&gt;float participant_signal_connected_per_sec = 27 [deprecated = true];&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="-deprecated" href="classes/Livekit-NodeStats.html#method_getParticipantSignalFailed">getParticipantSignalFailed()</a>
+    <span>
+                                &nbsp;: int|string    </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;uint64 participant_signal_failed = 55 [deprecated = true];&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="-deprecated" href="classes/Livekit-NodeStats.html#method_getParticipantSignalValidationFailed">getParticipantSignalValidationFailed()</a>
+    <span>
+                                &nbsp;: int|string    </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;uint64 participant_signal_validation_failed = 56 [deprecated = true];&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-NodeStats.html#method_getRates">getRates()</a>
     <span>
-                                &nbsp;: <abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, <a href="classes/Livekit-NodeStatsRate.html"><abbr title="\Livekit\NodeStatsRate">NodeStatsRate</abbr></a>&gt;    </span>
+                                &nbsp;: <abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr>    </span>
 </dt>
 <dd>Generated from protobuf field &lt;code&gt;repeated .livekit.NodeStatsRate rates = 50;&lt;/code&gt;</dd>
 
@@ -1251,6 +1297,13 @@
 <dd>Generated from protobuf field &lt;code&gt;float packets_out_per_sec = 15 [deprecated = true];&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-NodeStats.html#method_setParticipantRtcActive">setParticipantRtcActive()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;uint64 participant_rtc_active = 54;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-NodeStats.html#method_setParticipantRtcCanceled">setParticipantRtcCanceled()</a>
     <span>
                                 &nbsp;: $this    </span>
@@ -1298,6 +1351,20 @@
                                 &nbsp;: $this    </span>
 </dt>
 <dd>Generated from protobuf field &lt;code&gt;float participant_signal_connected_per_sec = 27 [deprecated = true];&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="-deprecated" href="classes/Livekit-NodeStats.html#method_setParticipantSignalFailed">setParticipantSignalFailed()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;uint64 participant_signal_failed = 55 [deprecated = true];&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="-deprecated" href="classes/Livekit-NodeStats.html#method_setParticipantSignalValidationFailed">setParticipantSignalValidationFailed()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;uint64 participant_signal_validation_failed = 56 [deprecated = true];&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-NodeStats.html#method_setRates">setRates()</a>
@@ -1441,7 +1508,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
@@ -1481,7 +1548,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">117</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -1525,7 +1592,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">100</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
@@ -1563,7 +1630,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">122</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 
     </aside>
 
@@ -1607,7 +1674,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">158</span>
+    <span class="phpdocumentor-element-found-in__line">157</span>
 
     </aside>
 
@@ -1645,7 +1712,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">257</span>
+    <span class="phpdocumentor-element-found-in__line">270</span>
 
     </aside>
 
@@ -1683,7 +1750,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">253</span>
+    <span class="phpdocumentor-element-found-in__line">266</span>
 
     </aside>
 
@@ -1723,7 +1790,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">154</span>
+    <span class="phpdocumentor-element-found-in__line">153</span>
 
     </aside>
 
@@ -1761,7 +1828,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">146</span>
+    <span class="phpdocumentor-element-found-in__line">145</span>
 
     </aside>
 
@@ -1799,7 +1866,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">150</span>
+    <span class="phpdocumentor-element-found-in__line">149</span>
 
     </aside>
 
@@ -1837,7 +1904,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">163</span>
+    <span class="phpdocumentor-element-found-in__line">162</span>
 
     </aside>
 
@@ -1881,7 +1948,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">167</span>
+    <span class="phpdocumentor-element-found-in__line">166</span>
 
     </aside>
 
@@ -1919,7 +1986,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">171</span>
+    <span class="phpdocumentor-element-found-in__line">170</span>
 
     </aside>
 
@@ -1957,7 +2024,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">136</span>
+    <span class="phpdocumentor-element-found-in__line">135</span>
 
     </aside>
 
@@ -2001,7 +2068,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">111</span>
 
     </aside>
 
@@ -2039,7 +2106,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -2077,7 +2144,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">142</span>
+    <span class="phpdocumentor-element-found-in__line">141</span>
 
     </aside>
 
@@ -2117,7 +2184,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -2157,7 +2224,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -2195,7 +2262,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -2233,7 +2300,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -2271,7 +2338,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -2309,7 +2376,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
@@ -2347,7 +2414,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -2385,7 +2452,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -2423,7 +2490,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -2461,7 +2528,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
     </aside>
 
@@ -2499,7 +2566,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">126</span>
+    <span class="phpdocumentor-element-found-in__line">125</span>
 
     </aside>
 
@@ -2537,7 +2604,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">108</span>
+    <span class="phpdocumentor-element-found-in__line">107</span>
 
     </aside>
 
@@ -2575,7 +2642,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">130</span>
 
     </aside>
 
@@ -2609,6 +2676,44 @@
             -protected
                                                                     "
 >
+    <h4 class="phpdocumentor-element__name" id="property_participant_rtc_active">
+        $participant_rtc_active
+        <a href="classes/Livekit-NodeStats.html#property_participant_rtc_active" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">260</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;uint64 participant_rtc_active = 54;&lt;/code&gt;</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$participant_rtc_active</span>
+     = <span class="phpdocumentor-signature__default-value">0</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
     <h4 class="phpdocumentor-element__name" id="property_participant_rtc_canceled">
         $participant_rtc_canceled
         <a href="classes/Livekit-NodeStats.html#property_participant_rtc_canceled" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2619,7 +2724,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">247</span>
+    <span class="phpdocumentor-element-found-in__line">256</span>
 
     </aside>
 
@@ -2657,7 +2762,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">229</span>
+    <span class="phpdocumentor-element-found-in__line">238</span>
 
     </aside>
 
@@ -2695,7 +2800,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">234</span>
+    <span class="phpdocumentor-element-found-in__line">243</span>
 
     </aside>
 
@@ -2739,7 +2844,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">238</span>
+    <span class="phpdocumentor-element-found-in__line">247</span>
 
     </aside>
 
@@ -2777,7 +2882,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">243</span>
+    <span class="phpdocumentor-element-found-in__line">252</span>
 
     </aside>
 
@@ -2821,7 +2926,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">220</span>
+    <span class="phpdocumentor-element-found-in__line">219</span>
 
     </aside>
 
@@ -2861,7 +2966,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">225</span>
+    <span class="phpdocumentor-element-found-in__line">224</span>
 
     </aside>
 
@@ -2893,6 +2998,94 @@
             phpdocumentor-element
             -property
             -protected
+                        -deprecated                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_participant_signal_failed">
+        $participant_signal_failed
+        <a href="classes/Livekit-NodeStats.html#property_participant_signal_failed" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">229</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;uint64 participant_signal_failed = 55 [deprecated = true];&lt;/code&gt;</p>
+
+                <div class="phpdocumentor-admonition">
+        <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+            <article>
+                
+            </article>
+        </div>
+    
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$participant_signal_failed</span>
+     = <span class="phpdocumentor-signature__default-value">0</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                        -deprecated                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_participant_signal_validation_failed">
+        $participant_signal_validation_failed
+        <a href="classes/Livekit-NodeStats.html#property_participant_signal_validation_failed" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">234</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;uint64 participant_signal_validation_failed = 56 [deprecated = true];&lt;/code&gt;</p>
+
+                <div class="phpdocumentor-admonition">
+        <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+            <article>
+                
+            </article>
+        </div>
+    
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$participant_signal_validation_failed</span>
+     = <span class="phpdocumentor-signature__default-value">0</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
                                                                     "
 >
     <h4 class="phpdocumentor-element__name" id="property_retransmit_bytes_out">
@@ -2905,7 +3098,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">200</span>
+    <span class="phpdocumentor-element-found-in__line">199</span>
 
     </aside>
 
@@ -2945,7 +3138,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">209</span>
+    <span class="phpdocumentor-element-found-in__line">208</span>
 
     </aside>
 
@@ -2989,7 +3182,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">204</span>
+    <span class="phpdocumentor-element-found-in__line">203</span>
 
     </aside>
 
@@ -3027,7 +3220,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">214</span>
+    <span class="phpdocumentor-element-found-in__line">213</span>
 
     </aside>
 
@@ -3071,7 +3264,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -3111,7 +3304,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">179</span>
+    <span class="phpdocumentor-element-found-in__line">178</span>
 
     </aside>
 
@@ -3149,7 +3342,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">194</span>
+    <span class="phpdocumentor-element-found-in__line">193</span>
 
     </aside>
 
@@ -3193,7 +3386,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">189</span>
+    <span class="phpdocumentor-element-found-in__line">188</span>
 
     </aside>
 
@@ -3237,7 +3430,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">175</span>
+    <span class="phpdocumentor-element-found-in__line">174</span>
 
     </aside>
 
@@ -3275,7 +3468,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">184</span>
+    <span class="phpdocumentor-element-found-in__line">183</span>
 
     </aside>
 
@@ -3319,7 +3512,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -3363,7 +3556,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -3407,7 +3600,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
@@ -3451,7 +3644,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">86</span>
+    <span class="phpdocumentor-element-found-in__line">85</span>
 
     </aside>
 
@@ -3495,7 +3688,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -3535,7 +3728,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">261</span>
+    <span class="phpdocumentor-element-found-in__line">274</span>
 
     </aside>
 
@@ -3578,7 +3771,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">332</span>
+    <span class="phpdocumentor-element-found-in__line">348</span>
 
     </aside>
 
@@ -3653,15 +3846,18 @@ Optional. Data for populating the Message object.</p>
 @type int|string $participant_signal_connected
       participant joins
 @type float $participant_signal_connected_per_sec
+@type int|string $participant_signal_failed
+@type int|string $participant_signal_validation_failed
 @type int|string $participant_rtc_connected
 @type float $participant_rtc_connected_per_sec
 @type int|string $participant_rtc_init
 @type float $participant_rtc_init_per_sec
 @type int|string $participant_rtc_canceled
+@type int|string $participant_rtc_active
 @type int $forward_latency
       forward metrics
 @type int $forward_jitter
-@type \Livekit\NodeStatsRate[] $rates
+@type array&lt;\Livekit\NodeStatsRate&gt;|\Google\Protobuf\Internal\RepeatedField $rates
 </code></pre>
 <p>}</p>
 </section>
@@ -3689,7 +3885,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">731</span>
+    <span class="phpdocumentor-element-found-in__line">739</span>
 
     </aside>
 
@@ -3730,7 +3926,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">844</span>
+    <span class="phpdocumentor-element-found-in__line">852</span>
 
     </aside>
 
@@ -3775,7 +3971,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">755</span>
+    <span class="phpdocumentor-element-found-in__line">763</span>
 
     </aside>
 
@@ -3814,7 +4010,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">872</span>
+    <span class="phpdocumentor-element-found-in__line">878</span>
 
     </aside>
 
@@ -3898,7 +4094,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1597</span>
+    <span class="phpdocumentor-element-found-in__line">1653</span>
 
     </aside>
 
@@ -3937,7 +4133,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1573</span>
+    <span class="phpdocumentor-element-found-in__line">1629</span>
 
     </aside>
 
@@ -4140,7 +4336,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1119</span>
+    <span class="phpdocumentor-element-found-in__line">1117</span>
 
     </aside>
 
@@ -4179,7 +4375,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1141</span>
+    <span class="phpdocumentor-element-found-in__line">1139</span>
 
     </aside>
 
@@ -4218,7 +4414,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">950</span>
+    <span class="phpdocumentor-element-found-in__line">952</span>
 
     </aside>
 
@@ -4263,7 +4459,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">821</span>
+    <span class="phpdocumentor-element-found-in__line">829</span>
 
     </aside>
 
@@ -4302,7 +4498,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">419</span>
+    <span class="phpdocumentor-element-found-in__line">435</span>
 
     </aside>
 
@@ -4382,7 +4578,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">395</span>
+    <span class="phpdocumentor-element-found-in__line">411</span>
 
     </aside>
 
@@ -4423,7 +4619,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">485</span>
+    <span class="phpdocumentor-element-found-in__line">501</span>
 
     </aside>
 
@@ -4462,7 +4658,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">585</span>
+    <span class="phpdocumentor-element-found-in__line">597</span>
 
     </aside>
 
@@ -4501,7 +4697,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">535</span>
+    <span class="phpdocumentor-element-found-in__line">549</span>
 
     </aside>
 
@@ -4540,7 +4736,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">441</span>
+    <span class="phpdocumentor-element-found-in__line">457</span>
 
     </aside>
 
@@ -4579,7 +4775,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">463</span>
+    <span class="phpdocumentor-element-found-in__line">479</span>
 
     </aside>
 
@@ -4618,7 +4814,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">607</span>
+    <span class="phpdocumentor-element-found-in__line">619</span>
 
     </aside>
 
@@ -4657,7 +4853,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">707</span>
+    <span class="phpdocumentor-element-found-in__line">715</span>
 
     </aside>
 
@@ -4696,7 +4892,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">657</span>
+    <span class="phpdocumentor-element-found-in__line">667</span>
 
     </aside>
 
@@ -4735,7 +4931,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">777</span>
+    <span class="phpdocumentor-element-found-in__line">785</span>
 
     </aside>
 
@@ -4774,7 +4970,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">899</span>
+    <span class="phpdocumentor-element-found-in__line">903</span>
 
     </aside>
 
@@ -4813,7 +5009,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">799</span>
+    <span class="phpdocumentor-element-found-in__line">807</span>
 
     </aside>
 
@@ -4852,7 +5048,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">922</span>
+    <span class="phpdocumentor-element-found-in__line">926</span>
 
     </aside>
 
@@ -4889,6 +5085,45 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getParticipantRtcActive">
+        getParticipantRtcActive()
+        <a href="classes/Livekit-NodeStats.html#method_getParticipantRtcActive" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1605</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;uint64 participant_rtc_active = 54;&lt;/code&gt;</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getParticipantRtcActive</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int|string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getParticipantRtcCanceled">
         getParticipantRtcCanceled()
         <a href="classes/Livekit-NodeStats.html#method_getParticipantRtcCanceled" class="headerlink"><i class="fas fa-link"></i></a>
@@ -4897,7 +5132,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1549</span>
+    <span class="phpdocumentor-element-found-in__line">1583</span>
 
     </aside>
 
@@ -4936,7 +5171,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1449</span>
+    <span class="phpdocumentor-element-found-in__line">1487</span>
 
     </aside>
 
@@ -4975,7 +5210,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1472</span>
+    <span class="phpdocumentor-element-found-in__line">1510</span>
 
     </aside>
 
@@ -5020,7 +5255,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1499</span>
+    <span class="phpdocumentor-element-found-in__line">1535</span>
 
     </aside>
 
@@ -5059,7 +5294,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1522</span>
+    <span class="phpdocumentor-element-found-in__line">1558</span>
 
     </aside>
 
@@ -5104,7 +5339,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1397</span>
+    <span class="phpdocumentor-element-found-in__line">1385</span>
 
     </aside>
 
@@ -5145,7 +5380,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1422</span>
+    <span class="phpdocumentor-element-found-in__line">1410</span>
 
     </aside>
 
@@ -5180,6 +5415,96 @@ Optional. Data for populating the Message object.</p>
         class="phpdocumentor-element
             -method
             -public
+            -deprecated                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getParticipantSignalFailed">
+        getParticipantSignalFailed()
+        <a href="classes/Livekit-NodeStats.html#method_getParticipantSignalFailed" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1436</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;uint64 participant_signal_failed = 55 [deprecated = true];&lt;/code&gt;</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getParticipantSignalFailed</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+                <div class="phpdocumentor-admonition">
+        <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+            <article>
+                
+            </article>
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int|string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+            -deprecated                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getParticipantSignalValidationFailed">
+        getParticipantSignalValidationFailed()
+        <a href="classes/Livekit-NodeStats.html#method_getParticipantSignalValidationFailed" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1462</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;uint64 participant_signal_validation_failed = 56 [deprecated = true];&lt;/code&gt;</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getParticipantSignalValidationFailed</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+                <div class="phpdocumentor-admonition">
+        <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+            <article>
+                
+            </article>
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int|string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_getRates">
@@ -5190,7 +5515,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1619</span>
+    <span class="phpdocumentor-element-found-in__line">1675</span>
 
     </aside>
 
@@ -5198,7 +5523,7 @@ Optional. Data for populating the Message object.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getRates</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, <a href="classes/Livekit-NodeStatsRate.html"><abbr title="\Livekit\NodeStatsRate">NodeStatsRate</abbr></a>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">getRates</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -5211,7 +5536,7 @@ Optional. Data for populating the Message object.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, <a href="classes/Livekit-NodeStatsRate.html"><abbr title="\Livekit\NodeStatsRate">NodeStatsRate</abbr></a>&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr></span>
             </section>
 
 </article>
@@ -5229,7 +5554,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1293</span>
+    <span class="phpdocumentor-element-found-in__line">1285</span>
 
     </aside>
 
@@ -5270,7 +5595,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1340</span>
+    <span class="phpdocumentor-element-found-in__line">1332</span>
 
     </aside>
 
@@ -5315,7 +5640,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1317</span>
+    <span class="phpdocumentor-element-found-in__line">1309</span>
 
     </aside>
 
@@ -5354,7 +5679,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1368</span>
+    <span class="phpdocumentor-element-found-in__line">1358</span>
 
     </aside>
 
@@ -5399,7 +5724,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">343</span>
+    <span class="phpdocumentor-element-found-in__line">359</span>
 
     </aside>
 
@@ -5440,7 +5765,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1185</span>
+    <span class="phpdocumentor-element-found-in__line">1183</span>
 
     </aside>
 
@@ -5479,7 +5804,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1264</span>
+    <span class="phpdocumentor-element-found-in__line">1258</span>
 
     </aside>
 
@@ -5524,7 +5849,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1236</span>
+    <span class="phpdocumentor-element-found-in__line">1232</span>
 
     </aside>
 
@@ -5569,7 +5894,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1163</span>
+    <span class="phpdocumentor-element-found-in__line">1161</span>
 
     </aside>
 
@@ -5608,7 +5933,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1208</span>
+    <span class="phpdocumentor-element-found-in__line">1206</span>
 
     </aside>
 
@@ -5653,7 +5978,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">508</span>
+    <span class="phpdocumentor-element-found-in__line">524</span>
 
     </aside>
 
@@ -5698,7 +6023,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">558</span>
+    <span class="phpdocumentor-element-found-in__line">572</span>
 
     </aside>
 
@@ -5743,7 +6068,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">630</span>
+    <span class="phpdocumentor-element-found-in__line">642</span>
 
     </aside>
 
@@ -5788,7 +6113,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">680</span>
+    <span class="phpdocumentor-element-found-in__line">690</span>
 
     </aside>
 
@@ -5833,7 +6158,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">369</span>
+    <span class="phpdocumentor-element-found-in__line">385</span>
 
     </aside>
 
@@ -5874,7 +6199,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">743</span>
+    <span class="phpdocumentor-element-found-in__line">751</span>
 
     </aside>
 
@@ -5925,7 +6250,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">858</span>
+    <span class="phpdocumentor-element-found-in__line">864</span>
 
     </aside>
 
@@ -5980,7 +6305,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">765</span>
+    <span class="phpdocumentor-element-found-in__line">773</span>
 
     </aside>
 
@@ -6029,7 +6354,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">886</span>
+    <span class="phpdocumentor-element-found-in__line">890</span>
 
     </aside>
 
@@ -6133,7 +6458,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1607</span>
+    <span class="phpdocumentor-element-found-in__line">1663</span>
 
     </aside>
 
@@ -6182,7 +6507,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1585</span>
+    <span class="phpdocumentor-element-found-in__line">1641</span>
 
     </aside>
 
@@ -6380,7 +6705,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1106</span>
+    <span class="phpdocumentor-element-found-in__line">1104</span>
 
     </aside>
 
@@ -6435,7 +6760,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1129</span>
+    <span class="phpdocumentor-element-found-in__line">1127</span>
 
     </aside>
 
@@ -6484,7 +6809,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1151</span>
+    <span class="phpdocumentor-element-found-in__line">1149</span>
 
     </aside>
 
@@ -6588,7 +6913,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">831</span>
+    <span class="phpdocumentor-element-found-in__line">839</span>
 
     </aside>
 
@@ -6637,7 +6962,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">429</span>
+    <span class="phpdocumentor-element-found-in__line">445</span>
 
     </aside>
 
@@ -6737,7 +7062,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">407</span>
+    <span class="phpdocumentor-element-found-in__line">423</span>
 
     </aside>
 
@@ -6788,7 +7113,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">495</span>
+    <span class="phpdocumentor-element-found-in__line">511</span>
 
     </aside>
 
@@ -6837,7 +7162,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">595</span>
+    <span class="phpdocumentor-element-found-in__line">607</span>
 
     </aside>
 
@@ -6886,7 +7211,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">545</span>
+    <span class="phpdocumentor-element-found-in__line">559</span>
 
     </aside>
 
@@ -6935,7 +7260,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">451</span>
+    <span class="phpdocumentor-element-found-in__line">467</span>
 
     </aside>
 
@@ -6984,7 +7309,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">473</span>
+    <span class="phpdocumentor-element-found-in__line">489</span>
 
     </aside>
 
@@ -7033,7 +7358,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">617</span>
+    <span class="phpdocumentor-element-found-in__line">629</span>
 
     </aside>
 
@@ -7082,7 +7407,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">717</span>
+    <span class="phpdocumentor-element-found-in__line">725</span>
 
     </aside>
 
@@ -7131,7 +7456,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">667</span>
+    <span class="phpdocumentor-element-found-in__line">677</span>
 
     </aside>
 
@@ -7180,7 +7505,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">787</span>
+    <span class="phpdocumentor-element-found-in__line">795</span>
 
     </aside>
 
@@ -7229,7 +7554,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">909</span>
+    <span class="phpdocumentor-element-found-in__line">913</span>
 
     </aside>
 
@@ -7278,7 +7603,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">809</span>
+    <span class="phpdocumentor-element-found-in__line">817</span>
 
     </aside>
 
@@ -7327,7 +7652,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">936</span>
+    <span class="phpdocumentor-element-found-in__line">938</span>
 
     </aside>
 
@@ -7374,6 +7699,55 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_setParticipantRtcActive">
+        setParticipantRtcActive()
+        <a href="classes/Livekit-NodeStats.html#method_setParticipantRtcActive" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1615</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;uint64 participant_rtc_active = 54;&lt;/code&gt;</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setParticipantRtcActive</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int|string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setParticipantRtcCanceled">
         setParticipantRtcCanceled()
         <a href="classes/Livekit-NodeStats.html#method_setParticipantRtcCanceled" class="headerlink"><i class="fas fa-link"></i></a>
@@ -7382,7 +7756,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1559</span>
+    <span class="phpdocumentor-element-found-in__line">1593</span>
 
     </aside>
 
@@ -7431,7 +7805,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1459</span>
+    <span class="phpdocumentor-element-found-in__line">1497</span>
 
     </aside>
 
@@ -7480,7 +7854,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1486</span>
+    <span class="phpdocumentor-element-found-in__line">1522</span>
 
     </aside>
 
@@ -7535,7 +7909,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1509</span>
+    <span class="phpdocumentor-element-found-in__line">1545</span>
 
     </aside>
 
@@ -7584,7 +7958,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1536</span>
+    <span class="phpdocumentor-element-found-in__line">1570</span>
 
     </aside>
 
@@ -7639,7 +8013,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1409</span>
+    <span class="phpdocumentor-element-found-in__line">1397</span>
 
     </aside>
 
@@ -7690,7 +8064,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1436</span>
+    <span class="phpdocumentor-element-found-in__line">1422</span>
 
     </aside>
 
@@ -7735,6 +8109,116 @@ Optional. Data for populating the Message object.</p>
         class="phpdocumentor-element
             -method
             -public
+            -deprecated                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setParticipantSignalFailed">
+        setParticipantSignalFailed()
+        <a href="classes/Livekit-NodeStats.html#method_setParticipantSignalFailed" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1448</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;uint64 participant_signal_failed = 55 [deprecated = true];&lt;/code&gt;</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setParticipantSignalFailed</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+                <div class="phpdocumentor-admonition">
+        <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+            <article>
+                
+            </article>
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int|string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+            -deprecated                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setParticipantSignalValidationFailed">
+        setParticipantSignalValidationFailed()
+        <a href="classes/Livekit-NodeStats.html#method_setParticipantSignalValidationFailed" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1474</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;uint64 participant_signal_validation_failed = 56 [deprecated = true];&lt;/code&gt;</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setParticipantSignalValidationFailed</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+                <div class="phpdocumentor-admonition">
+        <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+            <article>
+                
+            </article>
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int|string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_setRates">
@@ -7745,7 +8229,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1629</span>
+    <span class="phpdocumentor-element-found-in__line">1685</span>
 
     </aside>
 
@@ -7753,7 +8237,7 @@ Optional. Data for populating the Message object.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setRates</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, <a href="classes/Livekit-NodeStatsRate.html"><abbr title="\Livekit\NodeStatsRate">NodeStatsRate</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                    <span class="phpdocumentor-signature__name">setRates</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, <a href="classes/Livekit-NodeStatsRate.html"><abbr title="\Livekit\NodeStatsRate">NodeStatsRate</abbr></a>&gt;|<abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -7763,7 +8247,7 @@ Optional. Data for populating the Message object.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$var</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, <a href="classes/Livekit-NodeStatsRate.html"><abbr title="\Livekit\NodeStatsRate">NodeStatsRate</abbr></a>&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, <a href="classes/Livekit-NodeStatsRate.html"><abbr title="\Livekit\NodeStatsRate">NodeStatsRate</abbr></a>&gt;|<abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -7794,7 +8278,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1305</span>
+    <span class="phpdocumentor-element-found-in__line">1297</span>
 
     </aside>
 
@@ -7845,7 +8329,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1354</span>
+    <span class="phpdocumentor-element-found-in__line">1344</span>
 
     </aside>
 
@@ -7900,7 +8384,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1327</span>
+    <span class="phpdocumentor-element-found-in__line">1319</span>
 
     </aside>
 
@@ -7949,7 +8433,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1382</span>
+    <span class="phpdocumentor-element-found-in__line">1370</span>
 
     </aside>
 
@@ -8004,7 +8488,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">355</span>
+    <span class="phpdocumentor-element-found-in__line">371</span>
 
     </aside>
 
@@ -8055,7 +8539,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1195</span>
+    <span class="phpdocumentor-element-found-in__line">1193</span>
 
     </aside>
 
@@ -8104,7 +8588,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1278</span>
+    <span class="phpdocumentor-element-found-in__line">1270</span>
 
     </aside>
 
@@ -8159,7 +8643,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1250</span>
+    <span class="phpdocumentor-element-found-in__line">1244</span>
 
     </aside>
 
@@ -8214,7 +8698,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1173</span>
+    <span class="phpdocumentor-element-found-in__line">1171</span>
 
     </aside>
 
@@ -8263,7 +8747,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1222</span>
+    <span class="phpdocumentor-element-found-in__line">1218</span>
 
     </aside>
 
@@ -8318,7 +8802,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">522</span>
+    <span class="phpdocumentor-element-found-in__line">536</span>
 
     </aside>
 
@@ -8373,7 +8857,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">572</span>
+    <span class="phpdocumentor-element-found-in__line">584</span>
 
     </aside>
 
@@ -8428,7 +8912,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">644</span>
+    <span class="phpdocumentor-element-found-in__line">654</span>
 
     </aside>
 
@@ -8483,7 +8967,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">694</span>
+    <span class="phpdocumentor-element-found-in__line">702</span>
 
     </aside>
 
@@ -8538,7 +9022,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/NodeStats.php"><a href="files/src-gen-livekit-nodestats.html"><abbr title="src/gen/Livekit/NodeStats.php">NodeStats.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">381</span>
+    <span class="phpdocumentor-element-found-in__line">397</span>
 
     </aside>
 
@@ -8627,6 +9111,7 @@ Optional. Data for populating the Message object.</p>
                                                     <li class=""><a href="classes/Livekit-NodeStats.html#property_packets_in_per_sec">$packets_in_per_sec</a></li>
                                                     <li class=""><a href="classes/Livekit-NodeStats.html#property_packets_out">$packets_out</a></li>
                                                     <li class="-deprecated"><a href="classes/Livekit-NodeStats.html#property_packets_out_per_sec">$packets_out_per_sec</a></li>
+                                                    <li class=""><a href="classes/Livekit-NodeStats.html#property_participant_rtc_active">$participant_rtc_active</a></li>
                                                     <li class=""><a href="classes/Livekit-NodeStats.html#property_participant_rtc_canceled">$participant_rtc_canceled</a></li>
                                                     <li class=""><a href="classes/Livekit-NodeStats.html#property_participant_rtc_connected">$participant_rtc_connected</a></li>
                                                     <li class="-deprecated"><a href="classes/Livekit-NodeStats.html#property_participant_rtc_connected_per_sec">$participant_rtc_connected_per_sec</a></li>
@@ -8634,6 +9119,8 @@ Optional. Data for populating the Message object.</p>
                                                     <li class="-deprecated"><a href="classes/Livekit-NodeStats.html#property_participant_rtc_init_per_sec">$participant_rtc_init_per_sec</a></li>
                                                     <li class=""><a href="classes/Livekit-NodeStats.html#property_participant_signal_connected">$participant_signal_connected</a></li>
                                                     <li class="-deprecated"><a href="classes/Livekit-NodeStats.html#property_participant_signal_connected_per_sec">$participant_signal_connected_per_sec</a></li>
+                                                    <li class="-deprecated"><a href="classes/Livekit-NodeStats.html#property_participant_signal_failed">$participant_signal_failed</a></li>
+                                                    <li class="-deprecated"><a href="classes/Livekit-NodeStats.html#property_participant_signal_validation_failed">$participant_signal_validation_failed</a></li>
                                                     <li class=""><a href="classes/Livekit-NodeStats.html#property_retransmit_bytes_out">$retransmit_bytes_out</a></li>
                                                     <li class="-deprecated"><a href="classes/Livekit-NodeStats.html#property_retransmit_bytes_out_per_sec">$retransmit_bytes_out_per_sec</a></li>
                                                     <li class=""><a href="classes/Livekit-NodeStats.html#property_retransmit_packets_out">$retransmit_packets_out</a></li>
@@ -8687,6 +9174,7 @@ Optional. Data for populating the Message object.</p>
                                             <li class=""><a href="classes/Livekit-NodeStats.html#method_getPacketsInPerSec">getPacketsInPerSec()</a></li>
                                             <li class=""><a href="classes/Livekit-NodeStats.html#method_getPacketsOut">getPacketsOut()</a></li>
                                             <li class="-deprecated"><a href="classes/Livekit-NodeStats.html#method_getPacketsOutPerSec">getPacketsOutPerSec()</a></li>
+                                            <li class=""><a href="classes/Livekit-NodeStats.html#method_getParticipantRtcActive">getParticipantRtcActive()</a></li>
                                             <li class=""><a href="classes/Livekit-NodeStats.html#method_getParticipantRtcCanceled">getParticipantRtcCanceled()</a></li>
                                             <li class=""><a href="classes/Livekit-NodeStats.html#method_getParticipantRtcConnected">getParticipantRtcConnected()</a></li>
                                             <li class="-deprecated"><a href="classes/Livekit-NodeStats.html#method_getParticipantRtcConnectedPerSec">getParticipantRtcConnectedPerSec()</a></li>
@@ -8694,6 +9182,8 @@ Optional. Data for populating the Message object.</p>
                                             <li class="-deprecated"><a href="classes/Livekit-NodeStats.html#method_getParticipantRtcInitPerSec">getParticipantRtcInitPerSec()</a></li>
                                             <li class=""><a href="classes/Livekit-NodeStats.html#method_getParticipantSignalConnected">getParticipantSignalConnected()</a></li>
                                             <li class="-deprecated"><a href="classes/Livekit-NodeStats.html#method_getParticipantSignalConnectedPerSec">getParticipantSignalConnectedPerSec()</a></li>
+                                            <li class="-deprecated"><a href="classes/Livekit-NodeStats.html#method_getParticipantSignalFailed">getParticipantSignalFailed()</a></li>
+                                            <li class="-deprecated"><a href="classes/Livekit-NodeStats.html#method_getParticipantSignalValidationFailed">getParticipantSignalValidationFailed()</a></li>
                                             <li class=""><a href="classes/Livekit-NodeStats.html#method_getRates">getRates()</a></li>
                                             <li class=""><a href="classes/Livekit-NodeStats.html#method_getRetransmitBytesOut">getRetransmitBytesOut()</a></li>
                                             <li class="-deprecated"><a href="classes/Livekit-NodeStats.html#method_getRetransmitBytesOutPerSec">getRetransmitBytesOutPerSec()</a></li>
@@ -8740,6 +9230,7 @@ Optional. Data for populating the Message object.</p>
                                             <li class=""><a href="classes/Livekit-NodeStats.html#method_setPacketsInPerSec">setPacketsInPerSec()</a></li>
                                             <li class=""><a href="classes/Livekit-NodeStats.html#method_setPacketsOut">setPacketsOut()</a></li>
                                             <li class="-deprecated"><a href="classes/Livekit-NodeStats.html#method_setPacketsOutPerSec">setPacketsOutPerSec()</a></li>
+                                            <li class=""><a href="classes/Livekit-NodeStats.html#method_setParticipantRtcActive">setParticipantRtcActive()</a></li>
                                             <li class=""><a href="classes/Livekit-NodeStats.html#method_setParticipantRtcCanceled">setParticipantRtcCanceled()</a></li>
                                             <li class=""><a href="classes/Livekit-NodeStats.html#method_setParticipantRtcConnected">setParticipantRtcConnected()</a></li>
                                             <li class="-deprecated"><a href="classes/Livekit-NodeStats.html#method_setParticipantRtcConnectedPerSec">setParticipantRtcConnectedPerSec()</a></li>
@@ -8747,6 +9238,8 @@ Optional. Data for populating the Message object.</p>
                                             <li class="-deprecated"><a href="classes/Livekit-NodeStats.html#method_setParticipantRtcInitPerSec">setParticipantRtcInitPerSec()</a></li>
                                             <li class=""><a href="classes/Livekit-NodeStats.html#method_setParticipantSignalConnected">setParticipantSignalConnected()</a></li>
                                             <li class="-deprecated"><a href="classes/Livekit-NodeStats.html#method_setParticipantSignalConnectedPerSec">setParticipantSignalConnectedPerSec()</a></li>
+                                            <li class="-deprecated"><a href="classes/Livekit-NodeStats.html#method_setParticipantSignalFailed">setParticipantSignalFailed()</a></li>
+                                            <li class="-deprecated"><a href="classes/Livekit-NodeStats.html#method_setParticipantSignalValidationFailed">setParticipantSignalValidationFailed()</a></li>
                                             <li class=""><a href="classes/Livekit-NodeStats.html#method_setRates">setRates()</a></li>
                                             <li class=""><a href="classes/Livekit-NodeStats.html#method_setRetransmitBytesOut">setRetransmitBytesOut()</a></li>
                                             <li class="-deprecated"><a href="classes/Livekit-NodeStats.html#method_setRetransmitBytesOutPerSec">setRetransmitBytesOutPerSec()</a></li>

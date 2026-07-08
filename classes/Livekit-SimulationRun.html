@@ -112,6 +112,14 @@
                 
             </li>
                     <li>
+                <a href="namespaces/livekit-datatrackframeencoding.html" class="">DataTrackFrameEncoding</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/livekit-datatrackschemaencoding.html" class="">DataTrackSchemaEncoding</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/livekit-datatracksubscriberhandles.html" class="">DataTrackSubscriberHandles</a>
                 
             </li>
@@ -153,10 +161,6 @@
             </li>
                     <li>
                 <a href="namespaces/livekit-scenario.html" class="">Scenario</a>
-                
-            </li>
-                    <li>
-                <a href="namespaces/livekit-scenariogroup.html" class="">ScenarioGroup</a>
                 
             </li>
                     <li>
@@ -251,7 +255,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
@@ -298,6 +302,13 @@
 <dd>Generated from protobuf field &lt;code&gt;string agent_name = 9;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Livekit-SimulationRun.html#property_concurrency">$concurrency</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Maximum simulate jobs running in parallel for this run (0 = server default).</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Livekit-SimulationRun.html#property_created_at">$created_at</a>
     <span>
                         &nbsp;: mixed            </span>
@@ -338,6 +349,20 @@
                         &nbsp;: mixed            </span>
 </dt>
 <dd>Generated from protobuf field &lt;code&gt;int32 job_count = 12;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Livekit-SimulationRun.html#property_metrics">$metrics</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Run-level metric aggregates.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Livekit-SimulationRun.html#property_mode">$mode</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Conversation mode for every job in this run; unspecified = TEXT.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Livekit-SimulationRun.html#property_num_simulations">$num_simulations</a>
@@ -423,6 +448,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-SimulationRun.html#method_clearMetrics">clearMetrics()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-SimulationRun.html#method_clearScenarioGroup">clearScenarioGroup()</a>
     <span>
                                 &nbsp;: mixed    </span>
@@ -453,6 +484,13 @@
                                 &nbsp;: string    </span>
 </dt>
 <dd>Generated from protobuf field &lt;code&gt;string agent_name = 9;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-SimulationRun.html#method_getConcurrency">getConcurrency()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+<dd>Maximum simulate jobs running in parallel for this run (0 = server default).</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-SimulationRun.html#method_getCreatedAt">getCreatedAt()</a>
@@ -499,9 +537,23 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-SimulationRun.html#method_getJobs">getJobs()</a>
     <span>
-                                &nbsp;: <abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, <a href="classes/Livekit-SimulationRun-Job.html"><abbr title="\Livekit\SimulationRun\Job">Job</abbr></a>&gt;    </span>
+                                &nbsp;: <abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr>    </span>
 </dt>
 <dd>Generated from protobuf field &lt;code&gt;repeated .livekit.SimulationRun.Job jobs = 7;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-SimulationRun.html#method_getMetrics">getMetrics()</a>
+    <span>
+                                &nbsp;: <a href="classes/Livekit-SimulationRun-RunMetrics.html"><abbr title="\Livekit\SimulationRun\RunMetrics">RunMetrics</abbr></a>|null    </span>
+</dt>
+<dd>Run-level metric aggregates.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-SimulationRun.html#method_getMode">getMode()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+<dd>Conversation mode for every job in this run; unspecified = TEXT.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-SimulationRun.html#method_getNumSimulations">getNumSimulations()</a>
@@ -565,6 +617,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-SimulationRun.html#method_hasMetrics">hasMetrics()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-SimulationRun.html#method_hasScenarioGroup">hasScenarioGroup()</a>
     <span>
                                 &nbsp;: mixed    </span>
@@ -595,6 +653,13 @@
                                 &nbsp;: $this    </span>
 </dt>
 <dd>Generated from protobuf field &lt;code&gt;string agent_name = 9;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-SimulationRun.html#method_setConcurrency">setConcurrency()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>Maximum simulate jobs running in parallel for this run (0 = server default).</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-SimulationRun.html#method_setCreatedAt">setCreatedAt()</a>
@@ -644,6 +709,20 @@
                                 &nbsp;: $this    </span>
 </dt>
 <dd>Generated from protobuf field &lt;code&gt;repeated .livekit.SimulationRun.Job jobs = 7;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-SimulationRun.html#method_setMetrics">setMetrics()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>Run-level metric aggregates.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Livekit-SimulationRun.html#method_setMode">setMode()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>Conversation mode for every job in this run; unspecified = TEXT.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Livekit-SimulationRun.html#method_setNumSimulations">setNumSimulations()</a>
@@ -724,7 +803,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -762,7 +841,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
@@ -790,6 +869,46 @@
             -protected
                                                                     "
 >
+    <h4 class="phpdocumentor-element__name" id="property_concurrency">
+        $concurrency
+        <a href="classes/Livekit-SimulationRun.html#property_concurrency" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">87</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Maximum simulate jobs running in parallel for this run (0 = server default).</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$concurrency</span>
+     = <span class="phpdocumentor-signature__default-value">0</span></code>
+
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">int32 concurrency = 17;</code></p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
     <h4 class="phpdocumentor-element__name" id="property_created_at">
         $created_at
         <a href="classes/Livekit-SimulationRun.html#property_created_at" class="headerlink"><i class="fas fa-link"></i></a>
@@ -800,7 +919,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -838,7 +957,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -876,7 +995,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -914,7 +1033,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -952,7 +1071,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -990,7 +1109,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -1018,6 +1137,86 @@
             -protected
                                                                     "
 >
+    <h4 class="phpdocumentor-element__name" id="property_metrics">
+        $metrics
+        <a href="classes/Livekit-SimulationRun.html#property_metrics" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">99</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Run-level metric aggregates.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$metrics</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.livekit.SimulationRun.RunMetrics metrics = 19;</code></p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_mode">
+        $mode
+        <a href="classes/Livekit-SimulationRun.html#property_mode" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">93</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Conversation mode for every job in this run; unspecified = TEXT.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$mode</span>
+     = <span class="phpdocumentor-signature__default-value">0</span></code>
+
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.livekit.SimulationMode mode = 18;</code></p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
     <h4 class="phpdocumentor-element__name" id="property_num_simulations">
         $num_simulations
         <a href="classes/Livekit-SimulationRun.html#property_num_simulations" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1028,7 +1227,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -1066,7 +1265,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -1104,7 +1303,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -1142,7 +1341,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -1180,7 +1379,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -1218,7 +1417,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -1256,7 +1455,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
@@ -1296,7 +1495,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -1339,7 +1538,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">109</span>
+    <span class="phpdocumentor-element-found-in__line">132</span>
 
     </aside>
 
@@ -1368,7 +1567,7 @@ Optional. Data for populating the Message object.</p>
 @type string $agent_description
 @type string $error
 @type \Google\Protobuf\Timestamp $created_at
-@type \Livekit\SimulationRun\Job[] $jobs
+@type array&lt;\Livekit\SimulationRun\Job&gt;|\Google\Protobuf\Internal\RepeatedField $jobs
 @type \Livekit\SimulationRunSummary $summary
 @type string $agent_name
 @type \Livekit\ScenarioGroup $scenario_group
@@ -1379,6 +1578,12 @@ Optional. Data for populating the Message object.</p>
 @type int $num_simulations
 @type \Livekit\SimulationRun\Usage $usage
       Aggregate usage across all jobs in this run (sum of Job.usage).
+@type int $concurrency
+      Maximum simulate jobs running in parallel for this run (0 = server default).
+@type int $mode
+      Conversation mode for every job in this run; unspecified = TEXT.
+@type \Livekit\SimulationRun\RunMetrics $metrics
+      Run-level metric aggregates.
 </code></pre>
 <p>}</p>
 </section>
@@ -1406,7 +1611,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">238</span>
+    <span class="phpdocumentor-element-found-in__line">261</span>
 
     </aside>
 
@@ -1440,7 +1645,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">378</span>
+    <span class="phpdocumentor-element-found-in__line">401</span>
 
     </aside>
 
@@ -1448,6 +1653,40 @@ Optional. Data for populating the Message object.</p>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">clearEndedAt</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_clearMetrics">
+        clearMetrics()
+        <a href="classes/Livekit-SimulationRun.html#method_clearMetrics" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">611</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">clearMetrics</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1474,7 +1713,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">346</span>
+    <span class="phpdocumentor-element-found-in__line">369</span>
 
     </aside>
 
@@ -1508,7 +1747,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">292</span>
+    <span class="phpdocumentor-element-found-in__line">315</span>
 
     </aside>
 
@@ -1542,7 +1781,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">500</span>
+    <span class="phpdocumentor-element-found-in__line">523</span>
 
     </aside>
 
@@ -1576,7 +1815,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">184</span>
+    <span class="phpdocumentor-element-found-in__line">207</span>
 
     </aside>
 
@@ -1615,7 +1854,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">314</span>
+    <span class="phpdocumentor-element-found-in__line">337</span>
 
     </aside>
 
@@ -1646,6 +1885,47 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getConcurrency">
+        getConcurrency()
+        <a href="classes/Livekit-SimulationRun.html#method_getConcurrency" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">549</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Maximum simulate jobs running in parallel for this run (0 = server default).</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getConcurrency</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">int32 concurrency = 17;</code></p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getCreatedAt">
         getCreatedAt()
         <a href="classes/Livekit-SimulationRun.html#method_getCreatedAt" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1654,7 +1934,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">228</span>
+    <span class="phpdocumentor-element-found-in__line">251</span>
 
     </aside>
 
@@ -1693,7 +1973,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">368</span>
+    <span class="phpdocumentor-element-found-in__line">391</span>
 
     </aside>
 
@@ -1732,7 +2012,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">206</span>
+    <span class="phpdocumentor-element-found-in__line">229</span>
 
     </aside>
 
@@ -1771,7 +2051,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">444</span>
+    <span class="phpdocumentor-element-found-in__line">467</span>
 
     </aside>
 
@@ -1810,7 +2090,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">118</span>
+    <span class="phpdocumentor-element-found-in__line">141</span>
 
     </aside>
 
@@ -1849,7 +2129,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">400</span>
+    <span class="phpdocumentor-element-found-in__line">423</span>
 
     </aside>
 
@@ -1888,7 +2168,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">260</span>
+    <span class="phpdocumentor-element-found-in__line">283</span>
 
     </aside>
 
@@ -1896,7 +2176,7 @@ Optional. Data for populating the Message object.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getJobs</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, <a href="classes/Livekit-SimulationRun-Job.html"><abbr title="\Livekit\SimulationRun\Job">Job</abbr></a>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">getJobs</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1909,7 +2189,89 @@ Optional. Data for populating the Message object.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, <a href="classes/Livekit-SimulationRun-Job.html"><abbr title="\Livekit\SimulationRun\Job">Job</abbr></a>&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getMetrics">
+        getMetrics()
+        <a href="classes/Livekit-SimulationRun.html#method_getMetrics" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">601</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Run-level metric aggregates.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getMetrics</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Livekit-SimulationRun-RunMetrics.html"><abbr title="\Livekit\SimulationRun\RunMetrics">RunMetrics</abbr></a>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.livekit.SimulationRun.RunMetrics metrics = 19;</code></p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Livekit-SimulationRun-RunMetrics.html"><abbr title="\Livekit\SimulationRun\RunMetrics">RunMetrics</abbr></a>|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getMode">
+        getMode()
+        <a href="classes/Livekit-SimulationRun.html#method_getMode" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">575</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Conversation mode for every job in this run; unspecified = TEXT.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getMode</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.livekit.SimulationMode mode = 18;</code></p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
             </section>
 
 </article>
@@ -1927,7 +2289,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">466</span>
+    <span class="phpdocumentor-element-found-in__line">489</span>
 
     </aside>
 
@@ -1966,7 +2328,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">422</span>
+    <span class="phpdocumentor-element-found-in__line">445</span>
 
     </aside>
 
@@ -2005,7 +2367,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">140</span>
+    <span class="phpdocumentor-element-found-in__line">163</span>
 
     </aside>
 
@@ -2044,7 +2406,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">336</span>
+    <span class="phpdocumentor-element-found-in__line">359</span>
 
     </aside>
 
@@ -2083,7 +2445,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">162</span>
+    <span class="phpdocumentor-element-found-in__line">185</span>
 
     </aside>
 
@@ -2122,7 +2484,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">282</span>
+    <span class="phpdocumentor-element-found-in__line">305</span>
 
     </aside>
 
@@ -2161,7 +2523,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">490</span>
+    <span class="phpdocumentor-element-found-in__line">513</span>
 
     </aside>
 
@@ -2202,7 +2564,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">233</span>
+    <span class="phpdocumentor-element-found-in__line">256</span>
 
     </aside>
 
@@ -2236,7 +2598,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">373</span>
+    <span class="phpdocumentor-element-found-in__line">396</span>
 
     </aside>
 
@@ -2244,6 +2606,40 @@ Optional. Data for populating the Message object.</p>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">hasEndedAt</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_hasMetrics">
+        hasMetrics()
+        <a href="classes/Livekit-SimulationRun.html#method_hasMetrics" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">606</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">hasMetrics</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2270,7 +2666,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">341</span>
+    <span class="phpdocumentor-element-found-in__line">364</span>
 
     </aside>
 
@@ -2304,7 +2700,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">287</span>
+    <span class="phpdocumentor-element-found-in__line">310</span>
 
     </aside>
 
@@ -2338,7 +2734,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">495</span>
+    <span class="phpdocumentor-element-found-in__line">518</span>
 
     </aside>
 
@@ -2372,7 +2768,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">194</span>
+    <span class="phpdocumentor-element-found-in__line">217</span>
 
     </aside>
 
@@ -2421,7 +2817,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">324</span>
+    <span class="phpdocumentor-element-found-in__line">347</span>
 
     </aside>
 
@@ -2462,6 +2858,57 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_setConcurrency">
+        setConcurrency()
+        <a href="classes/Livekit-SimulationRun.html#method_setConcurrency" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">561</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Maximum simulate jobs running in parallel for this run (0 = server default).</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setConcurrency</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">int32 concurrency = 17;</code></p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setCreatedAt">
         setCreatedAt()
         <a href="classes/Livekit-SimulationRun.html#method_setCreatedAt" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2470,7 +2917,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">248</span>
+    <span class="phpdocumentor-element-found-in__line">271</span>
 
     </aside>
 
@@ -2519,7 +2966,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">388</span>
+    <span class="phpdocumentor-element-found-in__line">411</span>
 
     </aside>
 
@@ -2568,7 +3015,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">216</span>
+    <span class="phpdocumentor-element-found-in__line">239</span>
 
     </aside>
 
@@ -2617,7 +3064,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">454</span>
+    <span class="phpdocumentor-element-found-in__line">477</span>
 
     </aside>
 
@@ -2666,7 +3113,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">128</span>
+    <span class="phpdocumentor-element-found-in__line">151</span>
 
     </aside>
 
@@ -2715,7 +3162,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">410</span>
+    <span class="phpdocumentor-element-found-in__line">433</span>
 
     </aside>
 
@@ -2764,7 +3211,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">270</span>
+    <span class="phpdocumentor-element-found-in__line">293</span>
 
     </aside>
 
@@ -2772,7 +3219,7 @@ Optional. Data for populating the Message object.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setJobs</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, <a href="classes/Livekit-SimulationRun-Job.html"><abbr title="\Livekit\SimulationRun\Job">Job</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                    <span class="phpdocumentor-signature__name">setJobs</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, <a href="classes/Livekit-SimulationRun-Job.html"><abbr title="\Livekit\SimulationRun\Job">Job</abbr></a>&gt;|<abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2782,7 +3229,109 @@ Optional. Data for populating the Message object.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$var</span>
-                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, <a href="classes/Livekit-SimulationRun-Job.html"><abbr title="\Livekit\SimulationRun\Job">Job</abbr></a>&gt;</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, <a href="classes/Livekit-SimulationRun-Job.html"><abbr title="\Livekit\SimulationRun\Job">Job</abbr></a>&gt;|<abbr title="\Google\Protobuf\Internal\RepeatedField">RepeatedField</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setMetrics">
+        setMetrics()
+        <a href="classes/Livekit-SimulationRun.html#method_setMetrics" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">623</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Run-level metric aggregates.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setMetrics</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Livekit-SimulationRun-RunMetrics.html"><abbr title="\Livekit\SimulationRun\RunMetrics">RunMetrics</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.livekit.SimulationRun.RunMetrics metrics = 19;</code></p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Livekit-SimulationRun-RunMetrics.html"><abbr title="\Livekit\SimulationRun\RunMetrics">RunMetrics</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setMode">
+        setMode()
+        <a href="classes/Livekit-SimulationRun.html#method_setMode" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">587</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Conversation mode for every job in this run; unspecified = TEXT.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setMode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Generated from protobuf field <code class="prettyprint">.livekit.SimulationMode mode = 18;</code></p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -2813,7 +3362,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">476</span>
+    <span class="phpdocumentor-element-found-in__line">499</span>
 
     </aside>
 
@@ -2862,7 +3411,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">432</span>
+    <span class="phpdocumentor-element-found-in__line">455</span>
 
     </aside>
 
@@ -2911,7 +3460,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">150</span>
+    <span class="phpdocumentor-element-found-in__line">173</span>
 
     </aside>
 
@@ -2960,7 +3509,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">356</span>
+    <span class="phpdocumentor-element-found-in__line">379</span>
 
     </aside>
 
@@ -3009,7 +3558,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">172</span>
+    <span class="phpdocumentor-element-found-in__line">195</span>
 
     </aside>
 
@@ -3058,7 +3607,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">302</span>
+    <span class="phpdocumentor-element-found-in__line">325</span>
 
     </aside>
 
@@ -3107,7 +3656,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Livekit/SimulationRun.php"><a href="files/src-gen-livekit-simulationrun.html"><abbr title="src/gen/Livekit/SimulationRun.php">SimulationRun.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">512</span>
+    <span class="phpdocumentor-element-found-in__line">535</span>
 
     </aside>
 
@@ -3168,12 +3717,15 @@ Optional. Data for populating the Message object.</p>
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="classes/Livekit-SimulationRun.html#property_agent_description">$agent_description</a></li>
                                                     <li class=""><a href="classes/Livekit-SimulationRun.html#property_agent_name">$agent_name</a></li>
+                                                    <li class=""><a href="classes/Livekit-SimulationRun.html#property_concurrency">$concurrency</a></li>
                                                     <li class=""><a href="classes/Livekit-SimulationRun.html#property_created_at">$created_at</a></li>
                                                     <li class=""><a href="classes/Livekit-SimulationRun.html#property_ended_at">$ended_at</a></li>
                                                     <li class=""><a href="classes/Livekit-SimulationRun.html#property_error">$error</a></li>
                                                     <li class=""><a href="classes/Livekit-SimulationRun.html#property_failed_count">$failed_count</a></li>
                                                     <li class=""><a href="classes/Livekit-SimulationRun.html#property_id">$id</a></li>
                                                     <li class=""><a href="classes/Livekit-SimulationRun.html#property_job_count">$job_count</a></li>
+                                                    <li class=""><a href="classes/Livekit-SimulationRun.html#property_metrics">$metrics</a></li>
+                                                    <li class=""><a href="classes/Livekit-SimulationRun.html#property_mode">$mode</a></li>
                                                     <li class=""><a href="classes/Livekit-SimulationRun.html#property_num_simulations">$num_simulations</a></li>
                                                     <li class=""><a href="classes/Livekit-SimulationRun.html#property_passed_count">$passed_count</a></li>
                                                     <li class=""><a href="classes/Livekit-SimulationRun.html#property_project_id">$project_id</a></li>
@@ -3191,11 +3743,13 @@ Optional. Data for populating the Message object.</p>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_clearCreatedAt">clearCreatedAt()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_clearEndedAt">clearEndedAt()</a></li>
+                                            <li class=""><a href="classes/Livekit-SimulationRun.html#method_clearMetrics">clearMetrics()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_clearScenarioGroup">clearScenarioGroup()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_clearSummary">clearSummary()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_clearUsage">clearUsage()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_getAgentDescription">getAgentDescription()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_getAgentName">getAgentName()</a></li>
+                                            <li class=""><a href="classes/Livekit-SimulationRun.html#method_getConcurrency">getConcurrency()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_getCreatedAt">getCreatedAt()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_getEndedAt">getEndedAt()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_getError">getError()</a></li>
@@ -3203,6 +3757,8 @@ Optional. Data for populating the Message object.</p>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_getId">getId()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_getJobCount">getJobCount()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_getJobs">getJobs()</a></li>
+                                            <li class=""><a href="classes/Livekit-SimulationRun.html#method_getMetrics">getMetrics()</a></li>
+                                            <li class=""><a href="classes/Livekit-SimulationRun.html#method_getMode">getMode()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_getNumSimulations">getNumSimulations()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_getPassedCount">getPassedCount()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_getProjectId">getProjectId()</a></li>
@@ -3212,11 +3768,13 @@ Optional. Data for populating the Message object.</p>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_getUsage">getUsage()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_hasCreatedAt">hasCreatedAt()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_hasEndedAt">hasEndedAt()</a></li>
+                                            <li class=""><a href="classes/Livekit-SimulationRun.html#method_hasMetrics">hasMetrics()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_hasScenarioGroup">hasScenarioGroup()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_hasSummary">hasSummary()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_hasUsage">hasUsage()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_setAgentDescription">setAgentDescription()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_setAgentName">setAgentName()</a></li>
+                                            <li class=""><a href="classes/Livekit-SimulationRun.html#method_setConcurrency">setConcurrency()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_setCreatedAt">setCreatedAt()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_setEndedAt">setEndedAt()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_setError">setError()</a></li>
@@ -3224,6 +3782,8 @@ Optional. Data for populating the Message object.</p>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_setId">setId()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_setJobCount">setJobCount()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_setJobs">setJobs()</a></li>
+                                            <li class=""><a href="classes/Livekit-SimulationRun.html#method_setMetrics">setMetrics()</a></li>
+                                            <li class=""><a href="classes/Livekit-SimulationRun.html#method_setMode">setMode()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_setNumSimulations">setNumSimulations()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_setPassedCount">setPassedCount()</a></li>
                                             <li class=""><a href="classes/Livekit-SimulationRun.html#method_setProjectId">setProjectId()</a></li>
