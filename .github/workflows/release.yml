@@ -17,7 +17,8 @@ jobs:
         id: release
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          release-type: php
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
       - name: Checkout code
         if: ${{ steps.release.outputs.release_created }}
         uses: actions/checkout@v7
