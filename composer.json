@@ -29,7 +29,7 @@
     "ext-bcmath": "*",
     "ramsey/uuid": "4.9.3",
     "firebase/php-jwt": "7.1.0",
-    "guzzlehttp/guzzle": "7.14.0",
+    "guzzlehttp/guzzle": "7.15.1",
     "google/protobuf": "5.35.1"
   },
   "require-dev": {
