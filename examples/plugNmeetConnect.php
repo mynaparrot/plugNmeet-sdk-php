@@ -30,6 +30,7 @@ use Mynaparrot\Plugnmeet\RoomCreateFeaturesBuilder;
 use Mynaparrot\PlugnmeetProto\ArtifactInfoReq;
 use Mynaparrot\PlugnmeetProto\ArtifactInfoRes;
 use Mynaparrot\PlugnmeetProto\BroadcastToRoomReq;
+use Mynaparrot\PlugnmeetProto\ClientType;
 use Mynaparrot\PlugnmeetProto\CommonResponse;
 use Mynaparrot\PlugnmeetProto\CopyrightConf;
 use Mynaparrot\PlugnmeetProto\CreateRoomReq;
@@ -208,19 +209,21 @@ class plugNmeetConnect
      * @param string $name The name of the user.
      * @param string $userId The ID of the user.
      * @param bool $isAdmin Whether the user is an administrator.
+     * @param int $clientType User type e.g. WEB or HYBRID_WEB.
      * @param bool $isHidden Whether the user is hidden.
      * @param UserMetadata|null $userMetadata Optional metadata for the user.
      * @param LockSettings|null $lockSettings Optional lock settings for the user.
      * @return GenerateTokenRes The response from the getJoinToken API call.
      * @throws Exception
      */
-    public function getJoinToken(string $roomId, string $name, string $userId, bool $isAdmin, bool $isHidden = false, UserMetadata|null $userMetadata = null, LockSettings|null $lockSettings = null): GenerateTokenRes
+    public function getJoinToken(string $roomId, string $name, string $userId, bool $isAdmin, int $clientType = ClientType::WEB, bool $isHidden = false, UserMetadata|null $userMetadata = null, LockSettings|null $lockSettings = null): GenerateTokenRes
     {
         $userInfo = new UserInfo();
         $userInfo->setUserId($userId);
         $userInfo->setName($name);
         $userInfo->setIsAdmin($isAdmin);
         $userInfo->setIsHidden($isHidden);
+        $userInfo->setClientType($clientType);
 
         if (!is_null($userMetadata)) {
             $userInfo->setUserMetadata($userMetadata);
