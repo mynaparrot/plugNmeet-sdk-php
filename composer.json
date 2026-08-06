@@ -34,6 +34,6 @@
   },
   "require-dev": {
     "overtrue/phplint": "9.7.2",
-    "squizlabs/php_codesniffer": "4.0.1"
+    "squizlabs/php_codesniffer": "4.0.2"
   }
 }
