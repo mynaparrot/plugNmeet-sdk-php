@@ -62,12 +62,6 @@ class Job extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.livekit.SimulationRun.Job.Usage usage = 13;</code>
      */
     protected $usage = null;
-    /**
-     * Quality metrics for this job's call. Unset when the job produced none.
-     *
-     * Generated from protobuf field <code>.livekit.SimulationRun.JobMetrics metrics = 14;</code>
-     */
-    protected $metrics = null;
 
     /**
      * Constructor.
@@ -87,8 +81,6 @@ class Job extends \Google\Protobuf\Internal\Message
      *     @type \Google\Protobuf\Timestamp $ended_at
      *     @type string $room_id
      *     @type \Livekit\SimulationRun\Job\Usage $usage
-     *     @type \Livekit\SimulationRun\JobMetrics $metrics
-     *           Quality metrics for this job's call. Unset when the job produced none.
      * }
      */
     public function __construct($data = NULL) {
@@ -386,42 +378,6 @@ class Job extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Livekit\SimulationRun\Job\Usage::class);
         $this->usage = $var;
-
-        return $this;
-    }
-
-    /**
-     * Quality metrics for this job's call. Unset when the job produced none.
-     *
-     * Generated from protobuf field <code>.livekit.SimulationRun.JobMetrics metrics = 14;</code>
-     * @return \Livekit\SimulationRun\JobMetrics|null
-     */
-    public function getMetrics()
-    {
-        return $this->metrics;
-    }
-
-    public function hasMetrics()
-    {
-        return isset($this->metrics);
-    }
-
-    public function clearMetrics()
-    {
-        unset($this->metrics);
-    }
-
-    /**
-     * Quality metrics for this job's call. Unset when the job produced none.
-     *
-     * Generated from protobuf field <code>.livekit.SimulationRun.JobMetrics metrics = 14;</code>
-     * @param \Livekit\SimulationRun\JobMetrics $var
-     * @return $this
-     */
-    public function setMetrics($var)
-    {
-        GPBUtil::checkMessage($var, \Livekit\SimulationRun\JobMetrics::class);
-        $this->metrics = $var;
 
         return $this;
     }

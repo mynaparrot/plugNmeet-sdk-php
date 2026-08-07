@@ -92,12 +92,6 @@ class SimulationRun extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.livekit.SimulationMode mode = 18;</code>
      */
     protected $mode = 0;
-    /**
-     * Run-level metric aggregates.
-     *
-     * Generated from protobuf field <code>.livekit.SimulationRun.RunMetrics metrics = 19;</code>
-     */
-    protected $metrics = null;
 
     /**
      * Constructor.
@@ -126,8 +120,6 @@ class SimulationRun extends \Google\Protobuf\Internal\Message
      *           Maximum simulate jobs running in parallel for this run (0 = server default).
      *     @type int $mode
      *           Conversation mode for every job in this run; unspecified = TEXT.
-     *     @type \Livekit\SimulationRun\RunMetrics $metrics
-     *           Run-level metric aggregates.
      * }
      */
     public function __construct($data = NULL) {
@@ -589,42 +581,6 @@ class SimulationRun extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkEnum($var, \Livekit\SimulationMode::class);
         $this->mode = $var;
-
-        return $this;
-    }
-
-    /**
-     * Run-level metric aggregates.
-     *
-     * Generated from protobuf field <code>.livekit.SimulationRun.RunMetrics metrics = 19;</code>
-     * @return \Livekit\SimulationRun\RunMetrics|null
-     */
-    public function getMetrics()
-    {
-        return $this->metrics;
-    }
-
-    public function hasMetrics()
-    {
-        return isset($this->metrics);
-    }
-
-    public function clearMetrics()
-    {
-        unset($this->metrics);
-    }
-
-    /**
-     * Run-level metric aggregates.
-     *
-     * Generated from protobuf field <code>.livekit.SimulationRun.RunMetrics metrics = 19;</code>
-     * @param \Livekit\SimulationRun\RunMetrics $var
-     * @return $this
-     */
-    public function setMetrics($var)
-    {
-        GPBUtil::checkMessage($var, \Livekit\SimulationRun\RunMetrics::class);
-        $this->metrics = $var;
 
         return $this;
     }

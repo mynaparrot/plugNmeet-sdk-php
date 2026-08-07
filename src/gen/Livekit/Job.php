@@ -63,10 +63,6 @@ class Job extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>map<string, string> attributes = 12 [(.logger.sensitivity) = SENSITIVITY_PII];</code>
      */
     private $attributes;
-    /**
-     * Generated from protobuf field <code>bool enable_redaction = 13;</code>
-     */
-    protected $enable_redaction = false;
 
     /**
      * Constructor.
@@ -86,7 +82,6 @@ class Job extends \Google\Protobuf\Internal\Message
      *     @type bool $enable_recording
      *     @type string $deployment
      *     @type array|\Google\Protobuf\Internal\MapField $attributes
-     *     @type bool $enable_redaction
      * }
      */
     public function __construct($data = NULL) {
@@ -390,28 +385,6 @@ class Job extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
         $this->attributes = $arr;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>bool enable_redaction = 13;</code>
-     * @return bool
-     */
-    public function getEnableRedaction()
-    {
-        return $this->enable_redaction;
-    }
-
-    /**
-     * Generated from protobuf field <code>bool enable_redaction = 13;</code>
-     * @param bool $var
-     * @return $this
-     */
-    public function setEnableRedaction($var)
-    {
-        GPBUtil::checkBool($var);
-        $this->enable_redaction = $var;
 
         return $this;
     }

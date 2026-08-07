@@ -27,12 +27,6 @@ class ConnectWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.livekit.SessionDescription sdp = 2;</code>
      */
     protected $sdp = null;
-    /**
-     * Wait for the answer for the call before returning.
-     *
-     * Generated from protobuf field <code>bool wait_until_answered = 3;</code>
-     */
-    protected $wait_until_answered = false;
 
     /**
      * Constructor.
@@ -45,8 +39,6 @@ class ConnectWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
      *     @type \Livekit\SessionDescription $sdp
      *           Required - The call connect webhook comes with SDP from Meta
      *           It is the answer SDP for a business initiated call
-     *     @type bool $wait_until_answered
-     *           Wait for the answer for the call before returning.
      * }
      */
     public function __construct($data = NULL) {
@@ -114,32 +106,6 @@ class ConnectWhatsAppCallRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Livekit\SessionDescription::class);
         $this->sdp = $var;
-
-        return $this;
-    }
-
-    /**
-     * Wait for the answer for the call before returning.
-     *
-     * Generated from protobuf field <code>bool wait_until_answered = 3;</code>
-     * @return bool
-     */
-    public function getWaitUntilAnswered()
-    {
-        return $this->wait_until_answered;
-    }
-
-    /**
-     * Wait for the answer for the call before returning.
-     *
-     * Generated from protobuf field <code>bool wait_until_answered = 3;</code>
-     * @param bool $var
-     * @return $this
-     */
-    public function setWaitUntilAnswered($var)
-    {
-        GPBUtil::checkBool($var);
-        $this->wait_until_answered = $var;
 
         return $this;
     }
