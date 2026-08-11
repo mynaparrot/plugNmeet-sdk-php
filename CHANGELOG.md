@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.4](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.2.3...v2.2.4) (2026-08-11)
+
+
+### Bug Fixes
+
+* include only necessay files ([0be86eb](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/0be86eb6cb010a1ac99952ebcf21c2bdd79384eb))
+
 ## [2.2.3](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.2.2...v2.2.3) (2026-08-11)
 
 
