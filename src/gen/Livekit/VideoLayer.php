@@ -80,7 +80,7 @@ class VideoLayer extends \Google\Protobuf\Internal\Message
      * for tracks with a single layer, this should be HIGH
      *
      * Generated from protobuf field <code>.livekit.VideoQuality quality = 1;</code>
-     * @return int
+     * @return int one of the values in {@see \Livekit\VideoQuality}
      */
     public function getQuality()
     {
@@ -91,10 +91,10 @@ class VideoLayer extends \Google\Protobuf\Internal\Message
      * for tracks with a single layer, this should be HIGH
      *
      * Generated from protobuf field <code>.livekit.VideoQuality quality = 1;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Livekit\VideoQuality}
      * @return $this
      */
-    public function setQuality($var)
+    public function setQuality(int $var)
     {
         GPBUtil::checkEnum($var, \Livekit\VideoQuality::class);
         $this->quality = $var;
@@ -116,7 +116,7 @@ class VideoLayer extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setWidth($var)
+    public function setWidth(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->width = $var;
@@ -138,7 +138,7 @@ class VideoLayer extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setHeight($var)
+    public function setHeight(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->height = $var;
@@ -164,7 +164,7 @@ class VideoLayer extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setBitrate($var)
+    public function setBitrate(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->bitrate = $var;
@@ -186,7 +186,7 @@ class VideoLayer extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSsrc($var)
+    public function setSsrc(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->ssrc = $var;
@@ -208,7 +208,7 @@ class VideoLayer extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSpatialLayer($var)
+    public function setSpatialLayer(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->spatial_layer = $var;
@@ -230,9 +230,9 @@ class VideoLayer extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRid($var)
+    public function setRid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->rid = $var;
 
         return $this;
@@ -252,7 +252,7 @@ class VideoLayer extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRepairSsrc($var)
+    public function setRepairSsrc(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->repair_ssrc = $var;

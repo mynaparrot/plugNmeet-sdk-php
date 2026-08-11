@@ -102,9 +102,9 @@ class CustomDesignParams extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPrimaryColor($var)
+    public function setPrimaryColor(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->primary_color = $var;
 
         return $this;
@@ -134,9 +134,9 @@ class CustomDesignParams extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSecondaryColor($var)
+    public function setSecondaryColor(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->secondary_color = $var;
 
         return $this;
@@ -166,9 +166,9 @@ class CustomDesignParams extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setBackgroundColor($var)
+    public function setBackgroundColor(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->background_color = $var;
 
         return $this;
@@ -198,9 +198,9 @@ class CustomDesignParams extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setBackgroundImage($var)
+    public function setBackgroundImage(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->background_image = $var;
 
         return $this;
@@ -230,9 +230,9 @@ class CustomDesignParams extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setHeaderBgColor($var)
+    public function setHeaderBgColor(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->header_bg_color = $var;
 
         return $this;
@@ -262,9 +262,9 @@ class CustomDesignParams extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFooterBgColor($var)
+    public function setFooterBgColor(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->footer_bg_color = $var;
 
         return $this;
@@ -294,9 +294,9 @@ class CustomDesignParams extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setLeftSideBgColor($var)
+    public function setLeftSideBgColor(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->left_side_bg_color = $var;
 
         return $this;
@@ -326,9 +326,9 @@ class CustomDesignParams extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRightSideBgColor($var)
+    public function setRightSideBgColor(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->right_side_bg_color = $var;
 
         return $this;
@@ -358,9 +358,9 @@ class CustomDesignParams extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCustomCssUrl($var)
+    public function setCustomCssUrl(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->custom_css_url = $var;
 
         return $this;
@@ -390,9 +390,9 @@ class CustomDesignParams extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCustomLogo($var)
+    public function setCustomLogo(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->custom_logo = $var;
 
         return $this;

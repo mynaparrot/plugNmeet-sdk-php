@@ -35,7 +35,7 @@ class InsightsGetSupportedLanguagesReq extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.InsightsServiceType service_type = 1;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\InsightsServiceType}
      */
     public function getServiceType()
     {
@@ -44,10 +44,10 @@ class InsightsGetSupportedLanguagesReq extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.InsightsServiceType service_type = 1;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\InsightsServiceType}
      * @return $this
      */
-    public function setServiceType($var)
+    public function setServiceType(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\InsightsServiceType::class);
         $this->service_type = $var;

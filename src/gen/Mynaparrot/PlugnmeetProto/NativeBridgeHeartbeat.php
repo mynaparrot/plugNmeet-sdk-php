@@ -49,7 +49,7 @@ class NativeBridgeHeartbeat extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTs($var)
+    public function setTs(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->ts = $var;

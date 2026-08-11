@@ -72,9 +72,8 @@ class RecordingFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsAllow($var)
+    public function setIsAllow(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_allow = $var;
 
         return $this;
@@ -94,9 +93,8 @@ class RecordingFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsAllowCloud($var)
+    public function setIsAllowCloud(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_allow_cloud = $var;
 
         return $this;
@@ -116,9 +114,8 @@ class RecordingFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEnableAutoCloudRecording($var)
+    public function setEnableAutoCloudRecording(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->enable_auto_cloud_recording = $var;
 
         return $this;
@@ -138,9 +135,8 @@ class RecordingFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsAllowLocal($var)
+    public function setIsAllowLocal(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_allow_local = $var;
 
         return $this;
@@ -160,9 +156,8 @@ class RecordingFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setOnlyRecordAdminWebcams($var)
+    public function setOnlyRecordAdminWebcams(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->only_record_admin_webcams = $var;
 
         return $this;
@@ -192,9 +187,8 @@ class RecordingFeatures extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\RecorderBotOptions $var
      * @return $this
      */
-    public function setRecorderBotOptions($var)
+    public function setRecorderBotOptions(\Mynaparrot\PlugnmeetProto\RecorderBotOptions|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\RecorderBotOptions::class);
         $this->recorder_bot_options = $var;
 
         return $this;

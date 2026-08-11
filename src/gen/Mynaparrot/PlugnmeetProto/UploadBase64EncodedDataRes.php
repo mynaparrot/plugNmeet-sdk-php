@@ -72,9 +72,8 @@ class UploadBase64EncodedDataRes extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setStatus($var)
+    public function setStatus(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->status = $var;
 
         return $this;
@@ -94,9 +93,9 @@ class UploadBase64EncodedDataRes extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMsg($var)
+    public function setMsg(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->msg = $var;
 
         return $this;
@@ -116,9 +115,9 @@ class UploadBase64EncodedDataRes extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFilePath($var)
+    public function setFilePath(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->file_path = $var;
 
         return $this;
@@ -138,9 +137,9 @@ class UploadBase64EncodedDataRes extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFileName($var)
+    public function setFileName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->file_name = $var;
 
         return $this;
@@ -160,9 +159,9 @@ class UploadBase64EncodedDataRes extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFileExtension($var)
+    public function setFileExtension(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->file_extension = $var;
 
         return $this;
@@ -182,9 +181,9 @@ class UploadBase64EncodedDataRes extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFileMimeType($var)
+    public function setFileMimeType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->file_mime_type = $var;
 
         return $this;

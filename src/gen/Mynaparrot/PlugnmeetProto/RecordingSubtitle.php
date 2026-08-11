@@ -52,9 +52,9 @@ class RecordingSubtitle extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setLabel($var)
+    public function setLabel(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->label = $var;
 
         return $this;
@@ -74,9 +74,9 @@ class RecordingSubtitle extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUrl($var)
+    public function setUrl(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->url = $var;
 
         return $this;

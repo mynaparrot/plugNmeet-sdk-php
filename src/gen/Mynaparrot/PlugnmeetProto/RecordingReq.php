@@ -70,7 +70,7 @@ class RecordingReq extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.RecordingTasks task = 1;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\RecordingTasks}
      */
     public function getTask()
     {
@@ -79,10 +79,10 @@ class RecordingReq extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.RecordingTasks task = 1;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\RecordingTasks}
      * @return $this
      */
-    public function setTask($var)
+    public function setTask(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\RecordingTasks::class);
         $this->task = $var;
@@ -104,9 +104,9 @@ class RecordingReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -126,7 +126,7 @@ class RecordingReq extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setRoomTableId($var)
+    public function setRoomTableId(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->room_table_id = $var;
@@ -148,9 +148,9 @@ class RecordingReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSid($var)
+    public function setSid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->sid = $var;
 
         return $this;
@@ -180,9 +180,9 @@ class RecordingReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRtmpUrl($var)
+    public function setRtmpUrl(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->rtmp_url = $var;
 
         return $this;
@@ -212,9 +212,9 @@ class RecordingReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCustomDesign($var)
+    public function setCustomDesign(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->custom_design = $var;
 
         return $this;
@@ -222,7 +222,7 @@ class RecordingReq extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .plugnmeet.CloudRecordingVariants recording_variant = 7;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\CloudRecordingVariants}
      */
     public function getRecordingVariant()
     {
@@ -241,10 +241,10 @@ class RecordingReq extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .plugnmeet.CloudRecordingVariants recording_variant = 7;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\CloudRecordingVariants}
      * @return $this
      */
-    public function setRecordingVariant($var)
+    public function setRecordingVariant(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\CloudRecordingVariants::class);
         $this->recording_variant = $var;
@@ -276,9 +276,8 @@ class RecordingReq extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\RecorderBotOptions $var
      * @return $this
      */
-    public function setRecorderBotOptions($var)
+    public function setRecorderBotOptions(\Mynaparrot\PlugnmeetProto\RecorderBotOptions|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\RecorderBotOptions::class);
         $this->recorder_bot_options = $var;
 
         return $this;

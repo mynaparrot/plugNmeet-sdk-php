@@ -69,9 +69,9 @@ class ArtifactInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setArtifactId($var)
+    public function setArtifactId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->artifact_id = $var;
 
         return $this;
@@ -91,9 +91,9 @@ class ArtifactInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -101,7 +101,7 @@ class ArtifactInfo extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.RoomArtifactType type = 3;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\RoomArtifactType}
      */
     public function getType()
     {
@@ -110,10 +110,10 @@ class ArtifactInfo extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.RoomArtifactType type = 3;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\RoomArtifactType}
      * @return $this
      */
-    public function setType($var)
+    public function setType(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\RoomArtifactType::class);
         $this->type = $var;
@@ -135,9 +135,9 @@ class ArtifactInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCreated($var)
+    public function setCreated(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->created = $var;
 
         return $this;
@@ -167,9 +167,8 @@ class ArtifactInfo extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\RoomArtifactMetadata $var
      * @return $this
      */
-    public function setMetadata($var)
+    public function setMetadata(\Mynaparrot\PlugnmeetProto\RoomArtifactMetadata|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\RoomArtifactMetadata::class);
         $this->metadata = $var;
 
         return $this;

@@ -59,9 +59,9 @@ class ParticipantTracks extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setParticipantSid($var)
+    public function setParticipantSid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->participant_sid = $var;
 
         return $this;
@@ -81,7 +81,7 @@ class ParticipantTracks extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setTrackSids($var)
+    public function setTrackSids(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->track_sids = $arr;

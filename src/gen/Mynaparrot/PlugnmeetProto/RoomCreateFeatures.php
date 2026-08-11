@@ -184,9 +184,8 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAllowWebcams($var)
+    public function setAllowWebcams(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->allow_webcams = $var;
 
         return $this;
@@ -206,9 +205,8 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setMuteOnStart($var)
+    public function setMuteOnStart(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->mute_on_start = $var;
 
         return $this;
@@ -228,9 +226,8 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAllowScreenShare($var)
+    public function setAllowScreenShare(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->allow_screen_share = $var;
 
         return $this;
@@ -273,10 +270,9 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      * @return $this
      * @deprecated
      */
-    public function setAllowRtmp($var)
+    public function setAllowRtmp(bool $var)
     {
         @trigger_error('allow_rtmp is deprecated.', E_USER_DEPRECATED);
-        GPBUtil::checkBool($var);
         $this->allow_rtmp = $var;
 
         return $this;
@@ -296,9 +292,8 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAllowViewOtherWebcams($var)
+    public function setAllowViewOtherWebcams(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->allow_view_other_webcams = $var;
 
         return $this;
@@ -318,9 +313,8 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAllowViewOtherUsersList($var)
+    public function setAllowViewOtherUsersList(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->allow_view_other_users_list = $var;
 
         return $this;
@@ -340,9 +334,8 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAdminOnlyWebcams($var)
+    public function setAdminOnlyWebcams(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->admin_only_webcams = $var;
 
         return $this;
@@ -354,7 +347,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      */
     public function getRoomDuration()
     {
-        return isset($this->room_duration) ? $this->room_duration : 0;
+        return isset($this->room_duration) ? $this->room_duration : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasRoomDuration()
@@ -372,7 +365,7 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setRoomDuration($var)
+    public function setRoomDuration(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->room_duration = $var;
@@ -394,9 +387,8 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEnableAnalytics($var)
+    public function setEnableAnalytics(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->enable_analytics = $var;
 
         return $this;
@@ -426,9 +418,8 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAllowVirtualBg($var)
+    public function setAllowVirtualBg(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->allow_virtual_bg = $var;
 
         return $this;
@@ -458,9 +449,8 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAllowRaiseHand($var)
+    public function setAllowRaiseHand(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->allow_raise_hand = $var;
 
         return $this;
@@ -490,9 +480,8 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAllowReactions($var)
+    public function setAllowReactions(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->allow_reactions = $var;
 
         return $this;
@@ -522,9 +511,8 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAutoGenUserId($var)
+    public function setAutoGenUserId(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->auto_gen_user_id = $var;
 
         return $this;
@@ -554,9 +542,8 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\RecordingFeatures $var
      * @return $this
      */
-    public function setRecordingFeatures($var)
+    public function setRecordingFeatures(\Mynaparrot\PlugnmeetProto\RecordingFeatures|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\RecordingFeatures::class);
         $this->recording_features = $var;
 
         return $this;
@@ -586,9 +573,8 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\ChatFeatures $var
      * @return $this
      */
-    public function setChatFeatures($var)
+    public function setChatFeatures(\Mynaparrot\PlugnmeetProto\ChatFeatures|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\ChatFeatures::class);
         $this->chat_features = $var;
 
         return $this;
@@ -618,9 +604,8 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\SharedNotePadFeatures $var
      * @return $this
      */
-    public function setSharedNotePadFeatures($var)
+    public function setSharedNotePadFeatures(\Mynaparrot\PlugnmeetProto\SharedNotePadFeatures|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\SharedNotePadFeatures::class);
         $this->shared_note_pad_features = $var;
 
         return $this;
@@ -650,9 +635,8 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\WhiteboardFeatures $var
      * @return $this
      */
-    public function setWhiteboardFeatures($var)
+    public function setWhiteboardFeatures(\Mynaparrot\PlugnmeetProto\WhiteboardFeatures|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\WhiteboardFeatures::class);
         $this->whiteboard_features = $var;
 
         return $this;
@@ -682,9 +666,8 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\ExternalMediaPlayerFeatures $var
      * @return $this
      */
-    public function setExternalMediaPlayerFeatures($var)
+    public function setExternalMediaPlayerFeatures(\Mynaparrot\PlugnmeetProto\ExternalMediaPlayerFeatures|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\ExternalMediaPlayerFeatures::class);
         $this->external_media_player_features = $var;
 
         return $this;
@@ -714,9 +697,8 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\WaitingRoomFeatures $var
      * @return $this
      */
-    public function setWaitingRoomFeatures($var)
+    public function setWaitingRoomFeatures(\Mynaparrot\PlugnmeetProto\WaitingRoomFeatures|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\WaitingRoomFeatures::class);
         $this->waiting_room_features = $var;
 
         return $this;
@@ -746,9 +728,8 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\BreakoutRoomFeatures $var
      * @return $this
      */
-    public function setBreakoutRoomFeatures($var)
+    public function setBreakoutRoomFeatures(\Mynaparrot\PlugnmeetProto\BreakoutRoomFeatures|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\BreakoutRoomFeatures::class);
         $this->breakout_room_features = $var;
 
         return $this;
@@ -778,9 +759,8 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\DisplayExternalLinkFeatures $var
      * @return $this
      */
-    public function setDisplayExternalLinkFeatures($var)
+    public function setDisplayExternalLinkFeatures(\Mynaparrot\PlugnmeetProto\DisplayExternalLinkFeatures|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\DisplayExternalLinkFeatures::class);
         $this->display_external_link_features = $var;
 
         return $this;
@@ -810,9 +790,8 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\IngressFeatures $var
      * @return $this
      */
-    public function setIngressFeatures($var)
+    public function setIngressFeatures(\Mynaparrot\PlugnmeetProto\IngressFeatures|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\IngressFeatures::class);
         $this->ingress_features = $var;
 
         return $this;
@@ -842,9 +821,8 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\EndToEndEncryptionFeatures $var
      * @return $this
      */
-    public function setEndToEndEncryptionFeatures($var)
+    public function setEndToEndEncryptionFeatures(\Mynaparrot\PlugnmeetProto\EndToEndEncryptionFeatures|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\EndToEndEncryptionFeatures::class);
         $this->end_to_end_encryption_features = $var;
 
         return $this;
@@ -874,9 +852,8 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\PollsFeatures $var
      * @return $this
      */
-    public function setPollsFeatures($var)
+    public function setPollsFeatures(\Mynaparrot\PlugnmeetProto\PollsFeatures|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\PollsFeatures::class);
         $this->polls_features = $var;
 
         return $this;
@@ -906,9 +883,8 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\InsightsFeatures $var
      * @return $this
      */
-    public function setInsightsFeatures($var)
+    public function setInsightsFeatures(\Mynaparrot\PlugnmeetProto\InsightsFeatures|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\InsightsFeatures::class);
         $this->insights_features = $var;
 
         return $this;
@@ -938,9 +914,8 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\SipDialInFeatures $var
      * @return $this
      */
-    public function setSipDialInFeatures($var)
+    public function setSipDialInFeatures(\Mynaparrot\PlugnmeetProto\SipDialInFeatures|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\SipDialInFeatures::class);
         $this->sip_dial_in_features = $var;
 
         return $this;
@@ -974,9 +949,8 @@ class RoomCreateFeatures extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\ExternalBroadcastingFeatures $var
      * @return $this
      */
-    public function setExternalBroadcastingFeatures($var)
+    public function setExternalBroadcastingFeatures(\Mynaparrot\PlugnmeetProto\ExternalBroadcastingFeatures|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\ExternalBroadcastingFeatures::class);
         $this->external_broadcasting_features = $var;
 
         return $this;

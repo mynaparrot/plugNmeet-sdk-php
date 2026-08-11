@@ -72,9 +72,9 @@ class UpdateUserLockSettingsReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomSid($var)
+    public function setRoomSid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_sid = $var;
 
         return $this;
@@ -94,9 +94,9 @@ class UpdateUserLockSettingsReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -116,9 +116,9 @@ class UpdateUserLockSettingsReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->user_id = $var;
 
         return $this;
@@ -138,9 +138,9 @@ class UpdateUserLockSettingsReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setService($var)
+    public function setService(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->service = $var;
 
         return $this;
@@ -160,9 +160,9 @@ class UpdateUserLockSettingsReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDirection($var)
+    public function setDirection(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->direction = $var;
 
         return $this;
@@ -182,9 +182,9 @@ class UpdateUserLockSettingsReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRequestedUserId($var)
+    public function setRequestedUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->Requested_user_id = $var;
 
         return $this;

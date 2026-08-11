@@ -75,9 +75,9 @@ class RpcRequest extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->id = $var;
 
         return $this;
@@ -97,9 +97,9 @@ class RpcRequest extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMethod($var)
+    public function setMethod(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->method = $var;
 
         return $this;
@@ -119,9 +119,9 @@ class RpcRequest extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPayload($var)
+    public function setPayload(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->payload = $var;
 
         return $this;
@@ -141,7 +141,7 @@ class RpcRequest extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setResponseTimeoutMs($var)
+    public function setResponseTimeoutMs(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->response_timeout_ms = $var;
@@ -163,7 +163,7 @@ class RpcRequest extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setVersion($var)
+    public function setVersion(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->version = $var;
@@ -189,9 +189,9 @@ class RpcRequest extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCompressedPayload($var)
+    public function setCompressedPayload(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->compressed_payload = $var;
 
         return $this;

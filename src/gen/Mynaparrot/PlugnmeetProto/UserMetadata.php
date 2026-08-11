@@ -116,9 +116,9 @@ class UserMetadata extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setProfilePic($var)
+    public function setProfilePic(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->profile_pic = $var;
 
         return $this;
@@ -138,9 +138,8 @@ class UserMetadata extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsAdmin($var)
+    public function setIsAdmin(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_admin = $var;
 
         return $this;
@@ -170,9 +169,8 @@ class UserMetadata extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setRecordWebcam($var)
+    public function setRecordWebcam(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->record_webcam = $var;
 
         return $this;
@@ -192,9 +190,8 @@ class UserMetadata extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsPresenter($var)
+    public function setIsPresenter(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_presenter = $var;
 
         return $this;
@@ -228,9 +225,8 @@ class UserMetadata extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\UserRaisedHand $var
      * @return $this
      */
-    public function setRaisedHand($var)
+    public function setRaisedHand(\Mynaparrot\PlugnmeetProto\UserRaisedHand|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\UserRaisedHand::class);
         $this->raised_hand = $var;
 
         return $this;
@@ -250,9 +246,8 @@ class UserMetadata extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setWaitForApproval($var)
+    public function setWaitForApproval(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->wait_for_approval = $var;
 
         return $this;
@@ -282,9 +277,9 @@ class UserMetadata extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPreferredLang($var)
+    public function setPreferredLang(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->preferred_lang = $var;
 
         return $this;
@@ -314,9 +309,8 @@ class UserMetadata extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\LockSettings $var
      * @return $this
      */
-    public function setLockSettings($var)
+    public function setLockSettings(\Mynaparrot\PlugnmeetProto\LockSettings|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\LockSettings::class);
         $this->lock_settings = $var;
 
         return $this;
@@ -350,9 +344,9 @@ class UserMetadata extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMetadataId($var)
+    public function setMetadataId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->metadata_id = $var;
 
         return $this;
@@ -372,7 +366,7 @@ class UserMetadata extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setExtraData($var)
+    public function setExtraData(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
         $this->extra_data = $arr;
@@ -408,9 +402,9 @@ class UserMetadata extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setExUserId($var)
+    public function setExUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->ex_user_id = $var;
 
         return $this;

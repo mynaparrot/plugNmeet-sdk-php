@@ -82,9 +82,9 @@ class RecordingInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRecordId($var)
+    public function setRecordId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->record_id = $var;
 
         return $this;
@@ -104,9 +104,9 @@ class RecordingInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -126,9 +126,9 @@ class RecordingInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomSid($var)
+    public function setRoomSid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_sid = $var;
 
         return $this;
@@ -148,9 +148,9 @@ class RecordingInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFilePath($var)
+    public function setFilePath(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->file_path = $var;
 
         return $this;
@@ -170,9 +170,8 @@ class RecordingInfo extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setFileSize($var)
+    public function setFileSize(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->file_size = $var;
 
         return $this;
@@ -192,7 +191,7 @@ class RecordingInfo extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreationTime($var)
+    public function setCreationTime(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->creation_time = $var;
@@ -214,7 +213,7 @@ class RecordingInfo extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setRoomCreationTime($var)
+    public function setRoomCreationTime(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->room_creation_time = $var;
@@ -246,9 +245,8 @@ class RecordingInfo extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\RecordingMetadata $var
      * @return $this
      */
-    public function setMetadata($var)
+    public function setMetadata(\Mynaparrot\PlugnmeetProto\RecordingMetadata|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\RecordingMetadata::class);
         $this->metadata = $var;
 
         return $this;

@@ -97,9 +97,8 @@ class PollResponse extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setStatus($var)
+    public function setStatus(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->status = $var;
 
         return $this;
@@ -119,9 +118,9 @@ class PollResponse extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMsg($var)
+    public function setMsg(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->msg = $var;
 
         return $this;
@@ -151,9 +150,9 @@ class PollResponse extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPollId($var)
+    public function setPollId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->poll_id = $var;
 
         return $this;
@@ -165,7 +164,7 @@ class PollResponse extends \Google\Protobuf\Internal\Message
      */
     public function getTotalResponses()
     {
-        return isset($this->total_responses) ? $this->total_responses : 0;
+        return isset($this->total_responses) ? $this->total_responses : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasTotalResponses()
@@ -183,7 +182,7 @@ class PollResponse extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTotalResponses($var)
+    public function setTotalResponses(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->total_responses = $var;
@@ -197,7 +196,7 @@ class PollResponse extends \Google\Protobuf\Internal\Message
      */
     public function getVoted()
     {
-        return isset($this->voted) ? $this->voted : 0;
+        return isset($this->voted) ? $this->voted : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasVoted()
@@ -215,7 +214,7 @@ class PollResponse extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setVoted($var)
+    public function setVoted(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->voted = $var;
@@ -237,7 +236,7 @@ class PollResponse extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setResponses($var)
+    public function setResponses(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
         $this->responses = $arr;
@@ -259,7 +258,7 @@ class PollResponse extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\PollInfo[] $var
      * @return $this
      */
-    public function setPolls($var)
+    public function setPolls(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Mynaparrot\PlugnmeetProto\PollInfo::class);
         $this->polls = $arr;
@@ -291,9 +290,8 @@ class PollResponse extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\PollsStats $var
      * @return $this
      */
-    public function setStats($var)
+    public function setStats(\Mynaparrot\PlugnmeetProto\PollsStats|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\PollsStats::class);
         $this->stats = $var;
 
         return $this;
@@ -305,7 +303,7 @@ class PollResponse extends \Google\Protobuf\Internal\Message
      */
     public function getTotalPolls()
     {
-        return isset($this->total_polls) ? $this->total_polls : 0;
+        return isset($this->total_polls) ? $this->total_polls : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasTotalPolls()
@@ -323,7 +321,7 @@ class PollResponse extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTotalPolls($var)
+    public function setTotalPolls(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->total_polls = $var;
@@ -337,7 +335,7 @@ class PollResponse extends \Google\Protobuf\Internal\Message
      */
     public function getTotalRunning()
     {
-        return isset($this->total_running) ? $this->total_running : 0;
+        return isset($this->total_running) ? $this->total_running : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasTotalRunning()
@@ -355,7 +353,7 @@ class PollResponse extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTotalRunning($var)
+    public function setTotalRunning(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->total_running = $var;
@@ -387,9 +385,8 @@ class PollResponse extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\PollResponsesResult $var
      * @return $this
      */
-    public function setPollResponsesResult($var)
+    public function setPollResponsesResult(\Mynaparrot\PlugnmeetProto\PollResponsesResult|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\PollResponsesResult::class);
         $this->poll_responses_result = $var;
 
         return $this;

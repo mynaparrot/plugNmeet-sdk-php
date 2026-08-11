@@ -56,9 +56,8 @@ class MergeRecordingsReq extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\MergeRecordingsByRoomSession $var
      * @return $this
      */
-    public function setBySession($var)
+    public function setBySession(\Mynaparrot\PlugnmeetProto\MergeRecordingsByRoomSession|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\MergeRecordingsByRoomSession::class);
         $this->writeOneof(1, $var);
 
         return $this;
@@ -87,9 +86,8 @@ class MergeRecordingsReq extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\MergeRecordingsByIds $var
      * @return $this
      */
-    public function setByIds($var)
+    public function setByIds(\Mynaparrot\PlugnmeetProto\MergeRecordingsByIds|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\MergeRecordingsByIds::class);
         $this->writeOneof(2, $var);
 
         return $this;

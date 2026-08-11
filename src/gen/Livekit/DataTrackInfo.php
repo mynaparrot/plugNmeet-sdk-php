@@ -94,7 +94,7 @@ class DataTrackInfo extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPubHandle($var)
+    public function setPubHandle(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->pub_handle = $var;
@@ -120,9 +120,9 @@ class DataTrackInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSid($var)
+    public function setSid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->sid = $var;
 
         return $this;
@@ -146,9 +146,9 @@ class DataTrackInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -158,7 +158,7 @@ class DataTrackInfo extends \Google\Protobuf\Internal\Message
      * Method used for end-to-end encryption (E2EE) on packet payloads.
      *
      * Generated from protobuf field <code>.livekit.Encryption.Type encryption = 4;</code>
-     * @return int
+     * @return int one of the values in {@see \Livekit\Encryption\Type}
      */
     public function getEncryption()
     {
@@ -169,10 +169,10 @@ class DataTrackInfo extends \Google\Protobuf\Internal\Message
      * Method used for end-to-end encryption (E2EE) on packet payloads.
      *
      * Generated from protobuf field <code>.livekit.Encryption.Type encryption = 4;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Livekit\Encryption\Type}
      * @return $this
      */
-    public function setEncryption($var)
+    public function setEncryption(int $var)
     {
         GPBUtil::checkEnum($var, \Livekit\Encryption\Type::class);
         $this->encryption = $var;
@@ -208,9 +208,8 @@ class DataTrackInfo extends \Google\Protobuf\Internal\Message
      * @param \Livekit\DataTrackFrameEncoding $var
      * @return $this
      */
-    public function setFrameEncoding($var)
+    public function setFrameEncoding(\Livekit\DataTrackFrameEncoding|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\DataTrackFrameEncoding::class);
         $this->frame_encoding = $var;
 
         return $this;
@@ -244,9 +243,8 @@ class DataTrackInfo extends \Google\Protobuf\Internal\Message
      * @param \Livekit\DataTrackSchemaId $var
      * @return $this
      */
-    public function setSchema($var)
+    public function setSchema(\Livekit\DataTrackSchemaId|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\DataTrackSchemaId::class);
         $this->schema = $var;
 
         return $this;

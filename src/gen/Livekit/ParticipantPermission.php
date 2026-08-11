@@ -132,9 +132,8 @@ class ParticipantPermission extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setCanSubscribe($var)
+    public function setCanSubscribe(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->can_subscribe = $var;
 
         return $this;
@@ -158,9 +157,8 @@ class ParticipantPermission extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setCanPublish($var)
+    public function setCanPublish(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->can_publish = $var;
 
         return $this;
@@ -184,9 +182,8 @@ class ParticipantPermission extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setCanPublishData($var)
+    public function setCanPublishData(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->can_publish_data = $var;
 
         return $this;
@@ -196,7 +193,7 @@ class ParticipantPermission extends \Google\Protobuf\Internal\Message
      * sources that are allowed to be published
      *
      * Generated from protobuf field <code>repeated .livekit.TrackSource can_publish_sources = 9;</code>
-     * @return RepeatedField<int>
+     * @return RepeatedField<int> one of the values in {@see \Livekit\TrackSource}
      */
     public function getCanPublishSources()
     {
@@ -207,10 +204,10 @@ class ParticipantPermission extends \Google\Protobuf\Internal\Message
      * sources that are allowed to be published
      *
      * Generated from protobuf field <code>repeated .livekit.TrackSource can_publish_sources = 9;</code>
-     * @param int[] $var
+     * @param int[] $var one of the values in {@see \Livekit\TrackSource}
      * @return $this
      */
-    public function setCanPublishSources($var)
+    public function setCanPublishSources(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Livekit\TrackSource::class);
         $this->can_publish_sources = $arr;
@@ -236,9 +233,8 @@ class ParticipantPermission extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setHidden($var)
+    public function setHidden(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->hidden = $var;
 
         return $this;
@@ -269,10 +265,9 @@ class ParticipantPermission extends \Google\Protobuf\Internal\Message
      * @return $this
      * @deprecated
      */
-    public function setRecorder($var)
+    public function setRecorder(bool $var)
     {
         @trigger_error('recorder is deprecated.', E_USER_DEPRECATED);
-        GPBUtil::checkBool($var);
         $this->recorder = $var;
 
         return $this;
@@ -296,9 +291,8 @@ class ParticipantPermission extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setCanUpdateMetadata($var)
+    public function setCanUpdateMetadata(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->can_update_metadata = $var;
 
         return $this;
@@ -329,10 +323,9 @@ class ParticipantPermission extends \Google\Protobuf\Internal\Message
      * @return $this
      * @deprecated
      */
-    public function setAgent($var)
+    public function setAgent(bool $var)
     {
         @trigger_error('agent is deprecated.', E_USER_DEPRECATED);
-        GPBUtil::checkBool($var);
         $this->agent = $var;
 
         return $this;
@@ -356,9 +349,8 @@ class ParticipantPermission extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setCanSubscribeMetrics($var)
+    public function setCanSubscribeMetrics(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->can_subscribe_metrics = $var;
 
         return $this;
@@ -382,9 +374,8 @@ class ParticipantPermission extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setCanManageAgentSession($var)
+    public function setCanManageAgentSession(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->can_manage_agent_session = $var;
 
         return $this;

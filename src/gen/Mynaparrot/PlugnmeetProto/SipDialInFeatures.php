@@ -87,9 +87,8 @@ class SipDialInFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsAllow($var)
+    public function setIsAllow(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_allow = $var;
 
         return $this;
@@ -117,9 +116,8 @@ class SipDialInFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEnableDialInOnCreate($var)
+    public function setEnableDialInOnCreate(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->enable_dial_in_on_create = $var;
 
         return $this;
@@ -139,9 +137,8 @@ class SipDialInFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setHidePhoneNumber($var)
+    public function setHidePhoneNumber(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->hide_phone_number = $var;
 
         return $this;
@@ -165,9 +162,8 @@ class SipDialInFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsActive($var)
+    public function setIsActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_active = $var;
 
         return $this;
@@ -187,7 +183,7 @@ class SipDialInFeatures extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setPhoneNumbers($var)
+    public function setPhoneNumbers(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->phone_numbers = $arr;
@@ -219,9 +215,9 @@ class SipDialInFeatures extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPin($var)
+    public function setPin(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->pin = $var;
 
         return $this;
@@ -251,9 +247,9 @@ class SipDialInFeatures extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDispatchRuleId($var)
+    public function setDispatchRuleId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->dispatch_rule_id = $var;
 
         return $this;

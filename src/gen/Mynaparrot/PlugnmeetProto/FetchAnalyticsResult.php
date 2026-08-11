@@ -67,7 +67,7 @@ class FetchAnalyticsResult extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTotalAnalytics($var)
+    public function setTotalAnalytics(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->total_analytics = $var;
@@ -89,7 +89,7 @@ class FetchAnalyticsResult extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFrom($var)
+    public function setFrom(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->from = $var;
@@ -111,7 +111,7 @@ class FetchAnalyticsResult extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLimit($var)
+    public function setLimit(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->limit = $var;
@@ -133,9 +133,9 @@ class FetchAnalyticsResult extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setOrderBy($var)
+    public function setOrderBy(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->order_by = $var;
 
         return $this;
@@ -155,7 +155,7 @@ class FetchAnalyticsResult extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\AnalyticsInfo[] $var
      * @return $this
      */
-    public function setAnalyticsList($var)
+    public function setAnalyticsList(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Mynaparrot\PlugnmeetProto\AnalyticsInfo::class);
         $this->analytics_list = $arr;

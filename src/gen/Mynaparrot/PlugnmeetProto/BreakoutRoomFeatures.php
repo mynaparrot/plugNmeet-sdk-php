@@ -57,9 +57,8 @@ class BreakoutRoomFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsAllow($var)
+    public function setIsAllow(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_allow = $var;
 
         return $this;
@@ -79,9 +78,8 @@ class BreakoutRoomFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsActive($var)
+    public function setIsActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_active = $var;
 
         return $this;
@@ -101,7 +99,7 @@ class BreakoutRoomFeatures extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setAllowedNumberRooms($var)
+    public function setAllowedNumberRooms(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->allowed_number_rooms = $var;

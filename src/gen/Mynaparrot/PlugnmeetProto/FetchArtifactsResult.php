@@ -74,7 +74,7 @@ class FetchArtifactsResult extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTotalArtifacts($var)
+    public function setTotalArtifacts(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->total_artifacts = $var;
@@ -96,7 +96,7 @@ class FetchArtifactsResult extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setFrom($var)
+    public function setFrom(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->from = $var;
@@ -118,7 +118,7 @@ class FetchArtifactsResult extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setLimit($var)
+    public function setLimit(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->limit = $var;
@@ -140,9 +140,9 @@ class FetchArtifactsResult extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setOrderBy($var)
+    public function setOrderBy(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->order_by = $var;
 
         return $this;
@@ -150,7 +150,7 @@ class FetchArtifactsResult extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .plugnmeet.RoomArtifactType type = 5;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\RoomArtifactType}
      */
     public function getType()
     {
@@ -169,10 +169,10 @@ class FetchArtifactsResult extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .plugnmeet.RoomArtifactType type = 5;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\RoomArtifactType}
      * @return $this
      */
-    public function setType($var)
+    public function setType(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\RoomArtifactType::class);
         $this->type = $var;
@@ -194,7 +194,7 @@ class FetchArtifactsResult extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\ArtifactInfo[] $var
      * @return $this
      */
-    public function setArtifactsList($var)
+    public function setArtifactsList(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Mynaparrot\PlugnmeetProto\ArtifactInfo::class);
         $this->artifacts_list = $arr;

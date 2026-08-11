@@ -92,9 +92,9 @@ class ChatMessage extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->id = $var;
 
         return $this;
@@ -114,9 +114,9 @@ class ChatMessage extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFromName($var)
+    public function setFromName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->from_name = $var;
 
         return $this;
@@ -136,9 +136,9 @@ class ChatMessage extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFromUserId($var)
+    public function setFromUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->from_user_id = $var;
 
         return $this;
@@ -158,7 +158,7 @@ class ChatMessage extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setSentAt($var)
+    public function setSentAt(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->sent_at = $var;
@@ -190,9 +190,9 @@ class ChatMessage extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setToUserId($var)
+    public function setToUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->to_user_id = $var;
 
         return $this;
@@ -212,9 +212,8 @@ class ChatMessage extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsPrivate($var)
+    public function setIsPrivate(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_private = $var;
 
         return $this;
@@ -234,9 +233,9 @@ class ChatMessage extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMessage($var)
+    public function setMessage(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->message = $var;
 
         return $this;
@@ -256,9 +255,8 @@ class ChatMessage extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setFromAdmin($var)
+    public function setFromAdmin(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->from_admin = $var;
 
         return $this;
@@ -288,9 +286,9 @@ class ChatMessage extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSourceLang($var)
+    public function setSourceLang(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->source_lang = $var;
 
         return $this;
@@ -310,7 +308,7 @@ class ChatMessage extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setTranslations($var)
+    public function setTranslations(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
         $this->translations = $arr;

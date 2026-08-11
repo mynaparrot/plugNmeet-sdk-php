@@ -52,9 +52,8 @@ class WaitingRoomFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsActive($var)
+    public function setIsActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_active = $var;
 
         return $this;
@@ -74,9 +73,9 @@ class WaitingRoomFeatures extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setWaitingRoomMsg($var)
+    public function setWaitingRoomMsg(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->waiting_room_msg = $var;
 
         return $this;

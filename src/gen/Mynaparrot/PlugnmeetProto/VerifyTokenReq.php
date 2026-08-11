@@ -57,9 +57,8 @@ class VerifyTokenReq extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsProduction($var)
+    public function setIsProduction(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_production = $var;
 
         return $this;

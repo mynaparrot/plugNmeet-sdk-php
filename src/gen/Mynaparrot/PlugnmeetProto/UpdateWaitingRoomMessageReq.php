@@ -52,9 +52,9 @@ class UpdateWaitingRoomMessageReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -74,9 +74,9 @@ class UpdateWaitingRoomMessageReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMsg($var)
+    public function setMsg(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->msg = $var;
 
         return $this;

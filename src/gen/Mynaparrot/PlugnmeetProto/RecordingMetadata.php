@@ -75,9 +75,9 @@ class RecordingMetadata extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTitle($var)
+    public function setTitle(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->title = $var;
 
         return $this;
@@ -107,9 +107,9 @@ class RecordingMetadata extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDescription($var)
+    public function setDescription(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->description = $var;
 
         return $this;
@@ -133,7 +133,7 @@ class RecordingMetadata extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setSubtitles($var)
+    public function setSubtitles(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::MESSAGE, \Mynaparrot\PlugnmeetProto\RecordingSubtitle::class);
         $this->subtitles = $arr;
@@ -155,7 +155,7 @@ class RecordingMetadata extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setExtraData($var)
+    public function setExtraData(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
         $this->extra_data = $arr;

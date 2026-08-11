@@ -60,9 +60,9 @@ class BroadcastToRoomReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -82,9 +82,8 @@ class BroadcastToRoomReq extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setOnlyToAdmins($var)
+    public function setOnlyToAdmins(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->only_to_admins = $var;
 
         return $this;
@@ -114,9 +113,9 @@ class BroadcastToRoomReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setToUserId($var)
+    public function setToUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->to_user_id = $var;
 
         return $this;
@@ -141,9 +140,8 @@ class BroadcastToRoomReq extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\BroadcastToRoomChatMessage $var
      * @return $this
      */
-    public function setChatMsg($var)
+    public function setChatMsg(\Mynaparrot\PlugnmeetProto\BroadcastToRoomChatMessage|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\BroadcastToRoomChatMessage::class);
         $this->writeOneof(4, $var);
 
         return $this;
@@ -168,9 +166,8 @@ class BroadcastToRoomReq extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\BroadcastToRoomNotificationMsg $var
      * @return $this
      */
-    public function setNotificationMsg($var)
+    public function setNotificationMsg(\Mynaparrot\PlugnmeetProto\BroadcastToRoomNotificationMsg|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\BroadcastToRoomNotificationMsg::class);
         $this->writeOneof(5, $var);
 
         return $this;

@@ -82,9 +82,8 @@ class WhiteboardFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsAllow($var)
+    public function setIsAllow(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_allow = $var;
 
         return $this;
@@ -104,9 +103,8 @@ class WhiteboardFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setVisible($var)
+    public function setVisible(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->visible = $var;
 
         return $this;
@@ -136,9 +134,9 @@ class WhiteboardFeatures extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPreloadFile($var)
+    public function setPreloadFile(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->preload_file = $var;
 
         return $this;
@@ -158,9 +156,9 @@ class WhiteboardFeatures extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setWhiteboardFileId($var)
+    public function setWhiteboardFileId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->whiteboard_file_id = $var;
 
         return $this;
@@ -180,9 +178,9 @@ class WhiteboardFeatures extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFileName($var)
+    public function setFileName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->file_name = $var;
 
         return $this;
@@ -202,9 +200,9 @@ class WhiteboardFeatures extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFilePath($var)
+    public function setFilePath(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->file_path = $var;
 
         return $this;
@@ -224,7 +222,7 @@ class WhiteboardFeatures extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTotalPages($var)
+    public function setTotalPages(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->total_pages = $var;
@@ -238,7 +236,7 @@ class WhiteboardFeatures extends \Google\Protobuf\Internal\Message
      */
     public function getMaxAllowedFileSize()
     {
-        return isset($this->max_allowed_file_size) ? $this->max_allowed_file_size : 0;
+        return isset($this->max_allowed_file_size) ? $this->max_allowed_file_size : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasMaxAllowedFileSize()
@@ -256,7 +254,7 @@ class WhiteboardFeatures extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setMaxAllowedFileSize($var)
+    public function setMaxAllowedFileSize(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->max_allowed_file_size = $var;

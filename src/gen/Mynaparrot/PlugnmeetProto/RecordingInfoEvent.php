@@ -67,9 +67,9 @@ class RecordingInfoEvent extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRecordId($var)
+    public function setRecordId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->record_id = $var;
 
         return $this;
@@ -89,9 +89,9 @@ class RecordingInfoEvent extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRecorderId($var)
+    public function setRecorderId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->recorder_id = $var;
 
         return $this;
@@ -111,9 +111,9 @@ class RecordingInfoEvent extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRecorderMsg($var)
+    public function setRecorderMsg(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->recorder_msg = $var;
 
         return $this;
@@ -143,9 +143,9 @@ class RecordingInfoEvent extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFilePath($var)
+    public function setFilePath(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->file_path = $var;
 
         return $this;
@@ -175,9 +175,8 @@ class RecordingInfoEvent extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setFileSize($var)
+    public function setFileSize(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->file_size = $var;
 
         return $this;

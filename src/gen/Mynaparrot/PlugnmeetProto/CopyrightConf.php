@@ -52,9 +52,8 @@ class CopyrightConf extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setDisplay($var)
+    public function setDisplay(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->display = $var;
 
         return $this;
@@ -74,9 +73,9 @@ class CopyrightConf extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setText($var)
+    public function setText(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->text = $var;
 
         return $this;

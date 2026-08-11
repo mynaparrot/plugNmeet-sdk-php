@@ -72,9 +72,9 @@ class LtiClaims extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->user_id = $var;
 
         return $this;
@@ -94,9 +94,9 @@ class LtiClaims extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -116,9 +116,8 @@ class LtiClaims extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsAdmin($var)
+    public function setIsAdmin(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_admin = $var;
 
         return $this;
@@ -138,9 +137,9 @@ class LtiClaims extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -160,9 +159,9 @@ class LtiClaims extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomTitle($var)
+    public function setRoomTitle(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_title = $var;
 
         return $this;
@@ -192,9 +191,8 @@ class LtiClaims extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\LtiCustomParameters $var
      * @return $this
      */
-    public function setLtiCustomParameters($var)
+    public function setLtiCustomParameters(\Mynaparrot\PlugnmeetProto\LtiCustomParameters|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\LtiCustomParameters::class);
         $this->lti_custom_parameters = $var;
 
         return $this;

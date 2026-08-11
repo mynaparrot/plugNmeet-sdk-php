@@ -67,9 +67,9 @@ class SubmitPollResponseReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -89,9 +89,9 @@ class SubmitPollResponseReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->user_id = $var;
 
         return $this;
@@ -111,9 +111,9 @@ class SubmitPollResponseReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -133,9 +133,9 @@ class SubmitPollResponseReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPollId($var)
+    public function setPollId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->poll_id = $var;
 
         return $this;
@@ -155,7 +155,7 @@ class SubmitPollResponseReq extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setSelectedOption($var)
+    public function setSelectedOption(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->selected_option = $var;

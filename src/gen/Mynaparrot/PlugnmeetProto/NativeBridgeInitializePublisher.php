@@ -62,9 +62,9 @@ class NativeBridgeInitializePublisher extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setLivekitUrl($var)
+    public function setLivekitUrl(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->livekit_url = $var;
 
         return $this;
@@ -84,9 +84,9 @@ class NativeBridgeInitializePublisher extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setToken($var)
+    public function setToken(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->token = $var;
 
         return $this;
@@ -106,9 +106,9 @@ class NativeBridgeInitializePublisher extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setNativeUserId($var)
+    public function setNativeUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->native_user_id = $var;
 
         return $this;
@@ -138,9 +138,8 @@ class NativeBridgeInitializePublisher extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\NativeBridgeE2EE $var
      * @return $this
      */
-    public function setE2Ee($var)
+    public function setE2Ee(\Mynaparrot\PlugnmeetProto\NativeBridgeE2EE|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\NativeBridgeE2EE::class);
         $this->e2ee = $var;
 
         return $this;

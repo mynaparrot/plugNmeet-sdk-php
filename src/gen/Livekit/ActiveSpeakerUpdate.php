@@ -48,7 +48,7 @@ class ActiveSpeakerUpdate extends \Google\Protobuf\Internal\Message
      * @param \Livekit\SpeakerInfo[] $var
      * @return $this
      */
-    public function setSpeakers($var)
+    public function setSpeakers(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\SpeakerInfo::class);
         $this->speakers = $arr;

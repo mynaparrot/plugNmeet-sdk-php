@@ -57,9 +57,9 @@ class AnalyticsEventData extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -79,7 +79,7 @@ class AnalyticsEventData extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTotal($var)
+    public function setTotal(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->total = $var;
@@ -101,7 +101,7 @@ class AnalyticsEventData extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\AnalyticsEventValue[] $var
      * @return $this
      */
-    public function setValues($var)
+    public function setValues(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Mynaparrot\PlugnmeetProto\AnalyticsEventValue::class);
         $this->values = $arr;

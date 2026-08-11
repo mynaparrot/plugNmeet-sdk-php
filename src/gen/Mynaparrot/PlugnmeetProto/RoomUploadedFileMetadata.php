@@ -82,9 +82,9 @@ class RoomUploadedFileMetadata extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFileId($var)
+    public function setFileId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->file_id = $var;
 
         return $this;
@@ -104,9 +104,9 @@ class RoomUploadedFileMetadata extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFileName($var)
+    public function setFileName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->file_name = $var;
 
         return $this;
@@ -126,9 +126,9 @@ class RoomUploadedFileMetadata extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFilePath($var)
+    public function setFilePath(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->file_path = $var;
 
         return $this;
@@ -148,9 +148,9 @@ class RoomUploadedFileMetadata extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMimeType($var)
+    public function setMimeType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->mime_type = $var;
 
         return $this;
@@ -170,9 +170,9 @@ class RoomUploadedFileMetadata extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUploadedByUserId($var)
+    public function setUploadedByUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->uploaded_by_user_id = $var;
 
         return $this;
@@ -192,9 +192,9 @@ class RoomUploadedFileMetadata extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUploadedByName($var)
+    public function setUploadedByName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->uploaded_by_name = $var;
 
         return $this;
@@ -202,7 +202,7 @@ class RoomUploadedFileMetadata extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.RoomUploadedFileType file_type = 7;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\RoomUploadedFileType}
      */
     public function getFileType()
     {
@@ -211,10 +211,10 @@ class RoomUploadedFileMetadata extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.RoomUploadedFileType file_type = 7;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\RoomUploadedFileType}
      * @return $this
      */
-    public function setFileType($var)
+    public function setFileType(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\RoomUploadedFileType::class);
         $this->file_type = $var;
@@ -246,7 +246,7 @@ class RoomUploadedFileMetadata extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTotalPages($var)
+    public function setTotalPages(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->total_pages = $var;

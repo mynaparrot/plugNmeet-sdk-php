@@ -81,9 +81,9 @@ class SimulcastCodecInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMimeType($var)
+    public function setMimeType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->mime_type = $var;
 
         return $this;
@@ -103,9 +103,9 @@ class SimulcastCodecInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMid($var)
+    public function setMid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->mid = $var;
 
         return $this;
@@ -125,9 +125,9 @@ class SimulcastCodecInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCid($var)
+    public function setCid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->cid = $var;
 
         return $this;
@@ -147,7 +147,7 @@ class SimulcastCodecInfo extends \Google\Protobuf\Internal\Message
      * @param \Livekit\VideoLayer[] $var
      * @return $this
      */
-    public function setLayers($var)
+    public function setLayers(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\VideoLayer::class);
         $this->layers = $arr;
@@ -157,7 +157,7 @@ class SimulcastCodecInfo extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.livekit.VideoLayer.Mode video_layer_mode = 5;</code>
-     * @return int
+     * @return int one of the values in {@see \Livekit\VideoLayer\Mode}
      */
     public function getVideoLayerMode()
     {
@@ -166,10 +166,10 @@ class SimulcastCodecInfo extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.livekit.VideoLayer.Mode video_layer_mode = 5;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Livekit\VideoLayer\Mode}
      * @return $this
      */
-    public function setVideoLayerMode($var)
+    public function setVideoLayerMode(int $var)
     {
         GPBUtil::checkEnum($var, \Livekit\VideoLayer\Mode::class);
         $this->video_layer_mode = $var;
@@ -201,9 +201,9 @@ class SimulcastCodecInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSdpCid($var)
+    public function setSdpCid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->sdp_cid = $var;
 
         return $this;

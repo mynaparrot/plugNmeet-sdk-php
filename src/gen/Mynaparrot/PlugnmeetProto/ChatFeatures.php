@@ -62,9 +62,8 @@ class ChatFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsAllow($var)
+    public function setIsAllow(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_allow = $var;
 
         return $this;
@@ -84,9 +83,8 @@ class ChatFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsAllowFileUpload($var)
+    public function setIsAllowFileUpload(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_allow_file_upload = $var;
 
         return $this;
@@ -106,7 +104,7 @@ class ChatFeatures extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setAllowedFileTypes($var)
+    public function setAllowedFileTypes(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->allowed_file_types = $arr;
@@ -120,7 +118,7 @@ class ChatFeatures extends \Google\Protobuf\Internal\Message
      */
     public function getMaxFileSize()
     {
-        return isset($this->max_file_size) ? $this->max_file_size : 0;
+        return isset($this->max_file_size) ? $this->max_file_size : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasMaxFileSize()
@@ -138,7 +136,7 @@ class ChatFeatures extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setMaxFileSize($var)
+    public function setMaxFileSize(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->max_file_size = $var;

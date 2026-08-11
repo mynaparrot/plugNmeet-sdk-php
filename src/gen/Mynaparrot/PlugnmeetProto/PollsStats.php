@@ -52,7 +52,7 @@ class PollsStats extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTotalPolls($var)
+    public function setTotalPolls(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->total_polls = $var;
@@ -74,7 +74,7 @@ class PollsStats extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTotalRunning($var)
+    public function setTotalRunning(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->total_running = $var;

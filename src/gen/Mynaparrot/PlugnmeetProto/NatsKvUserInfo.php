@@ -100,9 +100,9 @@ class NatsKvUserInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->user_id = $var;
 
         return $this;
@@ -122,9 +122,9 @@ class NatsKvUserInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUserSid($var)
+    public function setUserSid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->user_sid = $var;
 
         return $this;
@@ -144,9 +144,9 @@ class NatsKvUserInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -166,9 +166,9 @@ class NatsKvUserInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -188,9 +188,8 @@ class NatsKvUserInfo extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsAdmin($var)
+    public function setIsAdmin(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_admin = $var;
 
         return $this;
@@ -210,9 +209,8 @@ class NatsKvUserInfo extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsPresenter($var)
+    public function setIsPresenter(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_presenter = $var;
 
         return $this;
@@ -232,9 +230,9 @@ class NatsKvUserInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMetadata($var)
+    public function setMetadata(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->metadata = $var;
 
         return $this;
@@ -254,7 +252,7 @@ class NatsKvUserInfo extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setJoinedAt($var)
+    public function setJoinedAt(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->joined_at = $var;
@@ -276,7 +274,7 @@ class NatsKvUserInfo extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setReconnectedAt($var)
+    public function setReconnectedAt(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->reconnected_at = $var;
@@ -298,7 +296,7 @@ class NatsKvUserInfo extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDisconnectedAt($var)
+    public function setDisconnectedAt(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->disconnected_at = $var;
@@ -310,7 +308,7 @@ class NatsKvUserInfo extends \Google\Protobuf\Internal\Message
      * session client type; Default: WEB
      *
      * Generated from protobuf field <code>.plugnmeet.ClientType client_type = 11;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\ClientType}
      */
     public function getClientType()
     {
@@ -321,10 +319,10 @@ class NatsKvUserInfo extends \Google\Protobuf\Internal\Message
      * session client type; Default: WEB
      *
      * Generated from protobuf field <code>.plugnmeet.ClientType client_type = 11;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\ClientType}
      * @return $this
      */
-    public function setClientType($var)
+    public function setClientType(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\ClientType::class);
         $this->client_type = $var;

@@ -92,9 +92,9 @@ class NotifyEventRoom extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSid($var)
+    public function setSid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->sid = $var;
 
         return $this;
@@ -124,9 +124,9 @@ class NotifyEventRoom extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -156,7 +156,7 @@ class NotifyEventRoom extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEmptyTimeout($var)
+    public function setEmptyTimeout(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->empty_timeout = $var;
@@ -188,7 +188,7 @@ class NotifyEventRoom extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMaxParticipants($var)
+    public function setMaxParticipants(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->max_participants = $var;
@@ -202,7 +202,7 @@ class NotifyEventRoom extends \Google\Protobuf\Internal\Message
      */
     public function getCreationTime()
     {
-        return isset($this->creation_time) ? $this->creation_time : 0;
+        return isset($this->creation_time) ? $this->creation_time : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCreationTime()
@@ -220,7 +220,7 @@ class NotifyEventRoom extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreationTime($var)
+    public function setCreationTime(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->creation_time = $var;
@@ -242,7 +242,7 @@ class NotifyEventRoom extends \Google\Protobuf\Internal\Message
      * @param \Livekit\Codec[] $var
      * @return $this
      */
-    public function setEnabledCodecs($var)
+    public function setEnabledCodecs(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\Codec::class);
         $this->enabled_codecs = $arr;
@@ -274,9 +274,9 @@ class NotifyEventRoom extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMetadata($var)
+    public function setMetadata(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->metadata = $var;
 
         return $this;
@@ -306,7 +306,7 @@ class NotifyEventRoom extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setNumParticipants($var)
+    public function setNumParticipants(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->num_participants = $var;

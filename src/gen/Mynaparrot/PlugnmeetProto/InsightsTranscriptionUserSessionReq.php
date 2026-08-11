@@ -45,7 +45,7 @@ class InsightsTranscriptionUserSessionReq extends \Google\Protobuf\Internal\Mess
 
     /**
      * Generated from protobuf field <code>.plugnmeet.InsightsUserSessionAction action = 1;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\InsightsUserSessionAction}
      */
     public function getAction()
     {
@@ -54,10 +54,10 @@ class InsightsTranscriptionUserSessionReq extends \Google\Protobuf\Internal\Mess
 
     /**
      * Generated from protobuf field <code>.plugnmeet.InsightsUserSessionAction action = 1;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\InsightsUserSessionAction}
      * @return $this
      */
-    public function setAction($var)
+    public function setAction(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\InsightsUserSessionAction::class);
         $this->action = $var;
@@ -89,9 +89,9 @@ class InsightsTranscriptionUserSessionReq extends \Google\Protobuf\Internal\Mess
      * @param string $var
      * @return $this
      */
-    public function setSpokenLang($var)
+    public function setSpokenLang(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->spoken_lang = $var;
 
         return $this;
@@ -111,9 +111,8 @@ class InsightsTranscriptionUserSessionReq extends \Google\Protobuf\Internal\Mess
      * @param bool $var
      * @return $this
      */
-    public function setAllowedTranscriptionStorage($var)
+    public function setAllowedTranscriptionStorage(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->allowed_transcription_storage = $var;
 
         return $this;

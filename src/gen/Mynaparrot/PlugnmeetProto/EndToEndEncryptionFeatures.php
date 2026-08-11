@@ -70,9 +70,8 @@ class EndToEndEncryptionFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsEnabled($var)
+    public function setIsEnabled(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_enabled = $var;
 
         return $this;
@@ -92,9 +91,8 @@ class EndToEndEncryptionFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIncludedChatMessages($var)
+    public function setIncludedChatMessages(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->included_chat_messages = $var;
 
         return $this;
@@ -114,9 +112,8 @@ class EndToEndEncryptionFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIncludedWhiteboard($var)
+    public function setIncludedWhiteboard(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->included_whiteboard = $var;
 
         return $this;
@@ -136,9 +133,8 @@ class EndToEndEncryptionFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEnabledSelfInsertEncryptionKey($var)
+    public function setEnabledSelfInsertEncryptionKey(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->enabled_self_insert_encryption_key = $var;
 
         return $this;
@@ -172,9 +168,9 @@ class EndToEndEncryptionFeatures extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setEncryptionKey($var)
+    public function setEncryptionKey(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->encryption_key = $var;
 
         return $this;

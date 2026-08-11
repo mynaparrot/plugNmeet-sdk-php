@@ -54,9 +54,9 @@ class RoomArtifactProviderJobInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setJobId($var)
+    public function setJobId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->job_id = $var;
 
         return $this;
@@ -76,9 +76,9 @@ class RoomArtifactProviderJobInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFileName($var)
+    public function setFileName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->file_name = $var;
 
         return $this;

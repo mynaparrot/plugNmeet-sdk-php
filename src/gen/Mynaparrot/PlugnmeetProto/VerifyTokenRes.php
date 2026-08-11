@@ -100,9 +100,8 @@ class VerifyTokenRes extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setStatus($var)
+    public function setStatus(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->status = $var;
 
         return $this;
@@ -122,9 +121,9 @@ class VerifyTokenRes extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMsg($var)
+    public function setMsg(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->msg = $var;
 
         return $this;
@@ -144,7 +143,7 @@ class VerifyTokenRes extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setNatsWsUrls($var)
+    public function setNatsWsUrls(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->nats_ws_urls = $arr;
@@ -176,9 +175,9 @@ class VerifyTokenRes extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setServerVersion($var)
+    public function setServerVersion(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->server_version = $var;
 
         return $this;
@@ -208,9 +207,9 @@ class VerifyTokenRes extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -240,9 +239,9 @@ class VerifyTokenRes extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->user_id = $var;
 
         return $this;
@@ -272,9 +271,9 @@ class VerifyTokenRes extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomStreamName($var)
+    public function setRoomStreamName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_stream_name = $var;
 
         return $this;
@@ -304,9 +303,8 @@ class VerifyTokenRes extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\NatsSubjects $var
      * @return $this
      */
-    public function setNatsSubjects($var)
+    public function setNatsSubjects(\Mynaparrot\PlugnmeetProto\NatsSubjects|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\NatsSubjects::class);
         $this->nats_subjects = $var;
 
         return $this;
@@ -336,9 +334,8 @@ class VerifyTokenRes extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEnabledSelfInsertEncryptionKey($var)
+    public function setEnabledSelfInsertEncryptionKey(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->enabled_self_insert_encryption_key = $var;
 
         return $this;
@@ -368,9 +365,8 @@ class VerifyTokenRes extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsCloud($var)
+    public function setIsCloud(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_cloud = $var;
 
         return $this;
@@ -380,7 +376,7 @@ class VerifyTokenRes extends \Google\Protobuf\Internal\Message
      * echoed from the token claims; web client enters hybrid UI when HYBRID_WEB
      *
      * Generated from protobuf field <code>.plugnmeet.ClientType client_type = 11;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\ClientType}
      */
     public function getClientType()
     {
@@ -391,10 +387,10 @@ class VerifyTokenRes extends \Google\Protobuf\Internal\Message
      * echoed from the token claims; web client enters hybrid UI when HYBRID_WEB
      *
      * Generated from protobuf field <code>.plugnmeet.ClientType client_type = 11;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\ClientType}
      * @return $this
      */
-    public function setClientType($var)
+    public function setClientType(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\ClientType::class);
         $this->client_type = $var;

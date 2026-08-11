@@ -72,9 +72,9 @@ class AnalyticsRedisUserInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -94,9 +94,8 @@ class AnalyticsRedisUserInfo extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsAdmin($var)
+    public function setIsAdmin(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_admin = $var;
 
         return $this;
@@ -126,9 +125,9 @@ class AnalyticsRedisUserInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setExtraData($var)
+    public function setExtraData(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->extra_data = $var;
 
         return $this;
@@ -158,9 +157,9 @@ class AnalyticsRedisUserInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setExUserId($var)
+    public function setExUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->ex_user_id = $var;
 
         return $this;

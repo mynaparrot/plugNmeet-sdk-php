@@ -76,9 +76,8 @@ class BreakoutRoomRes extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setStatus($var)
+    public function setStatus(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->status = $var;
 
         return $this;
@@ -98,9 +97,9 @@ class BreakoutRoomRes extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMsg($var)
+    public function setMsg(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->msg = $var;
 
         return $this;
@@ -134,9 +133,9 @@ class BreakoutRoomRes extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setToken($var)
+    public function setToken(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->token = $var;
 
         return $this;
@@ -170,9 +169,8 @@ class BreakoutRoomRes extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\BreakoutRoom $var
      * @return $this
      */
-    public function setRoom($var)
+    public function setRoom(\Mynaparrot\PlugnmeetProto\BreakoutRoom|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\BreakoutRoom::class);
         $this->room = $var;
 
         return $this;
@@ -196,7 +194,7 @@ class BreakoutRoomRes extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\BreakoutRoom[] $var
      * @return $this
      */
-    public function setRooms($var)
+    public function setRooms(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Mynaparrot\PlugnmeetProto\BreakoutRoom::class);
         $this->rooms = $arr;

@@ -70,9 +70,9 @@ class MediaServerConnInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUrl($var)
+    public function setUrl(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->url = $var;
 
         return $this;
@@ -92,9 +92,9 @@ class MediaServerConnInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setToken($var)
+    public function setToken(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->token = $var;
 
         return $this;
@@ -114,9 +114,8 @@ class MediaServerConnInfo extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEnabledE2Ee($var)
+    public function setEnabledE2Ee(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->enabled_e2ee = $var;
 
         return $this;
@@ -146,9 +145,8 @@ class MediaServerConnInfo extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\TurnCredentials $var
      * @return $this
      */
-    public function setTurnCredentials($var)
+    public function setTurnCredentials(\Mynaparrot\PlugnmeetProto\TurnCredentials|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\TurnCredentials::class);
         $this->turn_credentials = $var;
 
         return $this;
@@ -172,9 +170,9 @@ class MediaServerConnInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setNativeToken($var)
+    public function setNativeToken(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->native_token = $var;
 
         return $this;

@@ -84,7 +84,7 @@ class DataPacket extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.livekit.DataPacket.Kind kind = 1 [deprecated = true];</code>
-     * @return int
+     * @return int one of the values in {@see \Livekit\DataPacket\Kind}
      * @deprecated
      */
     public function getKind()
@@ -97,11 +97,11 @@ class DataPacket extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.livekit.DataPacket.Kind kind = 1 [deprecated = true];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Livekit\DataPacket\Kind}
      * @return $this
      * @deprecated
      */
-    public function setKind($var)
+    public function setKind(int $var)
     {
         @trigger_error('kind is deprecated.', E_USER_DEPRECATED);
         GPBUtil::checkEnum($var, \Livekit\DataPacket\Kind::class);
@@ -128,9 +128,9 @@ class DataPacket extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setParticipantIdentity($var)
+    public function setParticipantIdentity(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->participant_identity = $var;
 
         return $this;
@@ -154,7 +154,7 @@ class DataPacket extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setDestinationIdentities($var)
+    public function setDestinationIdentities(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->destination_identities = $arr;
@@ -181,9 +181,8 @@ class DataPacket extends \Google\Protobuf\Internal\Message
      * @param \Livekit\UserPacket $var
      * @return $this
      */
-    public function setUser($var)
+    public function setUser(\Livekit\UserPacket|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\UserPacket::class);
         $this->writeOneof(2, $var);
 
         return $this;
@@ -216,10 +215,9 @@ class DataPacket extends \Google\Protobuf\Internal\Message
      * @return $this
      * @deprecated
      */
-    public function setSpeaker($var)
+    public function setSpeaker(\Livekit\ActiveSpeakerUpdate|null $var)
     {
         @trigger_error('speaker is deprecated.', E_USER_DEPRECATED);
-        GPBUtil::checkMessage($var, \Livekit\ActiveSpeakerUpdate::class);
         $this->writeOneof(3, $var);
 
         return $this;
@@ -244,9 +242,8 @@ class DataPacket extends \Google\Protobuf\Internal\Message
      * @param \Livekit\SipDTMF $var
      * @return $this
      */
-    public function setSipDtmf($var)
+    public function setSipDtmf(\Livekit\SipDTMF|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\SipDTMF::class);
         $this->writeOneof(6, $var);
 
         return $this;
@@ -271,9 +268,8 @@ class DataPacket extends \Google\Protobuf\Internal\Message
      * @param \Livekit\Transcription $var
      * @return $this
      */
-    public function setTranscription($var)
+    public function setTranscription(\Livekit\Transcription|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\Transcription::class);
         $this->writeOneof(7, $var);
 
         return $this;
@@ -298,9 +294,8 @@ class DataPacket extends \Google\Protobuf\Internal\Message
      * @param \Livekit\MetricsBatch $var
      * @return $this
      */
-    public function setMetrics($var)
+    public function setMetrics(\Livekit\MetricsBatch|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\MetricsBatch::class);
         $this->writeOneof(8, $var);
 
         return $this;
@@ -325,9 +320,8 @@ class DataPacket extends \Google\Protobuf\Internal\Message
      * @param \Livekit\ChatMessage $var
      * @return $this
      */
-    public function setChatMessage($var)
+    public function setChatMessage(\Livekit\ChatMessage|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\ChatMessage::class);
         $this->writeOneof(9, $var);
 
         return $this;
@@ -352,9 +346,8 @@ class DataPacket extends \Google\Protobuf\Internal\Message
      * @param \Livekit\RpcRequest $var
      * @return $this
      */
-    public function setRpcRequest($var)
+    public function setRpcRequest(\Livekit\RpcRequest|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\RpcRequest::class);
         $this->writeOneof(10, $var);
 
         return $this;
@@ -379,9 +372,8 @@ class DataPacket extends \Google\Protobuf\Internal\Message
      * @param \Livekit\RpcAck $var
      * @return $this
      */
-    public function setRpcAck($var)
+    public function setRpcAck(\Livekit\RpcAck|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\RpcAck::class);
         $this->writeOneof(11, $var);
 
         return $this;
@@ -406,9 +398,8 @@ class DataPacket extends \Google\Protobuf\Internal\Message
      * @param \Livekit\RpcResponse $var
      * @return $this
      */
-    public function setRpcResponse($var)
+    public function setRpcResponse(\Livekit\RpcResponse|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\RpcResponse::class);
         $this->writeOneof(12, $var);
 
         return $this;
@@ -433,9 +424,8 @@ class DataPacket extends \Google\Protobuf\Internal\Message
      * @param \Livekit\DataStream\Header $var
      * @return $this
      */
-    public function setStreamHeader($var)
+    public function setStreamHeader(\Livekit\DataStream\Header|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\DataStream\Header::class);
         $this->writeOneof(13, $var);
 
         return $this;
@@ -460,9 +450,8 @@ class DataPacket extends \Google\Protobuf\Internal\Message
      * @param \Livekit\DataStream\Chunk $var
      * @return $this
      */
-    public function setStreamChunk($var)
+    public function setStreamChunk(\Livekit\DataStream\Chunk|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\DataStream\Chunk::class);
         $this->writeOneof(14, $var);
 
         return $this;
@@ -487,9 +476,8 @@ class DataPacket extends \Google\Protobuf\Internal\Message
      * @param \Livekit\DataStream\Trailer $var
      * @return $this
      */
-    public function setStreamTrailer($var)
+    public function setStreamTrailer(\Livekit\DataStream\Trailer|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\DataStream\Trailer::class);
         $this->writeOneof(15, $var);
 
         return $this;
@@ -514,9 +502,8 @@ class DataPacket extends \Google\Protobuf\Internal\Message
      * @param \Livekit\EncryptedPacket $var
      * @return $this
      */
-    public function setEncryptedPacket($var)
+    public function setEncryptedPacket(\Livekit\EncryptedPacket|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\EncryptedPacket::class);
         $this->writeOneof(18, $var);
 
         return $this;
@@ -540,7 +527,7 @@ class DataPacket extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setSequence($var)
+    public function setSequence(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->sequence = $var;
@@ -566,9 +553,9 @@ class DataPacket extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setParticipantSid($var)
+    public function setParticipantSid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->participant_sid = $var;
 
         return $this;

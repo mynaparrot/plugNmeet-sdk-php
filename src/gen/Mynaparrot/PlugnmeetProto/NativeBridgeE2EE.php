@@ -52,9 +52,8 @@ class NativeBridgeE2EE extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEnabled($var)
+    public function setEnabled(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->enabled = $var;
 
         return $this;
@@ -84,9 +83,9 @@ class NativeBridgeE2EE extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setKey($var)
+    public function setKey(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->key = $var;
 
         return $this;

@@ -62,7 +62,7 @@ class DisabledCodecs extends \Google\Protobuf\Internal\Message
      * @param \Livekit\Codec[] $var
      * @return $this
      */
-    public function setCodecs($var)
+    public function setCodecs(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\Codec::class);
         $this->codecs = $arr;
@@ -88,7 +88,7 @@ class DisabledCodecs extends \Google\Protobuf\Internal\Message
      * @param \Livekit\Codec[] $var
      * @return $this
      */
-    public function setPublish($var)
+    public function setPublish(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\Codec::class);
         $this->publish = $arr;

@@ -55,7 +55,7 @@ class ExternalMediaPlayerReq extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.ExternalMediaPlayerTask task = 1;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\ExternalMediaPlayerTask}
      */
     public function getTask()
     {
@@ -64,10 +64,10 @@ class ExternalMediaPlayerReq extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.ExternalMediaPlayerTask task = 1;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\ExternalMediaPlayerTask}
      * @return $this
      */
-    public function setTask($var)
+    public function setTask(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\ExternalMediaPlayerTask::class);
         $this->task = $var;
@@ -99,9 +99,9 @@ class ExternalMediaPlayerReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUrl($var)
+    public function setUrl(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->url = $var;
 
         return $this;
@@ -131,9 +131,8 @@ class ExternalMediaPlayerReq extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setSeekTo($var)
+    public function setSeekTo(float $var)
     {
-        GPBUtil::checkDouble($var);
         $this->seek_to = $var;
 
         return $this;
@@ -153,9 +152,9 @@ class ExternalMediaPlayerReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -175,9 +174,9 @@ class ExternalMediaPlayerReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->user_id = $var;
 
         return $this;

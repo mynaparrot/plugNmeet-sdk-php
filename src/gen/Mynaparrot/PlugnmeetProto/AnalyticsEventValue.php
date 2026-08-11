@@ -52,7 +52,7 @@ class AnalyticsEventValue extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTime($var)
+    public function setTime(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->time = $var;
@@ -74,9 +74,9 @@ class AnalyticsEventValue extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setValue($var)
+    public function setValue(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->value = $var;
 
         return $this;

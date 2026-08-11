@@ -62,9 +62,8 @@ class CreateEtherpadSessionRes extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setStatus($var)
+    public function setStatus(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->status = $var;
 
         return $this;
@@ -84,9 +83,9 @@ class CreateEtherpadSessionRes extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMsg($var)
+    public function setMsg(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->msg = $var;
 
         return $this;
@@ -116,9 +115,9 @@ class CreateEtherpadSessionRes extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPadId($var)
+    public function setPadId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->pad_id = $var;
 
         return $this;
@@ -148,9 +147,9 @@ class CreateEtherpadSessionRes extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setReadonlyPadId($var)
+    public function setReadonlyPadId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->readonly_pad_id = $var;
 
         return $this;

@@ -77,7 +77,7 @@ class FetchArtifactsReq extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setRoomIds($var)
+    public function setRoomIds(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->room_ids = $arr;
@@ -113,9 +113,9 @@ class FetchArtifactsReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomSid($var)
+    public function setRoomSid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_sid = $var;
 
         return $this;
@@ -123,7 +123,7 @@ class FetchArtifactsReq extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .plugnmeet.RoomArtifactType type = 3;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\RoomArtifactType}
      */
     public function getType()
     {
@@ -142,10 +142,10 @@ class FetchArtifactsReq extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>optional .plugnmeet.RoomArtifactType type = 3;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\RoomArtifactType}
      * @return $this
      */
-    public function setType($var)
+    public function setType(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\RoomArtifactType::class);
         $this->type = $var;
@@ -167,7 +167,7 @@ class FetchArtifactsReq extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setFrom($var)
+    public function setFrom(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->from = $var;
@@ -189,7 +189,7 @@ class FetchArtifactsReq extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setLimit($var)
+    public function setLimit(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->limit = $var;
@@ -211,9 +211,9 @@ class FetchArtifactsReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setOrderBy($var)
+    public function setOrderBy(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->order_by = $var;
 
         return $this;

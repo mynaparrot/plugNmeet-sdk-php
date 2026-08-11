@@ -82,9 +82,9 @@ class PastRoomInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomTitle($var)
+    public function setRoomTitle(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_title = $var;
 
         return $this;
@@ -104,9 +104,9 @@ class PastRoomInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -126,9 +126,9 @@ class PastRoomInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomSid($var)
+    public function setRoomSid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_sid = $var;
 
         return $this;
@@ -148,7 +148,7 @@ class PastRoomInfo extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setJoinedParticipants($var)
+    public function setJoinedParticipants(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->joined_participants = $var;
@@ -170,9 +170,9 @@ class PastRoomInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setWebhookUrl($var)
+    public function setWebhookUrl(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->webhook_url = $var;
 
         return $this;
@@ -192,9 +192,9 @@ class PastRoomInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCreated($var)
+    public function setCreated(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->created = $var;
 
         return $this;
@@ -214,9 +214,9 @@ class PastRoomInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setEnded($var)
+    public function setEnded(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->ended = $var;
 
         return $this;
@@ -246,9 +246,9 @@ class PastRoomInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAnalyticsFileId($var)
+    public function setAnalyticsFileId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->analytics_file_id = $var;
 
         return $this;

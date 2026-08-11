@@ -13,6 +13,7 @@ protoc \
   --proto_path=./protocol/tmp/livekit-protocol/protobufs \
   --php_out=src/gen \
   ./protocol/proto_files/*.proto \
-  ./protocol/tmp/livekit-protocol/protobufs/*.proto
+  ./protocol/tmp/livekit-protocol/protobufs/livekit_models.proto \
+  ./protocol/tmp/livekit-protocol/protobufs/livekit_metrics.proto
 
 rsync -a ./patch/* ./src/gen/

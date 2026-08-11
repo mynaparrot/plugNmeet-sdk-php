@@ -84,7 +84,7 @@ class LtiCustomParameters extends \Google\Protobuf\Internal\Message
      */
     public function getRoomDuration()
     {
-        return isset($this->room_duration) ? $this->room_duration : 0;
+        return isset($this->room_duration) ? $this->room_duration : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasRoomDuration()
@@ -102,7 +102,7 @@ class LtiCustomParameters extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setRoomDuration($var)
+    public function setRoomDuration(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->room_duration = $var;
@@ -134,9 +134,8 @@ class LtiCustomParameters extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAllowPolls($var)
+    public function setAllowPolls(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->allow_polls = $var;
 
         return $this;
@@ -166,9 +165,8 @@ class LtiCustomParameters extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAllowSharedNotePad($var)
+    public function setAllowSharedNotePad(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->allow_shared_note_pad = $var;
 
         return $this;
@@ -198,9 +196,8 @@ class LtiCustomParameters extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAllowBreakoutRoom($var)
+    public function setAllowBreakoutRoom(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->allow_breakout_room = $var;
 
         return $this;
@@ -230,9 +227,8 @@ class LtiCustomParameters extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAllowRecording($var)
+    public function setAllowRecording(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->allow_recording = $var;
 
         return $this;
@@ -262,9 +258,8 @@ class LtiCustomParameters extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAllowRtmp($var)
+    public function setAllowRtmp(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->allow_rtmp = $var;
 
         return $this;
@@ -294,9 +289,8 @@ class LtiCustomParameters extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAllowViewOtherWebcams($var)
+    public function setAllowViewOtherWebcams(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->allow_view_other_webcams = $var;
 
         return $this;
@@ -326,9 +320,8 @@ class LtiCustomParameters extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAllowViewOtherUsersList($var)
+    public function setAllowViewOtherUsersList(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->allow_view_other_users_list = $var;
 
         return $this;
@@ -358,9 +351,8 @@ class LtiCustomParameters extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setMuteOnStart($var)
+    public function setMuteOnStart(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->mute_on_start = $var;
 
         return $this;
@@ -390,9 +382,8 @@ class LtiCustomParameters extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\LtiCustomDesign $var
      * @return $this
      */
-    public function setLtiCustomDesign($var)
+    public function setLtiCustomDesign(\Mynaparrot\PlugnmeetProto\LtiCustomDesign|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\LtiCustomDesign::class);
         $this->lti_custom_design = $var;
 
         return $this;

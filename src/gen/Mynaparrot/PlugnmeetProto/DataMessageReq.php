@@ -87,9 +87,9 @@ class DataMessageReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -109,9 +109,9 @@ class DataMessageReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomSid($var)
+    public function setRoomSid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_sid = $var;
 
         return $this;
@@ -131,9 +131,9 @@ class DataMessageReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->user_id = $var;
 
         return $this;
@@ -153,9 +153,9 @@ class DataMessageReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUserSid($var)
+    public function setUserSid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->user_sid = $var;
 
         return $this;
@@ -163,7 +163,7 @@ class DataMessageReq extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.DataMsgBodyType msg_body_type = 5;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\DataMsgBodyType}
      */
     public function getMsgBodyType()
     {
@@ -172,10 +172,10 @@ class DataMessageReq extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.DataMsgBodyType msg_body_type = 5;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\DataMsgBodyType}
      * @return $this
      */
-    public function setMsgBodyType($var)
+    public function setMsgBodyType(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\DataMsgBodyType::class);
         $this->msg_body_type = $var;
@@ -197,9 +197,9 @@ class DataMessageReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMsg($var)
+    public function setMsg(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->msg = $var;
 
         return $this;
@@ -219,9 +219,9 @@ class DataMessageReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRequestedUserId($var)
+    public function setRequestedUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->Requested_user_id = $var;
 
         return $this;
@@ -241,7 +241,7 @@ class DataMessageReq extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setSendTo($var)
+    public function setSendTo(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->send_to = $arr;
@@ -263,9 +263,8 @@ class DataMessageReq extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsAdmin($var)
+    public function setIsAdmin(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_admin = $var;
 
         return $this;

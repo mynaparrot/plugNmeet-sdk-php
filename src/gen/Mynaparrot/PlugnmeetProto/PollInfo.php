@@ -82,9 +82,9 @@ class PollInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->id = $var;
 
         return $this;
@@ -104,9 +104,9 @@ class PollInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -126,9 +126,9 @@ class PollInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setQuestion($var)
+    public function setQuestion(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->question = $var;
 
         return $this;
@@ -148,7 +148,7 @@ class PollInfo extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\CreatePollOptions[] $var
      * @return $this
      */
-    public function setOptions($var)
+    public function setOptions(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Mynaparrot\PlugnmeetProto\CreatePollOptions::class);
         $this->options = $arr;
@@ -170,9 +170,8 @@ class PollInfo extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsRunning($var)
+    public function setIsRunning(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_running = $var;
 
         return $this;
@@ -192,7 +191,7 @@ class PollInfo extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreated($var)
+    public function setCreated(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->created = $var;
@@ -214,9 +213,9 @@ class PollInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCreatedBy($var)
+    public function setCreatedBy(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->created_by = $var;
 
         return $this;
@@ -236,9 +235,9 @@ class PollInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setClosedBy($var)
+    public function setClosedBy(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->closed_by = $var;
 
         return $this;

@@ -57,7 +57,7 @@ class RoomArtifactDurationUsage extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDurationSec($var)
+    public function setDurationSec(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->duration_sec = $var;
@@ -79,7 +79,7 @@ class RoomArtifactDurationUsage extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setBreakdown($var)
+    public function setBreakdown(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::INT64);
         $this->breakdown = $arr;
@@ -111,9 +111,8 @@ class RoomArtifactDurationUsage extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setDurationSecEstimatedCost($var)
+    public function setDurationSecEstimatedCost(float $var)
     {
-        GPBUtil::checkDouble($var);
         $this->duration_sec_estimated_cost = $var;
 
         return $this;

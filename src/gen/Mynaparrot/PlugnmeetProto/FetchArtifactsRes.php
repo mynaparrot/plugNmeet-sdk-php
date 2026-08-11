@@ -64,9 +64,8 @@ class FetchArtifactsRes extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setStatus($var)
+    public function setStatus(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->status = $var;
 
         return $this;
@@ -86,9 +85,9 @@ class FetchArtifactsRes extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMsg($var)
+    public function setMsg(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->msg = $var;
 
         return $this;
@@ -96,7 +95,7 @@ class FetchArtifactsRes extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.StatusCode status_code = 3;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\StatusCode}
      */
     public function getStatusCode()
     {
@@ -105,10 +104,10 @@ class FetchArtifactsRes extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.StatusCode status_code = 3;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\StatusCode}
      * @return $this
      */
-    public function setStatusCode($var)
+    public function setStatusCode(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\StatusCode::class);
         $this->status_code = $var;
@@ -140,9 +139,8 @@ class FetchArtifactsRes extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\FetchArtifactsResult $var
      * @return $this
      */
-    public function setResult($var)
+    public function setResult(\Mynaparrot\PlugnmeetProto\FetchArtifactsResult|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\FetchArtifactsResult::class);
         $this->result = $var;
 
         return $this;

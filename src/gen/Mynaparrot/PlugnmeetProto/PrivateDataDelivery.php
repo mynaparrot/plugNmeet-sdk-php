@@ -57,9 +57,9 @@ class PrivateDataDelivery extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setToUserId($var)
+    public function setToUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->to_user_id = $var;
 
         return $this;
@@ -79,9 +79,8 @@ class PrivateDataDelivery extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEchoToSender($var)
+    public function setEchoToSender(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->echo_to_sender = $var;
 
         return $this;
@@ -101,9 +100,9 @@ class PrivateDataDelivery extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setType($var)
+    public function setType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->type = $var;
 
         return $this;

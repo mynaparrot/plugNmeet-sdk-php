@@ -102,9 +102,8 @@ class LockSettings extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLockMicrophone($var)
+    public function setLockMicrophone(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->lock_microphone = $var;
 
         return $this;
@@ -134,9 +133,8 @@ class LockSettings extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLockWebcam($var)
+    public function setLockWebcam(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->lock_webcam = $var;
 
         return $this;
@@ -166,9 +164,8 @@ class LockSettings extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLockScreenSharing($var)
+    public function setLockScreenSharing(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->lock_screen_sharing = $var;
 
         return $this;
@@ -198,9 +195,8 @@ class LockSettings extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLockChat($var)
+    public function setLockChat(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->lock_chat = $var;
 
         return $this;
@@ -230,9 +226,8 @@ class LockSettings extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLockChatSendMessage($var)
+    public function setLockChatSendMessage(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->lock_chat_send_message = $var;
 
         return $this;
@@ -262,9 +257,8 @@ class LockSettings extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLockChatFileShare($var)
+    public function setLockChatFileShare(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->lock_chat_file_share = $var;
 
         return $this;
@@ -294,9 +288,8 @@ class LockSettings extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLockPrivateChat($var)
+    public function setLockPrivateChat(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->lock_private_chat = $var;
 
         return $this;
@@ -326,9 +319,8 @@ class LockSettings extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLockWhiteboard($var)
+    public function setLockWhiteboard(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->lock_whiteboard = $var;
 
         return $this;
@@ -358,9 +350,8 @@ class LockSettings extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLockSharedNotepad($var)
+    public function setLockSharedNotepad(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->lock_shared_notepad = $var;
 
         return $this;
@@ -390,9 +381,8 @@ class LockSettings extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setLockReactions($var)
+    public function setLockReactions(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->lock_reactions = $var;
 
         return $this;

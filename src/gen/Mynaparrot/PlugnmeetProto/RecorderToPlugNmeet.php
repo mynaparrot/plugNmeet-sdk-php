@@ -105,9 +105,9 @@ class RecorderToPlugNmeet extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFrom($var)
+    public function setFrom(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->from = $var;
 
         return $this;
@@ -115,7 +115,7 @@ class RecorderToPlugNmeet extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.RecordingTasks task = 2;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\RecordingTasks}
      */
     public function getTask()
     {
@@ -124,10 +124,10 @@ class RecorderToPlugNmeet extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.RecordingTasks task = 2;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\RecordingTasks}
      * @return $this
      */
-    public function setTask($var)
+    public function setTask(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\RecordingTasks::class);
         $this->task = $var;
@@ -149,9 +149,8 @@ class RecorderToPlugNmeet extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setStatus($var)
+    public function setStatus(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->status = $var;
 
         return $this;
@@ -171,9 +170,9 @@ class RecorderToPlugNmeet extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMsg($var)
+    public function setMsg(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->msg = $var;
 
         return $this;
@@ -193,9 +192,9 @@ class RecorderToPlugNmeet extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRecordingId($var)
+    public function setRecordingId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->recording_id = $var;
 
         return $this;
@@ -215,7 +214,7 @@ class RecorderToPlugNmeet extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setRoomTableId($var)
+    public function setRoomTableId(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->room_table_id = $var;
@@ -237,9 +236,9 @@ class RecorderToPlugNmeet extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -259,9 +258,9 @@ class RecorderToPlugNmeet extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomSid($var)
+    public function setRoomSid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_sid = $var;
 
         return $this;
@@ -281,9 +280,9 @@ class RecorderToPlugNmeet extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRecorderId($var)
+    public function setRecorderId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->recorder_id = $var;
 
         return $this;
@@ -303,9 +302,9 @@ class RecorderToPlugNmeet extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFilePath($var)
+    public function setFilePath(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->file_path = $var;
 
         return $this;
@@ -325,9 +324,8 @@ class RecorderToPlugNmeet extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setFileSize($var)
+    public function setFileSize(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->file_size = $var;
 
         return $this;
@@ -337,7 +335,7 @@ class RecorderToPlugNmeet extends \Google\Protobuf\Internal\Message
      * next key 13
      *
      * Generated from protobuf field <code>optional .plugnmeet.CloudRecordingVariants recording_variant = 12;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\CloudRecordingVariants}
      */
     public function getRecordingVariant()
     {
@@ -358,10 +356,10 @@ class RecorderToPlugNmeet extends \Google\Protobuf\Internal\Message
      * next key 13
      *
      * Generated from protobuf field <code>optional .plugnmeet.CloudRecordingVariants recording_variant = 12;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\CloudRecordingVariants}
      * @return $this
      */
-    public function setRecordingVariant($var)
+    public function setRecordingVariant(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\CloudRecordingVariants::class);
         $this->recording_variant = $var;

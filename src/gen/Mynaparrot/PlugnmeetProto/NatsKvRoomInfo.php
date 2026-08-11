@@ -82,7 +82,7 @@ class NatsKvRoomInfo extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDbTableId($var)
+    public function setDbTableId(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->db_table_id = $var;
@@ -104,9 +104,9 @@ class NatsKvRoomInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -126,9 +126,9 @@ class NatsKvRoomInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomSid($var)
+    public function setRoomSid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_sid = $var;
 
         return $this;
@@ -148,9 +148,9 @@ class NatsKvRoomInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setStatus($var)
+    public function setStatus(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->status = $var;
 
         return $this;
@@ -170,7 +170,7 @@ class NatsKvRoomInfo extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setEmptyTimeout($var)
+    public function setEmptyTimeout(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->empty_timeout = $var;
@@ -192,7 +192,7 @@ class NatsKvRoomInfo extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setMaxParticipants($var)
+    public function setMaxParticipants(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->max_participants = $var;
@@ -214,9 +214,9 @@ class NatsKvRoomInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMetadata($var)
+    public function setMetadata(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->metadata = $var;
 
         return $this;
@@ -236,7 +236,7 @@ class NatsKvRoomInfo extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->created_at = $var;

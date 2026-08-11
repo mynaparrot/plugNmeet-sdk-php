@@ -68,7 +68,7 @@ class DataTrackSubscriptionOptions extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTargetFps($var)
+    public function setTargetFps(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->target_fps = $var;

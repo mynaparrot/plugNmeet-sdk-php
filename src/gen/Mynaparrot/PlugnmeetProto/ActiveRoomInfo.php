@@ -102,9 +102,9 @@ class ActiveRoomInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomTitle($var)
+    public function setRoomTitle(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_title = $var;
 
         return $this;
@@ -124,9 +124,9 @@ class ActiveRoomInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -146,9 +146,9 @@ class ActiveRoomInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSid($var)
+    public function setSid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->sid = $var;
 
         return $this;
@@ -168,7 +168,7 @@ class ActiveRoomInfo extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setJoinedParticipants($var)
+    public function setJoinedParticipants(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->joined_participants = $var;
@@ -190,7 +190,7 @@ class ActiveRoomInfo extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIsRunning($var)
+    public function setIsRunning(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->is_running = $var;
@@ -212,7 +212,7 @@ class ActiveRoomInfo extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIsRecording($var)
+    public function setIsRecording(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->is_recording = $var;
@@ -234,7 +234,7 @@ class ActiveRoomInfo extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIsActiveRtmp($var)
+    public function setIsActiveRtmp(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->is_active_rtmp = $var;
@@ -256,9 +256,9 @@ class ActiveRoomInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setWebhookUrl($var)
+    public function setWebhookUrl(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->webhook_url = $var;
 
         return $this;
@@ -278,7 +278,7 @@ class ActiveRoomInfo extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setIsBreakoutRoom($var)
+    public function setIsBreakoutRoom(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->is_breakout_room = $var;
@@ -300,9 +300,9 @@ class ActiveRoomInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setParentRoomId($var)
+    public function setParentRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->parent_room_id = $var;
 
         return $this;
@@ -322,7 +322,7 @@ class ActiveRoomInfo extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreationTime($var)
+    public function setCreationTime(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->creation_time = $var;
@@ -344,9 +344,9 @@ class ActiveRoomInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMetadata($var)
+    public function setMetadata(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->metadata = $var;
 
         return $this;

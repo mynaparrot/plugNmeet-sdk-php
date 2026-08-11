@@ -102,7 +102,7 @@ class EventMetric extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLabel($var)
+    public function setLabel(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->label = $var;
@@ -128,7 +128,7 @@ class EventMetric extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setParticipantIdentity($var)
+    public function setParticipantIdentity(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->participant_identity = $var;
@@ -154,7 +154,7 @@ class EventMetric extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTrackSid($var)
+    public function setTrackSid(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->track_sid = $var;
@@ -180,7 +180,7 @@ class EventMetric extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setStartTimestampMs($var)
+    public function setStartTimestampMs(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->start_timestamp_ms = $var;
@@ -196,7 +196,7 @@ class EventMetric extends \Google\Protobuf\Internal\Message
      */
     public function getEndTimestampMs()
     {
-        return isset($this->end_timestamp_ms) ? $this->end_timestamp_ms : 0;
+        return isset($this->end_timestamp_ms) ? $this->end_timestamp_ms : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasEndTimestampMs()
@@ -216,7 +216,7 @@ class EventMetric extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setEndTimestampMs($var)
+    public function setEndTimestampMs(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->end_timestamp_ms = $var;
@@ -248,9 +248,8 @@ class EventMetric extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setNormalizedStartTimestamp($var)
+    public function setNormalizedStartTimestamp(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->normalized_start_timestamp = $var;
 
         return $this;
@@ -280,9 +279,8 @@ class EventMetric extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setNormalizedEndTimestamp($var)
+    public function setNormalizedEndTimestamp(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->normalized_end_timestamp = $var;
 
         return $this;
@@ -302,9 +300,9 @@ class EventMetric extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMetadata($var)
+    public function setMetadata(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->metadata = $var;
 
         return $this;
@@ -328,7 +326,7 @@ class EventMetric extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRid($var)
+    public function setRid(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->rid = $var;

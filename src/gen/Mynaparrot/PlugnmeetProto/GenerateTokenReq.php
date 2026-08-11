@@ -52,9 +52,9 @@ class GenerateTokenReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -84,9 +84,8 @@ class GenerateTokenReq extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\UserInfo $var
      * @return $this
      */
-    public function setUserInfo($var)
+    public function setUserInfo(\Mynaparrot\PlugnmeetProto\UserInfo|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\UserInfo::class);
         $this->user_info = $var;
 
         return $this;

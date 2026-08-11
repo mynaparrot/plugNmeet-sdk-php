@@ -88,9 +88,9 @@ class ChatMessage extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->id = $var;
 
         return $this;
@@ -110,7 +110,7 @@ class ChatMessage extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTimestamp($var)
+    public function setTimestamp(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->timestamp = $var;
@@ -126,7 +126,7 @@ class ChatMessage extends \Google\Protobuf\Internal\Message
      */
     public function getEditTimestamp()
     {
-        return isset($this->edit_timestamp) ? $this->edit_timestamp : 0;
+        return isset($this->edit_timestamp) ? $this->edit_timestamp : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasEditTimestamp()
@@ -146,7 +146,7 @@ class ChatMessage extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setEditTimestamp($var)
+    public function setEditTimestamp(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->edit_timestamp = $var;
@@ -168,9 +168,9 @@ class ChatMessage extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMessage($var)
+    public function setMessage(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->message = $var;
 
         return $this;
@@ -194,9 +194,8 @@ class ChatMessage extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setDeleted($var)
+    public function setDeleted(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->deleted = $var;
 
         return $this;
@@ -220,9 +219,8 @@ class ChatMessage extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setGenerated($var)
+    public function setGenerated(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->generated = $var;
 
         return $this;

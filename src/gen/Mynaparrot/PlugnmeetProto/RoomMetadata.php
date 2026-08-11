@@ -115,9 +115,9 @@ class RoomMetadata extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomTitle($var)
+    public function setRoomTitle(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_title = $var;
 
         return $this;
@@ -147,9 +147,9 @@ class RoomMetadata extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setWelcomeMessage($var)
+    public function setWelcomeMessage(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->welcome_message = $var;
 
         return $this;
@@ -169,9 +169,8 @@ class RoomMetadata extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsRecording($var)
+    public function setIsRecording(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_recording = $var;
 
         return $this;
@@ -191,9 +190,8 @@ class RoomMetadata extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsActiveRtmp($var)
+    public function setIsActiveRtmp(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_active_rtmp = $var;
 
         return $this;
@@ -213,9 +211,9 @@ class RoomMetadata extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setParentRoomId($var)
+    public function setParentRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->parent_room_id = $var;
 
         return $this;
@@ -235,9 +233,8 @@ class RoomMetadata extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsBreakoutRoom($var)
+    public function setIsBreakoutRoom(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_breakout_room = $var;
 
         return $this;
@@ -267,9 +264,9 @@ class RoomMetadata extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setWebhookUrl($var)
+    public function setWebhookUrl(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->webhook_url = $var;
 
         return $this;
@@ -289,7 +286,7 @@ class RoomMetadata extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setStartedAt($var)
+    public function setStartedAt(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->started_at = $var;
@@ -321,9 +318,9 @@ class RoomMetadata extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setLogoutUrl($var)
+    public function setLogoutUrl(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->logout_url = $var;
 
         return $this;
@@ -353,9 +350,8 @@ class RoomMetadata extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\RoomCreateFeatures $var
      * @return $this
      */
-    public function setRoomFeatures($var)
+    public function setRoomFeatures(\Mynaparrot\PlugnmeetProto\RoomCreateFeatures|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\RoomCreateFeatures::class);
         $this->room_features = $var;
 
         return $this;
@@ -385,9 +381,8 @@ class RoomMetadata extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\LockSettings $var
      * @return $this
      */
-    public function setDefaultLockSettings($var)
+    public function setDefaultLockSettings(\Mynaparrot\PlugnmeetProto\LockSettings|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\LockSettings::class);
         $this->default_lock_settings = $var;
 
         return $this;
@@ -417,9 +412,8 @@ class RoomMetadata extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\CopyrightConf $var
      * @return $this
      */
-    public function setCopyrightConf($var)
+    public function setCopyrightConf(\Mynaparrot\PlugnmeetProto\CopyrightConf|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\CopyrightConf::class);
         $this->copyright_conf = $var;
 
         return $this;
@@ -453,9 +447,9 @@ class RoomMetadata extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMetadataId($var)
+    public function setMetadataId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->metadata_id = $var;
 
         return $this;
@@ -475,7 +469,7 @@ class RoomMetadata extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setExtraData($var)
+    public function setExtraData(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
         $this->extra_data = $arr;

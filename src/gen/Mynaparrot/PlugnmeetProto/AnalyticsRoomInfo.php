@@ -82,9 +82,9 @@ class AnalyticsRoomInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -104,9 +104,9 @@ class AnalyticsRoomInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomTitle($var)
+    public function setRoomTitle(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_title = $var;
 
         return $this;
@@ -126,7 +126,7 @@ class AnalyticsRoomInfo extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setRoomTotalUsers($var)
+    public function setRoomTotalUsers(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->room_total_users = $var;
@@ -148,7 +148,7 @@ class AnalyticsRoomInfo extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setRoomCreation($var)
+    public function setRoomCreation(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->room_creation = $var;
@@ -170,7 +170,7 @@ class AnalyticsRoomInfo extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setRoomEnded($var)
+    public function setRoomEnded(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->room_ended = $var;
@@ -192,7 +192,7 @@ class AnalyticsRoomInfo extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setRoomDuration($var)
+    public function setRoomDuration(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->room_duration = $var;
@@ -214,9 +214,8 @@ class AnalyticsRoomInfo extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEnabledE2Ee($var)
+    public function setEnabledE2Ee(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->enabled_e2ee = $var;
 
         return $this;
@@ -236,7 +235,7 @@ class AnalyticsRoomInfo extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\AnalyticsEventData[] $var
      * @return $this
      */
-    public function setEvents($var)
+    public function setEvents(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Mynaparrot\PlugnmeetProto\AnalyticsEventData::class);
         $this->events = $arr;

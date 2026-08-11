@@ -62,9 +62,9 @@ class NatsMsgServerToClient extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->id = $var;
 
         return $this;
@@ -72,7 +72,7 @@ class NatsMsgServerToClient extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.NatsMsgServerToClientEvents event = 2;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\NatsMsgServerToClientEvents}
      */
     public function getEvent()
     {
@@ -81,10 +81,10 @@ class NatsMsgServerToClient extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.NatsMsgServerToClientEvents event = 2;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\NatsMsgServerToClientEvents}
      * @return $this
      */
-    public function setEvent($var)
+    public function setEvent(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\NatsMsgServerToClientEvents::class);
         $this->event = $var;
@@ -106,9 +106,9 @@ class NatsMsgServerToClient extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMsg($var)
+    public function setMsg(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->msg = $var;
 
         return $this;
@@ -128,9 +128,9 @@ class NatsMsgServerToClient extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setBinMsg($var)
+    public function setBinMsg(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->bin_msg = $var;
 
         return $this;

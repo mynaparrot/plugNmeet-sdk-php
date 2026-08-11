@@ -62,9 +62,9 @@ class SpeechServiceEvent extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->user_id = $var;
 
         return $this;
@@ -84,7 +84,7 @@ class SpeechServiceEvent extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTotalUsage($var)
+    public function setTotalUsage(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->total_usage = $var;

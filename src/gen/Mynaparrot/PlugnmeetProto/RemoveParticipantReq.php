@@ -67,9 +67,9 @@ class RemoveParticipantReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSid($var)
+    public function setSid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->sid = $var;
 
         return $this;
@@ -89,9 +89,9 @@ class RemoveParticipantReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -111,9 +111,9 @@ class RemoveParticipantReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->user_id = $var;
 
         return $this;
@@ -133,9 +133,9 @@ class RemoveParticipantReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMsg($var)
+    public function setMsg(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->msg = $var;
 
         return $this;
@@ -155,9 +155,8 @@ class RemoveParticipantReq extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setBlockUser($var)
+    public function setBlockUser(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->block_user = $var;
 
         return $this;

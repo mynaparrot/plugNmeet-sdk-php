@@ -67,9 +67,9 @@ class DataChannelMessage extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->id = $var;
 
         return $this;
@@ -77,7 +77,7 @@ class DataChannelMessage extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.DataMsgBodyType type = 2;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\DataMsgBodyType}
      */
     public function getType()
     {
@@ -86,10 +86,10 @@ class DataChannelMessage extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.DataMsgBodyType type = 2;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\DataMsgBodyType}
      * @return $this
      */
-    public function setType($var)
+    public function setType(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\DataMsgBodyType::class);
         $this->type = $var;
@@ -111,9 +111,9 @@ class DataChannelMessage extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFromUserId($var)
+    public function setFromUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->from_user_id = $var;
 
         return $this;
@@ -143,9 +143,9 @@ class DataChannelMessage extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setToUserId($var)
+    public function setToUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->to_user_id = $var;
 
         return $this;
@@ -165,9 +165,9 @@ class DataChannelMessage extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMessage($var)
+    public function setMessage(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->message = $var;
 
         return $this;

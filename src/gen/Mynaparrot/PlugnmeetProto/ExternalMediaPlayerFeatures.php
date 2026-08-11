@@ -62,9 +62,8 @@ class ExternalMediaPlayerFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsAllow($var)
+    public function setIsAllow(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_allow = $var;
 
         return $this;
@@ -84,9 +83,8 @@ class ExternalMediaPlayerFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsActive($var)
+    public function setIsActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_active = $var;
 
         return $this;
@@ -116,9 +114,9 @@ class ExternalMediaPlayerFeatures extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSharedBy($var)
+    public function setSharedBy(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->shared_by = $var;
 
         return $this;
@@ -148,9 +146,9 @@ class ExternalMediaPlayerFeatures extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUrl($var)
+    public function setUrl(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->url = $var;
 
         return $this;

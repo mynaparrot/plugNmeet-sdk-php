@@ -57,9 +57,8 @@ class ExternalBroadcastingFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsAllow($var)
+    public function setIsAllow(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_allow = $var;
 
         return $this;
@@ -79,9 +78,8 @@ class ExternalBroadcastingFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsAllowRtmp($var)
+    public function setIsAllowRtmp(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_allow_rtmp = $var;
 
         return $this;
@@ -111,9 +109,8 @@ class ExternalBroadcastingFeatures extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\RecorderBotOptions $var
      * @return $this
      */
-    public function setRecorderBotOptions($var)
+    public function setRecorderBotOptions(\Mynaparrot\PlugnmeetProto\RecorderBotOptions|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\RecorderBotOptions::class);
         $this->recorder_bot_options = $var;
 
         return $this;

@@ -80,9 +80,9 @@ class TurnCredentials extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUsername($var)
+    public function setUsername(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->username = $var;
 
         return $this;
@@ -102,9 +102,9 @@ class TurnCredentials extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPassword($var)
+    public function setPassword(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->password = $var;
 
         return $this;
@@ -124,7 +124,7 @@ class TurnCredentials extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setUris($var)
+    public function setUris(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->uris = $arr;
@@ -146,9 +146,8 @@ class TurnCredentials extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setForceTurn($var)
+    public function setForceTurn(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->force_turn = $var;
 
         return $this;
@@ -168,9 +167,8 @@ class TurnCredentials extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setFallbackTurn($var)
+    public function setFallbackTurn(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->fallback_turn = $var;
 
         return $this;
@@ -194,7 +192,7 @@ class TurnCredentials extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setFallbackTimerDuration($var)
+    public function setFallbackTimerDuration(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->fallback_timer_duration = $var;
@@ -226,9 +224,8 @@ class TurnCredentials extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\FallbackOnFlapping $var
      * @return $this
      */
-    public function setFallbackOnFlapping($var)
+    public function setFallbackOnFlapping(\Mynaparrot\PlugnmeetProto\FallbackOnFlapping|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\FallbackOnFlapping::class);
         $this->fallback_on_flapping = $var;
 
         return $this;

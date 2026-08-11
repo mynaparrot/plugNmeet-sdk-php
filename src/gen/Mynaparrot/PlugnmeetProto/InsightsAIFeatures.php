@@ -57,9 +57,8 @@ class InsightsAIFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsAllow($var)
+    public function setIsAllow(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_allow = $var;
 
         return $this;
@@ -89,9 +88,8 @@ class InsightsAIFeatures extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\InsightsAITextChatFeatures $var
      * @return $this
      */
-    public function setAiTextChatFeatures($var)
+    public function setAiTextChatFeatures(\Mynaparrot\PlugnmeetProto\InsightsAITextChatFeatures|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\InsightsAITextChatFeatures::class);
         $this->ai_text_chat_features = $var;
 
         return $this;
@@ -121,9 +119,8 @@ class InsightsAIFeatures extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\InsightsAIMeetingSummarizationFeatures $var
      * @return $this
      */
-    public function setMeetingSummarizationFeatures($var)
+    public function setMeetingSummarizationFeatures(\Mynaparrot\PlugnmeetProto\InsightsAIMeetingSummarizationFeatures|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\InsightsAIMeetingSummarizationFeatures::class);
         $this->meeting_summarization_features = $var;
 
         return $this;

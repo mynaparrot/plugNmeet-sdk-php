@@ -72,9 +72,9 @@ class TranscriptionSegment extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->id = $var;
 
         return $this;
@@ -94,9 +94,9 @@ class TranscriptionSegment extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setText($var)
+    public function setText(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->text = $var;
 
         return $this;
@@ -116,7 +116,7 @@ class TranscriptionSegment extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setStartTime($var)
+    public function setStartTime(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->start_time = $var;
@@ -138,7 +138,7 @@ class TranscriptionSegment extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setEndTime($var)
+    public function setEndTime(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->end_time = $var;
@@ -160,9 +160,8 @@ class TranscriptionSegment extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setFinal($var)
+    public function setFinal(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->final = $var;
 
         return $this;
@@ -182,9 +181,9 @@ class TranscriptionSegment extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setLanguage($var)
+    public function setLanguage(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->language = $var;
 
         return $this;

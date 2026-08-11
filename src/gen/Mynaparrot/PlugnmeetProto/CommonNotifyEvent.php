@@ -102,9 +102,9 @@ class CommonNotifyEvent extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setEvent($var)
+    public function setEvent(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->event = $var;
 
         return $this;
@@ -134,9 +134,8 @@ class CommonNotifyEvent extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\NotifyEventRoom $var
      * @return $this
      */
-    public function setRoom($var)
+    public function setRoom(\Mynaparrot\PlugnmeetProto\NotifyEventRoom|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\NotifyEventRoom::class);
         $this->room = $var;
 
         return $this;
@@ -166,9 +165,8 @@ class CommonNotifyEvent extends \Google\Protobuf\Internal\Message
      * @param \Livekit\ParticipantInfo $var
      * @return $this
      */
-    public function setParticipant($var)
+    public function setParticipant(\Livekit\ParticipantInfo|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\ParticipantInfo::class);
         $this->participant = $var;
 
         return $this;
@@ -198,9 +196,8 @@ class CommonNotifyEvent extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\RecordingInfoEvent $var
      * @return $this
      */
-    public function setRecordingInfo($var)
+    public function setRecordingInfo(\Mynaparrot\PlugnmeetProto\RecordingInfoEvent|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\RecordingInfoEvent::class);
         $this->recording_info = $var;
 
         return $this;
@@ -230,9 +227,8 @@ class CommonNotifyEvent extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\SpeechServiceEvent $var
      * @return $this
      */
-    public function setSpeechService($var)
+    public function setSpeechService(\Mynaparrot\PlugnmeetProto\SpeechServiceEvent|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\SpeechServiceEvent::class);
         $this->speech_service = $var;
 
         return $this;
@@ -262,9 +258,8 @@ class CommonNotifyEvent extends \Google\Protobuf\Internal\Message
      * @param \Livekit\TrackInfo $var
      * @return $this
      */
-    public function setTrack($var)
+    public function setTrack(\Livekit\TrackInfo|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\TrackInfo::class);
         $this->track = $var;
 
         return $this;
@@ -294,9 +289,8 @@ class CommonNotifyEvent extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\AnalyticsEvent $var
      * @return $this
      */
-    public function setAnalytics($var)
+    public function setAnalytics(\Mynaparrot\PlugnmeetProto\AnalyticsEvent|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\AnalyticsEvent::class);
         $this->analytics = $var;
 
         return $this;
@@ -326,9 +320,8 @@ class CommonNotifyEvent extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\RoomArtifactWebhookEvent $var
      * @return $this
      */
-    public function setRoomArtifact($var)
+    public function setRoomArtifact(\Mynaparrot\PlugnmeetProto\RoomArtifactWebhookEvent|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\RoomArtifactWebhookEvent::class);
         $this->room_artifact = $var;
 
         return $this;
@@ -358,9 +351,9 @@ class CommonNotifyEvent extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->id = $var;
 
         return $this;
@@ -372,7 +365,7 @@ class CommonNotifyEvent extends \Google\Protobuf\Internal\Message
      */
     public function getCreatedAt()
     {
-        return isset($this->created_at) ? $this->created_at : 0;
+        return isset($this->created_at) ? $this->created_at : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasCreatedAt()
@@ -390,7 +383,7 @@ class CommonNotifyEvent extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->created_at = $var;

@@ -79,9 +79,8 @@ class ClientConfiguration extends \Google\Protobuf\Internal\Message
      * @param \Livekit\VideoConfiguration $var
      * @return $this
      */
-    public function setVideo($var)
+    public function setVideo(\Livekit\VideoConfiguration|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\VideoConfiguration::class);
         $this->video = $var;
 
         return $this;
@@ -111,9 +110,8 @@ class ClientConfiguration extends \Google\Protobuf\Internal\Message
      * @param \Livekit\VideoConfiguration $var
      * @return $this
      */
-    public function setScreen($var)
+    public function setScreen(\Livekit\VideoConfiguration|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\VideoConfiguration::class);
         $this->screen = $var;
 
         return $this;
@@ -121,7 +119,7 @@ class ClientConfiguration extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.livekit.ClientConfigSetting resume_connection = 3;</code>
-     * @return int
+     * @return int one of the values in {@see \Livekit\ClientConfigSetting}
      */
     public function getResumeConnection()
     {
@@ -130,10 +128,10 @@ class ClientConfiguration extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.livekit.ClientConfigSetting resume_connection = 3;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Livekit\ClientConfigSetting}
      * @return $this
      */
-    public function setResumeConnection($var)
+    public function setResumeConnection(int $var)
     {
         GPBUtil::checkEnum($var, \Livekit\ClientConfigSetting::class);
         $this->resume_connection = $var;
@@ -165,9 +163,8 @@ class ClientConfiguration extends \Google\Protobuf\Internal\Message
      * @param \Livekit\DisabledCodecs $var
      * @return $this
      */
-    public function setDisabledCodecs($var)
+    public function setDisabledCodecs(\Livekit\DisabledCodecs|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\DisabledCodecs::class);
         $this->disabled_codecs = $var;
 
         return $this;
@@ -175,7 +172,7 @@ class ClientConfiguration extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.livekit.ClientConfigSetting force_relay = 5;</code>
-     * @return int
+     * @return int one of the values in {@see \Livekit\ClientConfigSetting}
      */
     public function getForceRelay()
     {
@@ -184,10 +181,10 @@ class ClientConfiguration extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.livekit.ClientConfigSetting force_relay = 5;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Livekit\ClientConfigSetting}
      * @return $this
      */
-    public function setForceRelay($var)
+    public function setForceRelay(int $var)
     {
         GPBUtil::checkEnum($var, \Livekit\ClientConfigSetting::class);
         $this->force_relay = $var;

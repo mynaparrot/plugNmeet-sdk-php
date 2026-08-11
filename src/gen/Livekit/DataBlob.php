@@ -74,9 +74,8 @@ class DataBlob extends \Google\Protobuf\Internal\Message
      * @param \Livekit\DataBlobKey $var
      * @return $this
      */
-    public function setKey($var)
+    public function setKey(\Livekit\DataBlobKey|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\DataBlobKey::class);
         $this->key = $var;
 
         return $this;
@@ -100,9 +99,9 @@ class DataBlob extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setContents($var)
+    public function setContents(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->contents = $var;
 
         return $this;

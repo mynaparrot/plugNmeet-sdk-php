@@ -57,9 +57,9 @@ class IncreaseBreakoutRoomDurationReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setBreakoutRoomId($var)
+    public function setBreakoutRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->breakout_room_id = $var;
 
         return $this;
@@ -79,7 +79,7 @@ class IncreaseBreakoutRoomDurationReq extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDuration($var)
+    public function setDuration(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->duration = $var;
@@ -101,9 +101,9 @@ class IncreaseBreakoutRoomDurationReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;

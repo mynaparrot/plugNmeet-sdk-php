@@ -52,9 +52,9 @@ class Codec extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMime($var)
+    public function setMime(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->mime = $var;
 
         return $this;
@@ -74,9 +74,9 @@ class Codec extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFmtpLine($var)
+    public function setFmtpLine(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->fmtp_line = $var;
 
         return $this;

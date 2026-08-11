@@ -57,9 +57,8 @@ class InsightsGetSupportedLanguagesRes extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setStatus($var)
+    public function setStatus(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->status = $var;
 
         return $this;
@@ -79,9 +78,9 @@ class InsightsGetSupportedLanguagesRes extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMsg($var)
+    public function setMsg(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->msg = $var;
 
         return $this;
@@ -101,7 +100,7 @@ class InsightsGetSupportedLanguagesRes extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\InsightsSupportedLangInfo[] $var
      * @return $this
      */
-    public function setLanguages($var)
+    public function setLanguages(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Mynaparrot\PlugnmeetProto\InsightsSupportedLangInfo::class);
         $this->languages = $arr;

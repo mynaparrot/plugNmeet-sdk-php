@@ -84,9 +84,8 @@ class GetClientFilesRes extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setStatus($var)
+    public function setStatus(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->status = $var;
 
         return $this;
@@ -106,9 +105,9 @@ class GetClientFilesRes extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMsg($var)
+    public function setMsg(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->msg = $var;
 
         return $this;
@@ -116,7 +115,7 @@ class GetClientFilesRes extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.StatusCode status_code = 3;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\StatusCode}
      */
     public function getStatusCode()
     {
@@ -125,10 +124,10 @@ class GetClientFilesRes extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.StatusCode status_code = 3;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\StatusCode}
      * @return $this
      */
-    public function setStatusCode($var)
+    public function setStatusCode(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\StatusCode::class);
         $this->status_code = $var;
@@ -155,7 +154,7 @@ class GetClientFilesRes extends \Google\Protobuf\Internal\Message
      * @return $this
      * @deprecated
      */
-    public function setCss($var)
+    public function setCss(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         if (count($arr) !== 0) {
@@ -185,7 +184,7 @@ class GetClientFilesRes extends \Google\Protobuf\Internal\Message
      * @return $this
      * @deprecated
      */
-    public function setJs($var)
+    public function setJs(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         if (count($arr) !== 0) {
@@ -210,7 +209,7 @@ class GetClientFilesRes extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setCssFiles($var)
+    public function setCssFiles(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->css_files = $arr;
@@ -232,7 +231,7 @@ class GetClientFilesRes extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setJsFiles($var)
+    public function setJsFiles(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->js_files = $arr;
@@ -264,9 +263,9 @@ class GetClientFilesRes extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setStaticAssetsPath($var)
+    public function setStaticAssetsPath(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->static_assets_path = $var;
 
         return $this;

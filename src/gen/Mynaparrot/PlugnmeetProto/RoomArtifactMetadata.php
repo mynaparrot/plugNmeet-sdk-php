@@ -95,9 +95,8 @@ class RoomArtifactMetadata extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\RoomArtifactUserInfo $var
      * @return $this
      */
-    public function setUserInfo($var)
+    public function setUserInfo(\Mynaparrot\PlugnmeetProto\RoomArtifactUserInfo|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\RoomArtifactUserInfo::class);
         $this->user_info = $var;
 
         return $this;
@@ -131,9 +130,8 @@ class RoomArtifactMetadata extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\RoomArtifactProviderJobInfo $var
      * @return $this
      */
-    public function setProviderJobInfo($var)
+    public function setProviderJobInfo(\Mynaparrot\PlugnmeetProto\RoomArtifactProviderJobInfo|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\RoomArtifactProviderJobInfo::class);
         $this->provider_job_info = $var;
 
         return $this;
@@ -167,9 +165,8 @@ class RoomArtifactMetadata extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\RoomArtifactFileInfo $var
      * @return $this
      */
-    public function setFileInfo($var)
+    public function setFileInfo(\Mynaparrot\PlugnmeetProto\RoomArtifactFileInfo|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\RoomArtifactFileInfo::class);
         $this->file_info = $var;
 
         return $this;
@@ -194,9 +191,8 @@ class RoomArtifactMetadata extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\RoomArtifactTokenUsage $var
      * @return $this
      */
-    public function setTokenUsage($var)
+    public function setTokenUsage(\Mynaparrot\PlugnmeetProto\RoomArtifactTokenUsage|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\RoomArtifactTokenUsage::class);
         $this->writeOneof(4, $var);
 
         return $this;
@@ -221,9 +217,8 @@ class RoomArtifactMetadata extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\RoomArtifactDurationUsage $var
      * @return $this
      */
-    public function setDurationUsage($var)
+    public function setDurationUsage(\Mynaparrot\PlugnmeetProto\RoomArtifactDurationUsage|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\RoomArtifactDurationUsage::class);
         $this->writeOneof(5, $var);
 
         return $this;
@@ -248,9 +243,8 @@ class RoomArtifactMetadata extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\RoomArtifactCharacterCountUsage $var
      * @return $this
      */
-    public function setCharacterCountUsage($var)
+    public function setCharacterCountUsage(\Mynaparrot\PlugnmeetProto\RoomArtifactCharacterCountUsage|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\RoomArtifactCharacterCountUsage::class);
         $this->writeOneof(6, $var);
 
         return $this;
@@ -284,9 +278,9 @@ class RoomArtifactMetadata extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setReferenceArtifactId($var)
+    public function setReferenceArtifactId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->reference_artifact_id = $var;
 
         return $this;

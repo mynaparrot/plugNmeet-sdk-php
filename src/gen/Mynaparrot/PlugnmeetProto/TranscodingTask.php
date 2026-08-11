@@ -75,9 +75,9 @@ class TranscodingTask extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRecordingId($var)
+    public function setRecordingId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->recording_id = $var;
 
         return $this;
@@ -97,9 +97,9 @@ class TranscodingTask extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -119,9 +119,9 @@ class TranscodingTask extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomSid($var)
+    public function setRoomSid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_sid = $var;
 
         return $this;
@@ -141,7 +141,7 @@ class TranscodingTask extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setRoomTableId($var)
+    public function setRoomTableId(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->room_table_id = $var;
@@ -167,9 +167,9 @@ class TranscodingTask extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRecorderId($var)
+    public function setRecorderId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->recorder_id = $var;
 
         return $this;
@@ -194,9 +194,8 @@ class TranscodingTask extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\TranscodingTaskPostRecording $var
      * @return $this
      */
-    public function setPostRecording($var)
+    public function setPostRecording(\Mynaparrot\PlugnmeetProto\TranscodingTaskPostRecording|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\TranscodingTaskPostRecording::class);
         $this->writeOneof(6, $var);
 
         return $this;
@@ -221,9 +220,8 @@ class TranscodingTask extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\TranscodingTaskMergeRecordings $var
      * @return $this
      */
-    public function setMergeRecordings($var)
+    public function setMergeRecordings(\Mynaparrot\PlugnmeetProto\TranscodingTaskMergeRecordings|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\TranscodingTaskMergeRecordings::class);
         $this->writeOneof(7, $var);
 
         return $this;

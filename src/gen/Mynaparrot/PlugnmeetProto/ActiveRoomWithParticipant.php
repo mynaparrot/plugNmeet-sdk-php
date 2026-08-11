@@ -62,9 +62,8 @@ class ActiveRoomWithParticipant extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\ActiveRoomInfo $var
      * @return $this
      */
-    public function setRoomInfo($var)
+    public function setRoomInfo(\Mynaparrot\PlugnmeetProto\ActiveRoomInfo|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\ActiveRoomInfo::class);
         $this->room_info = $var;
 
         return $this;
@@ -84,7 +83,7 @@ class ActiveRoomWithParticipant extends \Google\Protobuf\Internal\Message
      * @param \Livekit\ParticipantInfo[] $var
      * @return $this
      */
-    public function setParticipantsInfo($var)
+    public function setParticipantsInfo(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\ParticipantInfo::class);
         $this->participants_info = $arr;

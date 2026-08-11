@@ -97,9 +97,8 @@ class RTPDrift extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setStartTime($var)
+    public function setStartTime(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->start_time = $var;
 
         return $this;
@@ -129,9 +128,8 @@ class RTPDrift extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setEndTime($var)
+    public function setEndTime(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->end_time = $var;
 
         return $this;
@@ -151,9 +149,8 @@ class RTPDrift extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setDuration($var)
+    public function setDuration(float $var)
     {
-        GPBUtil::checkDouble($var);
         $this->duration = $var;
 
         return $this;
@@ -173,7 +170,7 @@ class RTPDrift extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setStartTimestamp($var)
+    public function setStartTimestamp(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->start_timestamp = $var;
@@ -195,7 +192,7 @@ class RTPDrift extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setEndTimestamp($var)
+    public function setEndTimestamp(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->end_timestamp = $var;
@@ -217,7 +214,7 @@ class RTPDrift extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setRtpClockTicks($var)
+    public function setRtpClockTicks(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->rtp_clock_ticks = $var;
@@ -239,7 +236,7 @@ class RTPDrift extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDriftSamples($var)
+    public function setDriftSamples(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->drift_samples = $var;
@@ -261,9 +258,8 @@ class RTPDrift extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setDriftMs($var)
+    public function setDriftMs(float $var)
     {
-        GPBUtil::checkDouble($var);
         $this->drift_ms = $var;
 
         return $this;
@@ -283,9 +279,8 @@ class RTPDrift extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setClockRate($var)
+    public function setClockRate(float $var)
     {
-        GPBUtil::checkDouble($var);
         $this->clock_rate = $var;
 
         return $this;

@@ -52,9 +52,9 @@ class EnableSipDialInReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -74,9 +74,8 @@ class EnableSipDialInReq extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setHidePhoneNumber($var)
+    public function setHidePhoneNumber(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->hide_phone_number = $var;
 
         return $this;

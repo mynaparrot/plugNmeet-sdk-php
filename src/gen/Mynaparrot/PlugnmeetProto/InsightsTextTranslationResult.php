@@ -60,9 +60,9 @@ class InsightsTextTranslationResult extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSourceText($var)
+    public function setSourceText(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->source_text = $var;
 
         return $this;
@@ -82,9 +82,9 @@ class InsightsTextTranslationResult extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSourceLang($var)
+    public function setSourceLang(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->source_lang = $var;
 
         return $this;
@@ -108,7 +108,7 @@ class InsightsTextTranslationResult extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setTranslations($var)
+    public function setTranslations(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
         $this->translations = $arr;

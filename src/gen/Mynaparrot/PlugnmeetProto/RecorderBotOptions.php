@@ -62,9 +62,8 @@ class RecorderBotOptions extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEnableAutoCloseChatPanel($var)
+    public function setEnableAutoCloseChatPanel(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->enable_auto_close_chat_panel = $var;
 
         return $this;
@@ -98,7 +97,7 @@ class RecorderBotOptions extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDurationAfterLastMessage($var)
+    public function setDurationAfterLastMessage(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->duration_after_last_message = $var;

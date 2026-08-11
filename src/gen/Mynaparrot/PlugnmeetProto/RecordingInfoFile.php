@@ -97,7 +97,7 @@ class RecordingInfoFile extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setRoomTableId($var)
+    public function setRoomTableId(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->room_table_id = $var;
@@ -119,9 +119,9 @@ class RecordingInfoFile extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -141,9 +141,9 @@ class RecordingInfoFile extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomTitle($var)
+    public function setRoomTitle(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_title = $var;
 
         return $this;
@@ -163,9 +163,9 @@ class RecordingInfoFile extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomSid($var)
+    public function setRoomSid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_sid = $var;
 
         return $this;
@@ -185,7 +185,7 @@ class RecordingInfoFile extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setRoomCreationTime($var)
+    public function setRoomCreationTime(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->room_creation_time = $var;
@@ -207,7 +207,7 @@ class RecordingInfoFile extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setRoomEnded($var)
+    public function setRoomEnded(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->room_ended = $var;
@@ -229,9 +229,9 @@ class RecordingInfoFile extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRecordingId($var)
+    public function setRecordingId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->recording_id = $var;
 
         return $this;
@@ -251,9 +251,9 @@ class RecordingInfoFile extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRecorderId($var)
+    public function setRecorderId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->recorder_id = $var;
 
         return $this;
@@ -273,9 +273,9 @@ class RecordingInfoFile extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFilePath($var)
+    public function setFilePath(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->file_path = $var;
 
         return $this;
@@ -295,9 +295,8 @@ class RecordingInfoFile extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setFileSize($var)
+    public function setFileSize(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->file_size = $var;
 
         return $this;
@@ -317,7 +316,7 @@ class RecordingInfoFile extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreationTime($var)
+    public function setCreationTime(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->creation_time = $var;

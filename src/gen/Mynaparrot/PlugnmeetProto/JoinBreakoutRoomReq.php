@@ -62,9 +62,9 @@ class JoinBreakoutRoomReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setBreakoutRoomId($var)
+    public function setBreakoutRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->breakout_room_id = $var;
 
         return $this;
@@ -84,9 +84,9 @@ class JoinBreakoutRoomReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->user_id = $var;
 
         return $this;
@@ -106,9 +106,9 @@ class JoinBreakoutRoomReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -128,9 +128,8 @@ class JoinBreakoutRoomReq extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsAdmin($var)
+    public function setIsAdmin(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_admin = $var;
 
         return $this;

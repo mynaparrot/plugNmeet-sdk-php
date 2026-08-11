@@ -70,9 +70,8 @@ class InsightsChatTranslationFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsAllow($var)
+    public function setIsAllow(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_allow = $var;
 
         return $this;
@@ -96,9 +95,8 @@ class InsightsChatTranslationFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsEnabled($var)
+    public function setIsEnabled(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_enabled = $var;
 
         return $this;
@@ -118,7 +116,7 @@ class InsightsChatTranslationFeatures extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setAllowedTransLangs($var)
+    public function setAllowedTransLangs(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->allowed_trans_langs = $arr;
@@ -140,7 +138,7 @@ class InsightsChatTranslationFeatures extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMaxSelectedTransLangs($var)
+    public function setMaxSelectedTransLangs(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->max_selected_trans_langs = $var;
@@ -172,9 +170,9 @@ class InsightsChatTranslationFeatures extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDefaultLang($var)
+    public function setDefaultLang(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->default_lang = $var;
 
         return $this;

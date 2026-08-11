@@ -77,9 +77,9 @@ class InsightsAITextChatStreamResult extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->id = $var;
 
         return $this;
@@ -99,9 +99,9 @@ class InsightsAITextChatStreamResult extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setText($var)
+    public function setText(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->text = $var;
 
         return $this;
@@ -121,9 +121,8 @@ class InsightsAITextChatStreamResult extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsLastChunk($var)
+    public function setIsLastChunk(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_last_chunk = $var;
 
         return $this;
@@ -143,7 +142,7 @@ class InsightsAITextChatStreamResult extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPromptTokens($var)
+    public function setPromptTokens(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->prompt_tokens = $var;
@@ -165,7 +164,7 @@ class InsightsAITextChatStreamResult extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCompletionTokens($var)
+    public function setCompletionTokens(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->completion_tokens = $var;
@@ -187,7 +186,7 @@ class InsightsAITextChatStreamResult extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTotalTokens($var)
+    public function setTotalTokens(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->total_tokens = $var;
@@ -209,9 +208,9 @@ class InsightsAITextChatStreamResult extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCreatedAt($var)
+    public function setCreatedAt(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->createdAt = $var;
 
         return $this;

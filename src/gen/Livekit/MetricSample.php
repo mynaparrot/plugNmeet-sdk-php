@@ -64,7 +64,7 @@ class MetricSample extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTimestampMs($var)
+    public function setTimestampMs(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->timestamp_ms = $var;
@@ -96,9 +96,8 @@ class MetricSample extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setNormalizedTimestamp($var)
+    public function setNormalizedTimestamp(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->normalized_timestamp = $var;
 
         return $this;
@@ -118,9 +117,8 @@ class MetricSample extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setValue($var)
+    public function setValue(float $var)
     {
-        GPBUtil::checkFloat($var);
         $this->value = $var;
 
         return $this;

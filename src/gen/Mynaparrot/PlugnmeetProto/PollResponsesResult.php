@@ -57,9 +57,9 @@ class PollResponsesResult extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setQuestion($var)
+    public function setQuestion(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->question = $var;
 
         return $this;
@@ -79,7 +79,7 @@ class PollResponsesResult extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTotalResponses($var)
+    public function setTotalResponses(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->total_responses = $var;
@@ -101,7 +101,7 @@ class PollResponsesResult extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\PollResponsesResultOptions[] $var
      * @return $this
      */
-    public function setOptions($var)
+    public function setOptions(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Mynaparrot\PlugnmeetProto\PollResponsesResultOptions::class);
         $this->options = $arr;

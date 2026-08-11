@@ -57,9 +57,9 @@ class WebhookConfig extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUrl($var)
+    public function setUrl(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->url = $var;
 
         return $this;
@@ -79,9 +79,9 @@ class WebhookConfig extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSigningKey($var)
+    public function setSigningKey(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->signing_key = $var;
 
         return $this;
@@ -111,9 +111,8 @@ class WebhookConfig extends \Google\Protobuf\Internal\Message
      * @param \Livekit\FilterParams $var
      * @return $this
      */
-    public function setFilterParams($var)
+    public function setFilterParams(\Livekit\FilterParams|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\FilterParams::class);
         $this->filter_params = $var;
 
         return $this;

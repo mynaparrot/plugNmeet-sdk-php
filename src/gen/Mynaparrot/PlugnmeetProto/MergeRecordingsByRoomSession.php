@@ -62,9 +62,9 @@ class MergeRecordingsByRoomSession extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomSid($var)
+    public function setRoomSid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_sid = $var;
 
         return $this;
@@ -88,7 +88,7 @@ class MergeRecordingsByRoomSession extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setExcludeRecordingIds($var)
+    public function setExcludeRecordingIds(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->exclude_recording_ids = $arr;

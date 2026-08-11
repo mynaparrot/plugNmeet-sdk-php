@@ -40,7 +40,7 @@ class DataTrackExtensionParticipantSid extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.livekit.DataTrackExtensionID id = 1;</code>
-     * @return int
+     * @return int one of the values in {@see \Livekit\DataTrackExtensionID}
      */
     public function getId()
     {
@@ -49,10 +49,10 @@ class DataTrackExtensionParticipantSid extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.livekit.DataTrackExtensionID id = 1;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Livekit\DataTrackExtensionID}
      * @return $this
      */
-    public function setId($var)
+    public function setId(int $var)
     {
         GPBUtil::checkEnum($var, \Livekit\DataTrackExtensionID::class);
         $this->id = $var;
@@ -74,9 +74,9 @@ class DataTrackExtensionParticipantSid extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setParticipantSid($var)
+    public function setParticipantSid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->participant_sid = $var;
 
         return $this;

@@ -52,7 +52,7 @@ class FilterParams extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setIncludeEvents($var)
+    public function setIncludeEvents(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->include_events = $arr;
@@ -74,7 +74,7 @@ class FilterParams extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setExcludeEvents($var)
+    public function setExcludeEvents(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->exclude_events = $arr;

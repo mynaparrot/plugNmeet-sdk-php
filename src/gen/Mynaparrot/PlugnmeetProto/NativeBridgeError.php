@@ -54,9 +54,9 @@ class NativeBridgeError extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMsg($var)
+    public function setMsg(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->msg = $var;
 
         return $this;
@@ -86,9 +86,9 @@ class NativeBridgeError extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setContext($var)
+    public function setContext(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->context = $var;
 
         return $this;

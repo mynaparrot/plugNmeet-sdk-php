@@ -115,9 +115,9 @@ class Header extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setStreamId($var)
+    public function setStreamId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->stream_id = $var;
 
         return $this;
@@ -141,7 +141,7 @@ class Header extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTimestamp($var)
+    public function setTimestamp(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->timestamp = $var;
@@ -163,9 +163,9 @@ class Header extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTopic($var)
+    public function setTopic(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->topic = $var;
 
         return $this;
@@ -185,9 +185,9 @@ class Header extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMimeType($var)
+    public function setMimeType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->mime_type = $var;
 
         return $this;
@@ -201,7 +201,7 @@ class Header extends \Google\Protobuf\Internal\Message
      */
     public function getTotalLength()
     {
-        return isset($this->total_length) ? $this->total_length : 0;
+        return isset($this->total_length) ? $this->total_length : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasTotalLength()
@@ -221,7 +221,7 @@ class Header extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTotalLength($var)
+    public function setTotalLength(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->total_length = $var;
@@ -233,7 +233,7 @@ class Header extends \Google\Protobuf\Internal\Message
      *  this is set on the DataPacket
      *
      * Generated from protobuf field <code>.livekit.Encryption.Type encryption_type = 7 [deprecated = true];</code>
-     * @return int
+     * @return int one of the values in {@see \Livekit\Encryption\Type}
      * @deprecated
      */
     public function getEncryptionType()
@@ -248,11 +248,11 @@ class Header extends \Google\Protobuf\Internal\Message
      *  this is set on the DataPacket
      *
      * Generated from protobuf field <code>.livekit.Encryption.Type encryption_type = 7 [deprecated = true];</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Livekit\Encryption\Type}
      * @return $this
      * @deprecated
      */
-    public function setEncryptionType($var)
+    public function setEncryptionType(int $var)
     {
         @trigger_error('encryption_type is deprecated.', E_USER_DEPRECATED);
         GPBUtil::checkEnum($var, \Livekit\Encryption\Type::class);
@@ -279,7 +279,7 @@ class Header extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setAttributes($var)
+    public function setAttributes(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
         $this->attributes = $arr;
@@ -306,9 +306,8 @@ class Header extends \Google\Protobuf\Internal\Message
      * @param \Livekit\DataStream\TextHeader $var
      * @return $this
      */
-    public function setTextHeader($var)
+    public function setTextHeader(\Livekit\DataStream\TextHeader|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\DataStream\TextHeader::class);
         $this->writeOneof(9, $var);
 
         return $this;
@@ -333,9 +332,8 @@ class Header extends \Google\Protobuf\Internal\Message
      * @param \Livekit\DataStream\ByteHeader $var
      * @return $this
      */
-    public function setByteHeader($var)
+    public function setByteHeader(\Livekit\DataStream\ByteHeader|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\DataStream\ByteHeader::class);
         $this->writeOneof(10, $var);
 
         return $this;
@@ -369,9 +367,9 @@ class Header extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setInlineContent($var)
+    public function setInlineContent(string $var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->inline_content = $var;
 
         return $this;
@@ -379,7 +377,7 @@ class Header extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.livekit.DataStream.CompressionType compression = 12;</code>
-     * @return int
+     * @return int one of the values in {@see \Livekit\DataStream\CompressionType}
      */
     public function getCompression()
     {
@@ -388,10 +386,10 @@ class Header extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.livekit.DataStream.CompressionType compression = 12;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Livekit\DataStream\CompressionType}
      * @return $this
      */
-    public function setCompression($var)
+    public function setCompression(int $var)
     {
         GPBUtil::checkEnum($var, \Livekit\DataStream\CompressionType::class);
         $this->compression = $var;

@@ -77,9 +77,8 @@ class SharedNotePadFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsAllow($var)
+    public function setIsAllow(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_allow = $var;
 
         return $this;
@@ -99,9 +98,8 @@ class SharedNotePadFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsActive($var)
+    public function setIsActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_active = $var;
 
         return $this;
@@ -121,9 +119,8 @@ class SharedNotePadFeatures extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setVisible($var)
+    public function setVisible(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->visible = $var;
 
         return $this;
@@ -143,9 +140,9 @@ class SharedNotePadFeatures extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setNodeId($var)
+    public function setNodeId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->node_id = $var;
 
         return $this;
@@ -165,9 +162,9 @@ class SharedNotePadFeatures extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setHost($var)
+    public function setHost(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->host = $var;
 
         return $this;
@@ -187,9 +184,9 @@ class SharedNotePadFeatures extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setNotePadId($var)
+    public function setNotePadId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->note_pad_id = $var;
 
         return $this;
@@ -209,9 +206,9 @@ class SharedNotePadFeatures extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setReadOnlyPadId($var)
+    public function setReadOnlyPadId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->read_only_pad_id = $var;
 
         return $this;

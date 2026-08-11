@@ -46,7 +46,7 @@ class NativeBridgeMsg extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.NativeBridgeActions action = 1;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\NativeBridgeActions}
      */
     public function getAction()
     {
@@ -55,10 +55,10 @@ class NativeBridgeMsg extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.NativeBridgeActions action = 1;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\NativeBridgeActions}
      * @return $this
      */
-    public function setAction($var)
+    public function setAction(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\NativeBridgeActions::class);
         $this->action = $var;
@@ -85,9 +85,8 @@ class NativeBridgeMsg extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\NativeBridgeInitializePublisher $var
      * @return $this
      */
-    public function setInitializeNativePublisher($var)
+    public function setInitializeNativePublisher(\Mynaparrot\PlugnmeetProto\NativeBridgeInitializePublisher|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\NativeBridgeInitializePublisher::class);
         $this->writeOneof(2, $var);
 
         return $this;
@@ -112,9 +111,8 @@ class NativeBridgeMsg extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\NativeBridgeMediaSource $var
      * @return $this
      */
-    public function setMediaSource($var)
+    public function setMediaSource(\Mynaparrot\PlugnmeetProto\NativeBridgeMediaSource|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\NativeBridgeMediaSource::class);
         $this->writeOneof(3, $var);
 
         return $this;
@@ -139,9 +137,8 @@ class NativeBridgeMsg extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\NativeBridgeHeartbeat $var
      * @return $this
      */
-    public function setHeartbeat($var)
+    public function setHeartbeat(\Mynaparrot\PlugnmeetProto\NativeBridgeHeartbeat|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\NativeBridgeHeartbeat::class);
         $this->writeOneof(4, $var);
 
         return $this;
@@ -166,9 +163,8 @@ class NativeBridgeMsg extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\NativeBridgeMediaStatus $var
      * @return $this
      */
-    public function setMediaStatus($var)
+    public function setMediaStatus(\Mynaparrot\PlugnmeetProto\NativeBridgeMediaStatus|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\NativeBridgeMediaStatus::class);
         $this->writeOneof(5, $var);
 
         return $this;
@@ -193,9 +189,8 @@ class NativeBridgeMsg extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\NativeBridgeTrackState $var
      * @return $this
      */
-    public function setTrackState($var)
+    public function setTrackState(\Mynaparrot\PlugnmeetProto\NativeBridgeTrackState|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\NativeBridgeTrackState::class);
         $this->writeOneof(6, $var);
 
         return $this;
@@ -220,9 +215,8 @@ class NativeBridgeMsg extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\NativeBridgeMediaMuted $var
      * @return $this
      */
-    public function setMediaMuted($var)
+    public function setMediaMuted(\Mynaparrot\PlugnmeetProto\NativeBridgeMediaMuted|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\NativeBridgeMediaMuted::class);
         $this->writeOneof(7, $var);
 
         return $this;
@@ -247,9 +241,8 @@ class NativeBridgeMsg extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\NativeBridgeError $var
      * @return $this
      */
-    public function setError($var)
+    public function setError(\Mynaparrot\PlugnmeetProto\NativeBridgeError|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\NativeBridgeError::class);
         $this->writeOneof(8, $var);
 
         return $this;

@@ -88,9 +88,9 @@ class NatsSubjects extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSystemApiWorker($var)
+    public function setSystemApiWorker(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->system_api_worker = $var;
 
         return $this;
@@ -114,9 +114,9 @@ class NatsSubjects extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSystemJsWorker($var)
+    public function setSystemJsWorker(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->system_js_worker = $var;
 
         return $this;
@@ -140,9 +140,9 @@ class NatsSubjects extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSystemCoreWorker($var)
+    public function setSystemCoreWorker(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->system_core_worker = $var;
 
         return $this;
@@ -162,9 +162,9 @@ class NatsSubjects extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSystemPublic($var)
+    public function setSystemPublic(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->system_public = $var;
 
         return $this;
@@ -184,9 +184,9 @@ class NatsSubjects extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSystemPrivate($var)
+    public function setSystemPrivate(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->system_private = $var;
 
         return $this;
@@ -206,9 +206,9 @@ class NatsSubjects extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setChat($var)
+    public function setChat(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->chat = $var;
 
         return $this;
@@ -228,9 +228,9 @@ class NatsSubjects extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setWhiteboard($var)
+    public function setWhiteboard(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->whiteboard = $var;
 
         return $this;
@@ -250,9 +250,9 @@ class NatsSubjects extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDataChannel($var)
+    public function setDataChannel(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->data_channel = $var;
 
         return $this;

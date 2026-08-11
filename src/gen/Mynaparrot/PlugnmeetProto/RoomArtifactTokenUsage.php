@@ -77,7 +77,7 @@ class RoomArtifactTokenUsage extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPromptTokens($var)
+    public function setPromptTokens(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->prompt_tokens = $var;
@@ -99,7 +99,7 @@ class RoomArtifactTokenUsage extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCompletionTokens($var)
+    public function setCompletionTokens(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->completion_tokens = $var;
@@ -121,7 +121,7 @@ class RoomArtifactTokenUsage extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTotalTokens($var)
+    public function setTotalTokens(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->total_tokens = $var;
@@ -143,7 +143,7 @@ class RoomArtifactTokenUsage extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setBreakdown($var)
+    public function setBreakdown(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::INT64);
         $this->breakdown = $arr;
@@ -175,9 +175,8 @@ class RoomArtifactTokenUsage extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setPromptTokensEstimatedCost($var)
+    public function setPromptTokensEstimatedCost(float $var)
     {
-        GPBUtil::checkDouble($var);
         $this->prompt_tokens_estimated_cost = $var;
 
         return $this;
@@ -207,9 +206,8 @@ class RoomArtifactTokenUsage extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setCompletionTokensEstimatedCost($var)
+    public function setCompletionTokensEstimatedCost(float $var)
     {
-        GPBUtil::checkDouble($var);
         $this->completion_tokens_estimated_cost = $var;
 
         return $this;
@@ -239,9 +237,8 @@ class RoomArtifactTokenUsage extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setTotalTokensEstimatedCost($var)
+    public function setTotalTokensEstimatedCost(float $var)
     {
-        GPBUtil::checkDouble($var);
         $this->total_tokens_estimated_cost = $var;
 
         return $this;

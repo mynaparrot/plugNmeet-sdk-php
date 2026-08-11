@@ -80,7 +80,7 @@ class RTCPSenderReportState extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRtpTimestamp($var)
+    public function setRtpTimestamp(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->rtp_timestamp = $var;
@@ -102,7 +102,7 @@ class RTCPSenderReportState extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setRtpTimestampExt($var)
+    public function setRtpTimestampExt(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->rtp_timestamp_ext = $var;
@@ -124,7 +124,7 @@ class RTCPSenderReportState extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setNtpTimestamp($var)
+    public function setNtpTimestamp(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->ntp_timestamp = $var;
@@ -150,7 +150,7 @@ class RTCPSenderReportState extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setAt($var)
+    public function setAt(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->at = $var;
@@ -172,7 +172,7 @@ class RTCPSenderReportState extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setAtAdjusted($var)
+    public function setAtAdjusted(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->at_adjusted = $var;
@@ -194,7 +194,7 @@ class RTCPSenderReportState extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setPackets($var)
+    public function setPackets(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->packets = $var;
@@ -216,7 +216,7 @@ class RTCPSenderReportState extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setOctets($var)
+    public function setOctets(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->octets = $var;

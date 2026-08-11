@@ -77,9 +77,8 @@ class InsightsTranscriptionConfigReq extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsEnabled($var)
+    public function setIsEnabled(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_enabled = $var;
 
         return $this;
@@ -99,7 +98,7 @@ class InsightsTranscriptionConfigReq extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setAllowedSpokenLangs($var)
+    public function setAllowedSpokenLangs(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->allowed_spoken_langs = $arr;
@@ -121,7 +120,7 @@ class InsightsTranscriptionConfigReq extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setAllowedSpeechUsers($var)
+    public function setAllowedSpeechUsers(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->allowed_speech_users = $arr;
@@ -143,9 +142,8 @@ class InsightsTranscriptionConfigReq extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsEnabledTranslation($var)
+    public function setIsEnabledTranslation(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_enabled_translation = $var;
 
         return $this;
@@ -165,7 +163,7 @@ class InsightsTranscriptionConfigReq extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setAllowedTransLangs($var)
+    public function setAllowedTransLangs(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->allowed_trans_langs = $arr;
@@ -197,9 +195,9 @@ class InsightsTranscriptionConfigReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDefaultSubtitleLang($var)
+    public function setDefaultSubtitleLang(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->default_subtitle_lang = $var;
 
         return $this;
@@ -219,9 +217,8 @@ class InsightsTranscriptionConfigReq extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsEnabledSpeechSynthesis($var)
+    public function setIsEnabledSpeechSynthesis(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_enabled_speech_synthesis = $var;
 
         return $this;

@@ -47,9 +47,9 @@ class ArtifactInfoReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setArtifactId($var)
+    public function setArtifactId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->artifact_id = $var;
 
         return $this;

@@ -57,9 +57,8 @@ class InsightsAITextChatConfigReq extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsEnabled($var)
+    public function setIsEnabled(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_enabled = $var;
 
         return $this;
@@ -79,9 +78,8 @@ class InsightsAITextChatConfigReq extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsAllowedEveryone($var)
+    public function setIsAllowedEveryone(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_allowed_everyone = $var;
 
         return $this;
@@ -101,7 +99,7 @@ class InsightsAITextChatConfigReq extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setAllowedUserIds($var)
+    public function setAllowedUserIds(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->allowed_user_ids = $arr;

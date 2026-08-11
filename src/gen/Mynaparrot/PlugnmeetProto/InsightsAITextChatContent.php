@@ -45,7 +45,7 @@ class InsightsAITextChatContent extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.InsightsAITextChatRole role = 1;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\InsightsAITextChatRole}
      */
     public function getRole()
     {
@@ -54,10 +54,10 @@ class InsightsAITextChatContent extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.InsightsAITextChatRole role = 1;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\InsightsAITextChatRole}
      * @return $this
      */
-    public function setRole($var)
+    public function setRole(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\InsightsAITextChatRole::class);
         $this->role = $var;
@@ -79,9 +79,9 @@ class InsightsAITextChatContent extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setText($var)
+    public function setText(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->text = $var;
 
         return $this;
@@ -111,9 +111,9 @@ class InsightsAITextChatContent extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setStreamId($var)
+    public function setStreamId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->stream_id = $var;
 
         return $this;

@@ -72,9 +72,9 @@ class BreakoutRoom extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->id = $var;
 
         return $this;
@@ -94,9 +94,9 @@ class BreakoutRoom extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTitle($var)
+    public function setTitle(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->title = $var;
 
         return $this;
@@ -116,7 +116,7 @@ class BreakoutRoom extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDuration($var)
+    public function setDuration(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->duration = $var;
@@ -138,9 +138,8 @@ class BreakoutRoom extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setStarted($var)
+    public function setStarted(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->started = $var;
 
         return $this;
@@ -160,7 +159,7 @@ class BreakoutRoom extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreated($var)
+    public function setCreated(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->created = $var;
@@ -182,7 +181,7 @@ class BreakoutRoom extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\BreakoutRoomUser[] $var
      * @return $this
      */
-    public function setUsers($var)
+    public function setUsers(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Mynaparrot\PlugnmeetProto\BreakoutRoomUser::class);
         $this->users = $arr;

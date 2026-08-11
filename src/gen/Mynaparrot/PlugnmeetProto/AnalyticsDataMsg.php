@@ -102,7 +102,7 @@ class AnalyticsDataMsg extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.AnalyticsEventType event_type = 1;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\AnalyticsEventType}
      */
     public function getEventType()
     {
@@ -111,10 +111,10 @@ class AnalyticsDataMsg extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.AnalyticsEventType event_type = 1;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\AnalyticsEventType}
      * @return $this
      */
-    public function setEventType($var)
+    public function setEventType(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\AnalyticsEventType::class);
         $this->event_type = $var;
@@ -124,7 +124,7 @@ class AnalyticsDataMsg extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.AnalyticsEvents event_name = 2;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\AnalyticsEvents}
      */
     public function getEventName()
     {
@@ -133,10 +133,10 @@ class AnalyticsDataMsg extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.AnalyticsEvents event_name = 2;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\AnalyticsEvents}
      * @return $this
      */
-    public function setEventName($var)
+    public function setEventName(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\AnalyticsEvents::class);
         $this->event_name = $var;
@@ -158,9 +158,9 @@ class AnalyticsDataMsg extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -184,7 +184,7 @@ class AnalyticsDataMsg extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTime($var)
+    public function setTime(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->time = $var;
@@ -220,9 +220,9 @@ class AnalyticsDataMsg extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setEventValueString($var)
+    public function setEventValueString(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->event_value_string = $var;
 
         return $this;
@@ -236,7 +236,7 @@ class AnalyticsDataMsg extends \Google\Protobuf\Internal\Message
      */
     public function getEventValueInteger()
     {
-        return isset($this->event_value_integer) ? $this->event_value_integer : 0;
+        return isset($this->event_value_integer) ? $this->event_value_integer : GPBUtil::compatibleInt64(0, '0');
     }
 
     public function hasEventValueInteger()
@@ -256,7 +256,7 @@ class AnalyticsDataMsg extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setEventValueInteger($var)
+    public function setEventValueInteger(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->event_value_integer = $var;
@@ -294,9 +294,9 @@ class AnalyticsDataMsg extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setHsetValue($var)
+    public function setHsetValue(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->hset_value = $var;
 
         return $this;
@@ -326,9 +326,9 @@ class AnalyticsDataMsg extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomSid($var)
+    public function setRoomSid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_sid = $var;
 
         return $this;
@@ -358,9 +358,9 @@ class AnalyticsDataMsg extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->user_id = $var;
 
         return $this;
@@ -390,9 +390,9 @@ class AnalyticsDataMsg extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUserName($var)
+    public function setUserName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->user_name = $var;
 
         return $this;
@@ -426,9 +426,9 @@ class AnalyticsDataMsg extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setExtraData($var)
+    public function setExtraData(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->extra_data = $var;
 
         return $this;

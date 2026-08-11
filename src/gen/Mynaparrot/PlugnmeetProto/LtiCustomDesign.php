@@ -72,9 +72,9 @@ class LtiCustomDesign extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPrimaryColor($var)
+    public function setPrimaryColor(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->primary_color = $var;
 
         return $this;
@@ -104,9 +104,9 @@ class LtiCustomDesign extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSecondaryColor($var)
+    public function setSecondaryColor(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->secondary_color = $var;
 
         return $this;
@@ -136,9 +136,9 @@ class LtiCustomDesign extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setBackgroundColor($var)
+    public function setBackgroundColor(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->background_color = $var;
 
         return $this;
@@ -168,9 +168,9 @@ class LtiCustomDesign extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCustomLogo($var)
+    public function setCustomLogo(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->custom_logo = $var;
 
         return $this;

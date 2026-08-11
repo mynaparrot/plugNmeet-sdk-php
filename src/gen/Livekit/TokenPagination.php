@@ -47,9 +47,9 @@ class TokenPagination extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setToken($var)
+    public function setToken(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->token = $var;
 
         return $this;

@@ -87,7 +87,7 @@ class MetricsBatch extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setTimestampMs($var)
+    public function setTimestampMs(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->timestamp_ms = $var;
@@ -119,9 +119,8 @@ class MetricsBatch extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setNormalizedTimestamp($var)
+    public function setNormalizedTimestamp(\Google\Protobuf\Timestamp|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->normalized_timestamp = $var;
 
         return $this;
@@ -155,7 +154,7 @@ class MetricsBatch extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setStrData($var)
+    public function setStrData(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->str_data = $arr;
@@ -177,7 +176,7 @@ class MetricsBatch extends \Google\Protobuf\Internal\Message
      * @param \Livekit\TimeSeriesMetric[] $var
      * @return $this
      */
-    public function setTimeSeries($var)
+    public function setTimeSeries(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\TimeSeriesMetric::class);
         $this->time_series = $arr;
@@ -199,7 +198,7 @@ class MetricsBatch extends \Google\Protobuf\Internal\Message
      * @param \Livekit\EventMetric[] $var
      * @return $this
      */
-    public function setEvents($var)
+    public function setEvents(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\EventMetric::class);
         $this->events = $arr;

@@ -42,7 +42,7 @@ class NativeBridgeMediaMuted extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.NativeMediaSource source = 1;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\NativeMediaSource}
      */
     public function getSource()
     {
@@ -51,10 +51,10 @@ class NativeBridgeMediaMuted extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.NativeMediaSource source = 1;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\NativeMediaSource}
      * @return $this
      */
-    public function setSource($var)
+    public function setSource(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\NativeMediaSource::class);
         $this->source = $var;
@@ -76,9 +76,8 @@ class NativeBridgeMediaMuted extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setMuted($var)
+    public function setMuted(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->muted = $var;
 
         return $this;

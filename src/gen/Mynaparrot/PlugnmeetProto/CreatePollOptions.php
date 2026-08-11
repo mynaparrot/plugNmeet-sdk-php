@@ -52,7 +52,7 @@ class CreatePollOptions extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setId($var)
+    public function setId(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->id = $var;
@@ -74,9 +74,9 @@ class CreatePollOptions extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setText($var)
+    public function setText(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->text = $var;
 
         return $this;

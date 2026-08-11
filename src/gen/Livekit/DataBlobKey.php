@@ -58,9 +58,9 @@ class DataBlobKey extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setGeneric($var)
+    public function setGeneric(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->writeOneof(1, $var);
 
         return $this;
@@ -89,9 +89,8 @@ class DataBlobKey extends \Google\Protobuf\Internal\Message
      * @param \Livekit\DataTrackSchemaId $var
      * @return $this
      */
-    public function setSchemaId($var)
+    public function setSchemaId(\Livekit\DataTrackSchemaId|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\DataTrackSchemaId::class);
         $this->writeOneof(2, $var);
 
         return $this;

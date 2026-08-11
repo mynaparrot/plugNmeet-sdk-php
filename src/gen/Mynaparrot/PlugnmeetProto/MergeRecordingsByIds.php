@@ -66,9 +66,9 @@ class MergeRecordingsByIds extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -96,7 +96,7 @@ class MergeRecordingsByIds extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setRecordingIds($var)
+    public function setRecordingIds(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->recording_ids = $arr;

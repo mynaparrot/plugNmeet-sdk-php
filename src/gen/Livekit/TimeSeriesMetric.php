@@ -87,7 +87,7 @@ class TimeSeriesMetric extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLabel($var)
+    public function setLabel(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->label = $var;
@@ -113,7 +113,7 @@ class TimeSeriesMetric extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setParticipantIdentity($var)
+    public function setParticipantIdentity(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->participant_identity = $var;
@@ -139,7 +139,7 @@ class TimeSeriesMetric extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTrackSid($var)
+    public function setTrackSid(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->track_sid = $var;
@@ -161,7 +161,7 @@ class TimeSeriesMetric extends \Google\Protobuf\Internal\Message
      * @param \Livekit\MetricSample[] $var
      * @return $this
      */
-    public function setSamples($var)
+    public function setSamples(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\MetricSample::class);
         $this->samples = $arr;
@@ -187,7 +187,7 @@ class TimeSeriesMetric extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setRid($var)
+    public function setRid(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->rid = $var;

@@ -62,9 +62,8 @@ class NatsInitialData extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\NatsKvRoomInfo $var
      * @return $this
      */
-    public function setRoom($var)
+    public function setRoom(\Mynaparrot\PlugnmeetProto\NatsKvRoomInfo|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\NatsKvRoomInfo::class);
         $this->room = $var;
 
         return $this;
@@ -94,9 +93,8 @@ class NatsInitialData extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\NatsKvUserInfo $var
      * @return $this
      */
-    public function setLocalUser($var)
+    public function setLocalUser(\Mynaparrot\PlugnmeetProto\NatsKvUserInfo|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\NatsKvUserInfo::class);
         $this->local_user = $var;
 
         return $this;

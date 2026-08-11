@@ -80,9 +80,9 @@ class InsightsTranscriptionResult extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFromUserId($var)
+    public function setFromUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->from_user_id = $var;
 
         return $this;
@@ -102,9 +102,9 @@ class InsightsTranscriptionResult extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFromUserName($var)
+    public function setFromUserName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->from_user_name = $var;
 
         return $this;
@@ -124,9 +124,9 @@ class InsightsTranscriptionResult extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setLang($var)
+    public function setLang(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->lang = $var;
 
         return $this;
@@ -146,9 +146,9 @@ class InsightsTranscriptionResult extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setText($var)
+    public function setText(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->text = $var;
 
         return $this;
@@ -168,9 +168,8 @@ class InsightsTranscriptionResult extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsPartial($var)
+    public function setIsPartial(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_partial = $var;
 
         return $this;
@@ -190,9 +189,8 @@ class InsightsTranscriptionResult extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAllowedTranscriptionStorage($var)
+    public function setAllowedTranscriptionStorage(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->allowed_transcription_storage = $var;
 
         return $this;
@@ -216,7 +214,7 @@ class InsightsTranscriptionResult extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setTranslations($var)
+    public function setTranslations(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
         $this->translations = $arr;

@@ -47,9 +47,9 @@ class GetAnalyticsDownloadTokenReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFileId($var)
+    public function setFileId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->file_id = $var;
 
         return $this;

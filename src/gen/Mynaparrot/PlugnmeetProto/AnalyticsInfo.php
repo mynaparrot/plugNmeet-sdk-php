@@ -67,9 +67,9 @@ class AnalyticsInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -89,9 +89,9 @@ class AnalyticsInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFileId($var)
+    public function setFileId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->file_id = $var;
 
         return $this;
@@ -111,9 +111,9 @@ class AnalyticsInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFileName($var)
+    public function setFileName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->file_name = $var;
 
         return $this;
@@ -133,9 +133,8 @@ class AnalyticsInfo extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setFileSize($var)
+    public function setFileSize(float $var)
     {
-        GPBUtil::checkDouble($var);
         $this->file_size = $var;
 
         return $this;
@@ -155,7 +154,7 @@ class AnalyticsInfo extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreationTime($var)
+    public function setCreationTime(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->creation_time = $var;

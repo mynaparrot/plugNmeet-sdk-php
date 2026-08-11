@@ -37,7 +37,7 @@ class DataTrackSchemaEncoding extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.livekit.DataTrackSchemaEncoding.WellKnownSchemaEncoding well_known = 1;</code>
-     * @return int
+     * @return int one of the values in {@see \Livekit\DataTrackSchemaEncoding\WellKnownSchemaEncoding}
      */
     public function getWellKnown()
     {
@@ -51,10 +51,10 @@ class DataTrackSchemaEncoding extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.livekit.DataTrackSchemaEncoding.WellKnownSchemaEncoding well_known = 1;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Livekit\DataTrackSchemaEncoding\WellKnownSchemaEncoding}
      * @return $this
      */
-    public function setWellKnown($var)
+    public function setWellKnown(int $var)
     {
         GPBUtil::checkEnum($var, \Livekit\DataTrackSchemaEncoding\WellKnownSchemaEncoding::class);
         $this->writeOneof(1, $var);
@@ -87,9 +87,9 @@ class DataTrackSchemaEncoding extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setCustom($var)
+    public function setCustom(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->writeOneof(2, $var);
 
         return $this;

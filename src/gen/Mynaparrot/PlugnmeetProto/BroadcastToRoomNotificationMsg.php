@@ -57,9 +57,9 @@ class BroadcastToRoomNotificationMsg extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setText($var)
+    public function setText(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->text = $var;
 
         return $this;
@@ -67,7 +67,7 @@ class BroadcastToRoomNotificationMsg extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.NatsSystemNotificationTypes type = 2;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\NatsSystemNotificationTypes}
      */
     public function getType()
     {
@@ -76,10 +76,10 @@ class BroadcastToRoomNotificationMsg extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.NatsSystemNotificationTypes type = 2;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\NatsSystemNotificationTypes}
      * @return $this
      */
-    public function setType($var)
+    public function setType(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\NatsSystemNotificationTypes::class);
         $this->type = $var;
@@ -101,9 +101,8 @@ class BroadcastToRoomNotificationMsg extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setWithSound($var)
+    public function setWithSound(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->with_sound = $var;
 
         return $this;

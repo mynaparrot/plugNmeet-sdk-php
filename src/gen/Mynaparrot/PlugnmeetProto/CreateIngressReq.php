@@ -45,7 +45,7 @@ class CreateIngressReq extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.IngressInput input_type = 1;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\IngressInput}
      */
     public function getInputType()
     {
@@ -54,10 +54,10 @@ class CreateIngressReq extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.IngressInput input_type = 1;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\IngressInput}
      * @return $this
      */
-    public function setInputType($var)
+    public function setInputType(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\IngressInput::class);
         $this->input_type = $var;
@@ -79,9 +79,9 @@ class CreateIngressReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setParticipantName($var)
+    public function setParticipantName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->participant_name = $var;
 
         return $this;
@@ -101,9 +101,9 @@ class CreateIngressReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;

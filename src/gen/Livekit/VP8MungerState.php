@@ -77,7 +77,7 @@ class VP8MungerState extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setExtLastPictureId($var)
+    public function setExtLastPictureId(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->ext_last_picture_id = $var;
@@ -99,9 +99,8 @@ class VP8MungerState extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setPictureIdUsed($var)
+    public function setPictureIdUsed(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->picture_id_used = $var;
 
         return $this;
@@ -121,7 +120,7 @@ class VP8MungerState extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLastTl0PicIdx($var)
+    public function setLastTl0PicIdx(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->last_tl0_pic_idx = $var;
@@ -143,9 +142,8 @@ class VP8MungerState extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setTl0PicIdxUsed($var)
+    public function setTl0PicIdxUsed(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->tl0_pic_idx_used = $var;
 
         return $this;
@@ -165,9 +163,8 @@ class VP8MungerState extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setTidUsed($var)
+    public function setTidUsed(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->tid_used = $var;
 
         return $this;
@@ -187,7 +184,7 @@ class VP8MungerState extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLastKeyIdx($var)
+    public function setLastKeyIdx(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->last_key_idx = $var;
@@ -209,9 +206,8 @@ class VP8MungerState extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setKeyIdxUsed($var)
+    public function setKeyIdxUsed(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->key_idx_used = $var;
 
         return $this;

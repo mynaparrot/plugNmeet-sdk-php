@@ -72,9 +72,8 @@ class InsightsGetUserStatusRes extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setStatus($var)
+    public function setStatus(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->status = $var;
 
         return $this;
@@ -94,9 +93,9 @@ class InsightsGetUserStatusRes extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMsg($var)
+    public function setMsg(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->msg = $var;
 
         return $this;
@@ -104,7 +103,7 @@ class InsightsGetUserStatusRes extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.InsightsServiceType service_type = 3;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\InsightsServiceType}
      */
     public function getServiceType()
     {
@@ -113,10 +112,10 @@ class InsightsGetUserStatusRes extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.InsightsServiceType service_type = 3;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\InsightsServiceType}
      * @return $this
      */
-    public function setServiceType($var)
+    public function setServiceType(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\InsightsServiceType::class);
         $this->service_type = $var;
@@ -138,9 +137,8 @@ class InsightsGetUserStatusRes extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsActive($var)
+    public function setIsActive(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_active = $var;
 
         return $this;
@@ -170,9 +168,9 @@ class InsightsGetUserStatusRes extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSpokenLang($var)
+    public function setSpokenLang(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->spoken_lang = $var;
 
         return $this;
@@ -202,9 +200,8 @@ class InsightsGetUserStatusRes extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAllowedTranscriptionStorage($var)
+    public function setAllowedTranscriptionStorage(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->allowed_transcription_storage = $var;
 
         return $this;

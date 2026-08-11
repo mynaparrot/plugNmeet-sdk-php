@@ -52,7 +52,7 @@ class TimedVersion extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setUnixMicro($var)
+    public function setUnixMicro(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->unix_micro = $var;
@@ -74,7 +74,7 @@ class TimedVersion extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTicks($var)
+    public function setTicks(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->ticks = $var;

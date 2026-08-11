@@ -55,9 +55,8 @@ class UserRaisedHand extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsRaised($var)
+    public function setIsRaised(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_raised = $var;
 
         return $this;
@@ -81,7 +80,7 @@ class UserRaisedHand extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setRaisedAt($var)
+    public function setRaisedAt(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->raised_at = $var;

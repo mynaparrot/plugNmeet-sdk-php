@@ -72,9 +72,9 @@ class UploadedFileMergeReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomSid($var)
+    public function setRoomSid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_sid = $var;
 
         return $this;
@@ -94,9 +94,9 @@ class UploadedFileMergeReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -104,7 +104,7 @@ class UploadedFileMergeReq extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.RoomUploadedFileType file_type = 3;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\RoomUploadedFileType}
      */
     public function getFileType()
     {
@@ -113,10 +113,10 @@ class UploadedFileMergeReq extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.RoomUploadedFileType file_type = 3;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\RoomUploadedFileType}
      * @return $this
      */
-    public function setFileType($var)
+    public function setFileType(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\RoomUploadedFileType::class);
         $this->file_type = $var;
@@ -138,9 +138,9 @@ class UploadedFileMergeReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setResumableIdentifier($var)
+    public function setResumableIdentifier(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->resumable_identifier = $var;
 
         return $this;
@@ -160,9 +160,9 @@ class UploadedFileMergeReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setResumableFilename($var)
+    public function setResumableFilename(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->resumable_filename = $var;
 
         return $this;
@@ -182,7 +182,7 @@ class UploadedFileMergeReq extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setResumableTotalChunks($var)
+    public function setResumableTotalChunks(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->resumable_total_chunks = $var;

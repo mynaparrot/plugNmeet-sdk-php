@@ -72,9 +72,9 @@ class MuteUnMuteTrackReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSid($var)
+    public function setSid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->sid = $var;
 
         return $this;
@@ -94,9 +94,9 @@ class MuteUnMuteTrackReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -116,9 +116,9 @@ class MuteUnMuteTrackReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->user_id = $var;
 
         return $this;
@@ -138,9 +138,9 @@ class MuteUnMuteTrackReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTrackSid($var)
+    public function setTrackSid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->track_sid = $var;
 
         return $this;
@@ -160,9 +160,8 @@ class MuteUnMuteTrackReq extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setMuted($var)
+    public function setMuted(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->muted = $var;
 
         return $this;
@@ -182,9 +181,9 @@ class MuteUnMuteTrackReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRequestedUserId($var)
+    public function setRequestedUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->Requested_user_id = $var;
 
         return $this;

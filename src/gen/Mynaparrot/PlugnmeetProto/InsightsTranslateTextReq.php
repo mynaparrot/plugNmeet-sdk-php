@@ -57,9 +57,9 @@ class InsightsTranslateTextReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setText($var)
+    public function setText(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->text = $var;
 
         return $this;
@@ -79,9 +79,9 @@ class InsightsTranslateTextReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSourceLang($var)
+    public function setSourceLang(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->source_lang = $var;
 
         return $this;
@@ -101,7 +101,7 @@ class InsightsTranslateTextReq extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setTargetLangs($var)
+    public function setTargetLangs(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->target_langs = $arr;

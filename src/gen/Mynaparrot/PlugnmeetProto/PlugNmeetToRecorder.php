@@ -87,9 +87,9 @@ class PlugNmeetToRecorder extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFrom($var)
+    public function setFrom(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->from = $var;
 
         return $this;
@@ -97,7 +97,7 @@ class PlugNmeetToRecorder extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.RecordingTasks task = 2;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\RecordingTasks}
      */
     public function getTask()
     {
@@ -106,10 +106,10 @@ class PlugNmeetToRecorder extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.RecordingTasks task = 2;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\RecordingTasks}
      * @return $this
      */
-    public function setTask($var)
+    public function setTask(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\RecordingTasks::class);
         $this->task = $var;
@@ -131,7 +131,7 @@ class PlugNmeetToRecorder extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setRoomTableId($var)
+    public function setRoomTableId(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->room_table_id = $var;
@@ -153,9 +153,9 @@ class PlugNmeetToRecorder extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -175,9 +175,9 @@ class PlugNmeetToRecorder extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomSid($var)
+    public function setRoomSid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_sid = $var;
 
         return $this;
@@ -197,9 +197,9 @@ class PlugNmeetToRecorder extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRecordingId($var)
+    public function setRecordingId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->recording_id = $var;
 
         return $this;
@@ -219,9 +219,9 @@ class PlugNmeetToRecorder extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRecorderId($var)
+    public function setRecorderId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->recorder_id = $var;
 
         return $this;
@@ -241,9 +241,9 @@ class PlugNmeetToRecorder extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAccessToken($var)
+    public function setAccessToken(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->access_token = $var;
 
         return $this;
@@ -273,9 +273,9 @@ class PlugNmeetToRecorder extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRtmpUrl($var)
+    public function setRtmpUrl(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->rtmp_url = $var;
 
         return $this;

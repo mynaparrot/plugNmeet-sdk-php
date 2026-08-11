@@ -57,7 +57,7 @@ class RoomArtifactCharacterCountUsage extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setTotalCharacters($var)
+    public function setTotalCharacters(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->total_characters = $var;
@@ -79,7 +79,7 @@ class RoomArtifactCharacterCountUsage extends \Google\Protobuf\Internal\Message
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
-    public function setBreakdown($var)
+    public function setBreakdown(array|\Google\Protobuf\Internal\MapField $var)
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::INT64);
         $this->breakdown = $arr;
@@ -111,9 +111,8 @@ class RoomArtifactCharacterCountUsage extends \Google\Protobuf\Internal\Message
      * @param float $var
      * @return $this
      */
-    public function setTotalCharactersEstimatedCost($var)
+    public function setTotalCharactersEstimatedCost(float $var)
     {
-        GPBUtil::checkDouble($var);
         $this->total_characters_estimated_cost = $var;
 
         return $this;

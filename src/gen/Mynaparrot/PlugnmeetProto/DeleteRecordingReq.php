@@ -47,9 +47,9 @@ class DeleteRecordingReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRecordId($var)
+    public function setRecordId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->record_id = $var;
 
         return $this;

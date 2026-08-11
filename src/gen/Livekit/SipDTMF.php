@@ -52,7 +52,7 @@ class SipDTMF extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCode($var)
+    public function setCode(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->code = $var;
@@ -74,9 +74,9 @@ class SipDTMF extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDigit($var)
+    public function setDigit(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->digit = $var;
 
         return $this;

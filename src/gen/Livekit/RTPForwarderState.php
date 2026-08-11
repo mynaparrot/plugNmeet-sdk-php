@@ -79,9 +79,8 @@ class RTPForwarderState extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setStarted($var)
+    public function setStarted(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->started = $var;
 
         return $this;
@@ -101,7 +100,7 @@ class RTPForwarderState extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setReferenceLayerSpatial($var)
+    public function setReferenceLayerSpatial(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->reference_layer_spatial = $var;
@@ -123,7 +122,7 @@ class RTPForwarderState extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setPreStartTime($var)
+    public function setPreStartTime(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->pre_start_time = $var;
@@ -145,7 +144,7 @@ class RTPForwarderState extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setExtFirstTimestamp($var)
+    public function setExtFirstTimestamp(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->ext_first_timestamp = $var;
@@ -167,7 +166,7 @@ class RTPForwarderState extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setDummyStartTimestampOffset($var)
+    public function setDummyStartTimestampOffset(int|string $var)
     {
         GPBUtil::checkUint64($var);
         $this->dummy_start_timestamp_offset = $var;
@@ -199,9 +198,8 @@ class RTPForwarderState extends \Google\Protobuf\Internal\Message
      * @param \Livekit\RTPMungerState $var
      * @return $this
      */
-    public function setRtpMunger($var)
+    public function setRtpMunger(\Livekit\RTPMungerState|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\RTPMungerState::class);
         $this->rtp_munger = $var;
 
         return $this;
@@ -226,9 +224,8 @@ class RTPForwarderState extends \Google\Protobuf\Internal\Message
      * @param \Livekit\VP8MungerState $var
      * @return $this
      */
-    public function setVp8Munger($var)
+    public function setVp8Munger(\Livekit\VP8MungerState|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\VP8MungerState::class);
         $this->writeOneof(7, $var);
 
         return $this;
@@ -248,7 +245,7 @@ class RTPForwarderState extends \Google\Protobuf\Internal\Message
      * @param \Livekit\RTCPSenderReportState[] $var
      * @return $this
      */
-    public function setSenderReportState($var)
+    public function setSenderReportState(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\RTCPSenderReportState::class);
         $this->sender_report_state = $arr;

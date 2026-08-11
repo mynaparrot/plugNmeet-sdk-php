@@ -59,9 +59,9 @@ class NativeBridgeTrackState extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->user_id = $var;
 
         return $this;
@@ -69,7 +69,7 @@ class NativeBridgeTrackState extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.NativeTrackKind kind = 2;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\NativeTrackKind}
      */
     public function getKind()
     {
@@ -78,10 +78,10 @@ class NativeBridgeTrackState extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.NativeTrackKind kind = 2;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\NativeTrackKind}
      * @return $this
      */
-    public function setKind($var)
+    public function setKind(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\NativeTrackKind::class);
         $this->kind = $var;
@@ -91,7 +91,7 @@ class NativeBridgeTrackState extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.NativeMediaSource source = 3;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\NativeMediaSource}
      */
     public function getSource()
     {
@@ -100,10 +100,10 @@ class NativeBridgeTrackState extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.NativeMediaSource source = 3;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\NativeMediaSource}
      * @return $this
      */
-    public function setSource($var)
+    public function setSource(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\NativeMediaSource::class);
         $this->source = $var;

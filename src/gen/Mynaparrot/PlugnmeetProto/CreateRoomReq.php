@@ -62,9 +62,9 @@ class CreateRoomReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -94,7 +94,7 @@ class CreateRoomReq extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEmptyTimeout($var)
+    public function setEmptyTimeout(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->empty_timeout = $var;
@@ -126,7 +126,7 @@ class CreateRoomReq extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMaxParticipants($var)
+    public function setMaxParticipants(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->max_participants = $var;
@@ -158,9 +158,8 @@ class CreateRoomReq extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\RoomMetadata $var
      * @return $this
      */
-    public function setMetadata($var)
+    public function setMetadata(\Mynaparrot\PlugnmeetProto\RoomMetadata|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\RoomMetadata::class);
         $this->metadata = $var;
 
         return $this;

@@ -62,7 +62,7 @@ class FetchAnalyticsReq extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setRoomIds($var)
+    public function setRoomIds(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->room_ids = $arr;
@@ -84,7 +84,7 @@ class FetchAnalyticsReq extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setFrom($var)
+    public function setFrom(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->from = $var;
@@ -106,7 +106,7 @@ class FetchAnalyticsReq extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setLimit($var)
+    public function setLimit(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->limit = $var;
@@ -128,9 +128,9 @@ class FetchAnalyticsReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setOrderBy($var)
+    public function setOrderBy(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->order_by = $var;
 
         return $this;

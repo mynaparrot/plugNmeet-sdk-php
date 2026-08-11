@@ -63,9 +63,8 @@ class FallbackOnFlapping extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setEnabled($var)
+    public function setEnabled(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->enabled = $var;
 
         return $this;
@@ -89,7 +88,7 @@ class FallbackOnFlapping extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMaxPoorConnCount($var)
+    public function setMaxPoorConnCount(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->max_poor_conn_count = $var;
@@ -115,7 +114,7 @@ class FallbackOnFlapping extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setCheckDurationInSec($var)
+    public function setCheckDurationInSec(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->check_duration_in_sec = $var;

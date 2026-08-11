@@ -62,9 +62,8 @@ class AnalyticsResult extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\AnalyticsRoomInfo $var
      * @return $this
      */
-    public function setRoom($var)
+    public function setRoom(\Mynaparrot\PlugnmeetProto\AnalyticsRoomInfo|null $var)
     {
-        GPBUtil::checkMessage($var, \Mynaparrot\PlugnmeetProto\AnalyticsRoomInfo::class);
         $this->room = $var;
 
         return $this;
@@ -84,7 +83,7 @@ class AnalyticsResult extends \Google\Protobuf\Internal\Message
      * @param \Mynaparrot\PlugnmeetProto\AnalyticsUserInfo[] $var
      * @return $this
      */
-    public function setUsers($var)
+    public function setUsers(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Mynaparrot\PlugnmeetProto\AnalyticsUserInfo::class);
         $this->users = $arr;

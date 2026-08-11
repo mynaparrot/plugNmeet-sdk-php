@@ -47,7 +47,7 @@ class NativeBridgeMediaStatus extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.NativeMediaSource source = 1;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\NativeMediaSource}
      */
     public function getSource()
     {
@@ -56,10 +56,10 @@ class NativeBridgeMediaStatus extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.NativeMediaSource source = 1;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\NativeMediaSource}
      * @return $this
      */
-    public function setSource($var)
+    public function setSource(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\NativeMediaSource::class);
         $this->source = $var;
@@ -91,9 +91,9 @@ class NativeBridgeMediaStatus extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDeviceId($var)
+    public function setDeviceId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->device_id = $var;
 
         return $this;
@@ -123,9 +123,9 @@ class NativeBridgeMediaStatus extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setError($var)
+    public function setError(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->error = $var;
 
         return $this;

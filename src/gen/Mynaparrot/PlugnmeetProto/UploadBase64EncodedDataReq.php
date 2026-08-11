@@ -62,9 +62,9 @@ class UploadBase64EncodedDataReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -84,9 +84,9 @@ class UploadBase64EncodedDataReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setData($var)
+    public function setData(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->data = $var;
 
         return $this;
@@ -106,9 +106,9 @@ class UploadBase64EncodedDataReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFileName($var)
+    public function setFileName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->file_name = $var;
 
         return $this;
@@ -116,7 +116,7 @@ class UploadBase64EncodedDataReq extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.RoomUploadedFileType file_type = 5;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\RoomUploadedFileType}
      */
     public function getFileType()
     {
@@ -125,10 +125,10 @@ class UploadBase64EncodedDataReq extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.RoomUploadedFileType file_type = 5;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\RoomUploadedFileType}
      * @return $this
      */
-    public function setFileType($var)
+    public function setFileType(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\RoomUploadedFileType::class);
         $this->file_type = $var;

@@ -52,9 +52,8 @@ class InsightsAIMeetingSummarizationConfigReq extends \Google\Protobuf\Internal\
      * @param bool $var
      * @return $this
      */
-    public function setIsEnabled($var)
+    public function setIsEnabled(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_enabled = $var;
 
         return $this;
@@ -74,9 +73,9 @@ class InsightsAIMeetingSummarizationConfigReq extends \Google\Protobuf\Internal\
      * @param string $var
      * @return $this
      */
-    public function setSummarizationPrompt($var)
+    public function setSummarizationPrompt(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->summarization_prompt = $var;
 
         return $this;

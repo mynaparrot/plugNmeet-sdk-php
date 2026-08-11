@@ -56,9 +56,8 @@ class EncryptedPacketPayload extends \Google\Protobuf\Internal\Message
      * @param \Livekit\UserPacket $var
      * @return $this
      */
-    public function setUser($var)
+    public function setUser(\Livekit\UserPacket|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\UserPacket::class);
         $this->writeOneof(1, $var);
 
         return $this;
@@ -83,9 +82,8 @@ class EncryptedPacketPayload extends \Google\Protobuf\Internal\Message
      * @param \Livekit\ChatMessage $var
      * @return $this
      */
-    public function setChatMessage($var)
+    public function setChatMessage(\Livekit\ChatMessage|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\ChatMessage::class);
         $this->writeOneof(3, $var);
 
         return $this;
@@ -110,9 +108,8 @@ class EncryptedPacketPayload extends \Google\Protobuf\Internal\Message
      * @param \Livekit\RpcRequest $var
      * @return $this
      */
-    public function setRpcRequest($var)
+    public function setRpcRequest(\Livekit\RpcRequest|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\RpcRequest::class);
         $this->writeOneof(4, $var);
 
         return $this;
@@ -137,9 +134,8 @@ class EncryptedPacketPayload extends \Google\Protobuf\Internal\Message
      * @param \Livekit\RpcAck $var
      * @return $this
      */
-    public function setRpcAck($var)
+    public function setRpcAck(\Livekit\RpcAck|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\RpcAck::class);
         $this->writeOneof(5, $var);
 
         return $this;
@@ -164,9 +160,8 @@ class EncryptedPacketPayload extends \Google\Protobuf\Internal\Message
      * @param \Livekit\RpcResponse $var
      * @return $this
      */
-    public function setRpcResponse($var)
+    public function setRpcResponse(\Livekit\RpcResponse|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\RpcResponse::class);
         $this->writeOneof(6, $var);
 
         return $this;
@@ -191,9 +186,8 @@ class EncryptedPacketPayload extends \Google\Protobuf\Internal\Message
      * @param \Livekit\DataStream\Header $var
      * @return $this
      */
-    public function setStreamHeader($var)
+    public function setStreamHeader(\Livekit\DataStream\Header|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\DataStream\Header::class);
         $this->writeOneof(7, $var);
 
         return $this;
@@ -218,9 +212,8 @@ class EncryptedPacketPayload extends \Google\Protobuf\Internal\Message
      * @param \Livekit\DataStream\Chunk $var
      * @return $this
      */
-    public function setStreamChunk($var)
+    public function setStreamChunk(\Livekit\DataStream\Chunk|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\DataStream\Chunk::class);
         $this->writeOneof(8, $var);
 
         return $this;
@@ -245,9 +238,8 @@ class EncryptedPacketPayload extends \Google\Protobuf\Internal\Message
      * @param \Livekit\DataStream\Trailer $var
      * @return $this
      */
-    public function setStreamTrailer($var)
+    public function setStreamTrailer(\Livekit\DataStream\Trailer|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\DataStream\Trailer::class);
         $this->writeOneof(9, $var);
 
         return $this;

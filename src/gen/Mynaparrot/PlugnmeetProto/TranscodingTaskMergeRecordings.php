@@ -47,7 +47,7 @@ class TranscodingTaskMergeRecordings extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setFilePaths($var)
+    public function setFilePaths(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->file_paths = $arr;

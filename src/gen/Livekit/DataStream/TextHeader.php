@@ -69,7 +69,7 @@ class TextHeader extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.livekit.DataStream.OperationType operation_type = 1;</code>
-     * @return int
+     * @return int one of the values in {@see \Livekit\DataStream\OperationType}
      */
     public function getOperationType()
     {
@@ -78,10 +78,10 @@ class TextHeader extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.livekit.DataStream.OperationType operation_type = 1;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Livekit\DataStream\OperationType}
      * @return $this
      */
-    public function setOperationType($var)
+    public function setOperationType(int $var)
     {
         GPBUtil::checkEnum($var, \Livekit\DataStream\OperationType::class);
         $this->operation_type = $var;
@@ -107,7 +107,7 @@ class TextHeader extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setVersion($var)
+    public function setVersion(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->version = $var;
@@ -133,9 +133,9 @@ class TextHeader extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setReplyToStreamId($var)
+    public function setReplyToStreamId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->reply_to_stream_id = $var;
 
         return $this;
@@ -159,7 +159,7 @@ class TextHeader extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setAttachedStreamIds($var)
+    public function setAttachedStreamIds(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->attached_stream_ids = $arr;
@@ -185,9 +185,8 @@ class TextHeader extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setGenerated($var)
+    public function setGenerated(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->generated = $var;
 
         return $this;

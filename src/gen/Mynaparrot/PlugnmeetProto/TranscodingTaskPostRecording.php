@@ -70,9 +70,9 @@ class TranscodingTaskPostRecording extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFilePath($var)
+    public function setFilePath(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->file_path = $var;
 
         return $this;
@@ -96,9 +96,9 @@ class TranscodingTaskPostRecording extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setFileName($var)
+    public function setFileName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->file_name = $var;
 
         return $this;
@@ -108,7 +108,7 @@ class TranscodingTaskPostRecording extends \Google\Protobuf\Internal\Message
      * The variant of the recording
      *
      * Generated from protobuf field <code>.plugnmeet.CloudRecordingVariants recording_variant = 3;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\CloudRecordingVariants}
      */
     public function getRecordingVariant()
     {
@@ -119,10 +119,10 @@ class TranscodingTaskPostRecording extends \Google\Protobuf\Internal\Message
      * The variant of the recording
      *
      * Generated from protobuf field <code>.plugnmeet.CloudRecordingVariants recording_variant = 3;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\CloudRecordingVariants}
      * @return $this
      */
-    public function setRecordingVariant($var)
+    public function setRecordingVariant(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\CloudRecordingVariants::class);
         $this->recording_variant = $var;

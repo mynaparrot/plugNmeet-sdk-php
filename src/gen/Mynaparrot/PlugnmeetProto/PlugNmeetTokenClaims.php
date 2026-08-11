@@ -75,9 +75,9 @@ class PlugNmeetTokenClaims extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -97,9 +97,9 @@ class PlugNmeetTokenClaims extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->user_id = $var;
 
         return $this;
@@ -119,9 +119,9 @@ class PlugNmeetTokenClaims extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -141,9 +141,8 @@ class PlugNmeetTokenClaims extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsAdmin($var)
+    public function setIsAdmin(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_admin = $var;
 
         return $this;
@@ -163,9 +162,8 @@ class PlugNmeetTokenClaims extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setIsHidden($var)
+    public function setIsHidden(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->is_hidden = $var;
 
         return $this;
@@ -175,7 +173,7 @@ class PlugNmeetTokenClaims extends \Google\Protobuf\Internal\Message
      * copied from UserInfo at join-token generation
      *
      * Generated from protobuf field <code>.plugnmeet.ClientType client_type = 6;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\ClientType}
      */
     public function getClientType()
     {
@@ -186,10 +184,10 @@ class PlugNmeetTokenClaims extends \Google\Protobuf\Internal\Message
      * copied from UserInfo at join-token generation
      *
      * Generated from protobuf field <code>.plugnmeet.ClientType client_type = 6;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\ClientType}
      * @return $this
      */
-    public function setClientType($var)
+    public function setClientType(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\ClientType::class);
         $this->client_type = $var;

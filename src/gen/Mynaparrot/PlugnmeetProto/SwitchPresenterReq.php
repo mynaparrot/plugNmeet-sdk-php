@@ -50,7 +50,7 @@ class SwitchPresenterReq extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.SwitchPresenterTask task = 1;</code>
-     * @return int
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\SwitchPresenterTask}
      */
     public function getTask()
     {
@@ -59,10 +59,10 @@ class SwitchPresenterReq extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.plugnmeet.SwitchPresenterTask task = 1;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\SwitchPresenterTask}
      * @return $this
      */
-    public function setTask($var)
+    public function setTask(int $var)
     {
         GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\SwitchPresenterTask::class);
         $this->task = $var;
@@ -84,9 +84,9 @@ class SwitchPresenterReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setUserId($var)
+    public function setUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->user_id = $var;
 
         return $this;
@@ -106,9 +106,9 @@ class SwitchPresenterReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -128,9 +128,9 @@ class SwitchPresenterReq extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRequestedUserId($var)
+    public function setRequestedUserId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->Requested_user_id = $var;
 
         return $this;

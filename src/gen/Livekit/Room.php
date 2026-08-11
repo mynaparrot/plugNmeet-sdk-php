@@ -112,9 +112,9 @@ class Room extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSid($var)
+    public function setSid(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->sid = $var;
 
         return $this;
@@ -134,9 +134,9 @@ class Room extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->name = $var;
 
         return $this;
@@ -156,7 +156,7 @@ class Room extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setEmptyTimeout($var)
+    public function setEmptyTimeout(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->empty_timeout = $var;
@@ -178,7 +178,7 @@ class Room extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setDepartureTimeout($var)
+    public function setDepartureTimeout(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->departure_timeout = $var;
@@ -200,7 +200,7 @@ class Room extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setMaxParticipants($var)
+    public function setMaxParticipants(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->max_participants = $var;
@@ -222,7 +222,7 @@ class Room extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreationTime($var)
+    public function setCreationTime(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->creation_time = $var;
@@ -244,7 +244,7 @@ class Room extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setCreationTimeMs($var)
+    public function setCreationTimeMs(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->creation_time_ms = $var;
@@ -266,9 +266,9 @@ class Room extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTurnPassword($var)
+    public function setTurnPassword(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->turn_password = $var;
 
         return $this;
@@ -288,7 +288,7 @@ class Room extends \Google\Protobuf\Internal\Message
      * @param \Livekit\Codec[] $var
      * @return $this
      */
-    public function setEnabledCodecs($var)
+    public function setEnabledCodecs(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\Codec::class);
         $this->enabled_codecs = $arr;
@@ -310,9 +310,9 @@ class Room extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setMetadata($var)
+    public function setMetadata(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->metadata = $var;
 
         return $this;
@@ -332,7 +332,7 @@ class Room extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setNumParticipants($var)
+    public function setNumParticipants(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->num_participants = $var;
@@ -354,7 +354,7 @@ class Room extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setNumPublishers($var)
+    public function setNumPublishers(int $var)
     {
         GPBUtil::checkUint32($var);
         $this->num_publishers = $var;
@@ -376,9 +376,8 @@ class Room extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setActiveRecording($var)
+    public function setActiveRecording(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->active_recording = $var;
 
         return $this;
@@ -408,9 +407,8 @@ class Room extends \Google\Protobuf\Internal\Message
      * @param \Livekit\TimedVersion $var
      * @return $this
      */
-    public function setVersion($var)
+    public function setVersion(\Livekit\TimedVersion|null $var)
     {
-        GPBUtil::checkMessage($var, \Livekit\TimedVersion::class);
         $this->version = $var;
 
         return $this;

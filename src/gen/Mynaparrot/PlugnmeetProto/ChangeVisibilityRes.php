@@ -57,9 +57,9 @@ class ChangeVisibilityRes extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setRoomId($var)
+    public function setRoomId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->room_id = $var;
 
         return $this;
@@ -89,9 +89,8 @@ class ChangeVisibilityRes extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setVisibleNotepad($var)
+    public function setVisibleNotepad(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->visible_notepad = $var;
 
         return $this;
@@ -121,9 +120,8 @@ class ChangeVisibilityRes extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setVisibleWhiteBoard($var)
+    public function setVisibleWhiteBoard(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->visible_white_board = $var;
 
         return $this;
