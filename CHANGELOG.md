@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.2.3](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.2.2...v2.2.3) (2026-08-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency guzzlehttp/guzzle to v7.15.1 [security] ([#75](https://github.com/mynaparrot/plugNmeet-sdk-php/issues/75)) ([e4318d8](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/e4318d871761d5ec2d80caf33c32e51db30493f1))
+* **deps:** update dependency guzzlehttp/guzzle to v7.15.2 ([#77](https://github.com/mynaparrot/plugNmeet-sdk-php/issues/77)) ([63f0367](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/63f0367a29d111bf3ad2ae8949e89b6c1b42a4b5))
+* **deps:** update dependency guzzlehttp/guzzle to v7.15.3 ([#79](https://github.com/mynaparrot/plugNmeet-sdk-php/issues/79)) ([568c1e7](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/568c1e7afd5606e0af315e6147b8492f0142f87c))
+* update proto + added new clientType option ([e036afe](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/e036afe2f1557fffc1b844cc2235b9a1c01f46c0))
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency squizlabs/php_codesniffer to v4.0.2 ([#80](https://github.com/mynaparrot/plugNmeet-sdk-php/issues/80)) ([ebc2b77](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/ebc2b77c5f19e1bbbd1afc3664937e227d52c517))
+* **deps:** update dependency squizlabs/php_codesniffer to v4.0.4 ([#81](https://github.com/mynaparrot/plugNmeet-sdk-php/issues/81)) ([15d6f4c](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/15d6f4c7f2855a17e777a6e46b1087b0efa9a121))
+
 ## [2.2.2](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.2.1...v2.2.2) (2026-07-09)
 
 
