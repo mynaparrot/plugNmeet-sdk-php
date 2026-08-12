@@ -28,7 +28,7 @@ use DateTime;
 use DateTimeZone;
 
 /**
- * A simple class to format analytics data to make it more human-readable and to perform calculations.
+ * Formats analytics data and calculates bounded durations.
  *
  * @package PlugNmeet
  */
@@ -449,10 +449,12 @@ class AnalyticsFormatter
 
             $total++;
 
-            if (isset(
-                $this->roomData["polls"][$vote["poll_id"]]
-                ["options"][$vote["selected_option"]]["responses"]
-            )) {
+            if (
+                isset(
+                    $this->roomData["polls"][$vote["poll_id"]]
+                    ["options"][$vote["selected_option"]]["responses"]
+                )
+            ) {
                 $this->roomData["polls"][$vote["poll_id"]]
                 ["options"][$vote["selected_option"]]["responses"]++;
             }
