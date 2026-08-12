@@ -1,7 +1,31 @@
-.idea
-.DS_Store
-.phpdoc
-composer.phar
+# Hidden files — exclude everything, then allow specific ones
+.*
+!.gitignore
+!.gitattributes
+!.gitmodules
+!.phplint.yml
+!.release-please-manifest.json
+
+# Build / dependency artifacts
+/vendor
 composer.lock
-build/
-/vendor/
+
+# Test artifacts
+.phpunit.result.cache
+.phpunit.cache
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp
+*.tmp
+*.bak
+*.log

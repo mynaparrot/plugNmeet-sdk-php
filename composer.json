@@ -20,7 +20,8 @@
   ],
   "scripts": {
     "phpcs": "phpcs --standard=PSR12 src/ --ignore=gen",
-    "phpcbf": "phpcbf --standard=PSR12 src/ --ignore=gen"
+    "phpcbf": "phpcbf --standard=PSR12 src/ --ignore=gen",
+    "test": "phpunit"
   },
   "require": {
     "php": "^8.0",
@@ -34,6 +35,7 @@
   },
   "require-dev": {
     "overtrue/phplint": "9.7.2",
-    "squizlabs/php_codesniffer": "4.0.4"
+    "squizlabs/php_codesniffer": "4.0.4",
+    "phpunit/phpunit": "13.3.0"
   }
 }

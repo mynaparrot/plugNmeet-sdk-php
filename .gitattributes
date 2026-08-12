@@ -11,3 +11,6 @@
 /composer.lock export-ignore
 /renovate.json export-ignore
 /generate_proto.sh export-ignore
+
+# Exclude tests from distribution archives
+/tests export-ignore

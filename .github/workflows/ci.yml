@@ -14,12 +14,18 @@ jobs:
         php-versions: [ '8.x', 'latest' ]
     steps:
       - name: Checkout code
-        uses: actions/checkout@v7
+        uses: actions/checkout@v4
+
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php-versions }}
+
       - name: Composer install
         run: composer install --ignore-platform-reqs
+
       - name: phpcs checker
-        run: ./vendor/bin/phpcs -q -n --report=checkstyle --standard=PSR12 src/ --ignore=gen
+        run: composer phpcs
+
+      - name: Unit tests
+        run: composer test
