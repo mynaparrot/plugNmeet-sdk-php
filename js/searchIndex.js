@@ -13,77 +13,102 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\AnalyticsFormatter\u003A\u003AgetFormattedEventData\u0028\u0029",
             "name": "getFormattedEventData",
-            "summary": "Get\u0020formatted\u0020analytics\u0020data",
+            "summary": "Get\u0020formatted\u0020analytics\u0020data.",
             "url": "classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_getFormattedEventData"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\AnalyticsFormatter\u003A\u003AgetRawAnalyticsData\u0028\u0029",
             "name": "getRawAnalyticsData",
-            "summary": "Get\u0020raw\u0020analytics\u0020data",
+            "summary": "Get\u0020raw\u0020analytics\u0020data.",
             "url": "classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_getRawAnalyticsData"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\AnalyticsFormatter\u003A\u003AgetUserFields\u0028\u0029",
             "name": "getUserFields",
-            "summary": "Get\u0020user\u0020fields",
+            "summary": "Get\u0020user\u0020fields.",
             "url": "classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_getUserFields"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\AnalyticsFormatter\u003A\u003AgetRoomFields\u0028\u0029",
             "name": "getRoomFields",
-            "summary": "Get\u0020room\u0020fields",
+            "summary": "Get\u0020room\u0020fields.",
             "url": "classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_getRoomFields"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\AnalyticsFormatter\u003A\u003AformatRoomData\u0028\u0029",
             "name": "formatRoomData",
-            "summary": "Format\u0020basic\u0020room\u0020data",
+            "summary": "Format\u0020basic\u0020room\u0020data.",
             "url": "classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_formatRoomData"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\AnalyticsFormatter\u003A\u003AformatRoomEvents\u0028\u0029",
             "name": "formatRoomEvents",
-            "summary": "Format\u0020room\u0020events",
+            "summary": "Format\u0020room\u0020events.",
             "url": "classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_formatRoomEvents"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\AnalyticsFormatter\u003A\u003AformatUsersData\u0028\u0029",
             "name": "formatUsersData",
-            "summary": "Format\u0020user\u0020data",
+            "summary": "Format\u0020user\u0020data.",
             "url": "classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_formatUsersData"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\AnalyticsFormatter\u003A\u003AformatUserEvents\u0028\u0029",
             "name": "formatUserEvents",
-            "summary": "Format\u0020user\u0020events",
+            "summary": "Format\u0020user\u0020events.",
             "url": "classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_formatUserEvents"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\AnalyticsFormatter\u003A\u003AcountStatusStartTypeEvent\u0028\u0029",
             "name": "countStatusStartTypeEvent",
-            "summary": "Count\u0020how\u0020many\u0020times\u0020an\u0020event\u0020occurred",
+            "summary": "Count\u0020how\u0020many\u0020times\u0020an\u0020event\u0020occurred.",
             "url": "classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_countStatusStartTypeEvent"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\AnalyticsFormatter\u003A\u003AformatRoomPolls\u0028\u0029",
             "name": "formatRoomPolls",
-            "summary": "Format\u0020room\u0020polls\u0020data",
+            "summary": "Format\u0020room\u0020polls\u0020data.",
             "url": "classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_formatRoomPolls"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\AnalyticsFormatter\u003A\u003AformatUserPollVoted\u0028\u0029",
             "name": "formatUserPollVoted",
-            "summary": "Format\u0020user\u0027s\u0020poll\u0020voted\u0020data",
+            "summary": "Format\u0020user\u0027s\u0020poll\u0020voted\u0020data.",
             "url": "classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_formatUserPollVoted"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\AnalyticsFormatter\u003A\u003AformatUserJoinDuration\u0028\u0029",
             "name": "formatUserJoinDuration",
-            "summary": "Format\u0020user\u0020join\u0020duration",
+            "summary": "Calculate\u0020user\u0020join\u0020duration\u0020using\u0020an\u0020active\/inactive\u0020state\u0020machine.",
             "url": "classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_formatUserJoinDuration"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\AnalyticsFormatter\u003A\u003AcapDurationsAtRoomDuration\u0028\u0029",
+            "name": "capDurationsAtRoomDuration",
+            "summary": "Cap\u0020per\u002Duser\u0020duration\u0020fields\u0020at\u0020the\u0020authoritative\u0020room\u0020duration\u0020limit.",
+            "url": "classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_capDurationsAtRoomDuration"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\AnalyticsFormatter\u003A\u003AformatTimestamp\u0028\u0029",
             "name": "formatTimestamp",
-            "summary": "Format\u0020timestamp\u0020to\u0020user\u0020readable\u0020format",
+            "summary": "Format\u0020timestamp\u0020to\u0020user\u0020readable\u0020format.",
             "url": "classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_formatTimestamp"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\AnalyticsFormatter\u003A\u003AformatSecondsToTime\u0028\u0029",
             "name": "formatSecondsToTime",
-            "summary": "Format\u0020seconds\u0020to\u0020H\u003Ai\u003As\u0020format",
+            "summary": "Format\u0020seconds\u0020to\u0020H\u003Ai\u003As\u0020format.",
             "url": "classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_formatSecondsToTime"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\AnalyticsFormatter\u003A\u003AgetRoomStartMilliseconds\u0028\u0029",
+            "name": "getRoomStartMilliseconds",
+            "summary": "Get\u0020room\u0020start\u0020time\u0020in\u0020milliseconds,\u0020or\u0020null\u0020if\u0020unavailable.",
+            "url": "classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_getRoomStartMilliseconds"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\AnalyticsFormatter\u003A\u003AgetRoomEndMilliseconds\u0028\u0029",
+            "name": "getRoomEndMilliseconds",
+            "summary": "Get\u0020room\u0020end\u0020time\u0020in\u0020milliseconds,\u0020or\u0020null\u0020if\u0020unavailable.",
+            "url": "classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_getRoomEndMilliseconds"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\AnalyticsFormatter\u003A\u003AgetRoomDurationLimit\u0028\u0029",
+            "name": "getRoomDurationLimit",
+            "summary": "Returns\u0020the\u0020authoritative\u0020room\u0020duration\u0020limit\u0020in\u0020seconds.",
+            "url": "classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_getRoomDurationLimit"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\AnalyticsFormatter\u003A\u003AclampDuration\u0028\u0029",
+            "name": "clampDuration",
+            "summary": "Clamp\u0020a\u0020duration\u0020value\u0020to\u0020the\u0020valid\u0020range\u0020\u005B0,\u0020room\u0020limit\u005D.",
+            "url": "classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_clampDuration"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\AnalyticsFormatter\u003A\u003AgetDurationFromEvents\u0028\u0029",
             "name": "getDurationFromEvents",
-            "summary": "Get\u0020duration\u0020from\u0020events",
+            "summary": "Calculate\u0020device\u0020duration\u0020from\u0020start\/end\u0020and\u0020user\u002Dleave\u0020events.",
             "url": "classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_getDurationFromEvents"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\AnalyticsFormatter\u003A\u003A\u0024rawData",

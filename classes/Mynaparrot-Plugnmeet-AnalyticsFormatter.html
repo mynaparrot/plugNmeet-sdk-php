@@ -185,7 +185,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -272,105 +272,140 @@
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>Format seconds to H:i:s format</dd>
+<dd>Format seconds to H:i:s format.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_formatTimestamp">formatTimestamp()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>Format timestamp to user readable format</dd>
+<dd>Format timestamp to user readable format.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_getFormattedEventData">getFormattedEventData()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
-<dd>Get formatted analytics data</dd>
+<dd>Get formatted analytics data.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_getRawAnalyticsData">getRawAnalyticsData()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
-<dd>Get raw analytics data</dd>
+<dd>Get raw analytics data.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_getRoomFields">getRoomFields()</a>
     <span>
                                 &nbsp;: array&lt;string|int, string&gt;    </span>
 </dt>
-<dd>Get room fields</dd>
+<dd>Get room fields.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_getUserFields">getUserFields()</a>
     <span>
                                 &nbsp;: array&lt;string|int, string&gt;    </span>
 </dt>
-<dd>Get user fields</dd>
+<dd>Get user fields.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_capDurationsAtRoomDuration">capDurationsAtRoomDuration()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Cap per-user duration fields at the authoritative room duration limit.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_clampDuration">clampDuration()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+<dd>Clamp a duration value to the valid range [0, room limit].</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a class="" href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_countStatusStartTypeEvent">countStatusStartTypeEvent()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
-<dd>Count how many times an event occurred</dd>
+<dd>Count how many times an event occurred.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a class="" href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_formatRoomData">formatRoomData()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>Format basic room data</dd>
+<dd>Format basic room data.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a class="" href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_formatRoomEvents">formatRoomEvents()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>Format room events</dd>
+<dd>Format room events.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a class="" href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_formatRoomPolls">formatRoomPolls()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
-<dd>Format room polls data</dd>
+<dd>Format room polls data.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a class="" href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_formatUserEvents">formatUserEvents()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>Format user events</dd>
+<dd>Format user events.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a class="" href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_formatUserJoinDuration">formatUserJoinDuration()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>Format user join duration</dd>
+<dd>Calculate user join duration using an active/inactive state machine.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a class="" href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_formatUserPollVoted">formatUserPollVoted()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
-<dd>Format user&#039;s poll voted data</dd>
+<dd>Format user&#039;s poll voted data.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a class="" href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_formatUsersData">formatUsersData()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>Format user data</dd>
+<dd>Format user data.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a class="" href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_getDurationFromEvents">getDurationFromEvents()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
-<dd>Get duration from events</dd>
+<dd>Calculate device duration from start/end and user-leave events.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_getRoomDurationLimit">getRoomDurationLimit()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+<dd>Returns the authoritative room duration limit in seconds.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_getRoomEndMilliseconds">getRoomEndMilliseconds()</a>
+    <span>
+                                &nbsp;: int|null    </span>
+</dt>
+<dd>Get room end time in milliseconds, or null if unavailable.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_getRoomStartMilliseconds">getRoomStartMilliseconds()</a>
+    <span>
+                                &nbsp;: int|null    </span>
+</dt>
+<dd>Get room start time in milliseconds, or null if unavailable.</dd>
 
     </dl>
 
@@ -402,7 +437,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -439,7 +474,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -476,7 +511,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
@@ -513,7 +548,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -550,7 +585,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -587,7 +622,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -629,7 +664,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
@@ -658,7 +693,7 @@
                 : <span class="phpdocumentor-argument-list__argument__type">string</span>
                  = <span class="phpdocumentor-argument-list__argument__default-value">'UTC'</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>User's timezone</p>
+                    <section class="phpdocumentor-description"><p>User timezone</p>
 </section>
 
             </dd>
@@ -684,11 +719,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">391</span>
+    <span class="phpdocumentor-element-found-in__line">582</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Format seconds to H:i:s format</p>
+        <p class="phpdocumentor-summary">Format seconds to H:i:s format.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -733,11 +768,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">376</span>
+    <span class="phpdocumentor-element-found-in__line">559</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Format timestamp to user readable format</p>
+        <p class="phpdocumentor-summary">Format timestamp to user readable format.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -789,11 +824,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get formatted analytics data</p>
+        <p class="phpdocumentor-summary">Get formatted analytics data.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -828,11 +863,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">111</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get raw analytics data</p>
+        <p class="phpdocumentor-summary">Get raw analytics data.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -867,11 +902,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get room fields</p>
+        <p class="phpdocumentor-summary">Get room fields.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -906,11 +941,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">111</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get user fields</p>
+        <p class="phpdocumentor-summary">Get user fields.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -937,6 +972,104 @@
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_capDurationsAtRoomDuration">
+        capDurationsAtRoomDuration()
+        <a href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_capDurationsAtRoomDuration" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">543</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Cap per-user duration fields at the authoritative room duration limit.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">capDurationsAtRoomDuration</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$user</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$user</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_clampDuration">
+        clampDuration()
+        <a href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_clampDuration" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">664</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Clamp a duration value to the valid range [0, room limit].</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">clampDuration</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$duration</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>When no trustworthy limit exists the raw duration is returned
+unchanged — we never zero out data just because room metadata
+is incomplete.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$duration</span>
+                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_countStatusStartTypeEvent">
         countStatusStartTypeEvent()
         <a href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_countStatusStartTypeEvent" class="headerlink"><i class="fas fa-link"></i></a>
@@ -945,11 +1078,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">255</span>
+    <span class="phpdocumentor-element-found-in__line">365</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Count how many times an event occurred</p>
+        <p class="phpdocumentor-summary">Count how many times an event occurred.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
@@ -1001,11 +1134,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">129</span>
+    <span class="phpdocumentor-element-found-in__line">141</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Format basic room data</p>
+        <p class="phpdocumentor-summary">Format basic room data.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
@@ -1036,11 +1169,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">149</span>
+    <span class="phpdocumentor-element-found-in__line">167</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Format room events</p>
+        <p class="phpdocumentor-summary">Format room events.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
@@ -1081,11 +1214,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">274</span>
+    <span class="phpdocumentor-element-found-in__line">391</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Format room polls data</p>
+        <p class="phpdocumentor-summary">Format room polls data.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
@@ -1130,11 +1263,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">199</span>
+    <span class="phpdocumentor-element-found-in__line">240</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Format user events</p>
+        <p class="phpdocumentor-summary">Format user events.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
@@ -1143,7 +1276,10 @@
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>Uses two passes so joined and left events are available before device
+durations are calculated, regardless of the incoming event order.</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1182,11 +1318,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">327</span>
+    <span class="phpdocumentor-element-found-in__line">474</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Format user join duration</p>
+        <p class="phpdocumentor-summary">Calculate user join duration using an active/inactive state machine.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
@@ -1195,7 +1331,11 @@
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>Merges join and leave events into a single timeline. Only one active
+session exists at a time — duplicate joins and unmatched leaves are
+ignored. At most one unfinished session may extend to room end.</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1227,11 +1367,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">305</span>
+    <span class="phpdocumentor-element-found-in__line">436</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Format user&#039;s poll voted data</p>
+        <p class="phpdocumentor-summary">Format user&#039;s poll voted data.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
@@ -1276,11 +1416,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">178</span>
+    <span class="phpdocumentor-element-found-in__line">207</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Format user data</p>
+        <p class="phpdocumentor-summary">Format user data.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
@@ -1311,20 +1451,26 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">408</span>
+    <span class="phpdocumentor-element-found-in__line">688</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get duration from events</p>
+        <p class="phpdocumentor-summary">Calculate device duration from start/end and user-leave events.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">getDurationFromEvents</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$events</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$startStatus</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'ANALYTICS_STATUS_STARTED'</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$endStatus</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'ANALYTICS_STATUS_ENDED'</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+                    <span class="phpdocumentor-signature__name">getDurationFromEvents</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$events</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$startStatus</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">"ANALYTICS_STATUS_STARTED"</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$endStatus</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">"ANALYTICS_STATUS_ENDED"</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$leaveEvents</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>Builds a timeline from start, end, and user leave events. A pending
+device session is closed by the earliest of: matching end event,
+user leave, or room end.</p>
+<p>Uses stripos for prefix matching so values like
+&quot;ANALYTICS_STATUS_STARTED:node_01&quot; are correctly recognised.</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1332,21 +1478,36 @@
                 : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>Device status events (mic_status, webcam_status, etc.)</p>
+</section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$startStatus</span>
                 : <span class="phpdocumentor-argument-list__argument__type">string</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">'ANALYTICS_STATUS_STARTED'</span>            </dt>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">"ANALYTICS_STATUS_STARTED"</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>Value prefix for start events</p>
+</section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$endStatus</span>
                 : <span class="phpdocumentor-argument-list__argument__type">string</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">'ANALYTICS_STATUS_ENDED'</span>            </dt>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">"ANALYTICS_STATUS_ENDED"</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>Value prefix for end events</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$leaveEvents</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>User leave timestamps (ms)</p>
+</section>
+
             </dd>
             </dl>
 
@@ -1357,6 +1518,134 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">int</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Duration in seconds</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRoomDurationLimit">
+        getRoomDurationLimit()
+        <a href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_getRoomDurationLimit" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">632</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns the authoritative room duration limit in seconds.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">getRoomDurationLimit</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Uses the smaller of room_duration and room_ended - room_creation
+to guard against inconsistent data.</p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>0 if no valid limit is available.</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRoomEndMilliseconds">
+        getRoomEndMilliseconds()
+        <a href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_getRoomEndMilliseconds" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">613</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get room end time in milliseconds, or null if unavailable.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">getRoomEndMilliseconds</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRoomStartMilliseconds">
+        getRoomStartMilliseconds()
+        <a href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_getRoomStartMilliseconds" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/AnalyticsFormatter.php"><a href="files/src-analyticsformatter.html"><abbr title="src/AnalyticsFormatter.php">AnalyticsFormatter.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">597</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get room start time in milliseconds, or null if unavailable.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">getRoomStartMilliseconds</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int|null</span>
             </section>
 
 </article>
@@ -1401,6 +1690,8 @@
                                             <li class=""><a href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_getRawAnalyticsData">getRawAnalyticsData()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_getRoomFields">getRoomFields()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_getUserFields">getUserFields()</a></li>
+                                            <li class=""><a href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_capDurationsAtRoomDuration">capDurationsAtRoomDuration()</a></li>
+                                            <li class=""><a href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_clampDuration">clampDuration()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_countStatusStartTypeEvent">countStatusStartTypeEvent()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_formatRoomData">formatRoomData()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_formatRoomEvents">formatRoomEvents()</a></li>
@@ -1410,6 +1701,9 @@
                                             <li class=""><a href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_formatUserPollVoted">formatUserPollVoted()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_formatUsersData">formatUsersData()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_getDurationFromEvents">getDurationFromEvents()</a></li>
+                                            <li class=""><a href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_getRoomDurationLimit">getRoomDurationLimit()</a></li>
+                                            <li class=""><a href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_getRoomEndMilliseconds">getRoomEndMilliseconds()</a></li>
+                                            <li class=""><a href="classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html#method_getRoomStartMilliseconds">getRoomStartMilliseconds()</a></li>
                                     </ul>
             </li>
                     </ul>
