@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.2.5](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.2.4...v2.2.5) (2026-08-12)
+
+
+### Bug Fixes
+
+* added more PHP version to test ([eff36bc](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/eff36bc296b18e62b51f66931dcd1521b73f38c0))
+* added tests ([eb85058](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/eb8505829d091f745f9ba1e0458c4ca4da1b92a8))
+* duration calculation wasn't accurate when missing user's left info ([141db1a](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/141db1a12167d1e884c7b21687f38d1a3ecf62b8))
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/checkout action to v7 ([ae5aada](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/ae5aada03c92b6d7e253ae64dd5156cb515cd02d))
+
 ## [2.2.4](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.2.3...v2.2.4) (2026-08-11)
 
 
