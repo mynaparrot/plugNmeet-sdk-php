@@ -3,7 +3,7 @@ Search.appendIndex(
                 {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\AnalyticsFormatter",
             "name": "AnalyticsFormatter",
-            "summary": "A\u0020simple\u0020class\u0020to\u0020format\u0020analytics\u0020data\u0020to\u0020make\u0020it\u0020more\u0020human\u002Dreadable\u0020and\u0020to\u0020perform\u0020calculations.",
+            "summary": "Formats\u0020analytics\u0020data\u0020and\u0020calculates\u0020bounded\u0020durations.",
             "url": "classes/Mynaparrot-Plugnmeet-AnalyticsFormatter.html"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\AnalyticsFormatter\u003A\u003A__construct\u0028\u0029",
