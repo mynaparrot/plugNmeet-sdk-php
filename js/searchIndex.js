@@ -9096,10 +9096,10 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EANALYTICS_EVENT_ROOM_BREAKOUT_ROOM\u0020\u003D\u00206\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-AnalyticsEvents.html#constant_ANALYTICS_EVENT_ROOM_BREAKOUT_ROOM"
         },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\AnalyticsEvents\u003A\u003AANALYTICS_EVENT_ROOM_ETHERPAD_STATUS",
-            "name": "ANALYTICS_EVENT_ROOM_ETHERPAD_STATUS",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EANALYTICS_EVENT_ROOM_ETHERPAD_STATUS\u0020\u003D\u00207\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-AnalyticsEvents.html#constant_ANALYTICS_EVENT_ROOM_ETHERPAD_STATUS"
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\AnalyticsEvents\u003A\u003AANALYTICS_EVENT_ROOM_SHARED_NOTEPAD_STATUS",
+            "name": "ANALYTICS_EVENT_ROOM_SHARED_NOTEPAD_STATUS",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EANALYTICS_EVENT_ROOM_SHARED_NOTEPAD_STATUS\u0020\u003D\u00207\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-AnalyticsEvents.html#constant_ANALYTICS_EVENT_ROOM_SHARED_NOTEPAD_STATUS"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\AnalyticsEvents\u003A\u003AANALYTICS_EVENT_ROOM_EXTERNAL_DISPLAY_LINK_STATUS",
             "name": "ANALYTICS_EVENT_ROOM_EXTERNAL_DISPLAY_LINK_STATUS",
@@ -10671,45 +10671,45 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-PlugnmeetProto-BroadcastToRoomReq.html#property_payload"
         },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChangeEtherpadStatusReq",
-            "name": "ChangeEtherpadStatusReq",
-            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.ChangeEtherpadStatusReq\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-ChangeEtherpadStatusReq.html"
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChangeSharedNotepadStatusReq",
+            "name": "ChangeSharedNotepadStatusReq",
+            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.ChangeSharedNotepadStatusReq\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChangeSharedNotepadStatusReq.html"
         },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChangeEtherpadStatusReq\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChangeSharedNotepadStatusReq\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Constructor.",
-            "url": "classes/Mynaparrot-PlugnmeetProto-ChangeEtherpadStatusReq.html#method___construct"
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChangeSharedNotepadStatusReq.html#method___construct"
         },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChangeEtherpadStatusReq\u003A\u003AgetRoomId\u0028\u0029",
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChangeSharedNotepadStatusReq\u003A\u003AgetRoomId\u0028\u0029",
             "name": "getRoomId",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-ChangeEtherpadStatusReq.html#method_getRoomId"
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChangeSharedNotepadStatusReq.html#method_getRoomId"
         },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChangeEtherpadStatusReq\u003A\u003AsetRoomId\u0028\u0029",
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChangeSharedNotepadStatusReq\u003A\u003AsetRoomId\u0028\u0029",
             "name": "setRoomId",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-ChangeEtherpadStatusReq.html#method_setRoomId"
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChangeSharedNotepadStatusReq.html#method_setRoomId"
         },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChangeEtherpadStatusReq\u003A\u003AgetIsActive\u0028\u0029",
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChangeSharedNotepadStatusReq\u003A\u003AgetIsActive\u0028\u0029",
             "name": "getIsActive",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_active\u0020\u003D\u00202\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-ChangeEtherpadStatusReq.html#method_getIsActive"
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChangeSharedNotepadStatusReq.html#method_getIsActive"
         },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChangeEtherpadStatusReq\u003A\u003AsetIsActive\u0028\u0029",
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChangeSharedNotepadStatusReq\u003A\u003AsetIsActive\u0028\u0029",
             "name": "setIsActive",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_active\u0020\u003D\u00202\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-ChangeEtherpadStatusReq.html#method_setIsActive"
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChangeSharedNotepadStatusReq.html#method_setIsActive"
         },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChangeEtherpadStatusReq\u003A\u003A\u0024room_id",
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChangeSharedNotepadStatusReq\u003A\u003A\u0024room_id",
             "name": "room_id",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-ChangeEtherpadStatusReq.html#property_room_id"
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChangeSharedNotepadStatusReq.html#property_room_id"
         },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChangeEtherpadStatusReq\u003A\u003A\u0024is_active",
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChangeSharedNotepadStatusReq\u003A\u003A\u0024is_active",
             "name": "is_active",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_active\u0020\u003D\u00202\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-ChangeEtherpadStatusReq.html#property_is_active"
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChangeSharedNotepadStatusReq.html#property_is_active"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChangeVisibilityRes",
             "name": "ChangeVisibilityRes",
@@ -11045,61 +11045,6 @@ Search.appendIndex(
             "name": "translations",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Emap\u003Cstring,\u0020string\u003E\u0020translations\u0020\u003D\u002010\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-ChatMessage.html#property_translations"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CleanEtherpadReq",
-            "name": "CleanEtherpadReq",
-            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.CleanEtherpadReq\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CleanEtherpadReq.html"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CleanEtherpadReq\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Constructor.",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CleanEtherpadReq.html#method___construct"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CleanEtherpadReq\u003A\u003AgetRoomId\u0028\u0029",
-            "name": "getRoomId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CleanEtherpadReq.html#method_getRoomId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CleanEtherpadReq\u003A\u003AsetRoomId\u0028\u0029",
-            "name": "setRoomId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CleanEtherpadReq.html#method_setRoomId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CleanEtherpadReq\u003A\u003AgetNodeId\u0028\u0029",
-            "name": "getNodeId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020node_id\u0020\u003D\u00202\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CleanEtherpadReq.html#method_getNodeId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CleanEtherpadReq\u003A\u003AsetNodeId\u0028\u0029",
-            "name": "setNodeId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020node_id\u0020\u003D\u00202\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CleanEtherpadReq.html#method_setNodeId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CleanEtherpadReq\u003A\u003AgetPadId\u0028\u0029",
-            "name": "getPadId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020pad_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CleanEtherpadReq.html#method_getPadId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CleanEtherpadReq\u003A\u003AsetPadId\u0028\u0029",
-            "name": "setPadId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020pad_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CleanEtherpadReq.html#method_setPadId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CleanEtherpadReq\u003A\u003A\u0024room_id",
-            "name": "room_id",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CleanEtherpadReq.html#property_room_id"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CleanEtherpadReq\u003A\u003A\u0024node_id",
-            "name": "node_id",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020node_id\u0020\u003D\u00202\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CleanEtherpadReq.html#property_node_id"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CleanEtherpadReq\u003A\u003A\u0024pad_id",
-            "name": "pad_id",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020pad_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CleanEtherpadReq.html#property_pad_id"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ClientType",
             "name": "ClientType",
@@ -11665,96 +11610,6 @@ Search.appendIndex(
             "name": "rooms",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.plugnmeet.BreakoutRoom\u0020rooms\u0020\u003D\u00205\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-CreateBreakoutRoomsReq.html#property_rooms"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateEtherpadSessionRes",
-            "name": "CreateEtherpadSessionRes",
-            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.CreateEtherpadSessionRes\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CreateEtherpadSessionRes.html"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateEtherpadSessionRes\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Constructor.",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CreateEtherpadSessionRes.html#method___construct"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateEtherpadSessionRes\u003A\u003AgetStatus\u0028\u0029",
-            "name": "getStatus",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020status\u0020\u003D\u00201\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CreateEtherpadSessionRes.html#method_getStatus"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateEtherpadSessionRes\u003A\u003AsetStatus\u0028\u0029",
-            "name": "setStatus",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020status\u0020\u003D\u00201\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CreateEtherpadSessionRes.html#method_setStatus"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateEtherpadSessionRes\u003A\u003AgetMsg\u0028\u0029",
-            "name": "getMsg",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020msg\u0020\u003D\u00202\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CreateEtherpadSessionRes.html#method_getMsg"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateEtherpadSessionRes\u003A\u003AsetMsg\u0028\u0029",
-            "name": "setMsg",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020msg\u0020\u003D\u00202\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CreateEtherpadSessionRes.html#method_setMsg"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateEtherpadSessionRes\u003A\u003AgetPadId\u0028\u0029",
-            "name": "getPadId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020pad_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CreateEtherpadSessionRes.html#method_getPadId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateEtherpadSessionRes\u003A\u003AhasPadId\u0028\u0029",
-            "name": "hasPadId",
-            "summary": "",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CreateEtherpadSessionRes.html#method_hasPadId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateEtherpadSessionRes\u003A\u003AclearPadId\u0028\u0029",
-            "name": "clearPadId",
-            "summary": "",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CreateEtherpadSessionRes.html#method_clearPadId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateEtherpadSessionRes\u003A\u003AsetPadId\u0028\u0029",
-            "name": "setPadId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020pad_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CreateEtherpadSessionRes.html#method_setPadId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateEtherpadSessionRes\u003A\u003AgetReadonlyPadId\u0028\u0029",
-            "name": "getReadonlyPadId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020readonly_pad_id\u0020\u003D\u00204\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CreateEtherpadSessionRes.html#method_getReadonlyPadId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateEtherpadSessionRes\u003A\u003AhasReadonlyPadId\u0028\u0029",
-            "name": "hasReadonlyPadId",
-            "summary": "",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CreateEtherpadSessionRes.html#method_hasReadonlyPadId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateEtherpadSessionRes\u003A\u003AclearReadonlyPadId\u0028\u0029",
-            "name": "clearReadonlyPadId",
-            "summary": "",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CreateEtherpadSessionRes.html#method_clearReadonlyPadId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateEtherpadSessionRes\u003A\u003AsetReadonlyPadId\u0028\u0029",
-            "name": "setReadonlyPadId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020readonly_pad_id\u0020\u003D\u00204\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CreateEtherpadSessionRes.html#method_setReadonlyPadId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateEtherpadSessionRes\u003A\u003A\u0024status",
-            "name": "status",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020status\u0020\u003D\u00201\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CreateEtherpadSessionRes.html#property_status"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateEtherpadSessionRes\u003A\u003A\u0024msg",
-            "name": "msg",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020msg\u0020\u003D\u00202\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CreateEtherpadSessionRes.html#property_msg"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateEtherpadSessionRes\u003A\u003A\u0024pad_id",
-            "name": "pad_id",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020pad_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CreateEtherpadSessionRes.html#property_pad_id"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateEtherpadSessionRes\u003A\u003A\u0024readonly_pad_id",
-            "name": "readonly_pad_id",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020readonly_pad_id\u0020\u003D\u00204\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-CreateEtherpadSessionRes.html#property_readonly_pad_id"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateIngressReq",
             "name": "CreateIngressReq",
@@ -12531,6 +12386,26 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020message\u0020\u003D\u00205\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-DataChannelMessage.html#method_setMessage"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataChannelMessage\u003A\u003AgetBinMessage\u0028\u0029",
+            "name": "getBinMessage",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020bytes\u0020bin_message\u0020\u003D\u00206\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-DataChannelMessage.html#method_getBinMessage"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataChannelMessage\u003A\u003AhasBinMessage\u0028\u0029",
+            "name": "hasBinMessage",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-DataChannelMessage.html#method_hasBinMessage"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataChannelMessage\u003A\u003AclearBinMessage\u0028\u0029",
+            "name": "clearBinMessage",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-DataChannelMessage.html#method_clearBinMessage"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataChannelMessage\u003A\u003AsetBinMessage\u0028\u0029",
+            "name": "setBinMessage",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020bytes\u0020bin_message\u0020\u003D\u00206\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-DataChannelMessage.html#method_setBinMessage"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataChannelMessage\u003A\u003A\u0024id",
             "name": "id",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
@@ -12555,6 +12430,11 @@ Search.appendIndex(
             "name": "message",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020message\u0020\u003D\u00205\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-DataChannelMessage.html#property_message"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataChannelMessage\u003A\u003A\u0024bin_message",
+            "name": "bin_message",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020bytes\u0020bin_message\u0020\u003D\u00206\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-DataChannelMessage.html#property_bin_message"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataMessageReq",
             "name": "DataMessageReq",
@@ -12756,15 +12636,15 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EPUSH_JOIN_BREAKOUT_ROOM\u0020\u003D\u00207\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-DataMsgBodyType.html#constant_PUSH_JOIN_BREAKOUT_ROOM"
         },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataMsgBodyType\u003A\u003AREQ_FULL_WHITEBOARD_DATA",
-            "name": "REQ_FULL_WHITEBOARD_DATA",
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataMsgBodyType\u003A\u003AWHITEBOARD_SYNC_REQUEST",
+            "name": "WHITEBOARD_SYNC_REQUEST",
             "summary": "WHITEBOARD\u0020type",
-            "url": "classes/Mynaparrot-PlugnmeetProto-DataMsgBodyType.html#constant_REQ_FULL_WHITEBOARD_DATA"
+            "url": "classes/Mynaparrot-PlugnmeetProto-DataMsgBodyType.html#constant_WHITEBOARD_SYNC_REQUEST"
         },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataMsgBodyType\u003A\u003ARES_FULL_WHITEBOARD_DATA",
-            "name": "RES_FULL_WHITEBOARD_DATA",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ERES_FULL_WHITEBOARD_DATA\u0020\u003D\u00209\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-DataMsgBodyType.html#constant_RES_FULL_WHITEBOARD_DATA"
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataMsgBodyType\u003A\u003AWHITEBOARD_SYNC_RESPONSE",
+            "name": "WHITEBOARD_SYNC_RESPONSE",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EWHITEBOARD_SYNC_RESPONSE\u0020\u003D\u00209\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-DataMsgBodyType.html#constant_WHITEBOARD_SYNC_RESPONSE"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataMsgBodyType\u003A\u003ASCENE_UPDATE",
             "name": "SCENE_UPDATE",
@@ -12820,6 +12700,26 @@ Search.appendIndex(
             "name": "REACTION",
             "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EREACTION\u0020\u003D\u002020\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-DataMsgBodyType.html#constant_REACTION"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataMsgBodyType\u003A\u003ANOTEPAD_SYNC_REQUEST",
+            "name": "NOTEPAD_SYNC_REQUEST",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ENOTEPAD_SYNC_REQUEST\u0020\u003D\u002021\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-DataMsgBodyType.html#constant_NOTEPAD_SYNC_REQUEST"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataMsgBodyType\u003A\u003ANOTEPAD_SYNC_RESPONSE",
+            "name": "NOTEPAD_SYNC_RESPONSE",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ENOTEPAD_SYNC_RESPONSE\u0020\u003D\u002022\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-DataMsgBodyType.html#constant_NOTEPAD_SYNC_RESPONSE"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataMsgBodyType\u003A\u003ANOTEPAD_UPDATE",
+            "name": "NOTEPAD_UPDATE",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ENOTEPAD_UPDATE\u0020\u003D\u002023\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-DataMsgBodyType.html#constant_NOTEPAD_UPDATE"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataMsgBodyType\u003A\u003ANOTEPAD_AWARENESS",
+            "name": "NOTEPAD_AWARENESS",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ENOTEPAD_AWARENESS\u0020\u003D\u002024\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-DataMsgBodyType.html#constant_NOTEPAD_AWARENESS"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataMsgBodyType\u003A\u003A\u0024valueToName",
             "name": "valueToName",
@@ -16006,6 +15906,41 @@ Search.appendIndex(
             "summary": "all\u0020internal\u0020usage\u0020fields",
             "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAIMeetingSummarizationFeatures.html#property_is_enabled"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAIRequestSource",
+            "name": "InsightsAIRequestSource",
+            "summary": "Protobuf\u0020type\u0020\u003Ccode\u003Eplugnmeet.InsightsAIRequestSource\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAIRequestSource.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAIRequestSource\u003A\u003Aname\u0028\u0029",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAIRequestSource.html#method_name"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAIRequestSource\u003A\u003Avalue\u0028\u0029",
+            "name": "value",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAIRequestSource.html#method_value"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAIRequestSource\u003A\u003AINSIGHTS_AI_REQUEST_SOURCE_CHAT",
+            "name": "INSIGHTS_AI_REQUEST_SOURCE_CHAT",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EINSIGHTS_AI_REQUEST_SOURCE_CHAT\u0020\u003D\u00200\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAIRequestSource.html#constant_INSIGHTS_AI_REQUEST_SOURCE_CHAT"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAIRequestSource\u003A\u003AINSIGHTS_AI_REQUEST_SOURCE_NOTEPAD",
+            "name": "INSIGHTS_AI_REQUEST_SOURCE_NOTEPAD",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EINSIGHTS_AI_REQUEST_SOURCE_NOTEPAD\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAIRequestSource.html#constant_INSIGHTS_AI_REQUEST_SOURCE_NOTEPAD"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAIRequestSource\u003A\u003AINSIGHTS_AI_REQUEST_SOURCE_WHITEBOARD",
+            "name": "INSIGHTS_AI_REQUEST_SOURCE_WHITEBOARD",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EINSIGHTS_AI_REQUEST_SOURCE_WHITEBOARD\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAIRequestSource.html#constant_INSIGHTS_AI_REQUEST_SOURCE_WHITEBOARD"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAIRequestSource\u003A\u003A\u0024valueToName",
+            "name": "valueToName",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAIRequestSource.html#property_valueToName"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatConfigReq",
             "name": "InsightsAITextChatConfigReq",
             "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.InsightsAITextChatConfigReq\u003C\/code\u003E",
@@ -16046,6 +15981,26 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020string\u0020allowed_user_ids\u0020\u003D\u00204\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatConfigReq.html#method_setAllowedUserIds"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatConfigReq\u003A\u003AgetIsNotepadAiDisabled\u0028\u0029",
+            "name": "getIsNotepadAiDisabled",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_notepad_ai_disabled\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatConfigReq.html#method_getIsNotepadAiDisabled"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatConfigReq\u003A\u003AsetIsNotepadAiDisabled\u0028\u0029",
+            "name": "setIsNotepadAiDisabled",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_notepad_ai_disabled\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatConfigReq.html#method_setIsNotepadAiDisabled"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatConfigReq\u003A\u003AgetIsWhiteboardAiDisabled\u0028\u0029",
+            "name": "getIsWhiteboardAiDisabled",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_whiteboard_ai_disabled\u0020\u003D\u00206\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatConfigReq.html#method_getIsWhiteboardAiDisabled"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatConfigReq\u003A\u003AsetIsWhiteboardAiDisabled\u0028\u0029",
+            "name": "setIsWhiteboardAiDisabled",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_whiteboard_ai_disabled\u0020\u003D\u00206\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatConfigReq.html#method_setIsWhiteboardAiDisabled"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatConfigReq\u003A\u003A\u0024is_enabled",
             "name": "is_enabled",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_enabled\u0020\u003D\u00201\u003B\u003C\/code\u003E",
@@ -16060,6 +16015,16 @@ Search.appendIndex(
             "name": "allowed_user_ids",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020string\u0020allowed_user_ids\u0020\u003D\u00204\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatConfigReq.html#property_allowed_user_ids"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatConfigReq\u003A\u003A\u0024is_notepad_ai_disabled",
+            "name": "is_notepad_ai_disabled",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_notepad_ai_disabled\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatConfigReq.html#property_is_notepad_ai_disabled"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatConfigReq\u003A\u003A\u0024is_whiteboard_ai_disabled",
+            "name": "is_whiteboard_ai_disabled",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_whiteboard_ai_disabled\u0020\u003D\u00206\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatConfigReq.html#property_is_whiteboard_ai_disabled"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatContent",
             "name": "InsightsAITextChatContent",
@@ -16111,6 +16076,26 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020stream_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatContent.html#method_setStreamId"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatContent\u003A\u003AgetRequestFrom\u0028\u0029",
+            "name": "getRequestFrom",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.InsightsAIRequestSource\u0020request_from\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatContent.html#method_getRequestFrom"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatContent\u003A\u003AhasRequestFrom\u0028\u0029",
+            "name": "hasRequestFrom",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatContent.html#method_hasRequestFrom"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatContent\u003A\u003AclearRequestFrom\u0028\u0029",
+            "name": "clearRequestFrom",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatContent.html#method_clearRequestFrom"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatContent\u003A\u003AsetRequestFrom\u0028\u0029",
+            "name": "setRequestFrom",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.InsightsAIRequestSource\u0020request_from\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatContent.html#method_setRequestFrom"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatContent\u003A\u003A\u0024role",
             "name": "role",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.plugnmeet.InsightsAITextChatRole\u0020role\u0020\u003D\u00201\u003B\u003C\/code\u003E",
@@ -16125,6 +16110,11 @@ Search.appendIndex(
             "name": "stream_id",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020stream_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatContent.html#property_stream_id"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatContent\u003A\u003A\u0024request_from",
+            "name": "request_from",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.InsightsAIRequestSource\u0020request_from\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatContent.html#property_request_from"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatFeatures",
             "name": "InsightsAITextChatFeatures",
@@ -16176,6 +16166,26 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020string\u0020allowed_user_ids\u0020\u003D\u00204\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatFeatures.html#method_setAllowedUserIds"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatFeatures\u003A\u003AgetIsNotepadAiDisabled\u0028\u0029",
+            "name": "getIsNotepadAiDisabled",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_notepad_ai_disabled\u0020\u003D\u00205\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatFeatures.html#method_getIsNotepadAiDisabled"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatFeatures\u003A\u003AsetIsNotepadAiDisabled\u0028\u0029",
+            "name": "setIsNotepadAiDisabled",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_notepad_ai_disabled\u0020\u003D\u00205\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatFeatures.html#method_setIsNotepadAiDisabled"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatFeatures\u003A\u003AgetIsWhiteboardAiDisabled\u0028\u0029",
+            "name": "getIsWhiteboardAiDisabled",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_whiteboard_ai_disabled\u0020\u003D\u00206\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatFeatures.html#method_getIsWhiteboardAiDisabled"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatFeatures\u003A\u003AsetIsWhiteboardAiDisabled\u0028\u0029",
+            "name": "setIsWhiteboardAiDisabled",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_whiteboard_ai_disabled\u0020\u003D\u00206\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatFeatures.html#method_setIsWhiteboardAiDisabled"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatFeatures\u003A\u003A\u0024is_allow",
             "name": "is_allow",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_allow\u0020\u003D\u00201\u003B\u003C\/code\u003E",
@@ -16195,6 +16205,16 @@ Search.appendIndex(
             "name": "allowed_user_ids",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020string\u0020allowed_user_ids\u0020\u003D\u00204\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatFeatures.html#property_allowed_user_ids"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatFeatures\u003A\u003A\u0024is_notepad_ai_disabled",
+            "name": "is_notepad_ai_disabled",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_notepad_ai_disabled\u0020\u003D\u00205\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatFeatures.html#property_is_notepad_ai_disabled"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatFeatures\u003A\u003A\u0024is_whiteboard_ai_disabled",
+            "name": "is_whiteboard_ai_disabled",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_whiteboard_ai_disabled\u0020\u003D\u00206\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatFeatures.html#property_is_whiteboard_ai_disabled"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatRole",
             "name": "InsightsAITextChatRole",
@@ -16316,6 +16336,26 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020createdAt\u0020\u003D\u00207\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatStreamResult.html#method_setCreatedAt"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatStreamResult\u003A\u003AgetRequestFrom\u0028\u0029",
+            "name": "getRequestFrom",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.InsightsAIRequestSource\u0020request_from\u0020\u003D\u00208\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatStreamResult.html#method_getRequestFrom"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatStreamResult\u003A\u003AhasRequestFrom\u0028\u0029",
+            "name": "hasRequestFrom",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatStreamResult.html#method_hasRequestFrom"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatStreamResult\u003A\u003AclearRequestFrom\u0028\u0029",
+            "name": "clearRequestFrom",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatStreamResult.html#method_clearRequestFrom"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatStreamResult\u003A\u003AsetRequestFrom\u0028\u0029",
+            "name": "setRequestFrom",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.InsightsAIRequestSource\u0020request_from\u0020\u003D\u00208\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatStreamResult.html#method_setRequestFrom"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatStreamResult\u003A\u003A\u0024id",
             "name": "id",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
@@ -16350,6 +16390,11 @@ Search.appendIndex(
             "name": "createdAt",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020createdAt\u0020\u003D\u00207\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatStreamResult.html#property_createdAt"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatStreamResult\u003A\u003A\u0024request_from",
+            "name": "request_from",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.InsightsAIRequestSource\u0020request_from\u0020\u003D\u00208\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatStreamResult.html#property_request_from"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsChatTranslationConfigReq",
             "name": "InsightsChatTranslationConfigReq",
@@ -25126,45 +25171,15 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020visible\u0020\u003D\u00203\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-SharedNotePadFeatures.html#method_setVisible"
         },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SharedNotePadFeatures\u003A\u003AgetNodeId\u0028\u0029",
-            "name": "getNodeId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020node_id\u0020\u003D\u00204\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SharedNotePadFeatures.html#method_getNodeId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SharedNotePadFeatures\u003A\u003AsetNodeId\u0028\u0029",
-            "name": "setNodeId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020node_id\u0020\u003D\u00204\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SharedNotePadFeatures.html#method_setNodeId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SharedNotePadFeatures\u003A\u003AgetHost\u0028\u0029",
-            "name": "getHost",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020host\u0020\u003D\u00205\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SharedNotePadFeatures.html#method_getHost"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SharedNotePadFeatures\u003A\u003AsetHost\u0028\u0029",
-            "name": "setHost",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020host\u0020\u003D\u00205\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SharedNotePadFeatures.html#method_setHost"
-        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SharedNotePadFeatures\u003A\u003AgetNotePadId\u0028\u0029",
             "name": "getNotePadId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020note_pad_id\u0020\u003D\u00206\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020note_pad_id\u0020\u003D\u00204\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-SharedNotePadFeatures.html#method_getNotePadId"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SharedNotePadFeatures\u003A\u003AsetNotePadId\u0028\u0029",
             "name": "setNotePadId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020note_pad_id\u0020\u003D\u00206\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020note_pad_id\u0020\u003D\u00204\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-SharedNotePadFeatures.html#method_setNotePadId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SharedNotePadFeatures\u003A\u003AgetReadOnlyPadId\u0028\u0029",
-            "name": "getReadOnlyPadId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020read_only_pad_id\u0020\u003D\u00207\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SharedNotePadFeatures.html#method_getReadOnlyPadId"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SharedNotePadFeatures\u003A\u003AsetReadOnlyPadId\u0028\u0029",
-            "name": "setReadOnlyPadId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020read_only_pad_id\u0020\u003D\u00207\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SharedNotePadFeatures.html#method_setReadOnlyPadId"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SharedNotePadFeatures\u003A\u003A\u0024is_allow",
             "name": "is_allow",
@@ -25181,25 +25196,10 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020visible\u0020\u003D\u00203\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-SharedNotePadFeatures.html#property_visible"
         },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SharedNotePadFeatures\u003A\u003A\u0024node_id",
-            "name": "node_id",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020node_id\u0020\u003D\u00204\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SharedNotePadFeatures.html#property_node_id"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SharedNotePadFeatures\u003A\u003A\u0024host",
-            "name": "host",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020host\u0020\u003D\u00205\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SharedNotePadFeatures.html#property_host"
-        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SharedNotePadFeatures\u003A\u003A\u0024note_pad_id",
             "name": "note_pad_id",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020note_pad_id\u0020\u003D\u00206\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020note_pad_id\u0020\u003D\u00204\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-SharedNotePadFeatures.html#property_note_pad_id"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SharedNotePadFeatures\u003A\u003A\u0024read_only_pad_id",
-            "name": "read_only_pad_id",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020read_only_pad_id\u0020\u003D\u00207\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SharedNotePadFeatures.html#property_read_only_pad_id"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SipDialInFeatures",
             "name": "SipDialInFeatures",
