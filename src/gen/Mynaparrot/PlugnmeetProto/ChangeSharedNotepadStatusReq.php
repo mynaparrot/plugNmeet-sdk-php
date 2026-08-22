@@ -10,22 +10,18 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * Generated from protobuf message <code>plugnmeet.CleanEtherpadReq</code>
+ * Generated from protobuf message <code>plugnmeet.ChangeSharedNotepadStatusReq</code>
  */
-class CleanEtherpadReq extends \Google\Protobuf\Internal\Message
+class ChangeSharedNotepadStatusReq extends \Google\Protobuf\Internal\Message
 {
     /**
      * Generated from protobuf field <code>string room_id = 1;</code>
      */
     protected $room_id = '';
     /**
-     * Generated from protobuf field <code>string node_id = 2;</code>
+     * Generated from protobuf field <code>bool is_active = 2;</code>
      */
-    protected $node_id = '';
-    /**
-     * Generated from protobuf field <code>string pad_id = 3;</code>
-     */
-    protected $pad_id = '';
+    protected $is_active = false;
 
     /**
      * Constructor.
@@ -34,8 +30,7 @@ class CleanEtherpadReq extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $room_id
-     *     @type string $node_id
-     *     @type string $pad_id
+     *     @type bool $is_active
      * }
      */
     public function __construct($data = NULL) {
@@ -66,45 +61,22 @@ class CleanEtherpadReq extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string node_id = 2;</code>
-     * @return string
+     * Generated from protobuf field <code>bool is_active = 2;</code>
+     * @return bool
      */
-    public function getNodeId()
+    public function getIsActive()
     {
-        return $this->node_id;
+        return $this->is_active;
     }
 
     /**
-     * Generated from protobuf field <code>string node_id = 2;</code>
-     * @param string $var
+     * Generated from protobuf field <code>bool is_active = 2;</code>
+     * @param bool $var
      * @return $this
      */
-    public function setNodeId(string $var)
+    public function setIsActive(bool $var)
     {
-        GPBUtil::checkString($var, true);
-        $this->node_id = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>string pad_id = 3;</code>
-     * @return string
-     */
-    public function getPadId()
-    {
-        return $this->pad_id;
-    }
-
-    /**
-     * Generated from protobuf field <code>string pad_id = 3;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setPadId(string $var)
-    {
-        GPBUtil::checkString($var, true);
-        $this->pad_id = $var;
+        $this->is_active = $var;
 
         return $this;
     }

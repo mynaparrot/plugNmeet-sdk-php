@@ -26,6 +26,14 @@ class InsightsAITextChatConfigReq extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated string allowed_user_ids = 4;</code>
      */
     private $allowed_user_ids;
+    /**
+     * Generated from protobuf field <code>bool is_notepad_ai_disabled = 5;</code>
+     */
+    protected $is_notepad_ai_disabled = false;
+    /**
+     * Generated from protobuf field <code>bool is_whiteboard_ai_disabled = 6;</code>
+     */
+    protected $is_whiteboard_ai_disabled = false;
 
     /**
      * Constructor.
@@ -36,6 +44,8 @@ class InsightsAITextChatConfigReq extends \Google\Protobuf\Internal\Message
      *     @type bool $is_enabled
      *     @type bool $is_allowed_everyone
      *     @type string[] $allowed_user_ids
+     *     @type bool $is_notepad_ai_disabled
+     *     @type bool $is_whiteboard_ai_disabled
      * }
      */
     public function __construct($data = NULL) {
@@ -103,6 +113,48 @@ class InsightsAITextChatConfigReq extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->allowed_user_ids = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_notepad_ai_disabled = 5;</code>
+     * @return bool
+     */
+    public function getIsNotepadAiDisabled()
+    {
+        return $this->is_notepad_ai_disabled;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_notepad_ai_disabled = 5;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsNotepadAiDisabled(bool $var)
+    {
+        $this->is_notepad_ai_disabled = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_whiteboard_ai_disabled = 6;</code>
+     * @return bool
+     */
+    public function getIsWhiteboardAiDisabled()
+    {
+        return $this->is_whiteboard_ai_disabled;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_whiteboard_ai_disabled = 6;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsWhiteboardAiDisabled(bool $var)
+    {
+        $this->is_whiteboard_ai_disabled = $var;
 
         return $this;
     }

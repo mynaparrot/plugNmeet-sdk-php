@@ -49,13 +49,13 @@ class DataMsgBodyType
     /**
      * WHITEBOARD type
      *
-     * Generated from protobuf enum <code>REQ_FULL_WHITEBOARD_DATA = 8;</code>
+     * Generated from protobuf enum <code>WHITEBOARD_SYNC_REQUEST = 8;</code>
      */
-    const REQ_FULL_WHITEBOARD_DATA = 8;
+    const WHITEBOARD_SYNC_REQUEST = 8;
     /**
-     * Generated from protobuf enum <code>RES_FULL_WHITEBOARD_DATA = 9;</code>
+     * Generated from protobuf enum <code>WHITEBOARD_SYNC_RESPONSE = 9;</code>
      */
-    const RES_FULL_WHITEBOARD_DATA = 9;
+    const WHITEBOARD_SYNC_RESPONSE = 9;
     /**
      * Generated from protobuf enum <code>SCENE_UPDATE = 10;</code>
      */
@@ -100,6 +100,22 @@ class DataMsgBodyType
      * Generated from protobuf enum <code>REACTION = 20;</code>
      */
     const REACTION = 20;
+    /**
+     * Generated from protobuf enum <code>NOTEPAD_SYNC_REQUEST = 21;</code>
+     */
+    const NOTEPAD_SYNC_REQUEST = 21;
+    /**
+     * Generated from protobuf enum <code>NOTEPAD_SYNC_RESPONSE = 22;</code>
+     */
+    const NOTEPAD_SYNC_RESPONSE = 22;
+    /**
+     * Generated from protobuf enum <code>NOTEPAD_UPDATE = 23;</code>
+     */
+    const NOTEPAD_UPDATE = 23;
+    /**
+     * Generated from protobuf enum <code>NOTEPAD_AWARENESS = 24;</code>
+     */
+    const NOTEPAD_AWARENESS = 24;
 
     private static $valueToName = [
         self::UNKNOWN => 'UNKNOWN',
@@ -110,8 +126,8 @@ class DataMsgBodyType
         self::EXTERNAL_MEDIA_PLAYER_EVENTS => 'EXTERNAL_MEDIA_PLAYER_EVENTS',
         self::NEW_POLL_RESPONSE => 'NEW_POLL_RESPONSE',
         self::PUSH_JOIN_BREAKOUT_ROOM => 'PUSH_JOIN_BREAKOUT_ROOM',
-        self::REQ_FULL_WHITEBOARD_DATA => 'REQ_FULL_WHITEBOARD_DATA',
-        self::RES_FULL_WHITEBOARD_DATA => 'RES_FULL_WHITEBOARD_DATA',
+        self::WHITEBOARD_SYNC_REQUEST => 'WHITEBOARD_SYNC_REQUEST',
+        self::WHITEBOARD_SYNC_RESPONSE => 'WHITEBOARD_SYNC_RESPONSE',
         self::SCENE_UPDATE => 'SCENE_UPDATE',
         self::POINTER_UPDATE => 'POINTER_UPDATE',
         self::WHITEBOARD_APP_STATE_CHANGE => 'WHITEBOARD_APP_STATE_CHANGE',
@@ -123,6 +139,10 @@ class DataMsgBodyType
         self::REQ_PUBLIC_CHAT_DATA => 'REQ_PUBLIC_CHAT_DATA',
         self::RES_PUBLIC_CHAT_DATA => 'RES_PUBLIC_CHAT_DATA',
         self::REACTION => 'REACTION',
+        self::NOTEPAD_SYNC_REQUEST => 'NOTEPAD_SYNC_REQUEST',
+        self::NOTEPAD_SYNC_RESPONSE => 'NOTEPAD_SYNC_RESPONSE',
+        self::NOTEPAD_UPDATE => 'NOTEPAD_UPDATE',
+        self::NOTEPAD_AWARENESS => 'NOTEPAD_AWARENESS',
     ];
 
     public static function name($value)

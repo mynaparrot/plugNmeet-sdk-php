@@ -42,6 +42,10 @@ class InsightsAITextChatStreamResult extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string createdAt = 7;</code>
      */
     protected $createdAt = '';
+    /**
+     * Generated from protobuf field <code>optional .plugnmeet.InsightsAIRequestSource request_from = 8;</code>
+     */
+    protected $request_from = null;
 
     /**
      * Constructor.
@@ -56,6 +60,7 @@ class InsightsAITextChatStreamResult extends \Google\Protobuf\Internal\Message
      *     @type int $completion_tokens
      *     @type int $total_tokens
      *     @type string $createdAt
+     *     @type int $request_from
      * }
      */
     public function __construct($data = NULL) {
@@ -212,6 +217,38 @@ class InsightsAITextChatStreamResult extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, true);
         $this->createdAt = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .plugnmeet.InsightsAIRequestSource request_from = 8;</code>
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\InsightsAIRequestSource}
+     */
+    public function getRequestFrom()
+    {
+        return isset($this->request_from) ? $this->request_from : 0;
+    }
+
+    public function hasRequestFrom()
+    {
+        return isset($this->request_from);
+    }
+
+    public function clearRequestFrom()
+    {
+        unset($this->request_from);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .plugnmeet.InsightsAIRequestSource request_from = 8;</code>
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\InsightsAIRequestSource}
+     * @return $this
+     */
+    public function setRequestFrom(int $var)
+    {
+        GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\InsightsAIRequestSource::class);
+        $this->request_from = $var;
 
         return $this;
     }

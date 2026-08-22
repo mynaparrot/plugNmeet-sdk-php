@@ -34,6 +34,10 @@ class DataChannelMessage extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string message = 5;</code>
      */
     protected $message = '';
+    /**
+     * Generated from protobuf field <code>optional bytes bin_message = 6;</code>
+     */
+    protected $bin_message = null;
 
     /**
      * Constructor.
@@ -46,6 +50,7 @@ class DataChannelMessage extends \Google\Protobuf\Internal\Message
      *     @type string $from_user_id
      *     @type string $to_user_id
      *     @type string $message
+     *     @type string $bin_message
      * }
      */
     public function __construct($data = NULL) {
@@ -169,6 +174,38 @@ class DataChannelMessage extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, true);
         $this->message = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional bytes bin_message = 6;</code>
+     * @return string
+     */
+    public function getBinMessage()
+    {
+        return isset($this->bin_message) ? $this->bin_message : '';
+    }
+
+    public function hasBinMessage()
+    {
+        return isset($this->bin_message);
+    }
+
+    public function clearBinMessage()
+    {
+        unset($this->bin_message);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional bytes bin_message = 6;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setBinMessage(string $var)
+    {
+        GPBUtil::checkString($var, false);
+        $this->bin_message = $var;
 
         return $this;
     }

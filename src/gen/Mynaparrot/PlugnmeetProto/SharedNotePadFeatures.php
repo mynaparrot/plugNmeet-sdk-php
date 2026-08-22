@@ -27,21 +27,9 @@ class SharedNotePadFeatures extends \Google\Protobuf\Internal\Message
      */
     protected $visible = false;
     /**
-     * Generated from protobuf field <code>string node_id = 4 [(.buf.validate.field) = {</code>
-     */
-    protected $node_id = '';
-    /**
-     * Generated from protobuf field <code>string host = 5 [(.buf.validate.field) = {</code>
-     */
-    protected $host = '';
-    /**
-     * Generated from protobuf field <code>string note_pad_id = 6 [(.buf.validate.field) = {</code>
+     * Generated from protobuf field <code>string note_pad_id = 4 [(.buf.validate.field) = {</code>
      */
     protected $note_pad_id = '';
-    /**
-     * Generated from protobuf field <code>string read_only_pad_id = 7 [(.buf.validate.field) = {</code>
-     */
-    protected $read_only_pad_id = '';
 
     /**
      * Constructor.
@@ -52,10 +40,7 @@ class SharedNotePadFeatures extends \Google\Protobuf\Internal\Message
      *     @type bool $is_allow
      *     @type bool $is_active
      *     @type bool $visible
-     *     @type string $node_id
-     *     @type string $host
      *     @type string $note_pad_id
-     *     @type string $read_only_pad_id
      * }
      */
     public function __construct($data = NULL) {
@@ -127,51 +112,7 @@ class SharedNotePadFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string node_id = 4 [(.buf.validate.field) = {</code>
-     * @return string
-     */
-    public function getNodeId()
-    {
-        return $this->node_id;
-    }
-
-    /**
-     * Generated from protobuf field <code>string node_id = 4 [(.buf.validate.field) = {</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setNodeId(string $var)
-    {
-        GPBUtil::checkString($var, true);
-        $this->node_id = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>string host = 5 [(.buf.validate.field) = {</code>
-     * @return string
-     */
-    public function getHost()
-    {
-        return $this->host;
-    }
-
-    /**
-     * Generated from protobuf field <code>string host = 5 [(.buf.validate.field) = {</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setHost(string $var)
-    {
-        GPBUtil::checkString($var, true);
-        $this->host = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>string note_pad_id = 6 [(.buf.validate.field) = {</code>
+     * Generated from protobuf field <code>string note_pad_id = 4 [(.buf.validate.field) = {</code>
      * @return string
      */
     public function getNotePadId()
@@ -180,7 +121,7 @@ class SharedNotePadFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string note_pad_id = 6 [(.buf.validate.field) = {</code>
+     * Generated from protobuf field <code>string note_pad_id = 4 [(.buf.validate.field) = {</code>
      * @param string $var
      * @return $this
      */
@@ -188,28 +129,6 @@ class SharedNotePadFeatures extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, true);
         $this->note_pad_id = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>string read_only_pad_id = 7 [(.buf.validate.field) = {</code>
-     * @return string
-     */
-    public function getReadOnlyPadId()
-    {
-        return $this->read_only_pad_id;
-    }
-
-    /**
-     * Generated from protobuf field <code>string read_only_pad_id = 7 [(.buf.validate.field) = {</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setReadOnlyPadId(string $var)
-    {
-        GPBUtil::checkString($var, true);
-        $this->read_only_pad_id = $var;
 
         return $this;
     }

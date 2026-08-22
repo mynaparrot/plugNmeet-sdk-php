@@ -57,8 +57,8 @@ class AnalyticsFormatter
     protected array $roomFields = [
         "room_id", "room_title", "room_creation", "room_ended", "room_duration",
         "room_total_users", "enabled_e2ee", "recording_status", "rtmp_status",
-        "external_media_player_status", "etherpad_status", "external_display_link_status",
-        "ingress_created", "breakout_room",
+        "external_media_player_status", "etherpad_status", "shared_notepad_status",
+        "external_display_link_status", "ingress_created", "breakout_room",
     ];
 
     /**
@@ -179,7 +179,8 @@ class AnalyticsFormatter
                 case "rtmp_status":
                 case "external_media_player_status":
                 case "external_display_link_status":
-                case "etherpad_status":
+                case "etherpad_status": // TODO: remove as deprecated
+                case "shared_notepad_status":
                     $this->roomData[$name] = $this->countStatusStartTypeEvent($values);
                     break;
 

@@ -32,6 +32,14 @@ class InsightsAITextChatFeatures extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated string allowed_user_ids = 4 [(.buf.validate.field) = {</code>
      */
     private $allowed_user_ids;
+    /**
+     * Generated from protobuf field <code>bool is_notepad_ai_disabled = 5 [(.buf.validate.field) = {</code>
+     */
+    protected $is_notepad_ai_disabled = false;
+    /**
+     * Generated from protobuf field <code>bool is_whiteboard_ai_disabled = 6 [(.buf.validate.field) = {</code>
+     */
+    protected $is_whiteboard_ai_disabled = false;
 
     /**
      * Constructor.
@@ -44,6 +52,8 @@ class InsightsAITextChatFeatures extends \Google\Protobuf\Internal\Message
      *           all internal usage fields
      *     @type bool $is_allowed_everyone
      *     @type string[] $allowed_user_ids
+     *     @type bool $is_notepad_ai_disabled
+     *     @type bool $is_whiteboard_ai_disabled
      * }
      */
     public function __construct($data = NULL) {
@@ -136,6 +146,48 @@ class InsightsAITextChatFeatures extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->allowed_user_ids = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_notepad_ai_disabled = 5 [(.buf.validate.field) = {</code>
+     * @return bool
+     */
+    public function getIsNotepadAiDisabled()
+    {
+        return $this->is_notepad_ai_disabled;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_notepad_ai_disabled = 5 [(.buf.validate.field) = {</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsNotepadAiDisabled(bool $var)
+    {
+        $this->is_notepad_ai_disabled = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_whiteboard_ai_disabled = 6 [(.buf.validate.field) = {</code>
+     * @return bool
+     */
+    public function getIsWhiteboardAiDisabled()
+    {
+        return $this->is_whiteboard_ai_disabled;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_whiteboard_ai_disabled = 6 [(.buf.validate.field) = {</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsWhiteboardAiDisabled(bool $var)
+    {
+        $this->is_whiteboard_ai_disabled = $var;
 
         return $this;
     }

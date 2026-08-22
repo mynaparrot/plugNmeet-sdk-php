@@ -26,6 +26,10 @@ class InsightsAITextChatContent extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional string stream_id = 3;</code>
      */
     protected $stream_id = null;
+    /**
+     * Generated from protobuf field <code>optional .plugnmeet.InsightsAIRequestSource request_from = 4;</code>
+     */
+    protected $request_from = null;
 
     /**
      * Constructor.
@@ -36,6 +40,7 @@ class InsightsAITextChatContent extends \Google\Protobuf\Internal\Message
      *     @type int $role
      *     @type string $text
      *     @type string $stream_id
+     *     @type int $request_from
      * }
      */
     public function __construct($data = NULL) {
@@ -115,6 +120,38 @@ class InsightsAITextChatContent extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, true);
         $this->stream_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .plugnmeet.InsightsAIRequestSource request_from = 4;</code>
+     * @return int one of the values in {@see \Mynaparrot\PlugnmeetProto\InsightsAIRequestSource}
+     */
+    public function getRequestFrom()
+    {
+        return isset($this->request_from) ? $this->request_from : 0;
+    }
+
+    public function hasRequestFrom()
+    {
+        return isset($this->request_from);
+    }
+
+    public function clearRequestFrom()
+    {
+        unset($this->request_from);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .plugnmeet.InsightsAIRequestSource request_from = 4;</code>
+     * @param int $var one of the values in {@see \Mynaparrot\PlugnmeetProto\InsightsAIRequestSource}
+     * @return $this
+     */
+    public function setRequestFrom(int $var)
+    {
+        GPBUtil::checkEnum($var, \Mynaparrot\PlugnmeetProto\InsightsAIRequestSource::class);
+        $this->request_from = $var;
 
         return $this;
     }
