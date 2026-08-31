@@ -97,11 +97,15 @@ class NatsMsgServerToClientEvents
      */
     const DELIVERY_PRIVATE_DATA = 19;
     /**
-     *next ID: 21
-     *
      * Generated from protobuf enum <code>PONG = 20;</code>
      */
     const PONG = 20;
+    /**
+     *next ID: 22
+     *
+     * Generated from protobuf enum <code>SESSION_DATA_FETCH_RESPONSE = 21;</code>
+     */
+    const SESSION_DATA_FETCH_RESPONSE = 21;
 
     private static $valueToName = [
         self::RES_INITIAL_DATA => 'RES_INITIAL_DATA',
@@ -125,6 +129,7 @@ class NatsMsgServerToClientEvents
         self::RESP_ONLINE_USERS_LIST => 'RESP_ONLINE_USERS_LIST',
         self::DELIVERY_PRIVATE_DATA => 'DELIVERY_PRIVATE_DATA',
         self::PONG => 'PONG',
+        self::SESSION_DATA_FETCH_RESPONSE => 'SESSION_DATA_FETCH_RESPONSE',
     ];
 
     public static function name($value)

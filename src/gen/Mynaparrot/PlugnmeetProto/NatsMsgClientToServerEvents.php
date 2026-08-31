@@ -53,11 +53,19 @@ class NatsMsgClientToServerEvents
      */
     const REQ_ONLINE_USERS_LIST = 9;
     /**
-     *next ID: 11
-     *
      * Generated from protobuf enum <code>REQ_PRIVATE_DATA_DELIVERY = 10;</code>
      */
     const REQ_PRIVATE_DATA_DELIVERY = 10;
+    /**
+     * Generated from protobuf enum <code>SESSION_DATA_SAVE = 11;</code>
+     */
+    const SESSION_DATA_SAVE = 11;
+    /**
+     *next ID: 13
+     *
+     * Generated from protobuf enum <code>SESSION_DATA_FETCH_REQUEST = 12;</code>
+     */
+    const SESSION_DATA_FETCH_REQUEST = 12;
 
     private static $valueToName = [
         self::REQ_INITIAL_DATA => 'REQ_INITIAL_DATA',
@@ -71,6 +79,8 @@ class NatsMsgClientToServerEvents
         self::PUSH_ANALYTICS_DATA => 'PUSH_ANALYTICS_DATA',
         self::REQ_ONLINE_USERS_LIST => 'REQ_ONLINE_USERS_LIST',
         self::REQ_PRIVATE_DATA_DELIVERY => 'REQ_PRIVATE_DATA_DELIVERY',
+        self::SESSION_DATA_SAVE => 'SESSION_DATA_SAVE',
+        self::SESSION_DATA_FETCH_REQUEST => 'SESSION_DATA_FETCH_REQUEST',
     ];
 
     public static function name($value)
