@@ -20103,8 +20103,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgClientToServerEvents\u003A\u003AREQ_PRIVATE_DATA_DELIVERY",
             "name": "REQ_PRIVATE_DATA_DELIVERY",
-            "summary": "next\u0020ID\u003A\u002011",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EREQ_PRIVATE_DATA_DELIVERY\u0020\u003D\u002010\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgClientToServerEvents.html#constant_REQ_PRIVATE_DATA_DELIVERY"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgClientToServerEvents\u003A\u003ASESSION_DATA_SAVE",
+            "name": "SESSION_DATA_SAVE",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ESESSION_DATA_SAVE\u0020\u003D\u002011\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgClientToServerEvents.html#constant_SESSION_DATA_SAVE"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgClientToServerEvents\u003A\u003ASESSION_DATA_FETCH_REQUEST",
+            "name": "SESSION_DATA_FETCH_REQUEST",
+            "summary": "next\u0020ID\u003A\u002013",
+            "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgClientToServerEvents.html#constant_SESSION_DATA_FETCH_REQUEST"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgClientToServerEvents\u003A\u003A\u0024valueToName",
             "name": "valueToName",
@@ -20298,8 +20308,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClientEvents\u003A\u003APONG",
             "name": "PONG",
-            "summary": "next\u0020ID\u003A\u002021",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EPONG\u0020\u003D\u002020\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgServerToClientEvents.html#constant_PONG"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClientEvents\u003A\u003ASESSION_DATA_FETCH_RESPONSE",
+            "name": "SESSION_DATA_FETCH_RESPONSE",
+            "summary": "next\u0020ID\u003A\u002022",
+            "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgServerToClientEvents.html#constant_SESSION_DATA_FETCH_RESPONSE"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClientEvents\u003A\u003A\u0024valueToName",
             "name": "valueToName",
@@ -25130,6 +25145,106 @@ Search.appendIndex(
             "name": "valueToName",
             "summary": "",
             "url": "classes/Mynaparrot-PlugnmeetProto-RoomUploadedFileType.html#property_valueToName"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SessionDataHeader",
+            "name": "SessionDataHeader",
+            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.SessionDataHeader\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SessionDataHeader.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SessionDataHeader\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SessionDataHeader.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SessionDataHeader\u003A\u003AgetDataType\u0028\u0029",
+            "name": "getDataType",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.plugnmeet.SessionDataType\u0020data_type\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SessionDataHeader.html#method_getDataType"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SessionDataHeader\u003A\u003AsetDataType\u0028\u0029",
+            "name": "setDataType",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.plugnmeet.SessionDataType\u0020data_type\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SessionDataHeader.html#method_setDataType"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SessionDataHeader\u003A\u003AgetKey\u0028\u0029",
+            "name": "getKey",
+            "summary": "request\u003A\u0020unset\u0020\u003D\u003E\u0020all,\u0020set\u0020\u003D\u003E\u0020one\u003B\u0020response\u003A\u0020always\u0020set",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SessionDataHeader.html#method_getKey"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SessionDataHeader\u003A\u003AhasKey\u0028\u0029",
+            "name": "hasKey",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SessionDataHeader.html#method_hasKey"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SessionDataHeader\u003A\u003AclearKey\u0028\u0029",
+            "name": "clearKey",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SessionDataHeader.html#method_clearKey"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SessionDataHeader\u003A\u003AsetKey\u0028\u0029",
+            "name": "setKey",
+            "summary": "request\u003A\u0020unset\u0020\u003D\u003E\u0020all,\u0020set\u0020\u003D\u003E\u0020one\u003B\u0020response\u003A\u0020always\u0020set",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SessionDataHeader.html#method_setKey"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SessionDataHeader\u003A\u003AgetLast\u0028\u0029",
+            "name": "getLast",
+            "summary": "response\u0020only\u003A\u0020true\u0020on\u0020the\u0020final\u0020streamed\u0020entry",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SessionDataHeader.html#method_getLast"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SessionDataHeader\u003A\u003AsetLast\u0028\u0029",
+            "name": "setLast",
+            "summary": "response\u0020only\u003A\u0020true\u0020on\u0020the\u0020final\u0020streamed\u0020entry",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SessionDataHeader.html#method_setLast"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SessionDataHeader\u003A\u003A\u0024data_type",
+            "name": "data_type",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.plugnmeet.SessionDataType\u0020data_type\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SessionDataHeader.html#property_data_type"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SessionDataHeader\u003A\u003A\u0024key",
+            "name": "key",
+            "summary": "request\u003A\u0020unset\u0020\u003D\u003E\u0020all,\u0020set\u0020\u003D\u003E\u0020one\u003B\u0020response\u003A\u0020always\u0020set",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SessionDataHeader.html#property_key"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SessionDataHeader\u003A\u003A\u0024last",
+            "name": "last",
+            "summary": "response\u0020only\u003A\u0020true\u0020on\u0020the\u0020final\u0020streamed\u0020entry",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SessionDataHeader.html#property_last"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SessionDataType",
+            "name": "SessionDataType",
+            "summary": "Protobuf\u0020type\u0020\u003Ccode\u003Eplugnmeet.SessionDataType\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SessionDataType.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SessionDataType\u003A\u003Aname\u0028\u0029",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SessionDataType.html#method_name"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SessionDataType\u003A\u003Avalue\u0028\u0029",
+            "name": "value",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SessionDataType.html#method_value"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SessionDataType\u003A\u003ASESSION_DATA_TYPE_UNSPECIFIED",
+            "name": "SESSION_DATA_TYPE_UNSPECIFIED",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ESESSION_DATA_TYPE_UNSPECIFIED\u0020\u003D\u00200\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SessionDataType.html#constant_SESSION_DATA_TYPE_UNSPECIFIED"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SessionDataType\u003A\u003ASESSION_DATA_TYPE_WHITEBOARD",
+            "name": "SESSION_DATA_TYPE_WHITEBOARD",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ESESSION_DATA_TYPE_WHITEBOARD\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SessionDataType.html#constant_SESSION_DATA_TYPE_WHITEBOARD"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SessionDataType\u003A\u003ASESSION_DATA_TYPE_NOTEPAD",
+            "name": "SESSION_DATA_TYPE_NOTEPAD",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ESESSION_DATA_TYPE_NOTEPAD\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SessionDataType.html#constant_SESSION_DATA_TYPE_NOTEPAD"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SessionDataType\u003A\u003A\u0024valueToName",
+            "name": "valueToName",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SessionDataType.html#property_valueToName"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SharedNotePadFeatures",
             "name": "SharedNotePadFeatures",
