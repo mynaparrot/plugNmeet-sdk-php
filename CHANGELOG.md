@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.2.6](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.2.5...v2.2.6) (2026-08-31)
+
+
+### Bug Fixes
+
+* bump proto ([9ca14b1](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/9ca14b106b1b9626704c17732671007e6cf478de))
+* bump proto to add new `shared_notepad_status` option ([3d63c58](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/3d63c587acbb9df81ce50bcfd63743081d764908))
+* **deps:** update dependency google/protobuf to v5.36.0 ([87b1b64](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/87b1b64c4c84fa242088b4cba3f1f24be12b2e04))
+* **deps:** update dependency guzzlehttp/guzzle to v7.15.5 ([47d5fcd](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/47d5fcdbafeeb1fa128a8bb8137af858bcf19cc5))
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency phpunit/phpunit to v13.3.1 ([ac4d3b2](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/ac4d3b2c1292f1aac5b879ab87225d76cc9aa8fd))
+* **deps:** update dependency phpunit/phpunit to v13.3.2 ([a97ab1b](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/a97ab1bf6ad0f52ca6b41c4c5ec252231fd8aa77))
+
 ## [2.2.5](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.2.4...v2.2.5) (2026-08-12)
 
 
