@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.7](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.2.6...v2.2.7) (2026-09-02)
+
+
+### Bug Fixes
+
+* removed deprecate field ([7536ce1](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/7536ce17a8f4bdf1fa479755f0dfd64fbb18821c))
+
 ## [2.2.6](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.2.5...v2.2.6) (2026-08-31)
 
 
