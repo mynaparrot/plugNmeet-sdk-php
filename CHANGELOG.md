@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.2.7](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.2.6...v2.2.7) (2026-09-09)
+
+
+### Bug Fixes
+
+* bump proto + added new `createPoll` API ([a95bafa](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/a95bafa22999c5149cc5b20d3a07307f55c577c6))
+* **deps:** update dependency google/protobuf to v5.36.1 ([1d69c95](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/1d69c956f41b95a90b9dc28ae6a5555d406b9a7a))
+* removed deprecate field ([7536ce1](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/7536ce17a8f4bdf1fa479755f0dfd64fbb18821c))
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency phpunit/phpunit to v13.3.3 ([aac8122](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/aac8122952952d18c2117e28ac76e41ba5dd35a8))
+
 ## [2.2.6](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.2.5...v2.2.6) (2026-08-31)
 
 
