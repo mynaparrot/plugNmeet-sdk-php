@@ -221,6 +221,13 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#property_has_voted">$has_voted</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;optional bool has_voted = 12;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#property_msg">$msg</a>
     <span>
                         &nbsp;: mixed            </span>
@@ -276,13 +283,6 @@
 </dt>
 <dd>Generated from protobuf field &lt;code&gt;optional uint64 total_running = 10;&lt;/code&gt;</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a class="" href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#property_voted">$voted</a>
-    <span>
-                        &nbsp;: mixed            </span>
-</dt>
-<dd>Generated from protobuf field &lt;code&gt;optional uint64 voted = 5;&lt;/code&gt;</dd>
-
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a class="" href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#property_polls">$polls</a>
     <span>
@@ -296,6 +296,13 @@
                         &nbsp;: mixed            </span>
 </dt>
 <dd>Generated from protobuf field &lt;code&gt;map&lt;string, string&gt; responses = 6;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#property_voted">$voted</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd>Generated from protobuf field &lt;code&gt;repeated uint64 voted = 5;&lt;/code&gt;</dd>
 
     </dl>
 
@@ -311,6 +318,12 @@
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Constructor.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_clearHasVoted">clearHasVoted()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_clearPollId">clearPollId()</a>
@@ -349,10 +362,11 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_clearVoted">clearVoted()</a>
+    <a class="" href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_getHasVoted">getHasVoted()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: bool    </span>
 </dt>
+<dd>Generated from protobuf field &lt;code&gt;optional bool has_voted = 12;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_getMsg">getMsg()</a>
@@ -427,9 +441,15 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_getVoted">getVoted()</a>
     <span>
-                                &nbsp;: int|string    </span>
+                                &nbsp;: <abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, int&gt;|<abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, string&gt;    </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;optional uint64 voted = 5;&lt;/code&gt;</dd>
+<dd>Generated from protobuf field &lt;code&gt;repeated uint64 voted = 5;&lt;/code&gt;</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_hasHasVoted">hasHasVoted()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_hasPollId">hasPollId()</a>
@@ -468,10 +488,11 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_hasVoted">hasVoted()</a>
+    <a class="" href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_setHasVoted">setHasVoted()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: $this    </span>
 </dt>
+<dd>Generated from protobuf field &lt;code&gt;optional bool has_voted = 12;&lt;/code&gt;</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_setMsg">setMsg()</a>
@@ -548,7 +569,7 @@
     <span>
                                 &nbsp;: $this    </span>
 </dt>
-<dd>Generated from protobuf field &lt;code&gt;optional uint64 voted = 5;&lt;/code&gt;</dd>
+<dd>Generated from protobuf field &lt;code&gt;repeated uint64 voted = 5;&lt;/code&gt;</dd>
 
     </dl>
 
@@ -563,6 +584,44 @@
             <a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_has_voted">
+        $has_voted
+        <a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#property_has_voted" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">64</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;optional bool has_voted = 12;&lt;/code&gt;</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$has_voted</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
                     <article
         class="
             phpdocumentor-element
@@ -871,44 +930,6 @@
         class="
             phpdocumentor-element
             -property
-            -protected
-                                                                    "
->
-    <h4 class="phpdocumentor-element__name" id="property_voted">
-        $voted
-        <a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#property_voted" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                            </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">36</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;optional uint64 voted = 5;&lt;/code&gt;</p>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-        <span class="phpdocumentor-signature__visibility">protected</span>
-            <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">$voted</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
-
-    
-    
-    
-
-        
-        
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
             -private
                                                                     "
 >
@@ -981,6 +1002,44 @@
         
 
 </article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_voted">
+        $voted
+        <a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#property_voted" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">36</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;repeated uint64 voted = 5;&lt;/code&gt;</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$voted</span>
+    </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
             </section>
 
             <section class="phpdocumentor-methods">
@@ -1003,7 +1062,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
@@ -1030,13 +1089,14 @@ Optional. Data for populating the Message object.</p>
 @type string $msg
 @type string $poll_id
 @type int|string $total_responses
-@type int|string $voted
+@type int[]|string[] $voted
 @type array|\Google\Protobuf\Internal\MapField $responses
 @type \Mynaparrot\PlugnmeetProto\PollInfo[] $polls
 @type \Mynaparrot\PlugnmeetProto\PollsStats $stats
 @type int|string $total_polls
 @type int|string $total_running
 @type \Mynaparrot\PlugnmeetProto\PollResponsesResult $poll_responses_result
+@type bool $has_voted
 </code></pre>
 <p>}</p>
 </section>
@@ -1044,6 +1104,40 @@ Optional. Data for populating the Message object.</p>
             </dd>
             </dl>
 
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_clearHasVoted">
+        clearHasVoted()
+        <a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_clearHasVoted" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">404</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">clearHasVoted</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
     
 
         
@@ -1064,7 +1158,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">143</span>
+    <span class="phpdocumentor-element-found-in__line">148</span>
 
     </aside>
 
@@ -1098,7 +1192,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">378</span>
+    <span class="phpdocumentor-element-found-in__line">373</span>
 
     </aside>
 
@@ -1132,7 +1226,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">283</span>
+    <span class="phpdocumentor-element-found-in__line">278</span>
 
     </aside>
 
@@ -1166,7 +1260,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">314</span>
+    <span class="phpdocumentor-element-found-in__line">309</span>
 
     </aside>
 
@@ -1200,7 +1294,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">175</span>
+    <span class="phpdocumentor-element-found-in__line">180</span>
 
     </aside>
 
@@ -1234,7 +1328,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">346</span>
+    <span class="phpdocumentor-element-found-in__line">341</span>
 
     </aside>
 
@@ -1260,22 +1354,23 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_clearVoted">
-        clearVoted()
-        <a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_clearVoted" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getHasVoted">
+        getHasVoted()
+        <a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_getHasVoted" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">207</span>
+    <span class="phpdocumentor-element-found-in__line">394</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;optional bool has_voted = 12;&lt;/code&gt;</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">clearVoted</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">getHasVoted</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1286,7 +1381,11 @@ Optional. Data for populating the Message object.</p>
 
         
     
-    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1302,7 +1401,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">111</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -1341,7 +1440,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">133</span>
+    <span class="phpdocumentor-element-found-in__line">138</span>
 
     </aside>
 
@@ -1380,7 +1479,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">368</span>
+    <span class="phpdocumentor-element-found-in__line">363</span>
 
     </aside>
 
@@ -1419,7 +1518,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">251</span>
+    <span class="phpdocumentor-element-found-in__line">246</span>
 
     </aside>
 
@@ -1458,7 +1557,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">229</span>
+    <span class="phpdocumentor-element-found-in__line">224</span>
 
     </aside>
 
@@ -1497,7 +1596,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">273</span>
+    <span class="phpdocumentor-element-found-in__line">268</span>
 
     </aside>
 
@@ -1536,7 +1635,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
@@ -1575,7 +1674,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">304</span>
+    <span class="phpdocumentor-element-found-in__line">299</span>
 
     </aside>
 
@@ -1614,7 +1713,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">165</span>
+    <span class="phpdocumentor-element-found-in__line">170</span>
 
     </aside>
 
@@ -1653,7 +1752,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">336</span>
+    <span class="phpdocumentor-element-found-in__line">331</span>
 
     </aside>
 
@@ -1692,15 +1791,15 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">197</span>
+    <span class="phpdocumentor-element-found-in__line">202</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;optional uint64 voted = 5;&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;repeated uint64 voted = 5;&lt;/code&gt;</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getVoted</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|string</span></code>
+                    <span class="phpdocumentor-signature__name">getVoted</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, int&gt;|<abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, string&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1713,9 +1812,43 @@ Optional. Data for populating the Message object.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">int|string</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, int&gt;|<abbr title="\Google\Protobuf\RepeatedField">RepeatedField</abbr>&lt;string|int, string&gt;</span>
             </section>
 
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_hasHasVoted">
+        hasHasVoted()
+        <a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_hasHasVoted" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">399</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">hasHasVoted</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -1731,7 +1864,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">138</span>
+    <span class="phpdocumentor-element-found-in__line">143</span>
 
     </aside>
 
@@ -1765,7 +1898,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">373</span>
+    <span class="phpdocumentor-element-found-in__line">368</span>
 
     </aside>
 
@@ -1799,7 +1932,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">278</span>
+    <span class="phpdocumentor-element-found-in__line">273</span>
 
     </aside>
 
@@ -1833,7 +1966,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">309</span>
+    <span class="phpdocumentor-element-found-in__line">304</span>
 
     </aside>
 
@@ -1867,7 +2000,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">170</span>
+    <span class="phpdocumentor-element-found-in__line">175</span>
 
     </aside>
 
@@ -1901,7 +2034,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">341</span>
+    <span class="phpdocumentor-element-found-in__line">336</span>
 
     </aside>
 
@@ -1927,33 +2060,48 @@ Optional. Data for populating the Message object.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_hasVoted">
-        hasVoted()
-        <a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_hasVoted" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_setHasVoted">
+        setHasVoted()
+        <a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_setHasVoted" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">202</span>
+    <span class="phpdocumentor-element-found-in__line">414</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;optional bool has_voted = 12;&lt;/code&gt;</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">hasVoted</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">setHasVoted</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
     
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$var</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
     
 
         
     
-    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1969,7 +2117,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">121</span>
+    <span class="phpdocumentor-element-found-in__line">126</span>
 
     </aside>
 
@@ -2018,7 +2166,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">153</span>
+    <span class="phpdocumentor-element-found-in__line">158</span>
 
     </aside>
 
@@ -2067,7 +2215,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">388</span>
+    <span class="phpdocumentor-element-found-in__line">383</span>
 
     </aside>
 
@@ -2116,7 +2264,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">261</span>
+    <span class="phpdocumentor-element-found-in__line">256</span>
 
     </aside>
 
@@ -2165,7 +2313,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">239</span>
+    <span class="phpdocumentor-element-found-in__line">234</span>
 
     </aside>
 
@@ -2214,7 +2362,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">293</span>
+    <span class="phpdocumentor-element-found-in__line">288</span>
 
     </aside>
 
@@ -2263,7 +2411,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">100</span>
+    <span class="phpdocumentor-element-found-in__line">105</span>
 
     </aside>
 
@@ -2312,7 +2460,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">324</span>
+    <span class="phpdocumentor-element-found-in__line">319</span>
 
     </aside>
 
@@ -2361,7 +2509,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">185</span>
+    <span class="phpdocumentor-element-found-in__line">190</span>
 
     </aside>
 
@@ -2410,7 +2558,7 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">356</span>
+    <span class="phpdocumentor-element-found-in__line">351</span>
 
     </aside>
 
@@ -2459,15 +2607,15 @@ Optional. Data for populating the Message object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php"><a href="files/src-gen-mynaparrot-plugnmeetproto-pollresponse.html"><abbr title="src/gen/Mynaparrot/PlugnmeetProto/PollResponse.php">PollResponse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">217</span>
+    <span class="phpdocumentor-element-found-in__line">212</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;optional uint64 voted = 5;&lt;/code&gt;</p>
+        <p class="phpdocumentor-summary">Generated from protobuf field &lt;code&gt;repeated uint64 voted = 5;&lt;/code&gt;</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setVoted</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                    <span class="phpdocumentor-signature__name">setVoted</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, int&gt;|array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2477,7 +2625,7 @@ Optional. Data for populating the Message object.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$var</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int|string</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, int&gt;|array&lt;string|int, string&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -2516,6 +2664,7 @@ Optional. Data for populating the Message object.</p>
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#property_has_voted">$has_voted</a></li>
                                                     <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#property_msg">$msg</a></li>
                                                     <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#property_poll_id">$poll_id</a></li>
                                                     <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#property_poll_responses_result">$poll_responses_result</a></li>
@@ -2524,9 +2673,9 @@ Optional. Data for populating the Message object.</p>
                                                     <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#property_total_polls">$total_polls</a></li>
                                                     <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#property_total_responses">$total_responses</a></li>
                                                     <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#property_total_running">$total_running</a></li>
-                                                    <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#property_voted">$voted</a></li>
                                                     <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#property_polls">$polls</a></li>
                                                     <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#property_responses">$responses</a></li>
+                                                    <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#property_voted">$voted</a></li>
                                             </ul>
                 </li>
             
@@ -2534,13 +2683,14 @@ Optional. Data for populating the Message object.</p>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_clearHasVoted">clearHasVoted()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_clearPollId">clearPollId()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_clearPollResponsesResult">clearPollResponsesResult()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_clearStats">clearStats()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_clearTotalPolls">clearTotalPolls()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_clearTotalResponses">clearTotalResponses()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_clearTotalRunning">clearTotalRunning()</a></li>
-                                            <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_clearVoted">clearVoted()</a></li>
+                                            <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_getHasVoted">getHasVoted()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_getMsg">getMsg()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_getPollId">getPollId()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_getPollResponsesResult">getPollResponsesResult()</a></li>
@@ -2552,13 +2702,14 @@ Optional. Data for populating the Message object.</p>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_getTotalResponses">getTotalResponses()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_getTotalRunning">getTotalRunning()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_getVoted">getVoted()</a></li>
+                                            <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_hasHasVoted">hasHasVoted()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_hasPollId">hasPollId()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_hasPollResponsesResult">hasPollResponsesResult()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_hasStats">hasStats()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_hasTotalPolls">hasTotalPolls()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_hasTotalResponses">hasTotalResponses()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_hasTotalRunning">hasTotalRunning()</a></li>
-                                            <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_hasVoted">hasVoted()</a></li>
+                                            <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_setHasVoted">setHasVoted()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_setMsg">setMsg()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_setPollId">setPollId()</a></li>
                                             <li class=""><a href="classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_setPollResponsesResult">setPollResponsesResult()</a></li>

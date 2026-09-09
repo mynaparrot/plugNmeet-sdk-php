@@ -9076,6 +9076,11 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EANALYTICS_EVENT_ROOM_POLL_ENDED\u0020\u003D\u00202\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-AnalyticsEvents.html#constant_ANALYTICS_EVENT_ROOM_POLL_ENDED"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\AnalyticsEvents\u003A\u003AANALYTICS_EVENT_ROOM_POLL_REOPENED",
+            "name": "ANALYTICS_EVENT_ROOM_POLL_REOPENED",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EANALYTICS_EVENT_ROOM_POLL_REOPENED\u0020\u003D\u002041\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-AnalyticsEvents.html#constant_ANALYTICS_EVENT_ROOM_POLL_REOPENED"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\AnalyticsEvents\u003A\u003AANALYTICS_EVENT_USER_JOINED",
             "name": "ANALYTICS_EVENT_USER_JOINED",
             "summary": "user\u0020join\u0020will\u0020be\u0020room\u0020related\nafter\u0020take\u0020record\u0020it\u0020will\u0020pass\u0020to\u0020user",
@@ -10131,6 +10136,126 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.PastRoomInfo\u0020room_info\u0020\u003D\u00205\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-ArtifactInfoRes.html#property_room_info"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BackToMainRoomReq",
+            "name": "BackToMainRoomReq",
+            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.BackToMainRoomReq\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BackToMainRoomReq.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BackToMainRoomReq\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BackToMainRoomReq.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BackToMainRoomReq\u003A\u003AgetRoomId\u0028\u0029",
+            "name": "getRoomId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BackToMainRoomReq.html#method_getRoomId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BackToMainRoomReq\u003A\u003AsetRoomId\u0028\u0029",
+            "name": "setRoomId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BackToMainRoomReq.html#method_setRoomId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BackToMainRoomReq\u003A\u003AgetUserId\u0028\u0029",
+            "name": "getUserId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020user_id\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BackToMainRoomReq.html#method_getUserId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BackToMainRoomReq\u003A\u003AsetUserId\u0028\u0029",
+            "name": "setUserId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020user_id\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BackToMainRoomReq.html#method_setUserId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BackToMainRoomReq\u003A\u003AgetParentRoomId\u0028\u0029",
+            "name": "getParentRoomId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020parent_room_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BackToMainRoomReq.html#method_getParentRoomId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BackToMainRoomReq\u003A\u003AsetParentRoomId\u0028\u0029",
+            "name": "setParentRoomId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020parent_room_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BackToMainRoomReq.html#method_setParentRoomId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BackToMainRoomReq\u003A\u003A\u0024room_id",
+            "name": "room_id",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BackToMainRoomReq.html#property_room_id"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BackToMainRoomReq\u003A\u003A\u0024user_id",
+            "name": "user_id",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020user_id\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BackToMainRoomReq.html#property_user_id"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BackToMainRoomReq\u003A\u003A\u0024parent_room_id",
+            "name": "parent_room_id",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020parent_room_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BackToMainRoomReq.html#property_parent_room_id"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BackToMainRoomRes",
+            "name": "BackToMainRoomRes",
+            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.BackToMainRoomRes\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BackToMainRoomRes.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BackToMainRoomRes\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BackToMainRoomRes.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BackToMainRoomRes\u003A\u003AgetStatus\u0028\u0029",
+            "name": "getStatus",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020status\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BackToMainRoomRes.html#method_getStatus"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BackToMainRoomRes\u003A\u003AsetStatus\u0028\u0029",
+            "name": "setStatus",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020status\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BackToMainRoomRes.html#method_setStatus"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BackToMainRoomRes\u003A\u003AgetMsg\u0028\u0029",
+            "name": "getMsg",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020msg\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BackToMainRoomRes.html#method_getMsg"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BackToMainRoomRes\u003A\u003AsetMsg\u0028\u0029",
+            "name": "setMsg",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020msg\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BackToMainRoomRes.html#method_setMsg"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BackToMainRoomRes\u003A\u003AgetToken\u0028\u0029",
+            "name": "getToken",
+            "summary": "main\u0020room\u0020access\u0020token",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BackToMainRoomRes.html#method_getToken"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BackToMainRoomRes\u003A\u003AhasToken\u0028\u0029",
+            "name": "hasToken",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BackToMainRoomRes.html#method_hasToken"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BackToMainRoomRes\u003A\u003AclearToken\u0028\u0029",
+            "name": "clearToken",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BackToMainRoomRes.html#method_clearToken"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BackToMainRoomRes\u003A\u003AsetToken\u0028\u0029",
+            "name": "setToken",
+            "summary": "main\u0020room\u0020access\u0020token",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BackToMainRoomRes.html#method_setToken"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BackToMainRoomRes\u003A\u003A\u0024status",
+            "name": "status",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020status\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BackToMainRoomRes.html#property_status"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BackToMainRoomRes\u003A\u003A\u0024msg",
+            "name": "msg",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020msg\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BackToMainRoomRes.html#property_msg"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BackToMainRoomRes\u003A\u003A\u0024token",
+            "name": "token",
+            "summary": "main\u0020room\u0020access\u0020token",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BackToMainRoomRes.html#property_token"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoom",
             "name": "BreakoutRoom",
             "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.BreakoutRoom\u003C\/code\u003E",
@@ -10201,6 +10326,16 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.plugnmeet.BreakoutRoomUser\u0020users\u0020\u003D\u00206\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-BreakoutRoom.html#method_setUsers"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoom\u003A\u003AgetRoomSid\u0028\u0029",
+            "name": "getRoomSid",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_sid\u0020\u003D\u00207\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BreakoutRoom.html#method_getRoomSid"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoom\u003A\u003AsetRoomSid\u0028\u0029",
+            "name": "setRoomSid",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_sid\u0020\u003D\u00207\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BreakoutRoom.html#method_setRoomSid"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoom\u003A\u003A\u0024id",
             "name": "id",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
@@ -10231,6 +10366,11 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.plugnmeet.BreakoutRoomUser\u0020users\u0020\u003D\u00206\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-BreakoutRoom.html#property_users"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoom\u003A\u003A\u0024room_sid",
+            "name": "room_sid",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_sid\u0020\u003D\u00207\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BreakoutRoom.html#property_room_sid"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoomFeatures",
             "name": "BreakoutRoomFeatures",
             "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.BreakoutRoomFeatures\u003C\/code\u003E",
@@ -10253,12 +10393,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoomFeatures\u003A\u003AgetIsActive\u0028\u0029",
             "name": "getIsActive",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_active\u0020\u003D\u00202\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "summary": "internal\u0020usage\u0020field",
             "url": "classes/Mynaparrot-PlugnmeetProto-BreakoutRoomFeatures.html#method_getIsActive"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoomFeatures\u003A\u003AsetIsActive\u0028\u0029",
             "name": "setIsActive",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_active\u0020\u003D\u00202\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "summary": "internal\u0020usage\u0020field",
             "url": "classes/Mynaparrot-PlugnmeetProto-BreakoutRoomFeatures.html#method_setIsActive"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoomFeatures\u003A\u003AgetAllowedNumberRooms\u0028\u0029",
@@ -10271,6 +10411,36 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint32\u0020allowed_number_rooms\u0020\u003D\u00203\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-BreakoutRoomFeatures.html#method_setAllowedNumberRooms"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoomFeatures\u003A\u003AgetAllowReturnToMainRoom\u0028\u0029",
+            "name": "getAllowReturnToMainRoom",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020allow_return_to_main_room\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BreakoutRoomFeatures.html#method_getAllowReturnToMainRoom"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoomFeatures\u003A\u003AsetAllowReturnToMainRoom\u0028\u0029",
+            "name": "setAllowReturnToMainRoom",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020allow_return_to_main_room\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BreakoutRoomFeatures.html#method_setAllowReturnToMainRoom"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoomFeatures\u003A\u003AgetAllowSelfSelect\u0028\u0029",
+            "name": "getAllowSelfSelect",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020allow_self_select\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BreakoutRoomFeatures.html#method_getAllowSelfSelect"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoomFeatures\u003A\u003AsetAllowSelfSelect\u0028\u0029",
+            "name": "setAllowSelfSelect",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020allow_self_select\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BreakoutRoomFeatures.html#method_setAllowSelfSelect"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoomFeatures\u003A\u003AgetPreassignedRooms\u0028\u0029",
+            "name": "getPreassignedRooms",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.plugnmeet.PreassignedBreakoutRoom\u0020preassigned_rooms\u0020\u003D\u00206\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BreakoutRoomFeatures.html#method_getPreassignedRooms"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoomFeatures\u003A\u003AsetPreassignedRooms\u0028\u0029",
+            "name": "setPreassignedRooms",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.plugnmeet.PreassignedBreakoutRoom\u0020preassigned_rooms\u0020\u003D\u00206\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BreakoutRoomFeatures.html#method_setPreassignedRooms"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoomFeatures\u003A\u003A\u0024is_allow",
             "name": "is_allow",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_allow\u0020\u003D\u00201\u003B\u003C\/code\u003E",
@@ -10278,13 +10448,28 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoomFeatures\u003A\u003A\u0024is_active",
             "name": "is_active",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_active\u0020\u003D\u00202\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "summary": "internal\u0020usage\u0020field",
             "url": "classes/Mynaparrot-PlugnmeetProto-BreakoutRoomFeatures.html#property_is_active"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoomFeatures\u003A\u003A\u0024allowed_number_rooms",
             "name": "allowed_number_rooms",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint32\u0020allowed_number_rooms\u0020\u003D\u00203\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-BreakoutRoomFeatures.html#property_allowed_number_rooms"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoomFeatures\u003A\u003A\u0024allow_return_to_main_room",
+            "name": "allow_return_to_main_room",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020allow_return_to_main_room\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BreakoutRoomFeatures.html#property_allow_return_to_main_room"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoomFeatures\u003A\u003A\u0024allow_self_select",
+            "name": "allow_self_select",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020allow_self_select\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BreakoutRoomFeatures.html#property_allow_self_select"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoomFeatures\u003A\u003A\u0024preassigned_rooms",
+            "name": "preassigned_rooms",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.plugnmeet.PreassignedBreakoutRoom\u0020preassigned_rooms\u0020\u003D\u00206\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BreakoutRoomFeatures.html#property_preassigned_rooms"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoomRes",
             "name": "BreakoutRoomRes",
@@ -10366,6 +10551,16 @@ Search.appendIndex(
             "summary": "rooms\u0020list",
             "url": "classes/Mynaparrot-PlugnmeetProto-BreakoutRoomRes.html#method_setRooms"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoomRes\u003A\u003AgetUnassignedUsers\u0028\u0029",
+            "name": "getUnassignedUsers",
+            "summary": "online\u0020main\u002Droom\u0020users\u0020not\u0020in\u0020any\u0020breakout\u0020room\u0020\u0028admins\u0020only\u0029",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BreakoutRoomRes.html#method_getUnassignedUsers"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoomRes\u003A\u003AsetUnassignedUsers\u0028\u0029",
+            "name": "setUnassignedUsers",
+            "summary": "online\u0020main\u002Droom\u0020users\u0020not\u0020in\u0020any\u0020breakout\u0020room\u0020\u0028admins\u0020only\u0029",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BreakoutRoomRes.html#method_setUnassignedUsers"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoomRes\u003A\u003A\u0024status",
             "name": "status",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020status\u0020\u003D\u00201\u003B\u003C\/code\u003E",
@@ -10390,6 +10585,11 @@ Search.appendIndex(
             "name": "rooms",
             "summary": "rooms\u0020list",
             "url": "classes/Mynaparrot-PlugnmeetProto-BreakoutRoomRes.html#property_rooms"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoomRes\u003A\u003A\u0024unassigned_users",
+            "name": "unassigned_users",
+            "summary": "online\u0020main\u002Droom\u0020users\u0020not\u0020in\u0020any\u0020breakout\u0020room\u0020\u0028admins\u0020only\u0029",
+            "url": "classes/Mynaparrot-PlugnmeetProto-BreakoutRoomRes.html#property_unassigned_users"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BreakoutRoomUser",
             "name": "BreakoutRoomUser",
@@ -10468,12 +10668,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BroadcastBreakoutRoomMsgReq\u003A\u003AgetRoomId\u0028\u0029",
             "name": "getRoomId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00202\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-BroadcastBreakoutRoomMsgReq.html#method_getRoomId"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BroadcastBreakoutRoomMsgReq\u003A\u003AsetRoomId\u0028\u0029",
             "name": "setRoomId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00202\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-BroadcastBreakoutRoomMsgReq.html#method_setRoomId"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BroadcastBreakoutRoomMsgReq\u003A\u003A\u0024msg",
@@ -10483,7 +10683,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BroadcastBreakoutRoomMsgReq\u003A\u003A\u0024room_id",
             "name": "room_id",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00202\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-BroadcastBreakoutRoomMsgReq.html#property_room_id"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\BroadcastToRoomChatMessage",
@@ -11586,6 +11786,76 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.plugnmeet.BreakoutRoom\u0020rooms\u0020\u003D\u00205\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-CreateBreakoutRoomsReq.html#method_setRooms"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateBreakoutRoomsReq\u003A\u003AgetWhiteboardShare\u0028\u0029",
+            "name": "getWhiteboardShare",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.WhiteboardShare\u0020whiteboard_share\u0020\u003D\u00206\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreateBreakoutRoomsReq.html#method_getWhiteboardShare"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateBreakoutRoomsReq\u003A\u003AhasWhiteboardShare\u0028\u0029",
+            "name": "hasWhiteboardShare",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreateBreakoutRoomsReq.html#method_hasWhiteboardShare"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateBreakoutRoomsReq\u003A\u003AclearWhiteboardShare\u0028\u0029",
+            "name": "clearWhiteboardShare",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreateBreakoutRoomsReq.html#method_clearWhiteboardShare"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateBreakoutRoomsReq\u003A\u003AsetWhiteboardShare\u0028\u0029",
+            "name": "setWhiteboardShare",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.WhiteboardShare\u0020whiteboard_share\u0020\u003D\u00206\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreateBreakoutRoomsReq.html#method_setWhiteboardShare"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateBreakoutRoomsReq\u003A\u003AgetPollShare\u0028\u0029",
+            "name": "getPollShare",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.PollShare\u0020poll_share\u0020\u003D\u00207\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreateBreakoutRoomsReq.html#method_getPollShare"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateBreakoutRoomsReq\u003A\u003AhasPollShare\u0028\u0029",
+            "name": "hasPollShare",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreateBreakoutRoomsReq.html#method_hasPollShare"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateBreakoutRoomsReq\u003A\u003AclearPollShare\u0028\u0029",
+            "name": "clearPollShare",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreateBreakoutRoomsReq.html#method_clearPollShare"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateBreakoutRoomsReq\u003A\u003AsetPollShare\u0028\u0029",
+            "name": "setPollShare",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.PollShare\u0020poll_share\u0020\u003D\u00207\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreateBreakoutRoomsReq.html#method_setPollShare"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateBreakoutRoomsReq\u003A\u003AgetShareNotepad\u0028\u0029",
+            "name": "getShareNotepad",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020share_notepad\u0020\u003D\u00208\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreateBreakoutRoomsReq.html#method_getShareNotepad"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateBreakoutRoomsReq\u003A\u003AsetShareNotepad\u0028\u0029",
+            "name": "setShareNotepad",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020share_notepad\u0020\u003D\u00208\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreateBreakoutRoomsReq.html#method_setShareNotepad"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateBreakoutRoomsReq\u003A\u003AgetAllowReturnToMainRoom\u0028\u0029",
+            "name": "getAllowReturnToMainRoom",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020allow_return_to_main_room\u0020\u003D\u00209\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreateBreakoutRoomsReq.html#method_getAllowReturnToMainRoom"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateBreakoutRoomsReq\u003A\u003AsetAllowReturnToMainRoom\u0028\u0029",
+            "name": "setAllowReturnToMainRoom",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020allow_return_to_main_room\u0020\u003D\u00209\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreateBreakoutRoomsReq.html#method_setAllowReturnToMainRoom"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateBreakoutRoomsReq\u003A\u003AgetAllowSelfSelect\u0028\u0029",
+            "name": "getAllowSelfSelect",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020allow_self_select\u0020\u003D\u002011\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreateBreakoutRoomsReq.html#method_getAllowSelfSelect"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateBreakoutRoomsReq\u003A\u003AsetAllowSelfSelect\u0028\u0029",
+            "name": "setAllowSelfSelect",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020allow_self_select\u0020\u003D\u002011\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreateBreakoutRoomsReq.html#method_setAllowSelfSelect"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateBreakoutRoomsReq\u003A\u003A\u0024room_id",
             "name": "room_id",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
@@ -11610,6 +11880,31 @@ Search.appendIndex(
             "name": "rooms",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.plugnmeet.BreakoutRoom\u0020rooms\u0020\u003D\u00205\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-CreateBreakoutRoomsReq.html#property_rooms"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateBreakoutRoomsReq\u003A\u003A\u0024whiteboard_share",
+            "name": "whiteboard_share",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.WhiteboardShare\u0020whiteboard_share\u0020\u003D\u00206\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreateBreakoutRoomsReq.html#property_whiteboard_share"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateBreakoutRoomsReq\u003A\u003A\u0024poll_share",
+            "name": "poll_share",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.PollShare\u0020poll_share\u0020\u003D\u00207\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreateBreakoutRoomsReq.html#property_poll_share"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateBreakoutRoomsReq\u003A\u003A\u0024share_notepad",
+            "name": "share_notepad",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020share_notepad\u0020\u003D\u00208\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreateBreakoutRoomsReq.html#property_share_notepad"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateBreakoutRoomsReq\u003A\u003A\u0024allow_return_to_main_room",
+            "name": "allow_return_to_main_room",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020allow_return_to_main_room\u0020\u003D\u00209\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreateBreakoutRoomsReq.html#property_allow_return_to_main_room"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateBreakoutRoomsReq\u003A\u003A\u0024allow_self_select",
+            "name": "allow_self_select",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020allow_self_select\u0020\u003D\u002011\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreateBreakoutRoomsReq.html#property_allow_self_select"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateIngressReq",
             "name": "CreateIngressReq",
@@ -11781,6 +12076,16 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020text\u0020\u003D\u00202\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollOptions.html#method_setText"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollOptions\u003A\u003AgetIsCorrect\u0028\u0029",
+            "name": "getIsCorrect",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_correct\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollOptions.html#method_getIsCorrect"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollOptions\u003A\u003AsetIsCorrect\u0028\u0029",
+            "name": "setIsCorrect",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_correct\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollOptions.html#method_setIsCorrect"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollOptions\u003A\u003A\u0024id",
             "name": "id",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint32\u0020id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
@@ -11790,6 +12095,11 @@ Search.appendIndex(
             "name": "text",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020text\u0020\u003D\u00202\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollOptions.html#property_text"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollOptions\u003A\u003A\u0024is_correct",
+            "name": "is_correct",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_correct\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollOptions.html#property_is_correct"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollReq",
             "name": "CreatePollReq",
@@ -11851,6 +12161,46 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.plugnmeet.CreatePollOptions\u0020options\u0020\u003D\u00205\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollReq.html#method_setOptions"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollReq\u003A\u003AgetIsAnonymous\u0028\u0029",
+            "name": "getIsAnonymous",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_anonymous\u0020\u003D\u00206\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollReq.html#method_getIsAnonymous"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollReq\u003A\u003AsetIsAnonymous\u0028\u0029",
+            "name": "setIsAnonymous",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_anonymous\u0020\u003D\u00206\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollReq.html#method_setIsAnonymous"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollReq\u003A\u003AgetIsMultiple\u0028\u0029",
+            "name": "getIsMultiple",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_multiple\u0020\u003D\u00207\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollReq.html#method_getIsMultiple"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollReq\u003A\u003AsetIsMultiple\u0028\u0029",
+            "name": "setIsMultiple",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_multiple\u0020\u003D\u00207\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollReq.html#method_setIsMultiple"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollReq\u003A\u003AgetIsQuiz\u0028\u0029",
+            "name": "getIsQuiz",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_quiz\u0020\u003D\u00208\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollReq.html#method_getIsQuiz"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollReq\u003A\u003AsetIsQuiz\u0028\u0029",
+            "name": "setIsQuiz",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_quiz\u0020\u003D\u00208\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollReq.html#method_setIsQuiz"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollReq\u003A\u003AgetDuration\u0028\u0029",
+            "name": "getDuration",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint32\u0020duration\u0020\u003D\u00209\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollReq.html#method_getDuration"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollReq\u003A\u003AsetDuration\u0028\u0029",
+            "name": "setDuration",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint32\u0020duration\u0020\u003D\u00209\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollReq.html#method_setDuration"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollReq\u003A\u003A\u0024room_id",
             "name": "room_id",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
@@ -11875,6 +12225,81 @@ Search.appendIndex(
             "name": "options",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.plugnmeet.CreatePollOptions\u0020options\u0020\u003D\u00205\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollReq.html#property_options"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollReq\u003A\u003A\u0024is_anonymous",
+            "name": "is_anonymous",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_anonymous\u0020\u003D\u00206\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollReq.html#property_is_anonymous"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollReq\u003A\u003A\u0024is_multiple",
+            "name": "is_multiple",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_multiple\u0020\u003D\u00207\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollReq.html#property_is_multiple"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollReq\u003A\u003A\u0024is_quiz",
+            "name": "is_quiz",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_quiz\u0020\u003D\u00208\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollReq.html#property_is_quiz"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollReq\u003A\u003A\u0024duration",
+            "name": "duration",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint32\u0020duration\u0020\u003D\u00209\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollReq.html#property_duration"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollRes",
+            "name": "CreatePollRes",
+            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.CreatePollRes\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollRes.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollRes\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollRes.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollRes\u003A\u003AgetStatus\u0028\u0029",
+            "name": "getStatus",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020status\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollRes.html#method_getStatus"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollRes\u003A\u003AsetStatus\u0028\u0029",
+            "name": "setStatus",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020status\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollRes.html#method_setStatus"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollRes\u003A\u003AgetMsg\u0028\u0029",
+            "name": "getMsg",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020msg\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollRes.html#method_getMsg"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollRes\u003A\u003AsetMsg\u0028\u0029",
+            "name": "setMsg",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020msg\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollRes.html#method_setMsg"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollRes\u003A\u003AgetPollId\u0028\u0029",
+            "name": "getPollId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020poll_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollRes.html#method_getPollId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollRes\u003A\u003AsetPollId\u0028\u0029",
+            "name": "setPollId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020poll_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollRes.html#method_setPollId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollRes\u003A\u003A\u0024status",
+            "name": "status",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020status\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollRes.html#property_status"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollRes\u003A\u003A\u0024msg",
+            "name": "msg",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020msg\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollRes.html#property_msg"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreatePollRes\u003A\u003A\u0024poll_id",
+            "name": "poll_id",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020poll_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-CreatePollRes.html#property_poll_id"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\CreateRoomReq",
             "name": "CreateRoomReq",
@@ -12631,11 +13056,6 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ENEW_POLL_RESPONSE\u0020\u003D\u00206\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-DataMsgBodyType.html#constant_NEW_POLL_RESPONSE"
         },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataMsgBodyType\u003A\u003APUSH_JOIN_BREAKOUT_ROOM",
-            "name": "PUSH_JOIN_BREAKOUT_ROOM",
-            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EPUSH_JOIN_BREAKOUT_ROOM\u0020\u003D\u00207\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-DataMsgBodyType.html#constant_PUSH_JOIN_BREAKOUT_ROOM"
-        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\DataMsgBodyType\u003A\u003AWHITEBOARD_SYNC_REQUEST",
             "name": "WHITEBOARD_SYNC_REQUEST",
             "summary": "WHITEBOARD\u0020type",
@@ -13118,12 +13538,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\EndBreakoutRoomReq\u003A\u003AgetRoomId\u0028\u0029",
             "name": "getRoomId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00202\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-EndBreakoutRoomReq.html#method_getRoomId"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\EndBreakoutRoomReq\u003A\u003AsetRoomId\u0028\u0029",
             "name": "setRoomId",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00202\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-EndBreakoutRoomReq.html#method_setRoomId"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\EndBreakoutRoomReq\u003A\u003A\u0024breakout_room_id",
@@ -13133,7 +13553,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\EndBreakoutRoomReq\u003A\u003A\u0024room_id",
             "name": "room_id",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00202\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-EndBreakoutRoomReq.html#property_room_id"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\EndToEndEncryptionFeatures",
@@ -13176,19 +13596,9 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020included_whiteboard\u0020\u003D\u00203\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-EndToEndEncryptionFeatures.html#method_setIncludedWhiteboard"
         },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\EndToEndEncryptionFeatures\u003A\u003AgetEnabledSelfInsertEncryptionKey\u0028\u0029",
-            "name": "getEnabledSelfInsertEncryptionKey",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020enabled_self_insert_encryption_key\u0020\u003D\u00205\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-EndToEndEncryptionFeatures.html#method_getEnabledSelfInsertEncryptionKey"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\EndToEndEncryptionFeatures\u003A\u003AsetEnabledSelfInsertEncryptionKey\u0028\u0029",
-            "name": "setEnabledSelfInsertEncryptionKey",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020enabled_self_insert_encryption_key\u0020\u003D\u00205\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-EndToEndEncryptionFeatures.html#method_setEnabledSelfInsertEncryptionKey"
-        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\EndToEndEncryptionFeatures\u003A\u003AgetEncryptionKey\u0028\u0029",
             "name": "getEncryptionKey",
-            "summary": "internal\u0020fields",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020encryption_key\u0020\u003D\u00204\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-EndToEndEncryptionFeatures.html#method_getEncryptionKey"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\EndToEndEncryptionFeatures\u003A\u003AhasEncryptionKey\u0028\u0029",
@@ -13203,8 +13613,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\EndToEndEncryptionFeatures\u003A\u003AsetEncryptionKey\u0028\u0029",
             "name": "setEncryptionKey",
-            "summary": "internal\u0020fields",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020encryption_key\u0020\u003D\u00204\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-EndToEndEncryptionFeatures.html#method_setEncryptionKey"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\EndToEndEncryptionFeatures\u003A\u003AgetEnabledSelfInsertEncryptionKey\u0028\u0029",
+            "name": "getEnabledSelfInsertEncryptionKey",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020enabled_self_insert_encryption_key\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-EndToEndEncryptionFeatures.html#method_getEnabledSelfInsertEncryptionKey"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\EndToEndEncryptionFeatures\u003A\u003AsetEnabledSelfInsertEncryptionKey\u0028\u0029",
+            "name": "setEnabledSelfInsertEncryptionKey",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020enabled_self_insert_encryption_key\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-EndToEndEncryptionFeatures.html#method_setEnabledSelfInsertEncryptionKey"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\EndToEndEncryptionFeatures\u003A\u003A\u0024is_enabled",
             "name": "is_enabled",
@@ -13221,15 +13641,15 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020included_whiteboard\u0020\u003D\u00203\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-EndToEndEncryptionFeatures.html#property_included_whiteboard"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\EndToEndEncryptionFeatures\u003A\u003A\u0024encryption_key",
+            "name": "encryption_key",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020encryption_key\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-EndToEndEncryptionFeatures.html#property_encryption_key"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\EndToEndEncryptionFeatures\u003A\u003A\u0024enabled_self_insert_encryption_key",
             "name": "enabled_self_insert_encryption_key",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020enabled_self_insert_encryption_key\u0020\u003D\u00205\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-EndToEndEncryptionFeatures.html#property_enabled_self_insert_encryption_key"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\EndToEndEncryptionFeatures\u003A\u003A\u0024encryption_key",
-            "name": "encryption_key",
-            "summary": "internal\u0020fields",
-            "url": "classes/Mynaparrot-PlugnmeetProto-EndToEndEncryptionFeatures.html#property_encryption_key"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ExternalBroadcastingFeatures",
             "name": "ExternalBroadcastingFeatures",
@@ -15936,6 +16356,11 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EINSIGHTS_AI_REQUEST_SOURCE_WHITEBOARD\u0020\u003D\u00202\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAIRequestSource.html#constant_INSIGHTS_AI_REQUEST_SOURCE_WHITEBOARD"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAIRequestSource\u003A\u003AINSIGHTS_AI_REQUEST_SOURCE_POLL",
+            "name": "INSIGHTS_AI_REQUEST_SOURCE_POLL",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EINSIGHTS_AI_REQUEST_SOURCE_POLL\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAIRequestSource.html#constant_INSIGHTS_AI_REQUEST_SOURCE_POLL"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAIRequestSource\u003A\u003A\u0024valueToName",
             "name": "valueToName",
             "summary": "",
@@ -16001,6 +16426,16 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_whiteboard_ai_disabled\u0020\u003D\u00206\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatConfigReq.html#method_setIsWhiteboardAiDisabled"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatConfigReq\u003A\u003AgetIsPollAiDisabled\u0028\u0029",
+            "name": "getIsPollAiDisabled",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_poll_ai_disabled\u0020\u003D\u00207\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatConfigReq.html#method_getIsPollAiDisabled"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatConfigReq\u003A\u003AsetIsPollAiDisabled\u0028\u0029",
+            "name": "setIsPollAiDisabled",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_poll_ai_disabled\u0020\u003D\u00207\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatConfigReq.html#method_setIsPollAiDisabled"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatConfigReq\u003A\u003A\u0024is_enabled",
             "name": "is_enabled",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_enabled\u0020\u003D\u00201\u003B\u003C\/code\u003E",
@@ -16025,6 +16460,11 @@ Search.appendIndex(
             "name": "is_whiteboard_ai_disabled",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_whiteboard_ai_disabled\u0020\u003D\u00206\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatConfigReq.html#property_is_whiteboard_ai_disabled"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatConfigReq\u003A\u003A\u0024is_poll_ai_disabled",
+            "name": "is_poll_ai_disabled",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_poll_ai_disabled\u0020\u003D\u00207\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatConfigReq.html#property_is_poll_ai_disabled"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatContent",
             "name": "InsightsAITextChatContent",
@@ -16186,6 +16626,16 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_whiteboard_ai_disabled\u0020\u003D\u00206\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatFeatures.html#method_setIsWhiteboardAiDisabled"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatFeatures\u003A\u003AgetIsPollAiDisabled\u0028\u0029",
+            "name": "getIsPollAiDisabled",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_poll_ai_disabled\u0020\u003D\u00207\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatFeatures.html#method_getIsPollAiDisabled"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatFeatures\u003A\u003AsetIsPollAiDisabled\u0028\u0029",
+            "name": "setIsPollAiDisabled",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_poll_ai_disabled\u0020\u003D\u00207\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatFeatures.html#method_setIsPollAiDisabled"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatFeatures\u003A\u003A\u0024is_allow",
             "name": "is_allow",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_allow\u0020\u003D\u00201\u003B\u003C\/code\u003E",
@@ -16215,6 +16665,11 @@ Search.appendIndex(
             "name": "is_whiteboard_ai_disabled",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_whiteboard_ai_disabled\u0020\u003D\u00206\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatFeatures.html#property_is_whiteboard_ai_disabled"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatFeatures\u003A\u003A\u0024is_poll_ai_disabled",
+            "name": "is_poll_ai_disabled",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_poll_ai_disabled\u0020\u003D\u00207\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-InsightsAITextChatFeatures.html#property_is_poll_ai_disabled"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\InsightsAITextChatRole",
             "name": "InsightsAITextChatRole",
@@ -17801,16 +18256,6 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-JoinBreakoutRoomReq.html#method_setRoomId"
         },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\JoinBreakoutRoomReq\u003A\u003AgetIsAdmin\u0028\u0029",
-            "name": "getIsAdmin",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_admin\u0020\u003D\u00204\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-JoinBreakoutRoomReq.html#method_getIsAdmin"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\JoinBreakoutRoomReq\u003A\u003AsetIsAdmin\u0028\u0029",
-            "name": "setIsAdmin",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_admin\u0020\u003D\u00204\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-JoinBreakoutRoomReq.html#method_setIsAdmin"
-        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\JoinBreakoutRoomReq\u003A\u003A\u0024breakout_room_id",
             "name": "breakout_room_id",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020breakout_room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
@@ -17825,11 +18270,6 @@ Search.appendIndex(
             "name": "room_id",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-JoinBreakoutRoomReq.html#property_room_id"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\JoinBreakoutRoomReq\u003A\u003A\u0024is_admin",
-            "name": "is_admin",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_admin\u0020\u003D\u00204\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-JoinBreakoutRoomReq.html#property_is_admin"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\LockSettings",
             "name": "LockSettings",
@@ -18795,6 +19235,61 @@ Search.appendIndex(
             "name": "merge_scope",
             "summary": "",
             "url": "classes/Mynaparrot-PlugnmeetProto-MergeRecordingsReq.html#property_merge_scope"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\MoveBreakoutRoomUserReq",
+            "name": "MoveBreakoutRoomUserReq",
+            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.MoveBreakoutRoomUserReq\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-MoveBreakoutRoomUserReq.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\MoveBreakoutRoomUserReq\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Mynaparrot-PlugnmeetProto-MoveBreakoutRoomUserReq.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\MoveBreakoutRoomUserReq\u003A\u003AgetBreakoutRoomId\u0028\u0029",
+            "name": "getBreakoutRoomId",
+            "summary": "target\u0020breakout\u0020room\u003B\u0020empty\u0020means\u0020move\u0020to\u0020the\u0020main\u0020room",
+            "url": "classes/Mynaparrot-PlugnmeetProto-MoveBreakoutRoomUserReq.html#method_getBreakoutRoomId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\MoveBreakoutRoomUserReq\u003A\u003AsetBreakoutRoomId\u0028\u0029",
+            "name": "setBreakoutRoomId",
+            "summary": "target\u0020breakout\u0020room\u003B\u0020empty\u0020means\u0020move\u0020to\u0020the\u0020main\u0020room",
+            "url": "classes/Mynaparrot-PlugnmeetProto-MoveBreakoutRoomUserReq.html#method_setBreakoutRoomId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\MoveBreakoutRoomUserReq\u003A\u003AgetUserId\u0028\u0029",
+            "name": "getUserId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020user_id\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-MoveBreakoutRoomUserReq.html#method_getUserId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\MoveBreakoutRoomUserReq\u003A\u003AsetUserId\u0028\u0029",
+            "name": "setUserId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020user_id\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-MoveBreakoutRoomUserReq.html#method_setUserId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\MoveBreakoutRoomUserReq\u003A\u003AgetRoomId\u0028\u0029",
+            "name": "getRoomId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-MoveBreakoutRoomUserReq.html#method_getRoomId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\MoveBreakoutRoomUserReq\u003A\u003AsetRoomId\u0028\u0029",
+            "name": "setRoomId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-MoveBreakoutRoomUserReq.html#method_setRoomId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\MoveBreakoutRoomUserReq\u003A\u003A\u0024breakout_room_id",
+            "name": "breakout_room_id",
+            "summary": "target\u0020breakout\u0020room\u003B\u0020empty\u0020means\u0020move\u0020to\u0020the\u0020main\u0020room",
+            "url": "classes/Mynaparrot-PlugnmeetProto-MoveBreakoutRoomUserReq.html#property_breakout_room_id"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\MoveBreakoutRoomUserReq\u003A\u003A\u0024user_id",
+            "name": "user_id",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020user_id\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-MoveBreakoutRoomUserReq.html#property_user_id"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\MoveBreakoutRoomUserReq\u003A\u003A\u0024room_id",
+            "name": "room_id",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-MoveBreakoutRoomUserReq.html#property_room_id"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\MuteUnMuteTrackReq",
             "name": "MuteUnMuteTrackReq",
@@ -20271,6 +20766,11 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EPOLL_CREATED\u0020\u003D\u002012\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgServerToClientEvents.html#constant_POLL_CREATED"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClientEvents\u003A\u003APOLL_REOPENED",
+            "name": "POLL_REOPENED",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EPOLL_REOPENED\u0020\u003D\u002023\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgServerToClientEvents.html#constant_POLL_REOPENED"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClientEvents\u003A\u003AJOIN_BREAKOUT_ROOM",
             "name": "JOIN_BREAKOUT_ROOM",
             "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003EJOIN_BREAKOUT_ROOM\u0020\u003D\u002013\u003B\u003C\/code\u003E",
@@ -20313,8 +20813,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClientEvents\u003A\u003ASESSION_DATA_FETCH_RESPONSE",
             "name": "SESSION_DATA_FETCH_RESPONSE",
-            "summary": "next\u0020ID\u003A\u002022",
+            "summary": "Generated\u0020from\u0020protobuf\u0020enum\u0020\u003Ccode\u003ESESSION_DATA_FETCH_RESPONSE\u0020\u003D\u002021\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgServerToClientEvents.html#constant_SESSION_DATA_FETCH_RESPONSE"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClientEvents\u003A\u003ABREAKOUT_ROOM_USER_MOVED",
+            "name": "BREAKOUT_ROOM_USER_MOVED",
+            "summary": "next\u0020ID\u003A\u002024",
+            "url": "classes/Mynaparrot-PlugnmeetProto-NatsMsgServerToClientEvents.html#constant_BREAKOUT_ROOM_USER_MOVED"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\NatsMsgServerToClientEvents\u003A\u003A\u0024valueToName",
             "name": "valueToName",
@@ -21296,6 +21801,56 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020closed_by\u0020\u003D\u00208\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-PollInfo.html#method_setClosedBy"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollInfo\u003A\u003AgetIsAnonymous\u0028\u0029",
+            "name": "getIsAnonymous",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_anonymous\u0020\u003D\u00209\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollInfo.html#method_getIsAnonymous"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollInfo\u003A\u003AsetIsAnonymous\u0028\u0029",
+            "name": "setIsAnonymous",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_anonymous\u0020\u003D\u00209\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollInfo.html#method_setIsAnonymous"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollInfo\u003A\u003AgetIsMultiple\u0028\u0029",
+            "name": "getIsMultiple",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_multiple\u0020\u003D\u002010\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollInfo.html#method_getIsMultiple"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollInfo\u003A\u003AsetIsMultiple\u0028\u0029",
+            "name": "setIsMultiple",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_multiple\u0020\u003D\u002010\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollInfo.html#method_setIsMultiple"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollInfo\u003A\u003AgetIsQuiz\u0028\u0029",
+            "name": "getIsQuiz",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_quiz\u0020\u003D\u002011\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollInfo.html#method_getIsQuiz"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollInfo\u003A\u003AsetIsQuiz\u0028\u0029",
+            "name": "setIsQuiz",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_quiz\u0020\u003D\u002011\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollInfo.html#method_setIsQuiz"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollInfo\u003A\u003AgetExpiresAt\u0028\u0029",
+            "name": "getExpiresAt",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eint64\u0020expires_at\u0020\u003D\u002012\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollInfo.html#method_getExpiresAt"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollInfo\u003A\u003AsetExpiresAt\u0028\u0029",
+            "name": "setExpiresAt",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eint64\u0020expires_at\u0020\u003D\u002012\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollInfo.html#method_setExpiresAt"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollInfo\u003A\u003AgetDuration\u0028\u0029",
+            "name": "getDuration",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint32\u0020duration\u0020\u003D\u002013\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollInfo.html#method_getDuration"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollInfo\u003A\u003AsetDuration\u0028\u0029",
+            "name": "setDuration",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint32\u0020duration\u0020\u003D\u002013\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollInfo.html#method_setDuration"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollInfo\u003A\u003A\u0024id",
             "name": "id",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
@@ -21335,6 +21890,31 @@ Search.appendIndex(
             "name": "closed_by",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020closed_by\u0020\u003D\u00208\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-PollInfo.html#property_closed_by"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollInfo\u003A\u003A\u0024is_anonymous",
+            "name": "is_anonymous",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_anonymous\u0020\u003D\u00209\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollInfo.html#property_is_anonymous"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollInfo\u003A\u003A\u0024is_multiple",
+            "name": "is_multiple",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_multiple\u0020\u003D\u002010\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollInfo.html#property_is_multiple"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollInfo\u003A\u003A\u0024is_quiz",
+            "name": "is_quiz",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_quiz\u0020\u003D\u002011\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollInfo.html#property_is_quiz"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollInfo\u003A\u003A\u0024expires_at",
+            "name": "expires_at",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eint64\u0020expires_at\u0020\u003D\u002012\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollInfo.html#property_expires_at"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollInfo\u003A\u003A\u0024duration",
+            "name": "duration",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint32\u0020duration\u0020\u003D\u002013\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollInfo.html#property_duration"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollResponse",
             "name": "PollResponse",
@@ -21408,22 +21988,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollResponse\u003A\u003AgetVoted\u0028\u0029",
             "name": "getVoted",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020uint64\u0020voted\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020uint64\u0020voted\u0020\u003D\u00205\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_getVoted"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollResponse\u003A\u003AhasVoted\u0028\u0029",
-            "name": "hasVoted",
-            "summary": "",
-            "url": "classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_hasVoted"
-        },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollResponse\u003A\u003AclearVoted\u0028\u0029",
-            "name": "clearVoted",
-            "summary": "",
-            "url": "classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_clearVoted"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollResponse\u003A\u003AsetVoted\u0028\u0029",
             "name": "setVoted",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020uint64\u0020voted\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020uint64\u0020voted\u0020\u003D\u00205\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_setVoted"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollResponse\u003A\u003AgetResponses\u0028\u0029",
@@ -21526,6 +22096,26 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.PollResponsesResult\u0020poll_responses_result\u0020\u003D\u002011\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_setPollResponsesResult"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollResponse\u003A\u003AgetHasVoted\u0028\u0029",
+            "name": "getHasVoted",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020bool\u0020has_voted\u0020\u003D\u002012\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_getHasVoted"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollResponse\u003A\u003AhasHasVoted\u0028\u0029",
+            "name": "hasHasVoted",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_hasHasVoted"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollResponse\u003A\u003AclearHasVoted\u0028\u0029",
+            "name": "clearHasVoted",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_clearHasVoted"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollResponse\u003A\u003AsetHasVoted\u0028\u0029",
+            "name": "setHasVoted",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020bool\u0020has_voted\u0020\u003D\u002012\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollResponse.html#method_setHasVoted"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollResponse\u003A\u003A\u0024status",
             "name": "status",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020status\u0020\u003D\u00201\u003B\u003C\/code\u003E",
@@ -21548,7 +22138,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollResponse\u003A\u003A\u0024voted",
             "name": "voted",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020uint64\u0020voted\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020uint64\u0020voted\u0020\u003D\u00205\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-PollResponse.html#property_voted"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollResponse\u003A\u003A\u0024responses",
@@ -21581,6 +22171,11 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.PollResponsesResult\u0020poll_responses_result\u0020\u003D\u002011\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-PollResponse.html#property_poll_responses_result"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollResponse\u003A\u003A\u0024has_voted",
+            "name": "has_voted",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020bool\u0020has_voted\u0020\u003D\u002012\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollResponse.html#property_has_voted"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollResponsesResult",
             "name": "PollResponsesResult",
             "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.PollResponsesResult\u003C\/code\u003E",
@@ -21611,14 +22206,24 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint64\u0020total_responses\u0020\u003D\u00202\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-PollResponsesResult.html#method_setTotalResponses"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollResponsesResult\u003A\u003AgetTotalVotes\u0028\u0029",
+            "name": "getTotalVotes",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint64\u0020total_votes\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollResponsesResult.html#method_getTotalVotes"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollResponsesResult\u003A\u003AsetTotalVotes\u0028\u0029",
+            "name": "setTotalVotes",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint64\u0020total_votes\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollResponsesResult.html#method_setTotalVotes"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollResponsesResult\u003A\u003AgetOptions\u0028\u0029",
             "name": "getOptions",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.plugnmeet.PollResponsesResultOptions\u0020options\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.plugnmeet.PollResponsesResultOptions\u0020options\u0020\u003D\u00204\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-PollResponsesResult.html#method_getOptions"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollResponsesResult\u003A\u003AsetOptions\u0028\u0029",
             "name": "setOptions",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.plugnmeet.PollResponsesResultOptions\u0020options\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.plugnmeet.PollResponsesResultOptions\u0020options\u0020\u003D\u00204\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-PollResponsesResult.html#method_setOptions"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollResponsesResult\u003A\u003A\u0024question",
@@ -21631,9 +22236,14 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint64\u0020total_responses\u0020\u003D\u00202\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-PollResponsesResult.html#property_total_responses"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollResponsesResult\u003A\u003A\u0024total_votes",
+            "name": "total_votes",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint64\u0020total_votes\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollResponsesResult.html#property_total_votes"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollResponsesResult\u003A\u003A\u0024options",
             "name": "options",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.plugnmeet.PollResponsesResultOptions\u0020options\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020.plugnmeet.PollResponsesResultOptions\u0020options\u0020\u003D\u00204\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-PollResponsesResult.html#property_options"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollResponsesResultOptions",
@@ -21676,6 +22286,16 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint64\u0020vote_count\u0020\u003D\u00203\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-PollResponsesResultOptions.html#method_setVoteCount"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollResponsesResultOptions\u003A\u003AgetIsCorrect\u0028\u0029",
+            "name": "getIsCorrect",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_correct\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollResponsesResultOptions.html#method_getIsCorrect"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollResponsesResultOptions\u003A\u003AsetIsCorrect\u0028\u0029",
+            "name": "setIsCorrect",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_correct\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollResponsesResultOptions.html#method_setIsCorrect"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollResponsesResultOptions\u003A\u003A\u0024id",
             "name": "id",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint64\u0020id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
@@ -21690,6 +22310,11 @@ Search.appendIndex(
             "name": "vote_count",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint64\u0020vote_count\u0020\u003D\u00203\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-PollResponsesResultOptions.html#property_vote_count"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollResponsesResultOptions\u003A\u003A\u0024is_correct",
+            "name": "is_correct",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_correct\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollResponsesResultOptions.html#property_is_correct"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollsFeatures",
             "name": "PollsFeatures",
@@ -21731,6 +22356,31 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_active\u0020\u003D\u00202\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-PollsFeatures.html#property_is_active"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollShare",
+            "name": "PollShare",
+            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.PollShare\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollShare.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollShare\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollShare.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollShare\u003A\u003AgetPollIds\u0028\u0029",
+            "name": "getPollIds",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020string\u0020poll_ids\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollShare.html#method_getPollIds"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollShare\u003A\u003AsetPollIds\u0028\u0029",
+            "name": "setPollIds",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020string\u0020poll_ids\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollShare.html#method_setPollIds"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollShare\u003A\u003A\u0024poll_ids",
+            "name": "poll_ids",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020string\u0020poll_ids\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PollShare.html#property_poll_ids"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PollsStats",
             "name": "PollsStats",
             "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.PollsStats\u003C\/code\u003E",
@@ -21770,6 +22420,61 @@ Search.appendIndex(
             "name": "total_running",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint64\u0020total_running\u0020\u003D\u00202\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-PollsStats.html#property_total_running"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PreassignedBreakoutRoom",
+            "name": "PreassignedBreakoutRoom",
+            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.PreassignedBreakoutRoom\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PreassignedBreakoutRoom.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PreassignedBreakoutRoom\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PreassignedBreakoutRoom.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PreassignedBreakoutRoom\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020title\u0020\u003D\u00201\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PreassignedBreakoutRoom.html#method_getTitle"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PreassignedBreakoutRoom\u003A\u003AsetTitle\u0028\u0029",
+            "name": "setTitle",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020title\u0020\u003D\u00201\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PreassignedBreakoutRoom.html#method_setTitle"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PreassignedBreakoutRoom\u003A\u003AgetUserIds\u0028\u0029",
+            "name": "getUserIds",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020string\u0020user_ids\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PreassignedBreakoutRoom.html#method_getUserIds"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PreassignedBreakoutRoom\u003A\u003AsetUserIds\u0028\u0029",
+            "name": "setUserIds",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020string\u0020user_ids\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PreassignedBreakoutRoom.html#method_setUserIds"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PreassignedBreakoutRoom\u003A\u003AgetRoomId\u0028\u0029",
+            "name": "getRoomId",
+            "summary": "internal\u0020usage\u0020field",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PreassignedBreakoutRoom.html#method_getRoomId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PreassignedBreakoutRoom\u003A\u003AsetRoomId\u0028\u0029",
+            "name": "setRoomId",
+            "summary": "internal\u0020usage\u0020field",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PreassignedBreakoutRoom.html#method_setRoomId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PreassignedBreakoutRoom\u003A\u003A\u0024title",
+            "name": "title",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020title\u0020\u003D\u00201\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PreassignedBreakoutRoom.html#property_title"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PreassignedBreakoutRoom\u003A\u003A\u0024user_ids",
+            "name": "user_ids",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020string\u0020user_ids\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PreassignedBreakoutRoom.html#property_user_ids"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PreassignedBreakoutRoom\u003A\u003A\u0024room_id",
+            "name": "room_id",
+            "summary": "internal\u0020usage\u0020field",
+            "url": "classes/Mynaparrot-PlugnmeetProto-PreassignedBreakoutRoom.html#property_room_id"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\PrivateDataDelivery",
             "name": "PrivateDataDelivery",
@@ -23146,6 +23851,61 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Mynaparrot-PlugnmeetProto-RecordingTasks.html#property_valueToName"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ReInviteBreakoutRoomReq",
+            "name": "ReInviteBreakoutRoomReq",
+            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.ReInviteBreakoutRoomReq\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ReInviteBreakoutRoomReq.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ReInviteBreakoutRoomReq\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ReInviteBreakoutRoomReq.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ReInviteBreakoutRoomReq\u003A\u003AgetBreakoutRoomId\u0028\u0029",
+            "name": "getBreakoutRoomId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020breakout_room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ReInviteBreakoutRoomReq.html#method_getBreakoutRoomId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ReInviteBreakoutRoomReq\u003A\u003AsetBreakoutRoomId\u0028\u0029",
+            "name": "setBreakoutRoomId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020breakout_room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ReInviteBreakoutRoomReq.html#method_setBreakoutRoomId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ReInviteBreakoutRoomReq\u003A\u003AgetUserId\u0028\u0029",
+            "name": "getUserId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020user_id\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ReInviteBreakoutRoomReq.html#method_getUserId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ReInviteBreakoutRoomReq\u003A\u003AsetUserId\u0028\u0029",
+            "name": "setUserId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020user_id\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ReInviteBreakoutRoomReq.html#method_setUserId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ReInviteBreakoutRoomReq\u003A\u003AgetRoomId\u0028\u0029",
+            "name": "getRoomId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ReInviteBreakoutRoomReq.html#method_getRoomId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ReInviteBreakoutRoomReq\u003A\u003AsetRoomId\u0028\u0029",
+            "name": "setRoomId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ReInviteBreakoutRoomReq.html#method_setRoomId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ReInviteBreakoutRoomReq\u003A\u003A\u0024breakout_room_id",
+            "name": "breakout_room_id",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020breakout_room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ReInviteBreakoutRoomReq.html#property_breakout_room_id"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ReInviteBreakoutRoomReq\u003A\u003A\u0024user_id",
+            "name": "user_id",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020user_id\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ReInviteBreakoutRoomReq.html#property_user_id"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ReInviteBreakoutRoomReq\u003A\u003A\u0024room_id",
+            "name": "room_id",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ReInviteBreakoutRoomReq.html#property_room_id"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RemoveParticipantReq",
             "name": "RemoveParticipantReq",
             "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.RemoveParticipantReq\u003C\/code\u003E",
@@ -23230,6 +23990,61 @@ Search.appendIndex(
             "name": "block_user",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020block_user\u0020\u003D\u00205\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-RemoveParticipantReq.html#property_block_user"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ReopenPollReq",
+            "name": "ReopenPollReq",
+            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.ReopenPollReq\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ReopenPollReq.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ReopenPollReq\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ReopenPollReq.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ReopenPollReq\u003A\u003AgetRoomId\u0028\u0029",
+            "name": "getRoomId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ReopenPollReq.html#method_getRoomId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ReopenPollReq\u003A\u003AsetRoomId\u0028\u0029",
+            "name": "setRoomId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ReopenPollReq.html#method_setRoomId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ReopenPollReq\u003A\u003AgetUserId\u0028\u0029",
+            "name": "getUserId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020user_id\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ReopenPollReq.html#method_getUserId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ReopenPollReq\u003A\u003AsetUserId\u0028\u0029",
+            "name": "setUserId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020user_id\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ReopenPollReq.html#method_setUserId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ReopenPollReq\u003A\u003AgetPollId\u0028\u0029",
+            "name": "getPollId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020poll_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ReopenPollReq.html#method_getPollId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ReopenPollReq\u003A\u003AsetPollId\u0028\u0029",
+            "name": "setPollId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020poll_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ReopenPollReq.html#method_setPollId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ReopenPollReq\u003A\u003A\u0024room_id",
+            "name": "room_id",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020room_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ReopenPollReq.html#property_room_id"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ReopenPollReq\u003A\u003A\u0024user_id",
+            "name": "user_id",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020user_id\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ReopenPollReq.html#property_user_id"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ReopenPollReq\u003A\u003A\u0024poll_id",
+            "name": "poll_id",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020poll_id\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ReopenPollReq.html#property_poll_id"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\RoomArtifactCharacterCountUsage",
             "name": "RoomArtifactCharacterCountUsage",
@@ -25196,6 +26011,26 @@ Search.appendIndex(
             "summary": "response\u0020only\u003A\u0020true\u0020on\u0020the\u0020final\u0020streamed\u0020entry",
             "url": "classes/Mynaparrot-PlugnmeetProto-SessionDataHeader.html#method_setLast"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SessionDataHeader\u003A\u003AgetTargetRoomId\u0028\u0029",
+            "name": "getTargetRoomId",
+            "summary": "save\u0020only\u003A\u0020empty\/absent\u0020\u003D\u003E\u0020save\u0020to\u0020own\u0020room\u003B\u0020set\u0020\u003D\u003E\u0020seed\u0020into\u0020target\u0020breakout\u0020child\u0020room",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SessionDataHeader.html#method_getTargetRoomId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SessionDataHeader\u003A\u003AhasTargetRoomId\u0028\u0029",
+            "name": "hasTargetRoomId",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SessionDataHeader.html#method_hasTargetRoomId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SessionDataHeader\u003A\u003AclearTargetRoomId\u0028\u0029",
+            "name": "clearTargetRoomId",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SessionDataHeader.html#method_clearTargetRoomId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SessionDataHeader\u003A\u003AsetTargetRoomId\u0028\u0029",
+            "name": "setTargetRoomId",
+            "summary": "save\u0020only\u003A\u0020empty\/absent\u0020\u003D\u003E\u0020save\u0020to\u0020own\u0020room\u003B\u0020set\u0020\u003D\u003E\u0020seed\u0020into\u0020target\u0020breakout\u0020child\u0020room",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SessionDataHeader.html#method_setTargetRoomId"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SessionDataHeader\u003A\u003A\u0024data_type",
             "name": "data_type",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003E.plugnmeet.SessionDataType\u0020data_type\u0020\u003D\u00201\u003B\u003C\/code\u003E",
@@ -25210,6 +26045,11 @@ Search.appendIndex(
             "name": "last",
             "summary": "response\u0020only\u003A\u0020true\u0020on\u0020the\u0020final\u0020streamed\u0020entry",
             "url": "classes/Mynaparrot-PlugnmeetProto-SessionDataHeader.html#property_last"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SessionDataHeader\u003A\u003A\u0024target_room_id",
+            "name": "target_room_id",
+            "summary": "save\u0020only\u003A\u0020empty\/absent\u0020\u003D\u003E\u0020save\u0020to\u0020own\u0020room\u003B\u0020set\u0020\u003D\u003E\u0020seed\u0020into\u0020target\u0020breakout\u0020child\u0020room",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SessionDataHeader.html#property_target_room_id"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SessionDataType",
             "name": "SessionDataType",
@@ -25646,15 +26486,15 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020poll_id\u0020\u003D\u00204\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-SubmitPollResponseReq.html#method_setPollId"
         },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SubmitPollResponseReq\u003A\u003AgetSelectedOption\u0028\u0029",
-            "name": "getSelectedOption",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint64\u0020selected_option\u0020\u003D\u00205\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SubmitPollResponseReq.html#method_getSelectedOption"
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SubmitPollResponseReq\u003A\u003AgetSelectedOptions\u0028\u0029",
+            "name": "getSelectedOptions",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020uint64\u0020selected_options\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SubmitPollResponseReq.html#method_getSelectedOptions"
         },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SubmitPollResponseReq\u003A\u003AsetSelectedOption\u0028\u0029",
-            "name": "setSelectedOption",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint64\u0020selected_option\u0020\u003D\u00205\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SubmitPollResponseReq.html#method_setSelectedOption"
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SubmitPollResponseReq\u003A\u003AsetSelectedOptions\u0028\u0029",
+            "name": "setSelectedOptions",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020uint64\u0020selected_options\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SubmitPollResponseReq.html#method_setSelectedOptions"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SubmitPollResponseReq\u003A\u003A\u0024room_id",
             "name": "room_id",
@@ -25676,10 +26516,10 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020poll_id\u0020\u003D\u00204\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-SubmitPollResponseReq.html#property_poll_id"
         },                {
-            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SubmitPollResponseReq\u003A\u003A\u0024selected_option",
-            "name": "selected_option",
-            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint64\u0020selected_option\u0020\u003D\u00205\u003B\u003C\/code\u003E",
-            "url": "classes/Mynaparrot-PlugnmeetProto-SubmitPollResponseReq.html#property_selected_option"
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SubmitPollResponseReq\u003A\u003A\u0024selected_options",
+            "name": "selected_options",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020uint64\u0020selected_options\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-SubmitPollResponseReq.html#property_selected_options"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\SwitchPresenterReq",
             "name": "SwitchPresenterReq",
@@ -27621,6 +28461,61 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020uint64\u0020max_allowed_file_size\u0020\u003D\u00208\u0020\u005B\u0028.buf.validate.field\u0029\u0020\u003D\u0020\u007B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-WhiteboardFeatures.html#property_max_allowed_file_size"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\WhiteboardShare",
+            "name": "WhiteboardShare",
+            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.WhiteboardShare\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-WhiteboardShare.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\WhiteboardShare\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Mynaparrot-PlugnmeetProto-WhiteboardShare.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\WhiteboardShare\u003A\u003AgetFileId\u0028\u0029",
+            "name": "getFileId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020file_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-WhiteboardShare.html#method_getFileId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\WhiteboardShare\u003A\u003AsetFileId\u0028\u0029",
+            "name": "setFileId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020file_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-WhiteboardShare.html#method_setFileId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\WhiteboardShare\u003A\u003AgetPages\u0028\u0029",
+            "name": "getPages",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020uint32\u0020pages\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-WhiteboardShare.html#method_getPages"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\WhiteboardShare\u003A\u003AsetPages\u0028\u0029",
+            "name": "setPages",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020uint32\u0020pages\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-WhiteboardShare.html#method_setPages"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\WhiteboardShare\u003A\u003AgetCurrentPage\u0028\u0029",
+            "name": "getCurrentPage",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint32\u0020current_page\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-WhiteboardShare.html#method_getCurrentPage"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\WhiteboardShare\u003A\u003AsetCurrentPage\u0028\u0029",
+            "name": "setCurrentPage",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint32\u0020current_page\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-WhiteboardShare.html#method_setCurrentPage"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\WhiteboardShare\u003A\u003A\u0024file_id",
+            "name": "file_id",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020file_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-WhiteboardShare.html#property_file_id"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\WhiteboardShare\u003A\u003A\u0024pages",
+            "name": "pages",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Erepeated\u0020uint32\u0020pages\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-WhiteboardShare.html#property_pages"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\WhiteboardShare\u003A\u003A\u0024current_page",
+            "name": "current_page",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Euint32\u0020current_page\u0020\u003D\u00203\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-WhiteboardShare.html#property_current_page"
+        },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\GuzzleHttpClient",
             "name": "GuzzleHttpClient",
             "summary": "An\u0020HTTP\u0020client\u0020that\u0020uses\u0020Guzzle\u0020to\u0020send\u0020requests.",
@@ -27710,6 +28605,11 @@ Search.appendIndex(
             "name": "broadcastToRoom",
             "summary": "Broadcast\u0020messages\u0020or\u0020notifications\u0020directly\u0020into\u0020an\u0020active\u0020Plug\u002DN\u002DMeet\u0020session\u0020in\u0020real\u002Dtime",
             "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_broadcastToRoom"
+        },                {
+            "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AcreatePoll\u0028\u0029",
+            "name": "createPoll",
+            "summary": "Allows\u0020your\u0020backend\u0020server\u0020to\u0020push\u0020a\u0020complete\u0020poll\u0020into\u0020an\u0020active\u0020Plug\u002DN\u002DMeet\u0020session\u0020in\u0020real\u0020time",
+            "url": "classes/Mynaparrot-Plugnmeet-PlugNmeet.html#method_createPoll"
         },                {
             "fqsen": "\\Mynaparrot\\Plugnmeet\\PlugNmeet\u003A\u003AuploadWhiteboardFile\u0028\u0029",
             "name": "uploadWhiteboardFile",
