@@ -24,11 +24,16 @@ class InsightsAIRequestSource
      * Generated from protobuf enum <code>INSIGHTS_AI_REQUEST_SOURCE_WHITEBOARD = 2;</code>
      */
     const INSIGHTS_AI_REQUEST_SOURCE_WHITEBOARD = 2;
+    /**
+     * Generated from protobuf enum <code>INSIGHTS_AI_REQUEST_SOURCE_POLL = 3;</code>
+     */
+    const INSIGHTS_AI_REQUEST_SOURCE_POLL = 3;
 
     private static $valueToName = [
         self::INSIGHTS_AI_REQUEST_SOURCE_CHAT => 'INSIGHTS_AI_REQUEST_SOURCE_CHAT',
         self::INSIGHTS_AI_REQUEST_SOURCE_NOTEPAD => 'INSIGHTS_AI_REQUEST_SOURCE_NOTEPAD',
         self::INSIGHTS_AI_REQUEST_SOURCE_WHITEBOARD => 'INSIGHTS_AI_REQUEST_SOURCE_WHITEBOARD',
+        self::INSIGHTS_AI_REQUEST_SOURCE_POLL => 'INSIGHTS_AI_REQUEST_SOURCE_POLL',
     ];
 
     public static function name($value)

@@ -10,9 +10,9 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * Generated from protobuf message <code>plugnmeet.JoinBreakoutRoomReq</code>
+ * Generated from protobuf message <code>plugnmeet.ReInviteBreakoutRoomReq</code>
  */
-class JoinBreakoutRoomReq extends \Google\Protobuf\Internal\Message
+class ReInviteBreakoutRoomReq extends \Google\Protobuf\Internal\Message
 {
     /**
      * Generated from protobuf field <code>string breakout_room_id = 1;</code>

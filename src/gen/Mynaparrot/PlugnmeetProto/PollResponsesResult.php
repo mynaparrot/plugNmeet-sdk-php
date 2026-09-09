@@ -23,7 +23,11 @@ class PollResponsesResult extends \Google\Protobuf\Internal\Message
      */
     protected $total_responses = 0;
     /**
-     * Generated from protobuf field <code>repeated .plugnmeet.PollResponsesResultOptions options = 3;</code>
+     * Generated from protobuf field <code>uint64 total_votes = 3;</code>
+     */
+    protected $total_votes = 0;
+    /**
+     * Generated from protobuf field <code>repeated .plugnmeet.PollResponsesResultOptions options = 4;</code>
      */
     private $options;
 
@@ -35,6 +39,7 @@ class PollResponsesResult extends \Google\Protobuf\Internal\Message
      *
      *     @type string $question
      *     @type int|string $total_responses
+     *     @type int|string $total_votes
      *     @type \Mynaparrot\PlugnmeetProto\PollResponsesResultOptions[] $options
      * }
      */
@@ -88,7 +93,29 @@ class PollResponsesResult extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .plugnmeet.PollResponsesResultOptions options = 3;</code>
+     * Generated from protobuf field <code>uint64 total_votes = 3;</code>
+     * @return int|string
+     */
+    public function getTotalVotes()
+    {
+        return $this->total_votes;
+    }
+
+    /**
+     * Generated from protobuf field <code>uint64 total_votes = 3;</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setTotalVotes(int|string $var)
+    {
+        GPBUtil::checkUint64($var);
+        $this->total_votes = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .plugnmeet.PollResponsesResultOptions options = 4;</code>
      * @return RepeatedField<\Mynaparrot\PlugnmeetProto\PollResponsesResultOptions>
      */
     public function getOptions()
@@ -97,7 +124,7 @@ class PollResponsesResult extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .plugnmeet.PollResponsesResultOptions options = 3;</code>
+     * Generated from protobuf field <code>repeated .plugnmeet.PollResponsesResultOptions options = 4;</code>
      * @param \Mynaparrot\PlugnmeetProto\PollResponsesResultOptions[] $var
      * @return $this
      */

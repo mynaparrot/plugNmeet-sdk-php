@@ -46,6 +46,26 @@ class PollInfo extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string closed_by = 8;</code>
      */
     protected $closed_by = '';
+    /**
+     * Generated from protobuf field <code>bool is_anonymous = 9;</code>
+     */
+    protected $is_anonymous = false;
+    /**
+     * Generated from protobuf field <code>bool is_multiple = 10;</code>
+     */
+    protected $is_multiple = false;
+    /**
+     * Generated from protobuf field <code>bool is_quiz = 11;</code>
+     */
+    protected $is_quiz = false;
+    /**
+     * Generated from protobuf field <code>int64 expires_at = 12;</code>
+     */
+    protected $expires_at = 0;
+    /**
+     * Generated from protobuf field <code>uint32 duration = 13;</code>
+     */
+    protected $duration = 0;
 
     /**
      * Constructor.
@@ -61,6 +81,11 @@ class PollInfo extends \Google\Protobuf\Internal\Message
      *     @type int|string $created
      *     @type string $created_by
      *     @type string $closed_by
+     *     @type bool $is_anonymous
+     *     @type bool $is_multiple
+     *     @type bool $is_quiz
+     *     @type int|string $expires_at
+     *     @type int $duration
      * }
      */
     public function __construct($data = NULL) {
@@ -239,6 +264,113 @@ class PollInfo extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, true);
         $this->closed_by = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_anonymous = 9;</code>
+     * @return bool
+     */
+    public function getIsAnonymous()
+    {
+        return $this->is_anonymous;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_anonymous = 9;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsAnonymous(bool $var)
+    {
+        $this->is_anonymous = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_multiple = 10;</code>
+     * @return bool
+     */
+    public function getIsMultiple()
+    {
+        return $this->is_multiple;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_multiple = 10;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsMultiple(bool $var)
+    {
+        $this->is_multiple = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_quiz = 11;</code>
+     * @return bool
+     */
+    public function getIsQuiz()
+    {
+        return $this->is_quiz;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_quiz = 11;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsQuiz(bool $var)
+    {
+        $this->is_quiz = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 expires_at = 12;</code>
+     * @return int|string
+     */
+    public function getExpiresAt()
+    {
+        return $this->expires_at;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 expires_at = 12;</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setExpiresAt(int|string $var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->expires_at = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>uint32 duration = 13;</code>
+     * @return int
+     */
+    public function getDuration()
+    {
+        return $this->duration;
+    }
+
+    /**
+     * Generated from protobuf field <code>uint32 duration = 13;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setDuration(int $var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->duration = $var;
 
         return $this;
     }

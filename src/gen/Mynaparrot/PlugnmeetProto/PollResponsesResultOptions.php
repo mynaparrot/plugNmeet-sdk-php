@@ -26,6 +26,10 @@ class PollResponsesResultOptions extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>uint64 vote_count = 3;</code>
      */
     protected $vote_count = 0;
+    /**
+     * Generated from protobuf field <code>bool is_correct = 4;</code>
+     */
+    protected $is_correct = false;
 
     /**
      * Constructor.
@@ -36,6 +40,7 @@ class PollResponsesResultOptions extends \Google\Protobuf\Internal\Message
      *     @type int|string $id
      *     @type string $text
      *     @type int|string $vote_count
+     *     @type bool $is_correct
      * }
      */
     public function __construct($data = NULL) {
@@ -105,6 +110,27 @@ class PollResponsesResultOptions extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkUint64($var);
         $this->vote_count = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_correct = 4;</code>
+     * @return bool
+     */
+    public function getIsCorrect()
+    {
+        return $this->is_correct;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_correct = 4;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsCorrect(bool $var)
+    {
+        $this->is_correct = $var;
 
         return $this;
     }

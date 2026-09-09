@@ -43,10 +43,6 @@ class DataMsgBodyType
      */
     const NEW_POLL_RESPONSE = 6;
     /**
-     * Generated from protobuf enum <code>PUSH_JOIN_BREAKOUT_ROOM = 7;</code>
-     */
-    const PUSH_JOIN_BREAKOUT_ROOM = 7;
-    /**
      * WHITEBOARD type
      *
      * Generated from protobuf enum <code>WHITEBOARD_SYNC_REQUEST = 8;</code>
@@ -125,7 +121,6 @@ class DataMsgBodyType
         self::USER_VISIBILITY_CHANGE => 'USER_VISIBILITY_CHANGE',
         self::EXTERNAL_MEDIA_PLAYER_EVENTS => 'EXTERNAL_MEDIA_PLAYER_EVENTS',
         self::NEW_POLL_RESPONSE => 'NEW_POLL_RESPONSE',
-        self::PUSH_JOIN_BREAKOUT_ROOM => 'PUSH_JOIN_BREAKOUT_ROOM',
         self::WHITEBOARD_SYNC_REQUEST => 'WHITEBOARD_SYNC_REQUEST',
         self::WHITEBOARD_SYNC_RESPONSE => 'WHITEBOARD_SYNC_RESPONSE',
         self::SCENE_UPDATE => 'SCENE_UPDATE',

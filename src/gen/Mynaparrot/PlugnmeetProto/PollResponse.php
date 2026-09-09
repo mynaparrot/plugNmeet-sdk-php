@@ -31,9 +31,9 @@ class PollResponse extends \Google\Protobuf\Internal\Message
      */
     protected $total_responses = null;
     /**
-     * Generated from protobuf field <code>optional uint64 voted = 5;</code>
+     * Generated from protobuf field <code>repeated uint64 voted = 5;</code>
      */
-    protected $voted = null;
+    private $voted;
     /**
      * Generated from protobuf field <code>map<string, string> responses = 6;</code>
      */
@@ -58,6 +58,10 @@ class PollResponse extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional .plugnmeet.PollResponsesResult poll_responses_result = 11;</code>
      */
     protected $poll_responses_result = null;
+    /**
+     * Generated from protobuf field <code>optional bool has_voted = 12;</code>
+     */
+    protected $has_voted = null;
 
     /**
      * Constructor.
@@ -69,13 +73,14 @@ class PollResponse extends \Google\Protobuf\Internal\Message
      *     @type string $msg
      *     @type string $poll_id
      *     @type int|string $total_responses
-     *     @type int|string $voted
+     *     @type int[]|string[] $voted
      *     @type array|\Google\Protobuf\Internal\MapField $responses
      *     @type \Mynaparrot\PlugnmeetProto\PollInfo[] $polls
      *     @type \Mynaparrot\PlugnmeetProto\PollsStats $stats
      *     @type int|string $total_polls
      *     @type int|string $total_running
      *     @type \Mynaparrot\PlugnmeetProto\PollResponsesResult $poll_responses_result
+     *     @type bool $has_voted
      * }
      */
     public function __construct($data = NULL) {
@@ -191,33 +196,23 @@ class PollResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional uint64 voted = 5;</code>
-     * @return int|string
+     * Generated from protobuf field <code>repeated uint64 voted = 5;</code>
+     * @return RepeatedField<int>|RepeatedField<string>
      */
     public function getVoted()
     {
-        return isset($this->voted) ? $this->voted : GPBUtil::compatibleInt64(0, '0');
-    }
-
-    public function hasVoted()
-    {
-        return isset($this->voted);
-    }
-
-    public function clearVoted()
-    {
-        unset($this->voted);
+        return $this->voted;
     }
 
     /**
-     * Generated from protobuf field <code>optional uint64 voted = 5;</code>
-     * @param int|string $var
+     * Generated from protobuf field <code>repeated uint64 voted = 5;</code>
+     * @param int[]|string[] $var
      * @return $this
      */
-    public function setVoted(int|string $var)
+    public function setVoted(array|RepeatedField $var)
     {
-        GPBUtil::checkUint64($var);
-        $this->voted = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT64);
+        $this->voted = $arr;
 
         return $this;
     }
@@ -388,6 +383,37 @@ class PollResponse extends \Google\Protobuf\Internal\Message
     public function setPollResponsesResult(\Mynaparrot\PlugnmeetProto\PollResponsesResult|null $var)
     {
         $this->poll_responses_result = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional bool has_voted = 12;</code>
+     * @return bool
+     */
+    public function getHasVoted()
+    {
+        return isset($this->has_voted) ? $this->has_voted : false;
+    }
+
+    public function hasHasVoted()
+    {
+        return isset($this->has_voted);
+    }
+
+    public function clearHasVoted()
+    {
+        unset($this->has_voted);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional bool has_voted = 12;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setHasVoted(bool $var)
+    {
+        $this->has_voted = $var;
 
         return $this;
     }

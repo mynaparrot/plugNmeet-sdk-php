@@ -27,6 +27,10 @@ class AnalyticsEvents
      */
     const ANALYTICS_EVENT_ROOM_POLL_ENDED = 2;
     /**
+     * Generated from protobuf enum <code>ANALYTICS_EVENT_ROOM_POLL_REOPENED = 41;</code>
+     */
+    const ANALYTICS_EVENT_ROOM_POLL_REOPENED = 41;
+    /**
      * user join will be room related
      * after take record it will pass to user
      *
@@ -208,6 +212,7 @@ class AnalyticsEvents
         self::ANALYTICS_EVENT_UNKNOWN => 'ANALYTICS_EVENT_UNKNOWN',
         self::ANALYTICS_EVENT_ROOM_POLL_ADDED => 'ANALYTICS_EVENT_ROOM_POLL_ADDED',
         self::ANALYTICS_EVENT_ROOM_POLL_ENDED => 'ANALYTICS_EVENT_ROOM_POLL_ENDED',
+        self::ANALYTICS_EVENT_ROOM_POLL_REOPENED => 'ANALYTICS_EVENT_ROOM_POLL_REOPENED',
         self::ANALYTICS_EVENT_USER_JOINED => 'ANALYTICS_EVENT_USER_JOINED',
         self::ANALYTICS_EVENT_ROOM_RECORDING_STATUS => 'ANALYTICS_EVENT_ROOM_RECORDING_STATUS',
         self::ANALYTICS_EVENT_ROOM_RTMP_STATUS => 'ANALYTICS_EVENT_ROOM_RTMP_STATUS',

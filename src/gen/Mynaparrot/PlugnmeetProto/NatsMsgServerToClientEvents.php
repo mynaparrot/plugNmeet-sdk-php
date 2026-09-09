@@ -67,6 +67,10 @@ class NatsMsgServerToClientEvents
      */
     const POLL_CREATED = 12;
     /**
+     * Generated from protobuf enum <code>POLL_REOPENED = 23;</code>
+     */
+    const POLL_REOPENED = 23;
+    /**
      * Generated from protobuf enum <code>JOIN_BREAKOUT_ROOM = 13;</code>
      */
     const JOIN_BREAKOUT_ROOM = 13;
@@ -101,11 +105,15 @@ class NatsMsgServerToClientEvents
      */
     const PONG = 20;
     /**
-     *next ID: 22
-     *
      * Generated from protobuf enum <code>SESSION_DATA_FETCH_RESPONSE = 21;</code>
      */
     const SESSION_DATA_FETCH_RESPONSE = 21;
+    /**
+     *next ID: 24
+     *
+     * Generated from protobuf enum <code>BREAKOUT_ROOM_USER_MOVED = 22;</code>
+     */
+    const BREAKOUT_ROOM_USER_MOVED = 22;
 
     private static $valueToName = [
         self::RES_INITIAL_DATA => 'RES_INITIAL_DATA',
@@ -121,6 +129,7 @@ class NatsMsgServerToClientEvents
         self::SESSION_ENDED => 'SESSION_ENDED',
         self::POLL_CLOSED => 'POLL_CLOSED',
         self::POLL_CREATED => 'POLL_CREATED',
+        self::POLL_REOPENED => 'POLL_REOPENED',
         self::JOIN_BREAKOUT_ROOM => 'JOIN_BREAKOUT_ROOM',
         self::BREAKOUT_ROOM_ENDED => 'BREAKOUT_ROOM_ENDED',
         self::SYSTEM_CHAT_MSG => 'SYSTEM_CHAT_MSG',
@@ -130,6 +139,7 @@ class NatsMsgServerToClientEvents
         self::DELIVERY_PRIVATE_DATA => 'DELIVERY_PRIVATE_DATA',
         self::PONG => 'PONG',
         self::SESSION_DATA_FETCH_RESPONSE => 'SESSION_DATA_FETCH_RESPONSE',
+        self::BREAKOUT_ROOM_USER_MOVED => 'BREAKOUT_ROOM_USER_MOVED',
     ];
 
     public static function name($value)

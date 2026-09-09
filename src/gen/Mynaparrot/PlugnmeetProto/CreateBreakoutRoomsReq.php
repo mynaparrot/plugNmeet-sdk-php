@@ -34,6 +34,26 @@ class CreateBreakoutRoomsReq extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .plugnmeet.BreakoutRoom rooms = 5;</code>
      */
     private $rooms;
+    /**
+     * Generated from protobuf field <code>optional .plugnmeet.WhiteboardShare whiteboard_share = 6;</code>
+     */
+    protected $whiteboard_share = null;
+    /**
+     * Generated from protobuf field <code>optional .plugnmeet.PollShare poll_share = 7;</code>
+     */
+    protected $poll_share = null;
+    /**
+     * Generated from protobuf field <code>bool share_notepad = 8;</code>
+     */
+    protected $share_notepad = false;
+    /**
+     * Generated from protobuf field <code>bool allow_return_to_main_room = 9;</code>
+     */
+    protected $allow_return_to_main_room = false;
+    /**
+     * Generated from protobuf field <code>bool allow_self_select = 11;</code>
+     */
+    protected $allow_self_select = false;
 
     /**
      * Constructor.
@@ -46,6 +66,11 @@ class CreateBreakoutRoomsReq extends \Google\Protobuf\Internal\Message
      *     @type int|string $duration
      *     @type string $welcome_msg
      *     @type \Mynaparrot\PlugnmeetProto\BreakoutRoom[] $rooms
+     *     @type \Mynaparrot\PlugnmeetProto\WhiteboardShare $whiteboard_share
+     *     @type \Mynaparrot\PlugnmeetProto\PollShare $poll_share
+     *     @type bool $share_notepad
+     *     @type bool $allow_return_to_main_room
+     *     @type bool $allow_self_select
      * }
      */
     public function __construct($data = NULL) {
@@ -169,6 +194,131 @@ class CreateBreakoutRoomsReq extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Mynaparrot\PlugnmeetProto\BreakoutRoom::class);
         $this->rooms = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .plugnmeet.WhiteboardShare whiteboard_share = 6;</code>
+     * @return \Mynaparrot\PlugnmeetProto\WhiteboardShare|null
+     */
+    public function getWhiteboardShare()
+    {
+        return $this->whiteboard_share;
+    }
+
+    public function hasWhiteboardShare()
+    {
+        return isset($this->whiteboard_share);
+    }
+
+    public function clearWhiteboardShare()
+    {
+        unset($this->whiteboard_share);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .plugnmeet.WhiteboardShare whiteboard_share = 6;</code>
+     * @param \Mynaparrot\PlugnmeetProto\WhiteboardShare $var
+     * @return $this
+     */
+    public function setWhiteboardShare(\Mynaparrot\PlugnmeetProto\WhiteboardShare|null $var)
+    {
+        $this->whiteboard_share = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .plugnmeet.PollShare poll_share = 7;</code>
+     * @return \Mynaparrot\PlugnmeetProto\PollShare|null
+     */
+    public function getPollShare()
+    {
+        return $this->poll_share;
+    }
+
+    public function hasPollShare()
+    {
+        return isset($this->poll_share);
+    }
+
+    public function clearPollShare()
+    {
+        unset($this->poll_share);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .plugnmeet.PollShare poll_share = 7;</code>
+     * @param \Mynaparrot\PlugnmeetProto\PollShare $var
+     * @return $this
+     */
+    public function setPollShare(\Mynaparrot\PlugnmeetProto\PollShare|null $var)
+    {
+        $this->poll_share = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool share_notepad = 8;</code>
+     * @return bool
+     */
+    public function getShareNotepad()
+    {
+        return $this->share_notepad;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool share_notepad = 8;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setShareNotepad(bool $var)
+    {
+        $this->share_notepad = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool allow_return_to_main_room = 9;</code>
+     * @return bool
+     */
+    public function getAllowReturnToMainRoom()
+    {
+        return $this->allow_return_to_main_room;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool allow_return_to_main_room = 9;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setAllowReturnToMainRoom(bool $var)
+    {
+        $this->allow_return_to_main_room = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool allow_self_select = 11;</code>
+     * @return bool
+     */
+    public function getAllowSelfSelect()
+    {
+        return $this->allow_self_select;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool allow_self_select = 11;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setAllowSelfSelect(bool $var)
+    {
+        $this->allow_self_select = $var;
 
         return $this;
     }

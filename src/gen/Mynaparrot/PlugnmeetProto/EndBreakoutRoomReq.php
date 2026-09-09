@@ -19,7 +19,7 @@ class EndBreakoutRoomReq extends \Google\Protobuf\Internal\Message
      */
     protected $breakout_room_id = '';
     /**
-     * Generated from protobuf field <code>string room_id = 3;</code>
+     * Generated from protobuf field <code>string room_id = 2;</code>
      */
     protected $room_id = '';
 
@@ -61,7 +61,7 @@ class EndBreakoutRoomReq extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string room_id = 3;</code>
+     * Generated from protobuf field <code>string room_id = 2;</code>
      * @return string
      */
     public function getRoomId()
@@ -70,7 +70,7 @@ class EndBreakoutRoomReq extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string room_id = 3;</code>
+     * Generated from protobuf field <code>string room_id = 2;</code>
      * @param string $var
      * @return $this
      */

@@ -34,6 +34,22 @@ class CreatePollReq extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .plugnmeet.CreatePollOptions options = 5;</code>
      */
     private $options;
+    /**
+     * Generated from protobuf field <code>bool is_anonymous = 6;</code>
+     */
+    protected $is_anonymous = false;
+    /**
+     * Generated from protobuf field <code>bool is_multiple = 7;</code>
+     */
+    protected $is_multiple = false;
+    /**
+     * Generated from protobuf field <code>bool is_quiz = 8;</code>
+     */
+    protected $is_quiz = false;
+    /**
+     * Generated from protobuf field <code>uint32 duration = 9;</code>
+     */
+    protected $duration = 0;
 
     /**
      * Constructor.
@@ -46,6 +62,10 @@ class CreatePollReq extends \Google\Protobuf\Internal\Message
      *     @type string $poll_id
      *     @type string $question
      *     @type \Mynaparrot\PlugnmeetProto\CreatePollOptions[] $options
+     *     @type bool $is_anonymous
+     *     @type bool $is_multiple
+     *     @type bool $is_quiz
+     *     @type int $duration
      * }
      */
     public function __construct($data = NULL) {
@@ -159,6 +179,91 @@ class CreatePollReq extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Mynaparrot\PlugnmeetProto\CreatePollOptions::class);
         $this->options = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_anonymous = 6;</code>
+     * @return bool
+     */
+    public function getIsAnonymous()
+    {
+        return $this->is_anonymous;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_anonymous = 6;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsAnonymous(bool $var)
+    {
+        $this->is_anonymous = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_multiple = 7;</code>
+     * @return bool
+     */
+    public function getIsMultiple()
+    {
+        return $this->is_multiple;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_multiple = 7;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsMultiple(bool $var)
+    {
+        $this->is_multiple = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_quiz = 8;</code>
+     * @return bool
+     */
+    public function getIsQuiz()
+    {
+        return $this->is_quiz;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_quiz = 8;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsQuiz(bool $var)
+    {
+        $this->is_quiz = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>uint32 duration = 9;</code>
+     * @return int
+     */
+    public function getDuration()
+    {
+        return $this->duration;
+    }
+
+    /**
+     * Generated from protobuf field <code>uint32 duration = 9;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setDuration(int $var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->duration = $var;
 
         return $this;
     }

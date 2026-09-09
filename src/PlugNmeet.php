@@ -31,6 +31,8 @@ use Mynaparrot\PlugnmeetProto\ArtifactInfoReq;
 use Mynaparrot\PlugnmeetProto\ArtifactInfoRes;
 use Mynaparrot\PlugnmeetProto\BroadcastToRoomReq;
 use Mynaparrot\PlugnmeetProto\CommonResponse;
+use Mynaparrot\PlugnmeetProto\CreatePollReq;
+use Mynaparrot\PlugnmeetProto\CreatePollRes;
 use Mynaparrot\PlugnmeetProto\CreateRoomReq;
 use Mynaparrot\PlugnmeetProto\CreateRoomRes;
 use Mynaparrot\PlugnmeetProto\DeleteAnalyticsReq;
@@ -289,6 +291,27 @@ class PlugNmeet
             $output->mergeFromJsonString($res->response, true);
         } else {
             $output->setStatus(false)->setMsg($res->response)->setStatusCode($res->status_code);
+        }
+        return $output;
+    }
+
+    /**
+     * Allows your backend server to push a complete poll into an active Plug-N-Meet session in real time
+     *
+     * @param CreatePollReq $createPollReq The request object for creating poll to room.
+     * @return CreatePollRes The response from the API call.
+     * @throws Exception
+     */
+    public function createPoll(CreatePollReq $createPollReq): CreatePollRes
+    {
+        $body = $createPollReq->serializeToJsonString();
+        $res = $this->sendRequest("/room/createPoll", $body);
+
+        $output = new CreatePollRes();
+        if ($res->status) {
+            $output->mergeFromJsonString($res->response, true);
+        } else {
+            $output->setStatus(false)->setMsg($res->response);
         }
         return $output;
     }

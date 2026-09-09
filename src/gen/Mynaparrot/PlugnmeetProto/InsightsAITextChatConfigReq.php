@@ -34,6 +34,10 @@ class InsightsAITextChatConfigReq extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool is_whiteboard_ai_disabled = 6;</code>
      */
     protected $is_whiteboard_ai_disabled = false;
+    /**
+     * Generated from protobuf field <code>bool is_poll_ai_disabled = 7;</code>
+     */
+    protected $is_poll_ai_disabled = false;
 
     /**
      * Constructor.
@@ -46,6 +50,7 @@ class InsightsAITextChatConfigReq extends \Google\Protobuf\Internal\Message
      *     @type string[] $allowed_user_ids
      *     @type bool $is_notepad_ai_disabled
      *     @type bool $is_whiteboard_ai_disabled
+     *     @type bool $is_poll_ai_disabled
      * }
      */
     public function __construct($data = NULL) {
@@ -155,6 +160,27 @@ class InsightsAITextChatConfigReq extends \Google\Protobuf\Internal\Message
     public function setIsWhiteboardAiDisabled(bool $var)
     {
         $this->is_whiteboard_ai_disabled = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_poll_ai_disabled = 7;</code>
+     * @return bool
+     */
+    public function getIsPollAiDisabled()
+    {
+        return $this->is_poll_ai_disabled;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_poll_ai_disabled = 7;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsPollAiDisabled(bool $var)
+    {
+        $this->is_poll_ai_disabled = $var;
 
         return $this;
     }

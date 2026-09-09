@@ -40,6 +40,12 @@ class BreakoutRoomRes extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .plugnmeet.BreakoutRoom rooms = 5;</code>
      */
     private $rooms;
+    /**
+     * online main-room users not in any breakout room (admins only)
+     *
+     * Generated from protobuf field <code>repeated .plugnmeet.BreakoutRoomUser unassigned_users = 6;</code>
+     */
+    private $unassigned_users;
 
     /**
      * Constructor.
@@ -55,6 +61,8 @@ class BreakoutRoomRes extends \Google\Protobuf\Internal\Message
      *           for my breakout room
      *     @type \Mynaparrot\PlugnmeetProto\BreakoutRoom[] $rooms
      *           rooms list
+     *     @type \Mynaparrot\PlugnmeetProto\BreakoutRoomUser[] $unassigned_users
+     *           online main-room users not in any breakout room (admins only)
      * }
      */
     public function __construct($data = NULL) {
@@ -198,6 +206,32 @@ class BreakoutRoomRes extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Mynaparrot\PlugnmeetProto\BreakoutRoom::class);
         $this->rooms = $arr;
+
+        return $this;
+    }
+
+    /**
+     * online main-room users not in any breakout room (admins only)
+     *
+     * Generated from protobuf field <code>repeated .plugnmeet.BreakoutRoomUser unassigned_users = 6;</code>
+     * @return RepeatedField<\Mynaparrot\PlugnmeetProto\BreakoutRoomUser>
+     */
+    public function getUnassignedUsers()
+    {
+        return $this->unassigned_users;
+    }
+
+    /**
+     * online main-room users not in any breakout room (admins only)
+     *
+     * Generated from protobuf field <code>repeated .plugnmeet.BreakoutRoomUser unassigned_users = 6;</code>
+     * @param \Mynaparrot\PlugnmeetProto\BreakoutRoomUser[] $var
+     * @return $this
+     */
+    public function setUnassignedUsers(array|RepeatedField $var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Mynaparrot\PlugnmeetProto\BreakoutRoomUser::class);
+        $this->unassigned_users = $arr;
 
         return $this;
     }

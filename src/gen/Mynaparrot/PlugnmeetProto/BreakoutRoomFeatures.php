@@ -19,6 +19,8 @@ class BreakoutRoomFeatures extends \Google\Protobuf\Internal\Message
      */
     protected $is_allow = false;
     /**
+     * internal usage field
+     *
      * Generated from protobuf field <code>bool is_active = 2 [(.buf.validate.field) = {</code>
      */
     protected $is_active = false;
@@ -26,6 +28,18 @@ class BreakoutRoomFeatures extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>uint32 allowed_number_rooms = 3;</code>
      */
     protected $allowed_number_rooms = 0;
+    /**
+     * Generated from protobuf field <code>bool allow_return_to_main_room = 4;</code>
+     */
+    protected $allow_return_to_main_room = false;
+    /**
+     * Generated from protobuf field <code>bool allow_self_select = 5;</code>
+     */
+    protected $allow_self_select = false;
+    /**
+     * Generated from protobuf field <code>repeated .plugnmeet.PreassignedBreakoutRoom preassigned_rooms = 6;</code>
+     */
+    private $preassigned_rooms;
 
     /**
      * Constructor.
@@ -35,7 +49,11 @@ class BreakoutRoomFeatures extends \Google\Protobuf\Internal\Message
      *
      *     @type bool $is_allow
      *     @type bool $is_active
+     *           internal usage field
      *     @type int $allowed_number_rooms
+     *     @type bool $allow_return_to_main_room
+     *     @type bool $allow_self_select
+     *     @type \Mynaparrot\PlugnmeetProto\PreassignedBreakoutRoom[] $preassigned_rooms
      * }
      */
     public function __construct($data = NULL) {
@@ -65,6 +83,8 @@ class BreakoutRoomFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * internal usage field
+     *
      * Generated from protobuf field <code>bool is_active = 2 [(.buf.validate.field) = {</code>
      * @return bool
      */
@@ -74,6 +94,8 @@ class BreakoutRoomFeatures extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * internal usage field
+     *
      * Generated from protobuf field <code>bool is_active = 2 [(.buf.validate.field) = {</code>
      * @param bool $var
      * @return $this
@@ -103,6 +125,70 @@ class BreakoutRoomFeatures extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkUint32($var);
         $this->allowed_number_rooms = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool allow_return_to_main_room = 4;</code>
+     * @return bool
+     */
+    public function getAllowReturnToMainRoom()
+    {
+        return $this->allow_return_to_main_room;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool allow_return_to_main_room = 4;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setAllowReturnToMainRoom(bool $var)
+    {
+        $this->allow_return_to_main_room = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool allow_self_select = 5;</code>
+     * @return bool
+     */
+    public function getAllowSelfSelect()
+    {
+        return $this->allow_self_select;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool allow_self_select = 5;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setAllowSelfSelect(bool $var)
+    {
+        $this->allow_self_select = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .plugnmeet.PreassignedBreakoutRoom preassigned_rooms = 6;</code>
+     * @return RepeatedField<\Mynaparrot\PlugnmeetProto\PreassignedBreakoutRoom>
+     */
+    public function getPreassignedRooms()
+    {
+        return $this->preassigned_rooms;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .plugnmeet.PreassignedBreakoutRoom preassigned_rooms = 6;</code>
+     * @param \Mynaparrot\PlugnmeetProto\PreassignedBreakoutRoom[] $var
+     * @return $this
+     */
+    public function setPreassignedRooms(array|RepeatedField $var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Mynaparrot\PlugnmeetProto\PreassignedBreakoutRoom::class);
+        $this->preassigned_rooms = $arr;
 
         return $this;
     }

@@ -10,22 +10,22 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * Generated from protobuf message <code>plugnmeet.JoinBreakoutRoomReq</code>
+ * Generated from protobuf message <code>plugnmeet.BackToMainRoomReq</code>
  */
-class JoinBreakoutRoomReq extends \Google\Protobuf\Internal\Message
+class BackToMainRoomReq extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string breakout_room_id = 1;</code>
+     * Generated from protobuf field <code>string room_id = 1;</code>
      */
-    protected $breakout_room_id = '';
+    protected $room_id = '';
     /**
      * Generated from protobuf field <code>string user_id = 2;</code>
      */
     protected $user_id = '';
     /**
-     * Generated from protobuf field <code>string room_id = 3;</code>
+     * Generated from protobuf field <code>string parent_room_id = 3;</code>
      */
-    protected $room_id = '';
+    protected $parent_room_id = '';
 
     /**
      * Constructor.
@@ -33,9 +33,9 @@ class JoinBreakoutRoomReq extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type string $breakout_room_id
-     *     @type string $user_id
      *     @type string $room_id
+     *     @type string $user_id
+     *     @type string $parent_room_id
      * }
      */
     public function __construct($data = NULL) {
@@ -44,23 +44,23 @@ class JoinBreakoutRoomReq extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string breakout_room_id = 1;</code>
+     * Generated from protobuf field <code>string room_id = 1;</code>
      * @return string
      */
-    public function getBreakoutRoomId()
+    public function getRoomId()
     {
-        return $this->breakout_room_id;
+        return $this->room_id;
     }
 
     /**
-     * Generated from protobuf field <code>string breakout_room_id = 1;</code>
+     * Generated from protobuf field <code>string room_id = 1;</code>
      * @param string $var
      * @return $this
      */
-    public function setBreakoutRoomId(string $var)
+    public function setRoomId(string $var)
     {
         GPBUtil::checkString($var, true);
-        $this->breakout_room_id = $var;
+        $this->room_id = $var;
 
         return $this;
     }
@@ -88,23 +88,23 @@ class JoinBreakoutRoomReq extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string room_id = 3;</code>
+     * Generated from protobuf field <code>string parent_room_id = 3;</code>
      * @return string
      */
-    public function getRoomId()
+    public function getParentRoomId()
     {
-        return $this->room_id;
+        return $this->parent_room_id;
     }
 
     /**
-     * Generated from protobuf field <code>string room_id = 3;</code>
+     * Generated from protobuf field <code>string parent_room_id = 3;</code>
      * @param string $var
      * @return $this
      */
-    public function setRoomId(string $var)
+    public function setParentRoomId(string $var)
     {
         GPBUtil::checkString($var, true);
-        $this->room_id = $var;
+        $this->parent_room_id = $var;
 
         return $this;
     }

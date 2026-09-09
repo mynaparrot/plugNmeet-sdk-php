@@ -22,6 +22,10 @@ class CreatePollOptions extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string text = 2;</code>
      */
     protected $text = '';
+    /**
+     * Generated from protobuf field <code>bool is_correct = 3;</code>
+     */
+    protected $is_correct = false;
 
     /**
      * Constructor.
@@ -31,6 +35,7 @@ class CreatePollOptions extends \Google\Protobuf\Internal\Message
      *
      *     @type int $id
      *     @type string $text
+     *     @type bool $is_correct
      * }
      */
     public function __construct($data = NULL) {
@@ -78,6 +83,27 @@ class CreatePollOptions extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, true);
         $this->text = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_correct = 3;</code>
+     * @return bool
+     */
+    public function getIsCorrect()
+    {
+        return $this->is_correct;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool is_correct = 3;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setIsCorrect(bool $var)
+    {
+        $this->is_correct = $var;
 
         return $this;
     }

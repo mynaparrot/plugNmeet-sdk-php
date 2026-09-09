@@ -38,6 +38,10 @@ class BreakoutRoom extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .plugnmeet.BreakoutRoomUser users = 6;</code>
      */
     private $users;
+    /**
+     * Generated from protobuf field <code>string room_sid = 7;</code>
+     */
+    protected $room_sid = '';
 
     /**
      * Constructor.
@@ -51,6 +55,7 @@ class BreakoutRoom extends \Google\Protobuf\Internal\Message
      *     @type bool $started
      *     @type int|string $created
      *     @type \Mynaparrot\PlugnmeetProto\BreakoutRoomUser[] $users
+     *     @type string $room_sid
      * }
      */
     public function __construct($data = NULL) {
@@ -185,6 +190,28 @@ class BreakoutRoom extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Mynaparrot\PlugnmeetProto\BreakoutRoomUser::class);
         $this->users = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string room_sid = 7;</code>
+     * @return string
+     */
+    public function getRoomSid()
+    {
+        return $this->room_sid;
+    }
+
+    /**
+     * Generated from protobuf field <code>string room_sid = 7;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setRoomSid(string $var)
+    {
+        GPBUtil::checkString($var, true);
+        $this->room_sid = $var;
 
         return $this;
     }

@@ -10,11 +10,13 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * Generated from protobuf message <code>plugnmeet.JoinBreakoutRoomReq</code>
+ * Generated from protobuf message <code>plugnmeet.MoveBreakoutRoomUserReq</code>
  */
-class JoinBreakoutRoomReq extends \Google\Protobuf\Internal\Message
+class MoveBreakoutRoomUserReq extends \Google\Protobuf\Internal\Message
 {
     /**
+     * target breakout room; empty means move to the main room
+     *
      * Generated from protobuf field <code>string breakout_room_id = 1;</code>
      */
     protected $breakout_room_id = '';
@@ -34,6 +36,7 @@ class JoinBreakoutRoomReq extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $breakout_room_id
+     *           target breakout room; empty means move to the main room
      *     @type string $user_id
      *     @type string $room_id
      * }
@@ -44,6 +47,8 @@ class JoinBreakoutRoomReq extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * target breakout room; empty means move to the main room
+     *
      * Generated from protobuf field <code>string breakout_room_id = 1;</code>
      * @return string
      */
@@ -53,6 +58,8 @@ class JoinBreakoutRoomReq extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * target breakout room; empty means move to the main room
+     *
      * Generated from protobuf field <code>string breakout_room_id = 1;</code>
      * @param string $var
      * @return $this

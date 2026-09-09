@@ -30,6 +30,12 @@ class SessionDataHeader extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool last = 3;</code>
      */
     protected $last = false;
+    /**
+     * save only: empty/absent => save to own room; set => seed into target breakout child room
+     *
+     * Generated from protobuf field <code>optional string target_room_id = 4;</code>
+     */
+    protected $target_room_id = null;
 
     /**
      * Constructor.
@@ -42,6 +48,8 @@ class SessionDataHeader extends \Google\Protobuf\Internal\Message
      *           request: unset => all, set => one; response: always set
      *     @type bool $last
      *           response only: true on the final streamed entry
+     *     @type string $target_room_id
+     *           save only: empty/absent => save to own room; set => seed into target breakout child room
      * }
      */
     public function __construct($data = NULL) {
@@ -128,6 +136,42 @@ class SessionDataHeader extends \Google\Protobuf\Internal\Message
     public function setLast(bool $var)
     {
         $this->last = $var;
+
+        return $this;
+    }
+
+    /**
+     * save only: empty/absent => save to own room; set => seed into target breakout child room
+     *
+     * Generated from protobuf field <code>optional string target_room_id = 4;</code>
+     * @return string
+     */
+    public function getTargetRoomId()
+    {
+        return isset($this->target_room_id) ? $this->target_room_id : '';
+    }
+
+    public function hasTargetRoomId()
+    {
+        return isset($this->target_room_id);
+    }
+
+    public function clearTargetRoomId()
+    {
+        unset($this->target_room_id);
+    }
+
+    /**
+     * save only: empty/absent => save to own room; set => seed into target breakout child room
+     *
+     * Generated from protobuf field <code>optional string target_room_id = 4;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setTargetRoomId(string $var)
+    {
+        GPBUtil::checkString($var, true);
+        $this->target_room_id = $var;
 
         return $this;
     }

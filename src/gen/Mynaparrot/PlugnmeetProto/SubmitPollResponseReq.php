@@ -31,9 +31,9 @@ class SubmitPollResponseReq extends \Google\Protobuf\Internal\Message
      */
     protected $poll_id = '';
     /**
-     * Generated from protobuf field <code>uint64 selected_option = 5;</code>
+     * Generated from protobuf field <code>repeated uint64 selected_options = 5;</code>
      */
-    protected $selected_option = 0;
+    private $selected_options;
 
     /**
      * Constructor.
@@ -45,7 +45,7 @@ class SubmitPollResponseReq extends \Google\Protobuf\Internal\Message
      *     @type string $user_id
      *     @type string $name
      *     @type string $poll_id
-     *     @type int|string $selected_option
+     *     @type int[]|string[] $selected_options
      * }
      */
     public function __construct($data = NULL) {
@@ -142,23 +142,23 @@ class SubmitPollResponseReq extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint64 selected_option = 5;</code>
-     * @return int|string
+     * Generated from protobuf field <code>repeated uint64 selected_options = 5;</code>
+     * @return RepeatedField<int>|RepeatedField<string>
      */
-    public function getSelectedOption()
+    public function getSelectedOptions()
     {
-        return $this->selected_option;
+        return $this->selected_options;
     }
 
     /**
-     * Generated from protobuf field <code>uint64 selected_option = 5;</code>
-     * @param int|string $var
+     * Generated from protobuf field <code>repeated uint64 selected_options = 5;</code>
+     * @param int[]|string[] $var
      * @return $this
      */
-    public function setSelectedOption(int|string $var)
+    public function setSelectedOptions(array|RepeatedField $var)
     {
-        GPBUtil::checkUint64($var);
-        $this->selected_option = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::UINT64);
+        $this->selected_options = $arr;
 
         return $this;
     }
