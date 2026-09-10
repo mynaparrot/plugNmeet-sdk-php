@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.8](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.2.7...v2.2.8) (2026-09-10)
+
+
+### Bug Fixes
+
+* repeated field wasn't handling properly ([412ab7d](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/412ab7df002cf798b7b0246a0f614faf62ce7e7e))
+
 ## [2.2.7](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.2.6...v2.2.7) (2026-09-09)
 
 
