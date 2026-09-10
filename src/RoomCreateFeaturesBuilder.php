@@ -120,8 +120,18 @@ class RoomCreateFeaturesBuilder
                 if ($type === GPBType::MESSAGE) {
                     if (is_array($value) && !empty($value)) {
                         $subMessageClass = $field->getMessageType()->getClass();
-                        $subResult = $this->buildProtoMessageFromArray($value, $subMessageClass);
-                        $messageInstance->$setter($subResult);
+                        if ($field->isRepeated()) {
+                            // Repeated MESSAGE field: build one sub-message per element.
+                            $subMessages = [];
+                            foreach ($value as $subArray) {
+                                $subMessages[] = $this->buildProtoMessageFromArray((array)$subArray, $subMessageClass);
+                            }
+                            $messageInstance->$setter($subMessages);
+                        } else {
+                            // Singular MESSAGE field.
+                            $subResult = $this->buildProtoMessageFromArray($value, $subMessageClass);
+                            $messageInstance->$setter($subResult);
+                        }
                     }
                 } elseif ($type === GPBType::STRING && $value === '') {
                     continue;
