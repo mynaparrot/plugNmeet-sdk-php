@@ -35,7 +35,7 @@ class TurnCredentials extends \Google\Protobuf\Internal\Message
      */
     protected $fallback_turn = false;
     /**
-     * The duration in Seconds to wait with a poor connection before triggering the fallback.
+     * The duration in milliseconds to wait with a poor connection before triggering the fallback.
      *
      * Generated from protobuf field <code>int64 fallback_timer_duration = 6;</code>
      */
@@ -57,7 +57,7 @@ class TurnCredentials extends \Google\Protobuf\Internal\Message
      *     @type bool $force_turn
      *     @type bool $fallback_turn
      *     @type int|string $fallback_timer_duration
-     *           The duration in Seconds to wait with a poor connection before triggering the fallback.
+     *           The duration in milliseconds to wait with a poor connection before triggering the fallback.
      *     @type \Mynaparrot\PlugnmeetProto\FallbackOnFlapping $fallback_on_flapping
      * }
      */
@@ -175,7 +175,7 @@ class TurnCredentials extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * The duration in Seconds to wait with a poor connection before triggering the fallback.
+     * The duration in milliseconds to wait with a poor connection before triggering the fallback.
      *
      * Generated from protobuf field <code>int64 fallback_timer_duration = 6;</code>
      * @return int|string
@@ -186,7 +186,7 @@ class TurnCredentials extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * The duration in Seconds to wait with a poor connection before triggering the fallback.
+     * The duration in milliseconds to wait with a poor connection before triggering the fallback.
      *
      * Generated from protobuf field <code>int64 fallback_timer_duration = 6;</code>
      * @param int|string $var

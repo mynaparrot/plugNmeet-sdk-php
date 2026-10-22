@@ -443,7 +443,7 @@ class AnalyticsFormatter
             }
 
             $vote = json_decode((string) $value["value"], true);
-            if (!is_array($vote) || !isset($vote["poll_id"], $vote["selected_option"])) {
+            if (!is_array($vote) || !isset($vote["poll_id"], $vote["selected_options"])) {
                 continue;
             }
 
@@ -452,11 +452,11 @@ class AnalyticsFormatter
             if (
                 isset(
                     $this->roomData["polls"][$vote["poll_id"]]
-                    ["options"][$vote["selected_option"]]["responses"]
+                    ["options"][$vote["selected_options"]]["responses"]
                 )
             ) {
                 $this->roomData["polls"][$vote["poll_id"]]
-                ["options"][$vote["selected_option"]]["responses"]++;
+                ["options"][$vote["selected_options"]]["responses"]++;
             }
         }
 

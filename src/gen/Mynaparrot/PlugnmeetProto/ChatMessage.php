@@ -54,6 +54,10 @@ class ChatMessage extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>map<string, string> translations = 10;</code>
      */
     private $translations;
+    /**
+     * Generated from protobuf field <code>optional .plugnmeet.ChatMeta meta = 11;</code>
+     */
+    protected $meta = null;
 
     /**
      * Constructor.
@@ -71,6 +75,7 @@ class ChatMessage extends \Google\Protobuf\Internal\Message
      *     @type bool $from_admin
      *     @type string $source_lang
      *     @type array|\Google\Protobuf\Internal\MapField $translations
+     *     @type \Mynaparrot\PlugnmeetProto\ChatMeta $meta
      * }
      */
     public function __construct($data = NULL) {
@@ -312,6 +317,37 @@ class ChatMessage extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
         $this->translations = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .plugnmeet.ChatMeta meta = 11;</code>
+     * @return \Mynaparrot\PlugnmeetProto\ChatMeta|null
+     */
+    public function getMeta()
+    {
+        return $this->meta;
+    }
+
+    public function hasMeta()
+    {
+        return isset($this->meta);
+    }
+
+    public function clearMeta()
+    {
+        unset($this->meta);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional .plugnmeet.ChatMeta meta = 11;</code>
+     * @param \Mynaparrot\PlugnmeetProto\ChatMeta $var
+     * @return $this
+     */
+    public function setMeta(\Mynaparrot\PlugnmeetProto\ChatMeta|null $var)
+    {
+        $this->meta = $var;
 
         return $this;
     }
