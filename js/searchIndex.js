@@ -11196,6 +11196,26 @@ Search.appendIndex(
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Emap\u003Cstring,\u0020string\u003E\u0020translations\u0020\u003D\u002010\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-ChatMessage.html#method_setTranslations"
         },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMessage\u003A\u003AgetMeta\u0028\u0029",
+            "name": "getMeta",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.ChatMeta\u0020meta\u0020\u003D\u002011\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMessage.html#method_getMeta"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMessage\u003A\u003AhasMeta\u0028\u0029",
+            "name": "hasMeta",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMessage.html#method_hasMeta"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMessage\u003A\u003AclearMeta\u0028\u0029",
+            "name": "clearMeta",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMessage.html#method_clearMeta"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMessage\u003A\u003AsetMeta\u0028\u0029",
+            "name": "setMeta",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.ChatMeta\u0020meta\u0020\u003D\u002011\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMessage.html#method_setMeta"
+        },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMessage\u003A\u003A\u0024id",
             "name": "id",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Estring\u0020id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
@@ -11245,6 +11265,161 @@ Search.appendIndex(
             "name": "translations",
             "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Emap\u003Cstring,\u0020string\u003E\u0020translations\u0020\u003D\u002010\u003B\u003C\/code\u003E",
             "url": "classes/Mynaparrot-PlugnmeetProto-ChatMessage.html#property_translations"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMessage\u003A\u003A\u0024meta",
+            "name": "meta",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020.plugnmeet.ChatMeta\u0020meta\u0020\u003D\u002011\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMessage.html#property_meta"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta",
+            "name": "ChatMeta",
+            "summary": "Generated\u0020from\u0020protobuf\u0020message\u0020\u003Ccode\u003Eplugnmeet.ChatMeta\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#method___construct"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003AgetReplyToId\u0028\u0029",
+            "name": "getReplyToId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020reply_to_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#method_getReplyToId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003AhasReplyToId\u0028\u0029",
+            "name": "hasReplyToId",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#method_hasReplyToId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003AclearReplyToId\u0028\u0029",
+            "name": "clearReplyToId",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#method_clearReplyToId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003AsetReplyToId\u0028\u0029",
+            "name": "setReplyToId",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020reply_to_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#method_setReplyToId"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003AgetReplyToName\u0028\u0029",
+            "name": "getReplyToName",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020reply_to_name\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#method_getReplyToName"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003AhasReplyToName\u0028\u0029",
+            "name": "hasReplyToName",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#method_hasReplyToName"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003AclearReplyToName\u0028\u0029",
+            "name": "clearReplyToName",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#method_clearReplyToName"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003AsetReplyToName\u0028\u0029",
+            "name": "setReplyToName",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020reply_to_name\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#method_setReplyToName"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003AgetReplyToText\u0028\u0029",
+            "name": "getReplyToText",
+            "summary": "truncated\u0020plain\u002Dtext\u0020snippet",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#method_getReplyToText"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003AhasReplyToText\u0028\u0029",
+            "name": "hasReplyToText",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#method_hasReplyToText"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003AclearReplyToText\u0028\u0029",
+            "name": "clearReplyToText",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#method_clearReplyToText"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003AsetReplyToText\u0028\u0029",
+            "name": "setReplyToText",
+            "summary": "truncated\u0020plain\u002Dtext\u0020snippet",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#method_setReplyToText"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003AgetEditedAt\u0028\u0029",
+            "name": "getEditedAt",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020int64\u0020edited_at\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#method_getEditedAt"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003AhasEditedAt\u0028\u0029",
+            "name": "hasEditedAt",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#method_hasEditedAt"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003AclearEditedAt\u0028\u0029",
+            "name": "clearEditedAt",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#method_clearEditedAt"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003AsetEditedAt\u0028\u0029",
+            "name": "setEditedAt",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020int64\u0020edited_at\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#method_setEditedAt"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003AgetIsDeleted\u0028\u0029",
+            "name": "getIsDeleted",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_deleted\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#method_getIsDeleted"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003AsetIsDeleted\u0028\u0029",
+            "name": "setIsDeleted",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_deleted\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#method_setIsDeleted"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003AgetDeletedBy\u0028\u0029",
+            "name": "getDeletedBy",
+            "summary": "absent\u0020\u003D\u0020self,\u0020set\u0020\u003D\u0020admin\u0020userId",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#method_getDeletedBy"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003AhasDeletedBy\u0028\u0029",
+            "name": "hasDeletedBy",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#method_hasDeletedBy"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003AclearDeletedBy\u0028\u0029",
+            "name": "clearDeletedBy",
+            "summary": "",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#method_clearDeletedBy"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003AsetDeletedBy\u0028\u0029",
+            "name": "setDeletedBy",
+            "summary": "absent\u0020\u003D\u0020self,\u0020set\u0020\u003D\u0020admin\u0020userId",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#method_setDeletedBy"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003A\u0024reply_to_id",
+            "name": "reply_to_id",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020reply_to_id\u0020\u003D\u00201\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#property_reply_to_id"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003A\u0024reply_to_name",
+            "name": "reply_to_name",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020string\u0020reply_to_name\u0020\u003D\u00202\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#property_reply_to_name"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003A\u0024reply_to_text",
+            "name": "reply_to_text",
+            "summary": "truncated\u0020plain\u002Dtext\u0020snippet",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#property_reply_to_text"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003A\u0024edited_at",
+            "name": "edited_at",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Eoptional\u0020int64\u0020edited_at\u0020\u003D\u00204\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#property_edited_at"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003A\u0024is_deleted",
+            "name": "is_deleted",
+            "summary": "Generated\u0020from\u0020protobuf\u0020field\u0020\u003Ccode\u003Ebool\u0020is_deleted\u0020\u003D\u00205\u003B\u003C\/code\u003E",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#property_is_deleted"
+        },                {
+            "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ChatMeta\u003A\u003A\u0024deleted_by",
+            "name": "deleted_by",
+            "summary": "absent\u0020\u003D\u0020self,\u0020set\u0020\u003D\u0020admin\u0020userId",
+            "url": "classes/Mynaparrot-PlugnmeetProto-ChatMeta.html#property_deleted_by"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\ClientType",
             "name": "ClientType",
@@ -26888,12 +27063,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\TurnCredentials\u003A\u003AgetFallbackTimerDuration\u0028\u0029",
             "name": "getFallbackTimerDuration",
-            "summary": "The\u0020duration\u0020in\u0020Seconds\u0020to\u0020wait\u0020with\u0020a\u0020poor\u0020connection\u0020before\u0020triggering\u0020the\u0020fallback.",
+            "summary": "The\u0020duration\u0020in\u0020milliseconds\u0020to\u0020wait\u0020with\u0020a\u0020poor\u0020connection\u0020before\u0020triggering\u0020the\u0020fallback.",
             "url": "classes/Mynaparrot-PlugnmeetProto-TurnCredentials.html#method_getFallbackTimerDuration"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\TurnCredentials\u003A\u003AsetFallbackTimerDuration\u0028\u0029",
             "name": "setFallbackTimerDuration",
-            "summary": "The\u0020duration\u0020in\u0020Seconds\u0020to\u0020wait\u0020with\u0020a\u0020poor\u0020connection\u0020before\u0020triggering\u0020the\u0020fallback.",
+            "summary": "The\u0020duration\u0020in\u0020milliseconds\u0020to\u0020wait\u0020with\u0020a\u0020poor\u0020connection\u0020before\u0020triggering\u0020the\u0020fallback.",
             "url": "classes/Mynaparrot-PlugnmeetProto-TurnCredentials.html#method_setFallbackTimerDuration"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\TurnCredentials\u003A\u003AgetFallbackOnFlapping\u0028\u0029",
@@ -26943,7 +27118,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\TurnCredentials\u003A\u003A\u0024fallback_timer_duration",
             "name": "fallback_timer_duration",
-            "summary": "The\u0020duration\u0020in\u0020Seconds\u0020to\u0020wait\u0020with\u0020a\u0020poor\u0020connection\u0020before\u0020triggering\u0020the\u0020fallback.",
+            "summary": "The\u0020duration\u0020in\u0020milliseconds\u0020to\u0020wait\u0020with\u0020a\u0020poor\u0020connection\u0020before\u0020triggering\u0020the\u0020fallback.",
             "url": "classes/Mynaparrot-PlugnmeetProto-TurnCredentials.html#property_fallback_timer_duration"
         },                {
             "fqsen": "\\Mynaparrot\\PlugnmeetProto\\TurnCredentials\u003A\u003A\u0024fallback_on_flapping",
