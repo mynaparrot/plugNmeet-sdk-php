@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.2.8](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.2.7...v2.2.8) (2026-10-22)
+
+
+### Bug Fixes
+
+* bump proto + deps ([15bb2f1](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/15bb2f154490db3709f08b9bce88682a331a6151))
+* repeated field wasn't handling properly ([412ab7d](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/412ab7df002cf798b7b0246a0f614faf62ce7e7e))
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency overtrue/phplint to v9.8.0 ([#98](https://github.com/mynaparrot/plugNmeet-sdk-php/issues/98)) ([503f2f1](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/503f2f19ad379a7472929708be165b2e0963d743))
+* **deps:** update dependency phpunit/phpunit to v13.4.3 ([#95](https://github.com/mynaparrot/plugNmeet-sdk-php/issues/95)) ([ef98475](https://github.com/mynaparrot/plugNmeet-sdk-php/commit/ef984751dca5d03933ce108a956d17b0644c3aac))
+
 ## [2.2.7](https://github.com/mynaparrot/plugNmeet-sdk-php/compare/v2.2.6...v2.2.7) (2026-09-09)
 
 
